@@ -9,6 +9,7 @@ import { SpeciesListComponent } from './components/species-list/species-list.com
 import { CharacterCreationComponent } from './components/character-creation/character-creation.component';
 import { RulesComponent } from './components/rules/rules.component';
 import { SpeciesSingleComponent } from './components/species-single/species-single.component';
+import { CareerListComponent } from './components/career-list/career-list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SpeciesSingleComponent } from './components/species-single/species-sing
     SpeciesListComponent,
     HeaderComponent,
     RulesComponent,
-    SpeciesSingleComponent
+    SpeciesSingleComponent,
+    CareerListComponent
   ],
   imports: [
     BrowserModule,
