@@ -1,0 +1,106 @@
+[
+    {
+      "Species": "Bothan",
+      "Label": "Bothan",
+      "Genders": [ "Male", "Femelle" ],
+      "Characteristics": {
+        "BRAWN": 1,
+        "AGILITY": 2,
+        "INTELLECT": 2,
+        "CUNNING": 3,
+        "WILLPOWER": 2,
+        "PRESENCE": 2
+      }
+    },
+    {
+      "Species": "Droid",
+      "Label": "Droïde",
+      "Genders": [ "Aucun" ],
+      "Characteristics": {
+        "BRAWN": 1,
+        "AGILITY": 1,
+        "INTELLECT": 1,
+        "CUNNING": 1,
+        "WILLPOWER": 1,
+        "PRESENCE": 1
+      }
+    },
+    {
+      "SpeciesSwe": "Gand",
+      "Label": "Gand",
+      "Genders": [ "Male", "Femelle" ],
+      "Characteristics": {
+        "BRAWN": 2,
+        "AGILITY": 2,
+        "INTELLECT": 2,
+        "CUNNING": 2,
+        "WILLPOWER": 3,
+        "PRESENCE": 1
+      }
+    },
+    {
+      "SpeciesSwe": "Human",
+      "Label": "Humain",
+      "Genders": [ "Male", "Femelle" ],
+      "Characteristics": {
+        "BRAWN": 2,
+        "AGILITY": 2,
+        "INTELLECT": 2,
+        "CUNNING": 2,
+        "WILLPOWER": 2,
+        "PRESENCE": 2
+      }
+    },
+    {
+      "SpeciesSwe": "Rodian",
+      "Label": "Rodian",
+      "Genders": [ "Male", "Femelle" ],
+      "Characteristics": {
+        "BRAWN": 2,
+        "AGILITY": 3,
+        "INTELLECT": 2,
+        "CUNNING": 2,
+        "WILLPOWER": 1,
+        "PRESENCE": 2
+      }
+    },
+    {
+      "SpeciesSwe": "Trandoshan",
+      "Label": "Trandoshan",
+      "Genders": [ "Male", "Femelle" ],
+      "Characteristics": {
+        "BRAWN": 3,
+        "AGILITY": 1,
+        "INTELLECT": 2,
+        "CUNNING": 2,
+        "WILLPOWER": 2,
+        "PRESENCE": 2
+      }
+    },
+    {
+      "SpeciesSwe": "TwiLek",
+      "Label": "Twi'Lek",
+      "Genders": [ "Male", "Femelle" ],
+      "Characteristics": {
+        "BRAWN": 1,
+        "AGILITY": 2,
+        "INTELLECT": 2,
+        "CUNNING": 2,
+        "WILLPOWER": 2,
+        "PRESENCE": 3
+      }
+    },
+    {
+      "SpeciesSwe": "Wookie",
+      "Label": "Wookie",
+      "Genders": [ "Male", "Femelle" ],
+      "Characteristics": {
+        "BRAWN": 3,
+        "AGILITY": 2,
+        "INTELLECT": 2,
+        "CUNNING": 2,
+        "WILLPOWER": 1,
+        "PRESENCE": 2
+      }
+    }
+  ]
