@@ -1,0 +1,364 @@
+[
+    {
+      "key": "bothan",
+      "label": "Bothan",
+      "genders": [ "Male", "Femelle" ],
+      "description": "Les Bothans sont les habitants de la planète Bothawui et d'autres planètes comme Kothlis. Durant la Guerre des Clones, ils étaient alliés à la République Galactique et défendaient ses idéaux. Des années plus tard ils donnèrent des informations appartenant à l'Empire Galactique à l'Alliance Rebelle et notamment des codes impériaux leur permettant de se poser sur la lune Forestière d'Endor. Suite à ça, la plupart se sont fait éliminer par l'Empire pour trahison.",
+      "characteristics": {
+        "brawn": 1,
+        "agility": 2,
+        "intellect": 2,
+        "cunning": 3,
+        "willpower": 2,
+        "presence": 2
+      },
+      "woundTreshold": "10 + Vigueur",
+      "strainTreshold": "11 + Volonté",
+      "startingXp": 100,
+      "specialAbility": "Les bothans commencent le jeu avec un rang en <span class=\"skill\">Système D</span>. Ils ne peuvent cepandant pas dépasser le rang 2 dans cette compétence à la création du personnage. Ils commencent également avec 1 rang dans le talent <span class=\"skill\">Persuasion</span>.",
+      "otherAbilities": []
+    },
+    {
+      "key": "droid",
+      "label": "Droïde",
+      "genders": [ "Aucun" ],
+      "description": "",
+      "characteristics": {
+        "brawn": 1,
+        "agility": 1,
+        "intellect": 1,
+        "cunning": 1,
+        "willpower": 1,
+        "presence": 1
+      },
+      "woundTreshold": "10 + Vigueur",
+      "strainTreshold": "10 + Volonté",
+      "startingXp": 175,
+      "specialAbility": "Les droïdes ne mangent pas, ne dorment pas, ne respirent pas et ne sont pas affectés par les toxines et les poisons. La limite d'implants des droïdes est égale à 6 (et non à la <strong>Vigueur</strong>). Par ailleurs, une fois sa carrière choisie, un droïde gagne 1 rang dans 6 de ses 8 compétences de carrière (au lieu des quatre habituelles). Une fois sa première spécialité choisie, il gagne 1 rang dans 3 de ses 4 compétences de spécialité (au lieu des 2 habituelles).",
+      "otherAbilities": [
+        { "label": "Inorganique", "description": "" },
+        { "label": "Etre mécanique", "description": "Les Droîdes ne peuvent pas être sensibles à la Force, ni avoir une valeur de Force. Ils ne peuvent pas employer de pouvoirs de la Force, et ne peuvent pas être affectés par les pouvoirs de la Force qui influencent les esprits." }
+      ]
+    },
+    {
+      "key": "gand",
+      "label": "Gand",
+      "genders": [ "Male", "Femelle" ],
+      "description": "Les Gands sont une espèce originaire de la planète Gand. Il s'agit d'un peuple d'insectoïdes respirant de l'ammonium, les obligeant à porter un masque respiratoire hors de leur monde natal.",
+      "characteristics": {
+        "brawn": 2,
+        "agility": 2,
+        "intellect": 2,
+        "cunning": 2,
+        "willpower": 3,
+        "presence": 1
+      },
+      "woundTreshold": "10 + Vigueur",
+      "strainTreshold": "10 + volonté",
+      "startingXp": 100,
+      "specialAbility": "Les Gands commencent le jeu avec 1 rang en <span class=\"skill\">sang-froid</span>. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "otherAbilities": [
+        { "label": "Respirateurs d'ammoniac", "description": "la grande différence entre les deux espèces de Gands, c'est que les uns ont des poumons, les autres non. Ceux qui en sont dotés respirent un mélange de gaz ammoniacés. Ceux qui n'en ont pas ne respirent pas et trouvent toutes les substances métaboliques nécessaires dans leur nourriture. Quand il joue un <span class=\"species\">Gand</span>, un joueur doit déterminer si son personnage a des poumons ou non. S'il choisit de jouer un personnage dépourvu de tels organes, il est immunisé contre la sufffocation (mais pas contre les blessures que l'on subit dans le vide). S'il préfèrent jouer un personnage avec des poumons, il commence le jeu avec un <span class=\"skill\">respiration d'amoniac</span> et traite l'oxygène comme une atmosphère dangeureuse de niveau 8. En revanche, il gagne <span class=\"skill\">+ 10 XP</span> de départ." }
+      ]
+    },
+    {
+      "key": "human",
+      "label": "Humain",
+      "genders": [ "Male", "Femelle" ],
+      "description": "On peut trouver des humains sur quasiment toutes les planètes civilisées de la galaxie, et même sur certaines planètes sauvages. Cela a donné naissance à la théorie de l'apparition simultanée de la race humaine sur plusieurs planètes distinctes. Néanmoins, il est plus probable, au vu de leurs ressemblances génétiques et des théories actuelles sur l'évolution, que tous les humains de la galaxie soient originaires d'une seule et même souche vivant à l'origine sur une seule planète. L'identité de cette planète est inconnue, et de nombreuses planètes clament ainsi être le berceau de l'humanité. Citons ainsi Coruscant, Corellia et Alderaan.",
+      "characteristics": {
+        "brawn": 2,
+        "agility": 2,
+        "intellect": 2,
+        "cunning": 2,
+        "willpower": 2,
+        "presence": 2
+      },
+      "woundTreshold": "10 + Vigueur",
+      "strainTreshold": "10 + Volonté",
+      "startingXp": 110,
+      "specialAbility": "Les humains commencent le jeu avec 1 rang dans 2 compétences hors carrière de leur choix. Ils ne peuvent cependant pas dépasser le rang 2 dans ces compétences à la création de personnage.",
+      "otherAbilities": []
+    },
+    {
+      "key": "rodian",
+      "label": "Rodien",
+      "genders": [ "Male", "Femelle" ],
+      "description": "Les Rodiens sont une espèce de reptiles humanoïdes originaire de la planète Rodia. Espèce violente et considérée comme inférieure aux humains, beaucoup quittèrent leur planète pour devenir contrebandiers ou chasseurs de primes, comme Greedo, tueur assassiné par Han Solo. D'autres faisaient honneur à leur planète et la représentaient au Sénat Galactique comme le célèbre Onaconda Farr ou combattaient au coté de l'Alliance Rebelle contre l'Empire Galactique.",
+      "characteristics": {
+        "brawn": 2,
+        "agility": 3,
+        "intellect": 2,
+        "cunning": 2,
+        "willpower": 1,
+        "presence": 2
+      },
+      "woundTreshold": "10 + Vigueur",
+      "strainTreshold": "10 + Volonté",
+      "startingXp": 100,
+      "specialAbility": "Les Rodiens commencent le jeu avec 1 rang en <span class=\"skill\">Survie</span>. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage. Les Rodiens commencent aussi le jeu avec 1 rang dans le talent <span class=\"skill\">Pisteur</span> chevronné.",
+      "otherAbilities": []
+    },
+    {
+      "key": "trandoshan",
+      "label": "Trandosien",
+      "genders": [ "Male", "Femelle" ],
+      "description": "Les Trandosiens, aussi appelés Trandoshans, sont des reptiles humanoïdes habitants de la planète Trandosha. Ils sont connus pour leur pratique de l'esclavagisme sur les Wookiees, peuple avec lequel ils sont en froid et avec qui ils eurent plusieurs guerres . Leurs vocations était principalement d'être des guerriers ou des chasseurs de primes. Ils pratiquent régulièrement la chasse et aimaient particulièrement faire de leurs victimes des trophées.",
+      "characteristics": {
+        "brawn": 3,
+        "agility": 1,
+        "intellect": 2,
+        "cunning": 2,
+        "willpower": 2,
+        "presence": 2
+      },
+      "woundTreshold": "12 + Vigueur",
+      "strainTreshold": "9 + Volonté",
+      "startingXp": 90,
+      "specialAbility": "Les Trandosiens commencent le jeu avec 1 rang en <span class=\"skill\">Perception</span>. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "otherAbilities": [
+        { "label": "Régénération", "description": "quand un <span class=\"species\">Trandosien</span> se débarrasse d'au moins 1 blessure en se reposant ou en s'immergeant dans une cuve à bacta, il en élimine une de plus. Cela ne fonctionne cependant pas quand il reçoit les premiers secours, bénéficie de soins médicaux ou d'un stimpack. Les <span class=\"species\">Trandosiens</span> peuvent également régénérer leurs membres, mais il faut attendre 1 mois avant qu'ils soient à nouveau réutilisables." },
+        { "label": "Griffes", "description": "quand un <span class=\"species\">Trandosien</span> effectue des tests de <span class=\"skill\">Pugilat</span> pour infliger des dégâts à un adversaire, il inflige <span class=\"skill\">+ 1 dégât</span> et a une valeur critique de <span class=\"skill\">3</span>" }
+      ]
+    },
+    {
+      "key": "twilek",
+      "label": "Twi'Lek",
+      "genders": [ "Male", "Femelle" ],
+      "description": "Les Twi'leks sont une espèce humanoïde originaire de la planète Ryloth, dont la peau est de différentes couleurs, en fonction de l'individu : rouge, jaune, bleue ou encore verte. Ils possédent une paire de tentacules sur le crâne appelés lekku, dont ils se servent, en plus des mots, pour parler leur langue, le Twi'leki, qui nécessite ces deux moyens pour être comprise.",
+      "characteristics": {
+        "brawn": 1,
+        "agility": 2,
+        "intellect": 2,
+        "cunning": 2,
+        "willpower": 2,
+        "presence": 3
+      },
+      "woundTreshold": "10 + Vigueur",
+      "strainTreshold": "11 + Volonté",
+      "startingXp": 100,
+      "specialAbility": "Les Twi'leks commencent le jeu avec 1 rang en <span class=\"skill\">Charme</span> ou en <span class=\"skill\">Tromperie</span>. Ils ne peuvent cependant pas dépasser le rang 2 dans la compétence choisie à la création de personnage. Quand ils effectuent des tests de compétence, ils peuvent retirer <i class=\"fa fa-square\" aria-hidden=\"true\"></i> dû à des conditions environnementales chaudes ou arides.",
+      "otherAbilities": []
+    },
+    {
+      "key": "wookie",
+      "label": "Wookie",
+      "genders": [ "Male", "Femelle" ],
+      "description": "Forts, intelligents et féroces, les Wookies sont néanmois les meilleurs amis de leur alliés loyaux, et les pires ennemis des autres. Malheureusement, les Wookies se font rares parmis la population de la galaxie et ne seront bientôt plus qu'un lointain souvenir de l'Ancienne République.",
+      "characteristics": {
+        "brawn": 3,
+        "agility": 2,
+        "intellect": 2,
+        "cunning": 2,
+        "willpower": 1,
+        "presence": 2
+      },
+      "woundTreshold": "14 + Vigueur",
+      "strainTreshold": "8 + Volonté",
+      "startingXp": 90,
+      "specialAbility": "Les Wookies commencent le jeu avec 1 rang en <span class=\"skill\">Pugilat<span>. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "otherAbilities": [
+        { 
+          "label": "Rage Wookie", "description": "quand un <span class=\"species\">Wookie</span> est blessé, ses attaques de <span class=\"skill\">Corps à Corps</span> et de <span class=\"skill\">Pugilat</span> infligent <span class=\"skill\">+ 1 points de dégâts</span>. Quand un <span class=\"species\">Wookie</span> a subit au moins 1 blessure critique, elles infligent <span class=\"skill\">+ 2 points de dégâts</span>." 
+        }
+      ]
+    },
+    {
+      "key": "duros",
+      "label": "Duros",
+      "genders": [ "Male", "Femelle" ],
+      "description": "Les Duros sont une espèce humanoïde originaire de Duro, une planète des Mondes du Noyau. Ils possédent une peau de couleur bleu grise, une paire de grands yeux rouges dépourvus de pupille, une bouche sans lèvres et un long visage sans nez. Leur sang est vert..",
+      "characteristics": {
+        "brawn": 1,
+        "agility": 2,
+        "intellect": 3,
+        "cunning": 2,
+        "willpower": 2,
+        "presence": 2
+      },
+      "woundTreshold": "",
+      "strainTreshold": "",
+      "startingXp": "",
+      "specialAbility": ""
+    },
+    {
+      "key": "gran",
+      "label": "Gran",
+      "genders": [ "Male", "Femelle" ],
+      "description": "Les Grans sont des humanoïdes mesurant 1 m 60 en moyenne, descendants d'ongulés herbivores et originaires de la planète Kinyen. Ils ont une tête ressemblant à celle d'un bouc (ou d'un veau) imberbe, trois yeux noirs protubérants, des oreilles triangulaires en éventail ainsi que de petites cornes sur le haut du crâne. Ils bénéficient d'une excellente vision et distinguent plus de couleurs que la plupart des espèces.",
+      "characteristics": {
+        "brawn": 2,
+        "agility": 2,
+        "intellect": 2,
+        "cunning": 1,
+        "willpower": 1,
+        "presence": 3
+      },
+      "woundTreshold": "",
+      "strainTreshold": "",
+      "startingXp": "",
+      "specialAbility": ""
+    },
+    {
+      "key": "ithorian",
+      "label": "ithoriens",
+      "genders": [ "Male", "Femelle" ],
+      "description": "Les Ithoriens sont des humanoïdes natifs de la planète Ithor. Ils parlent l'Ithorese et pouvent utiliser un traducteur Ithorien pour parler le basic. Les Ottegans ont été créés génétiquement à partir d'eux.",
+      "characteristics": {
+        "brawn": 2,
+        "agility": 1,
+        "intellect": 2,
+        "cunning": 2,
+        "willpower": 3,
+        "presence": 2
+      },
+      "woundTreshold": "",
+      "strainTreshold": "",
+      "startingXp": "",
+      "specialAbility": ""
+    },
+    {
+      "key": "moncalamari",
+      "label": "Mon Calamari",
+      "genders": [ "Male", "Femelle" ],
+      "description": "Les Mon Calamari, aussi appelés Calamari ou Calamariens, sont l'une des deux espèces intelligentes originaires de la planète Mon Cala.",
+      "characteristics": {
+        "brawn": 2,
+        "agility": 2,
+        "intellect": 3,
+        "cunning": 2,
+        "willpower": 2,
+        "presence": 2
+      },
+      "woundTreshold": "",
+      "strainTreshold": "",
+      "startingXp": "",
+      "specialAbility": ""
+    },
+    {
+      "key": "sullustan",
+      "label": "Sullustéen",
+      "genders": [ "Male", "Femelle" ],
+      "description": "Les Sullustéens sont une espèce humanoïde originaire de la planète Sullust. Ils sont reconnus pour leur expertise en ingénierie, économie et en sciences. Ils sont caractérisés par leurs joues tombantes.",
+      "characteristics": {
+        "brawn": 2,
+        "agility": 3,
+        "intellect": 2,
+        "cunning": 1,
+        "willpower": 2,
+        "presence": 2
+      },
+      "woundTreshold": "",
+      "strainTreshold": "",
+      "startingXp": "",
+      "specialAbility": ""
+    },
+    {
+      "key": "cereen",
+      "label": "Céeréen",
+      "genders": [ "Male", "Femelle" ],
+      "description": "Les Céréens sont une race d'extraterrestres humanoïdes originaire de la planète Céréa. Ils sont facilement identifiables à leurs grosses prédominances crâniennes dues à leur cerveau binaire. Leur cerveau est si volumineux et efficace qu'il est irrigué par un système vasculaire inédit constitué de deux cœurs.",
+      "characteristics": {
+        "brawn": 2,
+        "agility": 1,
+        "intellect": 3,
+        "cunning": 2,
+        "willpower": 2,
+        "presence": 2
+      },
+      "woundTreshold": "",
+      "strainTreshold": "",
+      "startingXp": "",
+      "specialAbility": ""
+    },
+    {
+      "key": "keldor",
+      "label": "Kel Dor",
+      "genders": [ "Male", "Femelle" ],
+      "description": "Les Kel Dors sont une race originaire de la planète Dorin. Ils ont la particularité de devoir porter un masque respiratoire nommé le masque antiox hors de leur planète car ils ne respirent pas de l'oxygène, comme la plus part des autres espèces tel que les humains, mais un mélange de gaz Dorin et d'hélium.",
+      "characteristics": {
+        "brawn": 1,
+        "agility": 2,
+        "intellect": 2,
+        "cunning": 2,
+        "willpower": 3,
+        "presence": 2
+      },
+      "woundTreshold": "",
+      "strainTreshold": "",
+      "startingXp": "",
+      "specialAbility": ""
+    },
+    {
+      "key": "mirialian",
+      "label": "Mirialian",
+      "genders": [ "Male", "Femelle" ],
+      "description": "Les Mirialans sont des Proche-Humains du à leurs ressemblances avec ces derniers. Il sont originaire de la planète Mirial. Vivant sur une planète rude et aride, quasiment désertique sur sa totalité, les Mirialans ce sont dotés d'un panel sensoriel élaboré, qui rend leur vie bien meilleure et supportable. Les Mirialans parviennent ainsi à user de leurs sens et à les contrôler totalement dans le but de limiter la souffrance de leur corps. Cette espèce appréhende la vie d'une manière paradoxale, quand on sait qu'elle est très croyante. En effet, les Mirialans ne croient pas en une fatalité qui réduit chaque individu à un rôle prédéfini.",
+      "characteristics": {
+        "brawn": 2,
+        "agility": 3,
+        "intellect": 2,
+        "cunning": 1,
+        "willpower": 2,
+        "presence": 2
+      },
+      "woundTreshold": "",
+      "strainTreshold": "",
+      "startingXp": "",
+      "specialAbility": ""
+    },
+    {
+      "key": "nautolan",
+      "label": "Nautolan",
+      "genders": [ "Male", "Femelle" ],
+      "description": "Les Nautolans sont une race de non-humain qui viennent de la planète Glee Anselm, une planète recouverte d'eau qui fait de cette race, une race amphibie. Ils vivent à la fois sur terre et dans l'eau.",
+      "characteristics": {
+        "brawn": 3,
+        "agility": 2,
+        "intellect": 2,
+        "cunning": 2,
+        "willpower": 1,
+        "presence": 2
+      },
+      "woundTreshold": "",
+      "strainTreshold": "",
+      "startingXp": "",
+      "specialAbility": ""
+    },
+    {
+      "key": "togruta",
+      "label": "Togruta",
+      "genders": [ "Male", "Femelle" ],
+      "description": "Les Togrutas sont une espèce humanoïde originaire de la planète Shili. Une colonie importante de Togruta existe aussi sur Kiros.",
+      "characteristics": {
+        "brawn": 1,
+        "agility": 2,
+        "intellect": 2,
+        "cunning": 3,
+        "willpower": 2,
+        "presence": 2
+      },
+      "woundTreshold": "",
+      "strainTreshold": "",
+      "startingXp": "",
+      "specialAbility": ""
+    },
+    {
+      "key": "zabrak",
+      "label": "Zabrak",
+      "genders": [ "Male", "Femelle" ],
+      "description": "Les Zabraks sont une espèce d'humanoïde cornue. Ils sont divisés en deux sous-espèces : les Iridoniens, originaire d'Iridonia et les Dathomiriens, originaire de Dathomir.",
+      "characteristics": {
+        "brawn": 2,
+        "agility": 2,
+        "intellect": 2,
+        "cunning": 2,
+        "willpower": 3,
+        "presence": 1
+      },
+      "woundTreshold": "",
+      "strainTreshold": "",
+      "startingXp": "",
+      "specialAbility": ""
+    }
+  ]

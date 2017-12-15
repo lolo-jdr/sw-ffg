@@ -1,0 +1,52 @@
+[
+    {
+        "dice": "01 – 10",
+        "title": "Religion/spiritualité",
+        "description": "le personnage soutient activement une organisation ou croyance religieuse ou spirituelle. Il peut s’agir de préceptes Jedi ou Sith, ou de toute autre croyance."
+    },
+    {
+        "dice": "11 – 20",
+        "title": "Les faibles/la charité",
+        "description": ": le personnage se bat pour les opprimés, et n’aime ni les brutes, ni el totalitarisme. Il fait passer les intérêts des nécessiteux avant les siens et n’hésite pas à donner du temps ou de l’argent pour les moinsfortunés"
+    },
+    {
+        "dice": "21 – 30",
+        "title": "Droits des non‐humains",
+        "description": "le personnage milite pour les droits des non‐humains malgré le règne xénophobe de l’Empire."
+    },
+    {
+        "dice": "31 – 40",
+        "title": "Politique locale",
+        "description": ": le personnage soutien une cause politique, généralement limitée à une planète ou à un système. Il s’implique activement dans les campagnes de ses candidats et peut même se battre pour le compte d’une organisation politique."
+    },
+    {
+        "dice": "41 – 50",
+        "title": "Reverser l’Empire",
+        "description": ": le personnage déteste l’Empire et tout ce qu’il incarne. Il ne compte pas forcément parmi les membres actifs de le Rébellion, mais en soutient les objectifs et apporte son aide à tous ceux qui luttent contre la tyrannie impériale."
+    },
+    {
+        "dice": "51 – 60",
+        "title": "Crime",
+        "description": ": le personnage n’a rien contre le marché noir, les mercenaires et autres groupes évoluant en marge de la loi, bien au contraire. Ce n’est pas forcément un criminel, mais il lui arrive d’accorderson aide à des gens douteux, surtout s’il s’agit de proches, d’amis d’enfance, ou si la corruption est profondément ancrée dans sa culture d’origine."
+    },
+    {
+        "dice": "61 – 70",
+        "title": "Emancipation",
+        "description": "le personnage voit l’esclavage et la servitude forcée comme des abominations qu’il faut éradiquer. Il fera tout ce qui est en son pouvoir pour aider ou tenter de libérer les victimes d’esclavage"
+    },
+    {
+        "dice": "71 – 80",
+        "title": "Droits des Droïdes",
+        "description": "le personnage croit dur comme fer que les Droïdes devraient être des membres de plein droit de la société galactique, et non de simples outils ou serviteurs."
+    },
+    {
+        "dice": "81 – 90",
+        "title": "Capitalisme",
+        "description": "le personnage est un capitaliste convaincu et milite pour les droits des marchands, des organisations de commerce et des entreprises, en allant parfois à l’encontre des souhaits de l’Empire et de certains groupe criminels."
+    },
+    {
+        "dice": "91 – 00",
+        "title": "Soutenir l’Empire",
+        "description": ": le personnage soutient les buts et méthodes de l’Empire, et fait de son mieux pour que sa cause progresse. Il défendra l’Empire à la première conversation venue et pourra même prendre les armes pour le défendre"
+    }
+]

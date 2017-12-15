@@ -1,0 +1,67 @@
+[
+    {
+        "dice": "01 – 08",
+        "title": "Addiction",
+        "description": "vous êtes soumis à une addiction (au choix du joueur sous couvert du MJ). Moins le personnage assouvit son addiction, plus celui‐ci a du mal à se concentrer sur les tâches banales, ce qui se traduit le plus souvent par l’ajout de IMAGE à de IMAGE aux tests de compétence"
+    },
+    {
+        "dice": "09 – 16",
+        "title": "Trahison",
+        "description": "soit le personnage est victime d’une trahison soit c’est le traitre lui‐même."
+    },
+    {
+        "dice": "17 – 24",
+        "title": "Chantage",
+        "description": "quelqu’un a découvert un de pires secrets du personnage"
+    },
+    {
+        "dice": "25 – 32",
+        "title": "Prime",
+        "description": "pour une raison ou pour une autre la tête du personnage est mise à prix."
+    },
+    {
+        "dice": "33 – 40",
+        "title": "Criminel",
+        "description": "le personnage à un passé criminel, ou a été accusé a tort d’un crime."
+    },
+    {
+        "dice": "41 – 48",
+        "title": "Dette",
+        "description": "le personnage doit quelque chose à quelqu’un."
+    },
+    {
+        "dice": "49 – 56",
+        "title": "Obligé",
+        "description": ": le personnage est animé par un profond sens du devoir. A la différence du serment, le PJ entretien un lien légal ou rituel avec une organisation qui lui rend la vie impossible quand il se dérobe à ses engagements"
+    },
+    {
+        "dice": "57 – 64",
+        "title": "Famille",
+        "description": ": le personnage entretient des liens étroits avec sa famille, ce qui nécessite beaucoup de temps et d’attention"
+    },
+    {
+        "dice": "65 – 72",
+        "title": "Faveur",
+        "description": "le personnage doit une grosse faveur, quoiqu’il en soit on lui demandera surement de rendre la pareille."
+    },
+    {
+        "dice": "73 – 80",
+        "title": "Serment",
+        "description": "le personnage a fait une promesse qui dicte ses pensées et actions."
+    },
+    {
+        "dice": "81 – 88",
+        "title": "Obsession",
+        "description": "le personnage à une obsession malsaine qui l’incommode au quotidien."
+    },
+    {
+        "dice": "89 – 96",
+        "title": "Responsabilité",
+        "description": "le personnage se sent particulièrement responsable d’une personne, d’un lieu ou d’une chose"
+    },
+    {
+        "dice": "97 ‐ 00",
+        "title": "Double obligation",
+        "description": "Tirez deux fois sur la table. L’obligation de départ est divisée en deux origines (le poids est aussi divisé en deux pour chaque Obligation)"
+    }
+]
