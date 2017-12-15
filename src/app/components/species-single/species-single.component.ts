@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-species-single',
@@ -8,20 +9,31 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class SpeciesSingleComponent implements OnInit {
 
-  private race: any;
+  protected isPageLoaded = false;
+
+  protected species: any;
   private sub: any;
 
-  constructor(private route: ActivatedRoute) {
-
-   }
+  constructor(private route: ActivatedRoute, private api:ApiService) { }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
-      this.race = params['race']; // (+) converts string 'id' to a number
-      console.log(this.race);
+      let speciesParam = params['species']; // (+) converts string 'id' to a number
 
-      // In a real app: dispatch action to load the details here.
-   });
+      this.api.localResource(ApiService.SPECIES).then(species => {
+        
+        if (species) {
+          var speciesToLoad = species.find(c => c.key === speciesParam);
+          if (speciesToLoad) {
+            console.log(speciesToLoad);
+            this.species = speciesToLoad;
+          }
+        }
+
+        this.isPageLoaded = true;
+      });
+
+    });
   }
 
 }

@@ -52,6 +52,22 @@
   .z-1 {
     z-index: 1; }
   
+.clickable {
+  cursor: pointer;
+}
+
+.link {
+  color: #007bff;
+}
+
+.sub-title {
+  font-weight: 600;
+}
+
+.page-title {
+  font-weight: 600;
+}
+
   #mainNav .navbar-collapse {
     overflow: auto;
     max-height: 75vh; }

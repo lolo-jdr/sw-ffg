@@ -1,0 +1,52 @@
+[
+    {
+        "dice": "01 – 10",
+        "title": "Amitié",
+        "description": "le personnage cherche à être apprécié et déploie des trésors d’imagination pour faire bonne impression. Il peut ou non avoir l’instinct grégaire, et compte sur ses actes et exploits pour se faire des amis"
+    },
+    {
+        "dice": "11 – 20",
+        "title": "Amour",
+        "description": "le personnage est animé par l’amour ou l’intimité. Il a déjà une âme sœur ou s’efforce de trouver celle qui lui est destinée"
+    },
+    {
+        "dice": "21 – 30",
+        "title": "Liberté",
+        "description": "le personnage souhaite être libre de faire ce qu’il veut. Il peut s’agir d’u désir irrépressible de surmonter une des ses Obligations ou de voir d’autres individus se défaire des fers de la servitude sous toutes ses formes."
+    },
+    {
+        "dice": "31 – 40",
+        "title": "Renommée",
+        "description": "le personnage cherche à être propulsé sous les projecteurs et veut devenir célèbre. Il souhaite que ses exploits soient diffusés sur le HoloNet et se délecte des attentions de ses fans et partisans"
+    },
+    {
+        "dice": "41 – 50",
+        "title": "Cupidité",
+        "description": "l’argent est le principal motivateur de ce personnage. Il peut se lancer dans les affaires, investir ou tout simplement se tourner vers le vol."
+    },
+    {
+        "dice": "51 – 60",
+        "title": "Statut",
+        "description": "le personnage souhaite gravir les échelons sociaux, accumuler titres, éloges et félicitations. Il peut êtred’origine modeste ou chercher à s’élever encore malgré des conditions de vie déjà très favorable"
+    },
+    {
+        "dice": "61 – 70",
+        "title": "Expertise",
+        "description": "le personnage souhaite exceller dans sa carrière et s’entraine constamment pour atteindre la perfection."
+    },
+    {
+        "dice": "71 – 80",
+        "title": "Soif de voyages/de nouveautés",
+        "description": "le personnage désire ardemment explorer la galaxie et reste rarement très longtemps au même endroit. Il est bien décidé à découvrir des régions reculées et inexplorées, et à contempler tout ce qui mérite de l’être. De même, il peut emprunter la voie de sensations et activités nouvelles, voire de l’hédonisme pur et dur"
+    },
+    {
+        "dice": "81 – 90",
+        "title": "Pouvoir",
+        "description": "le personnage a soif de pouvoir et d’autorité. Ce ‘n’est pas forcément un despote dans l’âme, mais il veut contrôler sa situation et ceux qui l’entourent, en améliorant son sort au passage"
+    },
+    {
+        "dice": "91 – 00",
+        "title": "Religion/spiritualité",
+        "description": "le personnage est attiré par une voie religieuse ou spirituelle. Il peut s’agir de préceptes Jedi ou Sith, ou de toute autre croyance"
+    }
+]

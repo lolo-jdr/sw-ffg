@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-character-creation',
@@ -7,7 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CharacterCreationComponent implements OnInit {
 
-  constructor() { }
+  protected isPageLoaded:boolean = false;
+  protected inspirations:any = [];
+
+  constructor(private api:ApiService) { 
+
+    this.api.localResource(ApiService.CHARACTER_CREATION_INSPIRATIONS).then(inspirations => {
+      
+    this.inspirations = inspirations;
+    this.isPageLoaded = true;
+
+    });
+  }
 
   ngOnInit() {
   }

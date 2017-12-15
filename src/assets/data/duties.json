@@ -1,0 +1,67 @@
+[
+    {
+        "dice": "01 – 08",
+        "title": "Vitoire militaire",
+        "description": "le personnage joueur est déterminé à prouver que l'Alliance est capable de tenir tête aux forces impériales dans un conflit armé. Il cherche à se trouver face aux meilleurs troupes de l'Empire afin d'accumuler les victoires pour le compte de l'Alliance et montrer à toute la galaxie qu'elle pourra remporter la guerre. Cela passe par des assauts audacieux, une tactique irrépochable et une puissance de feu optimale."
+    },
+    {
+        "dice": "09 – 16",
+        "title": "Contre-espionnage",
+        "description": "le PJ sait que la survie de l'Alliance dépend de son aptitude à se soustraire au regard de l'Empire afin d'éviter d'être annihilée par la supériorité militaire de son ennemi. C'est dans cette perspective qu'il traque et élimine les menaces et agents impériaux, qu'il fournit des renseignements erronés aux réseaux de l'Empire et qu'il s'emploie à camoufler les agissements de l'Alliance."
+    },
+    {
+        "dice": "17 – 24",
+        "title": "Renseignements",
+        "description": "le PJ sait que toute victoire découle de la connaissance des moyens militaires et autres atouts de l'Empire. Il a pour mission de rassembler toutes les données qui pourraient s'avérer utiles dans la localisation de cibles vulnérables que les forces de la Rébellion pourraient attaquer. Il cherche à se renseigner non seulement sur les plans des factions militaires, mais aussi sur les avancées technologiques, la politique économique et autres aspects de la puissance impériale."
+    },
+    {
+        "dice": "25 – 32",
+        "title": "Sécurité interne",
+        "description": "la menace la plus pernicieuse pour l'Alliance est issue de ses propres rangs. Tout rebelle, qu'il soit soldat, agent ou simple allié, est théoriquement un ennemi potentiel attendant le moment opportun pour miner une opération entière et entraîner de graves pertes, de biens et de personnes. Conscient que la vigilance à l'égard de ces menaces reste le moyen le plus authentique de se dévouer à la cause de l'Alliance, le PJ guette le moindre signe de perfidie."
+    },
+    {
+        "dice": "33 – 40",
+        "title": "Secours",
+        "description": "plus que les machines, les crédits ou les renseignements, l'atout le plus précieux de l'Alliance réside dans ses membres, ce que le personnage a bien compris. Il se consacre donc à veiller sur leur sécurité, leur bien-être et leurs conditions de travail. Il ne faut jamais abandonner quoi que ce soit. Les missions les plus réussies ne sont pas forcément celles où tous les objectifs ont été remplis : il s'agit plutôt de celles qui n'occasionnent pas de pertes."
+    },
+    {
+        "dice": "41 – 48",
+        "title": "Soutien politique",
+        "description": "tous les blasters, chasseurs et détonateurs thermiques de la galaxie ne sont d'aucune utilité sans une volonté politique de défier et de renverser Palpatine et son Ordre Nouveau. Le PJ ne le sait que trop bien. Il est résolu à assurer que l'Alliance ne manque pas de factions, de systèmes et de secteurs amis dans son combat contre l'Empire."
+    },
+    {
+        "dice": "49 – 56",
+        "title": "Recrutement",
+        "description": "l'affrontement contre l'Empire est en définitive une guerre d'usure, type de conflit que la Rébellion ne peut espérer remporter. Il n'en reste pas moins que des effectifs importants sont nécessaires. L'armée a besoin de soldats et de pilotes, certes, mais aussi de techniciens, d'ingénieurs, de mécaniciens, de scientifiques, de médecins, de slicer, et d'innombrables autres domaines d'expertise. Ce PJ est également conscient des risques inhérents au recrutement, mais aussi de sa nécessité. Il est constamment à l'affût d'alliés potentiels, d'individus talentueux et dignes de confiance."
+    },
+    {
+        "dice": "57 – 64",
+        "title": "Obention de ressources",
+        "description": "on n'a jamais assez de moyens pour épauler ceux qui affrontent le mastodonte impérial, ce que le PJ comprend mieux que quiconque. Il se consacre à la recherche de nouvelles sources de matières premières, de nourritures, de vêtements, d'armes, d'armures et d'équipements en tout genre. Une caisse égarée de médipacks peut sauver de nombreuses vies, tandis qu'une poignée de comlinks peut éviter l'échec cuisant d'une mission. Le PJ est prêt à négocier, quémander, emprunter et voler n'importe quoi, si c'est pour servir la cause."
+    },
+    {
+        "dice": "65 – 72",
+        "title": "Sabotage",
+        "description": "la force militaire la plus puissante de l'histoire de la galaxie est également la plus exposée au vol et à la destruction de biens. Le personnage s'attèle à saper ou à saboter les opérations impériales par tous les moyens, qu'il s'agisse d'un arsenal, de troupes en mouvement, d'un transport de marchandises, d'un système bancaire ou autre élément-clé. Par ce biais, l'Empire sera plus lent et moins efficace dans ses manœuvres. Les actes de lèse-majesté les plus spectaculaires ont également tendance à affaiblir le soutien de la population à l'Empire, ou du moins le PJ le croit-il (l'Alliance proscrit quant à elle formellement tout acte terroriste)."
+    },
+    {
+        "dice": "73 – 80",
+        "title": "Supériorité spatiale",
+        "description": "à l'image du PJ aiguillonné par les victoires terrestres et les affrontements entre soldats, ce personnage est stimulé par les conflits navals. A ses yeux la guerre se gagnera parmi les étoiles et l'Alliance compense ses effectifs réduits par la qualité et la ténacité de ses pilotes. Chaque bataille spatiale est une occasion de montrer au reste de la galaxie que l'Alliance peut non seulement remporter la guerre, mais que tel est son destin."
+    },
+    {
+        "dice": "81 – 88",
+        "title": "Technologie",
+        "description": "il n'est pas d'époque plus prolifique et productive sur le plan technologique qu'une guerre, et celle qui anime actuellement la galaxie ne fait pas exception à la règle. Le personnage considère que le meilleur atout de l'Alliance réside dans ses scientifiques, ses ingénieurs et ses techniciens. Non seulement ceux-ci savent optimiser les performances d'éléments existants, mais ils peuvent concevoir de nouveaux vaisseaux, armes et traitements médicaux : du matériel d'avant-garde, on ne peut plus précieux pour résister à la superpuissance impériale. Aux yeux du personnage, le vol des meilleures avancées de l'Empire n'est qu'un moyen d'équilibre le combat."
+    },
+    {
+        "dice": "89 – 96",
+        "title": "Renfort",
+        "description": "pris séparément, les agents de l'Alliance ne font pas le poids face à l'implacable Empire Galactique. Ce n'est que par la collaboration qu'ils peuvent espérer la victoire dans cette guerre civile. Ce personnage se consacre au soutien des autres Rebelles dans l'exercice de leur Devoir. Il ne jouit pas forcément de la reconnaisance et des gratifications reçues par ceux qu'il assiste, mais il a bien plus d'occasions d'accomplir son Devoir envers la Rébellion."
+    },
+    {
+        "dice": "97 ‐ 00",
+        "title": "Double obligation",
+        "description": "Tirez deux fois sur la table. le Devoir de départ est divisé à parts égales en deux domaines (une réussite dans l'un ou l'autre justifie une augmentation de la valeur de Devoir)."
+    }
+]

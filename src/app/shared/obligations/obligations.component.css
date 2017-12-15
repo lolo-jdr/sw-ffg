@@ -1,0 +1,7 @@
+.obligation-table .obligation-title {
+    font-weight: 600;
+}
+
+.obligation-table tbody tr > td {
+    min-width: 80px;
+}

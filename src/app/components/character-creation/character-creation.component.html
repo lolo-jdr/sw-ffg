@@ -1,3 +1,236 @@
-<p>
-  character-creation works!
-</p>
+<div class="container-fluid">
+
+  <ngx-loading [show]="!isPageLoaded" [config]="{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }"></ngx-loading>
+
+  <section *ngIf="isPageLoaded" id="characterCreation">
+
+    <div class="row page-title">
+      <div class="col-12">
+        <p>Création de personnage</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="step-title">Déterminer le concept et l'historique du personnage</p>
+        <p class="text-justify">
+          Un personnage naît d'abord sous la forme d'une idée. Le joueur veut-il interpréter un vaurien de contrebandier, un chasseur
+          de primes talentueux et redouté, un explorateur de la bordure extérieur de la galaxie ou encore un pilote expert
+          en astrogation, est-il animé par les idéaux de la rébellion ou est-il loyal à l'empire ?
+        </p>
+        <p class="text-justify">
+          Avant de commencer, le joueur doit prendre quelque instant et songer au personnage qu'il souhaite élaborer, au passé qu'il
+          souhaite lui donner. Nul ne naît complètement construit. Chaque individu est influencé par une vie de décisions
+          et d'évènement.
+        </p>
+
+        <p class="list-example">Inspirations :</p>
+
+        <ul class="fa-ul">
+          <li class="text-justify" *ngFor="let inspiration of inspirations">
+            <i class="fa fa-space-shuttle" aria-hidden="true"></i>
+            <span>{{ inspiration.title }}</span>
+            <span>{{ inspiration.description }}</span>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="step-title">Choisir une obligation / devoir / moralité</p>
+        <p>
+          <span>
+
+          </span>
+        </p>
+        <br />
+        <p>
+          <span>
+            Le joueur peut choisir son obligation, son devoir ou sa moralité à ce moment de la création de son personnage afin d'influencer
+            d'autres décisions à prendre par la suite comme l'espèce ou la carrière ; ou bien il peut y revenir ultérieurement
+            pour affiner l'historique de son personnage.
+          </span>
+        </p>
+
+        <div data-toggle="collapse" href="#obligations" aria-expanded="false" class="clickable link">
+          <p>Voir la liste des obligations&nbsp;
+            <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+          </p>
+        </div>
+        <div class="collapse" id="obligations">
+          <app-obligations type="obligations"></app-obligations>
+        </div>
+
+        <div data-toggle="collapse" href="#duties" aria-expanded="false" class="clickable link">
+          <p>Voir la liste des devoirs&nbsp;
+            <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+          </p>
+        </div>
+        <div class="collapse" id="duties">
+          <app-obligations type="duties"></app-obligations>
+        </div>
+
+        <div data-toggle="collapse" href="#moralities" aria-expanded="false" class="clickable link">
+          <p>Voir la liste des moralités&nbsp;
+            <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+          </p>
+        </div>
+        <div class="collapse" id="moralities">
+          <app-obligations type="moralities"></app-obligations>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="step-title">Déterminer l'espèce du personnage</p>
+        <p class="text-justify">
+          La galaxie foisonne d’espèces douées de conscience qui ont toutes leur lot de capacités et de croyances. L'espèce d'un personnage
+          détermine ses caractéristiques de départ -
+          <span class="characteristic">Vigeur</span>,
+          <span class="characteristic">Agilité</span>,
+          <span class="characteristic"> Intelligence</span>,
+          <span class="characteristic">Ruse</span>,
+          <span class="characteristic">Volonté</span> et
+          <span class="characteristic">Présence</span>
+          - mais également ses seuils de blessures et de stress, ainsi que ses capacités innées, ses bonus et son expérience de départ.
+        </p>
+
+        <p class="clickable link">
+          <a routerLink="/species">Liste des espèces</a>&nbsp;
+          <i class="fa fa-external-link" aria-hidden="true"></i>
+        </p>
+
+        <div data-toggle="collapse" href="#characteristicsPanel" aria-expanded="false" class="clickable link">
+          <p>Voir le descriptif des caractéristiques&nbsp;
+            <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+          </p>
+        </div>
+        <div class="collapse" id="characteristicsPanel">
+          <app-characteristics></app-characteristics>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="step-title">Choisir une carrière</p>
+        <p class="text-justify">
+          <span>
+            Une Carrière pousse un personnage sur une certaine voie, vers un certain mode de vie, mais elle n'a rien de restrictif, bien
+            au contraire. C'est une sorte d'archétype du modèle qui regroupe un ensemble de compétences et de caractéristiques
+            étroitement liées les unes aux autres. Chaque carrière propose aussi plusieurs spécialités
+            <em>(voir section suivante)</em>.
+          </span>
+          <br />
+          <br />
+          <span>
+            A chaque carrière sont associés 8 compétences que le joeur doit cocher sur sa feuille de personnage pour se rappeler qu'il
+            s'agit de compétence de carrières. Il doit ensuite en choisir 4 parmi celles-ci dans lesquelles il obtient 1
+            rang gratuit (sans dépenser de points d'expérience). Une compétence ne peut pas être choisie plusieurs fois.
+          </span>
+          <br />
+          <br />
+          <span>
+            Au cours du jeu, les compétences de carrières seront mois couteuse à améliorer que celles hors carrière.
+          </span>
+        </p>
+        <p class="clickable link">
+          <a routerLink="/careers">Liste des carrières</a>&nbsp;
+          <i class="fa fa-external-link" aria-hidden="true"></i>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="step-title">Choisir une spécialité de carrière</p>
+        <p>
+          <span>
+            Chaque carrière s'accompagne de spécialités qui conférent des capacités spéciales : les talents. A sa création, chaque personnage
+            a accès à une spécialité gratuite qui découle de sa carrière.
+          </span>
+          <br />
+          <br />
+          <span>
+            Chaque spécialité comporte également 4 compétences de carrière supplémentaires qui doivent être notées en tant que telles
+            sur la feuille de personnage. Le joueur doit choisir 2 compétences parmis ces compétences et obtient 1 rang dans
+            chacune (sans dépenser de points d'expérience). Une compétence de spécialité ne peut pas être choisie plusieurs
+            fois. En revanche, il peut développer une compétence déjà choisie lors du choix de sa carrière, auquel cas le
+            rang passe à 2.
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="step-title">Choisir une motivation</p>
+        <p>
+          <span>
+            Description motivation
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="step-title">Investir les points d'expériences</p>
+        <p>
+          <span>
+            Description PX
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="step-title">Calculer attributs dérivés</p>
+        <p>
+          <span>
+            Description attributs + dérivés
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="step-title">Choisir son équipement</p>
+        <p>
+          <span>
+            Description équipement
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="step-title">Choisir son vaisseau / véhicule</p>
+        <p>
+          <span>
+            Description vaisseau véhicule
+          </span>
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="row">
+    <div class="col-12">
+      <small>
+        Star Wars et tous les éléments associés sont © 2013 Lucasfilm Ltd & Tm. Tous droits réservés Toutes les données reproduites
+        et synthétisées ici appartiennent à Edge Entertainement © LFL 2013
+      </small>
+    </div>
+  </div>
+
+</div>

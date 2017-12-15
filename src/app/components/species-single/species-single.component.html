@@ -1,3 +1,54 @@
-<p>
-  species-single works!
-</p>
+<div class="container-fluid">
+
+	<ngx-loading [show]="!isPageLoaded" [config]="{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }"></ngx-loading>
+
+	<section *ngIf="isPageLoaded" id="speciesSingle">
+
+		<p class="page-title">Espèce: {{ species.label }}</p>
+
+		<div class="row species-characteristics">
+			<div class="col-5 text-center">
+				<img src="assets/images/species/{{ species.key }}.jpg" class="img-responsive" />
+			</div>
+			<div>
+				<div class="characteristic">
+					<p>Caractéristiques</p>
+					<p><span class="sub-title">Vigeur :</span> {{ species.characteristics.brawn }}</p>
+					<p><span class="sub-title">Agilité :</span> {{ species.characteristics.agility }}</p>
+					<p><span class="sub-title">Intelligence :</span> {{ species.characteristics.intellect }}</p>
+					<p><span class="sub-title">Ruse :</span> {{ species.characteristics.cunning }}</p>
+					<p><span class="sub-title">Volonté :</span> {{ species.characteristics.willpower }}</p>
+					<p><span class="sub-title">Présence :</span> {{ species.characteristics.presence }}</p>
+				</div>
+				<div class="characteristic-other">
+					<p><span class="sub-title">Seuil de blessure:</span> {{ species.woundTreshold }}</p>
+					<p><span class="sub-title">Seuil de stress:</span> {{ species.strainTreshold }}</p>
+					<p><span class="sub-title">PX de départ:</span> {{ species.startingXp }}</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row species-capacities">
+			<div class="col-5">
+				<p class="text-center page-title">Capacité spéciale</p>
+				<p class="text-justify" [innerHTML]="species.specialAbility"></p>
+			</div>
+			<div class="col-7" *ngIf="species.otherAbilities.length > 0">
+				<p class="text-center page-title">Autres capacités</p>
+				<p class="text-justify" *ngFor="let otherAbility of species.otherAbilities">
+					<span [innerHTML]="otherAbility.label" class="sub-title"></span>
+					<span [innerHTML]="otherAbility.description"></span>
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<p class="page-title">Description</p>
+				<p class="text-justify">{{ species.description }}</p>
+			</div>
+		</div>
+
+
+	</section>
+</div>

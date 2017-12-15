@@ -1,0 +1,16 @@
+.page-title {
+    font-weight: 600;
+}
+
+#characterCreation {
+    padding: 20px;
+}
+
+#characterCreation .step-title {
+    font-weight: 600;
+}
+
+#characterCreation .characteristic {
+    font-style: italic;
+    font-weight: 500;
+}

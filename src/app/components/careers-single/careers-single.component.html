@@ -1,0 +1,50 @@
+<div class="container-fluid">
+
+  <ngx-loading [show]="!isPageLoaded" [config]="{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }"></ngx-loading>
+
+  <section *ngIf="isPageLoaded" id="careersSingle">
+
+    <p class="page-title">Carrière: {{ career.label }}</p>
+
+    <div class="row career-skills">
+      <div class="col-5">
+        <img src="assets/images/careers/{{ career.key }}.jpg" class="img-responsive" />
+      </div>
+      <div>
+        <div class="skills">
+          <p>Compétences de carrière</p>
+          <p>
+            <small>(4 à choisir parmi les 8)</small>
+          </p>
+          <p *ngFor="let skill of career.skills">
+            <span class="sub-title">{{ skill.label}}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      {{ career.description }}
+    </div>
+
+
+    <div class="row">
+      <div class="card-deck">
+        <div class="card" *ngFor="let specialization of career.specialization">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">{{ specialization.label }}</h4>
+            <p class="card-text text-justify" [innerHtml]="specialization.description"></p>
+          </div>
+          <div class="card-footer text-center">
+            <small class="text-muted">
+
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</div>

@@ -1,0 +1,52 @@
+[
+    {
+        "dice": "01 – 10",
+        "title": "Lieu d’origine",
+        "description": "le personnage est très fier de l’endroit où il a grandi. Il peut s’agir d’une planète, d’une ville, d’une station spatiale ou d’un vaisseau. Il s’efforce d’améliorer les conditions de vie des gens qui y habitent et se montre prêt à se sacrifier pour les défendre"
+    },
+    {
+        "dice": "11 – 20",
+        "title": "Animal de compagnie",
+        "description": "le personnage est proche d’un animal de compagnie de petite taille qui ne combat pas."
+    },
+    {
+        "dice": "21 – 30",
+        "title": "Ami d’enfance",
+        "description": "le personnage entretien des liens avec un ami d’enfance. Même si la galaxie les sépare, il ne souhaite que son bien"
+    },
+    {
+        "dice": "31 – 40",
+        "title": "Camarades",
+        "description": "le personnage est loyal envers ceux aux côtés desquels il sert. Il peut s’agir de son groupe de PJ, d’anciens compagnons d’armes ou de partenaires commerciaux."
+    },
+    {
+        "dice": "41 – 50",
+        "title": "Frères et sœurs",
+        "description": "le personnage a un ou plusieurs frères et sœurs avec qui il entretient des liens étroits. Il ne s’agit ans doute pas de combattants et cette Motivation peut s’aligner sur une Obligation de famille."
+    },
+    {
+        "dice": "51 – 60",
+        "title": "Mentor",
+        "description": "le personnage est très proche d’un mentor, professeur, enseignant ou tout autre individu lui ayant jadis prodigué son soutien, ses connaissances ou sa sagesse."
+    },
+    {
+        "dice": "61 – 70",
+        "title": "Parents",
+        "description": "le personnage entretien des liens étroits avec un de ses parents ou les deux, et cherche constamment leur approbation. Il ne s’agit pas forcément d’une situation saine ou fondée sur la solidarité."
+    },
+    {
+        "dice": "71 – 80",
+        "title": "Faille/clan étendu",
+        "description": "le personnage a une très grande famille (à moins qu’il ne s’agisse d’un clan ou d’une tribu) qu’il aime profondément. Aussi nombreux soient ces parents, qui cherchent peut‐être tous à le gagner à leur cause personnelle, il s’efforce d’obtenir leur approbation et leur réconfort communs."
+    },
+    {
+        "dice": "81 – 90",
+        "title": "Compagnon Droïde",
+        "description": "le personnage apprécie tout particulièrement un certain Droïde. Il peut s’agir d’un ancien serviteur familial, de l’astromech de son vaisseau ou de son unité de protocole de confiance. Cela peut aussi être un Droïde PJ."
+    },
+    {
+        "dice": "91 – 00",
+        "title": "Vieil ennemi ",
+        "description": "le personnage a noué un lien étroit avec un vieil ennemi ou un ancien rival. Bien que les choses soient réglées entre eux, la compétition est peut‐être encore très vive."
+    }
+]

@@ -4,7 +4,8 @@ import { SpeciesListComponent } from './components/species-list/species-list.com
 import { CharacterCreationComponent } from './components/character-creation/character-creation.component';
 import { RulesComponent } from './components/rules/rules.component';
 import { SpeciesSingleComponent } from './components/species-single/species-single.component';
-import { CareerListComponent } from './components/career-list/career-list.component';
+import { CareersListComponent } from './components/careers-list/careers-list.component';
+import { CareersSingleComponent } from './components/careers-single/careers-single.component';
 
 
 const routes: Routes = [
@@ -12,8 +13,9 @@ const routes: Routes = [
   { path: '', component: RulesComponent },
   { path: 'rules', component: RulesComponent },
   { path: 'species', component: SpeciesListComponent },
-  { path: 'species/:race', component: SpeciesSingleComponent },
-  { path: 'careers', component: CareerListComponent },
+  { path: 'species/:species', component: SpeciesSingleComponent },
+  { path: 'careers', component: CareersListComponent },
+  { path: 'careers/:career', component: CareersSingleComponent },
   { path: 'character-creation', component: CharacterCreationComponent },
 ];
 

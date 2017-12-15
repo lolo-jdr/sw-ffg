@@ -1,0 +1,17 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ #careersSingle .career-skills {
+     margin-bottom: 20px;
+ }
+
+ #careersSingle .career-skills img {
+     width: 100%;
+     max-width: 400px;
+ }
+
+ #careersSingle .career-skills .skills p:first-child {
+    margin-bottom: 0px;
+}

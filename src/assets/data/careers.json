@@ -1,0 +1,686 @@
+[
+    { 
+        "key": "bounty-hunter",
+        "label": "Chasseur de prime",
+        "description": "Comme son nom l'indique, ce type d'individu cherche à ramasser des primes en échanges de son travail. Les <span class=\"career\">Chasseurs de primes</span> sont généralement craints, détestés et méprisés, et pourtant demandés partout dans la galaxie. Ce sont des pisteurs redoutables, des combattants brutaux et d'excellent enquêteurs. Ils préfèrent généralement les magouilles, la discrétion et les pièges aux assauts frontaux, mais les plus respectés font le nécessaire pour capturer leurs proies et récupérer leur dû.",
+        "skills": [
+            { 
+                "key": "",
+                "label": "Athlétisme"
+            },
+            { 
+                "key": "",
+                "label": "Distance (armes lourdes)"
+            },
+            { 
+                "key": "",
+                "label": "Perception"
+            },
+            { 
+                "key": "",
+                "label": "Pilotage (planétaire)"
+            },
+            { 
+                "key": "",
+                "label": "Pilotage (espace)"
+            },
+            { 
+                "key": "",
+                "label": "Pugilat"
+            },
+            { 
+                "key": "",
+                "label": "Système D"
+            },
+            { 
+                "key": "",
+                "label": "Vigilance"
+            }
+        ],
+        "specialization": [
+            {
+                "key": "assassin",
+                "label": "Assassin",
+                "description": "Si la plupart des chasseurs de primes cherchent à capturer leurs proies, les <span class=\"career\">Assassins</span> sont généralement chargés de mettre un terme à l'existance de leurs cibles. Malgré leurs méthodes différentes, les <span class=\"career\">Assassins</span> adhèrent habituellement aux mêmes pratiques et à la même éthique que les autres <span class=\"career\">Chasseurs de primes</span>. Ils prennent leur travail au sérieux, évitent les bains de sang inutiles et honorent leurs contrats à la lettre. Certains voient leur méthode avec respect, en leur accordant même un caractère mystique. D'autres voient en eux des tueurs de sang-froid, point barre.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Corps à corps"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Discrétion"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Distance (armes lourdes)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Magouilles"
+                    }
+                ]
+            },
+            {
+                "key": "gadgeteer",
+                "label": "Expert en gadgets",
+                "description": "Quand on songe aux risques énormes que prennent les <span class=\"career\">Chasseurs de primes</span> (leurs proies ont souvent des amis ou employeurs qui se démènent pour les protéger), il n'est pas surprenant de constater que beaucoup s'équipent de gadgets et d'armes de haute technologie. L'<span class=\"career\">Expert en gadgets</span> a le chic pour remplacer une unité complète, du moins pendant quelques secondes. Utilisant les tout derniers bijoux technologiques et son équipement personnalisé, le <span class=\"career\">Chasseur de primes</span> doté de cette spécialité peut s'avérer difficile à arrêter.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Pugilat"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Coercition"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Mécanique"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Distance (armes légères)"
+                    }
+                ]
+            },
+            {
+                "key": "survivalist",
+                "label": "Expert en survie",
+                "description": "Loin de la civilisation, dans les régions les plus reculées de la galaxie, il y a des endroits que peu d'espèces douées de conscience ont déjà foulées, et des terres vierges de toute occupation. Ce sont des cachettes idéalespour ceux qui fuient la justice ou la vengeance d'un ennemi, des endroits où les <span class=\"career\">Chasseurs de primes</span> spécialisés en survie n'ont aucun mal à prospérer. Tous les événements qui agitent la galaxie ne se déroulent pas en ville ou dans l'espace. En fait, la plupart des endroits habitables de la galaxie sont ruraux ou sauvages. Une spécialité d'<span class=\"career\">Expert en survie</span> offre au personnage les connaissances et l'entraînement nécessaire pour se frayer un chemin dans ce genre d'environnment.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Connaissance (Xénologie)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Perception"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Résistance"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Survie"
+                    }
+                ]
+            }
+        ],
+        "univers": "civil"
+    },
+    { 
+        "key": "colon",
+        "label": "Colon",
+        "description": "",
+        "skills": [
+            { 
+                "key": "",
+                "label": "Charme"
+            },
+            { 
+                "key": "",
+                "label": "Commandement"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (Mondes du Noyau),"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (Éducation)"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (Culture),"
+            },
+            { 
+                "key": "",
+                "label": "Négociation"
+            },
+            { 
+                "key": "",
+                "label": "Système D"
+            },
+            { 
+                "key": "",
+                "label": "Tromperie"
+            }
+        ],
+        "specialization": [
+            {
+                "key": "",
+                "label": "Médecin",
+                "description": "",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Calme"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Connaissance (Éducation)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Médecine"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Résistance"
+                    }
+                ]
+            },
+            {
+                "key": "",
+                "label": "Diplomate",
+                "description": "",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Charme"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Coercition"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Connaissance (Mondes du Noyau)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Tromperie"
+                    }
+                ]
+            },
+            {
+                "key": "",
+                "label": "Érudit",
+                "description": "",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Connaissance (Bordure extérieure)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Connaissance (Pègre)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Connaissance (Xénologie)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Perception"
+                    }
+                ]
+            }
+        ],
+        "univers": "civil"
+    },
+    { 
+        "key": "explorer",
+        "label": "Explorateur",
+        "description": "",
+        "skills": [
+            { 
+                "key": "",
+                "label": "Astrogation"
+            },
+            { 
+                "key": "",
+                "label": "Calme"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (Bordure extérieure)"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (Culture)"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (Xénologie)"
+            },
+            { 
+                "key": "",
+                "label": "Perception"
+            },
+            { 
+                "key": "",
+                "label": "Pilotage (espace)"
+            },
+            { 
+                "key": "",
+                "label": "Survie"
+            }
+        ],
+        "specialization": [
+            {
+                "key": "",
+                "label": "Bourlingueur",
+                "description": "",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Astrogation"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Coordination"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Négociation"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Système D"
+                    }
+                ]
+            },
+            {
+                "key": "",
+                "label": "Éclaireur",
+                "description": "",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Athlétisme"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Médecine"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Pilotage (planétaire)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Survie"
+                    }
+                ]
+            },
+            {
+                "key": "",
+                "label": "Négociant",
+                "description": "",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Connaissance (Mondes du Noyau)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Connaissance (Pègre)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Négociation"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Tromperie"
+                    }
+                ]
+            }
+        ],
+        "univers": "civil"
+    },
+    {
+        "key": "mercenary",
+        "label": "Mercenaire",
+        "description": "",
+        "skills": [
+            { 
+                "key": "",
+                "label": "Athlétisme"
+            },
+            { 
+                "key": "",
+                "label": "Corps à corps"
+            },
+            { 
+                "key": "",
+                "label": "Distance (armes légères)"
+            },
+            { 
+                "key": "",
+                "label": "Pilotage (planétaire)"
+            },
+            { 
+                "key": "",
+                "label": "Pugilat"
+            },
+            { 
+                "key": "",
+                "label": "Résistance"
+            },
+            { 
+                "key": "",
+                "label": "Sang-froid"
+            },
+            { 
+                "key": "",
+                "label": "Vigilance"
+            }
+        ],
+        "specialization": [
+            {
+                "key": "",
+                "label": "Garde du corps",
+                "description": "",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Artillerie"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Distance (armes lourdes)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Perception"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Pilotage (planétaire)"
+                    }
+                ]
+            },
+            {
+                "key": "",
+                "label": "Maraudeur",
+                "description": "",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Coercition"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Corps à corps"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Résistance"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Survie"
+                    }
+                ]
+            },
+            {
+                "key": "",
+                "label": "Soldat à louer",
+                "description": "",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Artillerie"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Commandement"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Distance (armes lourdes)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Sang-froid"
+                    }
+                ]
+            }
+        ],
+        "univers": "civil"
+    },
+    {
+        "key": "smuggler",
+        "label": "Contrebandier",
+        "description": "",
+        "skills": [
+            { 
+                "key": "",
+                "label": "Connaissance (Pègre)"
+            },
+            { 
+                "key": "",
+                "label": "Coordination"
+            },
+            { 
+                "key": "",
+                "label": "Magouilles"
+            },
+            { 
+                "key": "",
+                "label": "Perception"
+            },
+            { 
+                "key": "",
+                "label": "Pilotage (espace)"
+            },
+            { 
+                "key": "",
+                "label": "Système D"
+            },
+            { 
+                "key": "",
+                "label": "Tromperie"
+            },
+            { 
+                "key": "",
+                "label": "Vigilance"
+            }
+        ],
+        "specialization": [
+            {
+                "key": "",
+                "label": "Pilote",
+                "description": "",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Astrogation"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Artillerie"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Pilotage (planétaire)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Pilotage (espace)"
+                    }
+                ]
+            },
+            {
+                "key": "",
+                "label": "Vaurien",
+                "description": "",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Calme"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Charme"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Distance (armes légères)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Tromperie"
+                    }
+                ]
+            },
+            {
+                "key": "",
+                "label": "Voleur",
+                "description": "",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Discrétion"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Informatique"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Magouilles"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Vigilance"
+                    }
+                ]
+            }
+        ],
+        "univers": "civil"
+    },
+    { 
+        "key": "technician",
+        "label": "Technicien",
+        "description": "",
+        "skills": [
+            { 
+                "key": "",
+                "label": "Astrogation"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (Bordure extérieure),"
+            },
+            { 
+                "key": "",
+                "label": "Coordination"
+            },
+            { 
+                "key": "",
+                "label": "Informatique"
+            },
+            { 
+                "key": "",
+                "label": "Mécanique"
+            },
+            { 
+                "key": "",
+                "label": "Perception"
+            },
+            { 
+                "key": "",
+                "label": "Pilotage (planétaire)"
+            },
+            { 
+                "key": "",
+                "label": "Sang-froid"
+            }
+        ],
+        "specialization": [
+            {
+                "key": "",
+                "label": "Mécanicien",
+                "description": "",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Magouilles"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Mécanique"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Pilotage (espace)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Pugilat"
+                    }
+                ]
+            },
+            {
+                "key": "",
+                "label": "Tech hors-la-loi",
+                "description": "",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Connaissance (Éducation)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Connaissance (Pègre)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Mécanique"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Système D"
+                    }
+                ]
+            },
+            {
+                "key": "",
+                "label": "Slicer",
+                "description": "",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Connaissance (Éducation)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Connaissance (Pègre),"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Discrétion"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Informatique"
+                    }
+                ]
+            }
+        ],
+        "univers": "civil"
+    }
+]
