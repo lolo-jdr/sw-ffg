@@ -91,7 +91,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-header></app-header>\n<div class=\"content-wrapper\">\n  <div class=\"container-fluid\">\n    <router-outlet></router-outlet>\n  </div>\n</div>\n"
+module.exports = "<app-header></app-header>\n<div class=\"content-wrapper\">\n  <div class=\"container-fluid\">\n    <router-outlet></router-outlet>\n  </div>\n</div>\n<app-footer></app-footer>"
 
 /***/ }),
 
@@ -149,12 +149,14 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__shared_obligations_obligations_component__ = __webpack_require__("../../../../../src/app/shared/obligations/obligations.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__shared_characteristics_characteristics_component__ = __webpack_require__("../../../../../src/app/shared/characteristics/characteristics.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_careers_single_careers_single_component__ = __webpack_require__("../../../../../src/app/components/careers-single/careers-single.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__layout_footer_footer_component__ = __webpack_require__("../../../../../src/app/layout/footer/footer.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -188,7 +190,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_14__components_careers_list_careers_list_component__["a" /* CareersListComponent */],
                 __WEBPACK_IMPORTED_MODULE_15__shared_obligations_obligations_component__["a" /* ObligationsComponent */],
                 __WEBPACK_IMPORTED_MODULE_16__shared_characteristics_characteristics_component__["a" /* CharacteristicsComponent */],
-                __WEBPACK_IMPORTED_MODULE_17__components_careers_single_careers_single_component__["a" /* CareersSingleComponent */]
+                __WEBPACK_IMPORTED_MODULE_17__components_careers_single_careers_single_component__["a" /* CareersSingleComponent */],
+                __WEBPACK_IMPORTED_MODULE_18__layout_footer_footer_component__["a" /* FooterComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -219,7 +222,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "#careersList .card {\r\n    margin-bottom: 30px;\r\n}\r\n\r\n#careersList .card .card-img-top {\r\n    max-height: 160px;\r\n}\r\n\r\n#careersList .eoe {\r\n    border: 2px solid brown;\r\n}\r\n\r\n#careersList .aor {\r\n    border: 2px solid red;\r\n}\r\n\r\n#careersList .fad {\r\n    border: 2px solid green;\r\n}\r\n\r\n#careersList .card-footer {\r\n    padding: 2px;\r\n}\r\n\r\n#careersList .card-footer img {\r\n    max-width:100%;\r\n} \r\n\r\n", ""]);
 
 // exports
 
@@ -232,7 +235,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/careers-list/careers-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\" id=\"careersList\">\n\n  <ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\n\n  <section *ngIf=\"isPageLoaded\" id=\"careersList\">\n\n    <div class=\"card-deck\" *ngFor=\"let careerLine of careers\">\n      <div class=\"card clickable\" *ngFor=\"let career of careerLine\" routerLink=\"/careers/{{ career.key }}\">\n        <img class=\"card-img-top\" src=\"...\" alt=\"Card image cap\">\n        <div class=\"card-body\">\n          <h4 class=\"card-title\">{{ career.label }}</h4>\n          <p class=\"card-text text-justify\" [innerHtml]=\"career.description\"></p>\n        </div>\n        <div class=\"card-footer text-center\">\n          <small class=\"text-muted\">\n            \n          </small>\n        </div>\n      </div>\n    </div>\n  </section>\n</div>"
+module.exports = "<div class=\"container-fluid\" id=\"careersList\">\n\n  <ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\n\n  <section *ngIf=\"isPageLoaded\" id=\"careersList\">\n\n    <div class=\"card-deck\" *ngFor=\"let careerLine of careers\">\n      <div class=\"card clickable\" *ngFor=\"let career of careerLine\" routerLink=\"/careers/{{ career.key }}\" [ngClass]=\"{'eoe': career.universKey == 'eoe', 'aor': career.universKey == 'aor', 'fad': career.universKey == 'fad'}\">\n        <img class=\"card-img-top\" src=\"assets/images/careers/{{ career.key }}-h.jpg\" alt=\"Card image cap\">\n        <div class=\"card-body\">\n          <h4 class=\"card-title\">{{ career.label }}</h4>\n          <p class=\"card-text text-justify\" [innerHtml]=\"career.descriptionShort\"></p>\n        </div>\n        <div class=\"card-footer text-center\">\n          <small class=\"text-muted\">{{ career.univers }}</small>\n        </div>\n      </div>\n    </div>\n  </section>\n</div>"
 
 /***/ }),
 
@@ -303,7 +306,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".row {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-wrap: wrap;\r\n        flex-wrap: wrap;\r\n }\r\n\r\n #careersSingle .career-skills {\r\n     margin-bottom: 20px;\r\n }\r\n\r\n #careersSingle .career-skills img {\r\n     width: 100%;\r\n     max-width: 400px;\r\n }\r\n\r\n #careersSingle .career-skills .skills p:first-child {\r\n    margin-bottom: 0px;\r\n}", ""]);
+exports.push([module.i, ".row {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-wrap: wrap;\r\n        flex-wrap: wrap;\r\n }\r\n\r\n#careersSingle .card {\r\n    margin-bottom: 30px;\r\n}\r\n\r\n#careersSingle .career-skills {\r\n     margin-bottom: 20px;\r\n }\r\n\r\n#careersSingle .career-skills img {\r\n     width: 100%;\r\n     max-width: 400px;\r\n }\r\n\r\n#careersSingle .career-skills .skills p:first-child {\r\n    margin-bottom: 0px;\r\n}\r\n\r\n#careersSingle .block {\r\n    padding: 20px;\r\n}\r\n\r\n#careersSingle .career-specializations .card-title {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n#careersSingle .specialization-label {\r\n    font-weight: 600;\r\n    margin-bottom: 0px;\r\n}\r\n\r\n#careersSingle .career-specializations img {\r\n    max-width: 100px;\r\n}\r\n\r\n#careersSingle .career-specialization-skills {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n#careersSingle .career-specialization-skills p:first-child small {\r\n    margin-bottom: 10px;\r\n    font-weight: 600;\r\n}\r\n\r\n#careersSingle .career-specialization-skills p {\r\n    margin-bottom: 0px;\r\n}\r\n\r\n /* Responsive */\r\n\r\n @media (max-width: 700px) {\r\n    #careersSingle .career-skills .skills {\r\n        padding-left: 25%;\r\n    }   \r\n}", ""]);
 
 // exports
 
@@ -316,7 +319,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/careers-single/careers-single.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n\n  <ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\n\n  <section *ngIf=\"isPageLoaded\" id=\"careersSingle\">\n\n    <p class=\"page-title\">Carrière: {{ career.label }}</p>\n\n    <div class=\"row career-skills\">\n      <div class=\"col-5\">\n        <img src=\"assets/images/careers/{{ career.key }}.jpg\" class=\"img-responsive\" />\n      </div>\n      <div>\n        <div class=\"skills\">\n          <p>Compétences de carrière</p>\n          <p>\n            <small>(4 à choisir parmi les 8)</small>\n          </p>\n          <p *ngFor=\"let skill of career.skills\">\n            <span class=\"sub-title\">{{ skill.label}}</span>\n          </p>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"row\">\n      {{ career.description }}\n    </div>\n\n\n    <div class=\"row\">\n      <div class=\"card-deck\">\n        <div class=\"card\" *ngFor=\"let specialization of career.specialization\">\n          <img class=\"card-img-top\" src=\"...\" alt=\"Card image cap\">\n          <div class=\"card-body\">\n            <h4 class=\"card-title\">{{ specialization.label }}</h4>\n            <p class=\"card-text text-justify\" [innerHtml]=\"specialization.description\"></p>\n          </div>\n          <div class=\"card-footer text-center\">\n            <small class=\"text-muted\">\n\n            </small>\n          </div>\n        </div>\n      </div>\n    </div>\n\n  </section>\n\n</div>"
+module.exports = "<div class=\"container-fluid\">\n\n  <ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\n\n  <section *ngIf=\"isPageLoaded\" id=\"careersSingle\">\n\n    <div class=\"row page-title\">\n      <div class=\"page-title-label\">\n        <p>{{ career.label }}</p>\n      </div>\n    </div>\n\n    <div class=\"row career-skills\">\n      <div class=\"col-sm block text-center\">\n        <img src=\"assets/images/careers/{{ career.key }}.jpg\" class=\"img-responsive\" />\n      </div>\n      <div class=\"col-sm block\">\n        <div class=\"skills\">\n          <p>Compétences de carrière</p>\n          <p>\n            <small>(4 à choisir parmi les 8)</small>\n          </p>\n          <p *ngFor=\"let skill of career.skills\">\n            <span class=\"sub-title\">{{ skill.label}}</span>\n          </p>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"row career-description\">\n      <div class=\"col-sm\">\n        <div class=\"row\">\n          <div class=\"col-sm text-center\">\n            <p class=\"sub-title\">Description</p>\n          </div>\n        </div>\n        <div class=\"col-sm text-center\"></div>\n        <div class=\"row block\">\n          <p class=\"text-justify\">{{ career.description }}</p>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"row career-specializations\">\n      <div class=\"card-deck\">\n        <div class=\"card\" *ngFor=\"let specialization of career.specialization\">\n          <div class=\"card-body\">\n            <div class=\"card-title\">\n              <p class=\"specialization-label text-center\">{{ specialization.label }}</p>\n              <p class=\"text-center\"><small><em>{{ specialization.subLabel }}</em></small></p>\n            </div>\n            <div class=\"row career-specialization-skills\">\n              <div class=\"col-sm text-center\">\n                <img src=\"assets/images/careers/specialization/{{ specialization.key }}.png\" />\n              </div>\n              <div class=\"col-sm\">\n                <p>\n                  <small>Compétences de spécialisation</small>\n                </p>\n                <p *ngFor=\"let skill of specialization.skills\">\n                  <span>\n                    <small>{{ skill.label }}</small>\n                  </span>\n                </p>\n              </div>\n            </div>\n            <p class=\"card-text text-justify\" [innerHtml]=\"specialization.description\"></p>\n          </div>\n        </div>\n      </div>\n    </div>\n\n\n\n  </section>\n\n</div>"
 
 /***/ }),
 
@@ -328,6 +331,7 @@ module.exports = "<div class=\"container-fluid\">\n\n  <ngx-loading [show]=\"!is
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_api_service__ = __webpack_require__("../../../../../src/app/services/api.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_helper_service__ = __webpack_require__("../../../../../src/app/services/helper.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -340,10 +344,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var CareersSingleComponent = (function () {
-    function CareersSingleComponent(route, api) {
+    function CareersSingleComponent(route, api, helper) {
         this.route = route;
         this.api = api;
+        this.helper = helper;
         this.isPageLoaded = false;
     }
     CareersSingleComponent.prototype.ngOnInit = function () {
@@ -368,7 +374,7 @@ var CareersSingleComponent = (function () {
             template: __webpack_require__("../../../../../src/app/components/careers-single/careers-single.component.html"),
             styles: [__webpack_require__("../../../../../src/app/components/careers-single/careers-single.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_2__services_api_service__["a" /* ApiService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_2__services_api_service__["a" /* ApiService */], __WEBPACK_IMPORTED_MODULE_3__services_helper_service__["a" /* HelperService */]])
     ], CareersSingleComponent);
     return CareersSingleComponent;
 }());
@@ -398,7 +404,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/character-creation/character-creation.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n\n  <ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\n\n  <section *ngIf=\"isPageLoaded\" id=\"characterCreation\">\n\n    <div class=\"row page-title\">\n      <div class=\"col-12\">\n        <p>Création de personnage</p>\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Déterminer le concept et l'historique du personnage</p>\n        <p class=\"text-justify\">\n          Un personnage naît d'abord sous la forme d'une idée. Le joueur veut-il interpréter un vaurien de contrebandier, un chasseur\n          de primes talentueux et redouté, un explorateur de la bordure extérieur de la galaxie ou encore un pilote expert\n          en astrogation, est-il animé par les idéaux de la rébellion ou est-il loyal à l'empire ?\n        </p>\n        <p class=\"text-justify\">\n          Avant de commencer, le joueur doit prendre quelque instant et songer au personnage qu'il souhaite élaborer, au passé qu'il\n          souhaite lui donner. Nul ne naît complètement construit. Chaque individu est influencé par une vie de décisions\n          et d'évènement.\n        </p>\n\n        <p class=\"list-example\">Inspirations :</p>\n\n        <ul class=\"fa-ul\">\n          <li class=\"text-justify\" *ngFor=\"let inspiration of inspirations\">\n            <i class=\"fa fa-space-shuttle\" aria-hidden=\"true\"></i>\n            <span>{{ inspiration.title }}</span>\n            <span>{{ inspiration.description }}</span>\n          </li>\n        </ul>\n\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Choisir une obligation / devoir / moralité</p>\n        <p>\n          <span>\n\n          </span>\n        </p>\n        <br />\n        <p>\n          <span>\n            Le joueur peut choisir son obligation, son devoir ou sa moralité à ce moment de la création de son personnage afin d'influencer\n            d'autres décisions à prendre par la suite comme l'espèce ou la carrière ; ou bien il peut y revenir ultérieurement\n            pour affiner l'historique de son personnage.\n          </span>\n        </p>\n\n        <div data-toggle=\"collapse\" href=\"#obligations\" aria-expanded=\"false\" class=\"clickable link\">\n          <p>Voir la liste des obligations&nbsp;\n            <i class=\"fa fa-long-arrow-down\" aria-hidden=\"true\"></i>\n          </p>\n        </div>\n        <div class=\"collapse\" id=\"obligations\">\n          <app-obligations type=\"obligations\"></app-obligations>\n        </div>\n\n        <div data-toggle=\"collapse\" href=\"#duties\" aria-expanded=\"false\" class=\"clickable link\">\n          <p>Voir la liste des devoirs&nbsp;\n            <i class=\"fa fa-long-arrow-down\" aria-hidden=\"true\"></i>\n          </p>\n        </div>\n        <div class=\"collapse\" id=\"duties\">\n          <app-obligations type=\"duties\"></app-obligations>\n        </div>\n\n        <div data-toggle=\"collapse\" href=\"#moralities\" aria-expanded=\"false\" class=\"clickable link\">\n          <p>Voir la liste des moralités&nbsp;\n            <i class=\"fa fa-long-arrow-down\" aria-hidden=\"true\"></i>\n          </p>\n        </div>\n        <div class=\"collapse\" id=\"moralities\">\n          <app-obligations type=\"moralities\"></app-obligations>\n        </div>\n\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Déterminer l'espèce du personnage</p>\n        <p class=\"text-justify\">\n          La galaxie foisonne d’espèces douées de conscience qui ont toutes leur lot de capacités et de croyances. L'espèce d'un personnage\n          détermine ses caractéristiques de départ -\n          <span class=\"characteristic\">Vigeur</span>,\n          <span class=\"characteristic\">Agilité</span>,\n          <span class=\"characteristic\"> Intelligence</span>,\n          <span class=\"characteristic\">Ruse</span>,\n          <span class=\"characteristic\">Volonté</span> et\n          <span class=\"characteristic\">Présence</span>\n          - mais également ses seuils de blessures et de stress, ainsi que ses capacités innées, ses bonus et son expérience de départ.\n        </p>\n\n        <p class=\"clickable link\">\n          <a routerLink=\"/species\">Liste des espèces</a>&nbsp;\n          <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>\n        </p>\n\n        <div data-toggle=\"collapse\" href=\"#characteristicsPanel\" aria-expanded=\"false\" class=\"clickable link\">\n          <p>Voir le descriptif des caractéristiques&nbsp;\n            <i class=\"fa fa-long-arrow-down\" aria-hidden=\"true\"></i>\n          </p>\n        </div>\n        <div class=\"collapse\" id=\"characteristicsPanel\">\n          <app-characteristics></app-characteristics>\n        </div>\n      </div>\n\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Choisir une carrière</p>\n        <p class=\"text-justify\">\n          <span>\n            Une Carrière pousse un personnage sur une certaine voie, vers un certain mode de vie, mais elle n'a rien de restrictif, bien\n            au contraire. C'est une sorte d'archétype du modèle qui regroupe un ensemble de compétences et de caractéristiques\n            étroitement liées les unes aux autres. Chaque carrière propose aussi plusieurs spécialités\n            <em>(voir section suivante)</em>.\n          </span>\n          <br />\n          <br />\n          <span>\n            A chaque carrière sont associés 8 compétences que le joeur doit cocher sur sa feuille de personnage pour se rappeler qu'il\n            s'agit de compétence de carrières. Il doit ensuite en choisir 4 parmi celles-ci dans lesquelles il obtient 1\n            rang gratuit (sans dépenser de points d'expérience). Une compétence ne peut pas être choisie plusieurs fois.\n          </span>\n          <br />\n          <br />\n          <span>\n            Au cours du jeu, les compétences de carrières seront mois couteuse à améliorer que celles hors carrière.\n          </span>\n        </p>\n        <p class=\"clickable link\">\n          <a routerLink=\"/careers\">Liste des carrières</a>&nbsp;\n          <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>\n        </p>\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Choisir une spécialité de carrière</p>\n        <p>\n          <span>\n            Chaque carrière s'accompagne de spécialités qui conférent des capacités spéciales : les talents. A sa création, chaque personnage\n            a accès à une spécialité gratuite qui découle de sa carrière.\n          </span>\n          <br />\n          <br />\n          <span>\n            Chaque spécialité comporte également 4 compétences de carrière supplémentaires qui doivent être notées en tant que telles\n            sur la feuille de personnage. Le joueur doit choisir 2 compétences parmis ces compétences et obtient 1 rang dans\n            chacune (sans dépenser de points d'expérience). Une compétence de spécialité ne peut pas être choisie plusieurs\n            fois. En revanche, il peut développer une compétence déjà choisie lors du choix de sa carrière, auquel cas le\n            rang passe à 2.\n          </span>\n        </p>\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Choisir une motivation</p>\n        <p>\n          <span>\n            Description motivation\n          </span>\n        </p>\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Investir les points d'expériences</p>\n        <p>\n          <span>\n            Description PX\n          </span>\n        </p>\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Calculer attributs dérivés</p>\n        <p>\n          <span>\n            Description attributs + dérivés\n          </span>\n        </p>\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Choisir son équipement</p>\n        <p>\n          <span>\n            Description équipement\n          </span>\n        </p>\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Choisir son vaisseau / véhicule</p>\n        <p>\n          <span>\n            Description vaisseau véhicule\n          </span>\n        </p>\n      </div>\n    </div>\n\n  </section>\n\n  <div class=\"row\">\n    <div class=\"col-12\">\n      <small>\n        Star Wars et tous les éléments associés sont © 2013 Lucasfilm Ltd & Tm. Tous droits réservés Toutes les données reproduites\n        et synthétisées ici appartiennent à Edge Entertainement © LFL 2013\n      </small>\n    </div>\n  </div>\n\n</div>"
+module.exports = "<div class=\"container-fluid\">\n\n  <ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\n\n  <section *ngIf=\"isPageLoaded\" id=\"characterCreation\">\n\n    <div class=\"row page-title\">\n      <div class=\"col-12\">\n        <p>Création de personnage</p>\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Déterminer le concept et l'historique du personnage</p>\n        <p class=\"text-justify\">\n          Un personnage naît d'abord sous la forme d'une idée. Le joueur veut-il interpréter un vaurien de contrebandier, un chasseur\n          de primes talentueux et redouté, un explorateur de la bordure extérieur de la galaxie ou encore un pilote expert\n          en astrogation, est-il animé par les idéaux de la rébellion ou est-il loyal à l'empire ?\n        </p>\n        <p class=\"text-justify\">\n          Avant de commencer, le joueur doit prendre quelque instant et songer au personnage qu'il souhaite élaborer, au passé qu'il\n          souhaite lui donner. Nul ne naît complètement construit. Chaque individu est influencé par une vie de décisions\n          et d'évènement.\n        </p>\n\n        <p class=\"list-example\">Inspirations :</p>\n\n        <ul class=\"fa-ul\">\n          <li class=\"text-justify\" *ngFor=\"let inspiration of inspirations\">\n            <i class=\"fa fa-space-shuttle\" aria-hidden=\"true\"></i>\n            <span>{{ inspiration.title }}</span>\n            <span>{{ inspiration.description }}</span>\n          </li>\n        </ul>\n\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Choisir une obligation / devoir / moralité</p>\n        <p>\n          <span>\n\n          </span>\n        </p>\n        <br />\n        <p>\n          <span>\n            Le joueur peut choisir son obligation, son devoir ou sa moralité à ce moment de la création de son personnage afin d'influencer\n            d'autres décisions à prendre par la suite comme l'espèce ou la carrière ; ou bien il peut y revenir ultérieurement\n            pour affiner l'historique de son personnage.\n          </span>\n        </p>\n\n        <div data-toggle=\"collapse\" href=\"#obligations\" aria-expanded=\"false\" class=\"clickable link\">\n          <p>Voir la liste des obligations&nbsp;\n            <i class=\"fa fa-long-arrow-down\" aria-hidden=\"true\"></i>\n          </p>\n        </div>\n        <div class=\"collapse\" id=\"obligations\">\n          <app-obligations type=\"obligations\"></app-obligations>\n        </div>\n\n        <div data-toggle=\"collapse\" href=\"#duties\" aria-expanded=\"false\" class=\"clickable link\">\n          <p>Voir la liste des devoirs&nbsp;\n            <i class=\"fa fa-long-arrow-down\" aria-hidden=\"true\"></i>\n          </p>\n        </div>\n        <div class=\"collapse\" id=\"duties\">\n          <app-obligations type=\"duties\"></app-obligations>\n        </div>\n\n        <div data-toggle=\"collapse\" href=\"#moralities\" aria-expanded=\"false\" class=\"clickable link\">\n          <p>Voir la liste des moralités&nbsp;\n            <i class=\"fa fa-long-arrow-down\" aria-hidden=\"true\"></i>\n          </p>\n        </div>\n        <div class=\"collapse\" id=\"moralities\">\n          <app-obligations type=\"moralities\"></app-obligations>\n        </div>\n\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Déterminer l'espèce du personnage</p>\n        <p class=\"text-justify\">\n          La galaxie foisonne d’espèces douées de conscience qui ont toutes leur lot de capacités et de croyances. L'espèce d'un personnage\n          détermine ses caractéristiques de départ -\n          <span class=\"characteristic\">Vigeur</span>,\n          <span class=\"characteristic\">Agilité</span>,\n          <span class=\"characteristic\"> Intelligence</span>,\n          <span class=\"characteristic\">Ruse</span>,\n          <span class=\"characteristic\">Volonté</span> et\n          <span class=\"characteristic\">Présence</span>\n          - mais également ses seuils de blessures et de stress, ainsi que ses capacités innées, ses bonus et son expérience de départ.\n        </p>\n\n        <p class=\"clickable link\">\n          <a routerLink=\"/species\">Liste des espèces</a>&nbsp;\n          <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>\n        </p>\n\n        <div data-toggle=\"collapse\" href=\"#characteristicsPanel\" aria-expanded=\"false\" class=\"clickable link\">\n          <p>Voir le descriptif des caractéristiques&nbsp;\n            <i class=\"fa fa-long-arrow-down\" aria-hidden=\"true\"></i>\n          </p>\n        </div>\n        <div class=\"collapse\" id=\"characteristicsPanel\">\n          <app-characteristics></app-characteristics>\n        </div>\n      </div>\n\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Choisir une carrière</p>\n        <p class=\"text-justify\">\n          <span>\n            Une Carrière pousse un personnage sur une certaine voie, vers un certain mode de vie, mais elle n'a rien de restrictif, bien\n            au contraire. C'est une sorte d'archétype du modèle qui regroupe un ensemble de compétences et de caractéristiques\n            étroitement liées les unes aux autres. Chaque carrière propose aussi plusieurs spécialités\n            <em>(voir section suivante)</em>.\n          </span>\n          <br />\n          <br />\n          <span>\n            A chaque carrière sont associés 8 compétences que le joeur doit cocher sur sa feuille de personnage pour se rappeler qu'il\n            s'agit de compétence de carrières. Il doit ensuite en choisir 4 parmi celles-ci dans lesquelles il obtient 1\n            rang gratuit (sans dépenser de points d'expérience). Une compétence ne peut pas être choisie plusieurs fois.\n          </span>\n          <br />\n          <br />\n          <span>\n            Au cours du jeu, les compétences de carrières seront mois couteuse à améliorer que celles hors carrière.\n          </span>\n        </p>\n        <p class=\"clickable link\">\n          <a routerLink=\"/careers\">Liste des carrières</a>&nbsp;\n          <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>\n        </p>\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Choisir une spécialité de carrière</p>\n        <p>\n          <span>\n            Chaque carrière s'accompagne de spécialités qui conférent des capacités spéciales : les talents. A sa création, chaque personnage\n            a accès à une spécialité gratuite qui découle de sa carrière.\n          </span>\n          <br />\n          <br />\n          <span>\n            Chaque spécialité comporte également 4 compétences de carrière supplémentaires qui doivent être notées en tant que telles\n            sur la feuille de personnage. Le joueur doit choisir 2 compétences parmis ces compétences et obtient 1 rang dans\n            chacune (sans dépenser de points d'expérience). Une compétence de spécialité ne peut pas être choisie plusieurs\n            fois. En revanche, il peut développer une compétence déjà choisie lors du choix de sa carrière, auquel cas le\n            rang passe à 2.\n          </span>\n        </p>\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Choisir une motivation</p>\n        <p>\n          <span>\n            Description motivation\n          </span>\n        </p>\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Investir les points d'expériences</p>\n        <p>\n          <span>\n            Description PX\n          </span>\n        </p>\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Calculer attributs dérivés</p>\n        <p>\n          <span>\n            Description attributs + dérivés\n          </span>\n        </p>\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Choisir son équipement</p>\n        <p>\n          <span>\n            Description équipement\n          </span>\n        </p>\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <p class=\"step-title\">Choisir son vaisseau / véhicule</p>\n        <p>\n          <span>\n            Description vaisseau véhicule\n          </span>\n        </p>\n      </div>\n    </div>\n\n  </section>\n\n</div>"
 
 /***/ }),
 
@@ -601,7 +607,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".row {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-wrap: wrap;\r\n        flex-wrap: wrap;\r\n }\r\n\r\n #speciesSingle .species-characteristics {\r\n     margin-bottom: 20px;\r\n }\r\n\r\n #speciesSingle .species-characteristics img {\r\n     width: 100%;\r\n     max-width: 200px;\r\n }\r\n\r\n #speciesSingle .characteristic {\r\n    margin-bottom: 10px;\r\n    padding-bottom: 10px;\r\n    border-bottom: 1px solid #f2f2f2;\r\n }\r\n \r\n #speciesSingle .characteristic p:first-child {\r\n    font-weight: 600;\r\n    text-decoration: underline;\r\n    margin-bottom: 10px;\r\n }\r\n\r\n #speciesSingle .characteristic p {\r\n    margin-bottom: 0px\r\n }\r\n\r\n #speciesSingle .characteristic-other p {\r\n    margin-bottom: 0px\r\n }\r\n\r\n #speciesSingle .species-capacities div {\r\n     padding: 20px;\r\n }\r\n", ""]);
+exports.push([module.i, ".row {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-wrap: wrap;\r\n        flex-wrap: wrap;\r\n }\r\n\r\n #speciesSingle .species-characteristics {\r\n     margin-bottom: 20px;\r\n     border-bottom: 1px solid purple;\r\n }\r\n\r\n #speciesSingle .species-characteristics img {\r\n     width: 100%;\r\n     max-width: 200px;\r\n }\r\n\r\n #speciesSingle .characteristics {\r\n    margin-bottom: 10px;\r\n    padding-bottom: 10px;\r\n    border-bottom: 1px solid #f2f2f2;\r\n }\r\n \r\n #speciesSingle .characteristics p:first-child {\r\n    font-weight: 600;\r\n    text-decoration: underline;\r\n    margin-bottom: 10px;\r\n }\r\n\r\n #speciesSingle .characteristics p {\r\n    margin-bottom: 0px\r\n }\r\n\r\n #speciesSingle .characteristics-other p {\r\n    margin-bottom: 0px\r\n }\r\n\r\n #speciesSingle .species-capacities {\r\n    margin-bottom: 20px;\r\n    border-bottom: 1px solid purple;\r\n }\r\n\r\n #speciesSingle .block {\r\n    padding: 20px;\r\n}\r\n\r\n /* Responsive */\r\n\r\n@media (max-width: 700px) {\r\n    #speciesSingle .species-characteristics .characteristics,\r\n    #speciesSingle .species-characteristics .characteristics-other {\r\n        padding-left: 25%;\r\n    }   \r\n}\r\n\r\n\r\n", ""]);
 
 // exports
 
@@ -614,7 +620,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/species-single/species-single.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n\n\t<ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\n\n\t<section *ngIf=\"isPageLoaded\" id=\"speciesSingle\">\n\n\t\t<p class=\"page-title\">Espèce: {{ species.label }}</p>\n\n\t\t<div class=\"row species-characteristics\">\n\t\t\t<div class=\"col-5 text-center\">\n\t\t\t\t<img src=\"assets/images/species/{{ species.key }}.jpg\" class=\"img-responsive\" />\n\t\t\t</div>\n\t\t\t<div>\n\t\t\t\t<div class=\"characteristic\">\n\t\t\t\t\t<p>Caractéristiques</p>\n\t\t\t\t\t<p><span class=\"sub-title\">Vigeur :</span> {{ species.characteristics.brawn }}</p>\n\t\t\t\t\t<p><span class=\"sub-title\">Agilité :</span> {{ species.characteristics.agility }}</p>\n\t\t\t\t\t<p><span class=\"sub-title\">Intelligence :</span> {{ species.characteristics.intellect }}</p>\n\t\t\t\t\t<p><span class=\"sub-title\">Ruse :</span> {{ species.characteristics.cunning }}</p>\n\t\t\t\t\t<p><span class=\"sub-title\">Volonté :</span> {{ species.characteristics.willpower }}</p>\n\t\t\t\t\t<p><span class=\"sub-title\">Présence :</span> {{ species.characteristics.presence }}</p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"characteristic-other\">\n\t\t\t\t\t<p><span class=\"sub-title\">Seuil de blessure:</span> {{ species.woundTreshold }}</p>\n\t\t\t\t\t<p><span class=\"sub-title\">Seuil de stress:</span> {{ species.strainTreshold }}</p>\n\t\t\t\t\t<p><span class=\"sub-title\">PX de départ:</span> {{ species.startingXp }}</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<div class=\"row species-capacities\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<p class=\"text-center page-title\">Capacité spéciale</p>\n\t\t\t\t<p class=\"text-justify\" [innerHTML]=\"species.specialAbility\"></p>\n\t\t\t</div>\n\t\t\t<div class=\"col-7\" *ngIf=\"species.otherAbilities.length > 0\">\n\t\t\t\t<p class=\"text-center page-title\">Autres capacités</p>\n\t\t\t\t<p class=\"text-justify\" *ngFor=\"let otherAbility of species.otherAbilities\">\n\t\t\t\t\t<span [innerHTML]=\"otherAbility.label\" class=\"sub-title\"></span>\n\t\t\t\t\t<span [innerHTML]=\"otherAbility.description\"></span>\n\t\t\t\t</p>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-12\">\n\t\t\t\t<p class=\"page-title\">Description</p>\n\t\t\t\t<p class=\"text-justify\">{{ species.description }}</p>\n\t\t\t</div>\n\t\t</div>\n\n\n\t</section>\n</div>"
+module.exports = "<div class=\"container-fluid\">\n\n\t<ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\n\n\t<section *ngIf=\"isPageLoaded\" id=\"speciesSingle\">\n\n\t\t<div class=\"row page-title\">\n\t\t\t<div class=\"page-title-label\">\n\t\t\t\t<p>{{ species.label }}</p>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<div class=\"row species-characteristics\">\n\t\t\t<div class=\"col-sm block text-center\">\n\t\t\t\t<img src=\"assets/images/species/{{ species.key }}.jpg\" class=\"img-responsive\" />\n\t\t\t</div>\n\t\t\t<div class=\"col-sm block\">\n\t\t\t\t<div class=\"characteristics\">\n\t\t\t\t\t<p>Caractéristiques</p>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<span class=\"sub-title\">Vigeur :</span>\n\t\t\t\t\t\t<span>{{ species.characteristics.brawn }}</span>\n\t\t\t\t\t</p>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<span class=\"sub-title\">Agilité :</span>\n\t\t\t\t\t\t<span>{{ species.characteristics.agility }}</span>\n\t\t\t\t\t</p>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<span class=\"sub-title\">Intelligence :</span>\n\t\t\t\t\t\t<span>{{ species.characteristics.intellect }}</span>\n\t\t\t\t\t</p>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<span class=\"sub-title\">Ruse :</span>\n\t\t\t\t\t\t<span>{{ species.characteristics.cunning }}</span>\n\t\t\t\t\t</p>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<span class=\"sub-title\">Volonté :</span>\n\t\t\t\t\t\t<span>{{ species.characteristics.willpower }}</span>\n\t\t\t\t\t</p>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<span class=\"sub-title\">Présence :</span>\n\t\t\t\t\t\t<span>{{ species.characteristics.presence }}</span>\n\t\t\t\t\t</p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"characteristics-other\">\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<span class=\"sub-title\">Seuil de blessure:</span>\n\t\t\t\t\t\t<span [innerHtml]=\"species.woundTreshold\"></span>\n\t\t\t\t\t</p>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<span class=\"sub-title\">Seuil de stress:</span>\n\t\t\t\t\t\t<span [innerHtml]=\"species.strainTreshold\"></span>\n\t\t\t\t\t</p>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<span class=\"sub-title\">PX de départ:</span>\n\t\t\t\t\t\t<span>{{ species.startingXp }}</span>\n\t\t\t\t\t</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<div class=\"row species-capacities\">\n\t\t\t<div class=\"col-sm block\">\n\t\t\t\t<p class=\"text-center sub-title\">Capacité spéciale</p>\n\t\t\t\t<p class=\"text-justify\" [innerHTML]=\"species.specialAbility\"></p>\n\t\t\t</div>\n\t\t\t<div class=\"col-sm block\">\n\t\t\t\t<p class=\"text-center sub-title\">Autres capacités</p>\n\t\t\t\t<ng-container *ngIf=\"species.otherAbilities.length > 0\">\n\t\t\t\t\t<p class=\"text-justify\" *ngFor=\"let otherAbility of species.otherAbilities\">\n\t\t\t\t\t\t<span [innerHTML]=\"otherAbility.label\" class=\"sub-title\"></span>\n\t\t\t\t\t\t<span [innerHTML]=\"otherAbility.description\"></span>\n\t\t\t\t\t</p>\n\t\t\t\t</ng-container>\n\t\t\t\t<ng-container *ngIf=\"species.otherAbilities.length === 0\">\n\t\t\t\t\t<p class=\"text-center\">Aucune</p>\n\t\t\t\t</ng-container>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<div class=\"row species-description\">\n\t\t\t<div class=\"col-sm\">\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<div class=\"col-sm text-center\">\n\t\t\t\t\t\t<p class=\"sub-title\">Description</p>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-sm text-center\"></div>\n\t\t\t\t<div class=\"row block\">\n\t\t\t\t\t<p class=\"text-justify\">{{ species.description }}</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\n\n\t</section>\n</div>"
 
 /***/ }),
 
@@ -626,6 +632,7 @@ module.exports = "<div class=\"container-fluid\">\n\n\t<ngx-loading [show]=\"!is
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_api_service__ = __webpack_require__("../../../../../src/app/services/api.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_helper_service__ = __webpack_require__("../../../../../src/app/services/helper.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -638,10 +645,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var SpeciesSingleComponent = (function () {
-    function SpeciesSingleComponent(route, api) {
+    function SpeciesSingleComponent(route, api, helper) {
         this.route = route;
         this.api = api;
+        this.helper = helper;
         this.isPageLoaded = false;
     }
     SpeciesSingleComponent.prototype.ngOnInit = function () {
@@ -653,6 +662,9 @@ var SpeciesSingleComponent = (function () {
                     var speciesToLoad = species.find(function (c) { return c.key === speciesParam; });
                     if (speciesToLoad) {
                         console.log(speciesToLoad);
+                        // Format data for HTML view
+                        speciesToLoad.woundTreshold = __WEBPACK_IMPORTED_MODULE_3__services_helper_service__["a" /* HelperService */].stickTextForHtml(speciesToLoad.woundTreshold);
+                        speciesToLoad.strainTreshold = __WEBPACK_IMPORTED_MODULE_3__services_helper_service__["a" /* HelperService */].stickTextForHtml(speciesToLoad.strainTreshold);
                         _this.species = speciesToLoad;
                     }
                 }
@@ -666,9 +678,70 @@ var SpeciesSingleComponent = (function () {
             template: __webpack_require__("../../../../../src/app/components/species-single/species-single.component.html"),
             styles: [__webpack_require__("../../../../../src/app/components/species-single/species-single.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_2__services_api_service__["a" /* ApiService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_2__services_api_service__["a" /* ApiService */], __WEBPACK_IMPORTED_MODULE_3__services_helper_service__["a" /* HelperService */]])
     ], SpeciesSingleComponent);
     return SpeciesSingleComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/layout/footer/footer.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "footer {\r\n    position: absolute;\r\n    right: 0;\r\n    bottom: 0;\r\n    width: 100%;\r\n    height: 56px;\r\n    background-color: #e9ecef;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/layout/footer/footer.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<footer class=\"\">\n  <div class=\"row\">\n    <div class=\"col-12\">\n      <small>\n        Star Wars et tous les éléments associés sont © 2013 Lucasfilm Ltd & Tm. Tous droits réservés Toutes les données reproduites\n        et synthétisées ici appartiennent à Edge Entertainement © LFL 2013\n      </small>\n    </div>\n  </div>\n</footer>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/layout/footer/footer.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FooterComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FooterComponent = (function () {
+    function FooterComponent() {
+    }
+    FooterComponent.prototype.ngOnInit = function () {
+    };
+    FooterComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-footer',
+            template: __webpack_require__("../../../../../src/app/layout/footer/footer.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/layout/footer/footer.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], FooterComponent);
+    return FooterComponent;
 }());
 
 
@@ -854,6 +927,9 @@ var HelperService = (function () {
             }
             return comparison;
         };
+    };
+    HelperService.stickTextForHtml = function (textToFormat) {
+        return textToFormat.replace(/ /g, '&nbsp;');
     };
     HelperService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),

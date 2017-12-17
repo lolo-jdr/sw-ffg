@@ -138,7 +138,9 @@
       "strainTreshold": "11 + Volonté",
       "startingXp": 100,
       "specialAbility": "Les Twi'leks commencent le jeu avec 1 rang en <span class=\"skill\">Charme</span> ou en <span class=\"skill\">Tromperie</span>. Ils ne peuvent cependant pas dépasser le rang 2 dans la compétence choisie à la création de personnage. Quand ils effectuent des tests de compétence, ils peuvent retirer <i class=\"fa fa-square\" aria-hidden=\"true\"></i> dû à des conditions environnementales chaudes ou arides.",
-      "otherAbilities": []
+      "otherAbilities": [
+        { "label": "Habitants du désert", "description": "lorsqu'ils effectuent des tests de compétence, les Twi'leks peuvent retirer _INFORTUNE_ dû à l'aridité ou à la chaleur." }
+      ]
     },
     {
       "key": "wookie",
@@ -176,10 +178,15 @@
         "willpower": 2,
         "presence": 2
       },
-      "woundTreshold": "",
-      "strainTreshold": "",
-      "startingXp": "",
-      "specialAbility": ""
+      "woundTreshold": "11 + Vigueur",
+      "strainTreshold": "10 + Volonté",
+      "startingXp": 100,
+      "specialAbility": "Les Duros commencent le jeu avec 1 rang en pilotage (espace). Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "otherAbilities": [
+        { 
+          "label": "Navigation intuitive", "description": "les Duros peuvent ajouter _AVANTAGE_ à tous leurs tests d'Astrogation." 
+        }
+      ]
     },
     {
       "key": "gran",
@@ -194,14 +201,19 @@
         "willpower": 1,
         "presence": 3
       },
-      "woundTreshold": "",
-      "strainTreshold": "",
-      "startingXp": "",
-      "specialAbility": ""
+      "woundTreshold": "10 + Vigueur",
+      "strainTreshold": "9 + Volonté",
+      "startingXp": 100,
+      "specialAbility": "Les Gans commencent le jeu avec 1 rang en Charme ou en Négociation. Il ne peuvent cependant pas dépasser le rang 2 dans la compétence choisie à la création du personnage.",
+      "otherAbilities": [
+        { 
+          "label": "Vision supérieur", "description": "quand ils effectuent un test de combat à distance ou de Perception, les Gans retirent jusqu'à _INFORTUNE_ _INFORTUNE_ imposés par l'environnement ou le camouflage (mais pas par la défense de la cible)." 
+        }
+      ]
     },
     {
       "key": "ithorian",
-      "label": "ithoriens",
+      "label": "Ithoriens",
       "genders": [ "Male", "Femelle" ],
       "description": "Les Ithoriens sont des humanoïdes natifs de la planète Ithor. Ils parlent l'Ithorese et pouvent utiliser un traducteur Ithorien pour parler le basic. Les Ottegans ont été créés génétiquement à partir d'eux.",
       "characteristics": {
@@ -212,10 +224,15 @@
         "willpower": 3,
         "presence": 2
       },
-      "woundTreshold": "",
-      "strainTreshold": "",
-      "startingXp": "",
-      "specialAbility": ""
+      "woundTreshold": "9 + Vigueur",
+      "strainTreshold": "12 + Volonté",
+      "startingXp": 90,
+      "specialAbility": "Les Ithoriens commencent le jeu avec 1 rang en Survie. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "otherAbilities": [
+        { 
+          "label": "Mugissement ithorien", "description": "grâce à leurs deux bouches et leurs quatre gorges, les Ithoriens disposent d'une arme naturelle sur laquelle ils peuvent compter pour se défendre (Résistance ; dégât 6 ; critique 4 ; portée courte ; dégâts étourdissants, Cadence lente 2 ; Choc 1 ; Souffle 3). Chaque fois que l'Ithorien recourt à cette capacité, il subit 3 points de stress." 
+        }
+      ]
     },
     {
       "key": "moncalamari",
@@ -230,10 +247,15 @@
         "willpower": 2,
         "presence": 2
       },
-      "woundTreshold": "",
-      "strainTreshold": "",
-      "startingXp": "",
-      "specialAbility": ""
+      "woundTreshold": "10 + Vigueur",
+      "strainTreshold": "10 + Volonté",
+      "startingXp": 100,
+      "specialAbility": "Les Mon Calamari commencent le jeu avec 1 rang en Connaissance (Éducation). Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "otherAbilities": [
+        { 
+          "label": "Amphibien", "description": "un Mon Calamari peut respirer sous l'eau sans malus, et ne souffre d'aucun malus de déplacement lorqu'il évolue dans l'eau." 
+        }
+      ]
     },
     {
       "key": "sullustan",
@@ -248,10 +270,11 @@
         "willpower": 2,
         "presence": 2
       },
-      "woundTreshold": "",
-      "strainTreshold": "",
-      "startingXp": "",
-      "specialAbility": ""
+      "woundTreshold": "10 + Vigueur",
+      "strainTreshold": "10 + Volonté",
+      "startingXp": 100,
+      "specialAbility": "Les Sullustéens commencent le jeu avec 1 rang en Astrogation. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage. Ils débutent également avec un rang du talent Pilote chevronné.",
+      "otherAbilities": []
     },
     {
       "key": "cereen",
@@ -266,10 +289,15 @@
         "willpower": 2,
         "presence": 2
       },
-      "woundTreshold": "",
-      "strainTreshold": "",
-      "startingXp": "",
-      "specialAbility": ""
+      "woundTreshold": "10 + Vigueur",
+      "strainTreshold": "13 + Volonté",
+      "startingXp": 90,
+      "specialAbility": "Les Céréens commencent le jeu avec 1 rang en Vigilance. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "otherAbilities": [
+        { 
+          "label": "Traitement binaire", "description": "les Céréens considèrent toutes les compétences de Connaissance comme des compétences de carrière." 
+        }
+      ]
     },
     {
       "key": "keldor",
@@ -284,10 +312,14 @@
         "willpower": 3,
         "presence": 2
       },
-      "woundTreshold": "",
-      "strainTreshold": "",
-      "startingXp": "",
-      "specialAbility": ""
+      "woundTreshold": "10 + Vigueur",
+      "strainTreshold": "10 + Volonté",
+      "startingXp": 100,
+      "specialAbility": "Les Kel Dor commencent avec 1 rang en Connaissance (éducation). Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence lors de la création de personnage.",
+      "otherAbilities": [
+        { "label": "Vision dans l'obscurité", "description": "Lors qu'ils effectuent des tests de compétence, les Kel Dors peuvent retirer jusqu'à _INFORTUNE_ _INFORTUNE_ imposés par l'obscurité." },
+        { "label": "Besoins d'atmosphériques", "description": "Les Kel Dors doivent porter des masques spéciaux pour respirer et voir en dehors de leur environnement natal. Un personnage Kel Dor commence le jeu avec un masque respiratoire filtrant, et traite l'oxygène comme une atmosphère dangeureuse dotée d'une valeur de 8. Toutefois, les Kel Dors peuvent survivre jusqu'à 5 minutes dans le vide sans souffrir de ses effets." }
+      ]
     },
     {
       "key": "mirialian",
@@ -302,10 +334,11 @@
         "willpower": 2,
         "presence": 2
       },
-      "woundTreshold": "",
-      "strainTreshold": "",
-      "startingXp": "",
-      "specialAbility": ""
+      "woundTreshold": "11 + Vigueur",
+      "strainTreshold": "10 + Volonté",
+      "startingXp": 100,
+      "specialAbility": "Les Kel Dor commencent avec 1 rang en Sang-Froid et 1 rang en Calme. Ils ne peuvent cependant pas dépasser le rang 2 dans ces compétences lors de la création de personnage.",
+      "otherAbilities": []
     },
     {
       "key": "nautolan",
@@ -320,10 +353,15 @@
         "willpower": 1,
         "presence": 2
       },
-      "woundTreshold": "",
-      "strainTreshold": "",
-      "startingXp": "",
-      "specialAbility": ""
+      "woundTreshold": "11 + Vigueur",
+      "strainTreshold": "9 + Volonté",
+      "startingXp": 100,
+      "specialAbility": "Les Nautolans commencent le jeu avec 1 rang en Athlétisme. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "otherAbilities": [
+        { 
+          "label": "Amphibie", "description": "Les Notaulans peuvent respirer sous l'eau sans malus, et ne souffrent jamais de pénalité de mouvement lorsqu'ils se déplacent dans l'eau." 
+        }
+      ]
     },
     {
       "key": "togruta",
@@ -338,10 +376,15 @@
         "willpower": 2,
         "presence": 2
       },
-      "woundTreshold": "",
-      "strainTreshold": "",
-      "startingXp": "",
-      "specialAbility": ""
+      "woundTreshold": "10 + Vigueur",
+      "strainTreshold": "10 + Volonté",
+      "startingXp": 100,
+      "specialAbility": "Les Togrutas commencent le jeu avec 1 rang en Perception. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "otherAbilities": [
+        { 
+          "label": "Instincts de la meute", "description": "Lorsqu'ils accomplissent la manoœuvre \"assiter\", les Togrutas ajoutent _FORTUNE_ _FORTUNE_ au lieu de _FORTUNE_." 
+        }
+      ]
     },
     {
       "key": "zabrak",
@@ -356,9 +399,14 @@
         "willpower": 3,
         "presence": 1
       },
-      "woundTreshold": "",
-      "strainTreshold": "",
-      "startingXp": "",
-      "specialAbility": ""
+      "woundTreshold": "10 + Vigueur",
+      "strainTreshold": "10 + Volonté",
+      "startingXp": 100,
+      "specialAbility": "Les Zabraks commencent le jeu avec 1 rang en Survie. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "otherAbilities": [
+        { 
+          "label": "Apparence effrayante", "description": "les Zabraks ajoutent automatiquement _AVANTAGE_ à tous leurs tests de Coercition." 
+        }
+      ]
     }
   ]

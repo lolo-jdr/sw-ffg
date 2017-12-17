@@ -2,7 +2,8 @@
     { 
         "key": "bounty-hunter",
         "label": "Chasseur de prime",
-        "description": "Comme son nom l'indique, ce type d'individu cherche à ramasser des primes en échanges de son travail. Les <span class=\"career\">Chasseurs de primes</span> sont généralement craints, détestés et méprisés, et pourtant demandés partout dans la galaxie. Ce sont des pisteurs redoutables, des combattants brutaux et d'excellent enquêteurs. Ils préfèrent généralement les magouilles, la discrétion et les pièges aux assauts frontaux, mais les plus respectés font le nécessaire pour capturer leurs proies et récupérer leur dû.",
+        "descriptionShort": "Comme son nom l'indique, ce type d'individu cherche à ramasser des primes en échanges de son travail. Les <span class=\"career\">Chasseurs de primes</span> sont généralement craints, détestés et méprisés, et pourtant demandés partout dans la galaxie.",
+        "description": "Ce sont des pisteurs redoutables, des combattants brutaux et d'excellent enquêteurs. Ils préfèrent généralement les magouilles, la discrétion et les pièges aux assauts frontaux, mais les plus respectés font le nécessaire pour capturer leurs proies et récupérer leur dû.",
         "skills": [
             { 
                 "key": "",
@@ -41,6 +42,7 @@
             {
                 "key": "assassin",
                 "label": "Assassin",
+                "subLabel": "outil politique",
                 "description": "Si la plupart des chasseurs de primes cherchent à capturer leurs proies, les <span class=\"career\">Assassins</span> sont généralement chargés de mettre un terme à l'existance de leurs cibles. Malgré leurs méthodes différentes, les <span class=\"career\">Assassins</span> adhèrent habituellement aux mêmes pratiques et à la même éthique que les autres <span class=\"career\">Chasseurs de primes</span>. Ils prennent leur travail au sérieux, évitent les bains de sang inutiles et honorent leurs contrats à la lettre. Certains voient leur méthode avec respect, en leur accordant même un caractère mystique. D'autres voient en eux des tueurs de sang-froid, point barre.",
                 "book": "Livre de base",
                 "skills": [
@@ -65,6 +67,7 @@
             {
                 "key": "gadgeteer",
                 "label": "Expert en gadgets",
+                "subLabel": "amateur de technologies",
                 "description": "Quand on songe aux risques énormes que prennent les <span class=\"career\">Chasseurs de primes</span> (leurs proies ont souvent des amis ou employeurs qui se démènent pour les protéger), il n'est pas surprenant de constater que beaucoup s'équipent de gadgets et d'armes de haute technologie. L'<span class=\"career\">Expert en gadgets</span> a le chic pour remplacer une unité complète, du moins pendant quelques secondes. Utilisant les tout derniers bijoux technologiques et son équipement personnalisé, le <span class=\"career\">Chasseur de primes</span> doté de cette spécialité peut s'avérer difficile à arrêter.",
                 "book": "Livre de base",
                 "skills": [
@@ -89,6 +92,7 @@
             {
                 "key": "survivalist",
                 "label": "Expert en survie",
+                "subLabel": "le maître de la nature",
                 "description": "Loin de la civilisation, dans les régions les plus reculées de la galaxie, il y a des endroits que peu d'espèces douées de conscience ont déjà foulées, et des terres vierges de toute occupation. Ce sont des cachettes idéalespour ceux qui fuient la justice ou la vengeance d'un ennemi, des endroits où les <span class=\"career\">Chasseurs de primes</span> spécialisés en survie n'ont aucun mal à prospérer. Tous les événements qui agitent la galaxie ne se déroulent pas en ville ou dans l'espace. En fait, la plupart des endroits habitables de la galaxie sont ruraux ou sauvages. Une spécialité d'<span class=\"career\">Expert en survie</span> offre au personnage les connaissances et l'entraînement nécessaire pour se frayer un chemin dans ce genre d'environnment.",
                 "book": "Livre de base",
                 "skills": [
@@ -111,11 +115,13 @@
                 ]
             }
         ],
-        "univers": "civil"
+        "universKey": "eoe",
+        "univers": "Bordure extérieure"
     },
     { 
-        "key": "colon",
+        "key": "colonist",
         "label": "Colon",
+        "descriptionShort": "D'une certaine façon, les Colons sont les individus les plus décalés de la Bordure extérieure. Ils viennent majoritairement des Mondes du Noyau, où ils ont reçu une bonne éducation et faisaient partis de l'élite culturelle et professionnelle.",
         "description": "",
         "skills": [
             { 
@@ -128,7 +134,7 @@
             },
             { 
                 "key": "",
-                "label": "Connaissance (Mondes du Noyau),"
+                "label": "Connaissance (Mondes du Noyau)"
             },
             { 
                 "key": "",
@@ -136,7 +142,7 @@
             },
             { 
                 "key": "",
-                "label": "Connaissance (Culture),"
+                "label": "Connaissance (Culture)"
             },
             { 
                 "key": "",
@@ -153,9 +159,10 @@
         ],
         "specialization": [
             {
-                "key": "",
+                "key": "doctor",
                 "label": "Médecin",
-                "description": "",
+                "subLabel": "le pouvoir de guérison",
+                "description": "De tous les colons qui se rendent dans la Bordure extérieure, les médecins sont sans doute ceux qui trouveront le plus facilement un emploi. Où qu'ils aillent, ils sont très demandés. La plupart des médecins louent leurs services pour voyager dans toute la galaxie. Si beaucoup se contentent de s'installer auprès de la corpo ou du patron qui les emploie, d'autres trouvent le moyen de parcourir la galaxie pour aider ceux qui sont dans la nécessité et découvrir d'autres facettes de la vie. Un personnage Médecin a des chances d'être considéré comme un \"toubib de combat\". Cela n'a rien de péjoratif, d'autant ce que rôle le rendra très populaire. Par ailleurs, le Médecin peut ses vastes connaissances à disposition, surtout s'il n'y pas d'érudit dans le groupe.",
                 "book": "Livre de base",
                 "skills": [
                     { 
@@ -177,9 +184,10 @@
                 ]
             },
             {
-                "key": "",
+                "key": "politico",
                 "label": "Diplomate",
-                "description": "",
+                "subLabel": "le pouvoir de commandement",
+                "description": "S'il y a bien une chose que le diplomate fait mieux que tout le monde dans la galaxie, c'est parler. Il parler de n'importe quoi à n'importe qui, selon les circonstances. Ce que d'autres accomplissent par la force et la peur, un bon diplomatele fait grâce à quelques mots bien sentis et un plan réfléchi. Dans un groupe le Diplomate joue le rôle de porte-parole ou de représentant. Plus que tout autre, il est taillé pour établir les contacts initiaux et c'est le meilleur en négociation, dans les rassemblements mondains ou les interrogatoires. Il lui arrrive même de galvaniser les troupes en combat et en situation de crise, même si une salle du trône, la salle de réunion d'une corpo constituent de meilleurs champs de bataille à ses yeux.",
                 "book": "Livre de base",
                 "skills": [
                     { 
@@ -201,9 +209,10 @@
                 ]
             },
             {
-                "key": "",
+                "key": "scholar",
                 "label": "Érudit",
-                "description": "",
+                "subLabel": "le pouvoir de la connaissance",
+                "description": "Avec tous les dangers et merveilles qu'ont a offrir un millier de millier de mondes, avoir sous la main quelqu'un dont les compétences ne se limitent pas à savoir recharger un blaster lourd peut s'avérer particulièrement utile dans toutes sortes de circonstances. C'est d'autant plus vrai lorsque le groupe est confronté à quelque chose qu'il ne connaît pas, ou a un besoin de trouver un objet que les moyens habituels ne permettent pas de localiser. Même dans la Bordure extérieure, certains respectent profondément la connaissance et le savoir. Les barons du crimes eux-mêmes s'entourent de cerveaux. D'autres érudits préfèrent découvrir la galaxie, examiner par eux-mêmes les sujets de leur études et fouiller des sites anciens dans l'espoir d'y retrouver des connaissances oubliés.",
                 "book": "Livre de base",
                 "skills": [
                     { 
@@ -225,11 +234,13 @@
                 ]
             }
         ],
-        "univers": "civil"
+        "universKey": "eoe",
+        "univers": "Bordure extérieure"
     },
     { 
         "key": "explorer",
         "label": "Explorateur",
+        "descriptionShort": "Les Explorateurs sont des indépendants. Ils tracent leurs routes et répertorient leurs découvertes. Ils vendent souvent leur informations à un bon prix où guide des voyageurs dans des régions très peu explorées de la galaxie.",
         "description": "",
         "skills": [
             { 
@@ -267,9 +278,10 @@
         ],
         "specialization": [
             {
-                "key": "",
+                "key": "fringer",
                 "label": "Bourlingueur",
-                "description": "",
+                "subLabel": "de nouvelles possibilités",
+                "description": "A la fois négociateur, astrogateur et fin connaisseur de ce que la galaxie a offrir en dehors des Mondes du Noyau, le Bourlingeur est un touche-à-tout. Il cherche à savoir comment trouver ce dont il a besoin et comment se rendre à où il doit aller. De nombreux bourlingeurs sont d'excellents pilotes capables de rivaliser avec les contrebandiers. Un personnage Bourlingeur a de fortes chances d'être le pilote principal ou secondaire du groupe. Il se chargera probablement de l'astrogation. Lors d'une escale dans un astroport ou dans une ville, il sera d'une aide précieuse pour le groupe pour mener des affaires, traiter avec un employeur ou trouver du travail.",
                 "book": "Livre de base",
                 "skills": [
                     { 
@@ -291,9 +303,10 @@
                 ]
             },
             {
-                "key": "",
+                "key": "scout",
                 "label": "Éclaireur",
-                "description": "",
+                "subLabel": "de nouvelles planètes",
+                "description": "Trouver une planèten c'est une chose, mais y descendre pour voir à quoi elle reseemble en est une autre. L'Éclaireur est un professionnelle en la matière, entraîné pour observer et survivre, réunissant un maximum d'information. Un éclaireur sait se frayer un chemin dans n'importe quel environement, et il est assez coriace et malin pour se sortir de tout guépier. La plupart des éclaireurs savent : traverser n'importe quelle étendue de terrain (voire d'eau ou de vide), trouver de quoi manger et un endroit où dormir, et scruter une zone pour réunir toutes les informations nécessaires.",
                 "book": "Livre de base",
                 "skills": [
                     { 
@@ -315,9 +328,10 @@
                 ]
             },
             {
-                "key": "",
+                "key": "trader",
                 "label": "Négociant",
-                "description": "",
+                "subLabel": "de nouveaux marchés",
+                "description": "Ceux qui cherchent à s'emparer de tout ce qu'ils trouvent en explorant la Bordure extérieure et au-delà sont des Négociants. Pour un Négociant, une nouvelle planète représente un potentiel presque infini de ressources à exploiter, tandis qu'une nouvelle culture ou une communauté cachée est une base de clients qui ne tarderont pas à faire appel à ses talents. Un personnage Négociant constituera un des premiers choix pour s'entretenir avec des pouvoirs publics, les hommes d'argent et tous ceux avec qui le groupe cherche à faire affaire.",
                 "book": "Livre de base",
                 "skills": [
                     { 
@@ -339,11 +353,13 @@
                 ]
             }
         ],
-        "univers": "civil"
+        "universKey": "eoe",
+        "univers": "Bordure extérieure"
     },
     {
-        "key": "mercenary",
+        "key": "hiredgun",
         "label": "Mercenaire",
+        "descriptionShort": "Quand il faut en découdre, le Mercenaire est au premières loges. Ce sont des gros bras et appliquent les règles de leur employeur. Ils cognent ou protègent en échange de crédits, ce qui en fait des individus d'une grande simplicité et parfois d'une franchise vraiment rafraîchissante.",
         "description": "",
         "skills": [
             { 
@@ -381,9 +397,10 @@
         ],
         "specialization": [
             {
-                "key": "",
+                "key": "bodyguard",
                 "label": "Garde du corps",
-                "description": "",
+                "subLabel": "protection rapprochée",
+                "description": "Les Mercenaires qui choississent cette spécialité font d'excellents choix pour défendre des gens et des lieux. Ils sont généralement capables de manipuler toutes sortes d'armes, se montrent extrêmement coriaces et malins en combats, et constituent de bons remparts aux premiers tirs de blaster. Le Garde du corps sera plus ou moins considéré comme un combattant lourd, celui qui a le plus gros flingue et reste à l'avant. Il est souvent utiliser pour protéger un Négociant ou un Diplomate.",
                 "book": "Livre de base",
                 "skills": [
                     { 
@@ -405,9 +422,10 @@
                 ]
             },
             {
-                "key": "",
+                "key": "marauder",
                 "label": "Maraudeur",
-                "description": "",
+                "subLabel": "full-contact",
+                "description": "Le Maraudeur ne cherche pas forcément à abattre son adversaire car il préfère charger sabre au clair et hacher menu tout ce qui se présente à lui. Les Maraudeurs sont probablement les combattants les plus coriaces qu'on puisse trouver. Ils ont tendance à subir de gros dégats tout en infligeant beaucoup plus à ceux qui osent lever la main sur eux. Ils peuvent venir de planètes dépourvus d'armes modernes ou issus d'une culture honorant le combat au corps à corps, ils se sortiront des situations de la manière qu'ils connaissent le mieux : à coups de poings.",
                 "book": "Livre de base",
                 "skills": [
                     { 
@@ -429,9 +447,10 @@
                 ]
             },
             {
-                "key": "",
+                "key": "mercenary-soldier",
                 "label": "Soldat à louer",
-                "description": "",
+                "subLabel": "le maître de guerre",
+                "description": "Adepte du combat à distance et de la tactique militaire, il mène les guerriers  à l'assaut tout en restant lui-même un combattant mortel. Les Soldats à louer sont généralement d'anciens membres des forces armées d'organisations de bonne taille où ils avaient presque certainement au moins le grade de sous-officier. Ils ont de solides connaissances en tactique et stratégie, mais s'attachent d'avantage à la première pour survivre. Même dans les situations moins formelles ils ont tendance à faire preuve d'ordre et de discipline.",
                 "book": "Livre de base",
                 "skills": [
                     { 
@@ -453,11 +472,13 @@
                 ]
             }
         ],
-        "univers": "civil"
+        "universKey": "eoe",
+        "univers": "Bordure extérieure"
     },
     {
         "key": "smuggler",
         "label": "Contrebandier",
+        "descriptionShort": "Les contrebandiers sont souvent vus comme les êtres les plus libre de la galaxie. Ils parcourent les routes de l'hyperespace, de système en système, de planète en planète, convoyant ce que les gens veulent et dont ils ont besoin.",
         "description": "",
         "skills": [
             { 
@@ -495,9 +516,10 @@
         ],
         "specialization": [
             {
-                "key": "",
+                "key": "pilot",
                 "label": "Pilote",
-                "description": "",
+                "subLabel": "des destinations infinies",
+                "description": "Beaucoup de gens savent piloter un vaisseau, mais le contrebandier qui se tourne vers cette spécialité développe une véritable relation avec son appareil, qui devient une sorte d'extension de sa volonté. Il peut transcender un vieux et lourd cargo, et avec du temps et des modifications, il peut en faire le vaisseau le plus rapide de la galaxie. Pilote fait partie de ces spécialités qui conduisent rarement au chômage. Si le Pilote n'a pas déjà son vaisseau (et l'Obligation qui l'accompagne inévitablement), il signera sans doute avec toutes sortes de groupes, de nature criminelle ou non. Un personnage Pilote sera indispensable pour son groupe, notamment après la première bataille spatiale ou crise lié au vaisseau.",
                 "book": "Livre de base",
                 "skills": [
                     { 
@@ -519,9 +541,10 @@
                 ]
             },
             {
-                "key": "",
+                "key": "scoundrel",
                 "label": "Vaurien",
-                "description": "",
+                "subLabel": "des cibles infinies",
+                "description": "Escroc, gâchette facile et grand amateur de bagarres, le vaurien est malin, agile et prompt à s'attirer de sacrés ennuis. Il se moque des règles et des lois, sauf lorsqu'il peut s'en servir à son avantage pour obtenir un paquet de crédits ou se débarasser d'un adversaire encombrant. Quand il a de la chance - autant dire qu'il compte beaucoup dessus - tout lui sourit. Dans un groupe, le Vaurien est une sorte de touche-à-tout. Il a assez de bagout et de jugeote pour être le porte-parole du groupe, et il ne lambine pas au combat. Il sait parfois piloter, mais il est quasiment certain qu'il a tous les talents de filou dont le groupe a besoin.",
                 "book": "Livre de base",
                 "skills": [
                     { 
@@ -543,9 +566,10 @@
                 ]
             },
             {
-                "key": "",
+                "key": "thief",
                 "label": "Voleur",
-                "description": "",
+                "subLabel": "des trésors infinis",
+                "description": "Le Voleur aime la discrétion. Son rôle consiste principalement à s'introduire en des lieux où sa présence n'est pas souhaitée, à prendre ce qui ne lui appartient pas, et à ressortir sans que nul ne découvre jamais ce qu'il s'est passé. Et quand il arrive à revendre à bon prix ce qu'il a volé, sa journée n'en est que meilleure. En général ils travaillent avec un groupe qui ne crachce pas sur leurs larcins ou travaillent seuls. La galaxie est pleine de trésors qui pour beaucoup sont protégés par des serrures et des gorilles. Dna sun groupe, il peut rester discret quand à sa spécialité, et user de compétences et talents plus communément associer à sa carrière de contrebandier.",
                 "book": "Livre de base",
                 "skills": [
                     { 
@@ -567,11 +591,14 @@
                 ]
             }
         ],
-        "univers": "civil"
+        "universKey": "eoe",
+        "univers": "Bordure extérieure"
     },
     { 
         "key": "technician",
         "label": "Technicien",
+        "subLabel": "il faut que ça marche",
+        "descriptionShort": "Tout ce qui a trait à la technologie et à la mécanique relève du domaine du technicien. Il sait manipuler, entretenir, réparer et améliorer tout ce qui est alimenté par une source d'énergie ou entraîné par des engrenages.",
         "description": "",
         "skills": [
             { 
@@ -609,9 +636,9 @@
         ],
         "specialization": [
             {
-                "key": "",
+                "key": "mechanic",
                 "label": "Mécanicien",
-                "description": "",
+                "description": "S'il est relativement facile de trouver un mécanicien dans n'importe quelle région de la galaxie, il est beaucoup plus difficile d'en dénicher un bon, et plus difficile encore d'en dégôter un à qui se fier. Les capitaines de vaisseaux sont prêts à traverser des systèmes entiers pour aller à la rencontre du mécanicien qui leur fera du bon boulot. Un Mécanicien qui s'abouche avec un groupe a certainement compris qu'il ne voulait pas passer sa vie dans un atelier ou un hangar. Ils sauront également se débrouiller lors la situation se tend : donnez-leur quelques minutes et une poignée de pièces détachés et ils trafiqueront un explositif qui réglera tous vos problèmes.",
                 "book": "Livre de base",
                 "skills": [
                     { 
@@ -633,9 +660,10 @@
                 ]
             },
             {
-                "key": "",
+                "key": "outlaw-tech",
                 "label": "Tech hors-la-loi",
-                "description": "",
+                "subLabel": "il faut améliorer tout ça",
+                "description": "Les Tech hors-la-loi sont des spécialistes auxquels on fait appel quand on veut quelque chose qui sort de l'ordinaire. Un blaster dont on repousse les limites imposées par le fabricant ? Un transpondeur qui identifie le cargo d'un contrebandier comme un appareil coutumier des pèlerinages religieux ? Un droîde de protocole modifié pour assassiner quelqu'un ? pas de problème pour eux. Le Tech hors-la-loi d'un groupe sera très demandé, surtout pour sa capacité à améliorer de l'équipement. Il est également capable d'entretenir vaisseaux et véhicules. Il sera également capable d'entrer en contact avec le marché noir local.",
                 "book": "Livre de base",
                 "skills": [
                     { 
@@ -657,9 +685,10 @@
                 ]
             },
             {
-                "key": "",
+                "key": "slicer",
                 "label": "Slicer",
-                "description": "",
+                "subLabel": "il faut que l'information circule",
+                "description": "Pour le Slicer, un ordinateur ou un datapad est une sorte d'énigme qui peut se révéler très lucrative. Slicer est le terme utilisé par ceux qui tentent de dérober ou d'altérer les données d'un système. Presque toute la galaxie étant branchée à des systèmes informatiques, les slicers ont des connaissances extrêmenent pécieuses, et dangereuses, quand on s'imagine pouvoir leur mettre des bâtons dans les roues. Un groupe dépourvu de Slicer aura un handicap, surtout lorsqu'ils devront s'emparer de données ou gérer un problème informatique.",
                 "book": "Livre de base",
                 "skills": [
                     { 
@@ -681,6 +710,1387 @@
                 ]
             }
         ],
-        "univers": "civil"
+        "universKey": "eoe",
+        "univers": "Bordure extérieure"
+    },
+    { 
+        "key": "ace",
+        "label": "As",
+        "descriptionShort": "Savoir piloter des véhicules ou des vaisseaux de transport est une compétence répandue dans la galaxie. Quand il s'agit de se rendre au combat au plus vite ou de plonger dans un champ d'astéroïdes avec une douzaine de vaisseaux à ses trousses, il vaut mieux laisser les As aux commandes.",
+        "description": "Savoir piloter des véhicules ou des vaisseaux de transport est une compétence répandue dans la galaxie. Quand il s'agit de se rendre au combat au plus vite ou de plonger dans un champ d'astéroïdes avec une douzaine de vaisseaux à ses trousses, il vaut mieux laisser les As aux commandes.",
+        "skills": [
+            { 
+                "key": "",
+                "label": "Artillerie"
+            },
+            { 
+                "key": "",
+                "label": "Astrogation"
+            },
+            { 
+                "key": "",
+                "label": "Calme"
+            },
+            { 
+                "key": "",
+                "label": "Distance (armes légères)"
+            },
+            { 
+                "key": "",
+                "label": "Mécanique"
+            },
+            { 
+                "key": "",
+                "label": "Perception"
+            },
+            { 
+                "key": "",
+                "label": "Pilotage (espace)"
+            },
+            { 
+                "key": "",
+                "label": "Pilotage (planétaire)"
+            }
+        ],
+        "specialization": [
+            {
+                "key": "gunner",
+                "label": "Artilleur",
+                "subLabel": "toujours dans le mille",
+                "description": "Pour l'Artilleur, le rendement des armes d'un véhicule ou d'un vaisseau constitue l'expression suprême de la puissance. Que l'Artilleur canarde l'adversaire depuis le sas d'un vaisseau de transport sur une aire d'atterrissage qui n'a rien d'acceuillant ou qu'il enchaîne les salves infaillibles contre le générateur de boucliers d'un croiseur, il n'est pas du genre à vouloir se passer de la meilleure puissance de feu possible. Les Artilleurs de qualité constituent un véritable atout pour l'Alliance. Quand survient un affrontement contre l'Empire, chaque tir compte.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Artillerie"
+                    },
+                    { 
+                        "key": "",
+                        "label": " Distance (armes lourdes)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Résistance"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Sang-froid"
+                    }
+                ]
+            },
+            {
+                "key": "driver",
+                "label": "Fonceur",
+                "subLabel": "tiens bon le manche",
+                "description": "Le Fonceur ne fait plus qu'un avec la machine qu'il pilote et tente des manœuvres qu'aucun ingénieur n'avait imaginées. La plupart savent se servir d'un hydrocompresseur et entretiennent volontier leur véhicule, ce qui n'est pas une mauvaise chose quand on sait ce qu'ils font subir à leur jouets. L'Alliance sait à quel point les Fonceurs sont précieux pour leur capacité à tirer le meilleur des véhicules de combat planétaire. L'état-major de la Rébellion se content souvent de confier un objectif et une destination aux Fonceurs, et les laisse décider de la meilleure manière d'accomplir la tâche.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Artillerie"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Calme"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Mécanique"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Pilotage (planétaire)"
+                    }
+                ]
+            },
+            {
+                "key": "pilot-aor",
+                "label": "Pilote",
+                "subLabel": "cap sur les étoiles",
+                "description": "Filant parmis les astres, les moteurs rugissant sous le cockpit tandis qu'il enchaîne les manœuvres à faire défaillir la plupart des mortels, le Pilote se sent vivre. Voler suffit à ravir la plupart des personnes mais les pilotes ne trouvent souvent leur compte que lorsqu'ils filent, leur machine et eux, vers un assaillant qu'ils vont défier dans les ténèbres spatiales. Personne ne minimisera la place occupée par les Pilotes au sein d'une organisation militaire. La pupart affichent une certaine impudence qui frise parfois l'arrogance, laquelle ne surprend pas chez quelqu'un qui se pare de quelques tonnes d'acier avant de se jeter dans le vide spacial et de risquer quotidiennement la désintégration.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Artillerie"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Astrogation"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Pilotage (espace)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Pilotage (planétaire)"
+                    }
+                ]
+            }
+        ],
+        "universKey": "aor",
+        "univers": "Alliance"
+    },
+    { 
+        "key": "diplomat",
+        "label": "Diplomate",
+        "descriptionShort": "Dans tout conflit la ressource la plus importante reste le personnel. Le Diplomate est celui qui la procure et qui en dirige l'emploi. Il ne combat peut-être pas directement au front, mais il est là pour préserver les chances de victoire et se montrer indispensable pour gérer et organiser la paix qui est censée suivre.",
+        "description": "Dans tout conflit la ressource la plus importante reste le personnel. Le Diplomate est celui qui la procure et qui en dirige l'emploi. Il ne combat peut-être pas directement au front, mais il est là pour préserver les chances de victoire et se montrer indispensable pour gérer et organiser la paix qui est censée suivre.",
+        "skills": [
+            { 
+                "key": "",
+                "label": "Charme"
+            },
+            { 
+                "key": "",
+                "label": "Commandement"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (Bordure extérieure)"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (culture)"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (Mondes du Noyau)"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (xénologie)"
+            },
+            { 
+                "key": "",
+                "label": "Négociation"
+            },
+            { 
+                "key": "",
+                "label": "Tromperie "
+            }
+        ],
+        "specialization": [
+            {
+                "key": "agitator",
+                "label": "Agitateur",
+                "subLabel": "mobiliser les masses",
+                "description": "Le but premier de l'Agitateur est de dissiper la terreur qu'exerce l'Empire pour asseoir son autorité sur des milliards d'individus pour la remplacer par la colère ou la bravoure. Tout est bon pour pousser les gens à l'action, à prendre les armes, à rejeter la tyrannie de Palpatine afin de ramener la liberté et la justice dans la galaxie. Certes, la perspective de jeter en masse des civils sans formation dans les griffes de l'Empire et de ses stormtroopers suréquipés n'a rien de réjouissante, mais il faut bien admettre que le victoire ne sera possible que si toute la galaxie s'y met.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Coercition"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Connaissance (pègre)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Système D"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Tromperie"
+                    }
+                ]
+            },
+            {
+                "key": "ambassador",
+                "label": "Ambassadeur",
+                "subLabel": "recueillir les soutiens",
+                "description": "L'Ambassadeur part en quête de ceux qui pourraient contribuer à la cause et facilite leur adhésion. Il manie la rhétorique qui peut faire basculer les planètes, systèmes, corporations et autres entités dans le camp qui est le sien. La survie de l'Alliance dépend souvent du talent de ses meilleurs ambassadeurs. Chaque fois qu'ils parviennent à convaincre une planète, faction ou entreprise de soutenir la Rébellion, une nouvelle vague d'espoir parcourt les rangs et les ressources pleuvent. Le sommet de la hiérarchie sait bien que le fin de la guerre ne sera pas forcément le terme absolu du conflit, mais qu'à cette étape, ce sera aux Ambassadeurs de jouer",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Charme"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Connaissance (Mondes du Noyau)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Négociation"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Sang-froid"
+                    }
+                ]
+            },
+            {
+                "key": "quartermaster",
+                "label": "Intendant",
+                "subLabel": "gérer les ressources",
+                "description": "La responsabilité de l'Intendant consiste à s'assurer que les troupes qu'il encadre ne manquent de rien. Il doit également veiller à ce que les armes, les munitions, les fournitures médicales et tout le reste terminent au bon endroit, entre les bonnes mains. Cette gestion logistique est l'un des tâches les plus complexes de toute organisation militaire. Un bon Intendant n'hésitera pas à multiplier les combines pour obtenir ce qu'il cherche, combines qui cibleront souvent les organisations criminelles, et parfois même l'Empire. ",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Informatique"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Magouilles"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Négociation"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Vigilance"
+                    }
+                ]
+            }
+        ],
+        "universKey": "aor",
+        "univers": "Alliance"
+    },
+    { 
+        "key": "spy",
+        "label": "Espion",
+        "descriptionShort": "Les Espions traquent les secrets de l'ennemi, déjouent ses plans et entravent son efficacité martiale. La fonction principale de l'Espion consiste à recueillir des informations concernant les zones d'opération et les agissements de l'ennemi pour le compte de l'Alliance.",
+        "description": "Les Espions traquent les secrets de l'ennemi, déjouent ses plans et entravent son efficacité martiale. La fonction principale de l'Espion consiste à recueillir des informations concernant les zones d'opération et les agissements de l'ennemi pour le compte de l'Alliance.",
+        "skills": [
+            { 
+                "key": "",
+                "label": "Calme"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (guerre)"
+            },
+            { 
+                "key": "",
+                "label": "Coordination"
+            },
+            { 
+                "key": "",
+                "label": "Discrétion"
+            },
+            { 
+                "key": "",
+                "label": "Informatique"
+            },
+            { 
+                "key": "",
+                "label": "Magouilles"
+            },
+            { 
+                "key": "",
+                "label": "Perception"
+            },
+            { 
+                "key": "",
+                "label": "Tromperie "
+            }
+        ],
+        "specialization": [
+            {
+                "key": "scout-aor",
+                "label": "Éclaireur",
+                "subLabel": "trouver la voie",
+                "description": "Avant de sonner le branle-bas de combat, toute armée doit savoir où se cache l'ennemi, ce qu'il y fait, et connaître les détails du terrain. Ce sont les Éclaireurs qui dénichent ces renseignements cruciaux. L'une des clés de leur réussite est de savoir entrer dans un système et en ressortir à l'insu de tous. Au sein d'une équipe hététoclite œuvrant pour la Rébellion, l'Éclaireur est souvent celui qui permet de déterminer où mener les missions et comment accéder aux sites dans les meilleurs conditions.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "scout",
+                        "label": "Athlétisme"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Médecine"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Pilotage (planétaire)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Survie"
+                    }
+                ]
+            },
+            {
+                "key": "slicer-aor",
+                "label": "slicer",
+                "subLabel": "trouver les données",
+                "description": "Dans le cadre d'une guerre, la grande majorité de ceux qui combattent se servent d'armes, d'explosits et d'autres instruments de destruction. Les Slicers attaquent oar l'intermédiaire de codes, de données, de programmes fulgurants et de redirection de réseaux de communication. Leurs méthodes permettent de déjouer les plans de l'ennemi et de réduire son arsenal technologique à des tonnes de métal, de plastiques et de cables parfaitement inefficaces. ",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Connaissance (éducation)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Connaissance (pègre)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Discrétion"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Informatique"
+                    }
+                ]
+            },
+            {
+                "key": "inflitrator",
+                "label": "taupe",
+                "subLabel": "trouver les secrets",
+                "description": "Les Taupes ont pour mission de pénétrer dans la gueule du loup en passant inaperçus, soit en se cachant, soit en trichant sur leurs intentions. Les Taupes doivent fréquemment prendre des risques inouïs sans disposer de renforts directs, et souvent sans issue au cas où ils seraient débusqués au mauvais moment. Les taupes participent à des opérations coordonnées dont le but est de torpiller les plans impériaux tout en collectant des informations.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Corps à corps"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Magouilles"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Système D"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Tromperie"
+                    }
+                ]
+            }
+        ],
+        "universKey": "aor",
+        "univers": "Alliance"
+    },
+    { 
+        "key": "engineer",
+        "label": "Ingénieur",
+        "descriptionShort": "Les Ingénieurs parlent le language des ordinateurs, des moteurs et des conduits électriques. Ils apportent de nouvelles armes, assurent le fonctionnement des machines et peuvent également, au besoin, les mettre hors service.",
+        "description": "Les Ingénieurs parlent le language des ordinateurs, des moteurs et des conduits électriques. Ils apportent de nouvelles armes, assurent le fonctionnement des machines et peuvent également, au besoin, les mettre hors service.",
+        "skills": [
+            { 
+                "key": "",
+                "label": "Athlétisme"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (éducation)"
+            },
+            { 
+                "key": "",
+                "label": " Distance (armes légères)"
+            },
+            { 
+                "key": "",
+                "label": "Informatique"
+            },
+            { 
+                "key": "",
+                "label": "Mécanique"
+            },
+            { 
+                "key": "",
+                "label": "Perception"
+            },
+            { 
+                "key": "",
+                "label": "Pilotage (espace)"
+            },
+            { 
+                "key": "",
+                "label": "Vigilance"
+            }
+        ],
+        "specialization": [
+            {
+                "key": "mechanic-aor",
+                "label": "Mécanicien",
+                "subLabel": "il faut que ça tourne",
+                "description": "Les Mécaniciens sont là pour les simples réglages et ajustements, mais aussi pour les réparations et modifications plus lourdes. Ils sont les rouages de la machine rebelle et l'huile qui la fait tourner sans accroc. La plupart des Mécaniciens sont du genre à agir sur le terrai. Ils ne se déplacent jamais sans une version portative de leur outillage, et ils n'hésiteront pas à foncer en première ligne s'il faut y aller réparer un char d'assaut ou un canon lourd à la hâte, avant que l'ennemi ne prenne l'avantage.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Magouilles"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Mécanique"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Pilotage (espace)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Pugilat"
+                    }
+                ]
+            },
+            {
+                "key": "saboteur",
+                "label": "Saboteur",
+                "subLabel": "il faut que ça pète",
+                "description": "Le Saboteur se spécialise dans la destruction et la mise hors service d'éléments techniques et mécaniques. Sa fonction consiste à atténuer l'efficacité militaire de l'ennemi en le privant de ses armes et véhicules. Il faut bien entendu une bonne connaissance des machines quand on cherche à interompre leur fonctionnement. Il cherche souvent l'approche lui permettant de causer le plus de dégâts et de semer la plus grande confusion au moment opportun. Tout est affaire de synchronisation, de minutage et de rythmen surtout pour les Saboteurs qui soignent leur style.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Coordination"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Discrétion"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Magouilles"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Mécanique"
+                    }
+                ]
+            },
+            {
+                "key": "scientist",
+                "label": "Scientifique",
+                "subLabel": "il faut que ça innove",
+                "description": "Pour trouver des solutions créatives à des problèmes tels que l'approvisionnement, le logement, le transport, l'efficience des armements et des défenses, l'Alliance se tournent vers les Scientiques qui y apportent une réponse technique. Les représentants de l'Alliance préfèrent que les Scientifiques restent en retrait du danger, mais certains d'entre eux ont justement rejoint la Rébellion pour participer à la lutte contre l'Empire. Ceux-là sont aussi enclins à appuyer sur la détente d'un blaster qu'à mettre au point une optimisation du débit énergétique de ce même blaster pour le rendre plus dévastateur.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Connaissance (culture)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Connaissance (éducation)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Informatique"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Médecine"
+                    }
+                ]
+            }
+        ],
+        "universKey": "aor",
+        "univers": "Alliance"
+    },
+    { 
+        "key": "soldier",
+        "label": "Soldat",
+        "descriptionShort": "Les Soldats prennent les armes pour affronter la mort au service d'une cause ou pour honorer un salaire. Servir comme Soldat peut apporter gloire et honneur, certes, mais c'est ausi souvent un gage de terreur, de souffrance, d'hémoglobine et et brutalité.",
+        "description": "Les Soldats prennent les armes pour affronter la mort au service d'une cause ou pour honorer un salaire. Servir comme Soldat peut apporter gloire et honneur, certes, mais c'est ausi souvent un gage de terreur, de souffrance, d'hémoglobine et et brutalité.",
+        "skills": [
+            { 
+                "key": "",
+                "label": "Athlétisme"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (guerre)"
+            },
+            { 
+                "key": "",
+                "label": "Corps à corps"
+            },
+            { 
+                "key": "",
+                "label": "Distance (armes légères)"
+            },
+            { 
+                "key": "",
+                "label": "Distance (armes lourdes)"
+            },
+            { 
+                "key": "",
+                "label": "Médecine"
+            },
+            { 
+                "key": "",
+                "label": "Pugilat"
+            },
+            { 
+                "key": "",
+                "label": "Survie"
+            }
+        ],
+        "specialization": [
+            {
+                "key": "commando",
+                "label": "Commando",
+                "subLabel": "frapper comme l'éclair",
+                "description": "Les Commandos sont les meilleurs lorsqu'il s'agit de susprendre l'ennemi et de lui infliger des dégâts dévastateurs en profitant de ses points faibles. Le Commando sait dénicher sa cible, l'attaquer, la neutraliser, survivre à l'opération et rentrer sain et sauf au bercail. Tout équipe gagnerait à disposer d'un Commando, combattant très polyvalent. Il sait se défendre et gère particulièrement bien les situations les plus tendues. Il peut également se révéler utile dans une opération clandestine. Les questions intellectuelles et stratégiques lui importent peu; il préfère se concentrer sur la mission en cours et sa préparation pour s'assurer que ses compagnons et lui-même survivront jusqu'à la prochaine.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Corps à corps"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Pugilat"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Résistance"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Survie"
+                    }
+                ]
+            },
+            {
+                "key": "sharpshooter",
+                "label": "Tireur d'élite",
+                "subLabel": "viser juste",
+                "description": "Passsioné d'armes à feu et très fier de la précision qui le caractérise, le Tireur d'élite est l'atout parfait quand survient une fusillade. Son assurance reste intacte quand les traits de blaster fusent de toutes parts. Il ajuste soignement le réticule de sa lunette et élimine une à une les menaces avec efficacité et promptitude. Les Tireurs d'élite sont tout bonnement les maîtres du combat anti-personnel à distance. Certains préfère le rôle de tireur embusqué, d'autres ont une prédilection pour une approche plus directe et font pleuvoir les rayons ardents pour couvrir leurs équipiers contre les hordes de soldats impériaux.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Calme"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Distance (armes légères)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Distance (armes lourdes)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Perception"
+                    }
+                ]
+            },
+            {
+                "key": "medic",
+                "label": "Urgentiste",
+                "subLabel": "sauver l'équipe",
+                "description": "L'Alliance ne peut permettre de s'enliser dans une guerre d'usure. Chaque soldat de la Rébellion est un élément estimable donc la disparition affecte réellement le Haut Commandemant. L'Urgentiste est là pour éviter les pertes de personnel. On croit souvent que les Urgentistes sont des pacifistes dans l'âme. Un tel individu préfèrera souvent sauver une vie plutôt que d'en prendre une autre, mais il accepte aussi la nécessité du combat et de la violence au service d'une cause honorable et n'hésitera pas à terrasser l'ennemi pour sauver un compagnon. ",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Connaissance (xénologie)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Médecine"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Résistance"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Vigilance"
+                    }
+                ]
+            }
+        ],
+        "universKey": "aor",
+        "univers": "Alliance"
+    },
+    { 
+        "key": "commander",
+        "label": "Stratège",
+        "descriptionShort": "Le rôle du Stratège est d'organiser, d'encadrer et de mener les combattants et toutes les personnes qui servent dans une unité militaire de manière à ce que leur action soit véritablement efficace. Qu'il se tienne sur le pont d'un vaisseau spatial ou qu'il vole en formation parmi un escadron de chasseur, le Stratège demeure l'âme de la Rébellion militaire.",
+        "description": "Le rôle du Stratège est d'organiser, d'encadrer et de mener les combattants et toutes les personnes qui servent dans une unité militaire de manière à ce que leur action soit véritablement efficace. Qu'il se tienne sur le pont d'un vaisseau spatial ou qu'il vole en formation parmi un escadron de chasseur, le Stratège demeure l'âme de la Rébellion militaire.",
+        "skills": [
+            { 
+                "key": "",
+                "label": "Calme"
+            },
+            { 
+                "key": "",
+                "label": "Coercition"
+            },
+            { 
+                "key": "",
+                "label": "Commandement"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (stratégie)"
+            },
+            { 
+                "key": "",
+                "label": "Distance (armes légères)"
+            },
+            { 
+                "key": "",
+                "label": "Perception"
+            },
+            { 
+                "key": "",
+                "label": "Sang-froid"
+            },
+            { 
+                "key": "",
+                "label": "Vigilance "
+            }
+        ],
+        "specialization": [
+            {
+                "key": "squad-leader",
+                "label": "Chef d'escadron",
+                "subLabel": "un ballet interstellaire mortel",
+                "description": "Les affrontements les plus gigantesques se livrent entre vaisseaux capitaux, mais le combat pour la survie se mène chaque jour à une échelle plus modeste entre simples chasseurs, cannonières, airspeeders de combat et hovertanks. Ces unités doivent compter sur le génie tactique et l'audace des Chefs d'escadron qui sont à leur tête. Ils dirigent rarement les opérations en retrait : leur vaisseau ou véhicule entre le premier sur le terrain et est le dernier à en sortir. Donner l'exemple est primordial pour ces individus qui n'exigeront jamais de quiconque une conduite qu'ils ne sont pas eux même prêt à tenir.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Artillerie"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Mécanique"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Pilotage (espace)"
+                    },
+                    { 
+                        "key": "",
+                        "label": " Pilotage (planétaire)"
+                    }
+                ]
+            },
+            {
+                "key": "commodore",
+                "label": "Commodore",
+                "subLabel": "commandement de navire",
+                "description": "Les Commodores s'attardent rarement sur quelque planète que ce soit. Ils ont choisi de passer leur temps parmi les étoiles, les pieds ancrés sur le pont robuste de leur navire. Ils embrassent le défi quotididen de l'optimisation de l'appareil et de son équipage, mais aussi les épreuves stratégiques que leur réservent les missions d'un vaisseau capital. Les plus grands Commodores sont à la tête de flottes entières avec lesquelles ils se mesurent à leurs homologues ennemis. Les pièces de ces jeux de stratégie colossaux sont à chaque fois exposées aux conséquences les plus désastreuses.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Astrogation"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Connaissance (Bordure extérieure)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Connaissance (éducation)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Informatique"
+                    }
+                ]
+            },
+            {
+                "key": "tactician",
+                "label": "Tacticien",
+                "subLabel": "sur la terre ferme",
+                "description": "Quelques soldats armés de blasters et de bombes peuvent faire sauter n'importe quel type d'installations, perturber une organisation défensive et créer les conditions de de la victoire, à condition d'agir sous les ordres d'un tacticien audacieux et avisé. Lorsque les tirs de blaster font rage, que les hurlements de terreur retentissent et que les morts s'accumulent, chacun se tourne vers le tacticien pour sortir l'équipe du pétrin ou la hisser vers la gloire. Le Tacticien est sans cesse en train d'évaluer la situation, d'isoler le meilleur moyen d'accomplir la mission en épargnant au mieux ses troupes. Son équipe sait qu'elle dépend beaucoup de ce talent.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Commandement"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Distance (armes lourdes)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Pugilat"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Sang-froid"
+                    }
+                ]
+            }
+        ],
+        "universKey": "aor",
+        "univers": "Rébellion"
+    },
+    { 
+        "key": "consular",
+        "label": "Consulaire",
+        "descriptionShort": "Le consulaire s'efforce d'atteindre la paix et l'harmonie au moyen de discours positifs. Ceux qui suivent cette carrière essaient d'éviter les conflits physiques lorsque c'est possible. Toutefois, si la violence pour la violence est néfaste, parfois, il faut agir en face du mal.",
+        "description": "Le consulaire s'efforce d'atteindre la paix et l'harmonie au moyen de discours positifs. Ceux qui suivent cette carrière essaient d'éviter les conflits physiques lorsque c'est possible. Toutefois, si la violence pour la violence est néfaste, parfois, il faut agir en face du mal.",
+        "skills": [
+            {   
+                "key": "",
+                "label": "Calme"
+            },
+            { 
+                "key": "",
+                "label": "Commandement"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (culture)"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (éducation)"
+            },
+            { 
+                "key": "",
+                "label": "Négociation"
+            },
+            { 
+                "key": "",
+                "label": " Sang-froid"
+            }
+        ],
+        "specialization": [
+            {
+                "key": "niman-disciple",
+                "label": "Disciple Niman",
+                "subLabel": "",
+                "description": "Parfois les discussions ont beau être menées par un négociateur accompli, elles tournent court. Au temps de la République, beaucoup de diplomates Jedi étaient formés à l'usage du sabre laser pour réagir à ce genre de situation. Aujourd'hui, les Jedi consulaires qui souhaitent les imiter peuvent se concentrer sur l'autodéfense et gagner une connaissance pratique du combat au sabre laser en suivant la voie du Disciple Niman. En raison de la nature compatissance des Consulaires, cette voie se concentre sur la défensive, couplée à des techniques de négociation. Insistant sur la discipline mentale et le contrôle de soi, le Disciple Niman fait de la Force son alliée pour vaincre ses ennemis.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Commandement"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Négociation"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Sang-froid"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Sabre laser"
+                    }
+                ]
+            },
+            {
+                "key": "healer",
+                "label": "Guérisseur",
+                "subLabel": "",
+                "description": "Les Consulaires choississent souvent cette carrière à cause de leur sens de la compassion. Chez beaucoup d'entre eux, il s'exprime par un désir de soigner les blessés et de guérir les malades. Convaincu qu'aider les individus est aussi important que d'aider toute la civilisation galactique, un guérisseur se forme pour ça. Beaucoup de guérisseurs éprouvent de fortes réticences philosophiques à employer la violence. Toutefois, certains prennent le temps de développer des techniques défensives car ils estiment qu'elles sont particulièrement nécessaires dans les situations dangeureuses.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Connaissance (éducation)"
+                    },
+                    { 
+                        "key": "",
+                        "label": " Connaissance (xénologie)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Médecine"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Sang-froid"
+                    }
+                ]
+            },
+            {
+                "key": "sage",
+                "label": "Sage",
+                "subLabel": "",
+                "description": "De nombreux consulaires connaissent une vérité universelle : la connaissance, c'est le pouvoir. Comprendre une situation peut vous donner décisif, et c'est tout aussi vrai sur le champ de bataille que lorsque l'on résoud une dispute ou que l'on négocie un accord. Le Sage utilise ces connaissances pour changer les cœeurs et kes esprits d'autrui afin d'atteindre ses objectifs. Les Sages restent en contact avec ceux qui les entourent grâce à la Force vivante. Elle leur donne un moyen d'ancrer leurs études, de mettre ce qu'ils apprennent en perspective et de garder l'esprit ouvert sur la manière dont leur connaissances peuvent aider autrui.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Astrogation"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Calme"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Charme"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Connaissance (culture)"
+                    }
+                ]
+            }
+        ],
+        "universKey": "fad",
+        "univers": "Force"
+    },
+    { 
+        "key": "seeker",
+        "label": "Errant",
+        "descriptionShort": "Un Errant est un utilisateur de la Force qui se sent poussé à silloner la galaxie afin d'aider ceux qui en ont besoin et de s'opposer aux adeptes du côté obscur Les Errants adoptent généralement une vue pragmatique de la Force : ils considérent qu'il s'agit d'un outil de leur arsenal, mais pas le seul.",
+        "description": "Un Errant est un utilisateur de la Force qui se sent poussé à silloner la galaxie afin d'aider ceux qui en ont besoin et de s'opposer aux adeptes du côté obscur Les Errants adoptent généralement une vue pragmatique de la Force : ils considérent qu'il s'agit d'un outil de leur arsenal, mais pas le seul.",
+        "skills": [
+            { 
+                "key": "",
+                "label": "Connaissance (xénologie)"
+            },
+            { 
+                "key": "",
+                "label": "Distance (armes lourdes)"
+            },
+            { 
+                "key": "",
+                "label": "Pilotage (espace)"
+            },
+            { 
+                "key": "",
+                "label": " Pilotage (planétaire)"
+            },
+            { 
+                "key": "",
+                "label": "Survie"
+            },
+            { 
+                "key": "",
+                "label": "Vigilance "
+            }
+        ],
+        "specialization": [
+            {
+                "key": "pathfinder",
+                "label": "Arpenteur",
+                "subLabel": "",
+                "description": "Peu de gens sont aussi doués qu'un arpenteur pour explorer une planète et découvrir ses secrets. La combinaison de leur formation et de leurs talents de la Force leur permet de mener une enquête rapide et complète. Un Arpenteur est capable de survivre pendant des mois dans un environnement sauvage. Certains Arpenteurs sont capables de se lier à une bête, communiquant mentalement avec elle, percevant ses sens et dirigeant même ses actions.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Distance (armes légères)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Médecine"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Résistance"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Survie"
+                    }
+                ]
+            },
+            {
+                "key": "ataru-striker",
+                "label": "Bretteur Ataru",
+                "subLabel": "",
+                "description": "Lorsqu'on évolue seul dans un environnement hostile, tous les affrontements doivent être résolus rapidemment et de façon décisive. Les planètes isolées sont rarement pourvues d'installation médicales. Il arrive même parfois qu'un explorateur soit le seul être intelligent d'une planète. Il est alors préférable de résoudre un conflit vite et en prenant un minimum de risques plutôt que de se battre longuement. Les Bretteur Ataru adopte cette approche en se lançant au combat de toutes les fibres de son être.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Athlétisme"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Coordination"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Perception"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Sabre laser"
+                    }
+                ]
+            },
+            {
+                "key": "hunter",
+                "label": "Chasseur",
+                "subLabel": "",
+                "description": "De nombreux prédateurs rôdent dans les régions sauvages de la galaxie. Certains animaux se jettent sur tout ce qui peut e^tre digéré. De tous les adeptes de la Force, les Chasseurs s'avèrent particulièrement doués pour traquer, affronter et tuer ce genre d'adversaire, surtout lorsqu'il se cache dans la nature, à l'écart de la civilisation. Un Chasseur n'interfère normalement pas avec le cycle de la vie, mais il est toujours prêt à restaurer l'équilibre en éliminant un prédateur qui tue gratuitement et détruit des habitats naturels.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Coordination"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Discrétion"
+                    },
+                    { 
+                        "key": "",
+                        "label": " Distance (armes lourdes)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Vigilance"
+                    }
+                ]
+            }
+        ],
+        "universKey": "fad",
+        "univers": "Force"
+    },
+    { 
+        "key": "guardian",
+        "label": "Gardien",
+        "descriptionShort": "Les Gardiens sont mus à la fois par le sens de la compassion et par le sens des responsabilités. Ils estiment que leur affinité avec la Force leur donne le pouvoir - et l'obligation - d'aider les faibles et les opprimés. Les Gardiens se montrent brusques et directs, utilisant leurs prodigieuses capacités de combat et leur autorité naturelle pour intervenir directement partout où l'on a besoin d'eux.",
+        "description": ".",
+        "skills": [
+            { 
+                "key": "",
+                "label": "Calme"
+            },
+            { 
+                "key": "",
+                "label": "Corps à corps"
+            },
+            { 
+                "key": "",
+                "label": "Pugilat"
+            },
+            { 
+                "key": "",
+                "label": "Résistance"
+            },
+            { 
+                "key": "",
+                "label": "Sang-froid"
+            },
+            { 
+                "key": "",
+                "label": "Vigilance "
+            }
+        ],
+        "specialization": [
+            {
+                "key": "soresu-defensor",
+                "label": "Défenseur Soresu",
+                "subLabel": "",
+                "description": "Le Défenseur Soresu maîtrise l'art de l'autodéfense. Sabre laser en main, il peut repousser des hordes d'ennemis ou tenir bon face à une grêle de tirs de blaster, survivant à tout. Les Défenseurs Soresu dépendent de la Force pour les guider à travers les périls. Leurs techniques reposent presque entièrement sur l'utilisation optimal de leurs armes comme outils défensifs. De bien des manières, ce style se rapproche de la précognition car la Force guide ceux qui le pratiquent, les aidant à renvoyer une attaque ou à s'écarter du chemin d'un assaut.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": " Connaissance (culture)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Sabre laser"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Sang-froid"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Vigilance"
+                    }
+                ]
+            },
+            {
+                "key": "peacekeeper",
+                "label": "Pacificateur",
+                "subLabel": "",
+                "description": "Certains Gardiens optent pour l'action directe et entreprennent de renverser les despotes par la force armée. D'autres voient des guerres ravager des planètes et blesser les faibles et les innocents. Ils n'interviennent que pour les défendre et imposent la paix à la pointe de leur sabre laser. Ces Gardiens sont connus sous le nom de Pacificateur. La plupart d'entre eux n'endossent ce rôle qu'après avoir été forcés d'adopter une position d'autorité. Souvent, ils décident que la solution consiste à devenir le meilleur chef possible, mais c'est le sens des responsabilités qui leur dicte ce choix, plutôt qu'une volonté de pouvoir.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Commandement"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Perception"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Pilotage (planétaire)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Sang-froid"
+                    }
+                ]
+            },
+            {
+                "key": "protector",
+                "label": "Protecteur",
+                "subLabel": "",
+                "description": "La compassion pousse souvent les Gardiens à aider ceux qui ne peuvent pas s'aider eux-mêmes. Les Protecteurs veillent à ce que les innocents ne souffrent jamais. Peu d'ennemis s'avèrent plus résistant qu'un Protecteur, et encore plus rares sont ceux qui parvienne à franchir sa garde pour attaquer ceux qu'il défend. Ils pourraient être considérés comme des gardes du corps, mais leurs efforts se limitent rarement à un seul individu. Souvent, ils servent d'urgentistes, employant leurs connaissances médicales pour stabiliser les blessés sur le champ de bataille.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Athlétisme"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Distance (armes légères)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Médecine"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Résistance"
+                    }
+                ]
+            }
+        ],
+        "universKey": "fad",
+        "univers": "Force"
+    },
+    { 
+        "key": "warrior",
+        "label": "Guerrier",
+        "descriptionShort": "Les Guerriers sont des combattants spécialisés qui se servent de la Force pour améliorer leurs considérables prouesses martiales. Qu'ils se trouvent sur le siège du pilote d'un chasseur spatial, brandissant un sabre laser sur un champ de bataille ou foncent blaster au poing, les guerriers brillent dans toutes les formes de combat.",
+        "description": "Les Guerriers sont des combattants spécialisés qui se servent de la Force pour améliorer leurs considérables prouesses martiales. Qu'ils se trouvent sur le siège du pilote d'un chasseur spatial, brandissant un sabre laser sur un champ de bataille ou foncent blaster au poing, les guerriers brillent dans toutes les formes de combat.",
+        "skills": [
+            { 
+                "key": "",
+                "label": "Athlétisme"
+            },
+            { 
+                "key": "",
+                "label": "Calme"
+            },
+            { 
+                "key": "",
+                "label": "Corps à corps"
+            },
+            { 
+                "key": "",
+                "label": "Perception"
+            },
+            { 
+                "key": "",
+                "label": "Pugilat"
+            },
+            { 
+                "key": "",
+                "label": "Survie "
+            }
+        ],
+        "specialization": [
+            {
+                "key": "agressor",
+                "label": "Agresseur",
+                "subLabel": "",
+                "description": "L'Agresseur se fie à la peur pour intimider l'adversaire afin qu'il se rende ou batte en retraite. Coriace et dangereux, il est capable d'infliger des dégâts considérables à ses adversaires tout en survivant à toutes leurs attaques. Son attitude, mélange de confiance en soi et de menace, transmet un premier message à ses ennemis. Certains Agresseurs espèrent qu'elle suffira à les pousser, à faire machine arrière sans se battre.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Coercition"
+                    },
+                    { 
+                        "key": "",
+                        "label": " Connaissance (pègre)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Distance (armes légères)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Système D"
+                    }
+                ]
+            },
+            {
+                "key": "shii-cho-knight",
+                "label": "Chevalier Shii-cho",
+                "subLabel": "",
+                "description": "L'antique style de combat au sabre laser du Shii-cho fut, dit-on, la première forme martiale apprise par les Jedi et leur prédécesseurs. Elle se concentre sur les bases du combatau sabre et emprunte de nombreux aspects à d'autres techniques de combat à l'épée. Les Chevaliers Shii-cho modernes reconnaissent la force de la simplicité et ignorent les manœuvres spectaculaires au profit des fondamentaux : bloquer, parer, frapper.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Athlétisme"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Coordination"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Corps à corps"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Sabre laser"
+                    }
+                ]
+            },
+            {
+                "key": "starfighter-ace",
+                "label": "As de l'espace",
+                "subLabel": "",
+                "description": "Les pilotes de chasseurs spaciaux participent avec enthousiasme à l'une des formes de combats les plus dangereuses qui soient. Ils attaquent des vaisseaux capitaux à bord d'appareils dont les boucliers et les blindages - lorsqu'ils en ont - n'offrent pratiquement aucune résistance contre les tirs de leur adversaire. A default, ils comptent sur la Force pour les protéger. Les individus sensibles à cette énergie mystique et qui savourent les périls du combat spacial finissent par adopter la spécialité As de l'espace.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Astrogation"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Artillerie"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Mécanique"
+                    },
+                    { 
+                        "key": "",
+                        "label": " Pilotage (espace)"
+                    }
+                ]
+            }
+        ],
+        "universKey": "fad",
+        "univers": "Force"
+    },
+    { 
+        "key": "mystic",
+        "label": "Mystique",
+        "descriptionShort": "Les Mystiques puisant profondément dans la Force, ils ont tendance à maîtriser un éventail de pouvoir très étendu. Ils perçoivent constamment le flux et le reflux de son énergie entre tous les êtres vivants. Elle leur apprend que leurs instincts émanent de la Force, et qu'il vaut mieux s'y fier que de reposer sur une formation.",
+        "description": "Les Mystiques puisant profondément dans la Force, ils ont tendance à maîtriser un éventail de pouvoir très étendu. Ils perçoivent constamment le flux et le reflux de son énergie entre tous les êtres vivants. Elle leur apprend que leurs instincts émanent de la Force, et qu'il vaut mieux s'y fier que de reposer sur une formation.",
+        "skills": [
+            { 
+                "key": "",
+                "label": "Charme"
+            },
+            { 
+                "key": "",
+                "label": "Coercition"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (Bordure Extérieure)"
+            },
+            { 
+                "key": "",
+                "label": "Connaissance (culture)"
+            },
+            { 
+                "key": "",
+                "label": "Perception"
+            },
+            { 
+                "key": "",
+                "label": "Vigilance"
+            }
+        ],
+        "specialization": [
+            {
+                "key": "advisor",
+                "label": "Conseiller",
+                "subLabel": "",
+                "description": "Tous ceux qui sont doués dans les voies de la Force n'aspirent pas à diriger autrui. En fait, certains estiment qu'une position d'autorité les mettrait en danger d'abuser de leurs capacités spéciales. Afin de ne pas être corrompus par le pouvoir, ils préfèrent servir de Conseiller. Certains pensent que leurs conseils sont trop précieux pour être limités à une planète ou une région. Ils errent dans les étoiles, dispensant les recommandations de la Force partout où ils vont.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Charme"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Négociation"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Système D"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Tromperie"
+                    }
+                ]
+            },
+            {
+                "key": "makashi-duelist",
+                "label": "Duelliste Makashi",
+                "subLabel": "",
+                "description": "La présence et l'art de la mise en scène associés aux Mystiques se reflètent naturellement dans la voie du Duelliste. Pour le pratiquant du Makashi, dominer un combat par sa présence est tout aussi important que de le maîtriser par ses prouesses martiales, et les Duellistes Makashi représent l'expression ultime de cet art. Des éléments du style personnel de combattant servent à désorienter ou à distraire l'adversaire pendant la bataille. Parfois, un simple mot est aussi efficace qu'un geste pour égarer son adversaire et l'ouvrir à un coup fatal.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Calme"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Charme"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Coordination"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Sabre laser"
+                    }
+                ]
+            },
+            {
+                "key": "seer",
+                "label": "Visionnaire",
+                "subLabel": "",
+                "description": "Certains individus s'avèrent capables de rester ouverts en permanence à la présence de la Force, même lorsqu'ils sont confrontés à la routine de leur existence. Leur influence leur apparaît  dans des détails subtils. Pour eux, sa moindre oscillation revêt un sens profond et les avertit d'événements critiques dans l'avenir. Toutefois, la quantité d'informations qu'ils en retirent peut vite devenir écrasante, surtout dans des environnements où les êtres pensants sont nombreux. De nombreux Visionnaires optent donc pour une vie retirée, loin des villes et des métropoles surpeuplées.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Connaissance (culture)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Sang-froid"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Survie"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Vigilance"
+                    }
+                ]
+            }
+        ],
+        "universKey": "fad",
+        "univers": "Force"
+    },
+    { 
+        "key": "sentinel",
+        "label": "Sentinelle",
+        "descriptionShort": "Les Sentinelles Jedi associent l'expérience au combat et l'entraînement de la Force à une approche pragmatique de leurs devoirs. Elles ont recours à la technologie et servent de techniques empruntées à la police, aux espions, aux collecteurs d'informations et même aux criminels pour accomplir leurs tâches.",
+        "description": "Les Sentinelles Jedi associent l'expérience au combat et l'entraînement de la Force à une approche pragmatique de leurs devoirs. Elles ont recours à la technologie et servent de techniques empruntées à la police, aux espions, aux collecteurs d'informations et même aux criminels pour accomplir leurs tâches.",
+        "skills": [
+            { 
+                "key": "",
+                "label": " Connaissance (Mondes du Noyau)"
+            },
+            { 
+                "key": "",
+                "label": "Discrétion"
+            },
+            { 
+                "key": "",
+                "label": "Informatique"
+            },
+            { 
+                "key": "",
+                "label": "Magouilles"
+            },
+            { 
+                "key": "",
+                "label": "Perception"
+            },
+            { 
+                "key": "",
+                "label": "Tromperie "
+            }
+        ],
+        "specialization": [
+            {
+                "key": "artisan",
+                "label": "Artisan",
+                "subLabel": "",
+                "description": "Certains utilisateurs de la Force présentent une affinités naturelle avec les productions d'objets technologiques. La Force leur permet de comprendre intuitivement leur agencement et leur fonction. Les Artisans sentent sa présence et se servent de leur lien avec l'énergie mystique pour créer des merveilles d'esthétique et de précision. Un Artisan ne fabrique pas d'objets en série pour les vendre ou les distribuer. Chacune de ses créations est une véritable œuvres d'art, aussi personnelle que marquante.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Astrogation"
+                    },
+                    { 
+                        "key": "",
+                        "label": " Connaissance (éducation)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Informatique"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Mécanique"
+                    }
+                ]
+            },
+            {
+                "key": "shien-expert",
+                "label": "Expert Shien",
+                "subLabel": "",
+                "description": "Ue sabre laser est une arme redoutable. Manié avec puissance, même un adversaire capable de parer risque de se laisser déborder. Par ailleurs, sa capacité à réfléchir les tirs de blasters permet de se débarasser des ennemis à distance. Les Experts Shien exploitent la contradiction apparente entre ces deux utilisations. Ils se montrent intelligents et précis afin de renvoyer les attaques à distance de leur adversaire, mais aussi brillants et malins pour savoir quand déborder un adversaire par la force brute.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Athlétisme"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Magouilles"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Résistance "
+                    },
+                    { 
+                        "key": "",
+                        "label": " Sabre laser"
+                    }
+                ]
+            },
+            {
+                "key": "shadow",
+                "label": "Ombre",
+                "subLabel": "",
+                "description": "Aux temps de l'Ordre Jedi, les Sentinelles nettoyaient les rues de la pègre galactique. Parmis elle, un petit groupe se consacrait à une menace bien plus redoutable. Les Ombres s'entraînaient pour découvrir et éliminer ceux qui avaient basculer du côté obscur, le Siths. Un initié passé du côté obscur peut devenir un adversaire très redoutable. Un tel ennemi mobilise tous les talents d'une Sentinelle. Pour éliminer un adversaire de cette envergure, il faut se servir de tous les outils et de toutes les ressources disponibles, quelles qu'elles soient.",
+                "book": "Livre de base",
+                "skills": [
+                    { 
+                        "key": "",
+                        "label": "Connaissance (pègre)"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Discrétion"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Magouilles"
+                    },
+                    { 
+                        "key": "",
+                        "label": "Système D"
+                    }
+                ]
+            }
+        ],
+        "universKey": "fad",
+        "univers": "Force"
     }
 ]
