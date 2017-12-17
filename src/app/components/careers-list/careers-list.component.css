@@ -1,0 +1,28 @@
+#careersList .card {
+    margin-bottom: 30px;
+}
+
+#careersList .card .card-img-top {
+    max-height: 160px;
+}
+
+#careersList .eoe {
+    border: 2px solid brown;
+}
+
+#careersList .aor {
+    border: 2px solid red;
+}
+
+#careersList .fad {
+    border: 2px solid green;
+}
+
+#careersList .card-footer {
+    padding: 2px;
+}
+
+#careersList .card-footer img {
+    max-width:100%;
+} 
+

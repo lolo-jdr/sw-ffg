@@ -29,4 +29,8 @@ export class HelperService {
     };
   }
 
+  public static stickTextForHtml(textToFormat) {
+    return textToFormat.replace(/ /g, '&nbsp;');
+  }
+
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../../services/api.service';
+import { HelperService } from '../../services/helper.service';
 
 @Component({
   selector: 'app-careers-single',
@@ -14,7 +15,7 @@ export class CareersSingleComponent implements OnInit {
   protected career: any;
   private sub: any;
   
-  constructor(private route: ActivatedRoute, private api:ApiService) { }
+  constructor(private route: ActivatedRoute, private api:ApiService, private helper:HelperService) { }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
@@ -24,8 +25,10 @@ export class CareersSingleComponent implements OnInit {
         
         if (careers) {
           var careerToLoad = careers.find(c => c.key === careerParam);
+          
           if (careerToLoad) {
             console.log(careerToLoad);
+
             this.career = careerToLoad;
           }
         }

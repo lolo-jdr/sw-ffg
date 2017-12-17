@@ -4,48 +4,91 @@
 
 	<section *ngIf="isPageLoaded" id="speciesSingle">
 
-		<p class="page-title">Espèce: {{ species.label }}</p>
+		<div class="row page-title">
+			<div class="page-title-label">
+				<p>{{ species.label }}</p>
+			</div>
+		</div>
 
 		<div class="row species-characteristics">
-			<div class="col-5 text-center">
+			<div class="col-sm block text-center">
 				<img src="assets/images/species/{{ species.key }}.jpg" class="img-responsive" />
 			</div>
-			<div>
-				<div class="characteristic">
+			<div class="col-sm block">
+				<div class="characteristics">
 					<p>Caractéristiques</p>
-					<p><span class="sub-title">Vigeur :</span> {{ species.characteristics.brawn }}</p>
-					<p><span class="sub-title">Agilité :</span> {{ species.characteristics.agility }}</p>
-					<p><span class="sub-title">Intelligence :</span> {{ species.characteristics.intellect }}</p>
-					<p><span class="sub-title">Ruse :</span> {{ species.characteristics.cunning }}</p>
-					<p><span class="sub-title">Volonté :</span> {{ species.characteristics.willpower }}</p>
-					<p><span class="sub-title">Présence :</span> {{ species.characteristics.presence }}</p>
+					<p>
+						<span class="sub-title">Vigeur :</span>
+						<span>{{ species.characteristics.brawn }}</span>
+					</p>
+					<p>
+						<span class="sub-title">Agilité :</span>
+						<span>{{ species.characteristics.agility }}</span>
+					</p>
+					<p>
+						<span class="sub-title">Intelligence :</span>
+						<span>{{ species.characteristics.intellect }}</span>
+					</p>
+					<p>
+						<span class="sub-title">Ruse :</span>
+						<span>{{ species.characteristics.cunning }}</span>
+					</p>
+					<p>
+						<span class="sub-title">Volonté :</span>
+						<span>{{ species.characteristics.willpower }}</span>
+					</p>
+					<p>
+						<span class="sub-title">Présence :</span>
+						<span>{{ species.characteristics.presence }}</span>
+					</p>
 				</div>
-				<div class="characteristic-other">
-					<p><span class="sub-title">Seuil de blessure:</span> {{ species.woundTreshold }}</p>
-					<p><span class="sub-title">Seuil de stress:</span> {{ species.strainTreshold }}</p>
-					<p><span class="sub-title">PX de départ:</span> {{ species.startingXp }}</p>
+				<div class="characteristics-other">
+					<p>
+						<span class="sub-title">Seuil de blessure:</span>
+						<span [innerHtml]="species.woundTreshold"></span>
+					</p>
+					<p>
+						<span class="sub-title">Seuil de stress:</span>
+						<span [innerHtml]="species.strainTreshold"></span>
+					</p>
+					<p>
+						<span class="sub-title">PX de départ:</span>
+						<span>{{ species.startingXp }}</span>
+					</p>
 				</div>
 			</div>
 		</div>
 
 		<div class="row species-capacities">
-			<div class="col-5">
-				<p class="text-center page-title">Capacité spéciale</p>
+			<div class="col-sm block">
+				<p class="text-center sub-title">Capacité spéciale</p>
 				<p class="text-justify" [innerHTML]="species.specialAbility"></p>
 			</div>
-			<div class="col-7" *ngIf="species.otherAbilities.length > 0">
-				<p class="text-center page-title">Autres capacités</p>
-				<p class="text-justify" *ngFor="let otherAbility of species.otherAbilities">
-					<span [innerHTML]="otherAbility.label" class="sub-title"></span>
-					<span [innerHTML]="otherAbility.description"></span>
-				</p>
+			<div class="col-sm block">
+				<p class="text-center sub-title">Autres capacités</p>
+				<ng-container *ngIf="species.otherAbilities.length > 0">
+					<p class="text-justify" *ngFor="let otherAbility of species.otherAbilities">
+						<span [innerHTML]="otherAbility.label" class="sub-title"></span>
+						<span [innerHTML]="otherAbility.description"></span>
+					</p>
+				</ng-container>
+				<ng-container *ngIf="species.otherAbilities.length === 0">
+					<p class="text-center">Aucune</p>
+				</ng-container>
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-12">
-				<p class="page-title">Description</p>
-				<p class="text-justify">{{ species.description }}</p>
+		<div class="row species-description">
+			<div class="col-sm">
+				<div class="row">
+					<div class="col-sm text-center">
+						<p class="sub-title">Description</p>
+					</div>
+				</div>
+				<div class="col-sm text-center"></div>
+				<div class="row block">
+					<p class="text-justify">{{ species.description }}</p>
+				</div>
 			</div>
 		</div>
 

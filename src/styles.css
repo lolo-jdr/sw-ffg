@@ -66,6 +66,19 @@
 
 .page-title {
   font-weight: 600;
+  font-size: 2em;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.page-title-label {
+  padding-right: 20px;
+  border-right: 1px solid #f2f2f2;
+}
+
+.page-title-label p {
+  margin-bottom:  0px;
 }
 
   #mainNav .navbar-collapse {

@@ -1,0 +1,120 @@
+Career:
+{ 
+    "key": "",
+    "label": "",
+    "descriptionShort": ".",
+    "description": ".",
+    "skills": [
+        { 
+            "key": "",
+            "label": ""
+        },
+        { 
+            "key": "",
+            "label": ""
+        },
+        { 
+            "key": "",
+            "label": ""
+        },
+        { 
+            "key": "",
+            "label": ""
+        },
+        { 
+            "key": "",
+            "label": ""
+        },
+        { 
+            "key": "",
+            "label": ""
+        },
+        { 
+            "key": "",
+            "label": ""
+        },
+        { 
+            "key": "",
+            "label": ""
+        }
+    ],
+    "specialization": [
+        {
+            "key": "",
+            "label": "",
+            "subLabel": "",
+            "description": "",
+            "book": "Livre de base",
+            "skills": [
+                { 
+                    "key": "",
+                    "label": ""
+                },
+                { 
+                    "key": "",
+                    "label": ""
+                },
+                { 
+                    "key": "",
+                    "label": ""
+                },
+                { 
+                    "key": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "key": "",
+            "label": "",
+            "subLabel": "",
+            "description": "",
+            "book": "Livre de base",
+            "skills": [
+                { 
+                    "key": "",
+                    "label": ""
+                },
+                { 
+                    "key": "",
+                    "label": ""
+                },
+                { 
+                    "key": "",
+                    "label": ""
+                },
+                { 
+                    "key": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "key": "",
+            "label": "",
+            "subLabel": "",
+            "description": "",
+            "book": "Livre de base",
+            "skills": [
+                { 
+                    "key": "",
+                    "label": ""
+                },
+                { 
+                    "key": "",
+                    "label": ""
+                },
+                { 
+                    "key": "",
+                    "label": ""
+                },
+                { 
+                    "key": "",
+                    "label": ""
+                }
+            ]
+        }
+    ],
+    "universKey": "",
+    "univers": "Rébellion"
+}

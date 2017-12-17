@@ -19,6 +19,7 @@ import { CareersListComponent } from './components/careers-list/careers-list.com
 import { ObligationsComponent } from './shared/obligations/obligations.component';
 import { CharacteristicsComponent } from './shared/characteristics/characteristics.component';
 import { CareersSingleComponent } from './components/careers-single/careers-single.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CareersSingleComponent } from './components/careers-single/careers-sing
     CareersListComponent,
     ObligationsComponent,
     CharacteristicsComponent,
-    CareersSingleComponent
+    CareersSingleComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

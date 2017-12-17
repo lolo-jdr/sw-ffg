@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../../services/api.service';
+import { HelperService } from '../../services/helper.service';
 
 @Component({
   selector: 'app-species-single',
@@ -14,7 +15,7 @@ export class SpeciesSingleComponent implements OnInit {
   protected species: any;
   private sub: any;
 
-  constructor(private route: ActivatedRoute, private api:ApiService) { }
+  constructor(private route: ActivatedRoute, private api:ApiService, private helper:HelperService) { }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
@@ -24,8 +25,14 @@ export class SpeciesSingleComponent implements OnInit {
         
         if (species) {
           var speciesToLoad = species.find(c => c.key === speciesParam);
+          
           if (speciesToLoad) {
             console.log(speciesToLoad);
+
+            // Format data for HTML view
+            speciesToLoad.woundTreshold = HelperService.stickTextForHtml(speciesToLoad.woundTreshold)
+            speciesToLoad.strainTreshold = HelperService.stickTextForHtml(speciesToLoad.strainTreshold)
+            
             this.species = speciesToLoad;
           }
         }

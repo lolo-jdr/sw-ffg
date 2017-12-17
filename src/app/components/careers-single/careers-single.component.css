@@ -3,15 +3,57 @@
     flex-wrap: wrap;
  }
 
- #careersSingle .career-skills {
+#careersSingle .card {
+    margin-bottom: 30px;
+}
+
+#careersSingle .career-skills {
      margin-bottom: 20px;
  }
 
- #careersSingle .career-skills img {
+#careersSingle .career-skills img {
      width: 100%;
      max-width: 400px;
  }
 
- #careersSingle .career-skills .skills p:first-child {
+#careersSingle .career-skills .skills p:first-child {
     margin-bottom: 0px;
+}
+
+#careersSingle .block {
+    padding: 20px;
+}
+
+#careersSingle .career-specializations .card-title {
+    margin-bottom: 20px;
+}
+
+#careersSingle .specialization-label {
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+#careersSingle .career-specializations img {
+    max-width: 100px;
+}
+
+#careersSingle .career-specialization-skills {
+    margin-bottom: 20px;
+}
+
+#careersSingle .career-specialization-skills p:first-child small {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#careersSingle .career-specialization-skills p {
+    margin-bottom: 0px;
+}
+
+ /* Responsive */
+
+ @media (max-width: 700px) {
+    #careersSingle .career-skills .skills {
+        padding-left: 25%;
+    }   
 }
