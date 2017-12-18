@@ -1042,7 +1042,7 @@
                 ]
             },
             {
-                "key": "inflitrator",
+                "key": "infiltrator",
                 "label": "taupe",
                 "subLabel": "trouver les secrets",
                 "description": "Les Taupes ont pour mission de pénétrer dans la gueule du loup en passant inaperçus, soit en se cachant, soit en trichant sur leurs intentions. Les Taupes doivent fréquemment prendre des risques inouïs sans disposer de renforts directs, et souvent sans issue au cas où ils seraient débusqués au mauvais moment. Les taupes participent à des opérations coordonnées dont le but est de torpiller les plans impériaux tout en collectant des informations.",
@@ -1349,7 +1349,7 @@
         ],
         "specialization": [
             {
-                "key": "squad-leader",
+                "key": "squadron-leader",
                 "label": "Chef d'escadron",
                 "subLabel": "un ballet interstellaire mortel",
                 "description": "Les affrontements les plus gigantesques se livrent entre vaisseaux capitaux, mais le combat pour la survie se mène chaque jour à une échelle plus modeste entre simples chasseurs, cannonières, airspeeders de combat et hovertanks. Ces unités doivent compter sur le génie tactique et l'audace des Chefs d'escadron qui sont à leur tête. Ils dirigent rarement les opérations en retrait : leur vaisseau ou véhicule entre le premier sur le terrain et est le dernier à en sortir. Donner l'exemple est primordial pour ces individus qui n'exigeront jamais de quiconque une conduite qu'ils ne sont pas eux même prêt à tenir.",
@@ -1682,7 +1682,7 @@
         ],
         "specialization": [
             {
-                "key": "soresu-defensor",
+                "key": "soresu-defender",
                 "label": "Défenseur Soresu",
                 "subLabel": "",
                 "description": "Le Défenseur Soresu maîtrise l'art de l'autodéfense. Sabre laser en main, il peut repousser des hordes d'ennemis ou tenir bon face à une grêle de tirs de blaster, survivant à tout. Les Défenseurs Soresu dépendent de la Force pour les guider à travers les périls. Leurs techniques reposent presque entièrement sur l'utilisation optimal de leurs armes comme outils défensifs. De bien des manières, ce style se rapproche de la précognition car la Force guide ceux qui le pratiquent, les aidant à renvoyer une attaque ou à s'écarter du chemin d'un assaut.",

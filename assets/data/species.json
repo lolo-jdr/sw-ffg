@@ -322,8 +322,8 @@
       ]
     },
     {
-      "key": "mirialian",
-      "label": "Mirialian",
+      "key": "mirialan",
+      "label": "Mirialan",
       "genders": [ "Male", "Femelle" ],
       "description": "Les Mirialans sont des Proche-Humains du à leurs ressemblances avec ces derniers. Il sont originaire de la planète Mirial. Vivant sur une planète rude et aride, quasiment désertique sur sa totalité, les Mirialans ce sont dotés d'un panel sensoriel élaboré, qui rend leur vie bien meilleure et supportable. Les Mirialans parviennent ainsi à user de leurs sens et à les contrôler totalement dans le but de limiter la souffrance de leur corps. Cette espèce appréhende la vie d'une manière paradoxale, quand on sait qu'elle est très croyante. En effet, les Mirialans ne croient pas en une fatalité qui réduit chaque individu à un rôle prédéfini.",
       "characteristics": {
