@@ -1,47 +1,66 @@
 [
     {
-        "dice": "",
-        "title": "",
-        "description": ""
+        "dice": "01-08",
+        "emotional-force-title": "Bravoure",
+        "emotional-force-description": "la bravoure du personnage est remarquable. Qu'il charge un rancor en furie ou qu'il s'engouffre dans un immeuble en flammes pour sauver des innocents, il est toujours prêt à prendre des risques pour sauver autrui.",
+        "emotional-weakness-title": "Colère",
+        "emotional-weakness-description": "il n'est pas toujours bon d'avoir le sang chaud. Le personnage est prompt à se fâcher, et quand il ne peut pas résoudre un problème de manière direct, la frustration peut le rendre fou de rage."
+    },
+    {
+        "dice": "09-16",
+        "emotional-force-title": "Amour",
+        "emotional-force-description": "le personnage a un cœur immense. Ses amis et ses amours y tiennent une place toute particulière, mais il apprécie la plupart des gens qu'il rencontre. Son amour des autres le rend charmant, affable et tolérant.",
+        "emotional-weakness-title": "Jalousie",
+        "emotional-weakness-description": "lorsqu'il n'est pas donné de manière altruiste, l'amour risque de tourner à la jalousie. Si ses sentiments ne lui sont pas rendus, l'amour du personnage tourne à l'envie, à moins qu'il ne jalouse tout simplement les succès ou les biens des autres. "
+    },
+    {
+        "dice": "17-24",
+        "emotional-force-title": "Prudence",
+        "emotional-force-description": "le personnage fait preuve d'une prudence admirable. Il préfère toujours examiner une situation nouvelle sous tous ses angles avant de prendre une décision.",
+        "emotional-weakness-title": "Peur",
+        "emotional-weakness-description": "la ligne qui sépare la prudence de la peur est mince. Parfois, le personnage passe tellement de temps à évaluer les risques qu'il en oublie d'agir. A d'autres moments, la prudence le pousse à fuir avant que le danger ne se présente, alors qu'une action plus déterminée aurait été récompensée."
     },
     {
         "dice": "",
-        "title": "",
-        "description": ""
+        "emotional-force-title": "",
+        "emotional-force-description": "",
+        "emotional-weakness-title": "",
+        "emotional-weakness-description": ""
     },
     {
         "dice": "",
-        "title": "",
-        "description": ""
+        "emotional-force-title": "",
+        "emotional-force-description": "",
+        "emotional-weakness-title": "",
+        "emotional-weakness-description": ""
     },
     {
         "dice": "",
-        "title": "",
-        "description": ""
+        "emotional-force-title": "",
+        "emotional-force-description": "",
+        "emotional-weakness-title": "",
+        "emotional-weakness-description": ""
     },
     {
         "dice": "",
-        "title": "",
-        "description": ""
+        "emotional-force-title": "",
+        "emotional-force-description": "",
+        "emotional-weakness-title": "",
+        "emotional-weakness-description": ""
     },
     {
         "dice": "",
-        "title": "",
-        "description": ""
+        "emotional-force-title": "",
+        "emotional-force-description": "",
+        "emotional-weakness-title": "",
+        "emotional-weakness-description": ""
     },
     {
         "dice": "",
-        "title": "",
-        "description": ""
+        "emotional-force-title": "",
+        "emotional-force-description": "",
+        "emotional-weakness-title": "",
+        "emotional-weakness-description": ""
     },
-    {
-        "dice": "",
-        "title": "",
-        "description": ""
-    },
-    {
-        "dice": "",
-        "title": "",
-        "description": ""
-    }
+    
 ]
