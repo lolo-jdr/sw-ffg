@@ -69,6 +69,7 @@
   font-size: 2em;
   padding-left: 30px;
   padding-bottom: 10px;
+  margin-bottom: 50px;
   border-bottom: 1px solid #f2f2f2;
 }
 
@@ -241,7 +242,7 @@
     background: white; }
     @media (min-width: 992px) {
       .content-wrapper {
-        margin-left: 250px; } }
+        margin-left: 250px;} }
   
   #sidenavToggler i {
     font-weight: 800; }

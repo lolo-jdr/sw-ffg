@@ -20,6 +20,8 @@ import { ObligationsComponent } from './shared/obligations/obligations.component
 import { CharacteristicsComponent } from './shared/characteristics/characteristics.component';
 import { CareersSingleComponent } from './components/careers-single/careers-single.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { EquipmentsComponent } from './components/equipments/equipments.component';
+import { EquipmentTableComponent } from './shared/equipment-table/equipment-table.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { FooterComponent } from './layout/footer/footer.component';
     ObligationsComponent,
     CharacteristicsComponent,
     CareersSingleComponent,
-    FooterComponent
+    FooterComponent,
+    EquipmentsComponent,
+    EquipmentTableComponent
   ],
   imports: [
     BrowserModule,

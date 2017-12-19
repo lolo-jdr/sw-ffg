@@ -16,6 +16,14 @@ export class ApiService {
   public static DUTIES = 'assets/data/duties.json';
   public static MORALITIES = 'assets/data/moralities.json';
 
+  public static WEAPONS_DISTANCE_ENERGY = "assets/data/weapons-distance-energy.json";
+  public static WEAPONS_DISTANCE_PERCUSSION = "assets/data/weapons-distance-percussion.json";
+  public static WEAPONS_DISTANCE_JET = "assets/data/weapons-distance-jet.json";
+  public static WEAPONS_DISTANCE_EXPLOSIVE = "assets/data/weapons-distance-explosive.json";
+
+  public static WEAPONS_CONTACT_PUGILAT = "assets/data/weapons-contact-pugilat.json";
+  public static WEAPONS_CONTACT_SWORD = "assets/data/weapons-contact-sword.json";
+
   public static CHARACTER_CREATION_INSPIRATIONS = 'assets/data/character-creation-inspirations.json';
 
   constructor(private http:Http) { }

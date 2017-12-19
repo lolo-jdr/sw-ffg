@@ -4,6 +4,12 @@
 
   <section *ngIf="isPageLoaded" id="speciesList">
 
+    <div class="row page-title">
+      <div class="page-title-label">
+        <p>Liste des espèces</p>
+      </div>
+    </div>
+
     <div class="card-deck" *ngFor="let speciesLine of this.speciesList">
       <div class="card clickable" *ngFor="let species of speciesLine" routerLink="/species/{{ species.key }}">
         <img class="card-img-top" src="assets/images/species/{{ species.key }}-h.jpg" alt="Card image cap">

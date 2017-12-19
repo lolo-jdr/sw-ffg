@@ -4,6 +4,12 @@
 
   <section *ngIf="isPageLoaded" id="careersList">
 
+    <div class="row page-title">
+      <div class="page-title-label">
+        <p>Liste des carrières</p>
+      </div>
+    </div>
+
     <div class="card-deck" *ngFor="let careerLine of careers">
       <div class="card clickable" *ngFor="let career of careerLine" routerLink="/careers/{{ career.key }}" [ngClass]="{'eoe': career.universKey == 'eoe', 'aor': career.universKey == 'aor', 'fad': career.universKey == 'fad'}">
         <img class="card-img-top" src="assets/images/careers/{{ career.key }}-h.jpg" alt="Card image cap">

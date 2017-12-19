@@ -1,7 +1,28 @@
+.obligation-table thead {
+    background-color: #000000;
+    color: white;
+}
+
 .obligation-table .obligation-title {
     font-weight: 600;
 }
 
 .obligation-table tbody tr > td {
     min-width: 80px;
+}
+
+.obligation-table tr:hover {
+    background-color: transparent;
+}
+
+.obligation-table tr.eoe {
+    background-color: brown;
+}
+
+.obligation-table tr.aor {
+    background-color: red;
+}
+
+.obligation-table tr.fad {
+    background-color: green;
 }

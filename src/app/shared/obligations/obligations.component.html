@@ -1,4 +1,4 @@
-<table class="table table-hover obligation-table">
+<table *ngIf="type === 'obligations' || type === 'duties'" class="table table-hover obligation-table">
   <thead>
     <tr>
       <th scope="col">D100</th>
@@ -6,12 +6,38 @@
     </tr>
   </thead>
   <tbody role="tabpanel">
-    <tr *ngFor="let obligation of obligations">
+    <tr *ngFor="let obligation of obligations; let i = index;" 
+    [ngClass]="{'eoe': (i%2) === 1 && type === 'obligations', 'aor': (i%2) === 1 && type === 'duties'}">
       <td scope="row">{{ obligation.dice }}</td>
       <td>
         <span class="obligation-title">{{ obligation.title }}</span>
         <span>&nbsp;:&nbsp;</span>
         <span>{{ obligation.description }}</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table *ngIf="type === 'moralities'" class="table table-hover obligation-table">
+  <thead>
+    <tr>
+      <th scope="col">D100</th>
+      <th scope="col">Force émotionnelle</th>
+      <th scope="col">Faiblesse d'émotionnelle</th>
+    </tr>
+  </thead>
+  <tbody role="tabpanel">
+    <tr *ngFor="let moralitie of obligations; let i = index;" [ngClass]="{'fad': (i%2) === 1 && type === 'moralities'}">
+      <td scope="row">{{ moralitie.dice }}</td>
+      <td>
+        <span class="obligation-title">{{ moralitie.emotionalForceTitle }}</span>
+        <span>&nbsp;:&nbsp;</span>
+        <span>{{ moralitie.emotionalForceDescription }}</span>
+      </td>
+      <td>
+        <span class="obligation-title">{{ moralitie.emotionalWeaknessTitle }}</span>
+        <span>&nbsp;:&nbsp;</span>
+        <span>{{ moralitie.emotionalWeaknessDescription }}</span>
       </td>
     </tr>
   </tbody>

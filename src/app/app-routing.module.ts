@@ -6,6 +6,7 @@ import { RulesComponent } from './components/rules/rules.component';
 import { SpeciesSingleComponent } from './components/species-single/species-single.component';
 import { CareersListComponent } from './components/careers-list/careers-list.component';
 import { CareersSingleComponent } from './components/careers-single/careers-single.component';
+import { EquipmentsComponent } from './components/equipments/equipments.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'careers', component: CareersListComponent },
   { path: 'careers/:career', component: CareersSingleComponent },
   { path: 'character-creation', component: CharacterCreationComponent },
+  { path: 'equipments', component: EquipmentsComponent },
 ];
 
 @NgModule({
