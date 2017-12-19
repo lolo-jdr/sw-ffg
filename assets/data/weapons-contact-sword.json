@@ -1,0 +1,122 @@
+[
+    {
+        "label": "Bâton Gaderffii",
+        "skill": "Corps à corps",
+        "damage": "+2",
+        "critic": 3,
+        "distance": "Au contact",
+        "enc": 3,
+        "emp": 0,
+        "price": 100,
+        "rarety": 2,
+        "options": [
+            { "label": "Désorientation 3" },
+            { "label": "Parade 1" }
+        ]
+    },
+    {
+        "label": "Couteau de combat",
+        "skill": "Corps à corps",
+        "damage": "+1",
+        "critic": 3,
+        "distance": "Au contact",
+        "enc": 1,
+        "emp": 0,
+        "price": 25,
+        "rarety": 1,
+        "options": [ ]
+    },
+    {
+        "label": "Lance de force",
+        "skill": "Corps à corps",
+        "damage": "+",
+        "critic": 3,
+        "distance": "Au contact",
+        "enc": 3,
+        "emp": 3,
+        "price": 500,
+        "rarety": 4,
+        "options": [
+            { "label": "Preforant 2" },
+            { "label": "Réglage étourdissant" }
+        ]
+    },
+    {
+        "label": "Matraque",
+        "skill": "Corps à corps",
+        "damage": "+2",
+        "critic": 5,
+        "distance": "Au contact",
+        "enc": 2,
+        "emp": 0,
+        "price": 15,
+        "rarety": 1,
+        "options": [
+            { "label": "Désorientation 2" }
+        ]
+    },
+    {
+        "label": "Sabre laser",
+        "skill": "Sabre laser",
+        "damage": 10,
+        "critic": 1,
+        "distance": "Au contact",
+        "enc": 1,
+        "emp": 0,
+        "price": 10000,
+        "rarety": 10,
+        "options": [
+            { "label": "Brèche 1" },
+            { "label": "Briseur" },
+            { "label": "Sanguinaire 2" }
+         ]
+    },
+    {
+        "label": "Vibroépée",
+        "skill": "Corps à corps",
+        "damage": "+2",
+        "critic": 2,
+        "distance": "Au contact",
+        "enc": 3,
+        "emp": 3,
+        "price": 750,
+        "rarety": 5,
+        "options": [ 
+            { "label": "Parade 1" },
+            { "label": "Perforant 2" },
+            { "label": "Sanguinaire 1" }
+        ]
+    },
+    {
+        "label": "Vibrohache",
+        "skill": "Corps à corps",
+        "damage": "+3",
+        "critic": 2,
+        "distance": "Au contact",
+        "enc": 4,
+        "emp": 3,
+        "price": 750,
+        "rarety": 5,
+        "options": [ 
+            { "label": "Briseur" },
+            { "label": "Perforant 2" },
+            { "label": "Sanguinaire 3" }
+        ]
+    },
+    {
+        "label": "Vibrolame",
+        "skill": "Corps à corps",
+        "damage": "+1",
+        "critic": 2,
+        "distance": "Au contact",
+        "enc": 1,
+        "emp": 2,
+        "price": 250,
+        "rarety": 3,
+        "options": [ 
+            { "label": "Perforant 2" },
+            { "label": "Sanguinaire 1" }
+        ]
+    }
+    
+]

@@ -1,0 +1,31 @@
+[
+    {
+        "label": "Coup-de-poing",
+        "skill": "Pugilat",
+        "damage": "+1",
+        "critic": 4,
+        "distance": "Au contact",
+        "enc": 1,
+        "emp": 0,
+        "price": 25,
+        "rarety": 0,
+        "options": [
+            { "label": "Désorientation 3" }
+            
+        ]
+    },
+    {
+        "label": "Gants à décharge",
+        "skill": "Pugilat",
+        "damage": "+0",
+        "critic": 5,
+        "distance": "Au contact",
+        "enc": 0,
+        "emp": 1,
+        "price": 300,
+        "rarety": 2,
+        "options": [
+            { "label": "Étourdissement 3" }
+        ]
+    }
+]

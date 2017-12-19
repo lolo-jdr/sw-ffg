@@ -1,0 +1,18 @@
+[
+    {
+        "label": "Bolas / Filet",
+        "skill": "Distance (Légère)",
+        "damage": 2,
+        "critic": 0,
+        "distance": "Courte",
+        "enc": 0.33,
+        "emp": 2,
+        "price": 20,
+        "rarety": 2,
+        "options": [
+            { "label": "Enchevêtrement 3" },
+            { "label": "Renversement" },
+            { "label": "Munitions limitées 1" }
+        ]
+    }
+]
