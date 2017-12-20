@@ -1,0 +1,65 @@
+[
+    {
+        "label": "Armure de combat lourde",
+        "defense": 1,
+        "Encaissement": 2,
+        "price": 5000,
+        "Enc.": 6,
+        "Emp.": 4,
+        "Rarety": 7
+    },
+    {
+        "label": "Armure laminée",
+        "defense": 0,
+        "Encaissement": 2,
+        "price": 2500,
+        "Enc.": 4,
+        "Emp.": 3,
+        "Rarety": ""
+    },
+    {
+        "label": "Armure matelassée",
+        "defense": 0,
+        "Encaissement": 2,
+        "price": 500,
+        "Enc.": 2,
+        "Emp.": 0,
+        "Rarety": ""
+    },
+    {
+        "label": "Bouclier déflecteur individuel",
+        "defense": 2,
+        "Encaissement": 0,
+        "price": 10000,
+        "Enc.": 3,
+        "Emp.": 0,
+        "Rarety": ""
+    },
+    {
+        "label": "Tenue d'exploration",
+        "defense": 0,
+        "Encaissement": 1,
+        "price": 500,
+        "Enc.": 2,
+        "Emp.": 1,
+        "Rarety": ""
+    },
+    {
+        "label": "Vêtements reforcés",
+        "defense": 1,
+        "Encaissement": 1,
+        "price": 1000,
+        "Enc.": 3,
+        "Emp.": 1,
+        "Rarety": ""
+    },
+    {
+        "label": "Vêtements épais",
+        "defense": 0,
+        "Encaissement": 1,
+        "price": 50,
+        "Enc.": 1,
+        "Emp.": 0,
+        "Rarety": ""
+    }
+]

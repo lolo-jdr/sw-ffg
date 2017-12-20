@@ -31,6 +31,7 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_lazy_route_resource lazy re
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_careers_list_careers_list_component__ = __webpack_require__("../../../../../src/app/components/careers-list/careers-list.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_careers_single_careers_single_component__ = __webpack_require__("../../../../../src/app/components/careers-single/careers-single.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_equipments_equipments_component__ = __webpack_require__("../../../../../src/app/components/equipments/equipments.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_resources_resources_component__ = __webpack_require__("../../../../../src/app/components/resources/resources.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -46,16 +47,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var routes = [
     // Common routes
     { path: '', component: __WEBPACK_IMPORTED_MODULE_4__components_rules_rules_component__["a" /* RulesComponent */] },
     { path: 'rules', component: __WEBPACK_IMPORTED_MODULE_4__components_rules_rules_component__["a" /* RulesComponent */] },
+    { path: 'character-creation', component: __WEBPACK_IMPORTED_MODULE_3__components_character_creation_character_creation_component__["a" /* CharacterCreationComponent */] },
     { path: 'species', component: __WEBPACK_IMPORTED_MODULE_2__components_species_list_species_list_component__["a" /* SpeciesListComponent */] },
     { path: 'species/:species', component: __WEBPACK_IMPORTED_MODULE_5__components_species_single_species_single_component__["a" /* SpeciesSingleComponent */] },
     { path: 'careers', component: __WEBPACK_IMPORTED_MODULE_6__components_careers_list_careers_list_component__["a" /* CareersListComponent */] },
     { path: 'careers/:career', component: __WEBPACK_IMPORTED_MODULE_7__components_careers_single_careers_single_component__["a" /* CareersSingleComponent */] },
-    { path: 'character-creation', component: __WEBPACK_IMPORTED_MODULE_3__components_character_creation_character_creation_component__["a" /* CharacterCreationComponent */] },
     { path: 'equipments', component: __WEBPACK_IMPORTED_MODULE_8__components_equipments_equipments_component__["a" /* EquipmentsComponent */] },
+    { path: 'tools/character-creator', component: __WEBPACK_IMPORTED_MODULE_9__components_resources_resources_component__["a" /* ResourcesComponent */] },
+    { path: 'resources', component: __WEBPACK_IMPORTED_MODULE_9__components_resources_resources_component__["a" /* ResourcesComponent */] },
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -155,12 +159,16 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__layout_footer_footer_component__ = __webpack_require__("../../../../../src/app/layout/footer/footer.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_equipments_equipments_component__ = __webpack_require__("../../../../../src/app/components/equipments/equipments.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__shared_equipment_table_equipment_table_component__ = __webpack_require__("../../../../../src/app/shared/equipment-table/equipment-table.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_resources_resources_component__ = __webpack_require__("../../../../../src/app/components/resources/resources.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_tools_character_creator_character_creator_component__ = __webpack_require__("../../../../../src/app/components/tools/character-creator/character-creator.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -200,7 +208,9 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_17__components_careers_single_careers_single_component__["a" /* CareersSingleComponent */],
                 __WEBPACK_IMPORTED_MODULE_18__layout_footer_footer_component__["a" /* FooterComponent */],
                 __WEBPACK_IMPORTED_MODULE_19__components_equipments_equipments_component__["a" /* EquipmentsComponent */],
-                __WEBPACK_IMPORTED_MODULE_20__shared_equipment_table_equipment_table_component__["a" /* EquipmentTableComponent */]
+                __WEBPACK_IMPORTED_MODULE_20__shared_equipment_table_equipment_table_component__["a" /* EquipmentTableComponent */],
+                __WEBPACK_IMPORTED_MODULE_21__components_resources_resources_component__["a" /* ResourcesComponent */],
+                __WEBPACK_IMPORTED_MODULE_22__components_tools_character_creator_character_creator_component__["a" /* CharacterCreatorComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -471,7 +481,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".equipment-section {\r\n    margin-bottom: 20px;\r\n}", ""]);
 
 // exports
 
@@ -484,7 +494,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/equipments/equipments.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-equipment-table equipments=\"weaponsDistanceEnergy\" ></app-equipment-table>"
+module.exports = "<div class=\"container-fluid\">\r\n\r\n    <div class=\"row page-title\">\r\n        <div class=\"col-sm\">\r\n            <p>Equipements</p>\r\n        </div>\r\n    </div>\r\n\r\n    <section class=\"row equipment-section\">\r\n        <div class=\"col-2\">\r\n            <p>Armes à distance</p>\r\n        </div>\r\n        <div class=\"col\">\r\n            <button class=\"btn btn-primary\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseDistanceWeapons\" aria-expanded=\"false\"\r\n                aria-controls=\"collapseDistanceWeapons\">\r\n                <i class=\"fa fa-plus\" aria-hidden=\"true\"></i>\r\n            </button>\r\n        </div>\r\n    </section>\r\n\r\n    <section class=\"collapse equipment-section\" id=\"collapseDistanceWeapons\">\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <p>Armes énergétiques</p>\r\n            </div>\r\n        </div>\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <app-equipment-table equipmentFile=\"{{ weaponsDistanceEnergy }}\"></app-equipment-table>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <p>Armes à percussion</p>\r\n            </div>\r\n        </div>\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <app-equipment-table equipmentFile=\"{{ weaponsDistancePercussion }}\"></app-equipment-table>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <p>Armes à jet</p>\r\n            </div>\r\n        </div>\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <app-equipment-table equipmentFile=\"{{ weaponsDistanceJet }}\"></app-equipment-table>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <p>Explosifs et autres armes</p>\r\n            </div>\r\n        </div>\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <app-equipment-table equipmentFile=\"{{ weaponsDistanceExplosive }}\"></app-equipment-table>\r\n            </div>\r\n        </div>\r\n    </section>\r\n\r\n    <section class=\"row equipment-section\">\r\n        <div class=\"col-2\">\r\n            <p>Armes de corps à corps</p>\r\n        </div>\r\n        <div class=\"col\">\r\n            <button class=\"btn btn-primary\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseContactWeapons\" aria-expanded=\"false\"\r\n                aria-controls=\"collapseContactWeapons\">\r\n                <i class=\"fa fa-plus\" aria-hidden=\"true\"></i>\r\n            </button>\r\n        </div>\r\n    </section>\r\n\r\n    <section class=\"collapse equipment-section\" id=\"collapseContactWeapons\">\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <p>Armes de pugilat</p>\r\n            </div>\r\n        </div>\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <app-equipment-table equipmentFile=\"{{ weaponsContactPugilat }}\"></app-equipment-table>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <p>Armes de corps à corps</p>\r\n            </div>\r\n        </div>\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <app-equipment-table equipmentFile=\"{{ weaponsContactSword }}\"></app-equipment-table>\r\n            </div>\r\n        </div>\r\n\r\n    </section>\r\n</div>"
 
 /***/ }),
 
@@ -495,9 +505,78 @@ module.exports = "<app-equipment-table equipments=\"weaponsDistanceEnergy\" ></a
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EquipmentsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service__ = __webpack_require__("../../../../../src/app/services/api.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var EquipmentsComponent = (function () {
+    function EquipmentsComponent(api) {
+        this.api = api;
+        this.isPageLoaded = false;
+        this.weaponsDistanceEnergy = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_DISTANCE_ENERGY;
+        this.weaponsDistancePercussion = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_DISTANCE_PERCUSSION;
+        this.weaponsDistanceJet = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_DISTANCE_JET;
+        this.weaponsDistanceExplosive = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_DISTANCE_EXPLOSIVE;
+        this.weaponsContactPugilat = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_CONTACT_PUGILAT;
+        this.weaponsContactSword = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_CONTACT_SWORD;
+    }
+    EquipmentsComponent.prototype.ngOnInit = function () {
+    };
+    EquipmentsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-equipments',
+            template: __webpack_require__("../../../../../src/app/components/equipments/equipments.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/equipments/equipments.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */]])
+    ], EquipmentsComponent);
+    return EquipmentsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/resources/resources.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/resources/resources.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container-fluid\" id=\"resources\">\n\n  <ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\n\n  <section *ngIf=\"isPageLoaded\" id=\"resourcesSection\">\n\n    <div class=\"row page-title\">\n      <div class=\"page-title-label\">\n        <p>Ressources</p>\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-sm\">\n        <p>Fiche de personnage</p>\n        <p>Bordure extérieure</p>\n        <p>Alliance & Rébellion</p>\n        <p>Force</p>\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-sm\">\n        <p>Arbres des talents par carrière</p>\n\n        <p>Bordure extérieure</p>\n\n        <p *ngFor=\"let career of eoeCareers\">\n          <a target=\"_blank\" href=\"{{ careersFilesFolder + career.careerTreeFile }}\">{{ career.label }}</a>\n        </p>\n\n        <p>Alliance & Rébellion</p>\n\n        <p *ngFor=\"let career of aorCareers\">\n          <a target=\"_blank\" href=\"{{ careersFilesFolder + career.careerTreeFile }}\">{{ career.label }}</a>\n        </p>\n\n        <p>Force</p>\n\n        <p *ngFor=\"let career of fadCareers\">\n          <a target=\"_blank\" href=\"{{ careersFilesFolder + career.careerTreeFile }}\">{{ career.label }}</a>\n        </p>\n      </div>\n    </div>\n\n  </section>\n  \n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/resources/resources.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResourcesComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service__ = __webpack_require__("../../../../../src/app/services/api.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_helper_service__ = __webpack_require__("../../../../../src/app/services/helper.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs__ = __webpack_require__("../../../../rxjs/Rx.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -510,45 +589,37 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-var EquipmentsComponent = (function () {
-    function EquipmentsComponent(api, helper) {
+var ResourcesComponent = (function () {
+    function ResourcesComponent(api, helper) {
+        var _this = this;
         this.api = api;
         this.helper = helper;
         this.isPageLoaded = false;
-        this.weaponsDistanceEnergy = [];
-        this.weaponsDistancePercussion = [];
-        this.weaponsDistanceJet = [];
-        this.weaponsDistanceExplosive = [];
-        this.weaponsContactPugilat = [];
-        this.weaponsContactSword = [];
-    }
-    EquipmentsComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        // Populate second levels lists
-        this.getDynamicMenu().subscribe(function (data) {
-            var weaponsDistanceEnergy = data[0], weaponsDistancePercussion = data[1], weaponsDistanceJet = data[2], weaponsDistanceExplosive = data[3], weaponsContactPugilat = data[4], weaponsContactSword = data[5];
-            _this.weaponsDistanceEnergy = weaponsDistanceEnergy;
-            _this.weaponsDistancePercussion = weaponsDistancePercussion;
-            _this.weaponsDistanceJet = weaponsDistanceJet;
-            _this.weaponsDistanceExplosive = weaponsDistanceExplosive;
-            _this.weaponsContactPugilat = weaponsContactPugilat;
-            _this.weaponsContactSword = weaponsContactSword;
+        this.eoeCareers = [];
+        this.aorCareers = [];
+        this.fadCareers = [];
+        this.careersFilesFolder = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].RESOURCES_CAREERS_FOLDER;
+        this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].CAREERS).then(function (careers) {
+            _this.eoeCareers = careers.filter(function (c) { return c.universKey === 'eoe'; });
+            _this.aorCareers = careers.filter(function (c) { return c.universKey === 'aor'; });
+            _this.fadCareers = careers.filter(function (c) { return c.universKey === 'fad'; });
+            _this.eoeCareers.sort(__WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].sortArrayByProperty('label'));
+            _this.aorCareers.sort(__WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].sortArrayByProperty('label'));
+            _this.fadCareers.sort(__WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].sortArrayByProperty('label'));
             _this.isPageLoaded = true;
         });
+    }
+    ResourcesComponent.prototype.ngOnInit = function () {
     };
-    EquipmentsComponent.prototype.getDynamicMenu = function () {
-        return __WEBPACK_IMPORTED_MODULE_3_rxjs__["Observable"].forkJoin(this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_DISTANCE_ENERGY), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_DISTANCE_PERCUSSION), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_DISTANCE_JET), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_DISTANCE_EXPLOSIVE), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_CONTACT_PUGILAT), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_CONTACT_SWORD));
-    };
-    EquipmentsComponent = __decorate([
+    ResourcesComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'app-equipments',
-            template: __webpack_require__("../../../../../src/app/components/equipments/equipments.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/components/equipments/equipments.component.css")]
+            selector: 'app-resources',
+            template: __webpack_require__("../../../../../src/app/components/resources/resources.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/resources/resources.component.css")]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */], __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */]])
-    ], EquipmentsComponent);
-    return EquipmentsComponent;
+    ], ResourcesComponent);
+    return ResourcesComponent;
 }());
 
 
@@ -788,6 +859,67 @@ var SpeciesSingleComponent = (function () {
 
 /***/ }),
 
+/***/ "../../../../../src/app/components/tools/character-creator/character-creator.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/tools/character-creator/character-creator.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  character-creator works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/tools/character-creator/character-creator.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CharacterCreatorComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CharacterCreatorComponent = (function () {
+    function CharacterCreatorComponent() {
+    }
+    CharacterCreatorComponent.prototype.ngOnInit = function () {
+    };
+    CharacterCreatorComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-character-creator',
+            template: __webpack_require__("../../../../../src/app/components/tools/character-creator/character-creator.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/tools/character-creator/character-creator.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], CharacterCreatorComponent);
+    return CharacterCreatorComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/layout/footer/footer.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -870,7 +1002,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/layout/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Navigation-->\n\n<ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\n\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\" id=\"mainNav\">\n  <a class=\"navbar-brand\" href=\"index.html\">\n    <i class=\"fa fa-rebel\" aria-hidden=\"true\"></i>\n    Star Wars FFG\n    <i class=\"fa fa-empire\" aria-hidden=\"true\"></i>\n  </a>\n\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\"\n    aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n    <ul class=\"navbar-nav navbar-sidenav\" id=\"exampleAccordion\">\n      <!--\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Dashboard\">\n        <a class=\"nav-link\" routerLink=\"/rules\">\n          <i class=\"fa fa-fw fa-dashboard\"></i>\n          <span class=\"nav-link-text\">Règles</span>\n        </a>\n      </li>\n      -->\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Charts\">\n        <a class=\"nav-link\" routerLink=\"/character-creation\">\n          <i class=\"fa fa-fw fa-book\"></i>\n          <span class=\"nav-link-text\">Création de personnage</span>\n        </a>\n      </li>\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Components\">\n        <a class=\"nav-link nav-link-collapse collapsed\" data-toggle=\"collapse\" href=\"#collapseComponents\" data-parent=\"#exampleAccordion\">\n          <i class=\"fa fa-fw fa-reddit-alien\"></i>\n          <span class=\"nav-link-text\">Espèces</span>\n        </a>\n        <ul class=\"sidenav-second-level collapse\" id=\"collapseComponents\">\n          <li>\n            <a routerLink=\"/species\">Toutes</a>\n          </li>\n          <li *ngFor=\"let s of species\">\n            <a routerLink=\"/species/{{ s.key }}\">{{ s.label }}</a>\n          </li>\n        </ul>\n      </li>\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Example Pages\">\n        <a class=\"nav-link nav-link-collapse collapsed\" data-toggle=\"collapse\" href=\"#collapseExamplePages\" data-parent=\"#exampleAccordion\">\n          <i class=\"fa fa-fw fa-graduation-cap\"></i>\n          <span class=\"nav-link-text\">Carrières</span>\n        </a>\n        <ul class=\"sidenav-second-level collapse\" id=\"collapseExamplePages\">\n          <li>\n            <a routerLink=\"/careers\">Toutes</a>\n          </li>\n          <li *ngFor=\"let c of careers\">\n              <a routerLink=\"/careers/{{ c.key }}\">{{ c.label }}</a>\n            </li>\n        </ul>\n      </li>\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Charts\">\n          <a class=\"nav-link\" routerLink=\"/equipments\">\n            <i class=\"fa fa-fw fa-briefcase\"></i>\n            <span class=\"nav-link-text\">Équipements</span>\n          </a>\n        </li>\n    </ul>\n\n    <!-- Top menu bar -->\n    <ul class=\"navbar-nav ml-auto\">\n      <!-- \n          <li class=\"nav-item dropdown\">\n            <a class=\"nav-link dropdown-toggle mr-lg-2\" id=\"messagesDropdown\" href=\"#\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n              <i class=\"fa fa-fw fa-envelope\"></i>\n              <span class=\"d-lg-none\">Messages\n                <span class=\"badge badge-pill badge-primary\">12 New</span>\n              </span>\n              <span class=\"indicator text-primary d-none d-lg-block\">\n                <i class=\"fa fa-fw fa-circle\"></i>\n              </span>\n            </a>\n            <div class=\"dropdown-menu\" aria-labelledby=\"messagesDropdown\">\n              <h6 class=\"dropdown-header\">New Messages:</h6>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item\" href=\"#\">\n                <strong>David Miller</strong>\n                <span class=\"small float-right text-muted\">11:21 AM</span>\n                <div class=\"dropdown-message small\">Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</div>\n              </a>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item\" href=\"#\">\n                <strong>Jane Smith</strong>\n                <span class=\"small float-right text-muted\">11:21 AM</span>\n                <div class=\"dropdown-message small\">I was wondering if you could meet for an appointment at 3:00 instead of 4:00. Thanks!</div>\n              </a>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item\" href=\"#\">\n                <strong>John Doe</strong>\n                <span class=\"small float-right text-muted\">11:21 AM</span>\n                <div class=\"dropdown-message small\">I've sent the final files over to you for review. When you're able to sign off of them let me know and we can discuss distribution.</div>\n              </a>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item small\" href=\"#\">View all messages</a>\n            </div>\n          </li>\n          <li class=\"nav-item dropdown\">\n            <a class=\"nav-link dropdown-toggle mr-lg-2\" id=\"alertsDropdown\" href=\"#\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n              <i class=\"fa fa-fw fa-bell\"></i>\n              <span class=\"d-lg-none\">Alerts\n                <span class=\"badge badge-pill badge-warning\">6 New</span>\n              </span>\n              <span class=\"indicator text-warning d-none d-lg-block\">\n                <i class=\"fa fa-fw fa-circle\"></i>\n              </span>\n            </a>\n            <div class=\"dropdown-menu\" aria-labelledby=\"alertsDropdown\">\n              <h6 class=\"dropdown-header\">New Alerts:</h6>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item\" href=\"#\">\n                <span class=\"text-success\">\n                  <strong>\n                    <i class=\"fa fa-long-arrow-up fa-fw\"></i>Status Update</strong>\n                </span>\n                <span class=\"small float-right text-muted\">11:21 AM</span>\n                <div class=\"dropdown-message small\">This is an automated server response message. All systems are online.</div>\n              </a>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item\" href=\"#\">\n                <span class=\"text-danger\">\n                  <strong>\n                    <i class=\"fa fa-long-arrow-down fa-fw\"></i>Status Update</strong>\n                </span>\n                <span class=\"small float-right text-muted\">11:21 AM</span>\n                <div class=\"dropdown-message small\">This is an automated server response message. All systems are online.</div>\n              </a>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item\" href=\"#\">\n                <span class=\"text-success\">\n                  <strong>\n                    <i class=\"fa fa-long-arrow-up fa-fw\"></i>Status Update</strong>\n                </span>\n                <span class=\"small float-right text-muted\">11:21 AM</span>\n                <div class=\"dropdown-message small\">This is an automated server response message. All systems are online.</div>\n              </a>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item small\" href=\"#\">View all alerts</a>\n            </div>\n          </li>\n          <li class=\"nav-item\">\n            <form class=\"form-inline my-2 my-lg-0 mr-lg-2\">\n              <div class=\"input-group\">\n                <input class=\"form-control\" type=\"text\" placeholder=\"Search for...\">\n                <span class=\"input-group-btn\">\n                  <button class=\"btn btn-primary\" type=\"button\">\n                    <i class=\"fa fa-search\"></i>\n                  </button>\n                </span>\n              </div>\n            </form>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" data-toggle=\"modal\" data-target=\"#exampleModal\">\n              <i class=\"fa fa-fw fa-sign-out\"></i>Logout</a>\n          </li>\n          -->\n    </ul>\n  </div>\n</nav>"
+module.exports = "<!-- Navigation-->\n\n<ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\n\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\" id=\"mainNav\">\n  <a class=\"navbar-brand\" href=\"index.html\">\n    <i class=\"fa fa-rebel\" aria-hidden=\"true\"></i>\n    Star Wars FFG\n    <i class=\"fa fa-empire\" aria-hidden=\"true\"></i>\n  </a>\n\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\"\n    aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n    <ul class=\"navbar-nav navbar-sidenav\" id=\"exampleAccordion\">\n      <!--\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Dashboard\">\n        <a class=\"nav-link\" routerLink=\"/rules\">\n          <i class=\"fa fa-fw fa-dashboard\"></i>\n          <span class=\"nav-link-text\">Règles</span>\n        </a>\n      </li>\n      -->\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Charts\">\n        <a class=\"nav-link\" routerLink=\"/character-creation\">\n          <i class=\"fa fa-fw fa-book\"></i>\n          <span class=\"nav-link-text\">Création de personnage</span>\n        </a>\n      </li>\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Components\">\n        <a class=\"nav-link nav-link-collapse collapsed\" data-toggle=\"collapse\" href=\"#collapseComponents\" data-parent=\"#exampleAccordion\">\n          <i class=\"fa fa-fw fa-reddit-alien\"></i>\n          <span class=\"nav-link-text\">Espèces</span>\n        </a>\n        <ul class=\"sidenav-second-level collapse\" id=\"collapseComponents\">\n          <li>\n            <a routerLink=\"/species\">Toutes</a>\n          </li>\n          <li *ngFor=\"let s of species\">\n            <a routerLink=\"/species/{{ s.key }}\">{{ s.label }}</a>\n          </li>\n        </ul>\n      </li>\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Example Pages\">\n        <a class=\"nav-link nav-link-collapse collapsed\" data-toggle=\"collapse\" href=\"#collapseExamplePages\" data-parent=\"#exampleAccordion\">\n          <i class=\"fa fa-fw fa-graduation-cap\"></i>\n          <span class=\"nav-link-text\">Carrières</span>\n        </a>\n        <ul class=\"sidenav-second-level collapse\" id=\"collapseExamplePages\">\n          <li>\n            <a routerLink=\"/careers\">Toutes</a>\n          </li>\n          <li *ngFor=\"let c of careers\">\n            <a routerLink=\"/careers/{{ c.key }}\">{{ c.label }}</a>\n          </li>\n        </ul>\n      </li>\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Charts\">\n        <a class=\"nav-link\" routerLink=\"/equipments\">\n          <i class=\"fa fa-fw fa-briefcase\"></i>\n          <span class=\"nav-link-text\">Équipements</span>\n        </a>\n      </li>\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Tools\">\n        <a class=\"nav-link nav-link-collapse collapsed\" data-toggle=\"collapse\" href=\"#collapseTools\" data-parent=\"#exampleAccordion\">\n          <i class=\"fa fa-fw fa-cog\"></i>\n          <span class=\"nav-link-text\">Outils</span>\n        </a>\n        <ul class=\"sidenav-second-level collapse\" id=\"collapseTools\">\n          <li>\n            <a routerLink=\"tools/character-creator\">Créateur de perso</a>\n          </li>\n          <li>\n            <a>Générateur de perso</a>\n          </li>\n        </ul>\n      </li>\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Ressources\">\n        <a class=\"nav-link\" routerLink=\"/resources\">\n          <i class=\"fa fa-fw fa-file-pdf-o\"></i>\n          <span class=\"nav-link-text\">Ressources</span>\n        </a>\n      </li>\n    </ul>\n\n    <!-- Top menu bar -->\n    <ul class=\"navbar-nav ml-auto\">\n      <!-- \n          <li class=\"nav-item dropdown\">\n            <a class=\"nav-link dropdown-toggle mr-lg-2\" id=\"messagesDropdown\" href=\"#\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n              <i class=\"fa fa-fw fa-envelope\"></i>\n              <span class=\"d-lg-none\">Messages\n                <span class=\"badge badge-pill badge-primary\">12 New</span>\n              </span>\n              <span class=\"indicator text-primary d-none d-lg-block\">\n                <i class=\"fa fa-fw fa-circle\"></i>\n              </span>\n            </a>\n            <div class=\"dropdown-menu\" aria-labelledby=\"messagesDropdown\">\n              <h6 class=\"dropdown-header\">New Messages:</h6>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item\" href=\"#\">\n                <strong>David Miller</strong>\n                <span class=\"small float-right text-muted\">11:21 AM</span>\n                <div class=\"dropdown-message small\">Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</div>\n              </a>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item\" href=\"#\">\n                <strong>Jane Smith</strong>\n                <span class=\"small float-right text-muted\">11:21 AM</span>\n                <div class=\"dropdown-message small\">I was wondering if you could meet for an appointment at 3:00 instead of 4:00. Thanks!</div>\n              </a>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item\" href=\"#\">\n                <strong>John Doe</strong>\n                <span class=\"small float-right text-muted\">11:21 AM</span>\n                <div class=\"dropdown-message small\">I've sent the final files over to you for review. When you're able to sign off of them let me know and we can discuss distribution.</div>\n              </a>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item small\" href=\"#\">View all messages</a>\n            </div>\n          </li>\n          <li class=\"nav-item dropdown\">\n            <a class=\"nav-link dropdown-toggle mr-lg-2\" id=\"alertsDropdown\" href=\"#\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n              <i class=\"fa fa-fw fa-bell\"></i>\n              <span class=\"d-lg-none\">Alerts\n                <span class=\"badge badge-pill badge-warning\">6 New</span>\n              </span>\n              <span class=\"indicator text-warning d-none d-lg-block\">\n                <i class=\"fa fa-fw fa-circle\"></i>\n              </span>\n            </a>\n            <div class=\"dropdown-menu\" aria-labelledby=\"alertsDropdown\">\n              <h6 class=\"dropdown-header\">New Alerts:</h6>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item\" href=\"#\">\n                <span class=\"text-success\">\n                  <strong>\n                    <i class=\"fa fa-long-arrow-up fa-fw\"></i>Status Update</strong>\n                </span>\n                <span class=\"small float-right text-muted\">11:21 AM</span>\n                <div class=\"dropdown-message small\">This is an automated server response message. All systems are online.</div>\n              </a>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item\" href=\"#\">\n                <span class=\"text-danger\">\n                  <strong>\n                    <i class=\"fa fa-long-arrow-down fa-fw\"></i>Status Update</strong>\n                </span>\n                <span class=\"small float-right text-muted\">11:21 AM</span>\n                <div class=\"dropdown-message small\">This is an automated server response message. All systems are online.</div>\n              </a>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item\" href=\"#\">\n                <span class=\"text-success\">\n                  <strong>\n                    <i class=\"fa fa-long-arrow-up fa-fw\"></i>Status Update</strong>\n                </span>\n                <span class=\"small float-right text-muted\">11:21 AM</span>\n                <div class=\"dropdown-message small\">This is an automated server response message. All systems are online.</div>\n              </a>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item small\" href=\"#\">View all alerts</a>\n            </div>\n          </li>\n          <li class=\"nav-item\">\n            <form class=\"form-inline my-2 my-lg-0 mr-lg-2\">\n              <div class=\"input-group\">\n                <input class=\"form-control\" type=\"text\" placeholder=\"Search for...\">\n                <span class=\"input-group-btn\">\n                  <button class=\"btn btn-primary\" type=\"button\">\n                    <i class=\"fa fa-search\"></i>\n                  </button>\n                </span>\n              </div>\n            </form>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" data-toggle=\"modal\" data-target=\"#exampleModal\">\n              <i class=\"fa fa-fw fa-sign-out\"></i>Logout</a>\n          </li>\n          -->\n    </ul>\n  </div>\n</nav>"
 
 /***/ }),
 
@@ -975,17 +1107,19 @@ var ApiService = (function () {
         console.log(error);
         return Promise.reject(error.json());
     };
+    ApiService.EQUIPMENT_FOLDER = 'assets/data/equipments/';
+    ApiService.RESOURCES_CAREERS_FOLDER = 'assets/resources/files/careers/';
     ApiService.SPECIES = 'assets/data/species.json';
     ApiService.CAREERS = 'assets/data/careers.json';
     ApiService.OBLIGATIONS = 'assets/data/obligations.json';
     ApiService.DUTIES = 'assets/data/duties.json';
     ApiService.MORALITIES = 'assets/data/moralities.json';
-    ApiService.WEAPONS_DISTANCE_ENERGY = "assets/data/weapons-distance-energy.json";
-    ApiService.WEAPONS_DISTANCE_PERCUSSION = "assets/data/weapons-distance-percussion.json";
-    ApiService.WEAPONS_DISTANCE_JET = "assets/data/weapons-distance-jet.json";
-    ApiService.WEAPONS_DISTANCE_EXPLOSIVE = "assets/data/weapons-distance-explosive.json";
-    ApiService.WEAPONS_CONTACT_PUGILAT = "assets/data/weapons-contact-pugilat.json";
-    ApiService.WEAPONS_CONTACT_SWORD = "assets/data/weapons-contact-sword.json";
+    ApiService.WEAPONS_DISTANCE_ENERGY = "weapons-distance-energy.json";
+    ApiService.WEAPONS_DISTANCE_PERCUSSION = "weapons-distance-percussion.json";
+    ApiService.WEAPONS_DISTANCE_JET = "weapons-distance-jet.json";
+    ApiService.WEAPONS_DISTANCE_EXPLOSIVE = "weapons-distance-explosive.json";
+    ApiService.WEAPONS_CONTACT_PUGILAT = "weapons-contact-pugilat.json";
+    ApiService.WEAPONS_CONTACT_SWORD = "weapons-contact-sword.json";
     ApiService.CHARACTER_CREATION_INSPIRATIONS = 'assets/data/character-creation-inspirations.json';
     ApiService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
@@ -1131,7 +1265,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/shared/equipment-table/equipment-table.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<table class=\"table table-hover equipment-table\">\n    <thead>\n      <tr>\n        <th scope=\"col\">Nom</th>\n        <th scope=\"col\">Compétences</th>\n        <th scope=\"col\">Dégâts</th>\n        <th scope=\"col\">Critique</th>\n        <th scope=\"col\">Portée</th>\n        <th scope=\"col\">Enc.</th>\n        <th scope=\"col\">Emp.</th>\n        <th scope=\"col\">Prix</th>\n        <th scope=\"col\">Rareté</th>\n        <th scope=\"col\">Spécial</th>\n      </tr>\n    </thead>\n    <tbody role=\"tabpanel\">\n      <tr *ngFor=\"let equipment of equipments\">\n        <td scope=\"row\">{{ equipment.label }}</td>\n        <td></td>\n        <td></td>\n        <td></td>\n        <td></td>\n        <td></td>\n        <td></td>\n        <td></td>\n        <td></td>\n        <td></td>\n      </tr>\n    </tbody>\n  </table>"
+module.exports = "<table class=\"table table-responsive-sm equipment-table\">\r\n    <thead>\r\n      <tr>\r\n        <th scope=\"col\">Nom</th>\r\n        <th scope=\"col\">Compétences</th>\r\n        <th scope=\"col\">Dégâts</th>\r\n        <th scope=\"col\">Critique</th>\r\n        <th scope=\"col\">Portée</th>\r\n        <th scope=\"col\">Enc.</th>\r\n        <th scope=\"col\">Emp.</th>\r\n        <th scope=\"col\">Prix</th>\r\n        <th scope=\"col\">Rareté</th>\r\n        <th scope=\"col\">Spécial</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody role=\"tabpanel\">\r\n      <tr *ngFor=\"let equipment of equipments\">\r\n        <td scope=\"row\">{{ equipment.label }}</td>\r\n        <td>{{ equipment.skill }}</td>\r\n        <td>{{ equipment.damage }}</td>\r\n        <td>{{ equipment.critic }}</td>\r\n        <td>{{ equipment.distance }}</td>\r\n        <td>{{ equipment.enc }}</td>\r\n        <td>{{ equipment.emp }}</td>\r\n        <td>{{ equipment.price }}</td>\r\n        <td>{{ equipment.rarety }}</td>\r\n        <td>\r\n          <p *ngFor=\"let option of equipment.options\">\r\n            <span>{{ option.label }}</span>\r\n          </p>\r\n        </td>\r\n      </tr>\r\n    </tbody>\r\n  </table>"
 
 /***/ }),
 
@@ -1141,6 +1275,7 @@ module.exports = "<table class=\"table table-hover equipment-table\">\n    <thea
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EquipmentTableComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service__ = __webpack_require__("../../../../../src/app/services/api.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1151,22 +1286,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var EquipmentTableComponent = (function () {
-    function EquipmentTableComponent() {
+    function EquipmentTableComponent(api) {
+        this.api = api;
+        this.equipments = [];
     }
     EquipmentTableComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + this.equipmentFile).then(function (equipments) {
+            _this.equipments = equipments;
+        });
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
         __metadata("design:type", String)
-    ], EquipmentTableComponent.prototype, "equipments", void 0);
+    ], EquipmentTableComponent.prototype, "equipmentFile", void 0);
     EquipmentTableComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-equipment-table',
             template: __webpack_require__("../../../../../src/app/shared/equipment-table/equipment-table.component.html"),
             styles: [__webpack_require__("../../../../../src/app/shared/equipment-table/equipment-table.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */]])
     ], EquipmentTableComponent);
     return EquipmentTableComponent;
 }());
@@ -1196,7 +1338,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/shared/obligations/obligations.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<table *ngIf=\"type === 'obligations' || type === 'duties'\" class=\"table table-hover obligation-table\">\n  <thead>\n    <tr>\n      <th scope=\"col\">D100</th>\n      <th scope=\"col\">Type d'obligation</th>\n    </tr>\n  </thead>\n  <tbody role=\"tabpanel\">\n    <tr *ngFor=\"let obligation of obligations; let i = index;\" \n    [ngClass]=\"{'eoe': (i%2) === 1 && type === 'obligations', 'aor': (i%2) === 1 && type === 'duties'}\">\n      <td scope=\"row\">{{ obligation.dice }}</td>\n      <td>\n        <span class=\"obligation-title\">{{ obligation.title }}</span>\n        <span>&nbsp;:&nbsp;</span>\n        <span>{{ obligation.description }}</span>\n      </td>\n    </tr>\n  </tbody>\n</table>\n\n<table *ngIf=\"type === 'moralities'\" class=\"table table-hover obligation-table\">\n  <thead>\n    <tr>\n      <th scope=\"col\">D100</th>\n      <th scope=\"col\">Force émotionnelle</th>\n      <th scope=\"col\">Faiblesse d'émotionnelle</th>\n    </tr>\n  </thead>\n  <tbody role=\"tabpanel\">\n    <tr *ngFor=\"let moralitie of obligations; let i = index;\" [ngClass]=\"{'fad': (i%2) === 1 && type === 'moralities'}\">\n      <td scope=\"row\">{{ moralitie.dice }}</td>\n      <td>\n        <span class=\"obligation-title\">{{ moralitie.emotionalForceTitle }}</span>\n        <span>&nbsp;:&nbsp;</span>\n        <span>{{ moralitie.emotionalForceDescription }}</span>\n      </td>\n      <td>\n        <span class=\"obligation-title\">{{ moralitie.emotionalWeaknessTitle }}</span>\n        <span>&nbsp;:&nbsp;</span>\n        <span>{{ moralitie.emotionalWeaknessDescription }}</span>\n      </td>\n    </tr>\n  </tbody>\n</table>"
+module.exports = "<table *ngIf=\"type === 'obligations' || type === 'duties'\" class=\"table table-hover obligation-table\">\r\n  <thead>\r\n    <tr>\r\n      <th scope=\"col\">D100</th>\r\n      <th scope=\"col\">Type d'obligation</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody role=\"tabpanel\">\r\n    <tr *ngFor=\"let obligation of obligations; let i = index;\" \r\n    [ngClass]=\"{'eoe': (i%2) === 1 && type === 'obligations', 'aor': (i%2) === 1 && type === 'duties'}\">\r\n      <td scope=\"row\">{{ obligation.dice }}</td>\r\n      <td>\r\n        <span class=\"obligation-title\">{{ obligation.title }}</span>\r\n        <span>&nbsp;:&nbsp;</span>\r\n        <span>{{ obligation.description }}</span>\r\n      </td>\r\n    </tr>\r\n  </tbody>\r\n</table>\r\n\r\n<table *ngIf=\"type === 'moralities'\" class=\"table table-hover obligation-table\">\r\n  <thead>\r\n    <tr>\r\n      <th scope=\"col\">D100</th>\r\n      <th scope=\"col\">Force émotionnelle</th>\r\n      <th scope=\"col\">Faiblesse d'émotionnelle</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody role=\"tabpanel\">\r\n    <tr *ngFor=\"let moralitie of obligations; let i = index;\" [ngClass]=\"{'fad': (i%2) === 1 && type === 'moralities'}\">\r\n      <td scope=\"row\">{{ moralitie.dice }}</td>\r\n      <td *ngIf=\"!moralitie.doubleMorality\">\r\n        <span class=\"obligation-title\">{{ moralitie.emotionalForceTitle }}</span>\r\n        <span>&nbsp;:&nbsp;</span>\r\n        <span>{{ moralitie.emotionalForceDescription }}</span>\r\n      </td>\r\n      <td *ngIf=\"!moralitie.doubleMorality\">\r\n        <span class=\"obligation-title\">{{ moralitie.emotionalWeaknessTitle }}</span>\r\n        <span>&nbsp;:&nbsp;</span>\r\n        <span>{{ moralitie.emotionalWeaknessDescription }}</span>\r\n      </td>\r\n      <td *ngIf=\"moralitie.doubleMorality\" colspan=\"2\">\r\n          <span>{{ moralitie.doubleMorality }}</span>\r\n      </td>\r\n    </tr>\r\n  </tbody>\r\n</table>"
 
 /***/ }),
 
