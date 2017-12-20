@@ -22,6 +22,8 @@ import { CareersSingleComponent } from './components/careers-single/careers-sing
 import { FooterComponent } from './layout/footer/footer.component';
 import { EquipmentsComponent } from './components/equipments/equipments.component';
 import { EquipmentTableComponent } from './shared/equipment-table/equipment-table.component';
+import { ResourcesComponent } from './components/resources/resources.component';
+import { CharacterCreatorComponent } from './components/tools/character-creator/character-creator.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { EquipmentTableComponent } from './shared/equipment-table/equipment-tabl
     CareersSingleComponent,
     FooterComponent,
     EquipmentsComponent,
-    EquipmentTableComponent
+    EquipmentTableComponent,
+    ResourcesComponent,
+    CharacterCreatorComponent
   ],
   imports: [
     BrowserModule,

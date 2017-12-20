@@ -1,0 +1,48 @@
+<div class="container-fluid" id="resources">
+
+  <ngx-loading [show]="!isPageLoaded" [config]="{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }"></ngx-loading>
+
+  <section *ngIf="isPageLoaded" id="resourcesSection">
+
+    <div class="row page-title">
+      <div class="page-title-label">
+        <p>Ressources</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm">
+        <p>Fiche de personnage</p>
+        <p>Bordure extérieure</p>
+        <p>Alliance & Rébellion</p>
+        <p>Force</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm">
+        <p>Arbres des talents par carrière</p>
+
+        <p>Bordure extérieure</p>
+
+        <p *ngFor="let career of eoeCareers">
+          <a target="_blank" href="{{ careersFilesFolder + career.careerTreeFile }}">{{ career.label }}</a>
+        </p>
+
+        <p>Alliance & Rébellion</p>
+
+        <p *ngFor="let career of aorCareers">
+          <a target="_blank" href="{{ careersFilesFolder + career.careerTreeFile }}">{{ career.label }}</a>
+        </p>
+
+        <p>Force</p>
+
+        <p *ngFor="let career of fadCareers">
+          <a target="_blank" href="{{ careersFilesFolder + career.careerTreeFile }}">{{ career.label }}</a>
+        </p>
+      </div>
+    </div>
+
+  </section>
+  
+</div>

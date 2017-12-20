@@ -54,16 +54,36 @@
             <a routerLink="/careers">Toutes</a>
           </li>
           <li *ngFor="let c of careers">
-              <a routerLink="/careers/{{ c.key }}">{{ c.label }}</a>
-            </li>
+            <a routerLink="/careers/{{ c.key }}">{{ c.label }}</a>
+          </li>
         </ul>
       </li>
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" routerLink="/equipments">
-            <i class="fa fa-fw fa-briefcase"></i>
-            <span class="nav-link-text">Équipements</span>
-          </a>
-        </li>
+        <a class="nav-link" routerLink="/equipments">
+          <i class="fa fa-fw fa-briefcase"></i>
+          <span class="nav-link-text">Équipements</span>
+        </a>
+      </li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tools">
+        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseTools" data-parent="#exampleAccordion">
+          <i class="fa fa-fw fa-cog"></i>
+          <span class="nav-link-text">Outils</span>
+        </a>
+        <ul class="sidenav-second-level collapse" id="collapseTools">
+          <li>
+            <a routerLink="tools/character-creator">Créateur de perso</a>
+          </li>
+          <li>
+            <a>Générateur de perso</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Ressources">
+        <a class="nav-link" routerLink="/resources">
+          <i class="fa fa-fw fa-file-pdf-o"></i>
+          <span class="nav-link-text">Ressources</span>
+        </a>
+      </li>
     </ul>
 
     <!-- Top menu bar -->
