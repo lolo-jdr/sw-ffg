@@ -1,1 +1,103 @@
-<app-equipment-table equipments="weaponsDistanceEnergy" ></app-equipment-table>
+<div class="container-fluid">
+
+    <div class="row page-title">
+        <div class="col-sm">
+            <p>Equipements</p>
+        </div>
+    </div>
+
+    <section class="row equipment-section">
+        <div class="col-2">
+            <p>Armes à distance</p>
+        </div>
+        <div class="col">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsDistanceWeapons" aria-expanded="false"
+                aria-controls="collapsDistanceWeapons">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+        </div>
+    </section>
+
+    <section class="collapse equipment-section" id="collapsDistanceWeapons">
+        <div class="row">
+            <div class="col-sm">
+                <p>Armes énergétiques</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <app-equipment-table equipmentFile="{{ weaponsDistanceEnergy }}"></app-equipment-table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <p>Armes à percussion</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <app-equipment-table equipmentFile="{{ weaponsDistancePercussion }}"></app-equipment-table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <p>Armes à jet</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <app-equipment-table equipmentFile="{{ weaponsDistanceJet }}"></app-equipment-table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <p>Explosifs et autres armes</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <app-equipment-table equipmentFile="{{ weaponsDistanceExplosive }}"></app-equipment-table>
+            </div>
+        </div>
+    </section>
+
+    <section class="row equipment-section">
+        <div class="col-2">
+            <p>Armes de corps à corps</p>
+        </div>
+        <div class="col">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsContactWeapons" aria-expanded="false"
+                aria-controls="collapsContactWeapons">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+        </div>
+    </section>
+
+    <section class="collapse equipment-section" id="collapsContactWeapons">
+        <div class="row">
+            <div class="col-sm">
+                <p>Armes de pugilat</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <app-equipment-table equipmentFile="{{ weaponsContactPugilat }}"></app-equipment-table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <p>Armes de corps à corps</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <app-equipment-table equipmentFile="{{ weaponsContactSword }}"></app-equipment-table>
+            </div>
+        </div>
+
+    </section>
+</div>

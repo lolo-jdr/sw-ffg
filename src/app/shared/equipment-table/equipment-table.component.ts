@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-equipment-table',
@@ -6,11 +7,16 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./equipment-table.component.css']
 })
 export class EquipmentTableComponent implements OnInit {
-  @Input() equipments: string;
+  @Input() equipmentFile: string;
 
-  constructor() { }
+  private equipments:any = [];
+
+  constructor(private api:ApiService) { }
 
   ngOnInit() {
+    this.api.localResource(ApiService.EQUIPMENT_FOLDER + this.equipmentFile).then(equipments => {
+      this.equipments = equipments;
+    });
   }
 
 }

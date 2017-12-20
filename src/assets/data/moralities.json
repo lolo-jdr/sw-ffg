@@ -8,59 +8,84 @@
     },
     {
         "dice": "09-16",
-        "emotionalForceTitlee": "Amour",
+        "emotionalForceTitle": "Amour",
         "emotionalForceDescription": "le personnage a un cœur immense. Ses amis et ses amours y tiennent une place toute particulière, mais il apprécie la plupart des gens qu'il rencontre. Son amour des autres le rend charmant, affable et tolérant.",
         "emotionalWeaknessTitle": "Jalousie",
         "emotionalWeaknessDescription": "lorsqu'il n'est pas donné de manière altruiste, l'amour risque de tourner à la jalousie. Si ses sentiments ne lui sont pas rendus, l'amour du personnage tourne à l'envie, à moins qu'il ne jalouse tout simplement les succès ou les biens des autres. "
     },
     {
         "dice": "17-24",
-        "emotionalForceTitlee": "Prudence",
+        "emotionalForceTitle": "Prudence",
         "emotionalForceDescription": "le personnage fait preuve d'une prudence admirable. Il préfère toujours examiner une situation nouvelle sous tous ses angles avant de prendre une décision.",
         "emotionalWeaknessTitle": "Peur",
         "emotionalWeaknessDescription": "la ligne qui sépare la prudence de la peur est mince. Parfois, le personnage passe tellement de temps à évaluer les risques qu'il en oublie d'agir. A d'autres moments, la prudence le pousse à fuir avant que le danger ne se présente, alors qu'une action plus déterminée aurait été récompensée."
     },
     {
-        "dice": "",
-        "emotionalForceTitle": "",
-        "emotionalForceDescription": "",
-        "emotionalWeaknessTitle": "",
-        "emotionalWeaknessDescription": ""
+        "dice": "25-32",
+        "emotionalForceTitle": "Enthousiasme",
+        "emotionalForceDescription": "le personnage est toujours prêt à essayer quelque chose de nouveau. Il approche toutes les tâches, même banales avec passion. Il n'est pas du genre à se perdre en analyses, de peur de rater une formidable opportunité.",
+        "emotionalWeaknessTitle": "Témérité",
+        "emotionalWeaknessDescription": "bien sûr, parfois, cinq minutes de réflexion vous évitent de commettre une grosse erreur. Le personnage a eu l'occasion de s'en apercevoir dans la douleur. A force d'être téméraire, il s'est retrouvé dans des situations dangereuses ou à la merci d'individus plus calculateurs."
     },
     {
-        "dice": "",
-        "emotionalForceTitle": "",
-        "emotionalForceDescription": "",
-        "emotionalWeaknessTitle": "",
-        "emotionalWeaknessDescription": ""
+        "dice": "33-40",
+        "emotionalForceTitle": "Compassion",
+        "emotionalForceDescription": "pour le personnage, les souffrances d'autrui sont importantes, et il souhaite aider ceux qu'il rencontre. Sa compassion peut le pousser à se sacrifier afin d'aider ceux qui en ont besoin.",
+        "emotionalWeaknessTitle": "Haine",
+        "emotionalWeaknessDescription": "dans une galaxie cruelle et impitoyable, la compassion risque de se changer en haine envers les gens ou les situations qui font souffrir autrui. Un personnage dont l'esprit est dévoré par la haine risque de mettre du temps à redevenir lui-même."
     },
     {
-        "dice": "",
-        "emotionalForceTitle": "",
-        "emotionalForceDescription": "",
-        "emotionalWeaknessTitle": "",
-        "emotionalWeaknessDescription": ""
+        "dice": "41-48",
+        "emotionalForceTitle": "Pitié",
+        "emotionalForceDescription": "le personnage ne montre miséricordieux envers ses ennemis. Il les traite de manière juste et honorable. Il épargne ceux qui sont sans défense, aide un ennemi impuissant et n'abuse pas de la situation quand il est en position de force.",
+        "emotionalWeaknessTitle": "Faiblesse",
+        "emotionalWeaknessDescription": "où s'arrête la pitié et où commence le refus de s'engager dans la lutte contre le mal ? le personnage risque de laisser de mauvaises choses se produire parce qu'il lui était trop difficile de prendre position."
     },
     {
-        "dice": "",
-        "emotionalForceTitle": "",
-        "emotionalForceDescription": "",
-        "emotionalWeaknessTitle": "",
-        "emotionalWeaknessDescription": ""
+        "dice": "49-56",
+        "emotionalForceTitle": "Curiosité",
+        "emotionalForceDescription": "le personnage se sent poussé à apprendre des choses nouvelles, à chercher et à découvrir des informations inédites, à mieux connaître et comprendre ce qu'il l'intéresse.",
+        "emotionalWeaknessTitle": "Obsession",
+        "emotionalWeaknessDescription": "parfois, s'il n'est pas tempéré par la raison, un centre d'intérêt menace de tourner à l'obsession. Le personnage se laisse emporter par son besoin de découvrir des informations, de remplir un objectif ou même de vaincre un rival. Il risque d'ignorer le reste tant qu'il n'y sera pas parvenu."
     },
     {
-        "dice": "",
-        "emotionalForceTitle": "",
-        "emotionalForceDescription": "",
-        "emotionalWeaknessTitle": "",
-        "emotionalWeaknessDescription": ""
+        "dice": "57-64",
+        "emotionalForceTitle": "Fierté",
+        "emotionalForceDescription": "la fierté peut être une émotion puissance qui pousse le personnage à accomplir des actions impressionantes. Il cherche à être le meilleur et prend du plaisir dans ce qu'il sait faire.",
+        "emotionalWeaknessTitle": "Arrogance",
+        "emotionalWeaknessDescription": "de toute les émotions, la fierté est peut-être celle qui bascule le plus facilement vers une forme plus sombre. L'arrogance ressemble à la fierté, mais la satisfaction devant ses propres succès est remplacée par le mépris devant les échecs des autres. Réussir ne suffit pas, le personnage s'attend aussi à ce que les autres échouent."
     },
     {
-        "dice": "",
-        "emotionalForceTitle": "",
-        "emotionalForceDescription": "",
-        "emotionalWeaknessTitle": "",
-        "emotionalWeaknessDescription": ""
+        "dice": "65-72",
+        "emotionalForceTitle": "Indépendance",
+        "emotionalForceDescription": "le personnage veut être autonome. Il ne compte pas sur les autres pour agir en son nom. Refusant d'être un fardeau pour autrui, il faut être capable de faire face à tout ce qu'il rencontre.",
+        "emotionalWeaknessTitle": "Froideur",
+        "emotionalWeaknessDescription": "si le personnage n'est pas prudent, son indépendance peut tourner à l'isolement. Dans ce cas, il ne désire plus seulement agir par lui-même, il en vient à se désintéresser des autres. S'ils ne peuvent pas s'aider eux-mêmes, pourquoi les aiderait-il ?"
+    },
+    {
+        "dice": "73-80",
+        "emotionalForceTitle": "Ambition",
+        "emotionalForceDescription": "un personnage ambitieux se fixe un but élevé et s'acharne à l'atteindre. Plus la tâche est difficile, plus le personnage est désireux de l'accomplir, et plus le triomphe est grand quand il finit par y arriver.",
+        "emotionalWeaknessTitle": "Cupidité",
+        "emotionalWeaknessDescription": "un personnage ambitieux est exactement aussi altruiste que ses objectifs. Ceux qui recherchent les plaisirs de ce monde, la richesse, le pouvoirs ou de simples conforts personnels risquent de voir leur ambition se ternir et se changer en cupidité."
+    },
+    {
+        "dice": "81-88",
+        "emotionalForceTitle": "Justice",
+        "emotionalForceDescription": "le personnage souhaite se montrer juste et réfléchi dans sa vie et dans ses intéreractions avec autrui. A chaque occasion, il tente de faire le choix le plus objectif, sachant que la justice a plus de chances d'entraîner des conséquences positives que la sympathie ou tout autre réponse émotionnelle.",
+        "emotionalWeaknessTitle": "Cruauté",
+        "emotionalWeaknessDescription": "très souvent, les gens cruels justifient leurs actes par la justice. Si le personnage cesse de tempérer la justice par l'empathie et la compréhension, il fera beaucoup de mal aux autres...et se sentira en droit de le faire. Tôt au tard, il en arrivera à savourer la souffrance d'autrui, tout en conservant l'illusion de faire des choix \"justes\"."
+    },
+    {
+        "dice": "89-96",
+        "emotionalForceTitle": "Discipline",
+        "emotionalForceDescription": "une rigoureuse discipline physique et mentale vient naturellement au personnage. Ses choix ne sont jamais improvisés, et toutes ses actions sont précises et réfléchies. Ceux qui pensent qu'il est possible de le pousser à agir de manière imprudente se trompe lourdement.",
+        "emotionalWeaknessTitle": "Obstination",
+        "emotionalWeaknessDescription": "s'ils ne se méfient pas, les personnages disciplinés risquent de tomber dans le piège de l'obstination. Un obstiné refuse de considérer une autre action que celle qu'il a choisie, et refuse d'admettre que quelqu'un d'autre a peut-être trouvé une meilleure solution."
+    },
+    {
+        "dice": "97-00",
+        "doubleMorality": "Tirez deux fois sur la table. Le personnage a plusieurs forces et faiblesses émotionnelles."
     }
     
 ]

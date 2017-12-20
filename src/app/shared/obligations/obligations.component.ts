@@ -25,7 +25,7 @@ export class ObligationsComponent implements OnInit {
     if (jsonFilesToLoad) {
       this.api.localResource(jsonFilesToLoad).then(obligations => {
         this.obligations = obligations;
-      })
+      });
     }
   
   }

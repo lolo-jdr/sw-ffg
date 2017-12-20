@@ -9,6 +9,8 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class ApiService {
 
+  public static EQUIPMENT_FOLDER = 'assets/data/equipments/';
+
   public static SPECIES = 'assets/data/species.json';
   public static CAREERS = 'assets/data/careers.json';
 
@@ -16,13 +18,13 @@ export class ApiService {
   public static DUTIES = 'assets/data/duties.json';
   public static MORALITIES = 'assets/data/moralities.json';
 
-  public static WEAPONS_DISTANCE_ENERGY = "assets/data/weapons-distance-energy.json";
-  public static WEAPONS_DISTANCE_PERCUSSION = "assets/data/weapons-distance-percussion.json";
-  public static WEAPONS_DISTANCE_JET = "assets/data/weapons-distance-jet.json";
-  public static WEAPONS_DISTANCE_EXPLOSIVE = "assets/data/weapons-distance-explosive.json";
+  public static WEAPONS_DISTANCE_ENERGY = "weapons-distance-energy.json";
+  public static WEAPONS_DISTANCE_PERCUSSION = "weapons-distance-percussion.json";
+  public static WEAPONS_DISTANCE_JET = "weapons-distance-jet.json";
+  public static WEAPONS_DISTANCE_EXPLOSIVE = "weapons-distance-explosive.json";
 
-  public static WEAPONS_CONTACT_PUGILAT = "assets/data/weapons-contact-pugilat.json";
-  public static WEAPONS_CONTACT_SWORD = "assets/data/weapons-contact-sword.json";
+  public static WEAPONS_CONTACT_PUGILAT = "weapons-contact-pugilat.json";
+  public static WEAPONS_CONTACT_SWORD = "weapons-contact-sword.json";
 
   public static CHARACTER_CREATION_INSPIRATIONS = 'assets/data/character-creation-inspirations.json';
 

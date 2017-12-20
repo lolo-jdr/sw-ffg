@@ -29,15 +29,18 @@
   <tbody role="tabpanel">
     <tr *ngFor="let moralitie of obligations; let i = index;" [ngClass]="{'fad': (i%2) === 1 && type === 'moralities'}">
       <td scope="row">{{ moralitie.dice }}</td>
-      <td>
+      <td *ngIf="!moralitie.doubleMorality">
         <span class="obligation-title">{{ moralitie.emotionalForceTitle }}</span>
         <span>&nbsp;:&nbsp;</span>
         <span>{{ moralitie.emotionalForceDescription }}</span>
       </td>
-      <td>
+      <td *ngIf="!moralitie.doubleMorality">
         <span class="obligation-title">{{ moralitie.emotionalWeaknessTitle }}</span>
         <span>&nbsp;:&nbsp;</span>
         <span>{{ moralitie.emotionalWeaknessDescription }}</span>
+      </td>
+      <td *ngIf="moralitie.doubleMorality" colspan="2">
+          <span>{{ moralitie.doubleMorality }}</span>
       </td>
     </tr>
   </tbody>

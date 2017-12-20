@@ -1,0 +1,38 @@
+[
+    {
+        "label": "Détecteur de poche",
+        "price": 100,
+        "encombrement": 0,
+        "rarety": 2
+    },
+    {
+        "label": "Détecteur universel",
+        "price": 500,
+        "encombrement": 2,
+        "rarety": 3
+    },
+    {
+        "label": "Electrojumelles",
+        "price": 250,
+        "encombrement": 1,
+        "rarety": 1
+    },
+    {
+        "label": "Jumelles scanner",
+        "price": 150,
+        "encombrement": 0,
+        "rarety": 3
+    },
+    {
+        "label": "Détecteur universel",
+        "price": 500,
+        "encombrement": 2,
+        "rarety": 3
+    },
+    {
+        "label": "Electrojumelles",
+        "price": 250,
+        "encombrement": 1,
+        "rarety": 1
+    }
+]
