@@ -9,6 +9,7 @@
 
 #careersSingle .career-skills {
      margin-bottom: 20px;
+     border-bottom: 1px solid purple;
  }
 
 #careersSingle .career-skills img {
@@ -20,8 +21,18 @@
     margin-bottom: 0px;
 }
 
+#careersSingle .career-description {
+    margin-bottom: 20px;
+    border-bottom: 1px solid purple;
+}
+
 #careersSingle .block {
     padding: 20px;
+}
+
+#careersSingle .career-specializations {
+    margin-bottom: 20px;
+    border-bottom: 1px solid purple;
 }
 
 #careersSingle .career-specializations .card-title {
@@ -48,6 +59,10 @@
 
 #careersSingle .career-specialization-skills p {
     margin-bottom: 0px;
+}
+
+.career-obligations p {
+    margin-bottom: 10px;
 }
 
  /* Responsive */

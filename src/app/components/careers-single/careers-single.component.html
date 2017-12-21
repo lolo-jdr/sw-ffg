@@ -47,7 +47,11 @@
           <div class="card-body">
             <div class="card-title">
               <p class="specialization-label text-center">{{ specialization.label }}</p>
-              <p class="text-center"><small><em>{{ specialization.subLabel }}</em></small></p>
+              <p class="text-center">
+                <small>
+                  <em>{{ specialization.subLabel }}</em>
+                </small>
+              </p>
             </div>
             <div class="row career-specialization-skills">
               <div class="col-sm text-center">
@@ -70,6 +74,12 @@
       </div>
     </div>
 
+    <div class="row career-obligations">
+      <div class="col-sm">
+        <p>Liste des {{ obligationLabel }}</p>
+        <app-obligations type="{{ obligationType }}"></app-obligations>
+      </div>
+    </div>
 
 
   </section>

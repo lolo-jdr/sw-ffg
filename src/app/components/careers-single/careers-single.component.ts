@@ -14,6 +14,9 @@ export class CareersSingleComponent implements OnInit {
   
   protected career: any;
   private sub: any;
+
+  protected obligationLabel:any;
+  protected obligationType:any;
   
   constructor(private route: ActivatedRoute, private api:ApiService, private helper:HelperService) { }
 
@@ -28,6 +31,17 @@ export class CareersSingleComponent implements OnInit {
           
           if (careerToLoad) {
             console.log(careerToLoad);
+
+            if (careerToLoad.universKey === 'eoe') {
+              this.obligationLabel = 'obligations';
+              this.obligationType = 'obligations';
+            } else if(careerToLoad.universKey === 'aor'){
+              this.obligationLabel = 'devoirs';
+              this.obligationType = 'duties';
+            } else {
+              this.obligationLabel = 'moralités';
+              this.obligationType = 'moralities';
+            }
 
             this.career = careerToLoad;
           }

@@ -19,7 +19,7 @@
       "specialAbilityProcess": [
         { 
           "label": "+1 Système D",
-          "skillKey": ""
+          "skillKey": "streetwise"
          }
       ],
       "otherAbilities": []
@@ -41,6 +41,7 @@
       "strainTreshold": "10 + Volonté",
       "startingXp": 175,
       "specialAbility": "Les droïdes ne mangent pas, ne dorment pas, ne respirent pas et ne sont pas affectés par les toxines et les poisons. La limite d'implants des droïdes est égale à 6 (et non à la <strong>Vigueur</strong>). Par ailleurs, une fois sa carrière choisie, un droïde gagne 1 rang dans 6 de ses 8 compétences de carrière (au lieu des quatre habituelles). Une fois sa première spécialité choisie, il gagne 1 rang dans 3 de ses 4 compétences de spécialité (au lieu des 2 habituelles).",
+      "specialAbilityProcess": [ ],
       "otherAbilities": [
         { "label": "Inorganique", "description": "" },
         { "label": "Etre mécanique", "description": "Les Droîdes ne peuvent pas être sensibles à la Force, ni avoir une valeur de Force. Ils ne peuvent pas employer de pouvoirs de la Force, et ne peuvent pas être affectés par les pouvoirs de la Force qui influencent les esprits." }
@@ -62,7 +63,13 @@
       "woundTreshold": "10 + Vigueur",
       "strainTreshold": "10 + volonté",
       "startingXp": 100,
-      "specialAbility": "Les Gands commencent le jeu avec 1 rang en <span class=\"skill\">sang-froid</span>. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "specialAbility": "Les Gands commencent le jeu avec 1 rang en Sang-froid. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "specialAbilityProcess": [
+        { 
+          "label": "+1 Sang-froid",
+          "skillKey": "discipline"
+         }
+      ],
       "otherAbilities": [
         { "label": "Respirateurs d'ammoniac", "description": "la grande différence entre les deux espèces de Gands, c'est que les uns ont des poumons, les autres non. Ceux qui en sont dotés respirent un mélange de gaz ammoniacés. Ceux qui n'en ont pas ne respirent pas et trouvent toutes les substances métaboliques nécessaires dans leur nourriture. Quand il joue un <span class=\"species\">Gand</span>, un joueur doit déterminer si son personnage a des poumons ou non. S'il choisit de jouer un personnage dépourvu de tels organes, il est immunisé contre la sufffocation (mais pas contre les blessures que l'on subit dans le vide). S'il préfèrent jouer un personnage avec des poumons, il commence le jeu avec un <span class=\"skill\">respiration d'amoniac</span> et traite l'oxygène comme une atmosphère dangeureuse de niveau 8. En revanche, il gagne <span class=\"skill\">+ 10 XP</span> de départ." }
       ]
@@ -84,6 +91,7 @@
       "strainTreshold": "10 + Volonté",
       "startingXp": 110,
       "specialAbility": "Les humains commencent le jeu avec 1 rang dans 2 compétences hors carrière de leur choix. Ils ne peuvent cependant pas dépasser le rang 2 dans ces compétences à la création de personnage.",
+      "specialAbilityProcess": [],
       "otherAbilities": []
     },
     {
@@ -102,7 +110,13 @@
       "woundTreshold": "10 + Vigueur",
       "strainTreshold": "10 + Volonté",
       "startingXp": 100,
-      "specialAbility": "Les Rodiens commencent le jeu avec 1 rang en <span class=\"skill\">Survie</span>. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage. Les Rodiens commencent aussi le jeu avec 1 rang dans le talent <span class=\"skill\">Pisteur</span> chevronné.",
+      "specialAbility": "Les Rodiens commencent le jeu avec 1 rang en Survie. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage. Les Rodiens commencent aussi le jeu avec 1 rang dans le talent <span class=\"skill\">Pisteur</span> chevronné.",
+      "specialAbilityProcess": [
+        { 
+          "label": "+1 Survie",
+          "skillKey": "survival"
+         }
+      ],
       "otherAbilities": []
     },
     {
@@ -121,7 +135,13 @@
       "woundTreshold": "12 + Vigueur",
       "strainTreshold": "9 + Volonté",
       "startingXp": 90,
-      "specialAbility": "Les Trandosiens commencent le jeu avec 1 rang en <span class=\"skill\">Perception</span>. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "specialAbility": "Les Trandosiens commencent le jeu avec 1 rang en Perception. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "specialAbilityProcess": [
+        { 
+          "label": "+1 Perception",
+          "skillKey": "perception"
+         }
+      ],
       "otherAbilities": [
         { "label": "Régénération", "description": "quand un <span class=\"species\">Trandosien</span> se débarrasse d'au moins 1 blessure en se reposant ou en s'immergeant dans une cuve à bacta, il en élimine une de plus. Cela ne fonctionne cependant pas quand il reçoit les premiers secours, bénéficie de soins médicaux ou d'un stimpack. Les <span class=\"species\">Trandosiens</span> peuvent également régénérer leurs membres, mais il faut attendre 1 mois avant qu'ils soient à nouveau réutilisables." },
         { "label": "Griffes", "description": "quand un <span class=\"species\">Trandosien</span> effectue des tests de <span class=\"skill\">Pugilat</span> pour infliger des dégâts à un adversaire, il inflige <span class=\"skill\">+ 1 dégât</span> et a une valeur critique de <span class=\"skill\">3</span>" }
@@ -143,7 +163,17 @@
       "woundTreshold": "10 + Vigueur",
       "strainTreshold": "11 + Volonté",
       "startingXp": 100,
-      "specialAbility": "Les Twi'leks commencent le jeu avec 1 rang en <span class=\"skill\">Charme</span> ou en <span class=\"skill\">Tromperie</span>. Ils ne peuvent cependant pas dépasser le rang 2 dans la compétence choisie à la création de personnage. Quand ils effectuent des tests de compétence, ils peuvent retirer <i class=\"fa fa-square\" aria-hidden=\"true\"></i> dû à des conditions environnementales chaudes ou arides.",
+      "specialAbility": "Les Twi'leks commencent le jeu avec 1 rang en Charme ou en Tromperie. Ils ne peuvent cependant pas dépasser le rang 2 dans la compétence choisie à la création de personnage. Quand ils effectuent des tests de compétence, ils peuvent retirer <i class=\"fa fa-square\" aria-hidden=\"true\"></i> dû à des conditions environnementales chaudes ou arides.",
+      "specialAbilityProcess": [
+        { 
+          "label": "+1 Charme",
+          "skillKey": "charm"
+         },
+         { 
+          "label": "+1 Tromperie",
+          "skillKey": "deception"
+         }
+      ],
       "otherAbilities": [
         { "label": "Habitants du désert", "description": "lorsqu'ils effectuent des tests de compétence, les Twi'leks peuvent retirer _INFORTUNE_ dû à l'aridité ou à la chaleur." }
       ]
@@ -164,7 +194,13 @@
       "woundTreshold": "14 + Vigueur",
       "strainTreshold": "8 + Volonté",
       "startingXp": 90,
-      "specialAbility": "Les Wookies commencent le jeu avec 1 rang en <span class=\"skill\">Pugilat<span>. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "specialAbility": "Les Wookies commencent le jeu avec 1 rang en Pugilat. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "specialAbilityProcess": [
+        { 
+          "label": "+1 Pugilat",
+          "skillKey": "brawl"
+         }
+      ],
       "otherAbilities": [
         { 
           "label": "Rage Wookie", "description": "quand un <span class=\"species\">Wookie</span> est blessé, ses attaques de <span class=\"skill\">Corps à Corps</span> et de <span class=\"skill\">Pugilat</span> infligent <span class=\"skill\">+ 1 points de dégâts</span>. Quand un <span class=\"species\">Wookie</span> a subit au moins 1 blessure critique, elles infligent <span class=\"skill\">+ 2 points de dégâts</span>." 
@@ -187,7 +223,13 @@
       "woundTreshold": "11 + Vigueur",
       "strainTreshold": "10 + Volonté",
       "startingXp": 100,
-      "specialAbility": "Les Duros commencent le jeu avec 1 rang en pilotage (espace). Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "specialAbility": "Les Duros commencent le jeu avec 1 rang en Pilotage (espace). Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "specialAbilityProcess": [
+        { 
+          "label": "+1 Pilotage (espace)",
+          "skillKey": "piloting_space"
+         }
+      ],
       "otherAbilities": [
         { 
           "label": "Navigation intuitive", "description": "les Duros peuvent ajouter _AVANTAGE_ à tous leurs tests d'Astrogation." 
@@ -211,6 +253,16 @@
       "strainTreshold": "9 + Volonté",
       "startingXp": 100,
       "specialAbility": "Les Gans commencent le jeu avec 1 rang en Charme ou en Négociation. Il ne peuvent cependant pas dépasser le rang 2 dans la compétence choisie à la création du personnage.",
+      "specialAbilityProcess": [
+        { 
+          "label": "+1 Charme",
+          "skillKey": "charm"
+         },
+         { 
+          "label": "+1 Négociation",
+          "skillKey": "negociation"
+         }
+      ],
       "otherAbilities": [
         { 
           "label": "Vision supérieur", "description": "quand ils effectuent un test de combat à distance ou de Perception, les Gans retirent jusqu'à _INFORTUNE_ _INFORTUNE_ imposés par l'environnement ou le camouflage (mais pas par la défense de la cible)." 
@@ -234,6 +286,12 @@
       "strainTreshold": "12 + Volonté",
       "startingXp": 90,
       "specialAbility": "Les Ithoriens commencent le jeu avec 1 rang en Survie. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "specialAbilityProcess": [
+        { 
+          "label": "+1 Survie",
+          "skillKey": "survival"
+         }
+      ],
       "otherAbilities": [
         { 
           "label": "Mugissement ithorien", "description": "grâce à leurs deux bouches et leurs quatre gorges, les Ithoriens disposent d'une arme naturelle sur laquelle ils peuvent compter pour se défendre (Résistance ; dégât 6 ; critique 4 ; portée courte ; dégâts étourdissants, Cadence lente 2 ; Choc 1 ; Souffle 3). Chaque fois que l'Ithorien recourt à cette capacité, il subit 3 points de stress." 
@@ -257,6 +315,12 @@
       "strainTreshold": "10 + Volonté",
       "startingXp": 100,
       "specialAbility": "Les Mon Calamari commencent le jeu avec 1 rang en Connaissance (Éducation). Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "specialAbilityProcess": [
+        { 
+          "label": "+1 Connaissance (Éducation)",
+          "skillKey": "knowledge_education"
+         }
+      ],
       "otherAbilities": [
         { 
           "label": "Amphibien", "description": "un Mon Calamari peut respirer sous l'eau sans malus, et ne souffre d'aucun malus de déplacement lorqu'il évolue dans l'eau." 
@@ -280,6 +344,12 @@
       "strainTreshold": "10 + Volonté",
       "startingXp": 100,
       "specialAbility": "Les Sullustéens commencent le jeu avec 1 rang en Astrogation. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage. Ils débutent également avec un rang du talent Pilote chevronné.",
+      "specialAbilityProcess": [
+        { 
+          "label": "+1 Astrogation",
+          "skillKey": "astrogation"
+         }
+      ],
       "otherAbilities": []
     },
     {
@@ -299,6 +369,12 @@
       "strainTreshold": "13 + Volonté",
       "startingXp": 90,
       "specialAbility": "Les Céréens commencent le jeu avec 1 rang en Vigilance. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "specialAbilityProcess": [
+        { 
+          "label": "+1 Vigilance",
+          "skillKey": "vigilance"
+         }
+      ],
       "otherAbilities": [
         { 
           "label": "Traitement binaire", "description": "les Céréens considèrent toutes les compétences de Connaissance comme des compétences de carrière." 
@@ -322,6 +398,12 @@
       "strainTreshold": "10 + Volonté",
       "startingXp": 100,
       "specialAbility": "Les Kel Dor commencent avec 1 rang en Connaissance (éducation). Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence lors de la création de personnage.",
+      "specialAbilityProcess": [
+        { 
+          "label": "+1 Connaissance (éducation)",
+          "skillKey": "knowledge_education"
+         }
+      ],
       "otherAbilities": [
         { "label": "Vision dans l'obscurité", "description": "Lors qu'ils effectuent des tests de compétence, les Kel Dors peuvent retirer jusqu'à _INFORTUNE_ _INFORTUNE_ imposés par l'obscurité." },
         { "label": "Besoins d'atmosphériques", "description": "Les Kel Dors doivent porter des masques spéciaux pour respirer et voir en dehors de leur environnement natal. Un personnage Kel Dor commence le jeu avec un masque respiratoire filtrant, et traite l'oxygène comme une atmosphère dangeureuse dotée d'une valeur de 8. Toutefois, les Kel Dors peuvent survivre jusqu'à 5 minutes dans le vide sans souffrir de ses effets." }
@@ -344,6 +426,16 @@
       "strainTreshold": "10 + Volonté",
       "startingXp": 100,
       "specialAbility": "Les Kel Dor commencent avec 1 rang en Sang-Froid et 1 rang en Calme. Ils ne peuvent cependant pas dépasser le rang 2 dans ces compétences lors de la création de personnage.",
+      "specialAbilityProcess": [
+        { 
+          "label": "+1 Sang-Froid",
+          "skillKey": "discipline"
+         },
+         { 
+          "label": "+1 Calme",
+          "skillKey": "cool"
+         }
+      ],
       "otherAbilities": []
     },
     {
@@ -363,6 +455,12 @@
       "strainTreshold": "9 + Volonté",
       "startingXp": 100,
       "specialAbility": "Les Nautolans commencent le jeu avec 1 rang en Athlétisme. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "specialAbilityProcess": [
+        { 
+          "label": "+1 Athlétisme",
+          "skillKey": "athletics"
+         }
+      ],
       "otherAbilities": [
         { 
           "label": "Amphibie", "description": "Les Notaulans peuvent respirer sous l'eau sans malus, et ne souffrent jamais de pénalité de mouvement lorsqu'ils se déplacent dans l'eau." 
@@ -386,6 +484,12 @@
       "strainTreshold": "10 + Volonté",
       "startingXp": 100,
       "specialAbility": "Les Togrutas commencent le jeu avec 1 rang en Perception. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "specialAbilityProcess": [
+        { 
+          "label": "+1 Perception",
+          "skillKey": "perception"
+         }
+      ],
       "otherAbilities": [
         { 
           "label": "Instincts de la meute", "description": "Lorsqu'ils accomplissent la manoœuvre \"assiter\", les Togrutas ajoutent _FORTUNE_ _FORTUNE_ au lieu de _FORTUNE_." 
@@ -409,6 +513,12 @@
       "strainTreshold": "10 + Volonté",
       "startingXp": 100,
       "specialAbility": "Les Zabraks commencent le jeu avec 1 rang en Survie. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création de personnage.",
+      "specialAbilityProcess": [
+        { 
+          "label": "+1 Survie",
+          "skillKey": "survival"
+         }
+      ],
       "otherAbilities": [
         { 
           "label": "Apparence effrayante", "description": "les Zabraks ajoutent automatiquement _AVANTAGE_ à tous leurs tests de Coercition." 
