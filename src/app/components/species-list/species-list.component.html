@@ -11,7 +11,7 @@
     </div>
 
     <div class="card-deck" *ngFor="let speciesLine of this.speciesList">
-      <div class="card clickable" *ngFor="let species of speciesLine" routerLink="/species/{{ species.key }}">
+      <div class="card clickable" *ngFor="let species of speciesLine" routerLink="/species/{{ species.key }}" [ngClass]="{ 'invisible': species.fake }">
         <img class="card-img-top" src="assets/images/species/{{ species.key }}-h.jpg" alt="Card image cap">
         <div class="card-body">
           <h4 class="card-title">{{ species.label }}</h4>

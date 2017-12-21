@@ -12,7 +12,7 @@
 
 		<div class="row species-characteristics">
 			<div class="col-sm block text-center">
-				<img src="assets/images/species/{{ species.key }}.jpg" class="img-responsive" />
+				<img src="assets/images/species/{{ species.key }}.png" class="img-responsive" />
 			</div>
 			<div class="col-sm block">
 				<div class="characteristics">
@@ -55,6 +55,12 @@
 						<span class="sub-title">PX de départ:</span>
 						<span>{{ species.startingXp }}</span>
 					</p>
+					<ng-container *ngIf="species.specialAbilityProcess.length > 0">
+						<p *ngFor="let ability of species.specialAbilityProcess"> {{ ability.label }}</p>
+					</ng-container>
+					<ng-container *ngIf="species.key === 'human'">
+						<p>+1 dans deux compétences au choix</p>
+					</ng-container>
 				</div>
 			</div>
 		</div>
@@ -73,7 +79,7 @@
 					</p>
 				</ng-container>
 				<ng-container *ngIf="species.otherAbilities.length === 0">
-					<p class="text-center">Aucune</p>
+					<p class="text-center">-</p>
 				</ng-container>
 			</div>
 		</div>

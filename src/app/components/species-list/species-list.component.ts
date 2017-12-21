@@ -28,6 +28,13 @@ export class SpeciesListComponent implements OnInit {
         this.speciesList[row].push(sp);
       });
 
+      console.log(this.speciesList[row].length);
+      while(this.speciesList[row].length < 3) {
+        var fakeCard = JSON.parse(JSON.stringify(this.speciesList[row][0]));
+        fakeCard.fake = true;
+        this.speciesList[row].push(fakeCard);
+      }
+
       console.log(this.speciesList);
       this.isPageLoaded = true;
     });

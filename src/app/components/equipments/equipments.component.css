@@ -3,7 +3,7 @@
 }
 
 .equipment-title {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .equipment-title span:first-child i:first-child {
@@ -18,7 +18,7 @@
 }
 
 .equipment-sub-title {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 10px;
 }
 
