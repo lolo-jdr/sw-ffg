@@ -1,3 +1,29 @@
 .equipment-section {
     margin-bottom: 20px;
 }
+
+.equipment-title {
+    font-size: 1.5em;
+}
+
+.equipment-title span:first-child i:first-child {
+    margin-right: 10px;
+}
+
+
+.equipment-title button {
+    float: right;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.equipment-sub-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+    .equipment-title button {
+        margin-left: 50px;
+    }
+}

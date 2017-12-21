@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild, ElementRef } from '@angular/core';
 import { ApiService } from '../../services/api.service';
 import { HelperService } from '../../services/helper.service';
 
@@ -10,6 +10,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  @ViewChild('navbarToggler') navbarToggler:ElementRef;
 
   protected isPageLoaded = false;
 
@@ -34,6 +35,9 @@ export class HeaderComponent implements OnInit {
     });
   }
 
+  ngOnInit() {
+  }
+
   private getDynamicMenu() {
     return Observable.forkJoin(
       this.api.localResource(ApiService.SPECIES),
@@ -41,7 +45,13 @@ export class HeaderComponent implements OnInit {
     );
   }
 
-  ngOnInit() {
+  navBarTogglerIsVisible() {
+    return this.navbarToggler.nativeElement.offsetParent !== null;
   }
 
+  protected collapseNav() {
+    if (this.navBarTogglerIsVisible()) {
+      this.navbarToggler.nativeElement.click();
+    }
+  }
 }

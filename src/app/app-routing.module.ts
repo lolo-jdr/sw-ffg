@@ -8,6 +8,7 @@ import { CareersListComponent } from './components/careers-list/careers-list.com
 import { CareersSingleComponent } from './components/careers-single/careers-single.component';
 import { EquipmentsComponent } from './components/equipments/equipments.component';
 import { ResourcesComponent } from './components/resources/resources.component';
+import { CharacterCreatorComponent } from './components/tools/character-creator/character-creator.component';
 
 
 const routes: Routes = [
@@ -23,7 +24,7 @@ const routes: Routes = [
 
   { path: 'equipments', component: EquipmentsComponent },
 
-  { path: 'tools/character-creator', component: ResourcesComponent },
+  { path: 'tools/character-creator', component: CharacterCreatorComponent },
 
   { path: 'resources', component: ResourcesComponent },
 ];

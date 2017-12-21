@@ -27,6 +27,18 @@ export class ApiService {
   public static WEAPONS_CONTACT_PUGILAT = "weapons-contact-pugilat.json";
   public static WEAPONS_CONTACT_SWORD = "weapons-contact-sword.json";
 
+  public static ARMORS = "armor.json";
+
+  public static EQUIPMENT_COMMUNICATION = "equipment-communication.json";
+  public static EQUIPMENT_CYBERNETIC = "equipment-cybernetic.json";
+  public static EQUIPMENT_DETECTION = "equipment-detection.json";
+  public static EQUIPMENT_ENTERTAINMENT = "equipment-entertainment.json";
+  public static EQUIPMENT_MEDICAL = "equipment-medical.json";
+  public static EQUIPMENT_POISON = "equipment-poison.json";
+  public static EQUIPMENT_SECURITY_MATERIAL = "equipment-security-material.json";
+  public static EQUIPMENT_SURVIVAL_MATERIAL = "equipment-survival-material.json";
+  public static EQUIPMENT_TOOL = "equipment-tool.json";
+
   public static CHARACTER_CREATION_INSPIRATIONS = 'assets/data/character-creation-inspirations.json';
 
   constructor(private http:Http) { }

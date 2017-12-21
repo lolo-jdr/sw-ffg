@@ -1,103 +1,252 @@
 <div class="container-fluid">
 
-    <div class="row page-title">
-        <div class="col-sm">
-            <p>Equipements</p>
-        </div>
-    </div>
+	<div class="row page-title">
+		<div class="col-sm">
+			<p>Équipements</p>
+		</div>
+	</div>
 
-    <section class="row equipment-section">
-        <div class="col-2">
-            <p>Armes à distance</p>
-        </div>
-        <div class="col">
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseDistanceWeapons" aria-expanded="false"
-                aria-controls="collapseDistanceWeapons">
-                <i class="fa fa-plus" aria-hidden="true"></i>
-            </button>
-        </div>
-    </section>
+	<div class="row">
 
-    <section class="collapse equipment-section" id="collapseDistanceWeapons">
-        <div class="row">
-            <div class="col-sm">
-                <p>Armes énergétiques</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                <app-equipment-table equipmentFile="{{ weaponsDistanceEnergy }}"></app-equipment-table>
-            </div>
-        </div>
+		<div class="col-md-auto">
 
-        <div class="row">
-            <div class="col-sm">
-                <p>Armes à percussion</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                <app-equipment-table equipmentFile="{{ weaponsDistancePercussion }}"></app-equipment-table>
-            </div>
-        </div>
+			<section class="row equipment-section">
+				<div class="col">
+					<p class="equipment-title">
+						<span><i class="ra ra-musket ra-lg"></i>Armes à distance</span>
+						<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseDistanceWeapons" aria-expanded="false"
+						 aria-controls="collapseDistanceWeapons">
+							<i class="fa fa-plus" aria-hidden="true"></i>
+						</button>
+					</p>
+				</div>
+			</section>
 
-        <div class="row">
-            <div class="col-sm">
-                <p>Armes à jet</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                <app-equipment-table equipmentFile="{{ weaponsDistanceJet }}"></app-equipment-table>
-            </div>
-        </div>
+			<section class="collapse equipment-section" id="collapseDistanceWeapons">
+				<div class="row">
+					<div class="col-sm">
+						<p class="equipment-sub-title">Armes énergétiques</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<app-equipment-table equipmentFile="{{ weaponsDistanceEnergy }}"></app-equipment-table>
+					</div>
+				</div>
 
-        <div class="row">
-            <div class="col-sm">
-                <p>Explosifs et autres armes</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                <app-equipment-table equipmentFile="{{ weaponsDistanceExplosive }}"></app-equipment-table>
-            </div>
-        </div>
-    </section>
+				<div class="row">
+					<div class="col-sm">
+						<p class="equipment-sub-title">Armes à percussion</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<app-equipment-table equipmentFile="{{ weaponsDistancePercussion }}"></app-equipment-table>
+					</div>
+				</div>
 
-    <section class="row equipment-section">
-        <div class="col-2">
-            <p>Armes de corps à corps</p>
-        </div>
-        <div class="col">
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseContactWeapons" aria-expanded="false"
-                aria-controls="collapseContactWeapons">
-                <i class="fa fa-plus" aria-hidden="true"></i>
-            </button>
-        </div>
-    </section>
+				<div class="row">
+					<div class="col-sm">
+						<p class="equipment-sub-title">Armes à jet</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<app-equipment-table equipmentFile="{{ weaponsDistanceJet }}"></app-equipment-table>
+					</div>
+				</div>
 
-    <section class="collapse equipment-section" id="collapseContactWeapons">
-        <div class="row">
-            <div class="col-sm">
-                <p>Armes de pugilat</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                <app-equipment-table equipmentFile="{{ weaponsContactPugilat }}"></app-equipment-table>
-            </div>
-        </div>
+				<div class="row">
+					<div class="col-sm">
+						<p class="equipment-sub-title">Explosifs et autres armes</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<app-equipment-table equipmentFile="{{ weaponsDistanceExplosive }}"></app-equipment-table>
+					</div>
+				</div>
+			</section>
 
-        <div class="row">
-            <div class="col-sm">
-                <p>Armes de corps à corps</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                <app-equipment-table equipmentFile="{{ weaponsContactSword }}"></app-equipment-table>
-            </div>
-        </div>
+			<section class="row equipment-section">
+				<div class="col">
+					<p class="equipment-title">
+						<span><i class="ra ra-lightning-sword ra-lg"></i>Armes de corps à corps</span>
+						<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseContactWeapons" aria-expanded="false"
+						 aria-controls="collapseContactWeapons">
+							<i class="fa fa-plus" aria-hidden="true"></i>
+						</button>
 
-    </section>
+					</p>
+				</div>
+			</section>
+
+			<section class="collapse equipment-section" id="collapseContactWeapons">
+				<div class="row">
+					<div class="col-sm">
+						<p class="equipment-sub-title">Armes de pugilat</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<app-equipment-table equipmentFile="{{ weaponsContactPugilat }}"></app-equipment-table>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm">
+						<p class="equipment-sub-title">Armes de corps à corps</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<app-equipment-table equipmentFile="{{ weaponsContactSword }}"></app-equipment-table>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="row equipment-section">
+				<div class="col">
+					<p class="equipment-title">
+						<span><i class="ra ra-shield ra-lg"></i>Armures</span>
+						<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseArmors" aria-expanded="false"
+						 aria-controls="collapseArmors">
+							<i class="fa fa-plus" aria-hidden="true"></i>
+						</button>
+					</p>
+				</div>
+			</section>
+
+			<section class="collapse equipment-section" id="collapseArmors">
+				<div class="row">
+					<div class="col-sm">
+						<p class="equipment-sub-title">Armures</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<app-equipment-table equipmentFile="{{ armors }}"></app-equipment-table>
+					</div>
+				</div>
+			</section>
+
+			<section class="row equipment-section">
+				<div class="col">
+					<p class="equipment-title">
+						<span><i class="ra ra-ammo-bag ra-lg"></i>Matériel et équipement</span>
+						<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseEquipments" aria-expanded="false"
+						 aria-controls="collapseEquipments">
+							<i class="fa fa-plus" aria-hidden="true"></i>
+						</button>
+					</p>
+				</div>
+			</section>
+
+			<section class="collapse equipment-section" id="collapseEquipments">
+				<div class="row">
+					<div class="col-sm">
+						<p class="equipment-sub-title">Matériel de communication</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<app-equipment-table equipmentFile="{{ equipmentCommunication }}"></app-equipment-table>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm">
+						<p class="equipment-sub-title">Poisons</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<app-equipment-table equipmentFile="{{ equipmentPoison }}"></app-equipment-table>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm">
+						<p class="equipment-sub-title">Matériel de détection</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<app-equipment-table equipmentFile="{{ equipmentDetection }}"></app-equipment-table>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm">
+						<p class="equipment-sub-title">Matériel médical</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<app-equipment-table equipmentFile="{{ equipmentMedical }}"></app-equipment-table>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm">
+						<p class="equipment-sub-title">Cybernétique</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<app-equipment-table equipmentFile="{{ equipmentCybernetic }}"></app-equipment-table>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm">
+						<p class="equipment-sub-title">Matériel de détente et de divertissement</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<app-equipment-table equipmentFile="{{ equipmentEntertainment }}"></app-equipment-table>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm">
+						<p class="equipment-sub-title">Matériel de sécurité</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<app-equipment-table equipmentFile="{{ equipmentSecurityMaterial }}"></app-equipment-table>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm">
+						<p class="equipment-sub-title">Matériel de survie</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<app-equipment-table equipmentFile="{{ equipmentSurvivalMaterial }}"></app-equipment-table>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm">
+						<p class="equipment-sub-title">Outils</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<app-equipment-table equipmentFile="{{ equipmentTool }}"></app-equipment-table>
+					</div>
+				</div>
+
+			</section>
+
+		</div>
+
+	</div>
+
 </div>

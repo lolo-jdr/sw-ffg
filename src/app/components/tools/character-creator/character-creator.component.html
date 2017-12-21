@@ -1,3 +1,60 @@
-<p>
-  character-creator works!
-</p>
+<div class="container-fluid">
+
+  <ngx-loading [show]="!isPageLoaded" [config]="{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }"></ngx-loading>
+
+  <section *ngIf="isPageLoaded" id="characterCreator">
+
+    <div class="row page-title">
+      <div class="page-title-label">
+        <p>Créateur de personnage</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <p>1. Sélectionner l'espèce</p>
+    </div>
+
+    <div class="row">
+      <div class="col-6">
+        <!--select id="country" formControlName="country" class="form-control" required -->
+        <select [(ngModel)]="selectedSpecies" (change)="changeSpecies()">
+          <option *ngFor="let s of species" [ngValue]="s">{{ s.label }}</option>
+        </select>
+        <p>
+          <img src="assets/images/species/{{ selectedSpecies.key }}.jpg" width="50px" />
+        </p>
+      </div>
+
+      <div class="col-6">
+          <p>Vigueur : {{ selectedSpecies.characteristics.brawn }}</p>
+          <p>Agilité : {{ selectedSpecies.characteristics.agility }}</p>
+          <p>Intelligence : {{ selectedSpecies.characteristics.intellect }}</p>
+          <p>Ruse : {{ selectedSpecies.characteristics.cunning }}</p>
+          <p>Volonté : {{ selectedSpecies.characteristics.willpower }}</p>
+          <p>Présence : {{ selectedSpecies.characteristics.presence }}</p>
+      </div>
+    </div>
+
+    <div class="row">
+        <p>2. Sélectionner la carrière</p>
+      </div>
+  
+      <div class="row">
+        <div class="col-6">
+          <!--select id="country" formControlName="country" class="form-control" required -->
+          <select [(ngModel)]="selectedCareer" (change)="changeCareer()">
+            <option *ngFor="let c of careers" [ngValue]="c">{{ c.label }}</option>
+          </select>
+          <p>
+              <img src="assets/images/careers/{{ selectedCareer.key }}.jpg" width="50px" />
+            </p>
+        </div>
+  
+        <div class="col-6">
+            
+        </div>
+      </div>
+
+  </section>
+
+</div>

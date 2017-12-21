@@ -15,7 +15,13 @@
       "woundTreshold": "10 + Vigueur",
       "strainTreshold": "11 + Volonté",
       "startingXp": 100,
-      "specialAbility": "Les bothans commencent le jeu avec un rang en <span class=\"skill\">Système D</span>. Ils ne peuvent cepandant pas dépasser le rang 2 dans cette compétence à la création du personnage. Ils commencent également avec 1 rang dans le talent <span class=\"skill\">Persuasion</span>.",
+      "specialAbility": "Les bothans commencent le jeu avec un rang en Système D. Ils ne peuvent cepandant pas dépasser le rang 2 dans cette compétence à la création du personnage. Ils commencent également avec 1 rang dans le talent <span class=\"skill\">Persuasion</span>.",
+      "specialAbilityProcess": [
+        { 
+          "label": "+1 Système D",
+          "skillKey": ""
+         }
+      ],
       "otherAbilities": []
     },
     {

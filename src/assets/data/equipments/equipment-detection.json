@@ -24,15 +24,15 @@
         "rarety": 3
     },
     {
-        "label": "Détecteur universel",
-        "price": 500,
-        "encombrement": 2,
-        "rarety": 3
+        "label": "Macrojumellees",
+        "price": 75,
+        "encombrement": 1,
+        "rarety": 2
     },
     {
-        "label": "Electrojumelles",
-        "price": 250,
-        "encombrement": 1,
-        "rarety": 1
+        "label": "Traceur",
+        "price": 175,
+        "encombrement": 0,
+        "rarety": 4
     }
 ]

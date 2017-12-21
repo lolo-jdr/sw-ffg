@@ -28,6 +28,7 @@
     "jquery": "^3.2.1",
     "ngx-loading": "^1.0.9",
     "popper.js": "^1.12.9",
+    "rpg-awesome": "^0.1.1",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },

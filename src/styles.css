@@ -7,6 +7,7 @@
  html {
   position: relative;
   min-height: 100%;
+  overflow-x: hidden;
 }
 body {
   overflow-x: hidden;
@@ -27,8 +28,16 @@ p {
 
 .content-wrapper {
   min-height: calc(100vh - 56px);
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
 }
+
+.used-copyright {
+  /* position:absolute;*/
+  bottom:0;
+  margin-top: 50px;
+  /*padding-bottom: 70px;*/
+}
+
 .scroll-to-top {
   position: fixed;
   right: 15px;
@@ -171,7 +180,7 @@ p {
       margin-top: 56px;
   }
   #mainNav .navbar-collapse .navbar-sidenav > .nav-item {
-      width: 250px;
+      /*width: 250px;*/
       padding: 0;
   }
   #mainNav .navbar-collapse .navbar-sidenav > .nav-item > .nav-link {
@@ -184,7 +193,7 @@ p {
   }
   #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li,
   #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li {
-      width: 250px;
+      /*width: 250px;*/
   }
   #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a,
   #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a {
@@ -284,7 +293,7 @@ body.sidenav-toggled #mainNav.static-top #sidenavToggler i {
 }
 
 .content-wrapper .container-fluid:first-child {
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
 }
 
 @media (min-width: 992px) {
