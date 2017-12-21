@@ -32,12 +32,14 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_lazy_route_resource lazy re
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_careers_single_careers_single_component__ = __webpack_require__("../../../../../src/app/components/careers-single/careers-single.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_equipments_equipments_component__ = __webpack_require__("../../../../../src/app/components/equipments/equipments.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_resources_resources_component__ = __webpack_require__("../../../../../src/app/components/resources/resources.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_tools_character_creator_character_creator_component__ = __webpack_require__("../../../../../src/app/components/tools/character-creator/character-creator.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -58,7 +60,7 @@ var routes = [
     { path: 'careers', component: __WEBPACK_IMPORTED_MODULE_6__components_careers_list_careers_list_component__["a" /* CareersListComponent */] },
     { path: 'careers/:career', component: __WEBPACK_IMPORTED_MODULE_7__components_careers_single_careers_single_component__["a" /* CareersSingleComponent */] },
     { path: 'equipments', component: __WEBPACK_IMPORTED_MODULE_8__components_equipments_equipments_component__["a" /* EquipmentsComponent */] },
-    { path: 'tools/character-creator', component: __WEBPACK_IMPORTED_MODULE_9__components_resources_resources_component__["a" /* ResourcesComponent */] },
+    { path: 'tools/character-creator', component: __WEBPACK_IMPORTED_MODULE_10__components_tools_character_creator_character_creator_component__["a" /* CharacterCreatorComponent */] },
     { path: 'resources', component: __WEBPACK_IMPORTED_MODULE_9__components_resources_resources_component__["a" /* ResourcesComponent */] },
 ];
 var AppRoutingModule = (function () {
@@ -98,7 +100,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-header></app-header>\n\n<div class=\"content-wrapper\">\n  <div class=\"container-fluid\">\n    <router-outlet></router-outlet>\n    <div>\n      <small>\n        Star Wars et tous les éléments associés sont © 2013 Lucasfilm Ltd & Tm. Tous droits réservés Toutes les données reproduites et synthétisées ici appartiennent à Edge Entertainement © LFL\n        2013\n      </small>\n    </div>\n  </div>\n</div>\n\n<app-footer></app-footer>"
+module.exports = "<app-header></app-header>\r\n\r\n<div class=\"content-wrapper\">\r\n  <div class=\"container-fluid\">\r\n    <router-outlet></router-outlet>\r\n    <div class=\"used-copyright\">\r\n      <small>\r\n        Star Wars et tous les éléments associés sont © 2013 Lucasfilm Ltd & Tm. <br /> Tous droits réservés Toutes les données reproduites et synthétisées ici appartiennent à Edge Entertainement © LFL\r\n        2013\r\n      </small>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<app-footer></app-footer>"
 
 /***/ }),
 
@@ -140,27 +142,28 @@ var AppComponent = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ngx_loading__ = __webpack_require__("../../../../ngx-loading/ngx-loading/ngx-loading.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_api_service__ = __webpack_require__("../../../../../src/app/services/api.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_helper_service__ = __webpack_require__("../../../../../src/app/services/helper.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__layout_header_header_component__ = __webpack_require__("../../../../../src/app/layout/header/header.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_species_list_species_list_component__ = __webpack_require__("../../../../../src/app/components/species-list/species-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_character_creation_character_creation_component__ = __webpack_require__("../../../../../src/app/components/character-creation/character-creation.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_rules_rules_component__ = __webpack_require__("../../../../../src/app/components/rules/rules.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_species_single_species_single_component__ = __webpack_require__("../../../../../src/app/components/species-single/species-single.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_careers_list_careers_list_component__ = __webpack_require__("../../../../../src/app/components/careers-list/careers-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__shared_obligations_obligations_component__ = __webpack_require__("../../../../../src/app/shared/obligations/obligations.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__shared_characteristics_characteristics_component__ = __webpack_require__("../../../../../src/app/shared/characteristics/characteristics.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_careers_single_careers_single_component__ = __webpack_require__("../../../../../src/app/components/careers-single/careers-single.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__layout_footer_footer_component__ = __webpack_require__("../../../../../src/app/layout/footer/footer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_equipments_equipments_component__ = __webpack_require__("../../../../../src/app/components/equipments/equipments.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__shared_equipment_table_equipment_table_component__ = __webpack_require__("../../../../../src/app/shared/equipment-table/equipment-table.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_resources_resources_component__ = __webpack_require__("../../../../../src/app/components/resources/resources.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_tools_character_creator_character_creator_component__ = __webpack_require__("../../../../../src/app/components/tools/character-creator/character-creator.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ngx_loading__ = __webpack_require__("../../../../ngx-loading/ngx-loading/ngx-loading.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_api_service__ = __webpack_require__("../../../../../src/app/services/api.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_helper_service__ = __webpack_require__("../../../../../src/app/services/helper.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__layout_header_header_component__ = __webpack_require__("../../../../../src/app/layout/header/header.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_species_list_species_list_component__ = __webpack_require__("../../../../../src/app/components/species-list/species-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_character_creation_character_creation_component__ = __webpack_require__("../../../../../src/app/components/character-creation/character-creation.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_rules_rules_component__ = __webpack_require__("../../../../../src/app/components/rules/rules.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_species_single_species_single_component__ = __webpack_require__("../../../../../src/app/components/species-single/species-single.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_careers_list_careers_list_component__ = __webpack_require__("../../../../../src/app/components/careers-list/careers-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__shared_obligations_obligations_component__ = __webpack_require__("../../../../../src/app/shared/obligations/obligations.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__shared_characteristics_characteristics_component__ = __webpack_require__("../../../../../src/app/shared/characteristics/characteristics.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_careers_single_careers_single_component__ = __webpack_require__("../../../../../src/app/components/careers-single/careers-single.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__layout_footer_footer_component__ = __webpack_require__("../../../../../src/app/layout/footer/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_equipments_equipments_component__ = __webpack_require__("../../../../../src/app/components/equipments/equipments.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__shared_equipment_table_equipment_table_component__ = __webpack_require__("../../../../../src/app/shared/equipment-table/equipment-table.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_resources_resources_component__ = __webpack_require__("../../../../../src/app/components/resources/resources.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_tools_character_creator_character_creator_component__ = __webpack_require__("../../../../../src/app/components/tools/character-creator/character-creator.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -190,40 +193,43 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__components_character_creation_character_creation_component__["a" /* CharacterCreationComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__components_species_list_species_list_component__["a" /* SpeciesListComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__layout_header_header_component__["a" /* HeaderComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__components_rules_rules_component__["a" /* RulesComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__components_species_single_species_single_component__["a" /* SpeciesSingleComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__components_careers_list_careers_list_component__["a" /* CareersListComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__shared_obligations_obligations_component__["a" /* ObligationsComponent */],
-                __WEBPACK_IMPORTED_MODULE_16__shared_characteristics_characteristics_component__["a" /* CharacteristicsComponent */],
-                __WEBPACK_IMPORTED_MODULE_17__components_careers_single_careers_single_component__["a" /* CareersSingleComponent */],
-                __WEBPACK_IMPORTED_MODULE_18__layout_footer_footer_component__["a" /* FooterComponent */],
-                __WEBPACK_IMPORTED_MODULE_19__components_equipments_equipments_component__["a" /* EquipmentsComponent */],
-                __WEBPACK_IMPORTED_MODULE_20__shared_equipment_table_equipment_table_component__["a" /* EquipmentTableComponent */],
-                __WEBPACK_IMPORTED_MODULE_21__components_resources_resources_component__["a" /* ResourcesComponent */],
-                __WEBPACK_IMPORTED_MODULE_22__components_tools_character_creator_character_creator_component__["a" /* CharacterCreatorComponent */]
+                __WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__components_character_creation_character_creation_component__["a" /* CharacterCreationComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__components_species_list_species_list_component__["a" /* SpeciesListComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__layout_header_header_component__["a" /* HeaderComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__components_rules_rules_component__["a" /* RulesComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__components_species_single_species_single_component__["a" /* SpeciesSingleComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__components_careers_list_careers_list_component__["a" /* CareersListComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__shared_obligations_obligations_component__["a" /* ObligationsComponent */],
+                __WEBPACK_IMPORTED_MODULE_17__shared_characteristics_characteristics_component__["a" /* CharacteristicsComponent */],
+                __WEBPACK_IMPORTED_MODULE_18__components_careers_single_careers_single_component__["a" /* CareersSingleComponent */],
+                __WEBPACK_IMPORTED_MODULE_19__layout_footer_footer_component__["a" /* FooterComponent */],
+                __WEBPACK_IMPORTED_MODULE_20__components_equipments_equipments_component__["a" /* EquipmentsComponent */],
+                __WEBPACK_IMPORTED_MODULE_21__shared_equipment_table_equipment_table_component__["a" /* EquipmentTableComponent */],
+                __WEBPACK_IMPORTED_MODULE_22__components_resources_resources_component__["a" /* ResourcesComponent */],
+                __WEBPACK_IMPORTED_MODULE_23__components_tools_character_creator_character_creator_component__["a" /* CharacterCreatorComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2__app_routing_module__["a" /* AppRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* HttpModule */],
-                __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClientModule */],
-                __WEBPACK_IMPORTED_MODULE_5_ngx_loading__["a" /* LoadingModule */]
+                __WEBPACK_IMPORTED_MODULE_3__app_routing_module__["a" /* AppRoutingModule */],
+                __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* HttpModule */],
+                __WEBPACK_IMPORTED_MODULE_5__angular_common_http__["a" /* HttpClientModule */],
+                __WEBPACK_IMPORTED_MODULE_6_ngx_loading__["a" /* LoadingModule */],
+                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
+                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* ReactiveFormsModule */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_6__services_api_service__["a" /* ApiService */],
-                __WEBPACK_IMPORTED_MODULE_7__services_helper_service__["a" /* HelperService */]
+                __WEBPACK_IMPORTED_MODULE_7__services_api_service__["a" /* ApiService */],
+                __WEBPACK_IMPORTED_MODULE_8__services_helper_service__["a" /* HelperService */]
             ],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */]]
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
@@ -325,7 +331,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".row {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-wrap: wrap;\r\n        flex-wrap: wrap;\r\n }\r\n\r\n#careersSingle .card {\r\n    margin-bottom: 30px;\r\n}\r\n\r\n#careersSingle .career-skills {\r\n     margin-bottom: 20px;\r\n }\r\n\r\n#careersSingle .career-skills img {\r\n     width: 100%;\r\n     max-width: 400px;\r\n }\r\n\r\n#careersSingle .career-skills .skills p:first-child {\r\n    margin-bottom: 0px;\r\n}\r\n\r\n#careersSingle .block {\r\n    padding: 20px;\r\n}\r\n\r\n#careersSingle .career-specializations .card-title {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n#careersSingle .specialization-label {\r\n    font-weight: 600;\r\n    margin-bottom: 0px;\r\n}\r\n\r\n#careersSingle .career-specializations img {\r\n    max-width: 100px;\r\n}\r\n\r\n#careersSingle .career-specialization-skills {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n#careersSingle .career-specialization-skills p:first-child small {\r\n    margin-bottom: 10px;\r\n    font-weight: 600;\r\n}\r\n\r\n#careersSingle .career-specialization-skills p {\r\n    margin-bottom: 0px;\r\n}\r\n\r\n /* Responsive */\r\n\r\n @media (max-width: 700px) {\r\n    #careersSingle .career-skills .skills {\r\n        padding-left: 25%;\r\n    }   \r\n}", ""]);
+exports.push([module.i, ".row {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-wrap: wrap;\r\n        flex-wrap: wrap;\r\n }\r\n\r\n#careersSingle .card {\r\n    margin-bottom: 30px;\r\n}\r\n\r\n#careersSingle .career-skills {\r\n     margin-bottom: 20px;\r\n     border-bottom: 1px solid purple;\r\n }\r\n\r\n#careersSingle .career-skills img {\r\n     width: 100%;\r\n     max-width: 400px;\r\n }\r\n\r\n#careersSingle .career-skills .skills p:first-child {\r\n    margin-bottom: 0px;\r\n}\r\n\r\n#careersSingle .career-description {\r\n    margin-bottom: 20px;\r\n    border-bottom: 1px solid purple;\r\n}\r\n\r\n#careersSingle .block {\r\n    padding: 20px;\r\n}\r\n\r\n#careersSingle .career-specializations {\r\n    margin-bottom: 20px;\r\n    border-bottom: 1px solid purple;\r\n}\r\n\r\n#careersSingle .career-specializations .card-title {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n#careersSingle .specialization-label {\r\n    font-weight: 600;\r\n    margin-bottom: 0px;\r\n}\r\n\r\n#careersSingle .career-specializations img {\r\n    max-width: 100px;\r\n}\r\n\r\n#careersSingle .career-specialization-skills {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n#careersSingle .career-specialization-skills p:first-child small {\r\n    margin-bottom: 10px;\r\n    font-weight: 600;\r\n}\r\n\r\n#careersSingle .career-specialization-skills p {\r\n    margin-bottom: 0px;\r\n}\r\n\r\n.career-obligations p {\r\n    margin-bottom: 10px;\r\n}\r\n\r\n /* Responsive */\r\n\r\n @media (max-width: 700px) {\r\n    #careersSingle .career-skills .skills {\r\n        padding-left: 25%;\r\n    }   \r\n}", ""]);
 
 // exports
 
@@ -338,7 +344,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/careers-single/careers-single.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n\n  <ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\n\n  <section *ngIf=\"isPageLoaded\" id=\"careersSingle\">\n\n    <div class=\"row page-title\">\n      <div class=\"page-title-label\">\n        <p>{{ career.label }}</p>\n      </div>\n    </div>\n\n    <div class=\"row career-skills\">\n      <div class=\"col-sm block text-center\">\n        <img src=\"assets/images/careers/{{ career.key }}.jpg\" class=\"img-responsive\" />\n      </div>\n      <div class=\"col-sm block\">\n        <div class=\"skills\">\n          <p>Compétences de carrière</p>\n          <p>\n            <small>(4 à choisir parmi les 8)</small>\n          </p>\n          <p *ngFor=\"let skill of career.skills\">\n            <span class=\"sub-title\">{{ skill.label}}</span>\n          </p>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"row career-description\">\n      <div class=\"col-sm\">\n        <div class=\"row\">\n          <div class=\"col-sm text-center\">\n            <p class=\"sub-title\">Description</p>\n          </div>\n        </div>\n        <div class=\"col-sm text-center\"></div>\n        <div class=\"row block\">\n          <p class=\"text-justify\">{{ career.description }}</p>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"row career-specializations\">\n      <div class=\"card-deck\">\n        <div class=\"card\" *ngFor=\"let specialization of career.specialization\">\n          <div class=\"card-body\">\n            <div class=\"card-title\">\n              <p class=\"specialization-label text-center\">{{ specialization.label }}</p>\n              <p class=\"text-center\"><small><em>{{ specialization.subLabel }}</em></small></p>\n            </div>\n            <div class=\"row career-specialization-skills\">\n              <div class=\"col-sm text-center\">\n                <img src=\"assets/images/careers/specialization/{{ specialization.key }}.png\" />\n              </div>\n              <div class=\"col-sm\">\n                <p>\n                  <small>Compétences de spécialisation</small>\n                </p>\n                <p *ngFor=\"let skill of specialization.skills\">\n                  <span>\n                    <small>{{ skill.label }}</small>\n                  </span>\n                </p>\n              </div>\n            </div>\n            <p class=\"card-text text-justify\" [innerHtml]=\"specialization.description\"></p>\n          </div>\n        </div>\n      </div>\n    </div>\n\n\n\n  </section>\n\n</div>"
+module.exports = "<div class=\"container-fluid\">\n\n  <ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\n\n  <section *ngIf=\"isPageLoaded\" id=\"careersSingle\">\n\n    <div class=\"row page-title\">\n      <div class=\"page-title-label\">\n        <p>{{ career.label }}</p>\n      </div>\n    </div>\n\n    <div class=\"row career-skills\">\n      <div class=\"col-sm block text-center\">\n        <img src=\"assets/images/careers/{{ career.key }}.jpg\" class=\"img-responsive\" />\n      </div>\n      <div class=\"col-sm block\">\n        <div class=\"skills\">\n          <p>Compétences de carrière</p>\n          <p>\n            <small>(4 à choisir parmi les 8)</small>\n          </p>\n          <p *ngFor=\"let skill of career.skills\">\n            <span class=\"sub-title\">{{ skill.label}}</span>\n          </p>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"row career-description\">\n      <div class=\"col-sm\">\n        <div class=\"row\">\n          <div class=\"col-sm text-center\">\n            <p class=\"sub-title\">Description</p>\n          </div>\n        </div>\n        <div class=\"col-sm text-center\"></div>\n        <div class=\"row block\">\n          <p class=\"text-justify\">{{ career.description }}</p>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"row career-specializations\">\n      <div class=\"card-deck\">\n        <div class=\"card\" *ngFor=\"let specialization of career.specialization\">\n          <div class=\"card-body\">\n            <div class=\"card-title\">\n              <p class=\"specialization-label text-center\">{{ specialization.label }}</p>\n              <p class=\"text-center\">\n                <small>\n                  <em>{{ specialization.subLabel }}</em>\n                </small>\n              </p>\n            </div>\n            <div class=\"row career-specialization-skills\">\n              <div class=\"col-sm text-center\">\n                <img src=\"assets/images/careers/specialization/{{ specialization.key }}.png\" />\n              </div>\n              <div class=\"col-sm\">\n                <p>\n                  <small>Compétences de spécialisation</small>\n                </p>\n                <p *ngFor=\"let skill of specialization.skills\">\n                  <span>\n                    <small>{{ skill.label }}</small>\n                  </span>\n                </p>\n              </div>\n            </div>\n            <p class=\"card-text text-justify\" [innerHtml]=\"specialization.description\"></p>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"row career-obligations\">\n      <div class=\"col-sm\">\n        <p>Liste des {{ obligationLabel }}</p>\n        <app-obligations type=\"{{ obligationType }}\"></app-obligations>\n      </div>\n    </div>\n\n\n  </section>\n\n</div>"
 
 /***/ }),
 
@@ -380,6 +386,18 @@ var CareersSingleComponent = (function () {
                     var careerToLoad = careers.find(function (c) { return c.key === careerParam; });
                     if (careerToLoad) {
                         console.log(careerToLoad);
+                        if (careerToLoad.universKey === 'eoe') {
+                            _this.obligationLabel = 'obligations';
+                            _this.obligationType = 'obligations';
+                        }
+                        else if (careerToLoad.universKey === 'aor') {
+                            _this.obligationLabel = 'devoirs';
+                            _this.obligationType = 'duties';
+                        }
+                        else {
+                            _this.obligationLabel = 'moralités';
+                            _this.obligationType = 'moralities';
+                        }
                         _this.career = careerToLoad;
                     }
                 }
@@ -481,7 +499,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".equipment-section {\r\n    margin-bottom: 20px;\r\n}", ""]);
+exports.push([module.i, ".equipment-section {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.equipment-title {\r\n    font-size: 1.5em;\r\n}\r\n\r\n.equipment-title span:first-child i:first-child {\r\n    margin-right: 10px;\r\n}\r\n\r\n\r\n.equipment-title button {\r\n    float: right;\r\n    cursor: pointer;\r\n    margin-left: 5px;\r\n}\r\n\r\n.equipment-sub-title {\r\n    font-size: 1.2em;\r\n    margin-bottom: 10px;\r\n}\r\n\r\n@media (min-width: 992px) {\r\n    .equipment-title button {\r\n        margin-left: 50px;\r\n    }\r\n}", ""]);
 
 // exports
 
@@ -494,7 +512,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/equipments/equipments.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\r\n\r\n    <div class=\"row page-title\">\r\n        <div class=\"col-sm\">\r\n            <p>Equipements</p>\r\n        </div>\r\n    </div>\r\n\r\n    <section class=\"row equipment-section\">\r\n        <div class=\"col-2\">\r\n            <p>Armes à distance</p>\r\n        </div>\r\n        <div class=\"col\">\r\n            <button class=\"btn btn-primary\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseDistanceWeapons\" aria-expanded=\"false\"\r\n                aria-controls=\"collapseDistanceWeapons\">\r\n                <i class=\"fa fa-plus\" aria-hidden=\"true\"></i>\r\n            </button>\r\n        </div>\r\n    </section>\r\n\r\n    <section class=\"collapse equipment-section\" id=\"collapseDistanceWeapons\">\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <p>Armes énergétiques</p>\r\n            </div>\r\n        </div>\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <app-equipment-table equipmentFile=\"{{ weaponsDistanceEnergy }}\"></app-equipment-table>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <p>Armes à percussion</p>\r\n            </div>\r\n        </div>\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <app-equipment-table equipmentFile=\"{{ weaponsDistancePercussion }}\"></app-equipment-table>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <p>Armes à jet</p>\r\n            </div>\r\n        </div>\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <app-equipment-table equipmentFile=\"{{ weaponsDistanceJet }}\"></app-equipment-table>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <p>Explosifs et autres armes</p>\r\n            </div>\r\n        </div>\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <app-equipment-table equipmentFile=\"{{ weaponsDistanceExplosive }}\"></app-equipment-table>\r\n            </div>\r\n        </div>\r\n    </section>\r\n\r\n    <section class=\"row equipment-section\">\r\n        <div class=\"col-2\">\r\n            <p>Armes de corps à corps</p>\r\n        </div>\r\n        <div class=\"col\">\r\n            <button class=\"btn btn-primary\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseContactWeapons\" aria-expanded=\"false\"\r\n                aria-controls=\"collapseContactWeapons\">\r\n                <i class=\"fa fa-plus\" aria-hidden=\"true\"></i>\r\n            </button>\r\n        </div>\r\n    </section>\r\n\r\n    <section class=\"collapse equipment-section\" id=\"collapseContactWeapons\">\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <p>Armes de pugilat</p>\r\n            </div>\r\n        </div>\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <app-equipment-table equipmentFile=\"{{ weaponsContactPugilat }}\"></app-equipment-table>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <p>Armes de corps à corps</p>\r\n            </div>\r\n        </div>\r\n        <div class=\"row\">\r\n            <div class=\"col-sm\">\r\n                <app-equipment-table equipmentFile=\"{{ weaponsContactSword }}\"></app-equipment-table>\r\n            </div>\r\n        </div>\r\n\r\n    </section>\r\n</div>"
+module.exports = "<div class=\"container-fluid\">\r\n\r\n\t<div class=\"row page-title\">\r\n\t\t<div class=\"col-sm\">\r\n\t\t\t<p>Équipements</p>\r\n\t\t</div>\r\n\t</div>\r\n\r\n\t<div class=\"row\">\r\n\r\n\t\t<div class=\"col-md-auto\">\r\n\r\n\t\t\t<section class=\"row equipment-section\">\r\n\t\t\t\t<div class=\"col\">\r\n\t\t\t\t\t<p class=\"equipment-title\">\r\n\t\t\t\t\t\t<span><i class=\"ra ra-musket ra-lg\"></i>Armes à distance</span>\r\n\t\t\t\t\t\t<button class=\"btn btn-primary\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseDistanceWeapons\" aria-expanded=\"false\"\r\n\t\t\t\t\t\t aria-controls=\"collapseDistanceWeapons\">\r\n\t\t\t\t\t\t\t<i class=\"fa fa-plus\" aria-hidden=\"true\"></i>\r\n\t\t\t\t\t\t</button>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t</section>\r\n\r\n\t\t\t<section class=\"collapse equipment-section\" id=\"collapseDistanceWeapons\">\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<p class=\"equipment-sub-title\">Armes énergétiques</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<app-equipment-table equipmentFile=\"{{ weaponsDistanceEnergy }}\"></app-equipment-table>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<p class=\"equipment-sub-title\">Armes à percussion</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<app-equipment-table equipmentFile=\"{{ weaponsDistancePercussion }}\"></app-equipment-table>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<p class=\"equipment-sub-title\">Armes à jet</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<app-equipment-table equipmentFile=\"{{ weaponsDistanceJet }}\"></app-equipment-table>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<p class=\"equipment-sub-title\">Explosifs et autres armes</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<app-equipment-table equipmentFile=\"{{ weaponsDistanceExplosive }}\"></app-equipment-table>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</section>\r\n\r\n\t\t\t<section class=\"row equipment-section\">\r\n\t\t\t\t<div class=\"col\">\r\n\t\t\t\t\t<p class=\"equipment-title\">\r\n\t\t\t\t\t\t<span><i class=\"ra ra-lightning-sword ra-lg\"></i>Armes de corps à corps</span>\r\n\t\t\t\t\t\t<button class=\"btn btn-primary\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseContactWeapons\" aria-expanded=\"false\"\r\n\t\t\t\t\t\t aria-controls=\"collapseContactWeapons\">\r\n\t\t\t\t\t\t\t<i class=\"fa fa-plus\" aria-hidden=\"true\"></i>\r\n\t\t\t\t\t\t</button>\r\n\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t</section>\r\n\r\n\t\t\t<section class=\"collapse equipment-section\" id=\"collapseContactWeapons\">\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<p class=\"equipment-sub-title\">Armes de pugilat</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<app-equipment-table equipmentFile=\"{{ weaponsContactPugilat }}\"></app-equipment-table>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<p class=\"equipment-sub-title\">Armes de corps à corps</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<app-equipment-table equipmentFile=\"{{ weaponsContactSword }}\"></app-equipment-table>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t</section>\r\n\r\n\t\t\t<section class=\"row equipment-section\">\r\n\t\t\t\t<div class=\"col\">\r\n\t\t\t\t\t<p class=\"equipment-title\">\r\n\t\t\t\t\t\t<span><i class=\"ra ra-shield ra-lg\"></i>Armures</span>\r\n\t\t\t\t\t\t<button class=\"btn btn-primary\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseArmors\" aria-expanded=\"false\"\r\n\t\t\t\t\t\t aria-controls=\"collapseArmors\">\r\n\t\t\t\t\t\t\t<i class=\"fa fa-plus\" aria-hidden=\"true\"></i>\r\n\t\t\t\t\t\t</button>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t</section>\r\n\r\n\t\t\t<section class=\"collapse equipment-section\" id=\"collapseArmors\">\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<p class=\"equipment-sub-title\">Armures</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<app-equipment-table equipmentFile=\"{{ armors }}\"></app-equipment-table>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</section>\r\n\r\n\t\t\t<section class=\"row equipment-section\">\r\n\t\t\t\t<div class=\"col\">\r\n\t\t\t\t\t<p class=\"equipment-title\">\r\n\t\t\t\t\t\t<span><i class=\"ra ra-ammo-bag ra-lg\"></i>Matériel et équipement</span>\r\n\t\t\t\t\t\t<button class=\"btn btn-primary\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseEquipments\" aria-expanded=\"false\"\r\n\t\t\t\t\t\t aria-controls=\"collapseEquipments\">\r\n\t\t\t\t\t\t\t<i class=\"fa fa-plus\" aria-hidden=\"true\"></i>\r\n\t\t\t\t\t\t</button>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t</section>\r\n\r\n\t\t\t<section class=\"collapse equipment-section\" id=\"collapseEquipments\">\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<p class=\"equipment-sub-title\">Matériel de communication</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<app-equipment-table equipmentFile=\"{{ equipmentCommunication }}\"></app-equipment-table>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<p class=\"equipment-sub-title\">Poisons</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<app-equipment-table equipmentFile=\"{{ equipmentPoison }}\"></app-equipment-table>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<p class=\"equipment-sub-title\">Matériel de détection</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<app-equipment-table equipmentFile=\"{{ equipmentDetection }}\"></app-equipment-table>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<p class=\"equipment-sub-title\">Matériel médical</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<app-equipment-table equipmentFile=\"{{ equipmentMedical }}\"></app-equipment-table>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<p class=\"equipment-sub-title\">Cybernétique</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<app-equipment-table equipmentFile=\"{{ equipmentCybernetic }}\"></app-equipment-table>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<p class=\"equipment-sub-title\">Matériel de détente et de divertissement</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<app-equipment-table equipmentFile=\"{{ equipmentEntertainment }}\"></app-equipment-table>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<p class=\"equipment-sub-title\">Matériel de sécurité</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<app-equipment-table equipmentFile=\"{{ equipmentSecurityMaterial }}\"></app-equipment-table>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<p class=\"equipment-sub-title\">Matériel de survie</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<app-equipment-table equipmentFile=\"{{ equipmentSurvivalMaterial }}\"></app-equipment-table>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<p class=\"equipment-sub-title\">Outils</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t<div class=\"col-sm\">\r\n\t\t\t\t\t\t<app-equipment-table equipmentFile=\"{{ equipmentTool }}\"></app-equipment-table>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t</section>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -526,6 +544,16 @@ var EquipmentsComponent = (function () {
         this.weaponsDistanceExplosive = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_DISTANCE_EXPLOSIVE;
         this.weaponsContactPugilat = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_CONTACT_PUGILAT;
         this.weaponsContactSword = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_CONTACT_SWORD;
+        this.armors = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].ARMORS;
+        this.equipmentCommunication = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_COMMUNICATION;
+        this.equipmentCybernetic = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_CYBERNETIC;
+        this.equipmentDetection = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_DETECTION;
+        this.equipmentEntertainment = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_ENTERTAINMENT;
+        this.equipmentMedical = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_MEDICAL;
+        this.equipmentPoison = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_POISON;
+        this.equipmentSecurityMaterial = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_SECURITY_MATERIAL;
+        this.equipmentSurvivalMaterial = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_SURVIVAL_MATERIAL;
+        this.equipmentTool = __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_TOOL;
     }
     EquipmentsComponent.prototype.ngOnInit = function () {
     };
@@ -634,7 +662,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".gamme-introduction {\r\n    margin-top: 50px;\r\n}", ""]);
 
 // exports
 
@@ -647,7 +675,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/rules/rules.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n  <div class=\"row\">\n    <div class=\"col text-center\">\n      <p>Star Wars FFG</p>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"col text-center\">\n      <img class=\"img-fluid\" src=\"assets/images/others/xwing-and-explosion.png\" />\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"container-fluid\">\r\n  <div class=\"row\">\r\n    <div class=\"col text-center home-title\">\r\n      <p>Star Wars FFG</p>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row ffg-introduction\">\r\n    <div class=\"col text-justify\">\r\n      <p>\r\n        <em>Il y a bien longtemps, dans une galaxie lointaine, très lointaine…</em>\r\n      </p>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row gamme-introduction align-items-center\">\r\n    <div class=\"col-sm\">\r\n      <p class=\"text-justify\">C’est une période de troubles où chacun peut saisir sa chance.\r\n        <strong>Aux confins de l'Empire</strong>, dans les zones reculées de la Bordure extérieure où la seule loi est celle du plus\r\n        fort, des vauriens et des contrebandiers, des chasseurs de primes et des bandits, des explorateurs et des exilés\r\n        luttent pour leur survie. Fuyez les agents impériaux, bernez Hutts et scélérats et passez en vitesse lumière dans\r\n        le tas de ferraille le plus rapide de la galaxie !\r\n      </p>\r\n    </div>\r\n    <div class=\"col-sm\">\r\n      <p>\r\n        <img class=\"img-fluid\" src=\"assets/images/others/star_wars_al_filo.jpg\" />\r\n      </p>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row gamme-introduction align-items-center\">\r\n    <div class=\"col-sm\">\r\n      <p>\r\n        <img class=\"img-fluid\" src=\"assets/images/others/xwing-and-explosion.png\" />\r\n      </p>\r\n    </div>\r\n    <div class=\"col-sm\">\r\n      <p class=\"text-justify \">La galaxie a sombré dans la guerre civile. L’Empire règne sur des milliers de systèmes stellaires par la force et la\r\n        terreur. Des soldats et des espions, des mécaniciens et des médecins, des pilotes et des ambassadeurs se dressent\r\n        face à cet adversaire qui les dépasse pour faire triompher la liberté. Rejoignez la <strong>Rébellion</strong> dans le conflit qui\r\n        l'oppose à l'Empire Galactique. Affrontez des légions de stormtroopers, dérobez des plans et des codes secrets, foncez\r\n        sur l’objectif et triomphez de la plus grande armée de l’univers.\r\n      </p>\r\n\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row gamme-introduction align-items-center\">\r\n    <div class=\"col-sm\">\r\n      <p class=\"text-justify\">La galaxie a basculé dans les ténèbres. Après la destruction des Jedi, errants et sentinelles, gardiens et guerriers,\r\n        arpenteurs et pacificateurs doivent apprendre seuls à utiliser la Force pour ramener la paix et la justice dans la\r\n        galaxie. Engagez-vous sur la voie de <strong>la Force</strong>, fabriquez votre sabre laser, libérez les malheureux et les opprimés,\r\n        et affrontez en duel les effroyables agents des Sith pour rétablir l’équilibre de la Force.\r\n      </p>\r\n    </div>\r\n    <div class=\"col-sm\">\r\n      <p>\r\n        <img class=\"img-fluid\" src=\"assets/images/others/swf40_preview3.jpg\" />\r\n      </p>\r\n    </div>\r\n  </div>\r\n\r\n\r\n</div>"
 
 /***/ }),
 
@@ -867,7 +895,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "#characterCreator .step-title {\r\n    margin-top: 20px;\r\n    margin-bottom: 10px;\r\n}\r\n\r\n#characterCreator .step-container img {\r\n    margin-top: 10px;\r\n    margin-bottom: 10px;\r\n}", ""]);
 
 // exports
 
@@ -880,7 +908,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/tools/character-creator/character-creator.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  character-creator works!\n</p>\n"
+module.exports = "<div class=\"container-fluid\">\r\n\r\n  <ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\r\n\r\n  <section *ngIf=\"isPageLoaded\" id=\"characterCreator\">\r\n\r\n    <div class=\"row page-title\">\r\n      <div class=\"page-title-label\">\r\n        <p>Créateur de personnage</p>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n      <p class=\"step-title\">1. Sélectionner l'espèce</p>\r\n    </div>\r\n\r\n    <div class=\"row step-container\">\r\n      <div class=\"col-6\">\r\n        <!--select id=\"country\" formControlName=\"country\" class=\"form-control\" required -->\r\n        <select [(ngModel)]=\"selectedSpecies\" (change)=\"changeSpecies()\">\r\n          <option *ngFor=\"let s of species\" [ngValue]=\"s\">{{ s.label }}</option>\r\n        </select>\r\n          <div class=\"row\">\r\n            <div class=\"col\">\r\n                <img src=\"assets/images/species/{{ selectedSpecies.key }}.jpg\" width=\"50px\" />\r\n            </div>\r\n            <div class=\"col\">\r\n                <p *ngFor=\"let specialAbility of selectedSpecies.specialAbilityProcess\"> {{ specialAbility.label }} </p>\r\n            </div>\r\n\r\n          </div>\r\n      </div>\r\n\r\n      <div class=\"col-6\">\r\n        <p>Vigueur : {{ selectedSpecies.characteristics.brawn }}</p>\r\n        <p>Agilité : {{ selectedSpecies.characteristics.agility }}</p>\r\n        <p>Intelligence : {{ selectedSpecies.characteristics.intellect }}</p>\r\n        <p>Ruse : {{ selectedSpecies.characteristics.cunning }}</p>\r\n        <p>Volonté : {{ selectedSpecies.characteristics.willpower }}</p>\r\n        <p>Présence : {{ selectedSpecies.characteristics.presence }}</p>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n      <p class=\"step-title\">2. Sélectionner la carrière</p>\r\n    </div>\r\n\r\n    <div class=\"row step-container\">\r\n      <div class=\"col-6\">\r\n        <!--select id=\"country\" formControlName=\"country\" class=\"form-control\" required -->\r\n        <select [(ngModel)]=\"selectedCareer\" (change)=\"changeCareer()\">\r\n          <option *ngFor=\"let c of careers\" [ngValue]=\"c\">{{ c.label }}</option>\r\n        </select>\r\n        <p>\r\n          <img src=\"assets/images/careers/{{ selectedCareer.key }}.jpg\" width=\"50px\" />\r\n        </p>\r\n      </div>\r\n\r\n      <div class=\"col-6\">\r\n\r\n      </div>\r\n    </div>\r\n\r\n  </section>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -890,6 +918,10 @@ module.exports = "<p>\n  character-creator works!\n</p>\n"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CharacterCreatorComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service__ = __webpack_require__("../../../../../src/app/services/api.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_helper_service__ = __webpack_require__("../../../../../src/app/services/helper.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs__ = __webpack_require__("../../../../rxjs/Rx.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -900,10 +932,62 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
 var CharacterCreatorComponent = (function () {
-    function CharacterCreatorComponent() {
+    function CharacterCreatorComponent(api, helper) {
+        var _this = this;
+        this.api = api;
+        this.helper = helper;
+        this.isPageLoaded = false;
+        this.species = [];
+        this.careers = [];
+        this.character = {
+            species: '',
+            career: '',
+            characteristics: {
+                brawn: 2,
+                agility: 2,
+                intellect: 2,
+                cunning: 2,
+                willpower: 2,
+                presence: 2,
+            }
+        };
+        // Populate second levels lists
+        this.getFormData().subscribe(function (data) {
+            var species = data[0], careers = data[1];
+            species.sort(__WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].sortArrayByProperty('label'));
+            careers.sort(__WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].sortArrayByProperty('label'));
+            _this.species = species;
+            _this.careers = careers;
+            _this.selectedSpecies = species[0];
+            _this.selectedCareer = careers[0];
+            _this.changeSpecies();
+            _this.changeCareer();
+            _this.isPageLoaded = true;
+        });
     }
     CharacterCreatorComponent.prototype.ngOnInit = function () {
+    };
+    CharacterCreatorComponent.prototype.getFormData = function () {
+        return __WEBPACK_IMPORTED_MODULE_3_rxjs__["Observable"].forkJoin(this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].SPECIES), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].CAREERS));
+    };
+    CharacterCreatorComponent.prototype.changeSpecies = function () {
+        this.isPageLoaded = false;
+        console.log(this.selectedSpecies);
+        this.character = this.selectedSpecies;
+        this.character.characteristics.brawn = this.selectedSpecies.characteristics.brawn;
+        this.character.characteristics.agility = this.selectedSpecies.characteristics.agility;
+        this.character.characteristics.intellect = this.selectedSpecies.characteristics.intellect;
+        this.character.characteristics.cunning = this.selectedSpecies.characteristics.cunning;
+        this.character.characteristics.willpower = this.selectedSpecies.characteristics.willpower;
+        this.character.characteristics.presence = this.selectedSpecies.characteristics.presence;
+        this.isPageLoaded = true;
+    };
+    CharacterCreatorComponent.prototype.changeCareer = function () {
+        this.character = this.selectedCareer;
     };
     CharacterCreatorComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -911,7 +995,7 @@ var CharacterCreatorComponent = (function () {
             template: __webpack_require__("../../../../../src/app/components/tools/character-creator/character-creator.component.html"),
             styles: [__webpack_require__("../../../../../src/app/components/tools/character-creator/character-creator.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */], __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */]])
     ], CharacterCreatorComponent);
     return CharacterCreatorComponent;
 }());
@@ -928,7 +1012,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "footer {\r\n    position: absolute;\r\n    right: 0;\r\n    bottom: 0;\r\n    width: 100%;\r\n    height: 56px;\r\n    background-color: #e9ecef;\r\n}", ""]);
+exports.push([module.i, "footer {\r\n    position: absolute;\r\n    right: 0;\r\n    bottom: 0;\r\n    width: 100%;\r\n    height: 56px;\r\n    background-color: #e9ecef;\r\n}\r\n\r\n.footer-container {\r\n    height: 56px;\r\n}", ""]);
 
 // exports
 
@@ -941,7 +1025,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/layout/footer/footer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<footer class=\"\">\n  <div class=\"row\">\n    <div class=\"col-12\">\n      <div class=\"float-left\">\n          <small>\n            Loïc BELLETESTE - 2017 (béta projects)\n          </small>\n        </div>\n    </div>\n  </div>\n</footer>"
+module.exports = "<footer>\r\n  <div class=\"container\">\r\n    <div class=\"row align-items-center footer-container\">\r\n      <div class=\"col\">\r\n          Loïc BELLETESTE - 2017 (beta projects)\r\n      </div>\r\n    </div>\r\n  </div>\r\n</footer>"
 
 /***/ }),
 
@@ -1002,7 +1086,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/layout/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Navigation-->\n\n<ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\n\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\" id=\"mainNav\">\n  <a class=\"navbar-brand\" href=\"index.html\">\n    <i class=\"fa fa-rebel\" aria-hidden=\"true\"></i>\n    Star Wars FFG\n    <i class=\"fa fa-empire\" aria-hidden=\"true\"></i>\n  </a>\n\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\"\n    aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n    <ul class=\"navbar-nav navbar-sidenav\" id=\"exampleAccordion\">\n      <!--\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Dashboard\">\n        <a class=\"nav-link\" routerLink=\"/rules\">\n          <i class=\"fa fa-fw fa-dashboard\"></i>\n          <span class=\"nav-link-text\">Règles</span>\n        </a>\n      </li>\n      -->\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Charts\">\n        <a class=\"nav-link\" routerLink=\"/character-creation\">\n          <i class=\"fa fa-fw fa-book\"></i>\n          <span class=\"nav-link-text\">Création de personnage</span>\n        </a>\n      </li>\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Components\">\n        <a class=\"nav-link nav-link-collapse collapsed\" data-toggle=\"collapse\" href=\"#collapseComponents\" data-parent=\"#exampleAccordion\">\n          <i class=\"fa fa-fw fa-reddit-alien\"></i>\n          <span class=\"nav-link-text\">Espèces</span>\n        </a>\n        <ul class=\"sidenav-second-level collapse\" id=\"collapseComponents\">\n          <li>\n            <a routerLink=\"/species\">Toutes</a>\n          </li>\n          <li *ngFor=\"let s of species\">\n            <a routerLink=\"/species/{{ s.key }}\">{{ s.label }}</a>\n          </li>\n        </ul>\n      </li>\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Example Pages\">\n        <a class=\"nav-link nav-link-collapse collapsed\" data-toggle=\"collapse\" href=\"#collapseExamplePages\" data-parent=\"#exampleAccordion\">\n          <i class=\"fa fa-fw fa-graduation-cap\"></i>\n          <span class=\"nav-link-text\">Carrières</span>\n        </a>\n        <ul class=\"sidenav-second-level collapse\" id=\"collapseExamplePages\">\n          <li>\n            <a routerLink=\"/careers\">Toutes</a>\n          </li>\n          <li *ngFor=\"let c of careers\">\n            <a routerLink=\"/careers/{{ c.key }}\">{{ c.label }}</a>\n          </li>\n        </ul>\n      </li>\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Charts\">\n        <a class=\"nav-link\" routerLink=\"/equipments\">\n          <i class=\"fa fa-fw fa-briefcase\"></i>\n          <span class=\"nav-link-text\">Équipements</span>\n        </a>\n      </li>\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Tools\">\n        <a class=\"nav-link nav-link-collapse collapsed\" data-toggle=\"collapse\" href=\"#collapseTools\" data-parent=\"#exampleAccordion\">\n          <i class=\"fa fa-fw fa-cog\"></i>\n          <span class=\"nav-link-text\">Outils</span>\n        </a>\n        <ul class=\"sidenav-second-level collapse\" id=\"collapseTools\">\n          <li>\n            <a routerLink=\"tools/character-creator\">Créateur de perso</a>\n          </li>\n          <li>\n            <a>Générateur de perso</a>\n          </li>\n        </ul>\n      </li>\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Ressources\">\n        <a class=\"nav-link\" routerLink=\"/resources\">\n          <i class=\"fa fa-fw fa-file-pdf-o\"></i>\n          <span class=\"nav-link-text\">Ressources</span>\n        </a>\n      </li>\n    </ul>\n\n    <!-- Top menu bar -->\n    <ul class=\"navbar-nav ml-auto\">\n      <!-- \n          <li class=\"nav-item dropdown\">\n            <a class=\"nav-link dropdown-toggle mr-lg-2\" id=\"messagesDropdown\" href=\"#\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n              <i class=\"fa fa-fw fa-envelope\"></i>\n              <span class=\"d-lg-none\">Messages\n                <span class=\"badge badge-pill badge-primary\">12 New</span>\n              </span>\n              <span class=\"indicator text-primary d-none d-lg-block\">\n                <i class=\"fa fa-fw fa-circle\"></i>\n              </span>\n            </a>\n            <div class=\"dropdown-menu\" aria-labelledby=\"messagesDropdown\">\n              <h6 class=\"dropdown-header\">New Messages:</h6>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item\" href=\"#\">\n                <strong>David Miller</strong>\n                <span class=\"small float-right text-muted\">11:21 AM</span>\n                <div class=\"dropdown-message small\">Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</div>\n              </a>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item\" href=\"#\">\n                <strong>Jane Smith</strong>\n                <span class=\"small float-right text-muted\">11:21 AM</span>\n                <div class=\"dropdown-message small\">I was wondering if you could meet for an appointment at 3:00 instead of 4:00. Thanks!</div>\n              </a>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item\" href=\"#\">\n                <strong>John Doe</strong>\n                <span class=\"small float-right text-muted\">11:21 AM</span>\n                <div class=\"dropdown-message small\">I've sent the final files over to you for review. When you're able to sign off of them let me know and we can discuss distribution.</div>\n              </a>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item small\" href=\"#\">View all messages</a>\n            </div>\n          </li>\n          <li class=\"nav-item dropdown\">\n            <a class=\"nav-link dropdown-toggle mr-lg-2\" id=\"alertsDropdown\" href=\"#\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n              <i class=\"fa fa-fw fa-bell\"></i>\n              <span class=\"d-lg-none\">Alerts\n                <span class=\"badge badge-pill badge-warning\">6 New</span>\n              </span>\n              <span class=\"indicator text-warning d-none d-lg-block\">\n                <i class=\"fa fa-fw fa-circle\"></i>\n              </span>\n            </a>\n            <div class=\"dropdown-menu\" aria-labelledby=\"alertsDropdown\">\n              <h6 class=\"dropdown-header\">New Alerts:</h6>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item\" href=\"#\">\n                <span class=\"text-success\">\n                  <strong>\n                    <i class=\"fa fa-long-arrow-up fa-fw\"></i>Status Update</strong>\n                </span>\n                <span class=\"small float-right text-muted\">11:21 AM</span>\n                <div class=\"dropdown-message small\">This is an automated server response message. All systems are online.</div>\n              </a>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item\" href=\"#\">\n                <span class=\"text-danger\">\n                  <strong>\n                    <i class=\"fa fa-long-arrow-down fa-fw\"></i>Status Update</strong>\n                </span>\n                <span class=\"small float-right text-muted\">11:21 AM</span>\n                <div class=\"dropdown-message small\">This is an automated server response message. All systems are online.</div>\n              </a>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item\" href=\"#\">\n                <span class=\"text-success\">\n                  <strong>\n                    <i class=\"fa fa-long-arrow-up fa-fw\"></i>Status Update</strong>\n                </span>\n                <span class=\"small float-right text-muted\">11:21 AM</span>\n                <div class=\"dropdown-message small\">This is an automated server response message. All systems are online.</div>\n              </a>\n              <div class=\"dropdown-divider\"></div>\n              <a class=\"dropdown-item small\" href=\"#\">View all alerts</a>\n            </div>\n          </li>\n          <li class=\"nav-item\">\n            <form class=\"form-inline my-2 my-lg-0 mr-lg-2\">\n              <div class=\"input-group\">\n                <input class=\"form-control\" type=\"text\" placeholder=\"Search for...\">\n                <span class=\"input-group-btn\">\n                  <button class=\"btn btn-primary\" type=\"button\">\n                    <i class=\"fa fa-search\"></i>\n                  </button>\n                </span>\n              </div>\n            </form>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" data-toggle=\"modal\" data-target=\"#exampleModal\">\n              <i class=\"fa fa-fw fa-sign-out\"></i>Logout</a>\n          </li>\n          -->\n    </ul>\n  </div>\n</nav>"
+module.exports = "<!-- Navigation-->\r\n\r\n<ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\r\n\r\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\" id=\"mainNav\">\r\n  <a class=\"navbar-brand\" href=\"index.html\">\r\n    <i class=\"fa fa-rebel\" aria-hidden=\"true\"></i>\r\n    <span>&nbsp;Star Wars FFG&nbsp;</span>\r\n    <i class=\"fa fa-empire\" aria-hidden=\"true\"></i>\r\n  </a>\r\n\r\n  <button #navbarToggler class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\"\r\n    aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n    <ul class=\"navbar-nav navbar-sidenav\" id=\"exampleAccordion\">\r\n      <!--\r\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Dashboard\">\r\n        <a class=\"nav-link\" routerLink=\"/rules\">\r\n          <i class=\"fa fa-fw fa-dashboard\"></i>\r\n          <span class=\"nav-link-text\">Règles</span>\r\n        </a>\r\n      </li>\r\n      -->\r\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Charts\">\r\n        <a class=\"nav-link\" routerLink=\"/character-creation\" (click)=\"collapseNav()\">\r\n          <i class=\"fa fa-fw fa-book\"></i>\r\n          <span class=\"nav-link-text\">Création de personnage</span>\r\n        </a>\r\n      </li>\r\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Components\">\r\n        <a class=\"nav-link nav-link-collapse collapsed\" data-toggle=\"collapse\" href=\"#collapseComponents\" data-parent=\"#exampleAccordion\">\r\n          <i class=\"fa fa-fw fa-reddit-alien\"></i>\r\n          <span class=\"nav-link-text\">Espèces</span>\r\n        </a>\r\n        <ul class=\"sidenav-second-level collapse\" id=\"collapseComponents\">\r\n          <li>\r\n            <a routerLink=\"/species\" (click)=\"collapseNav()\">Toutes</a>\r\n          </li>\r\n          <li *ngFor=\"let s of species\">\r\n            <a routerLink=\"/species/{{ s.key }}\" (click)=\"collapseNav()\">{{ s.label }}</a>\r\n          </li>\r\n        </ul>\r\n      </li>\r\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Example Pages\">\r\n        <a class=\"nav-link nav-link-collapse collapsed\" data-toggle=\"collapse\" href=\"#collapseExamplePages\" data-parent=\"#exampleAccordion\">\r\n          <i class=\"fa fa-fw fa-graduation-cap\"></i>\r\n          <span class=\"nav-link-text\">Carrières</span>\r\n        </a>\r\n        <ul class=\"sidenav-second-level collapse\" id=\"collapseExamplePages\">\r\n          <li>\r\n            <a routerLink=\"/careers\" (click)=\"collapseNav()\">Toutes</a>\r\n          </li>\r\n          <li *ngFor=\"let c of careers\">\r\n            <a routerLink=\"/careers/{{ c.key }}\" (click)=\"collapseNav()\">{{ c.label }}</a>\r\n          </li>\r\n        </ul>\r\n      </li>\r\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Charts\">\r\n        <a class=\"nav-link\" routerLink=\"/equipments\" (click)=\"collapseNav()\">\r\n          <i class=\"fa fa-fw fa-briefcase\"></i>\r\n          <span class=\"nav-link-text\">Équipements</span>\r\n        </a>\r\n      </li>\r\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Tools\">\r\n        <a class=\"nav-link nav-link-collapse collapsed\" data-toggle=\"collapse\" href=\"#collapseTools\" data-parent=\"#exampleAccordion\">\r\n          <i class=\"fa fa-fw fa-cog\"></i>\r\n          <span class=\"nav-link-text\">Outils</span>\r\n        </a>\r\n        <ul class=\"sidenav-second-level collapse\" id=\"collapseTools\">\r\n          <li>\r\n            <a routerLink=\"tools/character-creator\" (click)=\"collapseNav()\">Créateur de perso</a>\r\n          </li>\r\n          <li>\r\n            <a>Générateur de perso</a>\r\n          </li>\r\n        </ul>\r\n      </li>\r\n      <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Ressources\">\r\n        <a class=\"nav-link\" routerLink=\"/resources\" (click)=\"collapseNav()\">\r\n          <i class=\"fa fa-fw fa-file-pdf-o\"></i>\r\n          <span class=\"nav-link-text\">Ressources</span>\r\n        </a>\r\n      </li>\r\n    </ul>\r\n\r\n    <!-- Top menu bar -->\r\n    <ul class=\"navbar-nav ml-auto\">\r\n      <!-- \r\n          <li class=\"nav-item dropdown\">\r\n            <a class=\"nav-link dropdown-toggle mr-lg-2\" id=\"messagesDropdown\" href=\"#\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n              <i class=\"fa fa-fw fa-envelope\"></i>\r\n              <span class=\"d-lg-none\">Messages\r\n                <span class=\"badge badge-pill badge-primary\">12 New</span>\r\n              </span>\r\n              <span class=\"indicator text-primary d-none d-lg-block\">\r\n                <i class=\"fa fa-fw fa-circle\"></i>\r\n              </span>\r\n            </a>\r\n            <div class=\"dropdown-menu\" aria-labelledby=\"messagesDropdown\">\r\n              <h6 class=\"dropdown-header\">New Messages:</h6>\r\n              <div class=\"dropdown-divider\"></div>\r\n              <a class=\"dropdown-item\" href=\"#\">\r\n                <strong>David Miller</strong>\r\n                <span class=\"small float-right text-muted\">11:21 AM</span>\r\n                <div class=\"dropdown-message small\">Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</div>\r\n              </a>\r\n              <div class=\"dropdown-divider\"></div>\r\n              <a class=\"dropdown-item\" href=\"#\">\r\n                <strong>Jane Smith</strong>\r\n                <span class=\"small float-right text-muted\">11:21 AM</span>\r\n                <div class=\"dropdown-message small\">I was wondering if you could meet for an appointment at 3:00 instead of 4:00. Thanks!</div>\r\n              </a>\r\n              <div class=\"dropdown-divider\"></div>\r\n              <a class=\"dropdown-item\" href=\"#\">\r\n                <strong>John Doe</strong>\r\n                <span class=\"small float-right text-muted\">11:21 AM</span>\r\n                <div class=\"dropdown-message small\">I've sent the final files over to you for review. When you're able to sign off of them let me know and we can discuss distribution.</div>\r\n              </a>\r\n              <div class=\"dropdown-divider\"></div>\r\n              <a class=\"dropdown-item small\" href=\"#\">View all messages</a>\r\n            </div>\r\n          </li>\r\n          <li class=\"nav-item dropdown\">\r\n            <a class=\"nav-link dropdown-toggle mr-lg-2\" id=\"alertsDropdown\" href=\"#\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n              <i class=\"fa fa-fw fa-bell\"></i>\r\n              <span class=\"d-lg-none\">Alerts\r\n                <span class=\"badge badge-pill badge-warning\">6 New</span>\r\n              </span>\r\n              <span class=\"indicator text-warning d-none d-lg-block\">\r\n                <i class=\"fa fa-fw fa-circle\"></i>\r\n              </span>\r\n            </a>\r\n            <div class=\"dropdown-menu\" aria-labelledby=\"alertsDropdown\">\r\n              <h6 class=\"dropdown-header\">New Alerts:</h6>\r\n              <div class=\"dropdown-divider\"></div>\r\n              <a class=\"dropdown-item\" href=\"#\">\r\n                <span class=\"text-success\">\r\n                  <strong>\r\n                    <i class=\"fa fa-long-arrow-up fa-fw\"></i>Status Update</strong>\r\n                </span>\r\n                <span class=\"small float-right text-muted\">11:21 AM</span>\r\n                <div class=\"dropdown-message small\">This is an automated server response message. All systems are online.</div>\r\n              </a>\r\n              <div class=\"dropdown-divider\"></div>\r\n              <a class=\"dropdown-item\" href=\"#\">\r\n                <span class=\"text-danger\">\r\n                  <strong>\r\n                    <i class=\"fa fa-long-arrow-down fa-fw\"></i>Status Update</strong>\r\n                </span>\r\n                <span class=\"small float-right text-muted\">11:21 AM</span>\r\n                <div class=\"dropdown-message small\">This is an automated server response message. All systems are online.</div>\r\n              </a>\r\n              <div class=\"dropdown-divider\"></div>\r\n              <a class=\"dropdown-item\" href=\"#\">\r\n                <span class=\"text-success\">\r\n                  <strong>\r\n                    <i class=\"fa fa-long-arrow-up fa-fw\"></i>Status Update</strong>\r\n                </span>\r\n                <span class=\"small float-right text-muted\">11:21 AM</span>\r\n                <div class=\"dropdown-message small\">This is an automated server response message. All systems are online.</div>\r\n              </a>\r\n              <div class=\"dropdown-divider\"></div>\r\n              <a class=\"dropdown-item small\" href=\"#\">View all alerts</a>\r\n            </div>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n            <form class=\"form-inline my-2 my-lg-0 mr-lg-2\">\r\n              <div class=\"input-group\">\r\n                <input class=\"form-control\" type=\"text\" placeholder=\"Search for...\">\r\n                <span class=\"input-group-btn\">\r\n                  <button class=\"btn btn-primary\" type=\"button\">\r\n                    <i class=\"fa fa-search\"></i>\r\n                  </button>\r\n                </span>\r\n              </div>\r\n            </form>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n            <a class=\"nav-link\" data-toggle=\"modal\" data-target=\"#exampleModal\">\r\n              <i class=\"fa fa-fw fa-sign-out\"></i>Logout</a>\r\n          </li>\r\n          -->\r\n    </ul>\r\n  </div>\r\n</nav>"
 
 /***/ }),
 
@@ -1047,11 +1131,23 @@ var HeaderComponent = (function () {
             _this.isPageLoaded = true;
         });
     }
+    HeaderComponent.prototype.ngOnInit = function () {
+    };
     HeaderComponent.prototype.getDynamicMenu = function () {
         return __WEBPACK_IMPORTED_MODULE_3_rxjs__["Observable"].forkJoin(this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].SPECIES), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].CAREERS));
     };
-    HeaderComponent.prototype.ngOnInit = function () {
+    HeaderComponent.prototype.navBarTogglerIsVisible = function () {
+        return this.navbarToggler.nativeElement.offsetParent !== null;
     };
+    HeaderComponent.prototype.collapseNav = function () {
+        if (this.navBarTogglerIsVisible()) {
+            this.navbarToggler.nativeElement.click();
+        }
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])('navbarToggler'),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */])
+    ], HeaderComponent.prototype, "navbarToggler", void 0);
     HeaderComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-header',
@@ -1120,6 +1216,16 @@ var ApiService = (function () {
     ApiService.WEAPONS_DISTANCE_EXPLOSIVE = "weapons-distance-explosive.json";
     ApiService.WEAPONS_CONTACT_PUGILAT = "weapons-contact-pugilat.json";
     ApiService.WEAPONS_CONTACT_SWORD = "weapons-contact-sword.json";
+    ApiService.ARMORS = "armor.json";
+    ApiService.EQUIPMENT_COMMUNICATION = "equipment-communication.json";
+    ApiService.EQUIPMENT_CYBERNETIC = "equipment-cybernetic.json";
+    ApiService.EQUIPMENT_DETECTION = "equipment-detection.json";
+    ApiService.EQUIPMENT_ENTERTAINMENT = "equipment-entertainment.json";
+    ApiService.EQUIPMENT_MEDICAL = "equipment-medical.json";
+    ApiService.EQUIPMENT_POISON = "equipment-poison.json";
+    ApiService.EQUIPMENT_SECURITY_MATERIAL = "equipment-security-material.json";
+    ApiService.EQUIPMENT_SURVIVAL_MATERIAL = "equipment-survival-material.json";
+    ApiService.EQUIPMENT_TOOL = "equipment-tool.json";
     ApiService.CHARACTER_CREATION_INSPIRATIONS = 'assets/data/character-creation-inspirations.json';
     ApiService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
@@ -1427,7 +1533,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });

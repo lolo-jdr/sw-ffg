@@ -1,0 +1,62 @@
+[
+    {
+        "label": "Arme cybernétique",
+        "price": 4000,
+        "encombrement": 0,
+        "rarety": 7
+    },
+    {
+        "label": "Armure implantée",
+        "price": 7500,
+        "encombrement": 0,
+        "rarety": 6
+    },
+    {
+        "label": "Bras cybernétique (Mod V et Mod VI)",
+        "price": 10000,
+        "encombrement": 0,
+        "rarety": 6
+    },
+    {
+        "label": "Bras scanner cybernétique",
+        "price": 4000,
+        "encombrement": 0,
+        "rarety": 7
+    },
+    {
+        "label": "Implant cognitif",
+        "price": 10000,
+        "encombrement": 0,
+        "rarety": 6
+    },
+    {
+        "label": "Implant immunologique",
+        "price": 5000,
+        "encombrement": 0,
+        "rarety": 6
+    },
+    {
+        "label": "Jambes cybernatiques (Mod II et III)",
+        "price": 10000,
+        "encombrement": 0,
+        "rarety": 6
+    },
+    {
+        "label": "Prothèse réplique (membre)",
+        "price": 2000,
+        "encombrement": 0,
+        "rarety": 4
+    },
+    {
+        "label": "Prothèse réplique (organe)",
+        "price": 1000,
+        "encombrement": 0,
+        "rarety":4 
+    },
+    {
+        "label": "Yeux cybernétiques",
+        "price": 7500,
+        "encombrement": 0,
+        "rarety": 6
+    }
+]
