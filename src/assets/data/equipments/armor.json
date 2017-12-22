@@ -1,6 +1,76 @@
 [
     {
-        "image": "",
+        "image": "ArmorHC.png",
+        "label": "Vêtements épais",
+        "defense": 0,
+        "encaissement": 1,
+        "price": 50,
+        "enc": 1,
+        "emp": 0,
+        "rarety": 0
+    },
+    {
+        "image": "ArmorCONROBE.png",
+        "label": "Robe de camouflage",
+        "defense": 0,
+        "encaissement": 1,
+        "price": 150,
+        "enc": 1,
+        "emp": 0,
+        "rarety": 2
+    },
+    {
+        "image": "ArmorAEG.png",
+        "label": "Tenue d'exploration",
+        "defense": 0,
+        "encaissement": 1,
+        "price": 500,
+        "enc": 2,
+        "emp": 1,
+        "rarety": 1
+    },
+    {
+        "image": "ArmorPAD.png",
+        "label": "Armure matelassée",
+        "defense": 0,
+        "encaissement": 2,
+        "price": 500,
+        "enc": 2,
+        "emp": 0,
+        "rarety": 1
+    },
+    {
+        "image": "ArmorFLAKVEST.png",
+        "label": "Vêtements reforcés",
+        "defense": 1,
+        "encaissement": 1,
+        "price": 1000,
+        "enc": 3,
+        "emp": 1,
+        "rarety": 6
+    },
+    {
+        "image": "ArmorLAM.png",
+        "label": "Armure laminée",
+        "defense": 0,
+        "encaissement": 2,
+        "price": 2500,
+        "enc": 4,
+        "emp": 3,
+        "rarety": 5
+    },
+    {
+        "image": "ArmorARMROBE.png",
+        "label": "Robe renforcée",
+        "defense": 1,
+        "encaissement": 2,
+        "price": 4500,
+        "enc": 5,
+        "emp": 2,
+        "rarety": 8
+    },
+    {
+        "image": "ArmorHBA.png",
         "label": "Armure de combat lourde",
         "defense": 1,
         "encaissement": 2,
@@ -11,62 +81,12 @@
     },
     {
         "image": "",
-        "label": "Armure laminée",
-        "defense": 0,
-        "encaissement": 2,
-        "price": 2500,
-        "enc": 4,
-        "emp": 3,
-        "rarety": ""
-    },
-    {
-        "image": "",
-        "label": "Armure matelassée",
-        "defense": 0,
-        "encaissement": 2,
-        "price": 500,
-        "enc": 2,
-        "emp": 0,
-        "rarety": ""
-    },
-    {
-        "image": "",
         "label": "Bouclier déflecteur individuel",
         "defense": 2,
         "encaissement": 0,
         "price": 10000,
         "enc": 3,
         "emp": 0,
-        "rarety": ""
-    },
-    {
-        "image": "",
-        "label": "Tenue d'exploration",
-        "defense": 0,
-        "encaissement": 1,
-        "price": 500,
-        "enc": 2,
-        "emp": 1,
-        "rarety": ""
-    },
-    {
-        "image": "",
-        "label": "Vêtements reforcés",
-        "defense": 1,
-        "encaissement": 1,
-        "price": 1000,
-        "enc": 3,
-        "emp": 1,
-        "rarety": ""
-    },
-    {
-        "image": "",
-        "label": "Vêtements épais",
-        "defense": 0,
-        "encaissement": 1,
-        "price": 50,
-        "enc": 1,
-        "emp": 0,
-        "rarety": ""
+        "rarety": 8
     }
 ]

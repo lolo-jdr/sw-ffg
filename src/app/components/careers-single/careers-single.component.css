@@ -61,6 +61,10 @@
     margin-bottom: 20px;
 }
 
+#careersSingle .career-specialization-skills .skill {
+    font-weight: 400;
+}
+
 #careersSingle .career-specialization-skills p:first-child small {
     margin-bottom: 10px;
     font-weight: 600;

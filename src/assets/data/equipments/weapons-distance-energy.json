@@ -141,7 +141,7 @@
         ]
     },
     {
-        "image": "WeaponLONGBOW.png",
+        "image": "WeaponBOWCAST.png",
         "label": "Arbalète",
         "skill": "Distance (Lourde)",
         "damage": 10,

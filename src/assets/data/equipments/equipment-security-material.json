@@ -28,14 +28,14 @@
         "rarety": 4
     },
     {
-        "image": "",
+        "image": "GearBIND.png",
         "label": "Menottes",
         "price": 25,
         "encombrement": 0,
         "rarety": 0
     },
     {
-        "image": "",
+        "image": "GearELB.png",
         "label": "Passe-partout électronique",
         "price": 1000,
         "encombrement": 1,

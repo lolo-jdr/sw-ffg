@@ -7,14 +7,14 @@
         "rarety": 0
     },
     {
-        "image": "",
+        "image": "GearSABACC.png",
         "label": "Jeu de cartes de Sabacc",
         "price": 40,
         "encombrement": 0,
         "rarety": 0
     },
     {
-        "image": "",
+        "image": "GearDEJARIK.png",
         "label": "Table de Dejarik",
         "price": 350,
         "encombrement": 10,

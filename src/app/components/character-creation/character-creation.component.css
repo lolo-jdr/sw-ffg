@@ -8,6 +8,8 @@
 
 #characterCreation .step-title {
     font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 #characterCreation .characteristic {

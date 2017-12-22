@@ -12,7 +12,7 @@
           </a>
         </li>
         <li class="breadcrumb-item">
-          <a routerLink="/careers">Liste des carrières</a>
+          <a routerLink="/careers">Carrières</a>
         </li>
         <li class="breadcrumb-item active" aria-current="page">{{ career.label }}</li>
       </ol>
@@ -20,22 +20,23 @@
 
     <div class="row page-title">
       <div class="page-title-label">
-        <p>{{ career.label }}</p>
+        <p>{{ career.label | uppercase }}</p>
       </div>
     </div>
 
     <div class="row career-skills">
       <div class="col-sm block text-center">
-        <img src="assets/images/careers/{{ career.key }}.jpg" class="img-responsive" />
+        <img src="assets/images/careers/{{ career.key }}.png" class="img-responsive" />
       </div>
       <div class="col-sm block">
         <div class="skills">
-          <p>Compétences de carrière</p>
+          <p class="sub-title">Compétences de carrière</p>
           <p>
-            <small>(4 à choisir parmi les 8)</small>
+            <small *ngIf="obligationType !== 'moralities'">(4 à choisir parmi les 8)</small>
+            <small *ngIf="obligationType === 'moralities'">(3 à choisir parmi les 6)</small>
           </p>
           <p *ngFor="let skill of career.skills">
-            <span class="sub-title">{{ skill.label}}</span>
+            <span class="skill">{{ skill.label}}</span>
           </p>
         </div>
       </div>

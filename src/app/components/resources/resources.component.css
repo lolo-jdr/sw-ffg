@@ -39,9 +39,11 @@
  /* Responsive */
 
  @media (max-width: 700px) {
+
     #resourcesSection .pdfs div.column-resources:first-child {
         border-right: none;
         margin-right: 0px;
+        margin-bottom: 30px;
     }
 
     #resourcesSection .column-resources p:first-child {

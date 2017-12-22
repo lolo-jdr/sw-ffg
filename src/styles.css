@@ -36,7 +36,12 @@ p {
   /* position:absolute;*/
   bottom:0;
   margin-top: 50px;
+  font-size: 0.7em;
   /*padding-bottom: 70px;*/
+}
+
+.sw-font {
+  font-family: "STARWARS";
 }
 
 /* Bootstrap modal full screen */
@@ -108,6 +113,7 @@ p {
 .page-title {
   font-weight: 600;
   font-size: 2em;
+  font-family: 'STARWARS';
   padding-left: 30px;
   padding-bottom: 10px;
   margin-bottom: 50px;

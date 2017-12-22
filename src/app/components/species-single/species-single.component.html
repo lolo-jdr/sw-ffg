@@ -12,7 +12,7 @@
 					</a>
 				</li>
 				<li class="breadcrumb-item">
-					<a routerLink="/species">Liste des espèces</a>
+					<a routerLink="/species">Espèces</a>
 				</li>
 				<li class="breadcrumb-item active" aria-current="page">{{ species.label }}</li>
 			</ol>
@@ -20,7 +20,7 @@
 
 		<div class="row page-title">
 			<div class="page-title-label">
-				<p>{{ species.label }}</p>
+				<p>{{ species.label | uppercase }}</p>
 			</div>
 		</div>
 

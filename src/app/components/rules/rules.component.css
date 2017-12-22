@@ -1,3 +1,12 @@
+.home-title p {
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
 .gamme-introduction {
     margin-top: 50px;
+}
+
+.gamme-introduction p {
+    margin-bottom: 10px;
 }

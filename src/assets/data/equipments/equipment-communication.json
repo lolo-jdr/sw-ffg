@@ -1,20 +1,20 @@
 [
     {
-        "image": "",
-        "label": "Comlink (longue-portée)",
-        "price": 200,
-        "encombrement": 2,
-        "rarety": 1
-    },
-    {
-        "image": "",
+        "image": "GearCOMLINKH.png",
         "label": "Comlink (standard)",
         "price": 25,
         "encombrement": 0,
         "rarety": 0
     },
     {
-        "image": "",
+        "image": "GearCOMLINKHARD.png",
+        "label": "Comlink (longue-portée)",
+        "price": 200,
+        "encombrement": 2,
+        "rarety": 1
+    },
+    {
+        "image": "GearHOLO.png",
         "label": "Holo-disque",
         "price": 250,
         "encombrement": 0,

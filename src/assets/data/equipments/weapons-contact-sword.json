@@ -1,18 +1,17 @@
 [
     {
-        "image": "WeaponGAFF.png",
-        "label": "Bâton Gaderffii",
+        "image": "WeaponTRUNCH.png",
+        "label": "Matraque",
         "skill": "Corps à corps",
         "damage": "+2",
-        "critic": 3,
+        "critic": 5,
         "distance": "Au contact",
-        "enc": 3,
+        "enc": 2,
         "emp": 0,
-        "price": 100,
-        "rarety": 2,
+        "price": 15,
+        "rarety": 1,
         "options": [
-            { "label": "Désorientation 3" },
-            { "label": "Parade 1" }
+            { "label": "Désorientation 2" }
         ]
     },
     {
@@ -29,52 +28,67 @@
         "options": [ ]
     },
     {
+        "image": "WeaponGAFF.png",
+        "label": "Bâton Gaderffii",
+        "skill": "Corps à corps",
+        "damage": "+2",
+        "critic": 3,
+        "distance": "Au contact",
+        "enc": 3,
+        "emp": 0,
+        "price": 100,
+        "rarety": 2,
+        "options": [
+            { "label": "Désorientation 3" },
+            { "label": "Parade 1" }
+        ]
+    },
+    {
+        "image": "WeaponVIBKN.png",
+        "label": "Vibrolame",
+        "skill": "Corps à corps",
+        "damage": "+1",
+        "critic": 2,
+        "distance": "Au contact",
+        "enc": 1,
+        "emp": 2,
+        "price": 250,
+        "rarety": 3,
+        "options": [ 
+            { "label": "Perforant 2" },
+            { "label": "Sanguinaire 1" }
+        ]
+    },
+    {
+        "image": "WeaponANCIENTSWORD.png",
+        "label": "Épée antique",
+        "skill": "Sabre laser",
+        "damage": "+2",
+        "critic": 3,
+        "distance": "Au contact",
+        "enc": 3,
+        "emp": 1,
+        "price": 350,
+        "rarety": 8,
+        "options": [
+            { "label": "Parade 1" }
+        ]
+    },
+    {
         "image": "WeaponFORCEP.png",
         "label": "Lance de force",
         "skill": "Corps à corps",
-        "damage": "+",
-        "critic": 3,
+        "damage": "+3",
+        "critic": 2,
         "distance": "Au contact",
         "enc": 3,
         "emp": 3,
         "price": 500,
         "rarety": 4,
         "options": [
-            { "label": "Preforant 2" },
+            { "label": "Perforant 2" },
             { "label": "Réglage étourdissant" }
         ]
-    },
-    {
-        "image": "WeaponTRUNCH.png",
-        "label": "Matraque",
-        "skill": "Corps à corps",
-        "damage": "+2",
-        "critic": 5,
-        "distance": "Au contact",
-        "enc": 2,
-        "emp": 0,
-        "price": 15,
-        "rarety": 1,
-        "options": [
-            { "label": "Désorientation 2" }
-        ]
-    },
-    {
-        "image": "WeaponLTSABERBASIC.png",
-        "label": "Sabre laser",
-        "skill": "Sabre laser",
-        "damage": 10,
-        "critic": 1,
-        "distance": "Au contact",
-        "enc": 1,
-        "emp": 0,
-        "price": 10000,
-        "rarety": 10,
-        "options": [
-            { "label": "Brèche 1" },
-            { "label": "Briseur" },
-            { "label": "Sanguinaire 2" }
-         ]
     },
     {
         "image": "WeaponVIBSW.png",
@@ -111,20 +125,88 @@
         ]
     },
     {
-        "image": "WeaponVIBKN.png",
-        "label": "Vibrolame",
+        "image": "WeaponCORTSHIELD.png",
+        "label": "Bouclier en cortosis",
         "skill": "Corps à corps",
-        "damage": "+1",
-        "critic": 2,
+        "damage": "+0",
+        "critic": 6,
+        "distance": "Au contact",
+        "enc": 4,
+        "emp": 0,
+        "price": 900,
+        "rarety": 7,
+        "options": [ 
+            { "label": "Cortosis" },
+            { "label": "Déflexion 2" },
+            { "label": "Encombrant 3" },
+            { "label": "Parade 2" }
+        ]
+    },
+    {
+        "image": "WeaponCORTSWORD.png",
+        "label": "Épée en cortosis",
+        "skill": "Corps à corps",
+        "damage": "+2",
+        "critic": 3,
+        "distance": "Au contact",
+        "enc": 3,
+        "emp": 2,
+        "price": 1350,
+        "rarety": 7,
+        "options": [ 
+            { "label": "Cortosis" },
+            { "label": "Parade 1" }
+        ]
+    },
+    {
+        "image": "WeaponREFCORTSTAFF.png",
+        "label": "Bâton en cortosis",
+        "skill": "Corps à corps",
+        "damage": "+3",
+        "critic": 5,
+        "distance": "Au contact",
+        "enc": 4,
+        "emp": 2,
+        "price": 2500,
+        "rarety": 7,
+        "options": [ 
+            { "label": "Cortosis" }
+        ]
+    },
+    {
+        "image": "WeaponELECSTAFF.png",
+        "label": "Bâton statique",
+        "skill": "Corps à corps",
+        "damage": "+4",
+        "critic": 3,
+        "distance": "Au contact",
+        "enc": 4,
+        "emp": 3,
+        "price": 4500,
+        "rarety": 6,
+        "options": [ 
+            { "label": "Cortosis" },
+            { "label": "Difficile à manier 3" },
+            { "label": "Encombrant 3" },
+            { "label": "Jumelé 2" },
+            { "label": "Réglage étourdissant" }
+        ]
+    },
+    {
+        "image": "WeaponLTSABERBASIC.png",
+        "label": "Sabre laser",
+        "skill": "Sabre laser",
+        "damage": 10,
+        "critic": 1,
         "distance": "Au contact",
         "enc": 1,
-        "emp": 2,
-        "price": 250,
-        "rarety": 3,
-        "options": [ 
-            { "label": "Perforant 2" },
-            { "label": "Sanguinaire 1" }
-        ]
+        "emp": 0,
+        "price": 10000,
+        "rarety": 10,
+        "options": [
+            { "label": "Brèche 1" },
+            { "label": "Briseur" },
+            { "label": "Sanguinaire 2" }
+         ]
     }
-    
 ]
