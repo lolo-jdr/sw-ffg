@@ -1,5 +1,16 @@
 <div class="container-fluid" id="resources">
 
+  <nav aria-label="breadcrumb" role="navigation">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a routerLink="/">
+          <i class="ra ra-lg ra-ship-emblem"></i>
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">Ressources</li>
+    </ol>
+  </nav>
+
   <ngx-loading [show]="!isPageLoaded" [config]="{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }"></ngx-loading>
 
   <section *ngIf="isPageLoaded" id="resourcesSection">
@@ -10,39 +21,44 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-sm">
-        <p>Fiche de personnage</p>
-        <p>Bordure extérieure</p>
-        <p>Alliance & Rébellion</p>
-        <p>Force</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm">
+    <div class="row pdfs">
+      <div class="col-sm column-resources">
         <p>Arbres des talents par carrière</p>
 
-        <p>Bordure extérieure</p>
+        <p class="eoe-talents">Bordure extérieure</p>
 
         <p *ngFor="let career of eoeCareers">
           <a target="_blank" href="{{ careersFilesFolder + career.careerTreeFile }}">{{ career.label }}</a>
         </p>
 
-        <p>Alliance & Rébellion</p>
+        <p class="aor-talents">Alliance & Rébellion</p>
 
         <p *ngFor="let career of aorCareers">
           <a target="_blank" href="{{ careersFilesFolder + career.careerTreeFile }}">{{ career.label }}</a>
         </p>
 
-        <p>Force</p>
+        <p class="fad-talents">Force</p>
 
         <p *ngFor="let career of fadCareers">
           <a target="_blank" href="{{ careersFilesFolder + career.careerTreeFile }}">{{ career.label }}</a>
         </p>
       </div>
-    </div>
 
+      <div class="col-sm column-resources">
+        <p>Fiche de personnage</p>
+
+        <p class="eoe-character-sheet">
+          <a target="_blank" href="{{ charactersFilesFolder + 'sw_eoe_character_sheet.pdf' }}">Bordure extérieure</a>
+        </p>
+
+        <p class="aor-character-sheet">
+          <a target="_blank" href="{{ charactersFilesFolder + 'sw_aor_core_character_sheet.pdf' }}">Alliance & Rébellion</a>
+        </p>
+        <p class="fad-character-sheet">
+          <a target="_blank" href="{{ charactersFilesFolder + 'sw_rpg_fad_character_sheet.pdf' }}">Force</a>
+        </p>
+      </div>
+    </div>
   </section>
-  
+
 </div>

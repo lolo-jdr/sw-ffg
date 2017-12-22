@@ -836,7 +836,8 @@
             }
         ],
         "universKey": "aor",
-        "univers": "Alliance"
+        "univers": "Alliance",
+        "careerTreeFile" : "sw_aor_core_ace_tree.pdf"
     },
     { 
         "key": "diplomat",

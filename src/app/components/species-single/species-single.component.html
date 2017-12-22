@@ -4,6 +4,20 @@
 
 	<section *ngIf="isPageLoaded" id="speciesSingle">
 
+		<nav aria-label="breadcrumb" role="navigation">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item">
+					<a routerLink="/">
+						<i class="ra ra-lg ra-ship-emblem"></i>
+					</a>
+				</li>
+				<li class="breadcrumb-item">
+					<a routerLink="/species">Liste des espèces</a>
+				</li>
+				<li class="breadcrumb-item active" aria-current="page">{{ species.label }}</li>
+			</ol>
+		</nav>
+
 		<div class="row page-title">
 			<div class="page-title-label">
 				<p>{{ species.label }}</p>

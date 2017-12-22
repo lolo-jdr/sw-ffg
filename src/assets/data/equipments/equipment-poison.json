@@ -1,17 +1,20 @@
 [
     {
+        "image": "",
         "label": "Anesthésique de synthèse standard (1 dose)",
         "price": 35,
         "encombrement": 0,
         "rarety": 4
     },
     {
+        "image": "",
         "label": "Neuroparalysant de synthèse standard (1 dose)",
         "price": 75,
         "encombrement": 0,
         "rarety": 6
     },
     {
+        "image": "",   
         "label": "Neurotoxine de synthèse standard (1 dose)",
         "price": 50,
         "encombrement": 0,

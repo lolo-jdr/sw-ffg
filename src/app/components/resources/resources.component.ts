@@ -16,6 +16,7 @@ export class ResourcesComponent implements OnInit {
   protected fadCareers:any = [];
 
   protected careersFilesFolder = ApiService.RESOURCES_CAREERS_FOLDER;
+  protected charactersFilesFolder = ApiService.RESOURCES_CHARACTERS_FOLDER;
   
   constructor(private api:ApiService, private helper:HelperService) {
 

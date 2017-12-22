@@ -35,6 +35,15 @@
     border-bottom: 1px solid purple;
 }
 
+#careersSingle .career-specializations-title {
+    text-align: center;
+    font-weight: 600;
+}
+
+#careersSingle .career-specializations-talents {
+    text-align: center;
+}
+
 #careersSingle .career-specializations .card-title {
     margin-bottom: 20px;
 }

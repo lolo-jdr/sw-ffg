@@ -10,10 +10,13 @@ import { HttpClient } from '@angular/common/http';
 export class ApiService {
 
   public static EQUIPMENT_FOLDER = 'assets/data/equipments/';
+  public static EQUIPMENT_IMG_FOLDER = 'assets/images/equipments/';
   public static RESOURCES_CAREERS_FOLDER = 'assets/resources/files/careers/';
+  public static RESOURCES_CHARACTERS_FOLDER = 'assets/resources/files/characters/';
 
   public static SPECIES = 'assets/data/species.json';
   public static CAREERS = 'assets/data/careers.json';
+  public static SKILLS = 'assets/data/skills.json';
 
   public static OBLIGATIONS = 'assets/data/obligations.json';
   public static DUTIES = 'assets/data/duties.json';

@@ -1,5 +1,16 @@
 <div class="container-fluid">
 
+  <nav aria-label="breadcrumb" role="navigation">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a routerLink="/">
+          <i class="ra ra-lg ra-ship-emblem"></i>
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">Liste des espèces</li>
+    </ol>
+  </nav>
+
   <ngx-loading [show]="!isPageLoaded" [config]="{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }"></ngx-loading>
 
   <section *ngIf="isPageLoaded" id="speciesList">

@@ -1,5 +1,6 @@
 [
     {
+        "image": "WeaponGAFF.png",
         "label": "Bâton Gaderffii",
         "skill": "Corps à corps",
         "damage": "+2",
@@ -15,6 +16,7 @@
         ]
     },
     {
+        "image": "WeaponKNIFE.png",
         "label": "Couteau de combat",
         "skill": "Corps à corps",
         "damage": "+1",
@@ -27,6 +29,7 @@
         "options": [ ]
     },
     {
+        "image": "WeaponFORCEP.png",
         "label": "Lance de force",
         "skill": "Corps à corps",
         "damage": "+",
@@ -42,6 +45,7 @@
         ]
     },
     {
+        "image": "WeaponTRUNCH.png",
         "label": "Matraque",
         "skill": "Corps à corps",
         "damage": "+2",
@@ -56,6 +60,7 @@
         ]
     },
     {
+        "image": "WeaponLTSABERBASIC.png",
         "label": "Sabre laser",
         "skill": "Sabre laser",
         "damage": 10,
@@ -72,6 +77,7 @@
          ]
     },
     {
+        "image": "WeaponVIBSW.png",
         "label": "Vibroépée",
         "skill": "Corps à corps",
         "damage": "+2",
@@ -88,6 +94,7 @@
         ]
     },
     {
+        "image": "WeaponVIBAX.png",
         "label": "Vibrohache",
         "skill": "Corps à corps",
         "damage": "+3",
@@ -104,6 +111,7 @@
         ]
     },
     {
+        "image": "WeaponVIBKN.png",
         "label": "Vibrolame",
         "skill": "Corps à corps",
         "damage": "+1",

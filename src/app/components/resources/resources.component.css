@@ -1,0 +1,50 @@
+#resourcesSection .pdfs div.column-resources:first-child {
+    border-right: 2px solid purple;
+    margin-right: 30px;
+}
+
+#resourcesSection .column-resources p:first-child {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#resourcesSection .eoe-talents {
+    font-weight: 600;
+    color: #cb3434;
+}
+
+#resourcesSection .aor-talents {
+    font-weight: 600;
+    color: #bb1133;
+    margin-top: 20px;
+}
+
+#resourcesSection .fad-talents {
+    font-weight: 600;
+    color: #008000;
+    margin-top: 20px;
+}
+
+#resourcesSection .eoe-character-sheet {
+
+}
+
+#resourcesSection .aor-character-sheet {
+    margin-top: 20px;
+}
+
+#resourcesSection .fad-character-sheet {
+    margin-top: 20px;
+}
+ /* Responsive */
+
+ @media (max-width: 700px) {
+    #resourcesSection .pdfs div.column-resources:first-child {
+        border-right: none;
+        margin-right: 0px;
+    }
+
+    #resourcesSection .column-resources p:first-child {
+        text-align: center;
+    }
+}

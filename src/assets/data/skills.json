@@ -1,0 +1,152 @@
+[
+    {
+        "key": "athletics",
+        "label": "Athlétisme",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "astrogation",
+        "label": "Astrogation",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "calm",
+        "label": "Calme",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "charm",
+        "label": "Charme",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "coercition",
+        "label": "Coercition",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "commandement",
+        "label": "Commandement",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "coordination",
+        "label": "Coordination",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "brawl",
+        "label": "Corps à corps",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "discret",
+        "label": "Discrétion",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "distanceHeavy",
+        "label": "Distance (armes lourdes)",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "distanceLight",
+        "label": "Distance (armes légères)",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "computer",
+        "label": "Informatique",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "magouilles",
+        "label": "Magouilles",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "mecanics",
+        "label": "Mécanique",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "medecine",
+        "label": "Médecine",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "neociation",
+        "label": "Négociation",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "perception",
+        "label": "Perception",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "pilotPlanet",
+        "label": "Pilotage (planétaire)",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "pugilat",
+        "label": "Pugilat",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "resistance",
+        "label": "Résistance",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "sanFroid",
+        "label": "Sang-froid",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "survival",
+        "label": "Survie",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "streetwise",
+        "label": "Système D",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "tromperie",
+        "label": "Tromperie",
+        "description": "",
+        "characteristic": ""
+    },
+    {
+        "key": "vigilance",
+        "label": "Vigilance",
+        "description": "",
+        "characteristic": ""
+    }
+]

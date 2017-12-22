@@ -1,5 +1,6 @@
 [
     {
+        "image": "WeaponBOLA.png",
         "label": "Bolas / Filet",
         "skill": "Distance (Légère)",
         "damage": 2,

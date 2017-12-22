@@ -16,13 +16,13 @@
 }
 
 .obligation-table tr.eoe {
-    background-color: brown;
+    background-color: #cb3434;
 }
 
 .obligation-table tr.aor {
-    background-color: red;
+    background-color: #bb1133;
 }
 
 .obligation-table tr.fad {
-    background-color: green;
+    background-color: #008000;
 }

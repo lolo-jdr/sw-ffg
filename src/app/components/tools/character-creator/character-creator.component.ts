@@ -16,6 +16,7 @@ export class CharacterCreatorComponent implements OnInit {
 
   protected species: any[] = [];
   protected careers: any[] = [];
+  protected skills: any[] = [];
 
   protected character = {
     species: '',
@@ -27,8 +28,10 @@ export class CharacterCreatorComponent implements OnInit {
       cunning: 2,
       willpower: 2,
       presence: 2,
-    }
+    },
+    skills: []
   };
+
   protected selectedSpecies:any;
   protected selectedCareer:any;
 
@@ -36,13 +39,22 @@ export class CharacterCreatorComponent implements OnInit {
      // Populate second levels lists
      this.getFormData().subscribe(data => {
       
-      const [ species , careers ] = data;
+      const [ species , careers, skills ] = data;
 
       species.sort(HelperService.sortArrayByProperty('label'));
       careers.sort(HelperService.sortArrayByProperty('label'));
+      skills.sort(HelperService.sortArrayByProperty('label'));
       
       this.species = species;
       this.careers = careers;
+      this.skills = skills;
+
+      // Instanciate character
+      this.skills.forEach(skill => {
+        this.character.skills[skill.key.toString()] = 1;
+      });
+
+      console.log(this.character);
 
       this.selectedSpecies = species[0];
       this.selectedCareer = careers[0];
@@ -60,14 +72,14 @@ export class CharacterCreatorComponent implements OnInit {
   private getFormData() {
     return Observable.forkJoin(
       this.api.localResource(ApiService.SPECIES),
-      this.api.localResource(ApiService.CAREERS)
+      this.api.localResource(ApiService.CAREERS),
+      this.api.localResource(ApiService.SKILLS)
     );
   }
 
   protected changeSpecies() {
     this.isPageLoaded = false;
-    console.log(this.selectedSpecies);
-    this.character = this.selectedSpecies;
+    this.character.species = this.selectedSpecies;
     this.character.characteristics.brawn = this.selectedSpecies.characteristics.brawn;
     this.character.characteristics.agility = this.selectedSpecies.characteristics.agility;
     this.character.characteristics.intellect = this.selectedSpecies.characteristics.intellect;
@@ -78,7 +90,23 @@ export class CharacterCreatorComponent implements OnInit {
   }
 
   protected changeCareer() {
-    this.character = this.selectedCareer;
+    this.character.career = this.selectedCareer;
+  }
+
+  protected upSkill(key) {
+    if (this.character.skills[key] + 1 <= 2) {
+      this.character.skills[key]++;
+    } else {
+      console.log(key + ' is at maximum value');
+    }
+  }
+
+  protected downSkill(key) {
+    if (this.character.skills[key] -1 >= 0) {
+      this.character.skills[key]--;
+    } else {
+      console.log(key + ' is at minium value');
+    }
   }
 
 }

@@ -1,34 +1,23 @@
-<table class="table table-responsive-sm equipment-table">
+<table class="table table-responsive equipment-table">
     <thead>
       <tr>
         <th scope="col">Nom</th>
-        <th scope="col">Compétences</th>
-        <th scope="col">Dégâts</th>
-        <th scope="col">Critique</th>
-        <th scope="col">Portée</th>
-        <th scope="col">Enc.</th>
-        <th scope="col">Emp.</th>
+        <th scope="col" class="text-center">Visuel</th>
         <th scope="col">Prix</th>
+        <th scope="col">Encombrement</th>
         <th scope="col">Rareté</th>
-        <th scope="col">Spécial</th>
       </tr>
     </thead>
     <tbody role="tabpanel">
       <tr *ngFor="let equipment of equipments">
         <td scope="row">{{ equipment.label }}</td>
-        <td>{{ equipment.skill }}</td>
-        <td>{{ equipment.damage }}</td>
-        <td>{{ equipment.critic }}</td>
-        <td>{{ equipment.distance }}</td>
-        <td>{{ equipment.enc }}</td>
-        <td>{{ equipment.emp }}</td>
-        <td>{{ equipment.price }}</td>
-        <td>{{ equipment.rarety }}</td>
-        <td>
-          <p *ngFor="let option of equipment.options">
-            <span>{{ option.label }}</span>
-          </p>
+        <td class="text-center">
+          <p *ngIf="equipment.image !== ''"><img src="{{ equipmentImagesFolder + equipment.image }}" (click)="openImage(equipmentImagesFolder + equipment.image, equipment.label)" /></p>
+          <p *ngIf="equipment.image === ''">-</p>
         </td>
+        <td>{{ equipment.price }}</td>
+        <td>{{ equipment.encombrement }}</td>
+        <td>{{ equipment.rarety }}</td>
       </tr>
     </tbody>
   </table>

@@ -1,5 +1,16 @@
 <div class="container-fluid">
 
+  <nav aria-label="breadcrumb" role="navigation">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a routerLink="/">
+          <i class="ra ra-lg ra-ship-emblem"></i>
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">Création de personnage</li>
+    </ol>
+  </nav>
+
   <ngx-loading [show]="!isPageLoaded" [config]="{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }"></ngx-loading>
 
   <section *ngIf="isPageLoaded" id="characterCreation">
@@ -207,20 +218,23 @@
 
         <p>1. Améliorer une caractéristique</p>
         <p>
-          <span>Lors de la création de personnage, faire monter un caractéristique au rang suivant coûte 10 fois la valeur à atteindre. Chaque augmentation doit être acheté séparément.</span>
+          <span>Lors de la création de personnage, faire monter un caractéristique au rang suivant coûte 10 fois la valeur à atteindre.
+            Chaque augmentation doit être acheté séparément.</span>
           <br />
           <span>→ Monter la Vigueur d'un personnage d'un rang 3 à 4 coûtera 40 PX (10 * 4).</span>
           <br />
-          <span>→ Monter la Vigueur d'un personnage d'un rang 3 à 5 coûtera 90 PX (40 pour passer du rang 3 à 4. Puis 50 pour passer du rang 4 à 5).</span>
+          <span>→ Monter la Vigueur d'un personnage d'un rang 3 à 5 coûtera 90 PX (40 pour passer du rang 3 à 4. Puis 50 pour passer
+            du rang 4 à 5).</span>
           <br />
           <br />
-          <span>Lors de la création de personnage aucune caractérisque ne peut dépasser le rang 5. Au cours de jeu, aucune caractérisques ne peut dépasser le rang 6.</span>
+          <span>Lors de la création de personnage aucune caractérisque ne peut dépasser le rang 5. Au cours de jeu, aucune caractérisques
+            ne peut dépasser le rang 6.</span>
         </p>
 
         <p>2. Améliorer une compétences</p>
         <p>
-          Chaque compétence est divisée en 5 rangs. Un personnage peut débuter avec 1 ou 2 rangs gratuits, grâce à sa carrière et sa capacité spéciale dûe à l'espèce. 
-          Le coût d'une compétence dépend si elle est de carrière ou hors carrière.
+          Chaque compétence est divisée en 5 rangs. Un personnage peut débuter avec 1 ou 2 rangs gratuits, grâce à sa carrière et sa
+          capacité spéciale dûe à l'espèce. Le coût d'une compétence dépend si elle est de carrière ou hors carrière.
           <br />
           <span>Une compétence de carrière coûte 5 fois le rang à atteindre.</span>
           <br />
@@ -229,21 +243,21 @@
 
         <p>3. Acquérir des talents</p>
         <p>
-          Les Talents sont à choisir dans les arborescences de spécialités du personnage (consultable dans les pages de carrière). Chaque entrée de l'arborescence ne 
-          peut être acheter qu'une seule fois. Son coût est indiqué sur chaque entrée. 
+          Les Talents sont à choisir dans les arborescences de spécialités du personnage (consultable dans les pages de carrière).
+          Chaque entrée de l'arborescence ne peut être acheter qu'une seule fois. Son coût est indiqué sur chaque entrée.
         </p>
 
         <p>4. Acquérir une nouvelle spécialité</p>
         <p>
-          Chaque personnage commence avec une spécialité de carrière, ce qui ne l'empêche pas d'en acheter d'autres. Quand il s'achète une nouvelle spécialité, 
-          il s'ouvre une nouvelle arborescence de Talents. Sans compter que chaque spécialité s'accompagne de compétences de carrière. Le personnage ne dispose pas 
-          de rang gratuit comme à la création mais dispose de plus de compétences de carrière (à ajouter aux 8 de bases sur la feuille de personnage).
-          <br />
-          L'achat d'une spécialité de carrière supplémentaire coûte 10 fois le nombre total de spécialité que le personnage possèdera avec la nouvelle. Ainsi, un 
-          personnage pourra s'offrir une seconde carrière de spécialité pour 20 PX. Il devrait débourser 30 PX pour un troisième.
-          <br />
-          Les personnages peuvent également acheter des spécialités supplémentaires en dehors de leur carrière. Le calcul est le même mais il fauda ajouter 10 XP
-          de plus.
+          Chaque personnage commence avec une spécialité de carrière, ce qui ne l'empêche pas d'en acheter d'autres. Quand il s'achète
+          une nouvelle spécialité, il s'ouvre une nouvelle arborescence de Talents. Sans compter que chaque spécialité s'accompagne
+          de compétences de carrière. Le personnage ne dispose pas de rang gratuit comme à la création mais dispose de plus
+          de compétences de carrière (à ajouter aux 8 de bases sur la feuille de personnage).
+          <br /> L'achat d'une spécialité de carrière supplémentaire coûte 10 fois le nombre total de spécialité que le personnage
+          possèdera avec la nouvelle. Ainsi, un personnage pourra s'offrir une seconde carrière de spécialité pour 20 PX.
+          Il devrait débourser 30 PX pour un troisième.
+          <br /> Les personnages peuvent également acheter des spécialités supplémentaires en dehors de leur carrière. Le calcul
+          est le même mais il fauda ajouter 10 XP de plus.
         </p>
       </div>
     </div>
@@ -253,32 +267,40 @@
         <p class="step-title">Calculer attributs dérivés</p>
         <p>Seuil de blessure</p>
         <p>
-          Le <strong>seuil de blessure</strong> est la quantité de dégât que le personnage peut subir avant de sombrer dans l'inconscience. La valeur de départ est
-          égale à la <strong>somme du seuil de blessure</strong> de l'espèce et sa Vigueur (<strong>après</strong> dépenses des XP de départ). Une fois cette somme 
-          calculé, les augmentations de Vigueur ne l'affectent plus. L'amélioration du <strong>seuil de blessure</strong> passe alors par l'achat de Talents comme 
+          Le
+          <strong>seuil de blessure</strong> est la quantité de dégât que le personnage peut subir avant de sombrer dans l'inconscience.
+          La valeur de départ est égale à la
+          <strong>somme du seuil de blessure</strong> de l'espèce et sa Vigueur (
+          <strong>après</strong> dépenses des XP de départ). Une fois cette somme calculé, les augmentations de Vigueur ne l'affectent
+          plus. L'amélioration du
+          <strong>seuil de blessure</strong> passe alors par l'achat de Talents comme
           <span class="sw-talent">Endurcis.</span>
         </p>
         <p>Seuil de stress</p>
         <p>
-          Le <strong>seuil de stress</strong> est la quantité de dégâts psychologiques et mentaux que le personnage peut subir avant d'être étourdi ou complètment neutralisé. 
-          Son seuil de départ en faisant la somme du <strong>seuil de stress</strong> propre à son espèce et sa Volonté (<strong>après</strong> dépense des XP de départ). 
-          Une fois cette somme calculé, les augmentations de Volonté ne l'affectent plus. L'amélioration du <strong>seuil de blessure</strong> passe alors par l'achat 
-          de Talents comme <span class="sw-talent">Robustesse</span>.
+          Le
+          <strong>seuil de stress</strong> est la quantité de dégâts psychologiques et mentaux que le personnage peut subir avant
+          d'être étourdi ou complètment neutralisé. Son seuil de départ en faisant la somme du
+          <strong>seuil de stress</strong> propre à son espèce et sa Volonté (
+          <strong>après</strong> dépense des XP de départ). Une fois cette somme calculé, les augmentations de Volonté ne l'affectent
+          plus. L'amélioration du
+          <strong>seuil de blessure</strong> passe alors par l'achat de Talents comme
+          <span class="sw-talent">Robustesse</span>.
         </p>
 
         <p>Défense</p>
         <p>
-          La défense représente la difficulté qu'on a à toucher un personnage au combat. Il en existe deux types: au corps à corps et à distance. La valeur 
-          par défault d'un personnage est de 0 dans chacune.
-          <br />
-          On en gagne généralement en enfilant un armure ou en adoptant une position défensive (grâce à un abri par exemple). Certains Talents permettent 
-          également d'augmenter l'un des deux valeurs de défenses.
+          La défense représente la difficulté qu'on a à toucher un personnage au combat. Il en existe deux types: au corps à corps
+          et à distance. La valeur par défault d'un personnage est de 0 dans chacune.
+          <br /> On en gagne généralement en enfilant un armure ou en adoptant une position défensive (grâce à un abri par exemple).
+          Certains Talents permettent également d'augmenter l'un des deux valeurs de défenses.
         </p>
 
         <p>Valeur d'encaissement</p>
         <p>
-          La valeur d'encaissement permet d'éviter les blessures sérieuses. On la soutrait simplement aux dégâts subis. La valeur d'encaissement d'un personnage 
-          est égale à sa Vigueur. Elle augmente en même temps que la Vigueur. On peut aussi l'améliorer en portant une armure ou en achetant certains Talents comme 
+          La valeur d'encaissement permet d'éviter les blessures sérieuses. On la soutrait simplement aux dégâts subis. La valeur d'encaissement
+          d'un personnage est égale à sa Vigueur. Elle augmente en même temps que la Vigueur. On peut aussi l'améliorer en
+          portant une armure ou en achetant certains Talents comme
           <span class="sw-talent">Endurant</span>.
           <br />
         </p>

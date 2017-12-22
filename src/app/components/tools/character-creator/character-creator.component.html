@@ -1,5 +1,17 @@
 <div class="container-fluid">
 
+  <nav aria-label="breadcrumb" role="navigation">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a routerLink="/">
+          <i class="ra ra-lg ra-ship-emblem"></i>
+        </a>
+      </li>
+      <li class="breadcrumb-item" aria-current="page">Outil</li>
+      <li class="breadcrumb-item active" aria-current="page">Créateur de personnage</li>
+    </ol>
+  </nav>
+
   <ngx-loading [show]="!isPageLoaded" [config]="{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }"></ngx-loading>
 
   <section *ngIf="isPageLoaded" id="characterCreator">
@@ -7,31 +19,36 @@
     <div class="row page-title">
       <div class="page-title-label">
         <p>Créateur de personnage</p>
+        <p>
+          <small>
+            <em>En cours de développement</em>
+          </small>
+        </p>
       </div>
     </div>
 
     <div class="row">
-      <p class="step-title">1. Sélectionner l'espèce</p>
+      <p class="step-main-title">1. Sélectionner l'espèce</p>
     </div>
 
     <div class="row step-container">
       <div class="col-6">
-        <!--select id="country" formControlName="country" class="form-control" required -->
         <select [(ngModel)]="selectedSpecies" (change)="changeSpecies()">
           <option *ngFor="let s of species" [ngValue]="s">{{ s.label }}</option>
         </select>
-          <div class="row">
-            <div class="col">
-                <img src="assets/images/species/{{ selectedSpecies.key }}.jpg" width="50px" />
-            </div>
-            <div class="col">
-                <p *ngFor="let specialAbility of selectedSpecies.specialAbilityProcess"> {{ specialAbility.label }} </p>
-            </div>
-
+        <div class="row">
+          <div class="col">
+            <img src="assets/images/species/{{ selectedSpecies.key }}.png" width="100px" />
           </div>
+          <div class="col">
+            <p *ngFor="let specialAbility of selectedSpecies.specialAbilityProcess"> {{ specialAbility.label }} </p>
+          </div>
+
+        </div>
       </div>
 
       <div class="col-6">
+        <p class="step-title">Caractérisques</p>
         <p>Vigueur : {{ selectedSpecies.characteristics.brawn }}</p>
         <p>Agilité : {{ selectedSpecies.characteristics.agility }}</p>
         <p>Intelligence : {{ selectedSpecies.characteristics.intellect }}</p>
@@ -42,22 +59,37 @@
     </div>
 
     <div class="row">
-      <p class="step-title">2. Sélectionner la carrière</p>
+      <p class="step-main-title">2. Sélectionner la carrière</p>
     </div>
 
     <div class="row step-container">
       <div class="col-6">
-        <!--select id="country" formControlName="country" class="form-control" required -->
         <select [(ngModel)]="selectedCareer" (change)="changeCareer()">
           <option *ngFor="let c of careers" [ngValue]="c">{{ c.label }}</option>
         </select>
         <p>
-          <img src="assets/images/careers/{{ selectedCareer.key }}.jpg" width="50px" />
+          <img src="assets/images/careers/{{ selectedCareer.key }}.jpg" width="100px" />
         </p>
       </div>
 
       <div class="col-6">
-
+        <p class="step-title">Compétences</p>
+        <div *ngFor="let skill of skills">
+          <div class="row skill">
+            <div class="col">
+              <span>{{ skill.label }}</span>
+            </div>
+          </div>
+            <div class="row align-items-center">
+              <button class="btn btn-primary" type="button" [ngClass]="{ 'disabled': character.skills[skill.key] === 0 }" (click)="downSkill(skill.key)">
+                <i class="fa fa-minus" aria-hidden="true"></i>
+              </button>
+              <ngb-progressbar type="info" [value]="character.skills[skill.key] * 20">{{ character.skills[skill.key] }}</ngb-progressbar>
+              <button class="btn btn-primary" type="button" [ngClass]="{ 'disabled': character.skills[skill.key] === 2 }" (click)="upSkill(skill.key)">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
       </div>
     </div>
 

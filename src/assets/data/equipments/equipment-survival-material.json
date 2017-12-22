@@ -1,35 +1,41 @@
 [
     {
+        "image": "",
         "label": "Combinaison spatiale",
         "price": 100,
         "encombrement": 4,
         "rarety": 1
     },
     {
+        "image": "",
         "label": "Couverture thermique",
         "price": 200,
         "encombrement": 2,
         "rarety": 1
     },
     {
+        "image": "",
         "label": "Kit de survie en cas de crash",
         "price": 300,
         "encombrement": 5,
         "rarety": 2
     },
     {
+        "image": "",
         "label": "Pack de ration",
         "price": 5,
         "encombrement": 0,
         "rarety": 0
     },
     {
+        "image": "",
         "label": "Respirateur",
         "price": 25,
         "encombrement": 1,
         "rarety": 1
     },
     {
+        "image": "",
         "label": "Tente",
         "price": 100,
         "encombrement": 4,

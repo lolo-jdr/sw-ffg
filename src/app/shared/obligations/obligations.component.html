@@ -1,4 +1,7 @@
-<table *ngIf="type === 'obligations' || type === 'duties'" class="table table-hover obligation-table">
+
+<ngx-loading [show]="!isPageLoaded" [config]="{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }"></ngx-loading>
+
+<table *ngIf="isPageLoaded && (type === 'obligations' || type === 'duties')" class="table table-hover obligation-table">
   <thead>
     <tr>
       <th scope="col">D100</th>
@@ -18,7 +21,7 @@
   </tbody>
 </table>
 
-<table *ngIf="type === 'moralities'" class="table table-hover obligation-table">
+<table *ngIf="isPageLoaded && type === 'moralities'" class="table table-hover obligation-table">
   <thead>
     <tr>
       <th scope="col">D100</th>

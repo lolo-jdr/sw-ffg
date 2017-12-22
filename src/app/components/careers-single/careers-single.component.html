@@ -4,6 +4,20 @@
 
   <section *ngIf="isPageLoaded" id="careersSingle">
 
+    <nav aria-label="breadcrumb" role="navigation">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a routerLink="/">
+            <i class="ra ra-lg ra-ship-emblem"></i>
+          </a>
+        </li>
+        <li class="breadcrumb-item">
+          <a routerLink="/careers">Liste des carrières</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">{{ career.label }}</li>
+      </ol>
+    </nav>
+
     <div class="row page-title">
       <div class="page-title-label">
         <p>{{ career.label }}</p>
@@ -42,42 +56,54 @@
     </div>
 
     <div class="row career-specializations">
-      <div class="card-deck">
-        <div class="card" *ngFor="let specialization of career.specialization">
-          <div class="card-body">
-            <div class="card-title">
-              <p class="specialization-label text-center">{{ specialization.label }}</p>
-              <p class="text-center">
-                <small>
-                  <em>{{ specialization.subLabel }}</em>
-                </small>
-              </p>
-            </div>
-            <div class="row career-specialization-skills">
-              <div class="col-sm text-center">
-                <img src="assets/images/careers/specialization/{{ specialization.key }}.png" />
-              </div>
-              <div class="col-sm">
-                <p>
-                  <small>Compétences de spécialisation</small>
-                </p>
-                <p *ngFor="let skill of specialization.skills">
-                  <span>
-                    <small>{{ skill.label }}</small>
-                  </span>
+      <div class="col-sm">
+        <p class="career-specializations-title">Spécialisations de carrière</p>
+        <p class="career-specializations-talents">
+          <small>
+            <em>
+              <a target="_blank" href="{{ careersFilesFolder + career.careerTreeFile }}">Consulter les arbres de talents</a>
+            </em>
+          </small>
+        </p>
+        <div class="card-deck">
+          <div class="card" *ngFor="let specialization of career.specialization">
+            <div class="card-body">
+              <div class="card-title">
+                <p class="specialization-label text-center">{{ specialization.label }}</p>
+                <p class="text-center">
+                  <small>
+                    <em>{{ specialization.subLabel }}</em>
+                  </small>
                 </p>
               </div>
+              <div class="row career-specialization-skills">
+                <div class="col-sm text-center">
+                  <img src="assets/images/careers/specialization/{{ specialization.key }}.png" />
+                </div>
+                <div class="col-sm">
+                  <p>
+                    <small>Compétences de spécialisation</small>
+                  </p>
+                  <p *ngFor="let skill of specialization.skills">
+                    <span>
+                      <small>{{ skill.label }}</small>
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <p class="card-text text-justify" [innerHtml]="specialization.description"></p>
             </div>
-            <p class="card-text text-justify" [innerHtml]="specialization.description"></p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="row career-obligations">
+    <div class="row career-obligations" *ngIf="obligationType">
       <div class="col-sm">
-        <p>Liste des {{ obligationLabel }}</p>
-        <app-obligations type="{{ obligationType }}"></app-obligations>
+        <p class="career-specializations-title">Liste des {{ obligationLabel }}</p>
+        <app-obligations *ngIf="obligationType === 'obligations'" type="obligations"></app-obligations>
+        <app-obligations *ngIf="obligationType === 'duties'" type="duties"></app-obligations>
+        <app-obligations *ngIf="obligationType === 'moralities'" type="moralities"></app-obligations>
       </div>
     </div>
 

@@ -9,6 +9,8 @@ import { ApiService } from '../../services/api.service';
 export class ObligationsComponent implements OnInit {
   @Input() type: string;
 
+  protected isPageLoaded = false;
+
   protected types:any = [];
   protected obligations:any = [];
 
@@ -25,6 +27,7 @@ export class ObligationsComponent implements OnInit {
     if (jsonFilesToLoad) {
       this.api.localResource(jsonFilesToLoad).then(obligations => {
         this.obligations = obligations;
+        this.isPageLoaded = true;
       });
     }
   

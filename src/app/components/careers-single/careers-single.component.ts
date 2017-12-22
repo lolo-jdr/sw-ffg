@@ -17,12 +17,14 @@ export class CareersSingleComponent implements OnInit {
 
   protected obligationLabel:any;
   protected obligationType:any;
+
+  protected careersFilesFolder = ApiService.RESOURCES_CAREERS_FOLDER;
   
   constructor(private route: ActivatedRoute, private api:ApiService, private helper:HelperService) { }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
-      let careerParam = params['career']; // (+) converts string 'id' to a number
+      let careerParam = params['career'];
 
       this.api.localResource(ApiService.CAREERS).then(careers => {
         
@@ -35,7 +37,7 @@ export class CareersSingleComponent implements OnInit {
             if (careerToLoad.universKey === 'eoe') {
               this.obligationLabel = 'obligations';
               this.obligationType = 'obligations';
-            } else if(careerToLoad.universKey === 'aor'){
+            } else if(careerToLoad.universKey === 'aor') {
               this.obligationLabel = 'devoirs';
               this.obligationType = 'duties';
             } else {

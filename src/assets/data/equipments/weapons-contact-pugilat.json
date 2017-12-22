@@ -1,5 +1,6 @@
 [
     {
+        "image": "",
         "label": "Coup-de-poing",
         "skill": "Pugilat",
         "damage": "+1",
@@ -11,10 +12,10 @@
         "rarety": 0,
         "options": [
             { "label": "Désorientation 3" }
-            
         ]
     },
     {
+        "image": "WeaponBRASS.png",
         "label": "Gants à décharge",
         "skill": "Pugilat",
         "damage": "+0",

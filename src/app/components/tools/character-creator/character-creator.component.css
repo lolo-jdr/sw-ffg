@@ -1,4 +1,4 @@
-#characterCreator .step-title {
+#characterCreator .step-main-title {
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -6,4 +6,20 @@
 #characterCreator .step-container img {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#characterCreator .step-container .step-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#characterCreator .step-container .skill {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+ngb-progressbar {
+    min-width: 70px;
+    margin-right: 5px;
+    margin-left: 5px;
 }

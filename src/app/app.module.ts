@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { LoadingModule, ANIMATION_TYPES  } from 'ngx-loading';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ApiService } from './services/api.service';
 import { HelperService } from './services/helper.service';
@@ -25,6 +26,10 @@ import { EquipmentsComponent } from './components/equipments/equipments.componen
 import { EquipmentTableComponent } from './shared/equipment-table/equipment-table.component';
 import { ResourcesComponent } from './components/resources/resources.component';
 import { CharacterCreatorComponent } from './components/tools/character-creator/character-creator.component';
+import { ArmorTableComponent } from './shared/armor-table/armor-table.component';
+import { WeaponsTableComponent } from './shared/weapons-table/weapons-table.component';
+import { ModalImageComponent } from './shared/modal-image/modal-image.component';
+import { ModalService } from './services/modal.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +47,10 @@ import { CharacterCreatorComponent } from './components/tools/character-creator/
     EquipmentsComponent,
     EquipmentTableComponent,
     ResourcesComponent,
-    CharacterCreatorComponent
+    CharacterCreatorComponent,
+    ArmorTableComponent,
+    WeaponsTableComponent,
+    ModalImageComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,11 +59,13 @@ import { CharacterCreatorComponent } from './components/tools/character-creator/
     HttpClientModule,
     LoadingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule.forRoot()
   ],
   providers: [
     ApiService,
-    HelperService
+    HelperService,
+    ModalService
   ],
   bootstrap: [AppComponent]
 })

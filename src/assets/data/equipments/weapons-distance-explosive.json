@@ -1,5 +1,6 @@
 [
     {
+        "image": "WeaponTHERMDET.png",
         "label": "Détonateur thermique",
         "skill": "Distance (Légère)",
         "damage": 20,
@@ -17,6 +18,7 @@
         ]
     },
     {
+        "image": "WeaponFRAGGR.png",
         "label": "Grenade à fragmentation",
         "skill": "Distance (Légère)",
         "damage": 8,
@@ -32,6 +34,7 @@
         ]
     },
     {
+        "image": "WeaponSTUNGR.png",
         "label": "Grenade étourdissante",
         "skill": "Distance (Légère)",
         "damage": 8,
@@ -49,6 +52,7 @@
         ]
     },
     {
+        "image": "WeaponFLAME.png",
         "label": "Lance-flamme",
         "skill": "Distance (Lourde)",
         "damage": 8,
@@ -64,6 +68,7 @@
         ]
     },
     {
+        "image": "WeaponMISS.png",
         "label": "Lance-missile",
         "skill": "Artillerie",
         "damage": 20,

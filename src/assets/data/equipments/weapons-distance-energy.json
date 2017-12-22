@@ -1,5 +1,6 @@
 [
     {
+        "image": "WeaponBLASTHOLD.png",
         "label": "Blaster de poche",
         "skill": "Distance (Légère)",
         "damage": 5,
@@ -14,6 +15,7 @@
         ]
     },
     {
+        "image": "WeaponBLASTLT.png",
         "label": "Pistolet blaster léger",
         "skill": "Distance (Légère)",
         "damage": 5,
@@ -28,6 +30,7 @@
         ]
     },
     {
+        "image": "WeaponBLASTPIS.png",
         "label": "Pistolet Blaster",
         "skill": "Distance (Légère)",
         "damage": 6,
@@ -42,6 +45,7 @@
         ]
     },
     {
+        "image": "WeaponBLASTPISHVY.png",
         "label": "Pistolet Blaster lourd",
         "skill": "Distance (Légère)",
         "damage": 7,
@@ -56,6 +60,7 @@
         ]
     },
     {
+        "image": "WeaponBLASTCARB.png",
         "label": "Carabine Blaster",
         "skill": "Distance (Lourde)",
         "damage": 9,
@@ -70,6 +75,7 @@
         ]
     },
     {
+        "image": "WeaponBLASTCARB.png",
         "label": "Fusil Blaster",
         "skill": "Distance (Lourde)",
         "damage": 9,
@@ -84,6 +90,7 @@
         ]
     },
     {
+        "image": "WeaponBLASTRIFHVY.png",
         "label": "Fusil Blaster lourd",
         "skill": "Distance (Lourd)",
         "damage": 10,
@@ -99,6 +106,7 @@
         ]
     },
     {
+        "image": "WeaponBLASTLTREP.png",
         "label": "Blaster léger à répétition",
         "skill": "Distance (Lourde)",
         "damage": 11,
@@ -115,6 +123,7 @@
         ]
     },
     {
+        "image": "WeaponBLASTHVYREP.png",
         "label": "Blaster lourd à répétition",
         "skill": "Artillerie",
         "damage": 15,
@@ -132,6 +141,7 @@
         ]
     },
     {
+        "image": "WeaponLONGBOW.png",
         "label": "Arbalète",
         "skill": "Distance (Lourde)",
         "damage": 10,
@@ -147,6 +157,7 @@
         ]
     },
     {
+        "image": "WeaponBLASTION.png",
         "label": "Blaster à ionisation",
         "skill": "Distance (Légère)",
         "damage": 10,
@@ -162,6 +173,7 @@
         ]
     },
     {
+        "image": "WeaponDISRPIS.png",
         "label": "Pistolet disrupteur",
         "skill": "Distance (Légère)",
         "damage": 10,
@@ -176,6 +188,7 @@
         ]
     },
     {
+        "image": "WeaponDISRRIF.png",
         "label": "Pistolet disrupteur",
         "skill": "Distance (Lourde)",
         "damage": 10,
