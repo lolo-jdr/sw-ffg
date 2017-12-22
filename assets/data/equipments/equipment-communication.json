@@ -1,17 +1,20 @@
 [
     {
+        "image": "",
         "label": "Comlink (longue-portée)",
         "price": 200,
         "encombrement": 2,
         "rarety": 1
     },
     {
+        "image": "",
         "label": "Comlink (standard)",
         "price": 25,
         "encombrement": 0,
         "rarety": 0
     },
     {
+        "image": "",
         "label": "Holo-disque",
         "price": 250,
         "encombrement": 0,

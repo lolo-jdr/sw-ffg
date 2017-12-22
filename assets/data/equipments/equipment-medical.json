@@ -1,35 +1,41 @@
 [
     {
+        "image": "",
         "label": "Stimpack",
         "price": 25,
         "encombrement": 0,
         "rarety": 1
     },
     {
+        "image": "",
         "label": "Peau synthétique",
         "price": 10,
         "encombrement": 0,
         "rarety": 1
     },
     {
+        "image": "",
         "label": "Médipack de secours",
         "price": 100,
         "encombrement": 1,
         "rarety": 1
     },
     {
+        "image": "",
         "label": "Médipack",
         "price": 400,
         "encombrement": 2,
         "rarety": 2
     },
     {
+        "image": "",
         "label": "Bacta (cuve entière)",
         "price": 4000,
         "encombrement": 12,
         "rarety": 1
     },
     {
+        "image": "",
         "label": "Bacta (litre)",
         "price": 20,
         "encombrement": 1,

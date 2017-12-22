@@ -1,5 +1,6 @@
 [
     {
+        "image": "WeaponSLUGRIF.png",
         "label": "Pistolet à percussion",
         "skill": "Distance (Légère)",
         "damage": 4,
@@ -12,6 +13,7 @@
         "options": []
     },
     {
+        "image": "WeaponSLUGRIF.png",
         "label": "Fusil à percussion",
         "skill": "Distance (Lourde)",
         "damage": 7,

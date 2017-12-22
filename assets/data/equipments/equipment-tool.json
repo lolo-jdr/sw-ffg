@@ -1,59 +1,69 @@
 [
     {
+        "image": "",
         "label": "Bâton luisant",
         "price": 10,
         "encombrement": 1,
         "rarety": 0
     },
     {
+        "image": "",
         "label": "Ceinture multi-usages",
         "price": 25,
         "encombrement": 0,
         "rarety": 0
     },
     {
+        "image": "",
         "label": "Datapad",
         "price": 75,
         "encombrement": 1,
         "rarety": 1
     },
     {
+        "image": "",
         "label": "Jet pack",
         "price": 4500,
         "encombrement": 2,
         "rarety": 7
     },
     {
+        "image": "",
         "label": "Lanterne à fusion",
         "price": 150,
         "encombrement": 2,
         "rarety": 2
     },
     {
+        "image": "",
         "label": "Matériel d'escalade",
         "price": 50,
         "encombrement": 1,
         "rarety": 2
     },
     {
+        "image": "",
         "label": "Munitions / cellules énergétiques",
         "price": 25,
         "encombrement": 1,
         "rarety": 1
     },
     {
+        "image": "",
         "label": "Plaque de réparation d'urgence",
         "price": 25,
         "encombrement": 0,
         "rarety": 1
     },
     {
+        "image": "",
         "label": "Sac à dos",
         "price": 50,
         "encombrement": 0,
         "rarety": 0
     },
     {
+        "image": "",
         "label": "Trousse à outils",
         "price": 350,
         "encombrement": 4,

@@ -1,17 +1,20 @@
 [
     {
+        "image": "",
         "label": "Cubes du destin",
         "price": 1,
         "encombrement": 0,
         "rarety": 0
     },
     {
+        "image": "",
         "label": "Jeu de cartes de Sabacc",
         "price": 40,
         "encombrement": 0,
         "rarety": 0
     },
     {
+        "image": "",
         "label": "Table de Dejarik",
         "price": 350,
         "encombrement": 10,

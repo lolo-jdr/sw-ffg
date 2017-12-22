@@ -1,41 +1,48 @@
 [
     {
+        "image": "",
         "label": "Bouchon d'entrave",
         "price": 35,
         "encombrement": 0,
         "rarety": 0
     },
     {
+        "image": "",
         "label": "Brouilleur",
         "price": 400,
         "encombrement": 4,
         "rarety": 3
     },
     {
+        "image": "",
         "label": "Crypteur",
         "price": 1000,
         "encombrement": 0,
         "rarety": 5
     },
     {
+        "image": "",
         "label": "Matériel de Slicer",
         "price": 500,
         "encombrement": 2,
         "rarety": 4
     },
     {
+        "image": "",
         "label": "Menottes",
         "price": 25,
         "encombrement": 0,
         "rarety": 0
     },
     {
+        "image": "",
         "label": "Passe-partout électronique",
         "price": 1000,
         "encombrement": 1,
         "rarety": 5
     },
     {
+        "image": "",
         "label": "Trousse de déguisement",
         "price": 100,
         "encombrement": 2,

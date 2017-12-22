@@ -1,65 +1,72 @@
 [
     {
+        "image": "",
         "label": "Armure de combat lourde",
         "defense": 1,
-        "Encaissement": 2,
+        "encaissement": 2,
         "price": 5000,
-        "Enc.": 6,
-        "Emp.": 4,
-        "Rarety": 7
+        "enc": 6,
+        "emp": 4,
+        "rarety": 7
     },
     {
+        "image": "",
         "label": "Armure laminée",
         "defense": 0,
-        "Encaissement": 2,
+        "encaissement": 2,
         "price": 2500,
-        "Enc.": 4,
-        "Emp.": 3,
-        "Rarety": ""
+        "enc": 4,
+        "emp": 3,
+        "rarety": ""
     },
     {
+        "image": "",
         "label": "Armure matelassée",
         "defense": 0,
-        "Encaissement": 2,
+        "encaissement": 2,
         "price": 500,
-        "Enc.": 2,
-        "Emp.": 0,
-        "Rarety": ""
+        "enc": 2,
+        "emp": 0,
+        "rarety": ""
     },
     {
+        "image": "",
         "label": "Bouclier déflecteur individuel",
         "defense": 2,
-        "Encaissement": 0,
+        "encaissement": 0,
         "price": 10000,
-        "Enc.": 3,
-        "Emp.": 0,
-        "Rarety": ""
+        "enc": 3,
+        "emp": 0,
+        "rarety": ""
     },
     {
+        "image": "",
         "label": "Tenue d'exploration",
         "defense": 0,
-        "Encaissement": 1,
+        "encaissement": 1,
         "price": 500,
-        "Enc.": 2,
-        "Emp.": 1,
-        "Rarety": ""
+        "enc": 2,
+        "emp": 1,
+        "rarety": ""
     },
     {
+        "image": "",
         "label": "Vêtements reforcés",
         "defense": 1,
-        "Encaissement": 1,
+        "encaissement": 1,
         "price": 1000,
-        "Enc.": 3,
-        "Emp.": 1,
-        "Rarety": ""
+        "enc": 3,
+        "emp": 1,
+        "rarety": ""
     },
     {
+        "image": "",
         "label": "Vêtements épais",
         "defense": 0,
-        "Encaissement": 1,
+        "encaissement": 1,
         "price": 50,
-        "Enc.": 1,
-        "Emp.": 0,
-        "Rarety": ""
+        "enc": 1,
+        "emp": 0,
+        "rarety": ""
     }
 ]
