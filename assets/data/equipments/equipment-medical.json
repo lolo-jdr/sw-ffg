@@ -1,6 +1,6 @@
 [
     {
-        "image": "",
+        "image": "GearSTIMPACK.png",
         "label": "Stimpack",
         "price": 25,
         "encombrement": 0,
@@ -14,14 +14,14 @@
         "rarety": 1
     },
     {
-        "image": "",
+        "image": "GearEMP.png",
         "label": "Médipack de secours",
         "price": 100,
         "encombrement": 1,
         "rarety": 1
     },
     {
-        "image": "",
+        "image": "GearEMP.png",
         "label": "Médipack",
         "price": 400,
         "encombrement": 2,

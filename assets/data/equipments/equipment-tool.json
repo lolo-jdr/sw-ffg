@@ -1,34 +1,34 @@
 [
     {
-        "image": "",
+        "image": "GearGLOWROD.png",
         "label": "Bâton luisant",
         "price": 10,
         "encombrement": 1,
         "rarety": 0
     },
     {
-        "image": "",
+        "image": "GearUTILBELT.png",
         "label": "Ceinture multi-usages",
         "price": 25,
         "encombrement": 0,
         "rarety": 0
     },
     {
-        "image": "",
+        "image": "GearDATAPAD.png",
         "label": "Datapad",
         "price": 75,
         "encombrement": 1,
         "rarety": 1
     },
     {
-        "image": "",
+        "image": "GearJETPACK.png",
         "label": "Jet pack",
         "price": 4500,
         "encombrement": 2,
         "rarety": 7
     },
     {
-        "image": "",
+        "image": "GearFUSLANT.png",
         "label": "Lanterne à fusion",
         "price": 150,
         "encombrement": 2,
@@ -56,14 +56,14 @@
         "rarety": 1
     },
     {
-        "image": "",
+        "image": "GearBACKPACK.png",
         "label": "Sac à dos",
         "price": 50,
         "encombrement": 0,
         "rarety": 0
     },
     {
-        "image": "",
+        "image": "GearTOOLKIT.png",
         "label": "Trousse à outils",
         "price": 350,
         "encombrement": 4,

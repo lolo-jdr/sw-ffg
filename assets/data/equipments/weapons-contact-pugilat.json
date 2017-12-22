@@ -1,6 +1,6 @@
 [
     {
-        "image": "",
+        "image": "WeaponBRASS.png",
         "label": "Coup-de-poing",
         "skill": "Pugilat",
         "damage": "+1",
@@ -15,7 +15,7 @@
         ]
     },
     {
-        "image": "WeaponBRASS.png",
+        "image": "WeaponSHOCKGL.png",
         "label": "Gants à décharge",
         "skill": "Pugilat",
         "damage": "+0",
@@ -27,6 +27,21 @@
         "rarety": 2,
         "options": [
             { "label": "Étourdissement 3" }
+        ]
+    },
+    {
+        "image": "WeaponREFCORTCAUNT.png",
+        "label": "Gantelets en cortosis",
+        "skill": "Pugilat",
+        "damage": "+1",
+        "critic": 4,
+        "distance": "Au contact",
+        "enc": 3,
+        "emp": 2,
+        "price": 1000,
+        "rarety": 7,
+        "options": [
+            { "label": "Cortosis" }
         ]
     }
 ]

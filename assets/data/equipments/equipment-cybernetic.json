@@ -1,52 +1,10 @@
 [
     {
         "image": "",
-        "label": "Arme cybernétique",
-        "price": 4000,
+        "label": "Prothèse réplique (organe)",
+        "price": 1000,
         "encombrement": 0,
-        "rarety": 7
-    },
-    {
-        "image": "",
-        "label": "Armure implantée",
-        "price": 7500,
-        "encombrement": 0,
-        "rarety": 6
-    },
-    {
-        "image": "",
-        "label": "Bras cybernétique (Mod V et Mod VI)",
-        "price": 10000,
-        "encombrement": 0,
-        "rarety": 6
-    },
-    {
-        "image": "",
-        "label": "Bras scanner cybernétique",
-        "price": 4000,
-        "encombrement": 0,
-        "rarety": 7
-    },
-    {
-        "image": "",
-        "label": "Implant cognitif",
-        "price": 10000,
-        "encombrement": 0,
-        "rarety": 6
-    },
-    {
-        "image": "",
-        "label": "Implant immunologique",
-        "price": 5000,
-        "encombrement": 0,
-        "rarety": 6
-    },
-    {
-        "image": "",
-        "label": "Jambes cybernatiques (Mod II et III)",
-        "price": 10000,
-        "encombrement": 0,
-        "rarety": 6
+        "rarety":4 
     },
     {
         "image": "",
@@ -57,15 +15,57 @@
     },
     {
         "image": "",
-        "label": "Prothèse réplique (organe)",
-        "price": 1000,
+        "label": "Arme cybernétique",
+        "price": 4000,
         "encombrement": 0,
-        "rarety":4 
+        "rarety": 7
     },
     {
         "image": "",
+        "label": "Bras scanner cybernétique",
+        "price": 4000,
+        "encombrement": 0,
+        "rarety": 7
+    },
+    {
+        "image": "",
+        "label": "Implant immunologique",
+        "price": 5000,
+        "encombrement": 0,
+        "rarety": 6
+    },
+    {
+        "image": "GearCYEYE.png",
         "label": "Yeux cybernétiques",
         "price": 7500,
+        "encombrement": 0,
+        "rarety": 6
+    },
+    {
+        "image": "",
+        "label": "Armure implantée",
+        "price": 7500,
+        "encombrement": 0,
+        "rarety": 6
+    },
+    {
+        "image": "GearCYARMV.png",
+        "label": "Bras cybernétique (Mod V et Mod VI)",
+        "price": 10000,
+        "encombrement": 0,
+        "rarety": 6
+    },
+    {
+        "image": "GearCYBRAIN.png",
+        "label": "Implant cognitif",
+        "price": 10000,
+        "encombrement": 0,
+        "rarety": 6
+    },
+    {
+        "image": "GearCYLEGII.png",
+        "label": "Jambes cybernatiques (Mod II et III)",
+        "price": 10000,
         "encombrement": 0,
         "rarety": 6
     }

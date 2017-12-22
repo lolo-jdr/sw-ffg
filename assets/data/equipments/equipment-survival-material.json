@@ -21,21 +21,21 @@
         "rarety": 2
     },
     {
-        "image": "",
+        "image": "GearRATION.png",
         "label": "Pack de ration",
         "price": 5,
         "encombrement": 0,
         "rarety": 0
     },
     {
-        "image": "",
+        "image": "GearBREATHM.png",
         "label": "Respirateur",
         "price": 25,
         "encombrement": 1,
         "rarety": 1
     },
     {
-        "image": "",
+        "image": "GearTENT.png",
         "label": "Tente",
         "price": 100,
         "encombrement": 4,

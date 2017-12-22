@@ -52,6 +52,23 @@
         ]
     },
     {
+        "image": "WeaponAPGREN.png",
+        "label": "Grenade perforante anti-armure",
+        "skill": "Distance (Légère)",
+        "damage": 13,
+        "critic": 3,
+        "distance": "Courte",
+        "enc": 1,
+        "emp": 0,
+        "price": 100,
+        "rarety": 6,
+        "options": [
+            { "label": "Munitions limitées 1" },
+            { "label": "Perforant 3" },
+            { "label": "Souffle 4" }
+        ]
+    },
+    {
         "image": "WeaponFLAME.png",
         "label": "Lance-flamme",
         "skill": "Distance (Lourde)",
@@ -84,6 +101,40 @@
             { "label": "Encombrant 3" },
             { "label": "Munitions limitées 6" },
             { "label": "Projectile 8" }
+        ]
+    },
+    {
+        "image": "WeaponAPMINE.png",
+        "label": "Mine antipersonnel",
+        "skill": "Mécanique",
+        "damage": 12,
+        "critic": 3,
+        "distance": "Au contact",
+        "enc": 3,
+        "emp": 0,
+        "price": 850,
+        "rarety": 6,
+        "options": [
+            { "label": "Munitions limitées 1" },
+            { "label": "Sanguinaire 4" },
+            { "label": "Souffle 4" }
+        ]
+    },
+    {
+        "image": "WeaponAVMINE.png",
+        "label": "Mine antivéhicule",
+        "skill": "Mécanique",
+        "damage": 25,
+        "critic": 2,
+        "distance": "Au contact",
+        "enc": 4,
+        "emp": 0,
+        "price": 1400,
+        "rarety": 6,
+        "options": [
+            { "label": "Brèche 4" },
+            { "label": "Munitions limitées 1" },
+            { "label": "Souffle 2" }
         ]
     }
 ]

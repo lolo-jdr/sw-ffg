@@ -28,14 +28,14 @@
         "rarety": 3
     },
     {
-        "image": "",
+        "image": "GearMBIN.png",
         "label": "Macrojumellees",
         "price": 75,
         "encombrement": 1,
         "rarety": 2
     },
     {
-        "image": "",
+        "image": "GearSTAG.png",
         "label": "Traceur",
         "price": 175,
         "encombrement": 0,
