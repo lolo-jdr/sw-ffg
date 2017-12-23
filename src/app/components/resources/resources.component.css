@@ -8,6 +8,12 @@
     margin-bottom: 30px;
 }
 
+#resourcesSection .column-resources .resources-title {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
 #resourcesSection .eoe-talents {
     font-weight: 600;
     color: #cb3434;
