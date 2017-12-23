@@ -1,0 +1,50 @@
+[
+    {
+        "key": "wayfarer",
+        "label": "Cargo Moyen Wayfarer",
+        "image": "wayfarer.jpg",
+        "price": 120000,
+        "rarety": 5,
+        "univers": "eoe"
+    },
+    {
+        "key": "yt-1300",
+        "label": "Cargo léger YT-1300",
+        "image": "yt-1300.png",
+        "price": 100000,
+        "rarety": 4,
+        "univers": "eoe"
+    },
+    {
+        "key": "firespray",
+        "label": "Vaisseau de patrouille Firespray",
+        "image": "firespray.png",
+        "price": 80000,
+        "rarety": 4,
+        "univers": "eoe"
+    },
+    {
+        "key": "lambda-class",
+        "label": "Navette de classe Lambda",
+        "image": "lambda-class.png",
+        "price": 140000,
+        "rarety": 6,
+        "univers": "aor"
+    },
+    {
+        "key": "ywing",
+        "label": "Escadron Y-Wing",
+        "image": "y-wing.png",
+        "price": 80000,
+        "rarety": 4,
+        "univers": "aor"
+    },
+    {
+        "key": "g9rigger",
+        "label": "Cargo léger G-9 Rigger",
+        "image": "g9rigger.jpg",
+        "price": 55000,
+        "rarety": 5,
+        "univers": "fad"
+    }
+]
