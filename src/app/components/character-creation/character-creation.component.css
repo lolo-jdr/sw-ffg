@@ -6,10 +6,21 @@
     padding: 20px;
 }
 
+#characterCreation .background-description {
+    margin-top: 15px;
+}
+
 #characterCreation .step-title {
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 15px;
+}
+
+#characterCreation .step-sub-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-decoration: underline;
 }
 
 #characterCreation .characteristic {

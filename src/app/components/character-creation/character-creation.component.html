@@ -22,36 +22,53 @@
     </div>
 
     <div class="row">
-      <div class="col-12">
-        <p class="step-title">Déterminer le concept et l'historique du personnage</p>
-        <p class="text-justify">
-          Un personnage naît d'abord sous la forme d'une idée. Le joueur veut-il interpréter un vaurien de contrebandier, un chasseur
-          de primes talentueux et redouté, un explorateur de la bordure extérieur de la galaxie ou encore un pilote expert
-          en astrogation, est-il animé par les idéaux de la rébellion ou est-il loyal à l'empire ?
-        </p>
-        <p class="text-justify">
+      <div class="col-12 text-justify">
+        <p class="step-title">1/10 - Déterminer le concept et l'historique du personnage</p>
+        <p class="background-description">
           Avant de commencer, le joueur doit prendre quelque instant et songer au personnage qu'il souhaite élaborer, au passé qu'il
           souhaite lui donner. Nul ne naît complètement construit. Chaque individu est influencé par une vie de décisions
-          et d'évènement.
+          et d'évènements.
+        </p>
+        <p>Un personnage naît d'abord sous la forme d'une idée.</p>
+        <p class="background-description">
+          Dans les bordures extérieures de l'Empire, est-il un vaurien de contrebandier, un chasseur de primes talentueux et redouté,
+          un explorateur de contrées reculées ou un colon à la recherche d'une vie nouvelle.
+        </p>
+        <p class="background-description">
+          Dans la guerre civile galactique opposant l'Alliance Rebelle à l'Empire, est-il un pilote de combat chevronné, un soldant
+          vétéran des champs de batailles, un diplomate œuvrant pour la paix ou un espion en mission. est-il animé par les
+          idéaux de la rébellion ou est-il loyal à l'empire ?
+        </p>
+        <p class="background-description">
+          Après la destruction de l'Ordre Jedi, est-il un vieil ermite vivant à l'écart des Mondes du Noyau, un rescapé de l'ordre
+          66 lors d'une mission secrète, un apprenti ayant perdu son maître ou juste quelqu'un ressentant de manière la Force
+          de manière innée. Utilise-t-il ses pouvoirs pour aider autrui ou, au contraire, afin d'arriver plus vite à ses
+          ambitions.
         </p>
 
-        <p class="list-example">Inspirations :</p>
+        <p class="background-description">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseInspirationExample" aria-expanded="false"
+            aria-controls="collapseInspirationExample">
+            Exemples d'inspirations
+          </button>
+        </p>
 
-        <ul class="fa-ul">
-          <li class="text-justify" *ngFor="let inspiration of inspirations">
-            <i class="fa fa-space-shuttle" aria-hidden="true"></i>
-            <span>{{ inspiration.title }}</span>
-            <span>{{ inspiration.description }}</span>
-          </li>
-        </ul>
+        <div class="collapse" id="collapseInspirationExample">
+          <ul class="fa-ul">
+            <li class="text-justify background-description" *ngFor="let inspiration of inspirations">
+              <i class="fa fa-space-shuttle" aria-hidden="true"></i>
+              <span>{{ inspiration.title }}</span>
+              <span>{{ inspiration.description }}</span>
+            </li>
+          </ul>
+        </div>
 
       </div>
     </div>
 
-
     <div class="row">
       <div class="col-12">
-        <p class="step-title">Déterminer l'espèce du personnage</p>
+        <p class="step-title">2/10 - Déterminer l'espèce du personnage</p>
         <p class="text-justify">
           La galaxie foisonne d’espèces douées de conscience qui ont toutes leur lot de capacités et de croyances. L'
           <strong>espèce d'un personnage</strong>
@@ -63,21 +80,25 @@
           <span class="characteristic">Ruse</span>,
           <span class="characteristic">Volonté</span> et
           <span class="characteristic">Présence</span>
-          - mais également ses seuils de blessures et de stress, ainsi que ses capacités innées, ses bonus et son expérience de départ.
+          - mais également ses
+          <span class="characteristic">seuils de blessures</span> et de
+          <span class="characteristic">stress</span>, ainsi que ses
+          <span class="characteristic">capacités innées</span>, ses bonus et son
+          <span class="characteristic">expérience de départ</span>.
         </p>
-        <p>
+        <p class="text-justify background-description">
           Chaque joueur doit choisir l'espèce de son personnage, avant même sa carrière. Cependant ces deux choix vont de pair et ont
-          une grande influence sur l'histoire du personnage. En effet, chaque espèce fixe les caractéristiques intiales,
+          une grande influence sur l'histoire du personnage. En effet, chaque espèce fixe les caractéristiques initiales,
           mais dispose aussi de capacité(s) spéciale(s) innées qui peuvent influencer les compétences d'une carrière. La
           plupart du temps, le choix d'une espèce permet d'ajouter 1 rang dans une compétence donnée (voir section Carrière).
         </p>
 
-        <p class="clickable link">
+        <p class="clickable link background-description">
           <a routerLink="/species">Liste des espèces</a>&nbsp;
           <i class="fa fa-external-link" aria-hidden="true"></i>
         </p>
 
-        <div data-toggle="collapse" href="#characteristicsPanel" aria-expanded="false" class="clickable link">
+        <div data-toggle="collapse" href="#characteristicsPanel" aria-expanded="false" class="clickable link background-description">
           <p>Voir les caractéristiques&nbsp;
             <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
           </p>
@@ -91,36 +112,30 @@
 
     <div class="row">
       <div class="col-12">
-        <p class="step-title">Choisir une carrière</p>
-        <p class="text-justify">
-          <span>
-            Le personnage doit choisir une carrière (qui ne changera pas) et une spécialité de départ associée. (d'autres pourront être
-            ajoutées - voir section suivante).
-
-          </span>
-          <br />
-          <br />
-          <span>
-            Chaque carrière comporte 8 compétences. Chaque compétence est comprise entre une valeur de 0 à 5 appelée
-            <strong>rang</strong>. Ces compétences doivent être annotées comme compétences de carrière sur la feuille de personnage;
-            elles seront plus faciles à développer que les compétences hors-carrières.
-          </span>
-          <br />
-          <span>
-            Lors de la création, les personnages non sensibles à la Force choississent 4 compétences sont choisies parmi les 8 de carrière.
-            (+DEVELOPPR conrresonsant bacjgroun) Ces quatre compétences obtiennent gratuitement (sans dépenser de point d'expérience)
-            le rang 1. Les carrières des personnages sensibles à la Force ne comportent que 6 compétences, et seulement 3
-            sont choisies et obtiennent le rang 1. En revanche, ils ajoutent 1 rang en Force, correspondant à l'enseignement
-            de la Force.
-            <br /> Une compétence ne peut pas être choisie plusieurs fois.
-          </span>
-          <br />
-          <br />
-          <span>
-            Au cours du jeu, les compétences de carrières seront mois couteuse à améliorer que celles hors carrière.
-          </span>
+        <p class="step-title">3/20 - Choisir une carrière</p>
+        <p class="text-justify background-description">
+          Le personnage doit choisir une carrière (qui ne changera pas) et une spécialité de départ associée. (d'autres pourront être
+          ajoutées - voir section suivante).
         </p>
-        <p class="clickable link">
+        <p class="text-justify background-description">
+          Chaque carrière comporte 8 compétences (ou 6 pour les utilisateurs de la Force). Chaque compétence est comprise entre une
+          valeur de 0 à 5 appelée
+          <strong>rang</strong>. Ces compétences doivent être annotées comme compétences de carrière sur la feuille de personnage;
+          elles seront plus faciles à développer que les compétences hors-carrières.
+        </p>
+        <p class="text-justify background-description">
+          Lors de la création, les personnages non sensibles à la Force choississent 4 compétences sont choisies parmi les 8 de carrière.
+          Ces quatre compétences s'obtiennent gratuitement (sans dépenser de point d'expérience) le
+          <strong>rang 1</strong>.
+          <br />Les carrières des personnages sensibles à la Force ne comportent que 6 compétences, et seulement 3 sont choisies
+          et obtiennent le rang 1. En revanche, ils ajoutent
+          <strong>1 rang en Force</strong>, correspondant à l'enseignement de la Force.
+          <br />Une compétence ne peut pas être choisie plusieurs fois.
+        </p>
+        <p class="text-justify background-description">
+          Au cours du jeu, les compétences de carrières seront mois couteuse à améliorer que celles hors carrière.
+        </p>
+        <p class="clickable link background-description">
           <a routerLink="/careers">Liste des carrières</a>&nbsp;
           <i class="fa fa-external-link" aria-hidden="true"></i>
         </p>
@@ -129,38 +144,44 @@
 
     <div class="row">
       <div class="col-12">
-        <p class="step-title">Choisir une spécialité de carrière</p>
-        <p>
-          <span>
-            Chaque carrière s'accompagne de spécialités qui conférent des capacités spéciales : les talents. A sa création, chaque personnage
-            a accès à une spécialité gratuite qui découle de sa carrière.
-          </span>
-          <br />
-          <br />
-          <span>
-            Chaque spécialité comporte également 4 compétences de carrière supplémentaires qui doivent être notées en tant que telles
-            sur la feuille de personnage. Le joueur doit choisir 2 compétences parmis ces compétences et obtient 1 rang dans
-            chacune (sans dépenser de points d'expérience). Une compétence de spécialité ne peut pas être choisie plusieurs
-            fois. En revanche, il peut développer une compétence déjà choisie lors du choix de sa carrière, auquel cas le
-            rang passe à 2.
-          </span>
+        <p class="step-title">4/10 - Choisir une spécialité de carrière</p>
+        <p class="text-justify background-description">
+          Chaque carrière s'accompagne de spécialités qui conférent des capacités spéciales : les t
+          <strong>alents</strong>. A sa création, chaque personnage choisie une spécialité de départ (gratuite) qui découle de sa
+          carrière.
+        </p>
+        <p class="text-justify background-description">
+          Chaque spécialité comporte également 4 compétences de carrière supplémentaires qui doivent être notées en tant que telles
+          sur la feuille de personnage. Le joueur doit choisir 2 compétences parmis ces compétences et obtient 1 rang dans
+          chacune (sans dépenser de points d'expérience). Une compétence de spécialité ne peut pas être choisie plusieurs
+          fois. En revanche, il peut développer une compétence déjà choisie lors du choix de sa carrière, auquel cas le rang
+          passe à 2.
         </p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-12">
-        <p class="step-title">Choisir une obligation / devoir / moralité</p>
-        <p>
-          <span>
-
-          </span>
+        <p class="step-title">5/10 - Choisir une obligation, un devoir ou une moralité</p>
+        <p class="text-justify background-description">
+          Afin d'enrichir l'histoire du personnage et influencer le scénario, chaque personnage doit choisir une obligation, un devoir
+          ou une moralité.
         </p>
-        <br />
-        <p>
-          <span>
-            Le joueur peut choisir son obligation, son devoir ou sa moralité.
-          </span>
+        <p class="text-justify background-description">
+          Les personnages habitant les Bordures Extérieures doivent choisir une obligation, représentant toutes les dettes ou contraintes 
+          accumulées par le personnage.
+        </p>
+        <p class="text-justify background-description">
+          Dans l'Alliance Rebelle, le Devoir mesure l'implication du personnage dans la cause rebelle et son influence
+        </p>
+        <p class="text-justify background-description">
+          Pour un utilisateur de la Force, la Moralité est la mesure du bien et du mal. Elle permet de situer le personnage sur le côté 
+          de la Force auquel il est sous influence.
+        </p>
+        <p class="text-justify background-description">
+          Chaque Obligation, Devoir ou Moralité d'un personnage comporte une valeur qui est cumulée en une valeur d'obligation de groupe. 
+          En début de partie, un dé est lancé. Si le résultat du jet dépassé la valeur du groupe, les PJ ne sont pas opportunités par leur 
+          Obligation, Devoir ou Moralité. Tout du moins pour l'instant.   
         </p>
 
         <div data-toggle="collapse" href="#obligations" aria-expanded="false" class="clickable link">
@@ -195,29 +216,37 @@
 
     <div class="row">
       <div class="col-12">
-        <p class="step-title">Choisir une motivation</p>
-        <p>
-          <span>
-            Les motivations représentent ce qui pousse le personnage à mener cette vie.
-          </span>
+        <p class="step-title">6-10 / Choisir une Motivation</p>
+        <p class="text-justify background-description">
+          Les <strong>Obligations</strong>, <strong>Devoirs</strong> et <strong>Moralités</strong> sont complétés par une 
+          <strong>Motivation</strong> qui définit un objectif à long terme du personnage. Elle est utilisée en jeu comme, par exemple, 
+          un bonus à la résolution d'une action quand la <strong>Motivation</strong> d'un personnage intervient.
         </p>
+
+        <div data-toggle="collapse" href="#motivations" aria-expanded="false" class="clickable link disabled">
+          <p>Voir la liste des Motivations&nbsp;
+            <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+          </p>
+          <p><small><em>(en cours d'écriture)</em></small></p>
+        </div>
+        <div class="collapse" id="motivations">
+          <app-obligations type="obligations"></app-obligations>
+        </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-12 text-justify">
-        <p class="step-title">Investir les points d'expériences</p>
-        <p>
-          <span>
-            Les personnages commencent avec un capital de XP dépendant de leur espèce. Les points d'expérience disponible à la création
-            de personnage sont identiques à ceux gagnés pendant le jeu. Tout point non dépensé à la création peut être conservé
-            pour une utilisateur ultérieure.
-            <br /> Il existe 4 façons d'utiliser ses points d'expérience.
-          </span>
+        <p class="step-title">7/10 - Investir les points d'expériences</p>
+        <p class="text-justify background-description">
+          Les personnages commencent avec un capital de XP dépendant de leur espèce. Les points d'expérience disponible à la création
+          de personnage sont identiques à ceux gagnés pendant le jeu. Tout point non dépensé à la création peut être conservé
+          pour une utilisateur ultérieure.
+          <br /> Il existe 4 façons d'utiliser ses points d'expérience.
         </p>
 
-        <p>1. Améliorer une caractéristique</p>
-        <p>
+        <p class="step-sub-title">1. Améliorer une caractéristique</p>
+        <p class="text-justify background-description">
           <span>Lors de la création de personnage, faire monter un caractéristique au rang suivant coûte 10 fois la valeur à atteindre.
             Chaque augmentation doit être acheté séparément.</span>
           <br />
@@ -231,8 +260,8 @@
             ne peut dépasser le rang 6.</span>
         </p>
 
-        <p>2. Améliorer une compétences</p>
-        <p>
+        <p class="step-sub-title">2. Améliorer une compétences</p>
+        <p class="text-justify background-description">
           Chaque compétence est divisée en 5 rangs. Un personnage peut débuter avec 1 ou 2 rangs gratuits, grâce à sa carrière et sa
           capacité spéciale dûe à l'espèce. Le coût d'une compétence dépend si elle est de carrière ou hors carrière.
           <br />
@@ -241,14 +270,14 @@
           <span>Une compétence hors carrière coûte 5 XP de plus.</span>
         </p>
 
-        <p>3. Acquérir des talents</p>
-        <p>
+        <p class="step-sub-title">3. Acquérir des talents</p>
+        <p class="text-justify background-description">
           Les Talents sont à choisir dans les arborescences de spécialités du personnage (consultable dans les pages de carrière).
           Chaque entrée de l'arborescence ne peut être acheter qu'une seule fois. Son coût est indiqué sur chaque entrée.
         </p>
 
-        <p>4. Acquérir une nouvelle spécialité</p>
-        <p>
+        <p class="step-sub-title">4. Acquérir une nouvelle spécialité</p>
+        <p class="text-justify background-description">
           Chaque personnage commence avec une spécialité de carrière, ce qui ne l'empêche pas d'en acheter d'autres. Quand il s'achète
           une nouvelle spécialité, il s'ouvre une nouvelle arborescence de Talents. Sans compter que chaque spécialité s'accompagne
           de compétences de carrière. Le personnage ne dispose pas de rang gratuit comme à la création mais dispose de plus
@@ -259,14 +288,23 @@
           <br /> Les personnages peuvent également acheter des spécialités supplémentaires en dehors de leur carrière. Le calcul
           est le même mais il fauda ajouter 10 XP de plus.
         </p>
+
+        <p class="step-sub-title">Obtenir plus d'XP</p>
+        <p class="text-justify background-description">
+          Il est possible d'obtenir plus d'XP lors de la création de personnage, en contrepartie d'une augmentation de la valeur d'Obligation,  
+          Devoir ou Moralité.
+          <br /> +5 PX de départ&nbsp; : Obligation + 5
+          <br /> +10 PX de départ : Obligation + 10
+        </p>
+
       </div>
     </div>
 
     <div class="row">
       <div class="col-12">
-        <p class="step-title">Calculer attributs dérivés</p>
-        <p>Seuil de blessure</p>
-        <p>
+        <p class="step-title">8/10 - Calculer attributs dérivés</p>
+        <p class="step-sub-title">Seuil de blessure</p>
+        <p class="text-justify background-description">
           Le
           <strong>seuil de blessure</strong> est la quantité de dégât que le personnage peut subir avant de sombrer dans l'inconscience.
           La valeur de départ est égale à la
@@ -276,8 +314,8 @@
           <strong>seuil de blessure</strong> passe alors par l'achat de Talents comme
           <span class="sw-talent">Endurcis.</span>
         </p>
-        <p>Seuil de stress</p>
-        <p>
+        <p class="step-sub-title">Seuil de stress</p>
+        <p class="text-justify background-description">
           Le
           <strong>seuil de stress</strong> est la quantité de dégâts psychologiques et mentaux que le personnage peut subir avant
           d'être étourdi ou complètment neutralisé. Son seuil de départ en faisant la somme du
@@ -288,16 +326,16 @@
           <span class="sw-talent">Robustesse</span>.
         </p>
 
-        <p>Défense</p>
-        <p>
+        <p class="step-sub-title">Défense</p>
+        <p class="text-justify background-description">
           La défense représente la difficulté qu'on a à toucher un personnage au combat. Il en existe deux types: au corps à corps
           et à distance. La valeur par défault d'un personnage est de 0 dans chacune.
           <br /> On en gagne généralement en enfilant un armure ou en adoptant une position défensive (grâce à un abri par exemple).
           Certains Talents permettent également d'augmenter l'un des deux valeurs de défenses.
         </p>
 
-        <p>Valeur d'encaissement</p>
-        <p>
+        <p class="step-sub-title">Valeur d'encaissement</p>
+        <p class="text-justify background-description">
           La valeur d'encaissement permet d'éviter les blessures sérieuses. On la soutrait simplement aux dégâts subis. La valeur d'encaissement
           d'un personnage est égale à sa Vigueur. Elle augmente en même temps que la Vigueur. On peut aussi l'améliorer en
           portant une armure ou en achetant certains Talents comme
@@ -309,23 +347,40 @@
 
     <div class="row">
       <div class="col-12">
-        <p class="step-title">Choisir son équipement</p>
-        <p>
-          <span>
-            Description équipement
-          </span>
+        <p class="step-title">9/10 - Choisir son équipement et son apparance</p>
+        <p class="text-justify background-description">
+          Avant que le jeu ne débute, les personnages reçoivent 500 crédits pour acheter leur équipement de départ.
         </p>
+        <p class="step-sub-title">Obtenir plus de crédit</p>
+        <p class="text-justify background-description">
+          Il est possible d'obtenir plus de crédits lors de la création de personnage, en contrepartie d'une augmentation de la valeur d'Obligation,  
+          Devoir ou Moralité.
+          <br /> +1000 crédits de départ&nbsp; : Obligation + 5
+          <br /> +2500 crédits de départ : Obligation + 10
+        </p>
+        <p class="text-justify background-description">
+            L'apparance des personnage est définie à cette étape : taille, pois, carrure, couleurs des yeux et des cheveux, cicatrices, 
+            tatouages et autres signes particuliers.
+          </p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-12">
-        <p class="step-title">Choisir son vaisseau / véhicule</p>
-        <p>
-          <span>
-            Description vaisseau véhicule
-          </span>
+        <p class="step-title">10/10 - Choisir son vaisseau / véhicule</p>
+        <p class="text-justify background-description">
+          Chaque groupe commence avec un vaisseau dans le cadre de son Obligation, Devoir ou Moralité.
+          <br /><em>Pour plus de type de vaisseaux, voir avec le MJ.</em>
         </p>
+        <div data-toggle="collapse" href="#vehicules" aria-expanded="false" class="clickable link disabled">
+          <p>Voir les véhicules&nbsp;
+            <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+          </p>
+          <p><small><em>(en cours d'écriture - manque caractérisques)</em></small></p>
+        </div>
+        <div class="collapse" id="vehicules">
+          <app-vehicules-table filter=""></app-vehicules-table>
+        </div>
       </div>
     </div>
 

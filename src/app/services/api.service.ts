@@ -11,6 +11,8 @@ export class ApiService {
 
   public static EQUIPMENT_FOLDER = 'assets/data/equipments/';
   public static EQUIPMENT_IMG_FOLDER = 'assets/images/equipments/';
+  public static VEHICULES_FOLDER = 'assets/data/vehicules/';
+  public static VEHICULES_IMG_FOLDER = 'assets/images/vehicules/';
   public static RESOURCES_CAREERS_FOLDER = 'assets/resources/files/careers/';
   public static RESOURCES_CHARACTERS_FOLDER = 'assets/resources/files/characters/';
 

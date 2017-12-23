@@ -30,6 +30,8 @@ import { ArmorTableComponent } from './shared/armor-table/armor-table.component'
 import { WeaponsTableComponent } from './shared/weapons-table/weapons-table.component';
 import { ModalImageComponent } from './shared/modal-image/modal-image.component';
 import { ModalService } from './services/modal.service';
+import { VehiculesTableComponent } from './shared/vehicules-table/vehicules-table.component';
+import { MotivationsTableComponent } from './shared/motivations-table/motivations-table.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +53,8 @@ import { ModalService } from './services/modal.service';
     ArmorTableComponent,
     WeaponsTableComponent,
     ModalImageComponent,
+    VehiculesTableComponent,
+    MotivationsTableComponent,
   ],
   imports: [
     BrowserModule,

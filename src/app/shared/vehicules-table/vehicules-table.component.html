@@ -1,0 +1,21 @@
+<table class="table table-responsive vehicule-table">
+    <thead>
+      <tr>
+        <th scope="col">Nom</th>
+        <th scope="col" class="text-center">Visuel</th>
+        <th scope="col">Prix</th>
+        <th scope="col">Rareté</th>
+      </tr>
+    </thead>
+    <tbody role="tabpanel">
+      <tr *ngFor="let vehicule of vehicules">
+        <td scope="row">{{ vehicule.label }}</td>
+        <td class="text-center">
+          <p *ngIf="vehicule.image !== ''"><img src="{{ vehiculesImagesFolder + vehicule.image }}" (click)="openImage(vehiculesImagesFolder + vehicule.image, vehicule.label)" /></p>
+          <p *ngIf="vehicule.image === ''">-</p>
+        </td>
+        <td>{{ vehicule.price }}</td>
+        <td>{{ vehicule.rarety }}</td>
+      </tr>
+    </tbody>
+  </table>
