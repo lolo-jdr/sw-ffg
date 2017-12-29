@@ -1,152 +1,240 @@
 [
     {
-        "key": "athletics",
-        "label": "Athlétisme",
+        "key": "gunnery",
+        "label": "Artillerie",
         "description": "",
-        "characteristic": ""
+        "characteristic": "agility",
+        "type": "combat"
     },
     {
         "key": "astrogation",
         "label": "Astrogation",
         "description": "",
-        "characteristic": ""
+        "characteristic": "intellect",
+        "type": "general"
     },
     {
-        "key": "calm",
+        "key": "athletics",
+        "label": "Athlétisme",
+        "description": "",
+        "characteristic": "brawn",
+        "type": "general"
+    },
+    {
+        "key": "outerRim",
+        "label": "Bordure extérieure",
+        "description": "",
+        "characteristic": "intellect",
+        "type": "knowledge"
+    },
+    {
+        "key": "cool",
         "label": "Calme",
         "description": "",
-        "characteristic": ""
+        "characteristic": "presence",
+        "type" :"general"
     },
     {
         "key": "charm",
         "label": "Charme",
         "description": "",
-        "characteristic": ""
+        "characteristic": "presence",
+        "type" :"general"
     },
     {
-        "key": "coercition",
+        "key": "coercion",
         "label": "Coercition",
         "description": "",
-        "characteristic": ""
+        "characteristic": "willpower",
+        "type" :"general"
     },
     {
-        "key": "commandement",
+        "key": "leadership",
         "label": "Commandement",
         "description": "",
-        "characteristic": ""
+        "characteristic": "presence",
+        "type" :"general"
     },
     {
         "key": "coordination",
         "label": "Coordination",
         "description": "",
-        "characteristic": ""
+        "characteristic": "agility",
+        "type" :"general"
     },
     {
         "key": "brawl",
         "label": "Corps à corps",
         "description": "",
-        "characteristic": ""
+        "characteristic": "brawn",
+        "type" :"combat"
     },
     {
-        "key": "discret",
+        "key": "lore",
+        "label": "Culture",
+        "description": "",
+        "characteristic": "intellect",
+        "type" :"knowledge"
+    },
+    {
+        "key": "stealth",
         "label": "Discrétion",
         "description": "",
-        "characteristic": ""
+        "characteristic": "agility",
+        "type" :"general"
     },
     {
-        "key": "distanceHeavy",
+        "key": "rangedHeavy",
         "label": "Distance (armes lourdes)",
         "description": "",
-        "characteristic": ""
+        "characteristic": "agility",
+        "type" :"combat"
     },
     {
-        "key": "distanceLight",
+        "key": "rangedLight",
         "label": "Distance (armes légères)",
         "description": "",
-        "characteristic": ""
+        "characteristic": "agility",
+        "type" :"combat"
     },
     {
-        "key": "computer",
+        "key": "education",
+        "label": "Éducation",
+        "description": "",
+        "characteristic": "intellect",
+        "type": "knowledge"
+    },
+    {
+        "key": "computers",
         "label": "Informatique",
         "description": "",
-        "characteristic": ""
+        "characteristic": "intellect",
+        "type": "general"
     },
     {
-        "key": "magouilles",
+        "key": "skullduggery",
         "label": "Magouilles",
         "description": "",
-        "characteristic": ""
+        "characteristic": "cunning",
+        "type": "general"
     },
     {
-        "key": "mecanics",
+        "key": "mechanics",
         "label": "Mécanique",
         "description": "",
-        "characteristic": ""
+        "characteristic": "intellect",
+        "type": "general"
     },
     {
-        "key": "medecine",
+        "key": "medicine",
         "label": "Médecine",
         "description": "",
-        "characteristic": ""
+        "characteristic": "intellect",
+        "type": "general"
     },
     {
-        "key": "neociation",
+        "key": "coreWorlds",
+        "label": "Mondes du Noyau",
+        "description": "",
+        "characteristic": "intellect",
+        "type": "knowledge"
+    },
+    {
+        "key": "negotiation",
         "label": "Négociation",
         "description": "",
-        "characteristic": ""
+        "characteristic": "presence",
+        "type": "general"
+    },
+    {
+        "key": "underworld",
+        "label": "Pègre",
+        "description": "",
+        "characteristic": "intellect",
+        "type": "knowledge"
     },
     {
         "key": "perception",
         "label": "Perception",
         "description": "",
-        "characteristic": ""
+        "characteristic": "cunning",
+        "type": "general"
     },
     {
-        "key": "pilotPlanet",
+        "key": "pilotingSpace",
+        "label": "Pilotage (espace)",
+        "description": "",
+        "characteristic": "agility",
+        "type": "general"
+    },
+    {
+        "key": "pilotingPlanetary",
         "label": "Pilotage (planétaire)",
         "description": "",
-        "characteristic": ""
+        "characteristic": "agility",
+        "type": "general"
     },
     {
-        "key": "pugilat",
+        "key": "melee",
         "label": "Pugilat",
         "description": "",
-        "characteristic": ""
+        "characteristic": "brawn",
+        "type": "combat"
     },
     {
-        "key": "resistance",
+        "key": "resilience",
         "label": "Résistance",
         "description": "",
-        "characteristic": ""
+        "characteristic": "brawn",
+        "type": "general"
     },
     {
-        "key": "sanFroid",
+        "key": "discipline",
         "label": "Sang-froid",
         "description": "",
-        "characteristic": ""
+        "characteristic": "willpower",
+        "type": "general"
+    },
+    {
+        "key": "warfare",
+        "label": "Stratégie",
+        "description": "",
+        "characteristic": "intellect",
+        "type": "knowledge"
     },
     {
         "key": "survival",
         "label": "Survie",
         "description": "",
-        "characteristic": ""
+        "characteristic": "cunning",
+        "type": "general"
     },
     {
         "key": "streetwise",
         "label": "Système D",
         "description": "",
-        "characteristic": ""
+        "characteristic": "cunning",
+        "type": "general"
     },
     {
-        "key": "tromperie",
+        "key": "deception",
         "label": "Tromperie",
         "description": "",
-        "characteristic": ""
+        "characteristic": "cunning",
+        "type": "general"
     },
     {
         "key": "vigilance",
         "label": "Vigilance",
         "description": "",
-        "characteristic": ""
+        "characteristic": "willpower",
+        "type": "general"
+    },
+    {
+        "key": "xenology",
+        "label": "Xénologie",
+        "description": "",
+        "characteristic": "intellect",
+        "type": "knowledge"
     }
 ]

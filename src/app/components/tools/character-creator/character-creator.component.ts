@@ -19,8 +19,9 @@ export class CharacterCreatorComponent implements OnInit {
   protected skills: any[] = [];
 
   protected character = {
-    species: '',
-    career: '',
+    species: { specialAbilityProcess: [] },
+    career: { specialization: [] },
+    specialization : {},
     characteristics : {
       brawn: 2,
       agility: 2,
@@ -34,6 +35,7 @@ export class CharacterCreatorComponent implements OnInit {
 
   protected selectedSpecies:any;
   protected selectedCareer:any;
+  protected selectedSpecialization:any;
 
   constructor(private api:ApiService, private helper:HelperService) { 
      // Populate second levels lists
@@ -51,7 +53,16 @@ export class CharacterCreatorComponent implements OnInit {
 
       // Instanciate character
       this.skills.forEach(skill => {
-        this.character.skills[skill.key.toString()] = 1;
+        this.character.skills.push({ 
+          "key": skill.key,
+          "label": skill.label,
+          "value": 0,
+          "career": false,
+          "specialization": false,
+          "species": false,
+          "selectedCareer": false,
+          "selectedSpecialization": false
+        });
       });
 
       console.log(this.character);
@@ -86,27 +97,92 @@ export class CharacterCreatorComponent implements OnInit {
     this.character.characteristics.cunning = this.selectedSpecies.characteristics.cunning;
     this.character.characteristics.willpower = this.selectedSpecies.characteristics.willpower;
     this.character.characteristics.presence = this.selectedSpecies.characteristics.presence;
-    this.isPageLoaded = true;
+
+    // Set species skills + talents
+    // If only one -> automap 
+    if (this.character.species.specialAbilityProcess.length === 1) {
+      var speciesSkillKey = this.character.species.specialAbilityProcess[0].skillKey;
+      var skill = this.character.skills.find(s => s.key === speciesSkillKey );
+      skill.value++;
+      skill.species = true;
+    }
   }
 
   protected changeCareer() {
     this.character.career = this.selectedCareer;
+
+    // Change specialization
+    this.selectedSpecialization = this.character.career.specialization[0];
+    
+    console.log('Selected career');
+    console.log(this.selectedCareer);
+    console.log(this.character);
+
+    this.resetCharacterSkills();
+    
+    // TODO : add skills from species
+
+    // Add new career skills
+    this.selectedCareer.skills.forEach(skill => {
+      this.character.skills.find(s => s.key === skill.key.toString() ).career = true;
+    });
+
+    // Add new specialization skills
+    this.changeSpecialization();
+
+    this.character.skills.sort(HelperService.sortArrayByProperty('career', false));
   }
 
-  protected upSkill(key) {
-    if (this.character.skills[key] + 1 <= 2) {
-      this.character.skills[key]++;
-    } else {
-      console.log(key + ' is at maximum value');
+  protected changeSpecialization() {
+    this.character.specialization = this.selectedSpecialization;
+    this.selectedSpecialization.skills.forEach(skill => {
+      this.character.skills.find(s => s.key === skill.key.toString() ).specialization = true;
+    });
+  }
+
+  protected upSkillCa(skill) {
+    if (skill.value + 1 <= 2 && this.countSelectedCareers() < 4) {
+      skill.value++;
+      skill.selectedCareer = true;
     }
   }
 
-  protected downSkill(key) {
-    if (this.character.skills[key] -1 >= 0) {
-      this.character.skills[key]--;
-    } else {
-      console.log(key + ' is at minium value');
+  protected downSkillCa(skill) {
+    if (skill.value - 1 >= 0) {
+      skill.value--;
+      skill.selectedCareer = false;
     }
+  }
+
+  protected upSkillSp(skill) {
+    if (skill.value + 1 <= 2 && this.countSelectedSpecializations() < 3) {
+      skill.value++;
+      skill.selectedSpecialization = true;
+    }
+  }
+
+  protected downSkillSp(skill) {
+    if (skill.value - 1 >= 0) {
+      skill.value--;
+      skill.selectedSpecialization = false;
+    }
+  }
+
+  private resetCharacterSkills() {
+    if (this.skills && this.character && this.character.skills) {
+      this.character.skills.forEach(skill => {
+        skill.career = false;
+        skill.specialization = false;
+      });
+    }
+  }
+
+  protected countSelectedCareers() {
+    return this.character.skills.filter(s => s.career && s.selectedCareer).length;
+  }
+
+  protected countSelectedSpecializations() {
+    return this.character.skills.filter(s => s.specialization && s.selectedSpecialization).length;
   }
 
 }

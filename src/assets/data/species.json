@@ -227,7 +227,7 @@
       "specialAbilityProcess": [
         { 
           "label": "+1 Pilotage (espace)",
-          "skillKey": "piloting_space"
+          "skillKey": "pilotingSpace"
          }
       ],
       "otherAbilities": [
@@ -318,7 +318,7 @@
       "specialAbilityProcess": [
         { 
           "label": "+1 Connaissance (Éducation)",
-          "skillKey": "knowledge_education"
+          "skillKey": "education"
          }
       ],
       "otherAbilities": [
@@ -401,7 +401,7 @@
       "specialAbilityProcess": [
         { 
           "label": "+1 Connaissance (éducation)",
-          "skillKey": "knowledge_education"
+          "skillKey": "education"
          }
       ],
       "otherAbilities": [

@@ -59,7 +59,7 @@
     </div>
 
     <div class="row">
-      <p class="step-main-title">2. Sélectionner la carrière</p>
+      <p class="step-main-title">2. Sélectionner carrière et spécialité</p>
     </div>
 
     <div class="row step-container">
@@ -67,29 +67,65 @@
         <select [(ngModel)]="selectedCareer" (change)="changeCareer()">
           <option *ngFor="let c of careers" [ngValue]="c">{{ c.label }}</option>
         </select>
-        <p>
-          <img src="assets/images/careers/{{ selectedCareer.key }}.png" width="100px" />
-        </p>
+        <div class="row">
+          <div class="col">
+            <img src="assets/images/careers/{{ selectedCareer.key }}.png" width="100px" />
+          </div>
+          <div class="col">
+            <ng-container *ngFor="let skill of character.skills">
+              <p *ngIf="skill.career">
+                <button *ngIf="skill.selectedCareer" class="btn btn-skill btn-career" type="button" [disabled]="skill.value === 0" (click)="downSkillCa(skill)">
+                  <i class="fa fa-minus" aria-hidden="true"></i>
+                </button>
+                <button *ngIf="!skill.selectedCareer" class="btn btn-skill btn-career" type="button" [disabled]="skill.value === 2 || skill.selectedCareer || countSelectedCareers() > 3"
+                  (click)="upSkillCa(skill)">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+                <span [ngClass]="{ 'skill-selected': skill.selectedCareer }">{{ skill.label }}</span>
+              </p>
+            </ng-container>
+          </div>
+        </div>
+
+        <select [(ngModel)]="selectedSpecialization" (change)="changeSpecialization()">
+          <option *ngFor="let sp of selectedCareer.specialization" [ngValue]="sp">{{ sp.label }}</option>
+        </select>
+
+        <div class="row">
+          <div class="col">
+            <img src="assets/images/careers/specialization/{{ selectedSpecialization.key }}.png" width="100px" />
+          </div>
+          <div class="col">
+            <ng-container *ngFor="let skill of character.skills">
+              <p *ngIf="skill.specialization">
+                <button *ngIf="skill.selectedSpecialization" class="btn btn-skill btn-specialization" type="button" [disabled]="skill.value === 0" (click)="downSkillSp(skill)">
+                  <i class="fa fa-minus" aria-hidden="true"></i>
+                </button>
+                <button *ngIf="!skill.selectedSpecialization" class="btn btn-skill btn-specialization" type="button" [disabled]="skill.value === 2 || skill.selectedSpecialization || countSelectedSpecializations() > 1"
+                  (click)="upSkillSp(skill)">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+                <span [ngClass]="{ 'specialization-selected': skill.selectedSpecialization }">{{ skill.label }}</span>
+              </p>
+            </ng-container>
+          </div>
+        </div>
       </div>
 
       <div class="col-6">
         <p class="step-title">Compétences</p>
-        <div *ngFor="let skill of skills">
-          <div class="row skill">
-            <div class="col">
-              <span>{{ skill.label }}</span>
+        <div *ngFor="let skill of character.skills">
+          <ng-container *ngIf="skill.career || skill.specialization || skill.species">
+            <div class="row skill">
+              <div class="col">
+                <span>{{ skill.label }}</span>
+              </div>
             </div>
-          </div>
             <div class="row align-items-center">
-              <button class="btn btn-primary" type="button" [ngClass]="{ 'disabled': character.skills[skill.key] === 0 }" (click)="downSkill(skill.key)">
-                <i class="fa fa-minus" aria-hidden="true"></i>
-              </button>
-              <ngb-progressbar type="info" [value]="character.skills[skill.key] * 20">{{ character.skills[skill.key] }}</ngb-progressbar>
-              <button class="btn btn-primary" type="button" [ngClass]="{ 'disabled': character.skills[skill.key] === 2 }" (click)="upSkill(skill.key)">
-                <i class="fa fa-plus" aria-hidden="true"></i>
-              </button>
+              <ngb-progressbar type="info" [value]="skill.value * 20">{{ skill.value }}</ngb-progressbar>
             </div>
-          </div>
+          </ng-container>
+        </div>
       </div>
     </div>
 

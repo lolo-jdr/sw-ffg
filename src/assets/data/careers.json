@@ -6,35 +6,35 @@
         "description": "Ce sont des pisteurs redoutables, des combattants brutaux et d'excellent enquêteurs. Ils préfèrent généralement les magouilles, la discrétion et les pièges aux assauts frontaux, mais les plus respectés font le nécessaire pour capturer leurs proies et récupérer leur dû.",
         "skills": [
             { 
-                "key": "",
+                "key": "athletics",
                 "label": "Athlétisme"
             },
             { 
-                "key": "",
+                "key": "rangedHeavy",
                 "label": "Distance (armes lourdes)"
             },
             { 
-                "key": "",
+                "key": "perception",
                 "label": "Perception"
             },
             { 
-                "key": "",
+                "key": "pilotingPlanetary",
                 "label": "Pilotage (planétaire)"
             },
             { 
-                "key": "",
+                "key": "pilotingSpace",
                 "label": "Pilotage (espace)"
             },
             { 
-                "key": "",
+                "key": "melee",
                 "label": "Pugilat"
             },
             { 
-                "key": "",
+                "key": "streetwise",
                 "label": "Système D"
             },
             { 
-                "key": "",
+                "key": "vigilance",
                 "label": "Vigilance"
             }
         ],
@@ -47,19 +47,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "brawl",
                         "label": "Corps à corps"
                     },
                     { 
-                        "key": "",
+                        "key": "stealth",
                         "label": "Discrétion"
                     },
                     { 
-                        "key": "",
+                        "key": "rangedHeavy",
                         "label": "Distance (armes lourdes)"
                     },
                     { 
-                        "key": "",
+                        "key": "skullduggery",
                         "label": "Magouilles"
                     }
                 ]
@@ -72,19 +72,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "melee",
                         "label": "Pugilat"
                     },
                     { 
-                        "key": "",
+                        "key": "coercion",
                         "label": "Coercition"
                     },
                     { 
-                        "key": "",
+                        "key": "mechanics",
                         "label": "Mécanique"
                     },
                     { 
-                        "key": "",
+                        "key": "rangedLight",
                         "label": "Distance (armes légères)"
                     }
                 ]
@@ -97,19 +97,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
-                        "label": "Connaissance (Xénologie)"
+                        "key": "xenology",
+                        "label": "Xénologie"
                     },
                     { 
-                        "key": "",
+                        "key": "perception",
                         "label": "Perception"
                     },
                     { 
-                        "key": "",
+                        "key": "resilience",
                         "label": "Résistance"
                     },
                     { 
-                        "key": "",
+                        "key": "survival",
                         "label": "Survie"
                     }
                 ]
@@ -126,35 +126,35 @@
         "description": "",
         "skills": [
             { 
-                "key": "",
+                "key": "charm",
                 "label": "Charme"
             },
             { 
-                "key": "",
+                "key": "leadership",
                 "label": "Commandement"
             },
             { 
-                "key": "",
-                "label": "Connaissance (Mondes du Noyau)"
+                "key": "coreWorlds",
+                "label": "Mondes du Noyau"
             },
             { 
-                "key": "",
-                "label": "Connaissance (Éducation)"
+                "key": "education",
+                "label": "Éducation"
             },
             { 
-                "key": "",
-                "label": "Connaissance (Culture)"
+                "key": "lore",
+                "label": "Culture"
             },
             { 
-                "key": "",
+                "key": "negotiation",
                 "label": "Négociation"
             },
             { 
-                "key": "",
+                "key": "streetwise",
                 "label": "Système D"
             },
             { 
-                "key": "",
+                "key": "deception",
                 "label": "Tromperie"
             }
         ],
@@ -167,19 +167,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "cool",
                         "label": "Calme"
                     },
                     { 
-                        "key": "",
-                        "label": "Connaissance (Éducation)"
+                        "key": "education",
+                        "label": "Éducation"
                     },
                     { 
-                        "key": "",
+                        "key": "medicine",
                         "label": "Médecine"
                     },
                     { 
-                        "key": "",
+                        "key": "resilience",
                         "label": "Résistance"
                     }
                 ]
@@ -192,19 +192,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "charm",
                         "label": "Charme"
                     },
                     { 
-                        "key": "",
+                        "key": "coercion",
                         "label": "Coercition"
                     },
                     { 
-                        "key": "",
-                        "label": "Connaissance (Mondes du Noyau)"
+                        "key": "coreWorlds",
+                        "label": "Mondes du Noyau"
                     },
                     { 
-                        "key": "",
+                        "key": "deception",
                         "label": "Tromperie"
                     }
                 ]
@@ -217,19 +217,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
-                        "label": "Connaissance (Bordure extérieure)"
+                        "key": "outerRim",
+                        "label": "Bordure extérieure"
                     },
                     { 
-                        "key": "",
-                        "label": "Connaissance (Pègre)"
+                        "key": "underworld",
+                        "label": "Pègre"
                     },
                     { 
-                        "key": "",
-                        "label": "Connaissance (Xénologie)"
+                        "key": "xenology",
+                        "label": "Xénologie"
                     },
                     { 
-                        "key": "",
+                        "key": "perception",
                         "label": "Perception"
                     }
                 ]
@@ -246,35 +246,35 @@
         "description": "",
         "skills": [
             { 
-                "key": "",
+                "key": "astrogation",
                 "label": "Astrogation"
             },
             { 
-                "key": "",
+                "key": "cool",
                 "label": "Calme"
             },
             { 
-                "key": "",
-                "label": "Connaissance (Bordure extérieure)"
+                "key": "outerRim",
+                "label": "Bordure extérieure"
             },
             { 
-                "key": "",
-                "label": "Connaissance (Culture)"
+                "key": "lore",
+                "label": "Culture"
             },
             { 
-                "key": "",
-                "label": "Connaissance (Xénologie)"
+                "key": "xenology",
+                "label": "Xénologie"
             },
             { 
-                "key": "",
+                "key": "perception",
                 "label": "Perception"
             },
             { 
-                "key": "",
+                "key": "pilotingSpace",
                 "label": "Pilotage (espace)"
             },
             { 
-                "key": "",
+                "key": "survival",
                 "label": "Survie"
             }
         ],
@@ -287,19 +287,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "astrogation",
                         "label": "Astrogation"
                     },
                     { 
-                        "key": "",
+                        "key": "coordination",
                         "label": "Coordination"
                     },
                     { 
-                        "key": "",
+                        "key": "negotiation",
                         "label": "Négociation"
                     },
                     { 
-                        "key": "",
+                        "key": "streetwise",
                         "label": "Système D"
                     }
                 ]
@@ -312,19 +312,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "athletics",
                         "label": "Athlétisme"
                     },
                     { 
-                        "key": "",
+                        "key": "medicine",
                         "label": "Médecine"
                     },
                     { 
-                        "key": "",
+                        "key": "pilotingPlanetary",
                         "label": "Pilotage (planétaire)"
                     },
                     { 
-                        "key": "",
+                        "key": "survival",
                         "label": "Survie"
                     }
                 ]
@@ -337,19 +337,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
-                        "label": "Connaissance (Mondes du Noyau)"
+                        "key": "coreWorlds",
+                        "label": "Mondes du Noyau"
                     },
                     { 
-                        "key": "",
-                        "label": "Connaissance (Pègre)"
+                        "key": "underworld",
+                        "label": "Pègre"
                     },
                     { 
-                        "key": "",
+                        "key": "negotiation",
                         "label": "Négociation"
                     },
                     { 
-                        "key": "",
+                        "key": "deception",
                         "label": "Tromperie"
                     }
                 ]
@@ -366,35 +366,35 @@
         "description": "",
         "skills": [
             { 
-                "key": "",
+                "key": "athletics",
                 "label": "Athlétisme"
             },
             { 
-                "key": "",
+                "key": "brawl",
                 "label": "Corps à corps"
             },
             { 
-                "key": "",
+                "key": "rangedLight",
                 "label": "Distance (armes légères)"
             },
             { 
-                "key": "",
+                "key": "pilotingPlanetary",
                 "label": "Pilotage (planétaire)"
             },
             { 
-                "key": "",
+                "key": "melee",
                 "label": "Pugilat"
             },
             { 
-                "key": "",
+                "key": "resilience",
                 "label": "Résistance"
             },
             { 
-                "key": "",
+                "key": "discipline",
                 "label": "Sang-froid"
             },
             { 
-                "key": "",
+                "key": "vigilance",
                 "label": "Vigilance"
             }
         ],
@@ -407,19 +407,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "gunnery",
                         "label": "Artillerie"
                     },
                     { 
-                        "key": "",
+                        "key": "rangedHeavy",
                         "label": "Distance (armes lourdes)"
                     },
                     { 
-                        "key": "",
+                        "key": "perception",
                         "label": "Perception"
                     },
                     { 
-                        "key": "",
+                        "key": "pilotingPlanetary",
                         "label": "Pilotage (planétaire)"
                     }
                 ]
@@ -432,19 +432,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "coercion",
                         "label": "Coercition"
                     },
                     { 
-                        "key": "",
+                        "key": "brawl",
                         "label": "Corps à corps"
                     },
                     { 
-                        "key": "",
+                        "key": "resilience",
                         "label": "Résistance"
                     },
                     { 
-                        "key": "",
+                        "key": "survival",
                         "label": "Survie"
                     }
                 ]
@@ -457,19 +457,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "gunnery",
                         "label": "Artillerie"
                     },
                     { 
-                        "key": "",
+                        "key": "leadership",
                         "label": "Commandement"
                     },
                     { 
-                        "key": "",
+                        "key": "rangedHeavy",
                         "label": "Distance (armes lourdes)"
                     },
                     { 
-                        "key": "",
+                        "key": "discipline",
                         "label": "Sang-froid"
                     }
                 ]
@@ -486,35 +486,35 @@
         "description": "",
         "skills": [
             { 
-                "key": "",
-                "label": "Connaissance (Pègre)"
+                "key": "underworld",
+                "label": "Pègre"
             },
             { 
-                "key": "",
+                "key": "coordination",
                 "label": "Coordination"
             },
             { 
-                "key": "",
+                "key": "skullduggery",
                 "label": "Magouilles"
             },
             { 
-                "key": "",
+                "key": "perception",
                 "label": "Perception"
             },
             { 
-                "key": "",
+                "key": "pilotingSpace",
                 "label": "Pilotage (espace)"
             },
             { 
-                "key": "",
+                "key": "streetwise",
                 "label": "Système D"
             },
             { 
-                "key": "",
+                "key": "deception",
                 "label": "Tromperie"
             },
             { 
-                "key": "",
+                "key": "vigilance",
                 "label": "Vigilance"
             }
         ],
@@ -527,19 +527,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "astrogation",
                         "label": "Astrogation"
                     },
                     { 
-                        "key": "",
+                        "key": "gunnery",
                         "label": "Artillerie"
                     },
                     { 
-                        "key": "",
+                        "key": "pilotingPlanetary",
                         "label": "Pilotage (planétaire)"
                     },
                     { 
-                        "key": "",
+                        "key": "pilotingSpace",
                         "label": "Pilotage (espace)"
                     }
                 ]
@@ -552,19 +552,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "cool",
                         "label": "Calme"
                     },
                     { 
-                        "key": "",
+                        "key": "charm",
                         "label": "Charme"
                     },
                     { 
-                        "key": "",
+                        "key": "rangedLight",
                         "label": "Distance (armes légères)"
                     },
                     { 
-                        "key": "",
+                        "key": "deception",
                         "label": "Tromperie"
                     }
                 ]
@@ -577,19 +577,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "stealth",
                         "label": "Discrétion"
                     },
                     { 
-                        "key": "",
+                        "key": "computers",
                         "label": "Informatique"
                     },
                     { 
-                        "key": "",
+                        "key": "skullduggery",
                         "label": "Magouilles"
                     },
                     { 
-                        "key": "",
+                        "key": "vigilance",
                         "label": "Vigilance"
                     }
                 ]
@@ -607,35 +607,35 @@
         "description": "",
         "skills": [
             { 
-                "key": "",
+                "key": "astrogation",
                 "label": "Astrogation"
             },
             { 
                 "key": "",
-                "label": "Connaissance (Bordure extérieure),"
+                "label": "Bordure extérieure,"
             },
             { 
-                "key": "",
+                "key": "coordination",
                 "label": "Coordination"
             },
             { 
-                "key": "",
+                "key": "computers",
                 "label": "Informatique"
             },
             { 
-                "key": "",
+                "key": "mechanics",
                 "label": "Mécanique"
             },
             { 
-                "key": "",
+                "key": "perception",
                 "label": "Perception"
             },
             { 
-                "key": "",
+                "key": "pilotingPlanetary",
                 "label": "Pilotage (planétaire)"
             },
             { 
-                "key": "",
+                "key": "discipline",
                 "label": "Sang-froid"
             }
         ],
@@ -647,19 +647,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "skullduggery",
                         "label": "Magouilles"
                     },
                     { 
-                        "key": "",
+                        "key": "mechanics",
                         "label": "Mécanique"
                     },
                     { 
-                        "key": "",
+                        "key": "pilotingSpace",
                         "label": "Pilotage (espace)"
                     },
                     { 
-                        "key": "",
+                        "key": "melee",
                         "label": "Pugilat"
                     }
                 ]
@@ -672,19 +672,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
-                        "label": "Connaissance (Éducation)"
+                        "key": "education",
+                        "label": "Éducation"
                     },
                     { 
-                        "key": "",
-                        "label": "Connaissance (Pègre)"
+                        "key": "underworld",
+                        "label": "Pègre"
                     },
                     { 
-                        "key": "",
+                        "key": "mechanics",
                         "label": "Mécanique"
                     },
                     { 
-                        "key": "",
+                        "key": "streetwise",
                         "label": "Système D"
                     }
                 ]
@@ -697,19 +697,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
-                        "label": "Connaissance (Éducation)"
+                        "key": "education",
+                        "label": "Éducation"
                     },
                     { 
-                        "key": "",
-                        "label": "Connaissance (Pègre),"
+                        "key": "underworld",
+                        "label": "Pègre,"
                     },
                     { 
-                        "key": "",
+                        "key": "stealth",
                         "label": "Discrétion"
                     },
                     { 
-                        "key": "",
+                        "key": "computers",
                         "label": "Informatique"
                     }
                 ]
@@ -726,35 +726,35 @@
         "description": "Savoir piloter des véhicules ou des vaisseaux de transport est une compétence répandue dans la galaxie. Quand il s'agit de se rendre au combat au plus vite ou de plonger dans un champ d'astéroïdes avec une douzaine de vaisseaux à ses trousses, il vaut mieux laisser les As aux commandes.",
         "skills": [
             { 
-                "key": "",
+                "key": "gunnery",
                 "label": "Artillerie"
             },
             { 
-                "key": "",
+                "key": "astrogation",
                 "label": "Astrogation"
             },
             { 
-                "key": "",
+                "key": "cool",
                 "label": "Calme"
             },
             { 
-                "key": "",
+                "key": "rangedLight",
                 "label": "Distance (armes légères)"
             },
             { 
-                "key": "",
+                "key": "mechanics",
                 "label": "Mécanique"
             },
             { 
-                "key": "",
+                "key": "perception",
                 "label": "Perception"
             },
             { 
-                "key": "",
+                "key": "pilotingSpace",
                 "label": "Pilotage (espace)"
             },
             { 
-                "key": "",
+                "key": "pilotingPlanetary",
                 "label": "Pilotage (planétaire)"
             }
         ],
@@ -767,19 +767,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "gunnery",
                         "label": "Artillerie"
                     },
                     { 
-                        "key": "",
-                        "label": " Distance (armes lourdes)"
+                        "key": "rangedHeavy",
+                        "label": "Distance (armes lourdes)"
                     },
                     { 
-                        "key": "",
+                        "key": "resilience",
                         "label": "Résistance"
                     },
                     { 
-                        "key": "",
+                        "key": "discipline",
                         "label": "Sang-froid"
                     }
                 ]
@@ -792,19 +792,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "gunnery",
                         "label": "Artillerie"
                     },
                     { 
-                        "key": "",
+                        "key": "cool",
                         "label": "Calme"
                     },
                     { 
-                        "key": "",
+                        "key": "mechanics",
                         "label": "Mécanique"
                     },
                     { 
-                        "key": "",
+                        "key": "pilotingPlanetary",
                         "label": "Pilotage (planétaire)"
                     }
                 ]
@@ -817,19 +817,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "gunnery",
                         "label": "Artillerie"
                     },
                     { 
-                        "key": "",
+                        "key": "astrogation",
                         "label": "Astrogation"
                     },
                     { 
-                        "key": "",
+                        "key": "pilotingSpace",
                         "label": "Pilotage (espace)"
                     },
                     { 
-                        "key": "",
+                        "key": "pilotingPlanetary",
                         "label": "Pilotage (planétaire)"
                     }
                 ]
@@ -846,35 +846,35 @@
         "description": "Dans tout conflit la ressource la plus importante reste le personnel. Le Diplomate est celui qui la procure et qui en dirige l'emploi. Il ne combat peut-être pas directement au front, mais il est là pour préserver les chances de victoire et se montrer indispensable pour gérer et organiser la paix qui est censée suivre.",
         "skills": [
             { 
-                "key": "",
+                "key": "charm",
                 "label": "Charme"
             },
             { 
-                "key": "",
+                "key": "leadership",
                 "label": "Commandement"
             },
             { 
-                "key": "",
-                "label": "Connaissance (Bordure extérieure)"
+                "key": "outerRim",
+                "label": "Bordure extérieure"
             },
             { 
-                "key": "",
-                "label": "Connaissance (culture)"
+                "key": "lore",
+                "label": "Culture"
             },
             { 
-                "key": "",
-                "label": "Connaissance (Mondes du Noyau)"
+                "key": "coreWorlds",
+                "label": "Mondes du Noyau"
             },
             { 
-                "key": "",
-                "label": "Connaissance (xénologie)"
+                "key": "xenology",
+                "label": "Xénologie"
             },
             { 
-                "key": "",
+                "key": "negotiation",
                 "label": "Négociation"
             },
             { 
-                "key": "",
+                "key": "deception",
                 "label": "Tromperie "
             }
         ],
@@ -887,19 +887,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "coercion",
                         "label": "Coercition"
                     },
                     { 
-                        "key": "",
-                        "label": "Connaissance (pègre)"
+                        "key": "underworld",
+                        "label": "Pègre"
                     },
                     { 
-                        "key": "",
+                        "key": "streetwise",
                         "label": "Système D"
                     },
                     { 
-                        "key": "",
+                        "key": "deception",
                         "label": "Tromperie"
                     }
                 ]
@@ -912,19 +912,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "charm",
                         "label": "Charme"
                     },
                     { 
-                        "key": "",
-                        "label": "Connaissance (Mondes du Noyau)"
+                        "key": "coreWorlds",
+                        "label": "Mondes du Noyau"
                     },
                     { 
-                        "key": "",
+                        "key": "negotiation",
                         "label": "Négociation"
                     },
                     { 
-                        "key": "",
+                        "key": "discipline",
                         "label": "Sang-froid"
                     }
                 ]
@@ -937,19 +937,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "computers",
                         "label": "Informatique"
                     },
                     { 
-                        "key": "",
+                        "key": "skullduggery",
                         "label": "Magouilles"
                     },
                     { 
-                        "key": "",
+                        "key": "negotiation",
                         "label": "Négociation"
                     },
                     { 
-                        "key": "",
+                        "key": "vigilance",
                         "label": "Vigilance"
                     }
                 ]
@@ -966,35 +966,35 @@
         "description": "Les Espions traquent les secrets de l'ennemi, déjouent ses plans et entravent son efficacité martiale. La fonction principale de l'Espion consiste à recueillir des informations concernant les zones d'opération et les agissements de l'ennemi pour le compte de l'Alliance.",
         "skills": [
             { 
-                "key": "",
+                "key": "cool",
                 "label": "Calme"
             },
             { 
-                "key": "",
-                "label": "Connaissance (guerre)"
+                "key": "warfare",
+                "label": "Guerre"
             },
             { 
-                "key": "",
+                "key": "coordination",
                 "label": "Coordination"
             },
             { 
-                "key": "",
+                "key": "stealth",
                 "label": "Discrétion"
             },
             { 
-                "key": "",
+                "key": "computers",
                 "label": "Informatique"
             },
             { 
-                "key": "",
+                "key": "skullduggery",
                 "label": "Magouilles"
             },
             { 
-                "key": "",
+                "key": "perception",
                 "label": "Perception"
             },
             { 
-                "key": "",
+                "key": "deception",
                 "label": "Tromperie "
             }
         ],
@@ -1011,15 +1011,15 @@
                         "label": "Athlétisme"
                     },
                     { 
-                        "key": "",
+                        "key": "medicine",
                         "label": "Médecine"
                     },
                     { 
-                        "key": "",
+                        "key": "pilotingPlanetary",
                         "label": "Pilotage (planétaire)"
                     },
                     { 
-                        "key": "",
+                        "key": "survival",
                         "label": "Survie"
                     }
                 ]
@@ -1032,19 +1032,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
-                        "label": "Connaissance (éducation)"
+                        "key": "education",
+                        "label": "Éducation"
                     },
                     { 
-                        "key": "",
-                        "label": "Connaissance (pègre)"
+                        "key": "underworld",
+                        "label": "Pègre"
                     },
                     { 
-                        "key": "",
+                        "key": "stealth",
                         "label": "Discrétion"
                     },
                     { 
-                        "key": "",
+                        "key": "computers",
                         "label": "Informatique"
                     }
                 ]
@@ -1057,19 +1057,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "brawl",
                         "label": "Corps à corps"
                     },
                     { 
-                        "key": "",
+                        "key": "skullduggery",
                         "label": "Magouilles"
                     },
                     { 
-                        "key": "",
+                        "key": "streetwise",
                         "label": "Système D"
                     },
                     { 
-                        "key": "",
+                        "key": "deception",
                         "label": "Tromperie"
                     }
                 ]
@@ -1086,35 +1086,35 @@
         "description": "Les Ingénieurs parlent le language des ordinateurs, des moteurs et des conduits électriques. Ils apportent de nouvelles armes, assurent le fonctionnement des machines et peuvent également, au besoin, les mettre hors service.",
         "skills": [
             { 
-                "key": "",
+                "key": "athletics",
                 "label": "Athlétisme"
             },
             { 
-                "key": "",
-                "label": "Connaissance (éducation)"
+                "key": "education",
+                "label": "Éducation"
             },
             { 
-                "key": "",
-                "label": " Distance (armes légères)"
+                "key": "rangedLight",
+                "label": "Distance (armes légères)"
             },
             { 
-                "key": "",
+                "key": "computers",
                 "label": "Informatique"
             },
             { 
-                "key": "",
+                "key": "mechanics",
                 "label": "Mécanique"
             },
             { 
-                "key": "",
+                "key": "perception",
                 "label": "Perception"
             },
             { 
-                "key": "",
+                "key": "pilotingSpace",
                 "label": "Pilotage (espace)"
             },
             { 
-                "key": "",
+                "key": "vigilance",
                 "label": "Vigilance"
             }
         ],
@@ -1127,19 +1127,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "skullduggery",
                         "label": "Magouilles"
                     },
                     { 
-                        "key": "",
+                        "key": "mechanics",
                         "label": "Mécanique"
                     },
                     { 
-                        "key": "",
+                        "key": "pilotingSpace",
                         "label": "Pilotage (espace)"
                     },
                     { 
-                        "key": "",
+                        "key": "melee",
                         "label": "Pugilat"
                     }
                 ]
@@ -1152,19 +1152,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "coordination",
                         "label": "Coordination"
                     },
                     { 
-                        "key": "",
+                        "key": "stealth",
                         "label": "Discrétion"
                     },
                     { 
-                        "key": "",
+                        "key": "skullduggery",
                         "label": "Magouilles"
                     },
                     { 
-                        "key": "",
+                        "key": "mechanics",
                         "label": "Mécanique"
                     }
                 ]
@@ -1177,19 +1177,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
-                        "label": "Connaissance (culture)"
+                        "key": "lore",
+                        "label": "Culture"
                     },
                     { 
-                        "key": "",
-                        "label": "Connaissance (éducation)"
+                        "key": "education",
+                        "label": "Éducation"
                     },
                     { 
-                        "key": "",
+                        "key": "computers",
                         "label": "Informatique"
                     },
                     { 
-                        "key": "",
+                        "key": "medicine",
                         "label": "Médecine"
                     }
                 ]
@@ -1206,35 +1206,35 @@
         "description": "Les Soldats prennent les armes pour affronter la mort au service d'une cause ou pour honorer un salaire. Servir comme Soldat peut apporter gloire et honneur, certes, mais c'est ausi souvent un gage de terreur, de souffrance, d'hémoglobine et et brutalité.",
         "skills": [
             { 
-                "key": "",
+                "key": "athletics",
                 "label": "Athlétisme"
             },
             { 
-                "key": "",
-                "label": "Connaissance (guerre)"
+                "key": "warfare",
+                "label": "Guerre"
             },
             { 
-                "key": "",
+                "key": "brawl",
                 "label": "Corps à corps"
             },
             { 
-                "key": "",
+                "key": "rangedLight",
                 "label": "Distance (armes légères)"
             },
             { 
-                "key": "",
+                "key": "rangedHeavy",
                 "label": "Distance (armes lourdes)"
             },
             { 
-                "key": "",
+                "key": "medicine",
                 "label": "Médecine"
             },
             { 
-                "key": "",
+                "key": "melee",
                 "label": "Pugilat"
             },
             { 
-                "key": "",
+                "key": "survival",
                 "label": "Survie"
             }
         ],
@@ -1247,19 +1247,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "brawl",
                         "label": "Corps à corps"
                     },
                     { 
-                        "key": "",
+                        "key": "melee",
                         "label": "Pugilat"
                     },
                     { 
-                        "key": "",
+                        "key": "resilience",
                         "label": "Résistance"
                     },
                     { 
-                        "key": "",
+                        "key": "survival",
                         "label": "Survie"
                     }
                 ]
@@ -1272,19 +1272,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "cool",
                         "label": "Calme"
                     },
                     { 
-                        "key": "",
+                        "key": "rangedLight",
                         "label": "Distance (armes légères)"
                     },
                     { 
-                        "key": "",
+                        "key": "rangedHeavy",
                         "label": "Distance (armes lourdes)"
                     },
                     { 
-                        "key": "",
+                        "key": "perception",
                         "label": "Perception"
                     }
                 ]
@@ -1297,19 +1297,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
-                        "label": "Connaissance (xénologie)"
+                        "key": "xenology",
+                        "label": "Xénologie"
                     },
                     { 
-                        "key": "",
+                        "key": "medicine",
                         "label": "Médecine"
                     },
                     { 
-                        "key": "",
+                        "key": "resilience",
                         "label": "Résistance"
                     },
                     { 
-                        "key": "",
+                        "key": "vigilance",
                         "label": "Vigilance"
                     }
                 ]
@@ -1326,35 +1326,35 @@
         "description": "Le rôle du Stratège est d'organiser, d'encadrer et de mener les combattants et toutes les personnes qui servent dans une unité militaire de manière à ce que leur action soit véritablement efficace. Qu'il se tienne sur le pont d'un vaisseau spatial ou qu'il vole en formation parmi un escadron de chasseur, le Stratège demeure l'âme de la Rébellion militaire.",
         "skills": [
             { 
-                "key": "",
+                "key": "cool",
                 "label": "Calme"
             },
             { 
-                "key": "",
+                "key": "coercion",
                 "label": "Coercition"
             },
             { 
-                "key": "",
+                "key": "leadership",
                 "label": "Commandement"
             },
             { 
-                "key": "",
-                "label": "Connaissance (stratégie)"
+                "key": "warfare",
+                "label": "Stratégie"
             },
             { 
-                "key": "",
+                "key": "rangedLight",
                 "label": "Distance (armes légères)"
             },
             { 
-                "key": "",
+                "key": "perception",
                 "label": "Perception"
             },
             { 
-                "key": "",
+                "key": "discipline",
                 "label": "Sang-froid"
             },
             { 
-                "key": "",
+                "key": "vigilance",
                 "label": "Vigilance "
             }
         ],
@@ -1367,20 +1367,20 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "gunnery",
                         "label": "Artillerie"
                     },
                     { 
-                        "key": "",
+                        "key": "mechanics",
                         "label": "Mécanique"
                     },
                     { 
-                        "key": "",
+                        "key": "pilotingSpace",
                         "label": "Pilotage (espace)"
                     },
                     { 
-                        "key": "",
-                        "label": " Pilotage (planétaire)"
+                        "key": "pilotingPlanetary",
+                        "label": "Pilotage (planétaire)"
                     }
                 ]
             },
@@ -1392,19 +1392,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "astrogation",
                         "label": "Astrogation"
                     },
                     { 
-                        "key": "",
-                        "label": "Connaissance (Bordure extérieure)"
+                        "key": "outerRim",
+                        "label": "Bordure extérieure"
                     },
                     { 
-                        "key": "",
-                        "label": "Connaissance (éducation)"
+                        "key": "education",
+                        "label": "Éducation"
                     },
                     { 
-                        "key": "",
+                        "key": "computers",
                         "label": "Informatique"
                     }
                 ]
@@ -1417,19 +1417,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "leadership",
                         "label": "Commandement"
                     },
                     { 
-                        "key": "",
+                        "key": "rangedHeavy",
                         "label": "Distance (armes lourdes)"
                     },
                     { 
-                        "key": "",
+                        "key": "melee",
                         "label": "Pugilat"
                     },
                     { 
-                        "key": "",
+                        "key": "discipline",
                         "label": "Sang-froid"
                     }
                 ]
@@ -1446,28 +1446,28 @@
         "description": "Le consulaire s'efforce d'atteindre la paix et l'harmonie au moyen de discours positifs. Ceux qui suivent cette carrière essaient d'éviter les conflits physiques lorsque c'est possible. Toutefois, si la violence pour la violence est néfaste, parfois, il faut agir en face du mal.",
         "skills": [
             {   
-                "key": "",
+                "key": "cool",
                 "label": "Calme"
             },
             { 
-                "key": "",
+                "key": "leadership",
                 "label": "Commandement"
             },
             { 
-                "key": "",
-                "label": "Connaissance (culture)"
+                "key": "lore",
+                "label": "Culture"
             },
             { 
-                "key": "",
-                "label": "Connaissance (éducation)"
+                "key": "education",
+                "label": "Éducation"
             },
             { 
-                "key": "",
+                "key": "negotiation",
                 "label": "Négociation"
             },
             { 
-                "key": "",
-                "label": " Sang-froid"
+                "key": "discipline",
+                "label": "Sang-froid"
             }
         ],
         "specialization": [
@@ -1479,19 +1479,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "leadership",
                         "label": "Commandement"
                     },
                     { 
-                        "key": "",
+                        "key": "negotiation",
                         "label": "Négociation"
                     },
                     { 
-                        "key": "",
+                        "key": "discipline",
                         "label": "Sang-froid"
                     },
                     { 
-                        "key": "",
+                        "key": "lightsaber",
                         "label": "Sabre laser"
                     }
                 ]
@@ -1504,19 +1504,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
-                        "label": "Connaissance (éducation)"
+                        "key": "education",
+                        "label": "Éducation"
                     },
                     { 
-                        "key": "",
-                        "label": " Connaissance (xénologie)"
+                        "key": "xenology",
+                        "label": " Xénologie"
                     },
                     { 
-                        "key": "",
+                        "key": "medicine",
                         "label": "Médecine"
                     },
                     { 
-                        "key": "",
+                        "key": "discipline",
                         "label": "Sang-froid"
                     }
                 ]
@@ -1529,20 +1529,20 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "astrogation",
                         "label": "Astrogation"
                     },
                     { 
-                        "key": "",
+                        "key": "cool",
                         "label": "Calme"
                     },
                     { 
-                        "key": "",
+                        "key": "charm",
                         "label": "Charme"
                     },
                     { 
-                        "key": "",
-                        "label": "Connaissance (culture)"
+                        "key": "lore",
+                        "label": "Culture"
                     }
                 ]
             }
@@ -1558,27 +1558,27 @@
         "description": "Un Errant est un utilisateur de la Force qui se sent poussé à silloner la galaxie afin d'aider ceux qui en ont besoin et de s'opposer aux adeptes du côté obscur Les Errants adoptent généralement une vue pragmatique de la Force : ils considérent qu'il s'agit d'un outil de leur arsenal, mais pas le seul.",
         "skills": [
             { 
-                "key": "",
-                "label": "Connaissance (xénologie)"
+                "key": "xenology",
+                "label": "Xénologie"
             },
             { 
-                "key": "",
+                "key": "rangedHeavy",
                 "label": "Distance (armes lourdes)"
             },
             { 
-                "key": "",
+                "key": "pilotingSpace",
                 "label": "Pilotage (espace)"
             },
             { 
-                "key": "",
-                "label": " Pilotage (planétaire)"
+                "key": "pilotingPlanetary",
+                "label": "Pilotage (planétaire)"
             },
             { 
-                "key": "",
+                "key": "survival",
                 "label": "Survie"
             },
             { 
-                "key": "",
+                "key": "vigilance",
                 "label": "Vigilance "
             }
         ],
@@ -1591,19 +1591,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "rangedLight",
                         "label": "Distance (armes légères)"
                     },
                     { 
-                        "key": "",
+                        "key": "medicine",
                         "label": "Médecine"
                     },
                     { 
-                        "key": "",
+                        "key": "resilience",
                         "label": "Résistance"
                     },
                     { 
-                        "key": "",
+                        "key": "survival",
                         "label": "Survie"
                     }
                 ]
@@ -1616,19 +1616,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "athletics",
                         "label": "Athlétisme"
                     },
                     { 
-                        "key": "",
+                        "key": "coordination",
                         "label": "Coordination"
                     },
                     { 
-                        "key": "",
+                        "key": "perception",
                         "label": "Perception"
                     },
                     { 
-                        "key": "",
+                        "key": "lightsaber",
                         "label": "Sabre laser"
                     }
                 ]
@@ -1641,19 +1641,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "coordination",
                         "label": "Coordination"
                     },
                     { 
-                        "key": "",
+                        "key": "stealth",
                         "label": "Discrétion"
                     },
                     { 
-                        "key": "",
-                        "label": " Distance (armes lourdes)"
+                        "key": "rangedHeavy",
+                        "label": "Distance (armes lourdes)"
                     },
                     { 
-                        "key": "",
+                        "key": "vigilance",
                         "label": "Vigilance"
                     }
                 ]
@@ -1670,27 +1670,27 @@
         "description": ".",
         "skills": [
             { 
-                "key": "",
+                "key": "cool",
                 "label": "Calme"
             },
             { 
-                "key": "",
+                "key": "brawl",
                 "label": "Corps à corps"
             },
             { 
-                "key": "",
+                "key": "melee",
                 "label": "Pugilat"
             },
             { 
-                "key": "",
+                "key": "resilience",
                 "label": "Résistance"
             },
             { 
-                "key": "",
+                "key": "discipline",
                 "label": "Sang-froid"
             },
             { 
-                "key": "",
+                "key": "vigilance",
                 "label": "Vigilance "
             }
         ],
@@ -1703,19 +1703,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
-                        "label": " Connaissance (culture)"
+                        "key": "lore",
+                        "label": " Culture"
                     },
                     { 
-                        "key": "",
+                        "key": "lightsaber",
                         "label": "Sabre laser"
                     },
                     { 
-                        "key": "",
+                        "key": "discipline",
                         "label": "Sang-froid"
                     },
                     { 
-                        "key": "",
+                        "key": "vigilance",
                         "label": "Vigilance"
                     }
                 ]
@@ -1728,19 +1728,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "leadership",
                         "label": "Commandement"
                     },
                     { 
-                        "key": "",
+                        "key": "perception",
                         "label": "Perception"
                     },
                     { 
-                        "key": "",
+                        "key": "pilotingPlanetary",
                         "label": "Pilotage (planétaire)"
                     },
                     { 
-                        "key": "",
+                        "key": "discipline",
                         "label": "Sang-froid"
                     }
                 ]
@@ -1753,19 +1753,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "athletics",
                         "label": "Athlétisme"
                     },
                     { 
-                        "key": "",
+                        "key": "rangedLight",
                         "label": "Distance (armes légères)"
                     },
                     { 
-                        "key": "",
+                        "key": "medicine",
                         "label": "Médecine"
                     },
                     { 
-                        "key": "",
+                        "key": "resilience",
                         "label": "Résistance"
                     }
                 ]
@@ -1782,27 +1782,27 @@
         "description": "Les Guerriers sont des combattants spécialisés qui se servent de la Force pour améliorer leurs considérables prouesses martiales. Qu'ils se trouvent sur le siège du pilote d'un chasseur spatial, brandissant un sabre laser sur un champ de bataille ou foncent blaster au poing, les guerriers brillent dans toutes les formes de combat.",
         "skills": [
             { 
-                "key": "",
+                "key": "athletics",
                 "label": "Athlétisme"
             },
             { 
-                "key": "",
+                "key": "cool",
                 "label": "Calme"
             },
             { 
-                "key": "",
+                "key": "brawl",
                 "label": "Corps à corps"
             },
             { 
-                "key": "",
+                "key": "perception",
                 "label": "Perception"
             },
             { 
-                "key": "",
+                "key": "melee",
                 "label": "Pugilat"
             },
             { 
-                "key": "",
+                "key": "survival",
                 "label": "Survie "
             }
         ],
@@ -1815,19 +1815,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "coercion",
                         "label": "Coercition"
                     },
                     { 
-                        "key": "",
-                        "label": " Connaissance (pègre)"
+                        "key": "underworld",
+                        "label": "Pègre"
                     },
                     { 
-                        "key": "",
+                        "key": "rangedLight",
                         "label": "Distance (armes légères)"
                     },
                     { 
-                        "key": "",
+                        "key": "streetwise",
                         "label": "Système D"
                     }
                 ]
@@ -1840,19 +1840,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "athletics",
                         "label": "Athlétisme"
                     },
                     { 
-                        "key": "",
+                        "key": "coordination",
                         "label": "Coordination"
                     },
                     { 
-                        "key": "",
+                        "key": "brawl",
                         "label": "Corps à corps"
                     },
                     { 
-                        "key": "",
+                        "key": "lightsaber",
                         "label": "Sabre laser"
                     }
                 ]
@@ -1865,20 +1865,20 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "astrogation",
                         "label": "Astrogation"
                     },
                     { 
-                        "key": "",
+                        "key": "gunnery",
                         "label": "Artillerie"
                     },
                     { 
-                        "key": "",
+                        "key": "mechanics",
                         "label": "Mécanique"
                     },
                     { 
-                        "key": "",
-                        "label": " Pilotage (espace)"
+                        "key": "pilotingSpace",
+                        "label": "Pilotage (espace)"
                     }
                 ]
             }
@@ -1894,27 +1894,27 @@
         "description": "Les Mystiques puisant profondément dans la Force, ils ont tendance à maîtriser un éventail de pouvoir très étendu. Ils perçoivent constamment le flux et le reflux de son énergie entre tous les êtres vivants. Elle leur apprend que leurs instincts émanent de la Force, et qu'il vaut mieux s'y fier que de reposer sur une formation.",
         "skills": [
             { 
-                "key": "",
+                "key": "charm",
                 "label": "Charme"
             },
             { 
-                "key": "",
+                "key": "coercion",
                 "label": "Coercition"
             },
             { 
-                "key": "",
-                "label": "Connaissance (Bordure Extérieure)"
+                "key": "outerRim",
+                "label": "Bordure extérieure"
             },
             { 
-                "key": "",
-                "label": "Connaissance (culture)"
+                "key": "lore",
+                "label": "Culture"
             },
             { 
-                "key": "",
+                "key": "perception",
                 "label": "Perception"
             },
             { 
-                "key": "",
+                "key": "vigilance",
                 "label": "Vigilance"
             }
         ],
@@ -1927,19 +1927,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "charm",
                         "label": "Charme"
                     },
                     { 
-                        "key": "",
+                        "key": "negotiation",
                         "label": "Négociation"
                     },
                     { 
-                        "key": "",
+                        "key": "streetwise",
                         "label": "Système D"
                     },
                     { 
-                        "key": "",
+                        "key": "deception",
                         "label": "Tromperie"
                     }
                 ]
@@ -1952,19 +1952,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "cool",
                         "label": "Calme"
                     },
                     { 
-                        "key": "",
+                        "key": "charm",
                         "label": "Charme"
                     },
                     { 
-                        "key": "",
+                        "key": "coordination",
                         "label": "Coordination"
                     },
                     { 
-                        "key": "",
+                        "key": "lightsaber",
                         "label": "Sabre laser"
                     }
                 ]
@@ -1977,19 +1977,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
-                        "label": "Connaissance (culture)"
+                        "key": "lore",
+                        "label": "Culture"
                     },
                     { 
-                        "key": "",
+                        "key": "discipline",
                         "label": "Sang-froid"
                     },
                     { 
-                        "key": "",
+                        "key": "survival",
                         "label": "Survie"
                     },
                     { 
-                        "key": "",
+                        "key": "vigilance",
                         "label": "Vigilance"
                     }
                 ]
@@ -2006,27 +2006,27 @@
         "description": "Les Sentinelles Jedi associent l'expérience au combat et l'entraînement de la Force à une approche pragmatique de leurs devoirs. Elles ont recours à la technologie et servent de techniques empruntées à la police, aux espions, aux collecteurs d'informations et même aux criminels pour accomplir leurs tâches.",
         "skills": [
             { 
-                "key": "",
-                "label": " Connaissance (Mondes du Noyau)"
+                "key": "coreWorlds",
+                "label": "Mondes du Noyau"
             },
             { 
-                "key": "",
+                "key": "stealth",
                 "label": "Discrétion"
             },
             { 
-                "key": "",
+                "key": "computers",
                 "label": "Informatique"
             },
             { 
-                "key": "",
+                "key": "skullduggery",
                 "label": "Magouilles"
             },
             { 
-                "key": "",
+                "key": "perception",
                 "label": "Perception"
             },
             { 
-                "key": "",
+                "key": "deception",
                 "label": "Tromperie "
             }
         ],
@@ -2039,19 +2039,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "astrogation",
                         "label": "Astrogation"
                     },
                     { 
                         "key": "",
-                        "label": " Connaissance (éducation)"
+                        "label": "Éducation"
                     },
                     { 
-                        "key": "",
+                        "key": "computers",
                         "label": "Informatique"
                     },
                     { 
-                        "key": "",
+                        "key": "mechanics",
                         "label": "Mécanique"
                     }
                 ]
@@ -2064,20 +2064,20 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
+                        "key": "athletics",
                         "label": "Athlétisme"
                     },
                     { 
-                        "key": "",
+                        "key": "skullduggery",
                         "label": "Magouilles"
                     },
                     { 
-                        "key": "",
+                        "key": "resilience",
                         "label": "Résistance "
                     },
                     { 
-                        "key": "",
-                        "label": " Sabre laser"
+                        "key": "lightsaber",
+                        "label": "Sabre laser"
                     }
                 ]
             },
@@ -2089,19 +2089,19 @@
                 "book": "Livre de base",
                 "skills": [
                     { 
-                        "key": "",
-                        "label": "Connaissance (pègre)"
+                        "key": "underworld",
+                        "label": "Pègre"
                     },
                     { 
-                        "key": "",
+                        "key": "stealth",
                         "label": "Discrétion"
                     },
                     { 
-                        "key": "",
+                        "key": "skullduggery",
                         "label": "Magouilles"
                     },
                     { 
-                        "key": "",
+                        "key": "streetwise",
                         "label": "Système D"
                     }
                 ]

@@ -15,11 +15,49 @@
 
 #characterCreator .step-container .skill {
     margin-top: 10px;
-    margin-bottom: 20px;
+   /*  margin-bottom: 20px; */
 }
 
+#characterCreator button.btn-career {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+#characterCreator button.btn-specialization {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #5bc0de;
+}
+
+#characterCreator .skill-selected {
+    color:  #28a745;
+    font-weight: 600;
+}
+
+#characterCreator .specialization-selected {
+    color:  #28a745;
+    font-weight: 600;
+}
+
+
 ngb-progressbar {
-    min-width: 70px;
-    margin-right: 5px;
-    margin-left: 5px;
+    min-width: 150px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+ /* Responsive */
+
+@media (max-width: 700px) {
+
+    #characterCreator button.btn-skill {
+        padding: 0rem .25rem;
+    }
+
+    ngb-progressbar {
+        min-width: 120px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 }
