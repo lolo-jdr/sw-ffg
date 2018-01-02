@@ -153,6 +153,18 @@ export class CharacterCreatorComponent implements OnInit {
   }
 
   protected changeSpecialization() {
+
+    // Reset specialization skills
+    this.character.skills.forEach(skill => {
+      skill.specialization = false;
+      if (skill.selectedSpecialization) {
+        skill.selectedSpecialization = false;
+        skill.value--;
+      }
+    });
+
+    console.log('changeSpecialization');
+    console.log(this.selectedSpecialization);
     this.character.specialization = this.selectedSpecialization;
     this.selectedSpecialization.skills.forEach(skill => {
       this.character.skills.find(s => s.key === skill.key.toString() ).specialization = true;
@@ -192,6 +204,16 @@ export class CharacterCreatorComponent implements OnInit {
       this.character.skills.forEach(skill => {
         skill.career = false;
         skill.specialization = false;
+
+        if (skill.selectedCareer) {
+          skill.selectedCareer = false;
+          skill.value--;
+        }
+
+        if (skill.selectedSpecialization) {
+          skill.selectedSpecialization = false;
+          skill.value--;
+        }
       });
     }
   }
