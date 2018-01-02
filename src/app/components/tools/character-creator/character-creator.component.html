@@ -41,7 +41,24 @@
             <img src="assets/images/species/{{ selectedSpecies.key }}.png" width="100px" />
           </div>
           <div class="col">
-            <p *ngFor="let specialAbility of selectedSpecies.specialAbilityProcess"> {{ specialAbility.label }} </p>
+            <ng-container *ngIf="selectedSpecies.specialAbilityProcess.length === 0">
+              <p> Aucune spécialité </p>
+            </ng-container>
+            <ng-container *ngIf="selectedSpecies.specialAbilityProcess.length === 1">
+              <p *ngFor="let specialAbility of selectedSpecies.specialAbilityProcess"> {{ specialAbility.label }} </p>
+            </ng-container>
+            <ng-container *ngIf="selectedSpecies.specialAbilityProcess.length > 1">
+              <form>
+                <div *ngFor="let specialAbility of selectedSpecies.specialAbilityProcess">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label">{{ specialAbility.label }}</label>
+                  </div>
+                </div>
+              </form>
+
+            </ng-container>
+
           </div>
 
         </div>
@@ -98,7 +115,8 @@
           <div class="col">
             <ng-container *ngFor="let skill of character.skills">
               <p *ngIf="skill.specialization">
-                <button *ngIf="skill.selectedSpecialization" class="btn btn-skill btn-specialization" type="button" [disabled]="skill.value === 0" (click)="downSkillSp(skill)">
+                <button *ngIf="skill.selectedSpecialization" class="btn btn-skill btn-specialization" type="button" [disabled]="skill.value === 0"
+                  (click)="downSkillSp(skill)">
                   <i class="fa fa-minus" aria-hidden="true"></i>
                 </button>
                 <button *ngIf="!skill.selectedSpecialization" class="btn btn-skill btn-specialization" type="button" [disabled]="skill.value === 2 || skill.selectedSpecialization || countSelectedSpecializations() > 1"
@@ -123,6 +141,7 @@
             </div>
             <div class="row align-items-center">
               <ngb-progressbar type="info" [value]="skill.value * 20">{{ skill.value }}</ngb-progressbar>
+              <span *ngIf="skill.species">Espèce</span>
             </div>
           </ng-container>
         </div>

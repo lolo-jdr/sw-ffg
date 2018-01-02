@@ -19,7 +19,7 @@ export class CharacterCreatorComponent implements OnInit {
   protected skills: any[] = [];
 
   protected character = {
-    species: { specialAbilityProcess: [] },
+    species: { specialAbilityProcess: [], key: "" }, // create class
     career: { specialization: [] },
     specialization : {},
     characteristics : {
@@ -89,7 +89,9 @@ export class CharacterCreatorComponent implements OnInit {
   }
 
   protected changeSpecies() {
+    console.log('Change Species');
     this.isPageLoaded = false;
+
     this.character.species = this.selectedSpecies;
     this.character.characteristics.brawn = this.selectedSpecies.characteristics.brawn;
     this.character.characteristics.agility = this.selectedSpecies.characteristics.agility;
@@ -99,13 +101,30 @@ export class CharacterCreatorComponent implements OnInit {
     this.character.characteristics.presence = this.selectedSpecies.characteristics.presence;
 
     // Set species skills + talents
+    this.character.skills.forEach(skill => {
+      if (skill.species) {
+        skill.value--;
+        skill.species = false;
+      }
+    });
+    
+    if (this.character.species.key === "human") {
+
+    }
     // If only one -> automap 
-    if (this.character.species.specialAbilityProcess.length === 1) {
+    else if (this.character.species.specialAbilityProcess.length === 1) {
+      console.log("1 characteristic species");
       var speciesSkillKey = this.character.species.specialAbilityProcess[0].skillKey;
       var skill = this.character.skills.find(s => s.key === speciesSkillKey );
       skill.value++;
       skill.species = true;
+    } else {
+      // Need to choose
+
     }
+
+
+    this.isPageLoaded = true;
   }
 
   protected changeCareer() {
