@@ -1082,6 +1082,16 @@ var CharacterCreatorComponent = (function () {
     };
     CharacterCreatorComponent.prototype.changeSpecialization = function () {
         var _this = this;
+        // Reset specialization skills
+        this.character.skills.forEach(function (skill) {
+            skill.specialization = false;
+            if (skill.selectedSpecialization) {
+                skill.selectedSpecialization = false;
+                skill.value--;
+            }
+        });
+        console.log('changeSpecialization');
+        console.log(this.selectedSpecialization);
         this.character.specialization = this.selectedSpecialization;
         this.selectedSpecialization.skills.forEach(function (skill) {
             _this.character.skills.find(function (s) { return s.key === skill.key.toString(); }).specialization = true;
@@ -1116,6 +1126,14 @@ var CharacterCreatorComponent = (function () {
             this.character.skills.forEach(function (skill) {
                 skill.career = false;
                 skill.specialization = false;
+                if (skill.selectedCareer) {
+                    skill.selectedCareer = false;
+                    skill.value--;
+                }
+                if (skill.selectedSpecialization) {
+                    skill.selectedSpecialization = false;
+                    skill.value--;
+                }
             });
         }
     };
