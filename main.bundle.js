@@ -933,7 +933,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "#characterCreator .step-main-title {\r\n    margin-top: 20px;\r\n    margin-bottom: 10px;\r\n}\r\n\r\n#characterCreator .step-container img {\r\n    margin-top: 10px;\r\n    margin-bottom: 10px;\r\n}\r\n\r\n#characterCreator .step-container .step-title {\r\n    font-weight: 600;\r\n    margin-bottom: 10px;\r\n}\r\n\r\n#characterCreator .step-container .skill {\r\n    margin-top: 10px;\r\n    margin-bottom: 20px;\r\n}\r\n\r\nngb-progressbar {\r\n    min-width: 70px;\r\n    margin-right: 5px;\r\n    margin-left: 5px;\r\n}", ""]);
+exports.push([module.i, "#characterCreator .step-main-title {\r\n    margin-top: 20px;\r\n    margin-bottom: 10px;\r\n}\r\n\r\n#characterCreator .step-container img {\r\n    margin-top: 10px;\r\n    margin-bottom: 10px;\r\n}\r\n\r\n#characterCreator .step-container .step-title {\r\n    font-weight: 600;\r\n    margin-bottom: 10px;\r\n}\r\n\r\n#characterCreator .step-container .skill {\r\n    margin-top: 10px;\r\n   /*  margin-bottom: 20px; */\r\n}\r\n\r\n#characterCreator button.btn-career {\r\n    color: #fff;\r\n    background-color: #007bff;\r\n    border-color: #007bff;\r\n}\r\n\r\n#characterCreator button.btn-specialization {\r\n    color: #fff;\r\n    background-color: #5bc0de;\r\n    border-color: #5bc0de;\r\n}\r\n\r\n#characterCreator .skill-selected {\r\n    color:  #28a745;\r\n    font-weight: 600;\r\n}\r\n\r\n#characterCreator .specialization-selected {\r\n    color:  #28a745;\r\n    font-weight: 600;\r\n}\r\n\r\n\r\nngb-progressbar {\r\n    min-width: 150px;\r\n    margin-right: 20px;\r\n    margin-left: 20px;\r\n}\r\n\r\n /* Responsive */\r\n\r\n@media (max-width: 700px) {\r\n\r\n    #characterCreator button.btn-skill {\r\n        padding: 0rem .25rem;\r\n    }\r\n\r\n    ngb-progressbar {\r\n        min-width: 120px;\r\n        margin-right: 10px;\r\n        margin-left: 10px;\r\n    }\r\n}", ""]);
 
 // exports
 
@@ -946,7 +946,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/tools/character-creator/character-creator.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\r\n\r\n  <nav aria-label=\"breadcrumb\" role=\"navigation\">\r\n    <ol class=\"breadcrumb\">\r\n      <li class=\"breadcrumb-item\">\r\n        <a routerLink=\"/\">\r\n          <i class=\"ra ra-lg ra-ship-emblem\"></i>\r\n        </a>\r\n      </li>\r\n      <li class=\"breadcrumb-item\" aria-current=\"page\">Outil</li>\r\n      <li class=\"breadcrumb-item active\" aria-current=\"page\">Créateur de personnage</li>\r\n    </ol>\r\n  </nav>\r\n\r\n  <ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\r\n\r\n  <section *ngIf=\"isPageLoaded\" id=\"characterCreator\">\r\n\r\n    <div class=\"row page-title\">\r\n      <div class=\"page-title-label\">\r\n        <p>CRÉATEUR DE PERSONNAGE</p>\r\n        <p>\r\n          <small>\r\n            <em>En cours de développement</em>\r\n          </small>\r\n        </p>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n      <p class=\"step-main-title\">1. Sélectionner l'espèce</p>\r\n    </div>\r\n\r\n    <div class=\"row step-container\">\r\n      <div class=\"col-6\">\r\n        <select [(ngModel)]=\"selectedSpecies\" (change)=\"changeSpecies()\">\r\n          <option *ngFor=\"let s of species\" [ngValue]=\"s\">{{ s.label }}</option>\r\n        </select>\r\n        <div class=\"row\">\r\n          <div class=\"col\">\r\n            <img src=\"assets/images/species/{{ selectedSpecies.key }}.png\" width=\"100px\" />\r\n          </div>\r\n          <div class=\"col\">\r\n            <p *ngFor=\"let specialAbility of selectedSpecies.specialAbilityProcess\"> {{ specialAbility.label }} </p>\r\n          </div>\r\n\r\n        </div>\r\n      </div>\r\n\r\n      <div class=\"col-6\">\r\n        <p class=\"step-title\">Caractérisques</p>\r\n        <p>Vigueur : {{ selectedSpecies.characteristics.brawn }}</p>\r\n        <p>Agilité : {{ selectedSpecies.characteristics.agility }}</p>\r\n        <p>Intelligence : {{ selectedSpecies.characteristics.intellect }}</p>\r\n        <p>Ruse : {{ selectedSpecies.characteristics.cunning }}</p>\r\n        <p>Volonté : {{ selectedSpecies.characteristics.willpower }}</p>\r\n        <p>Présence : {{ selectedSpecies.characteristics.presence }}</p>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n      <p class=\"step-main-title\">2. Sélectionner la carrière</p>\r\n    </div>\r\n\r\n    <div class=\"row step-container\">\r\n      <div class=\"col-6\">\r\n        <select [(ngModel)]=\"selectedCareer\" (change)=\"changeCareer()\">\r\n          <option *ngFor=\"let c of careers\" [ngValue]=\"c\">{{ c.label }}</option>\r\n        </select>\r\n        <p>\r\n          <img src=\"assets/images/careers/{{ selectedCareer.key }}.png\" width=\"100px\" />\r\n        </p>\r\n      </div>\r\n\r\n      <div class=\"col-6\">\r\n        <p class=\"step-title\">Compétences</p>\r\n        <div *ngFor=\"let skill of skills\">\r\n          <div class=\"row skill\">\r\n            <div class=\"col\">\r\n              <span>{{ skill.label }}</span>\r\n            </div>\r\n          </div>\r\n            <div class=\"row align-items-center\">\r\n              <button class=\"btn btn-primary\" type=\"button\" [ngClass]=\"{ 'disabled': character.skills[skill.key] === 0 }\" (click)=\"downSkill(skill.key)\">\r\n                <i class=\"fa fa-minus\" aria-hidden=\"true\"></i>\r\n              </button>\r\n              <ngb-progressbar type=\"info\" [value]=\"character.skills[skill.key] * 20\">{{ character.skills[skill.key] }}</ngb-progressbar>\r\n              <button class=\"btn btn-primary\" type=\"button\" [ngClass]=\"{ 'disabled': character.skills[skill.key] === 2 }\" (click)=\"upSkill(skill.key)\">\r\n                <i class=\"fa fa-plus\" aria-hidden=\"true\"></i>\r\n              </button>\r\n            </div>\r\n          </div>\r\n      </div>\r\n    </div>\r\n\r\n  </section>\r\n\r\n</div>"
+module.exports = "<div class=\"container-fluid\">\r\n\r\n  <nav aria-label=\"breadcrumb\" role=\"navigation\">\r\n    <ol class=\"breadcrumb\">\r\n      <li class=\"breadcrumb-item\">\r\n        <a routerLink=\"/\">\r\n          <i class=\"ra ra-lg ra-ship-emblem\"></i>\r\n        </a>\r\n      </li>\r\n      <li class=\"breadcrumb-item\" aria-current=\"page\">Outil</li>\r\n      <li class=\"breadcrumb-item active\" aria-current=\"page\">Créateur de personnage</li>\r\n    </ol>\r\n  </nav>\r\n\r\n  <ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\r\n\r\n  <section *ngIf=\"isPageLoaded\" id=\"characterCreator\">\r\n\r\n    <div class=\"row page-title\">\r\n      <div class=\"page-title-label\">\r\n        <p>CRÉATEUR DE PERSONNAGE</p>\r\n        <p>\r\n          <small>\r\n            <em>En cours de développement</em>\r\n          </small>\r\n        </p>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n      <p class=\"step-main-title\">1. Sélectionner l'espèce</p>\r\n    </div>\r\n\r\n    <div class=\"row step-container\">\r\n      <div class=\"col-6\">\r\n        <select [(ngModel)]=\"selectedSpecies\" (change)=\"changeSpecies()\">\r\n          <option *ngFor=\"let s of species\" [ngValue]=\"s\">{{ s.label }}</option>\r\n        </select>\r\n        <div class=\"row\">\r\n          <div class=\"col\">\r\n            <img src=\"assets/images/species/{{ selectedSpecies.key }}.png\" width=\"100px\" />\r\n          </div>\r\n          <div class=\"col\">\r\n            <ng-container *ngIf=\"selectedSpecies.specialAbilityProcess.length === 0\">\r\n              <p> Aucune spécialité </p>\r\n            </ng-container>\r\n            <ng-container *ngIf=\"selectedSpecies.specialAbilityProcess.length === 1\">\r\n              <p *ngFor=\"let specialAbility of selectedSpecies.specialAbilityProcess\"> {{ specialAbility.label }} </p>\r\n            </ng-container>\r\n            <ng-container *ngIf=\"selectedSpecies.specialAbilityProcess.length > 1\">\r\n              <form>\r\n                <div *ngFor=\"let specialAbility of selectedSpecies.specialAbilityProcess\">\r\n                  <div class=\"custom-control custom-radio\">\r\n                    <input type=\"radio\" name=\"customRadio\" class=\"custom-control-input\">\r\n                    <label class=\"custom-control-label\">{{ specialAbility.label }}</label>\r\n                  </div>\r\n                </div>\r\n              </form>\r\n\r\n            </ng-container>\r\n\r\n          </div>\r\n\r\n        </div>\r\n      </div>\r\n\r\n      <div class=\"col-6\">\r\n        <p class=\"step-title\">Caractérisques</p>\r\n        <p>Vigueur : {{ selectedSpecies.characteristics.brawn }}</p>\r\n        <p>Agilité : {{ selectedSpecies.characteristics.agility }}</p>\r\n        <p>Intelligence : {{ selectedSpecies.characteristics.intellect }}</p>\r\n        <p>Ruse : {{ selectedSpecies.characteristics.cunning }}</p>\r\n        <p>Volonté : {{ selectedSpecies.characteristics.willpower }}</p>\r\n        <p>Présence : {{ selectedSpecies.characteristics.presence }}</p>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n      <p class=\"step-main-title\">2. Sélectionner carrière et spécialité</p>\r\n    </div>\r\n\r\n    <div class=\"row step-container\">\r\n      <div class=\"col-6\">\r\n        <select [(ngModel)]=\"selectedCareer\" (change)=\"changeCareer()\">\r\n          <option *ngFor=\"let c of careers\" [ngValue]=\"c\">{{ c.label }}</option>\r\n        </select>\r\n        <div class=\"row\">\r\n          <div class=\"col\">\r\n            <img src=\"assets/images/careers/{{ selectedCareer.key }}.png\" width=\"100px\" />\r\n          </div>\r\n          <div class=\"col\">\r\n            <ng-container *ngFor=\"let skill of character.skills\">\r\n              <p *ngIf=\"skill.career\">\r\n                <button *ngIf=\"skill.selectedCareer\" class=\"btn btn-skill btn-career\" type=\"button\" [disabled]=\"skill.value === 0\" (click)=\"downSkillCa(skill)\">\r\n                  <i class=\"fa fa-minus\" aria-hidden=\"true\"></i>\r\n                </button>\r\n                <button *ngIf=\"!skill.selectedCareer\" class=\"btn btn-skill btn-career\" type=\"button\" [disabled]=\"skill.value === 2 || skill.selectedCareer || countSelectedCareers() > 3\"\r\n                  (click)=\"upSkillCa(skill)\">\r\n                  <i class=\"fa fa-plus\" aria-hidden=\"true\"></i>\r\n                </button>\r\n                <span [ngClass]=\"{ 'skill-selected': skill.selectedCareer }\">{{ skill.label }}</span>\r\n              </p>\r\n            </ng-container>\r\n          </div>\r\n        </div>\r\n\r\n        <select [(ngModel)]=\"selectedSpecialization\" (change)=\"changeSpecialization()\">\r\n          <option *ngFor=\"let sp of selectedCareer.specialization\" [ngValue]=\"sp\">{{ sp.label }}</option>\r\n        </select>\r\n\r\n        <div class=\"row\">\r\n          <div class=\"col\">\r\n            <img src=\"assets/images/careers/specialization/{{ selectedSpecialization.key }}.png\" width=\"100px\" />\r\n          </div>\r\n          <div class=\"col\">\r\n            <ng-container *ngFor=\"let skill of character.skills\">\r\n              <p *ngIf=\"skill.specialization\">\r\n                <button *ngIf=\"skill.selectedSpecialization\" class=\"btn btn-skill btn-specialization\" type=\"button\" [disabled]=\"skill.value === 0\"\r\n                  (click)=\"downSkillSp(skill)\">\r\n                  <i class=\"fa fa-minus\" aria-hidden=\"true\"></i>\r\n                </button>\r\n                <button *ngIf=\"!skill.selectedSpecialization\" class=\"btn btn-skill btn-specialization\" type=\"button\" [disabled]=\"skill.value === 2 || skill.selectedSpecialization || countSelectedSpecializations() > 1\"\r\n                  (click)=\"upSkillSp(skill)\">\r\n                  <i class=\"fa fa-plus\" aria-hidden=\"true\"></i>\r\n                </button>\r\n                <span [ngClass]=\"{ 'specialization-selected': skill.selectedSpecialization }\">{{ skill.label }}</span>\r\n              </p>\r\n            </ng-container>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n      <div class=\"col-6\">\r\n        <p class=\"step-title\">Compétences</p>\r\n        <div *ngFor=\"let skill of character.skills\">\r\n          <ng-container *ngIf=\"skill.career || skill.specialization || skill.species\">\r\n            <div class=\"row skill\">\r\n              <div class=\"col\">\r\n                <span>{{ skill.label }}</span>\r\n              </div>\r\n            </div>\r\n            <div class=\"row align-items-center\">\r\n              <ngb-progressbar type=\"info\" [value]=\"skill.value * 20\">{{ skill.value }}</ngb-progressbar>\r\n              <span *ngIf=\"skill.species\">Espèce</span>\r\n            </div>\r\n          </ng-container>\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n  </section>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -983,8 +983,9 @@ var CharacterCreatorComponent = (function () {
         this.careers = [];
         this.skills = [];
         this.character = {
-            species: '',
-            career: '',
+            species: { specialAbilityProcess: [], key: "" },
+            career: { specialization: [] },
+            specialization: {},
             characteristics: {
                 brawn: 2,
                 agility: 2,
@@ -1006,7 +1007,16 @@ var CharacterCreatorComponent = (function () {
             _this.skills = skills;
             // Instanciate character
             _this.skills.forEach(function (skill) {
-                _this.character.skills[skill.key.toString()] = 1;
+                _this.character.skills.push({
+                    "key": skill.key,
+                    "label": skill.label,
+                    "value": 0,
+                    "career": false,
+                    "specialization": false,
+                    "species": false,
+                    "selectedCareer": false,
+                    "selectedSpecialization": false
+                });
             });
             console.log(_this.character);
             _this.selectedSpecies = species[0];
@@ -1022,6 +1032,7 @@ var CharacterCreatorComponent = (function () {
         return __WEBPACK_IMPORTED_MODULE_3_rxjs__["Observable"].forkJoin(this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].SPECIES), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].CAREERS), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].SKILLS));
     };
     CharacterCreatorComponent.prototype.changeSpecies = function () {
+        console.log('Change Species');
         this.isPageLoaded = false;
         this.character.species = this.selectedSpecies;
         this.character.characteristics.brawn = this.selectedSpecies.characteristics.brawn;
@@ -1030,26 +1041,89 @@ var CharacterCreatorComponent = (function () {
         this.character.characteristics.cunning = this.selectedSpecies.characteristics.cunning;
         this.character.characteristics.willpower = this.selectedSpecies.characteristics.willpower;
         this.character.characteristics.presence = this.selectedSpecies.characteristics.presence;
+        // Set species skills + talents
+        this.character.skills.forEach(function (skill) {
+            if (skill.species) {
+                skill.value--;
+                skill.species = false;
+            }
+        });
+        if (this.character.species.key === "human") {
+        }
+        else if (this.character.species.specialAbilityProcess.length === 1) {
+            console.log("1 characteristic species");
+            var speciesSkillKey = this.character.species.specialAbilityProcess[0].skillKey;
+            var skill = this.character.skills.find(function (s) { return s.key === speciesSkillKey; });
+            skill.value++;
+            skill.species = true;
+        }
+        else {
+            // Need to choose
+        }
         this.isPageLoaded = true;
     };
     CharacterCreatorComponent.prototype.changeCareer = function () {
+        var _this = this;
         this.character.career = this.selectedCareer;
+        // Change specialization
+        this.selectedSpecialization = this.character.career.specialization[0];
+        console.log('Selected career');
+        console.log(this.selectedCareer);
+        console.log(this.character);
+        this.resetCharacterSkills();
+        // TODO : add skills from species
+        // Add new career skills
+        this.selectedCareer.skills.forEach(function (skill) {
+            _this.character.skills.find(function (s) { return s.key === skill.key.toString(); }).career = true;
+        });
+        // Add new specialization skills
+        this.changeSpecialization();
+        this.character.skills.sort(__WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].sortArrayByProperty('career', false));
     };
-    CharacterCreatorComponent.prototype.upSkill = function (key) {
-        if (this.character.skills[key] + 1 <= 2) {
-            this.character.skills[key]++;
-        }
-        else {
-            console.log(key + ' is at maximum value');
+    CharacterCreatorComponent.prototype.changeSpecialization = function () {
+        var _this = this;
+        this.character.specialization = this.selectedSpecialization;
+        this.selectedSpecialization.skills.forEach(function (skill) {
+            _this.character.skills.find(function (s) { return s.key === skill.key.toString(); }).specialization = true;
+        });
+    };
+    CharacterCreatorComponent.prototype.upSkillCa = function (skill) {
+        if (skill.value + 1 <= 2 && this.countSelectedCareers() < 4) {
+            skill.value++;
+            skill.selectedCareer = true;
         }
     };
-    CharacterCreatorComponent.prototype.downSkill = function (key) {
-        if (this.character.skills[key] - 1 >= 0) {
-            this.character.skills[key]--;
+    CharacterCreatorComponent.prototype.downSkillCa = function (skill) {
+        if (skill.value - 1 >= 0) {
+            skill.value--;
+            skill.selectedCareer = false;
         }
-        else {
-            console.log(key + ' is at minium value');
+    };
+    CharacterCreatorComponent.prototype.upSkillSp = function (skill) {
+        if (skill.value + 1 <= 2 && this.countSelectedSpecializations() < 3) {
+            skill.value++;
+            skill.selectedSpecialization = true;
         }
+    };
+    CharacterCreatorComponent.prototype.downSkillSp = function (skill) {
+        if (skill.value - 1 >= 0) {
+            skill.value--;
+            skill.selectedSpecialization = false;
+        }
+    };
+    CharacterCreatorComponent.prototype.resetCharacterSkills = function () {
+        if (this.skills && this.character && this.character.skills) {
+            this.character.skills.forEach(function (skill) {
+                skill.career = false;
+                skill.specialization = false;
+            });
+        }
+    };
+    CharacterCreatorComponent.prototype.countSelectedCareers = function () {
+        return this.character.skills.filter(function (s) { return s.career && s.selectedCareer; }).length;
+    };
+    CharacterCreatorComponent.prototype.countSelectedSpecializations = function () {
+        return this.character.skills.filter(function (s) { return s.specialization && s.selectedSpecialization; }).length;
     };
     CharacterCreatorComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -1341,6 +1415,16 @@ var HelperService = (function () {
             }
             return comparison;
         };
+    };
+    HelperService.multiFieldsSorter = function (fields) {
+        return function (a, b) { return fields.map(function (o) {
+            var dir = 1;
+            if (o[0] === '-') {
+                dir = -1;
+                o = o.substring(1);
+            }
+            return a[o] > b[o] ? dir : a[o] < b[o] ? -(dir) : 0;
+        }).reduce(function (p, n) { return p ? p : n; }, 0); };
     };
     HelperService.stickTextForHtml = function (textToFormat) {
         return textToFormat.replace(/ /g, '&nbsp;');
@@ -2037,12 +2121,8 @@ var WeaponsTableComponent = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `.angular-cli.json`.
 var environment = {
-    production: false
+    production: true
 };
 
 
