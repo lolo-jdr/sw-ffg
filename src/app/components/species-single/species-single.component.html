@@ -70,7 +70,8 @@
 						<span>{{ species.startingXp }}</span>
 					</p>
 					<ng-container *ngIf="species.specialAbilityProcess.length > 0">
-						<p *ngFor="let ability of species.specialAbilityProcess"> {{ ability.label }}</p>
+							<span class="sub-title">Capacité spéciale:</span>
+							<span *ngFor="let ability of species.specialAbilityProcess"> {{ ability.label }}</span>
 					</ng-container>
 					<ng-container *ngIf="species.key === 'human'">
 						<p>+1 dans deux compétences au choix</p>
@@ -107,7 +108,7 @@
 				</div>
 				<div class="col-sm text-center"></div>
 				<div class="row block">
-					<p class="text-justify">{{ species.description }}</p>
+					<p class="text-justify" [innerHTML]="species.descriptionLong"></p>
 				</div>
 			</div>
 		</div>
