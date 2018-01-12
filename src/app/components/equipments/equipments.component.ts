@@ -29,6 +29,7 @@ export class EquipmentsComponent implements OnInit {
   protected equipmentSecurityMaterial   = ApiService. EQUIPMENT_SECURITY_MATERIAL;
   protected equipmentSurvivalMaterial   = ApiService. EQUIPMENT_SURVIVAL_MATERIAL;
   protected equipmentTool               = ApiService. EQUIPMENT_TOOL;
+  protected equipmentdroide             = ApiService. EQUIPMENT_DROIDE;
     
   constructor(private api:ApiService) { }
 

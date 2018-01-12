@@ -48,6 +48,10 @@ p {
   font-family: "STARWARS";
 }
 
+.color-red {
+  color: red;
+}
+
 /* Bootstrap modal full screen */
 /*.modal-dialog {
   width: 100%;

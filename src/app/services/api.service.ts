@@ -43,6 +43,7 @@ export class ApiService {
   public static EQUIPMENT_SECURITY_MATERIAL = "equipment-security-material.json";
   public static EQUIPMENT_SURVIVAL_MATERIAL = "equipment-survival-material.json";
   public static EQUIPMENT_TOOL = "equipment-tool.json";
+  public static EQUIPMENT_DROIDE = "equipment-droide.json";
 
   public static CHARACTER_CREATION_INSPIRATIONS = 'assets/data/character-creation-inspirations.json';
 

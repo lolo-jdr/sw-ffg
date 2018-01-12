@@ -43,6 +43,13 @@
     },
     {
         "image": "",
+        "label": "Appât chimique",
+        "price": 125,
+        "encombrement": 1,
+        "rarety": 4
+    },
+    {
+        "image": "",
         "label": "Munitions / cellules énergétiques",
         "price": 25,
         "encombrement": 1,

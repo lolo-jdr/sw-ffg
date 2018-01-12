@@ -16,8 +16,9 @@
 
   <section *ngIf="isPageLoaded" id="characterCreator">
 
+    <!-- Title -->
     <div class="row page-title">
-      <div class="page-title-label">
+      <div class="col-sm">
         <p>CRÉATEUR DE PERSONNAGE</p>
         <p>
           <small>
@@ -27,36 +28,69 @@
       </div>
     </div>
 
+    <!-- Species -->
     <div class="row">
-      <p class="step-main-title">1. Sélectionner l'espèce</p>
+      <p class="step-main-title">1. Choisir une espèce</p>
     </div>
 
     <div class="row step-container">
-      <div class="col-6">
+      <div class="col-7">
         <select [(ngModel)]="selectedSpecies" (change)="changeSpecies()">
           <option *ngFor="let s of species" [ngValue]="s">{{ s.label }}</option>
         </select>
+
+        <!-- Species Image -->
         <div class="row">
+          <!-- Species Image -->
           <div class="col">
             <img src="assets/images/species/{{ selectedSpecies.key }}.png" width="100px" />
+            <p class="internal-page-link">
+              <a target="blank" routerLink="/species/{{ selectedSpecies.key }}">
+                <small>
+                  <span>Voir la fiche d'espèce&nbsp;</span>
+                  <i class="fa fa-external-link" aria-hidden="true"></i>
+                </small>
+              </a>
+            </p>
           </div>
+
+          <!-- Species Special Skill -->
           <div class="col">
-            <ng-container *ngIf="selectedSpecies.specialAbilityProcess.length === 0">
-              <p> Aucune spécialité </p>
+            <p class="step-title">Compétence d'espèce</p>
+            <!-- If human -->
+            <ng-container *ngIf="character.species.key === 'human'">
+              <p>1 rang dans 2 compétences hors carrière.</p>
+              <select [(ngModel)]="humanSpeciesSelectedFirstSkill" (change)="humanAbilityChanged();">
+                <option *ngFor="let sk of getNotCareerSkills()" [ngValue]="sk">{{ sk.label }}</option>
+              </select>
+              <select [(ngModel)]="humanSpeciesSelectedSecondSkill" (change)="humanAbilityChanged(true);">
+                <option *ngFor="let sk of getNotCareerSkills(true)" [ngValue]="sk">{{ sk.label }}</option>
+              </select>
             </ng-container>
+            <!-- If droid -->
+            <ng-container *ngIf="character.species.key === 'droid'">
+              <p>6 rang de carrière au lieu de 4</p>
+              <p>3 rang de spécialité au lieu de 3</p>
+            </ng-container>
+            <!-- If no special ability, not human or droid -->
+            <ng-container *ngIf="selectedSpecies.specialAbilityProcess.length === 0 && character.species.key !== 'human' && character.species.key !== 'droid'">
+              <p>Aucune spécialité </p>
+            </ng-container>
+            <!-- If only 1 special ability -->
             <ng-container *ngIf="selectedSpecies.specialAbilityProcess.length === 1">
               <p *ngFor="let specialAbility of selectedSpecies.specialAbilityProcess"> {{ specialAbility.label }} </p>
             </ng-container>
+            <!-- If only 2 or more special abilities -->
             <ng-container *ngIf="selectedSpecies.specialAbilityProcess.length > 1">
               <form>
                 <div *ngFor="let specialAbility of selectedSpecies.specialAbilityProcess">
-                  <div class="custom-control custom-radio">
-                    <input type="radio" name="customRadio" class="custom-control-input" />
-                    <label class="custom-control-label">{{ specialAbility.label }}</label>
-                  </div>
+                  <label class="custom-control custom-checkbox">
+                    <input type="radio" name="radioSpeciesSkills" (click)="changeSpeciesSkill(specialAbility)" class="custom-control-input" />
+                    <span class="custom-control-indicator"></span>
+                    <span>{{ specialAbility.label }}</span>
+                  </label>
                 </div>
               </form>
-
             </ng-container>
 
           </div>
@@ -64,7 +98,7 @@
         </div>
       </div>
 
-      <div class="col-6">
+      <div class="col-5">
         <p class="step-title">Caractérisques</p>
         <p>Vigueur : {{ selectedSpecies.characteristics.brawn }}</p>
         <p>Agilité : {{ selectedSpecies.characteristics.agility }}</p>
@@ -76,34 +110,48 @@
     </div>
 
     <div class="row">
-      <p class="step-main-title">2. Sélectionner carrière et spécialité</p>
+      <p class="step-main-title">2. Choisir une carrière et sa spécialité</p>
     </div>
 
     <div class="row step-container">
-      <div class="col-6">
+      <div class="col-7">
+        <p class="step-title">Carrière</p>
         <select [(ngModel)]="selectedCareer" (change)="changeCareer()">
           <option *ngFor="let c of careers" [ngValue]="c">{{ c.label }}</option>
         </select>
         <div class="row">
           <div class="col">
             <img src="assets/images/careers/{{ selectedCareer.key }}.png" width="100px" />
+            <p class="internal-page-link">
+              <a target="blank" routerLink="/careers/{{ selectedCareer.key }}">
+                <small>
+                  <span>Voir la fiche de carrière&nbsp;</span>
+                  <i class="fa fa-external-link" aria-hidden="true"></i>
+                </small>
+              </a>
+            </p>
           </div>
           <div class="col">
+            <p class="step-title">Compétences de carrière</p>
+            <p class="title-skill-remaining" *ngIf="countSelectedCareers() < nbSkillsCareerAvailable">Encore
+              <span class="color-red">{{ nbSkillsCareerAvailable - countSelectedCareers() }}</span> compétences</p>
+            <p class="title-skill-remaining" *ngIf="countSelectedCareers() === nbSkillsCareerAvailable">Compétences choisies</p>
             <ng-container *ngFor="let skill of character.skills">
-              <p *ngIf="skill.career">
+              <p class="skill-buttons" *ngIf="skill.career">
                 <button *ngIf="skill.selectedCareer" class="btn btn-skill btn-career" type="button" [disabled]="skill.value === 0" (click)="downSkillCa(skill)">
                   <i class="fa fa-minus" aria-hidden="true"></i>
                 </button>
-                <button *ngIf="!skill.selectedCareer" class="btn btn-skill btn-career" type="button" [disabled]="skill.value === 2 || skill.selectedCareer || countSelectedCareers() > 3"
+                <button *ngIf="!skill.selectedCareer" class="btn btn-skill btn-career" type="button" [disabled]="skill.value === 2 || skill.selectedCareer || countSelectedCareers() >= (nbSkillsCareerAvailable)"
                   (click)="upSkillCa(skill)">
                   <i class="fa fa-plus" aria-hidden="true"></i>
                 </button>
-                <span [ngClass]="{ 'skill-selected': skill.selectedCareer }">{{ skill.label }}</span>
+                <span class="skill-button-label" [ngClass]="{ 'skill-selected': skill.selectedCareer }">{{ skill.label }}</span>
               </p>
             </ng-container>
           </div>
         </div>
 
+        <p class="step-title specialization-ddl">Spécialisation</p>
         <select [(ngModel)]="selectedSpecialization" (change)="changeSpecialization()">
           <option *ngFor="let sp of selectedCareer.specialization" [ngValue]="sp">{{ sp.label }}</option>
         </select>
@@ -113,39 +161,84 @@
             <img src="assets/images/careers/specialization/{{ selectedSpecialization.key }}.png" width="100px" />
           </div>
           <div class="col">
+            <p class="title-skill-remaining" *ngIf="countSelectedSpecializations() < nbSkillsSpecializationAvailable">Encore
+              <span class="color-red">{{ nbSkillsSpecializationAvailable - countSelectedSpecializations() }}</span> compétences</p>
+            <p class="title-skill-remaining" *ngIf="countSelectedSpecializations() === nbSkillsSpecializationAvailable">Compétences choisies</p>
             <ng-container *ngFor="let skill of character.skills">
-              <p *ngIf="skill.specialization">
+              <p class="skill-buttons" *ngIf="skill.specialization">
                 <button *ngIf="skill.selectedSpecialization" class="btn btn-skill btn-specialization" type="button" [disabled]="skill.value === 0"
                   (click)="downSkillSp(skill)">
                   <i class="fa fa-minus" aria-hidden="true"></i>
                 </button>
-                <button *ngIf="!skill.selectedSpecialization" class="btn btn-skill btn-specialization" type="button" [disabled]="skill.value === 2 || skill.selectedSpecialization || countSelectedSpecializations() > 1"
+                <button *ngIf="!skill.selectedSpecialization" class="btn btn-skill btn-specialization" type="button" [disabled]="skill.value === 2 || skill.selectedSpecialization || countSelectedSpecializations() >= (nbSkillsSpecializationAvailable)"
                   (click)="upSkillSp(skill)">
                   <i class="fa fa-plus" aria-hidden="true"></i>
                 </button>
-                <span [ngClass]="{ 'specialization-selected': skill.selectedSpecialization }">{{ skill.label }}</span>
+                <span class="skill-button-label" [ngClass]="{ 'specialization-selected': skill.selectedSpecialization }">{{ skill.label }}</span>
               </p>
             </ng-container>
           </div>
         </div>
       </div>
 
-      <div class="col-6">
+      <div class="col-5">
         <p class="step-title">Compétences</p>
         <div *ngFor="let skill of character.skills">
-          <ng-container *ngIf="skill.career || skill.specialization || skill.species">
+          <ng-container *ngIf="skill.career || skill.specialization || skill.species || skill.selectedHumanFirstSkill || skill.selectedHumanSecondSkill">
             <div class="row skill">
               <div class="col">
-                <span>{{ skill.label }}</span>
+                <span class="progress-bar-label">{{ skill.label }}</span>
               </div>
             </div>
             <div class="row align-items-center">
               <ngb-progressbar type="info" [value]="skill.value * 20">{{ skill.value }}</ngb-progressbar>
-              <span *ngIf="skill.species">Espèce</span>
+              <span *ngIf="skill.species || skill.selectedHumanFirstSkill || skill.selectedHumanSecondSkill">
+                <small>
+                  <em>Espèce&nbsp;</em>
+                </small>
+              </span>
+              <span *ngIf="skill.selectedCareer">
+                <small>
+                  <em>Carrière&nbsp;</em>
+                </small>
+              </span>
+              <span *ngIf="skill.selectedSpecialization">
+                <small>
+                  <em>Spé.</em>
+                </small>
+              </span>
             </div>
           </ng-container>
         </div>
       </div>
+    </div>
+
+    <!-- Force sensitive -->
+    <div class="row">
+      <div class="col">
+        <p>Spécialités optionnelles</p>
+        <p>
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" name="checkboxHasForce" [checked]="character.hasForce" class="custom-control-input" [disabled]="character.career.universKey === 'fad'"
+            />
+            <span class="custom-control-indicator"></span>
+            <span>Personnage sensible à la force (mais non Jedi)</span>
+          </label>
+        </p>
+        <p>
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" name="checkboxHasForce" [checked]="character.isRecrue" class="custom-control-input" [disabled]="character.career.universKey !== 'aor'"
+            />
+            <span class="custom-control-indicator"></span>
+            <span>Recrue de la Rébellion</span>
+          </label>
+        </p>
+      </div>
+    </div>
+
+    <!-- Species -->
+    <div class="row">
+      <p class="step-main-title">3. Choisir une motivation</p>
     </div>
 
   </section>

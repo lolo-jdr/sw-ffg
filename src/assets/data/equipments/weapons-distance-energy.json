@@ -15,6 +15,22 @@
         ]
     },
     {
+        "image": "WeaponBLASTION.png",
+        "label": "Blaster à ionisation",
+        "skill": "Distance (Légère)",
+        "damage": 10,
+        "critic": 5,
+        "distance": "Courte",
+        "enc": 3,
+        "emp": 3,
+        "price": 250,
+        "rarety": 3,
+        "options": [
+            { "label": "Désorientation 5" },
+            { "label": "Dégâts étourdissants (contre les droïdes)" }
+        ]
+    },
+    {
         "image": "WeaponBLASTLT.png",
         "label": "Pistolet blaster léger",
         "skill": "Distance (Légère)",
@@ -27,6 +43,22 @@
         "rarety": 4,
         "options": [
             { "label": "Réglages étourdissants" }
+        ]
+    },
+    {
+        "image": "",
+        "label": "Blaster paralysant Czerka Arms A95",
+        "skill": "Distance (Légère)",
+        "damage": 5,
+        "critic": 3,
+        "distance": "Au contact",
+        "enc": 1,
+        "emp": 0,
+        "price": 400,
+        "rarety": 5,
+        "options": [
+            { "label": "Réglages étourdissants" },
+            { "label": "Sanguinaire 1" }
         ]
     },
     {
@@ -60,6 +92,38 @@
         ]
     },
     {
+        "image": "",
+        "label": "Blaster de chasse Herloss HBt-4",
+        "skill": "Distance (Lourde)",
+        "damage": 10,
+        "critic": 3,
+        "distance": "Moyenne",
+        "enc": 5,
+        "emp": 2,
+        "price": 900,
+        "rarety": 6,
+        "options": [
+            { "label": "Encombrants 2" },
+            { "label": "Réglages étourdissants" }
+        ]
+    },
+    {
+        "image": "GunOfCommand.jpg",
+        "label": "Pistolet statique SSB-1",
+        "skill": "Distance (Légère)",
+        "damage": 2,
+        "critic": 4,
+        "distance": "Courte",
+        "enc": 2,
+        "emp": 1,
+        "price": 850,
+        "rarety": 7,
+        "options": [
+            { "label": "Désorientation 1" },
+            { "label": "Etourdissement 8" }
+        ]
+    },
+    {
         "image": "WeaponBLASTCARB.png",
         "label": "Carabine Blaster",
         "skill": "Distance (Lourde)",
@@ -72,6 +136,55 @@
         "rarety": 5,
         "options": [
             { "label": "Réglages étourdissants" }
+        ]
+    },
+    {
+        "image": "ES-700_Pulse_Rifle_FC.png",
+        "label": "Fusil à impulsions Corondexx VES-700",
+        "skill": "Distance (Lourde)",
+        "damage": 8,
+        "critic": 3,
+        "distance": "Moyenne",
+        "enc": 4,
+        "emp": 3,
+        "price": 950,
+        "rarety": 6,
+        "options": [
+            { "label": "Souffle 6" },
+            { "label": "Réglages étourdissants" }
+        ]
+    },
+    {
+        "image": "WeaponBOWCAST.png",
+        "label": "Arbalète",
+        "skill": "Distance (Lourde)",
+        "damage": 10,
+        "critic": 3,
+        "distance": "Moyenne",
+        "enc": 5,
+        "emp": 2,
+        "price": 1250,
+        "rarety": 7,
+        "options": [
+            { "label": "Encombrants 3" },
+            { "label": "Renversement" }
+        ]
+    },
+    {
+        "image": "Droiddisabler.jpg",
+        "label": "Mutilateur de droïdes Felebreck",
+        "skill": "Distance (Légère)",
+        "damage": 12,
+        "critic": 3,
+        "distance": "Courte",
+        "enc": 1,
+        "emp": 1,
+        "price": 1050,
+        "rarety": 5,
+        "options": [
+            { "label": "Choc 1" },
+            { "label": "Ion" },
+            { "label": "Munitions limitées 3" }
         ]
     },
     {
@@ -123,56 +236,6 @@
         ]
     },
     {
-        "image": "WeaponBLASTHVYREP.png",
-        "label": "Blaster lourd à répétition",
-        "skill": "Artillerie",
-        "damage": 15,
-        "critic": 2,
-        "distance": "Longue",
-        "enc": 9,
-        "emp": 4,
-        "price": 6000,
-        "rarety": 8,
-        "options": [
-            { "label": "Automatique" },
-            { "label": "Encombrant " },
-            { "label": "Perforant 2" },
-            { "label": "Sanguinaire 1" }
-        ]
-    },
-    {
-        "image": "WeaponBOWCAST.png",
-        "label": "Arbalète",
-        "skill": "Distance (Lourde)",
-        "damage": 10,
-        "critic": 3,
-        "distance": "Moyenne",
-        "enc": 5,
-        "emp": 2,
-        "price": 1250,
-        "rarety": 7,
-        "options": [
-            { "label": "Encombrants 3" },
-            { "label": "Renversement" }
-        ]
-    },
-    {
-        "image": "WeaponBLASTION.png",
-        "label": "Blaster à ionisation",
-        "skill": "Distance (Légère)",
-        "damage": 10,
-        "critic": 5,
-        "distance": "Courte",
-        "enc": 3,
-        "emp": 3,
-        "price": 250,
-        "rarety": 3,
-        "options": [
-            { "label": "Désorientation 5" },
-            { "label": "Dégâts étourdissants (contre les droîdes)" }
-        ]
-    },
-    {
         "image": "WeaponDISRPIS.png",
         "label": "Pistolet disrupteur",
         "skill": "Distance (Légère)",
@@ -201,6 +264,41 @@
         "options": [
             { "label": "Sanguinaire 2" },
             { "label": "Sanguinaire 5" }
+        ]
+    },
+    {
+        "image": "WeaponM1NOVAVIPER.png",
+        "label": "Pistolet blaster Raider Arms modèle-1 \"Nova Viper\"",
+        "skill": "Distance (Légère)",
+        "damage": 7,
+        "critic": 3,
+        "distance": "Moyenne",
+        "enc": 2,
+        "emp": 2,
+        "price": 4500,
+        "rarety": 9,
+        "options": [
+            { "label": "Perforant 2" },
+            { "label": "Précis 2" },
+            { "label": "Réglages étourdissants" }
+        ]
+    },
+    {
+        "image": "WeaponBLASTHVYREP.png",
+        "label": "Blaster lourd à répétition",
+        "skill": "Artillerie",
+        "damage": 15,
+        "critic": 2,
+        "distance": "Longue",
+        "enc": 9,
+        "emp": 4,
+        "price": 6000,
+        "rarety": 8,
+        "options": [
+            { "label": "Automatique" },
+            { "label": "Encombrant " },
+            { "label": "Perforant 2" },
+            { "label": "Sanguinaire 1" }
         ]
     }
 ]

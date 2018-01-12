@@ -26,5 +26,37 @@
         "options": [
             { "label": "Encombrant 2" }
         ]
+    },
+    {
+        "image": "8-Gauge_Scatter_Gun_FC.png",
+        "label": "Fusil à dispersion Adostic Arms Calibre-8",
+        "skill": "Distance (Lourde)",
+        "damage": 7,
+        "critic": 6,
+        "distance": "Courte",
+        "enc": 3,
+        "emp": 2,
+        "price": 550,
+        "rarety": 4,
+        "options": [
+            { "label": "Souffle 3" },
+            { "label": "Renversement" }
+        ]
+    },
+    {
+        "image": "Fwg-5.jpg",
+        "label": "Pistolet à flechettes FWG-5",
+        "skill": "Distance (Légère)",
+        "damage": 6,
+        "critic": 3,
+        "distance": "Courte",
+        "enc": 1,
+        "emp": 2,
+        "price": 825,
+        "rarety": 7,
+        "options": [
+            { "label": "Munitions limitées 3" },
+            { "label": "Projectile guidé 3" }
+        ]
     }
 ]

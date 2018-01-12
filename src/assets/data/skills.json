@@ -236,5 +236,12 @@
         "description": "",
         "characteristic": "intellect",
         "type": "knowledge"
+    },
+    {
+        "key": "lightsaber",
+        "label": "Sabre laser",
+        "description": "",
+        "characteristic": "brawn",
+        "type": "combat"
     }
 ]
