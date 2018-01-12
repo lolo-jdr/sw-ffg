@@ -43,5 +43,21 @@
         "options": [
             { "label": "Cortosis" }
         ]
+    },
+    {
+        "image": "",
+        "label": "Bottes à décharge",
+        "skill": "Pugilat",
+        "damage": "+0",
+        "critic": 5,
+        "distance": "Au contact",
+        "enc": 2,
+        "emp": 0,
+        "price": 1250,
+        "rarety": 5,
+        "options": [
+            { "label": "Désorientation 3" },
+            { "label": "Etourdissement 3" }
+        ]
     }
 ]

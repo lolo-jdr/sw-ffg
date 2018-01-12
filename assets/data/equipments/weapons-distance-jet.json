@@ -15,5 +15,86 @@
             { "label": "Renversement" },
             { "label": "Munitions limitées 1" }
         ]
+    },
+    {
+        "image": "Daggerweapon.jpg",
+        "label": "Dague de lancer ascienne",
+        "skill": "Distance (Légère)",
+        "damage": "+1",
+        "critic": 2,
+        "distance": "Courte",
+        "enc": 1,
+        "emp": 0,
+        "price": 65,
+        "rarety": 7,
+        "options": [
+            { "label": "Munitions limitées 1" },
+            { "label": "Perforante 2" }
+        ]
+    },
+    {
+        "image": "",
+        "label": "Arc à poulies corellien",
+        "skill": "Distance (lourde)",
+        "damage": "5",
+        "critic": 5,
+        "distance": "Moyenne",
+        "enc": 3,
+        "emp": 1,
+        "price": 200,
+        "rarety": 5,
+        "options": [
+            { "label": "Encombrant 3" },
+            { "label": "Renversement" },
+            { "label": "Munitions limitées 1" },
+            { "label": "Perforante 1" }
+        ]
+    },
+    {
+        "image": "",
+        "label": "Flèches étourdissantes",
+        "skill": "Distance (Légère)",
+        "damage": "6",
+        "critic": 0,
+        "distance": "Moyenne",
+        "enc": 0,
+        "emp": 0,
+        "price": 60,
+        "rarety": 6,
+        "options": [
+            { "label": "Munitions limitées 1" },
+            { "label": "Dégâts étourdissants" }
+        ]
+    },
+    {
+        "image": "",
+        "label": "Flèches explosives",
+        "skill": "Distance (Légère)",
+        "damage": "6",
+        "critic": 3,
+        "distance": "Moyenne",
+        "enc": 0,
+        "emp": 0,
+        "price": 50,
+        "rarety": 6,
+        "options": [
+            { "label": "Munitions limitées 1" },
+            { "label": "Souffle 4" }
+        ]
+    },
+    {
+        "image": "",
+        "label": "Lance-toile AO14 \"Aranea\"",
+        "skill": "Distance (Lourde)",
+        "damage": "3",
+        "critic": 0,
+        "distance": "Courte",
+        "enc": 4,
+        "emp": 2,
+        "price": 750,
+        "rarety": 5,
+        "options": [
+            { "label": "Enchevêtrement 5" }
+        ]
     }
 ]

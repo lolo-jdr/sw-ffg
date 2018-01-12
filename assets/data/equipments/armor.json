@@ -20,6 +20,16 @@
         "rarety": 2
     },
     {
+        "image": "ArmorUTILITYVEST.png",
+        "label": "Veste blast",
+        "defense": 0,
+        "encaissement": 1,
+        "price": 200,
+        "enc": 3,
+        "emp": 1,
+        "rarety": 5
+    },
+    {
         "image": "ArmorAEG.png",
         "label": "Tenue d'exploration",
         "defense": 0,
@@ -40,6 +50,16 @@
         "rarety": 1
     },
     {
+        "image": "ArmorENVIROSUIT.png",
+        "label": "Combinaison environnementale",
+        "defense": 0,
+        "encaissement": 2,
+        "price": 750,
+        "enc": 2,
+        "emp": 1,
+        "rarety": 2
+    },
+    {
         "image": "ArmorFLAKVEST.png",
         "label": "Vêtements reforcés",
         "defense": 1,
@@ -50,6 +70,16 @@
         "rarety": 6
     },
     {
+        "image": "ArmorSMUGGLERSTRENCHCOAT.png",
+        "label": "Pardessus de contrebandier",
+        "defense": 1,
+        "encaissement": 1,
+        "price": 1650,
+        "enc": 3,
+        "emp": 0,
+        "rarety": 7
+    },
+    {
         "image": "ArmorLAM.png",
         "label": "Armure laminée",
         "defense": 0,
@@ -58,6 +88,16 @@
         "enc": 4,
         "emp": 3,
         "rarety": 5
+    },
+    {
+        "image": "ArmorENVIROSUIT.png",
+        "label": "Combinaison de survie antichoc",
+        "defense": 0,
+        "encaissement": 2,
+        "price": 3000,
+        "enc": 2,
+        "emp": 1,
+        "rarety": 3
     },
     {
         "image": "ArmorARMROBE.png",
@@ -78,6 +118,16 @@
         "enc": 6,
         "emp": 4,
         "rarety": 7
+    },
+    {
+        "image": "ArmorMIMETICSUIT.png",
+        "label": "Combinaison mimétique",
+        "defense": 1,
+        "encaissement": 1,
+        "price": 8000,
+        "enc": 2,
+        "emp": 2,
+        "rarety": 8
     },
     {
         "image": "",

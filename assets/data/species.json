@@ -21,7 +21,7 @@
     "strainTreshold": "11 + Volonté",
     "startingXp": 100,
     "forceSensitive": true,
-    "specialAbility": "Les bothans commencent le jeu avec un rang en Système D. Ils ne peuvent cepandant pas dépasser le rang 2 dans cette compétence à la création du personnage. Ils commencent également avec 1 rang dans le talent <span class=\"skill\">Persuasion</span>.",
+    "specialAbility": "Les bothans commencent le jeu avec un rang en Système D. Ils ne peuvent cependant pas dépasser le rang 2 dans cette compétence à la création du personnage. Ils commencent également avec 1 rang dans le talent <span class=\"skill\">Persuasion</span>.",
     "specialAbilityProcess": [
       {
         "label": "+1 Système D",
@@ -51,7 +51,7 @@
     "strainTreshold": "10 + Volonté",
     "startingXp": 175,
     "forceSensitive": false,
-    "specialAbility": "Les droïdes ne mangent pas, ne dorment pas, ne respirent pas et ne sont pas affectés par les toxines et les poisons. La limite d'implants des droïdes est égale à 6 (et non à la <strong>Vigueur</strong>). Par ailleurs, une fois sa carrière choisie, un droïde gagne 1 rang dans 6 de ses 8 compétences de carrière (au lieu des quatre habituelles). Une fois sa première spécialité choisie, il gagne 1 rang dans 3 de ses 4 compétences de spécialité (au lieu des 2 habituelles).",
+    "specialAbility": "Les droïdes ne mangent pas, ne dorment pas, ne respirent pas et ne sont pas affectés par les toxines et les poisons. La limite d'implants des droïdes est égale à 6 (et non à la Vigueur). Par ailleurs, une fois sa carrière choisie, un droïde gagne 1 rang dans 6 de ses 8 compétences de carrière (au lieu des quatre habituelles). Une fois sa première spécialité choisie, il gagne 1 rang dans 3 de ses 4 compétences de spécialité (au lieu des 2 habituelles).",
     "specialAbilityProcess": [],
     "otherAbilities": [
       {
@@ -331,7 +331,7 @@
     "strainTreshold": "9 + Volonté",
     "startingXp": 100,
     "forceSensitive": true,
-    "specialAbility": "Les Gans commencent le jeu avec 1 rang en Charme ou en Négociation. Il ne peuvent cependant pas dépasser le rang 2 dans la compétence choisie à la création du personnage.",
+    "specialAbility": "Les Grans commencent le jeu avec 1 rang en Charme ou en Négociation. Il ne peuvent cependant pas dépasser le rang 2 dans la compétence choisie à la création du personnage.",
     "specialAbilityProcess": [
       {
         "label": "+1 Charme",
@@ -339,7 +339,7 @@
       },
       {
         "label": "+1 Négociation",
-        "skillKey": "negociation"
+        "skillKey": "negotiation"
       }
     ],
     "otherAbilities": [
@@ -769,7 +769,7 @@
     "specialAbilityProcess": [
       {
         "label": "+1 Négociation",
-        "skillKey": "negociation"
+        "skillKey": "negotiation"
       }
     ],
     "otherAbilities": [
@@ -790,7 +790,7 @@
       "Male",
       "Femelle"
     ],
-    "description": "Prodondément respecteux des formes d'art et de tout processus créatif, les Chiss explorent les secrets de la galaxie en préservant le mystère qui entoure leurs origines. Ils excellent lorsqu'il s'agit de résoudre des problèmes et d'élaborer des stratégies. Leur affinité avec humains et non-humains en font des intermédiaires ideaux entre culture. ",
+    "description": "Profondément respecteux des formes d'art et de tout processus créatif, les Chiss explorent les secrets de la galaxie en préservant le mystère qui entoure leurs origines. Ils excellent lorsqu'il s'agit de résoudre des problèmes et d'élaborer des stratégies. Leur affinité avec humains et non-humains en font des intermédiaires ideaux entre culture. ",
     "descriptionShort": "Espèce humanoïdes à la peau bleue et aux yeux rouges",
     "descriptionLong": "Physiquement parlant, les natifs de Csilla sont semblables aux Humains à l'exception de trois détails notables : leur peau bleue, leurs cheveux toujours bruns et leurs yeux d'un rouge brillant. Mais, en dehors d'un simple éclat rouge, leurs yeux leur confèrent une acuité visuelle supérieure à celle des Humains, aussi bien en journée que dans la pénombre. <br /><br /> Leur société était raffinée, très évoluée et disciplinée. Ils accordaient une grande importance à l'obéissance, à l'honneur, celui de leur peuple primant sur l'honneur individuel, et à la morale. Centre de nombreux débats et principale barrière aux intentions de Thrawn lorsqu'il était au service des siens, la morale était une véritable doctrine. Résolument pacifistes, les lois des Chiss interdisaient toute forme d'attaque préventive ou d'agression quelconque.",
     "characteristics": {

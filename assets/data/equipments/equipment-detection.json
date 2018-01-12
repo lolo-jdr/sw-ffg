@@ -1,17 +1,31 @@
 [
     {
+        "image": "GearMBIN.png",
+        "label": "Macrojumellees",
+        "price": 75,
+        "encombrement": 1,
+        "rarety": 2
+    },
+    {
         "image": "",
         "label": "Détecteur de poche",
         "price": 100,
         "encombrement": 0,
         "rarety": 2
-    },
+    },   
     {
         "image": "",
-        "label": "Détecteur universel",
-        "price": 500,
-        "encombrement": 2,
+        "label": "Jumelles scanner",
+        "price": 150,
+        "encombrement": 0,
         "rarety": 3
+    },
+    {
+        "image": "GearSTAG.png",
+        "label": "Traceur",
+        "price": 175,
+        "encombrement": 0,
+        "rarety": 4
     },
     {
         "image": "",
@@ -22,23 +36,30 @@
     },
     {
         "image": "",
-        "label": "Jumelles scanner",
-        "price": 150,
-        "encombrement": 0,
+        "label": "Détecteur universel",
+        "price": 500,
+        "encombrement": 2,
         "rarety": 3
     },
     {
-        "image": "GearMBIN.png",
-        "label": "Macrojumellees",
-        "price": 75,
-        "encombrement": 1,
-        "rarety": 2
+        "image": "",
+        "label": "Scanner de terrain longue portée",
+        "price": 850,
+        "encombrement": 6,
+        "rarety": 6
     },
     {
-        "image": "GearSTAG.png",
-        "label": "Traceur",
-        "price": 175,
-        "encombrement": 0,
-        "rarety": 4
+        "image": "",
+        "label": "Bioscanner",
+        "price": 900,
+        "encombrement": 4,
+        "rarety": 5
+    },
+    {
+        "image": "",
+        "label": "Géosenseur",
+        "price": 950,
+        "encombrement": 5,
+        "rarety": 7
     }
 ]

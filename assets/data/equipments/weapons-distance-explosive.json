@@ -1,23 +1,5 @@
 [
     {
-        "image": "WeaponTHERMDET.png",
-        "label": "Détonateur thermique",
-        "skill": "Distance (Légère)",
-        "damage": 20,
-        "critic": 2,
-        "distance": "Courte",
-        "enc": 1,
-        "emp": 0,
-        "price": 2000,
-        "rarety": 8,
-        "options": [
-            { "label": "Brèche 1" },
-            { "label": "Munitions limitées 1" },
-            { "label": "Sanguinaire 4" },
-            { "label": "Souffle 15" }
-        ]
-    },
-    {
         "image": "WeaponFRAGGR.png",
         "label": "Grenade à fragmentation",
         "skill": "Distance (Légère)",
@@ -69,38 +51,20 @@
         ]
     },
     {
-        "image": "WeaponFLAME.png",
-        "label": "Lance-flamme",
-        "skill": "Distance (Lourde)",
-        "damage": 8,
-        "critic": 2,
+        "image": "WeaponGLOPGRND",
+        "label": "Grenade incapacitante",
+        "skill": "Distance (Légère)",
+        "damage": 12,
+        "critic": 0,
         "distance": "Courte",
-        "enc": 6,
-        "emp": 2,
-        "price": 1000,
-        "rarety": 6,
+        "enc": 1,
+        "emp": 0,
+        "price": 120,
+        "rarety": 5,
         "options": [
-            { "label": "Incendiaire 3" },
-            { "label": "Souffle 8" }
-        ]
-    },
-    {
-        "image": "WeaponMISS.png",
-        "label": "Lance-missile",
-        "skill": "Artillerie",
-        "damage": 20,
-        "critic": 2,
-        "distance": "Extrême",
-        "enc": 7,
-        "emp": 4,
-        "price": 7500,
-        "rarety": 8,
-        "options": [
-            { "label": "Brèche 1" },
-            { "label": "Déploiment 1" },
-            { "label": "Encombrant 3" },
-            { "label": "Munitions limitées 6" },
-            { "label": "Projectile 8" }
+            { "label": "Dégâts étourdissants" },
+            { "label": "Munitions limitées 1" },
+            { "label": "Souffle 10" }
         ]
     },
     {
@@ -135,6 +99,59 @@
             { "label": "Brèche 4" },
             { "label": "Munitions limitées 1" },
             { "label": "Souffle 2" }
+        ]
+    },
+    {
+        "image": "WeaponFLAME.png",
+        "label": "Lance-flamme",
+        "skill": "Distance (Lourde)",
+        "damage": 8,
+        "critic": 2,
+        "distance": "Courte",
+        "enc": 6,
+        "emp": 2,
+        "price": 1000,
+        "rarety": 6,
+        "options": [
+            { "label": "Incendiaire 3" },
+            { "label": "Souffle 8" }
+        ]
+    },
+    {
+        "image": "WeaponTHERMDET.png",
+        "label": "Détonateur thermique",
+        "skill": "Distance (Légère)",
+        "damage": 20,
+        "critic": 2,
+        "distance": "Courte",
+        "enc": 1,
+        "emp": 0,
+        "price": 2000,
+        "rarety": 8,
+        "options": [
+            { "label": "Brèche 1" },
+            { "label": "Munitions limitées 1" },
+            { "label": "Sanguinaire 4" },
+            { "label": "Souffle 15" }
+        ]
+    },
+    {
+        "image": "WeaponMISS.png",
+        "label": "Lance-missile",
+        "skill": "Artillerie",
+        "damage": 20,
+        "critic": 2,
+        "distance": "Extrême",
+        "enc": 7,
+        "emp": 4,
+        "price": 7500,
+        "rarety": 8,
+        "options": [
+            { "label": "Brèche 1" },
+            { "label": "Déploiment 1" },
+            { "label": "Encombrant 3" },
+            { "label": "Munitions limitées 6" },
+            { "label": "Projectile 8" }
         ]
     }
 ]

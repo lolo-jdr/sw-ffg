@@ -1,0 +1,30 @@
+[
+    {
+        "image": "GearDROIDWANDSC.png",
+        "label": "Droïde éclaireur Sorosuub \"Wanderer\"",
+        "price": 2500,
+        "encombrement": 0,
+        "rarety": 6
+    },
+    {
+        "image": "GearDROIDG2REP.png",
+        "label": "Droïde de maintenance Sorosuub G2",
+        "price": 6000,
+        "encombrement": 0,
+        "rarety": 5
+    },
+    {
+        "image": "GearDROIDSIAK.png",
+        "label": "Droïde de protocol Roche - Série Siak",
+        "price": 10000,
+        "encombrement": 0,
+        "rarety": 4
+    },
+    {
+        "image": "GearDROIDMEDIC.png",
+        "label": "Droïde médical CT-4",
+        "price": 20000,
+        "encombrement": 0,
+        "rarety": 8
+    }
+]

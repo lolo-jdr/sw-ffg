@@ -28,6 +28,21 @@
         "options": [ ]
     },
     {
+        "image": "",
+        "label": "Dague coup-de-poing",
+        "skill": "Corps à corps",
+        "damage": "+1",
+        "critic": 3,
+        "distance": "Au contact",
+        "enc": 1,
+        "emp": 1,
+        "price": 75,
+        "rarety": 4,
+        "options": [
+            { "label": "Perforant 1" }
+        ]
+    },
+    {
         "image": "WeaponGAFF.png",
         "label": "Bâton Gaderffii",
         "skill": "Corps à corps",
