@@ -18,9 +18,13 @@ export class CharacterCreatorComponent implements OnInit {
   protected careers: any[] = [];
   protected skills: any[] = [];
 
+  public obligations: any[] = [];
+  public duties: any[] = [];
+  public moralities: any[] = [];
+
   protected character = {
     species: { specialAbilityProcess: [], key: "" }, // create class
-    career: { specialization: [] },
+    career: { specialization: [], obligation: '', universKey: '' }, // create class
     specialization: {},
     hasForce: false,
     isRecrue: false,
@@ -49,7 +53,7 @@ export class CharacterCreatorComponent implements OnInit {
     // Populate second levels lists
     this.getFormData().subscribe(data => {
 
-      const [species, careers, skills] = data;
+      const [species, careers, skills, obligations, duties, moralities] = data;
 
       species.sort(HelperService.sortArrayByProperty('label'));
       careers.sort(HelperService.sortArrayByProperty('label'));
@@ -58,6 +62,10 @@ export class CharacterCreatorComponent implements OnInit {
       this.species = species;
       this.careers = careers;
       this.skills = skills;
+
+      this.obligations = obligations;
+      this.duties = duties;
+      this.moralities = moralities;
 
       // Instanciate character
       this.skills.forEach(skill => {
@@ -96,7 +104,10 @@ export class CharacterCreatorComponent implements OnInit {
     return Observable.forkJoin(
       this.api.localResource(ApiService.SPECIES),
       this.api.localResource(ApiService.CAREERS),
-      this.api.localResource(ApiService.SKILLS)
+      this.api.localResource(ApiService.SKILLS),
+      this.api.localResource(ApiService.OBLIGATIONS),
+      this.api.localResource(ApiService.DUTIES),
+      this.api.localResource(ApiService.MORALITIES),
     );
   }
 
@@ -173,9 +184,6 @@ export class CharacterCreatorComponent implements OnInit {
   protected changeCareer() {
     this.character.career = this.selectedCareer;
 
-    // this.character.hasForce = (this.character.career.universKey === 'fad');
-    // this.character.hasForce = (this.character.career.universKey === 'fad');
-
     // Change specialization
     this.selectedSpecialization = this.character.career.specialization[0];
 
@@ -199,6 +207,16 @@ export class CharacterCreatorComponent implements OnInit {
 
     this.humanSpeciesSelectedFirstSkill = undefined;
     this.humanSpeciesSelectedSecondSkill = undefined;
+
+    // get obligation
+    if (this.character.career.universKey === 'eoe') {
+      this.character.career.obligation = this.obligations[0];
+    } else if(this.character.career.universKey === 'aor') {
+      this.character.career.obligation = this.duties[0];
+    } else {
+      this.character.career.obligation = this.moralities[0];
+    }
+
   }
 
   protected changeSpecialization() {

@@ -241,6 +241,41 @@
       <p class="step-main-title">3. Choisir une motivation</p>
     </div>
 
+    <div class="row">
+      <div class="col-sm">
+        <p class="career-specializations-title">
+          <span>Liste des obligations de carrière</span>
+          <select [(ngModel)]="character.career.obligation" *ngIf="character.career.universKey === 'eoe'">
+            <option *ngFor="let o of obligations" [ngValue]="o">{{ o.title }}</option>
+          </select>
+
+          <select [(ngModel)]="character.career.obligation" *ngIf="character.career.universKey === 'aor'">
+            <option *ngFor="let d of duties" [ngValue]="d">{{ d.title }}</option>
+          </select>
+
+          <select [(ngModel)]="character.career.obligation" *ngIf="character.career.universKey === 'fad'">
+            <option *ngFor="let m of moralities" [ngValue]="m">{{ m.emotionalForceTitle }} - {{ m.emotionalWeaknessTitle }}</option>
+          </select>
+        </p>
+
+        <ng-container *ngIf="character.career.universKey === 'eoe' || character.career.universKey === 'aor'">
+          <p>
+            <span>{{ character.career.obligation.description }}</span>
+          </p>
+        </ng-container>
+
+        <ng-container *ngIf="character.career.universKey === 'fad'">
+          <p>
+            <span>Force : {{ character.career.obligation.emotionalForceDescription }}</span>
+          </p>
+          <p>
+            <span>Faiblesse : {{ character.career.obligation.emotionalWeaknessDescription }}</span>
+          </p>
+        </ng-container>
+
+      </div>
+    </div>
+
   </section>
 
 </div>
