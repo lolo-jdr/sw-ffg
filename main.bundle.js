@@ -113,6 +113,9 @@ var AppLoadService = (function () {
                     __WEBPACK_IMPORTED_MODULE_4__services_application_service__["a" /* ApplicationService */].InitializeSkills(skills);
                     __WEBPACK_IMPORTED_MODULE_4__services_application_service__["a" /* ApplicationService */].InitializeSpecies(species);
                     __WEBPACK_IMPORTED_MODULE_4__services_application_service__["a" /* ApplicationService */].InitializeCareers(careers);
+                    __WEBPACK_IMPORTED_MODULE_4__services_application_service__["a" /* ApplicationService */].obligations = obligations;
+                    __WEBPACK_IMPORTED_MODULE_4__services_application_service__["a" /* ApplicationService */].duties = duties;
+                    __WEBPACK_IMPORTED_MODULE_4__services_application_service__["a" /* ApplicationService */].moralities = moralities;
                     console.log('Application initialized');
                     resolve();
                 }
@@ -1884,7 +1887,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "#characterGenerator .character-property {\r\n  margin-top: 10px;\r\n}\r\n\r\n#characterGenerator .character-property label {\r\n\tmargin-bottom: 0px;\r\n\tfont-size: 1.1em;\r\n\tfont-weight: 600;\r\n}\r\n\r\n#characterGenerator .character-skill {\r\n  margin-top: 10px;\r\n}\r\n\r\n#characterGenerator .character-skill label {\r\n  font-size: 1.1em;\r\n\tfont-weight: 600;\r\n}\r\n\r\n#characterGenerator .character-skill .skill-type {\r\n  font-size: 0.8em;\r\n\tfont-style: italic;\r\n}", ""]);
 
 // exports
 
@@ -1897,7 +1900,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/modules/tools/character-generator/character-generator.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n\n  <nav aria-label=\"breadcrumb\" role=\"navigation\">\n    <ol class=\"breadcrumb\">\n      <li class=\"breadcrumb-item\">\n        <a routerLink=\"/\">\n          <i class=\"ra ra-lg ra-ship-emblem\"></i>\n        </a>\n      </li>\n      <li class=\"breadcrumb-item\" aria-current=\"page\">Outil</li>\n      <li class=\"breadcrumb-item active\" aria-current=\"page\">Générateur de personnage</li>\n    </ol>\n  </nav>\n\n  <ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\n\n  <section *ngIf=\"isPageLoaded\" id=\"characterGenerator\">\n\n    <!-- Title -->\n    <div class=\"row page-title\">\n      <div class=\"col-sm\">\n        <p>GÉNÉRATEUR DE PERSONNAGE</p>\n        <p>\n          <small>\n            <em>En cours de développement</em>\n          </small>\n        </p>\n      </div>\n    </div>\n\n    <div class=\"row\">\n\n      <button class=\"btn btn-primary\" (click)=\"randomize()\">\n          <i class=\"ra ra-lg ra-perspective-dice-random\"></i>\n        Générer un personnage\n        <i class=\"ra ra-lg ra-perspective-dice-random\"></i>\n      </button>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col\">\n        <p>Espèce : {{ character.species.label }}\n          <a target=\"blank\" routerLink=\"/species/{{ character.species.key }}\">(fiche\n            <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>)</a>\n        </p>\n        <p>Carrière : {{ character.career.label }}\n          <a target=\"blank\" routerLink=\"/career/{{ character.career.key }}\">(fiche\n            <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>)</a>\n        </p>\n        <p>Spécialisations :</p>\n        <ul>\n          <li *ngFor=\"let specialization of character.specializations\">{{ specialization.label }}</li>\n        </ul>\n        <p>\n          <span>Sensibilité à la Force:</span>\n          <span *ngIf=\"!character.hasForce\">Non sensible</span>\n          <span *ngIf=\"character.hasForce && character.career.universKey === 'eoe'\">Fugitif de la Force\n            <a target=\"_blank\" href=\"assets/resources/files/careers/sw_aor_core_ace_tree.pdf\">(fiche\n              <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>)</a>\n          </span>\n          <span *ngIf=\"character.hasForce && character.career.universKey === 'aor'\">Aspirant de la Force\n            <a target=\"_blank\" href=\"assets/resources/files/careers/sw_aor_core_ace_tree.pdf\">(fiche\n              <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>)</a>\n          </span>\n          <span *ngIf=\"character.hasForce && character.career.universKey === 'fad'\">Jedi</span>\n\n        </p>\n      </div>\n      <div class=\"col\">\n        <ng-container *ngFor=\"let skill of character.skills\">\n          <div *ngIf=\"skill.value > 0\">\n            <span>{{ skill.label }}</span>\n            <ngb-progressbar type=\"info\" [value]=\"skill.value * 20\">{{ skill.value }}</ngb-progressbar>\n            <span *ngIf=\"skill.isSpecies\">Espèce</span>\n            <span *ngIf=\"skill.isCareer\">Carrière</span>\n            <span *ngIf=\"skill.isSpecialization\">Spécialisation</span>\n          </div>\n        </ng-container>\n      </div>\n    </div>\n\n\n  </section>\n\n</div>"
+module.exports = "<div class=\"container-fluid\">\n\n  <nav aria-label=\"breadcrumb\" role=\"navigation\">\n    <ol class=\"breadcrumb\">\n      <li class=\"breadcrumb-item\">\n        <a routerLink=\"/\">\n          <i class=\"ra ra-lg ra-ship-emblem\"></i>\n        </a>\n      </li>\n      <li class=\"breadcrumb-item\" aria-current=\"page\">Outil</li>\n      <li class=\"breadcrumb-item active\" aria-current=\"page\">Générateur de personnage</li>\n    </ol>\n  </nav>\n\n  <ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\n\n  <section *ngIf=\"isPageLoaded\" id=\"characterGenerator\">\n\n    <!-- Title -->\n    <div class=\"row page-title\">\n      <div class=\"col-sm\">\n        <p>GÉNÉRATEUR DE PERSONNAGE</p>\n        <p>\n          <small>\n            <em>En cours de développement</em>\n          </small>\n        </p>\n      </div>\n    </div>\n\n    <div class=\"row button-random\">\n      <button class=\"btn btn-primary\" (click)=\"randomize()\">\n        <i class=\"ra ra-lg ra-perspective-dice-random\"></i>\n        <span>Générer un personnage</span>\n        <i class=\"ra ra-lg ra-perspective-dice-random\"></i>\n      </button>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col\">\n\n        <div class=\"character-property\">\n          <label>Espèce</label>\n          <p>\n            <span>{{ character.species.label }}</span>\n            <a target=\"blank\" routerLink=\"/species/{{ character.species.key }}\">(fiche\n              <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>)\n            </a>\n          </p>\n        </div>\n\n        <div class=\"character-property\">\n          <label>Carrière</label>\n          <p>\n            <span>{{ character.career.label }}</span>\n            <a target=\"blank\" routerLink=\"/career/{{ character.career.key }}\">(fiche\n              <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>)</a>\n          </p>\n        </div>\n\n        <div class=\"character-property\">\n          <label>Spécialisations</label>\n          <ul>\n            <li *ngFor=\"let specialization of character.specializations\">{{ specialization.label }}</li>\n          </ul>\n        </div>\n\n        <div class=\"character-property\">\n          <label>Sensibilité à la Force</label>\n          <p>\n            <span *ngIf=\"!character.hasForce\">Non sensible</span>\n            <span *ngIf=\"character.hasForce && character.career.universKey === 'eoe'\">Fugitif de la Force\n              <a target=\"_blank\" href=\"assets/resources/files/careers/sw_aor_core_ace_tree.pdf\">(fiche\n                <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>)</a>\n            </span>\n            <span *ngIf=\"character.hasForce && character.career.universKey === 'aor'\">Aspirant de la Force\n              <a target=\"_blank\" href=\"assets/resources/files/careers/sw_aor_core_ace_tree.pdf\">(fiche\n                <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>)</a>\n            </span>\n            <span *ngIf=\"character.hasForce && character.career.universKey === 'fad'\">Jedi</span>\n          </p>\n        </div>\n\n        <div class=\"character-property\">\n          <label>Obligation (voir plus bas)</label>\n          <p *ngIf=\"character.career.universKey === 'eoe' || character.career.universKey === 'aor'\">{{ character.obligation.title }}</p>\n          <p *ngIf=\"character.career.universKey === 'fad'\">{{ character.obligation.emotionalForceTitle }} - {{ character.obligation.emotionalWeaknessTitle }}</p>\n        </div>\n\n        <div class=\"character-property\">\n          <label>Motivations</label>\n          <p>Fichiers de données inexistants (voir avec le MJ)</p>\n        </div>\n\n        <div class=\"character-property\">\n          <label>Equipments</label>\n          <p></p>\n        </div>\n\n      </div>\n\n      <div class=\"col\">\n        <ng-container *ngFor=\"let skill of character.skills\">\n          <div *ngIf=\"skill.value > 0\" class=\"character-skill\">\n            <label>{{ skill.label }}</label>\n            <ngb-progressbar type=\"info\" [value]=\"skill.value * 20\">{{ skill.value }}</ngb-progressbar>\n            <p class=\"skill-type\">\n              <span *ngIf=\"skill.isSpecies\">Espèce</span>\n              <span *ngIf=\"skill.isCareer\">Carrière</span>\n              <span *ngIf=\"skill.isSpecialization\">Spécialisation</span>\n            </p>\n          </div>\n        </ng-container>\n      </div>\n    </div>\n\n    <hr />\n\n    <div class=\"row\">\n      <div class=\"col\">\n        <div class=\"character-property\">\n          <ng-container *ngIf=\"character.career.universKey === 'eoe'\">\n            <label>Obligation</label>\n            <p>\n              <span>{{ character.obligation.title }} - </span>\n              <span>{{ character.obligation.description }}</span>\n            </p>\n          </ng-container>\n          <ng-container *ngIf=\"character.career.universKey === 'aor'\">\n            <label>Devoir</label>\n            <p>\n              <span>{{ character.obligation.title }} - </span>\n              <span>{{ character.obligation.description }}</span>\n            </p>\n          </ng-container>\n          <ng-container *ngIf=\"character.career.universKey === 'fad'\">\n            <label>Moralité</label>\n            <p>\n              <span>{{ character.obligation.emotionalForceTitle }} - </span>\n              <span>{{ character.obligation.emotionalForceDescription }}</span>\n            </p>\n            <p>\n              <span>{{ character.obligation.emotionalWeaknessTitle }} - </span>\n              <span>{{ character.obligation.emotionalWeaknessDescription }}</span>\n            </p>\n          </ng-container>\n        </div>\n      </div>\n\n    </div>\n\n\n  </section>\n\n</div>"
 
 /***/ }),
 
@@ -1965,6 +1968,7 @@ var CharacterGeneratorComponent = (function () {
         this.assignCareerSkills();
         // Assign specializations skills randomly
         this.assignSpecializationSkills();
+        this.assignObligation();
         console.log(this.character);
     };
     CharacterGeneratorComponent.prototype.assignSpeciesSkills = function () {
@@ -2013,6 +2017,17 @@ var CharacterGeneratorComponent = (function () {
                 // console.log('Specialisation: ' + specialization.label + ' : ' + spSkill.key);
                 clonedSpSkills = clonedSpSkills.filter(function (s) { return s.key !== spSkill.key; });
             }
+        }
+    };
+    CharacterGeneratorComponent.prototype.assignObligation = function () {
+        if (this.character.career.universKey === 'eoe') {
+            this.character.obligation = __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].GetRandomFromCollectionWithoutLast(__WEBPACK_IMPORTED_MODULE_3__services_application_service__["a" /* ApplicationService */].obligations);
+        }
+        else if (this.character.career.universKey === 'aor') {
+            this.character.obligation = __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].GetRandomFromCollectionWithoutLast(__WEBPACK_IMPORTED_MODULE_3__services_application_service__["a" /* ApplicationService */].duties);
+        }
+        else {
+            this.character.obligation = __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].GetRandomFromCollectionWithoutLast(__WEBPACK_IMPORTED_MODULE_3__services_application_service__["a" /* ApplicationService */].moralities);
         }
     };
     // Move to Skill class ?
@@ -2279,6 +2294,9 @@ var ApplicationService = (function () {
     ApplicationService.skills = [];
     ApplicationService.species = [];
     ApplicationService.careers = [];
+    ApplicationService.obligations = [];
+    ApplicationService.duties = [];
+    ApplicationService.moralities = [];
     ApplicationService = ApplicationService_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
         __metadata("design:paramtypes", [])
@@ -2343,6 +2361,9 @@ var HelperService = (function () {
     };
     HelperService.GetRandomFromCollection = function (collection) {
         return collection[Math.floor(Math.random() * collection.length)];
+    };
+    HelperService.GetRandomFromCollectionWithoutLast = function (collection) {
+        return collection[Math.floor(Math.random() * collection.length - 1)];
     };
     HelperService.GetDice100 = function () {
         return Math.floor(Math.random() * 100) + 1;
