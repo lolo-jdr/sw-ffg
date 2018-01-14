@@ -38,7 +38,10 @@ export class AppLoadService {
 					ApplicationService.InitializeSkills(skills);
 					ApplicationService.InitializeSpecies(species);
 					ApplicationService.InitializeCareers(careers);
-
+					
+					ApplicationService.obligations = obligations;
+					ApplicationService.duties = duties;
+					ApplicationService.moralities = moralities;
 					console.log('Application initialized');
 
 					resolve();

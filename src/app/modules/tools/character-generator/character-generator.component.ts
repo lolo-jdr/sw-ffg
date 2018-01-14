@@ -67,6 +67,8 @@ export class CharacterGeneratorComponent implements OnInit {
     // Assign specializations skills randomly
     this.assignSpecializationSkills();
 
+    this.assignObligation();
+
     console.log(this.character);
   }
 
@@ -122,6 +124,16 @@ export class CharacterGeneratorComponent implements OnInit {
 
         clonedSpSkills = clonedSpSkills.filter(s => s.key !== spSkill.key);
       }
+    }
+  }
+
+  private assignObligation() {
+    if (this.character.career.universKey === 'eoe') {
+      this.character.obligation = HelperService.GetRandomFromCollectionWithoutLast(ApplicationService.obligations);
+    } else if (this.character.career.universKey === 'aor') {
+      this.character.obligation = HelperService.GetRandomFromCollectionWithoutLast(ApplicationService.duties);
+    } else {
+      this.character.obligation = HelperService.GetRandomFromCollectionWithoutLast(ApplicationService.moralities);
     }
   }
 

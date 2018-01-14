@@ -28,55 +28,125 @@
       </div>
     </div>
 
-    <div class="row">
-
+    <div class="row button-random">
       <button class="btn btn-primary" (click)="randomize()">
-          <i class="ra ra-lg ra-perspective-dice-random"></i>
-        Générer un personnage
+        <i class="ra ra-lg ra-perspective-dice-random"></i>
+        <span>Générer un personnage</span>
         <i class="ra ra-lg ra-perspective-dice-random"></i>
       </button>
     </div>
 
     <div class="row">
       <div class="col">
-        <p>Espèce : {{ character.species.label }}
-          <a target="blank" routerLink="/species/{{ character.species.key }}">(fiche
-            <i class="fa fa-external-link" aria-hidden="true"></i>)</a>
-        </p>
-        <p>Carrière : {{ character.career.label }}
-          <a target="blank" routerLink="/career/{{ character.career.key }}">(fiche
-            <i class="fa fa-external-link" aria-hidden="true"></i>)</a>
-        </p>
-        <p>Spécialisations :</p>
-        <ul>
-          <li *ngFor="let specialization of character.specializations">{{ specialization.label }}</li>
-        </ul>
-        <p>
-          <span>Sensibilité à la Force:</span>
-          <span *ngIf="!character.hasForce">Non sensible</span>
-          <span *ngIf="character.hasForce && character.career.universKey === 'eoe'">Fugitif de la Force
-            <a target="_blank" href="assets/resources/files/careers/sw_aor_core_ace_tree.pdf">(fiche
-              <i class="fa fa-external-link" aria-hidden="true"></i>)</a>
-          </span>
-          <span *ngIf="character.hasForce && character.career.universKey === 'aor'">Aspirant de la Force
-            <a target="_blank" href="assets/resources/files/careers/sw_aor_core_ace_tree.pdf">(fiche
-              <i class="fa fa-external-link" aria-hidden="true"></i>)</a>
-          </span>
-          <span *ngIf="character.hasForce && character.career.universKey === 'fad'">Jedi</span>
 
-        </p>
+        <div class="character-property">
+          <label>Espèce</label>
+          <p>
+            <span>{{ character.species.label }}</span>
+            <a target="blank" routerLink="/species/{{ character.species.key }}">(fiche
+              <i class="fa fa-external-link" aria-hidden="true"></i>)
+            </a>
+          </p>
+        </div>
+
+        <div class="character-property">
+          <label>Carrière</label>
+          <p>
+            <span>{{ character.career.label }}</span>
+            <a target="blank" routerLink="/career/{{ character.career.key }}">(fiche
+              <i class="fa fa-external-link" aria-hidden="true"></i>)</a>
+          </p>
+        </div>
+
+        <div class="character-property">
+          <label>Spécialisations</label>
+          <ul>
+            <li *ngFor="let specialization of character.specializations">{{ specialization.label }}</li>
+          </ul>
+        </div>
+
+        <div class="character-property">
+          <label>Sensibilité à la Force</label>
+          <p>
+            <span *ngIf="!character.hasForce">Non sensible</span>
+            <span *ngIf="character.hasForce && character.career.universKey === 'eoe'">Fugitif de la Force
+              <a target="_blank" href="assets/resources/files/careers/sw_aor_core_ace_tree.pdf">(fiche
+                <i class="fa fa-external-link" aria-hidden="true"></i>)</a>
+            </span>
+            <span *ngIf="character.hasForce && character.career.universKey === 'aor'">Aspirant de la Force
+              <a target="_blank" href="assets/resources/files/careers/sw_aor_core_ace_tree.pdf">(fiche
+                <i class="fa fa-external-link" aria-hidden="true"></i>)</a>
+            </span>
+            <span *ngIf="character.hasForce && character.career.universKey === 'fad'">Jedi</span>
+          </p>
+        </div>
+
+        <div class="character-property">
+          <label>Obligation (voir plus bas)</label>
+          <p *ngIf="character.career.universKey === 'eoe' || character.career.universKey === 'aor'">{{ character.obligation.title }}</p>
+          <p *ngIf="character.career.universKey === 'fad'">{{ character.obligation.emotionalForceTitle }} - {{ character.obligation.emotionalWeaknessTitle }}</p>
+        </div>
+
+        <div class="character-property">
+          <label>Motivations</label>
+          <p>Fichiers de données inexistants (voir avec le MJ)</p>
+        </div>
+
+        <div class="character-property">
+          <label>Equipments</label>
+          <p></p>
+        </div>
+
       </div>
+
       <div class="col">
         <ng-container *ngFor="let skill of character.skills">
-          <div *ngIf="skill.value > 0">
-            <span>{{ skill.label }}</span>
+          <div *ngIf="skill.value > 0" class="character-skill">
+            <label>{{ skill.label }}</label>
             <ngb-progressbar type="info" [value]="skill.value * 20">{{ skill.value }}</ngb-progressbar>
-            <span *ngIf="skill.isSpecies">Espèce</span>
-            <span *ngIf="skill.isCareer">Carrière</span>
-            <span *ngIf="skill.isSpecialization">Spécialisation</span>
+            <p class="skill-type">
+              <span *ngIf="skill.isSpecies">Espèce</span>
+              <span *ngIf="skill.isCareer">Carrière</span>
+              <span *ngIf="skill.isSpecialization">Spécialisation</span>
+            </p>
           </div>
         </ng-container>
       </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="col">
+        <div class="character-property">
+          <ng-container *ngIf="character.career.universKey === 'eoe'">
+            <label>Obligation</label>
+            <p>
+              <span>{{ character.obligation.title }} - </span>
+              <span>{{ character.obligation.description }}</span>
+            </p>
+          </ng-container>
+          <ng-container *ngIf="character.career.universKey === 'aor'">
+            <label>Devoir</label>
+            <p>
+              <span>{{ character.obligation.title }} - </span>
+              <span>{{ character.obligation.description }}</span>
+            </p>
+          </ng-container>
+          <ng-container *ngIf="character.career.universKey === 'fad'">
+            <label>Moralité</label>
+            <p>
+              <span>{{ character.obligation.emotionalForceTitle }} - </span>
+              <span>{{ character.obligation.emotionalForceDescription }}</span>
+            </p>
+            <p>
+              <span>{{ character.obligation.emotionalWeaknessTitle }} - </span>
+              <span>{{ character.obligation.emotionalWeaknessDescription }}</span>
+            </p>
+          </ng-container>
+        </div>
+      </div>
+
     </div>
 
 

@@ -45,6 +45,10 @@ export class HelperService {
     return collection[Math.floor(Math.random()*collection.length)];
   }
 
+  public static GetRandomFromCollectionWithoutLast(collection:any) {
+    return collection[Math.floor(Math.random()*collection.length-1)];
+  }
+
   public static GetDice100() {
     return Math.floor(Math.random() * 100) + 1  
   }

@@ -14,6 +14,10 @@ export class ApplicationService {
   private static species: Species[] = [];
   private static careers: Career[] = [];
 
+  public static obligations:any[] = [];
+  public static duties:any[] = [];
+  public static moralities:any[] = [];
+
   constructor() { }
 
   public static InitializeCharacteristics(characteristics: any) {

@@ -9,6 +9,7 @@ export class Character {
 	career: Career;
 	specializations: careerSpecialization[] = [];
 	skills: Skill[];
+	obligation:any;
 
 	hasForce:boolean = false;
 
