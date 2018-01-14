@@ -1,0 +1,15 @@
+#speciesList .card {
+    margin-bottom: 30px;
+}
+
+#speciesList .card .card-img-top {
+    max-height: 160px;
+}
+
+#speciesList .card-footer {
+    padding: 2px;
+}
+
+#speciesList .card-footer img {
+    max-width:100%;
+} 

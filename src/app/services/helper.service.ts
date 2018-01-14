@@ -41,4 +41,12 @@ export class HelperService {
     return textToFormat.replace(/ /g, '&nbsp;');
   }
 
+  public static GetRandomFromCollection(collection:any) {
+    return collection[Math.floor(Math.random()*collection.length)];
+  }
+
+  public static GetDice100() {
+    return Math.floor(Math.random() * 100) + 1  
+  }
+
 }

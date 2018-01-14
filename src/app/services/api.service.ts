@@ -16,9 +16,10 @@ export class ApiService {
   public static RESOURCES_CAREERS_FOLDER = 'assets/resources/files/careers/';
   public static RESOURCES_CHARACTERS_FOLDER = 'assets/resources/files/characters/';
 
+  public static CHARACTERISTICS = 'assets/data/characteristics.json';
+  public static SKILLS = 'assets/data/skills.json';
   public static SPECIES = 'assets/data/species.json';
   public static CAREERS = 'assets/data/careers.json';
-  public static SKILLS = 'assets/data/skills.json';
 
   public static OBLIGATIONS = 'assets/data/obligations.json';
   public static DUTIES = 'assets/data/duties.json';

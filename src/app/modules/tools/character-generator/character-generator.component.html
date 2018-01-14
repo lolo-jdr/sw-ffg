@@ -1,0 +1,85 @@
+<div class="container-fluid">
+
+  <nav aria-label="breadcrumb" role="navigation">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a routerLink="/">
+          <i class="ra ra-lg ra-ship-emblem"></i>
+        </a>
+      </li>
+      <li class="breadcrumb-item" aria-current="page">Outil</li>
+      <li class="breadcrumb-item active" aria-current="page">Générateur de personnage</li>
+    </ol>
+  </nav>
+
+  <ngx-loading [show]="!isPageLoaded" [config]="{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }"></ngx-loading>
+
+  <section *ngIf="isPageLoaded" id="characterGenerator">
+
+    <!-- Title -->
+    <div class="row page-title">
+      <div class="col-sm">
+        <p>GÉNÉRATEUR DE PERSONNAGE</p>
+        <p>
+          <small>
+            <em>En cours de développement</em>
+          </small>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <button class="btn btn-primary" (click)="randomize()">
+          <i class="ra ra-lg ra-perspective-dice-random"></i>
+        Générer un personnage
+        <i class="ra ra-lg ra-perspective-dice-random"></i>
+      </button>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <p>Espèce : {{ character.species.label }}
+          <a target="blank" routerLink="/species/{{ character.species.key }}">(fiche
+            <i class="fa fa-external-link" aria-hidden="true"></i>)</a>
+        </p>
+        <p>Carrière : {{ character.career.label }}
+          <a target="blank" routerLink="/career/{{ character.career.key }}">(fiche
+            <i class="fa fa-external-link" aria-hidden="true"></i>)</a>
+        </p>
+        <p>Spécialisations :</p>
+        <ul>
+          <li *ngFor="let specialization of character.specializations">{{ specialization.label }}</li>
+        </ul>
+        <p>
+          <span>Sensibilité à la Force:</span>
+          <span *ngIf="!character.hasForce">Non sensible</span>
+          <span *ngIf="character.hasForce && character.career.universKey === 'eoe'">Fugitif de la Force
+            <a target="_blank" href="assets/resources/files/careers/sw_aor_core_ace_tree.pdf">(fiche
+              <i class="fa fa-external-link" aria-hidden="true"></i>)</a>
+          </span>
+          <span *ngIf="character.hasForce && character.career.universKey === 'aor'">Aspirant de la Force
+            <a target="_blank" href="assets/resources/files/careers/sw_aor_core_ace_tree.pdf">(fiche
+              <i class="fa fa-external-link" aria-hidden="true"></i>)</a>
+          </span>
+          <span *ngIf="character.hasForce && character.career.universKey === 'fad'">Jedi</span>
+
+        </p>
+      </div>
+      <div class="col">
+        <ng-container *ngFor="let skill of character.skills">
+          <div *ngIf="skill.value > 0">
+            <span>{{ skill.label }}</span>
+            <ngb-progressbar type="info" [value]="skill.value * 20">{{ skill.value }}</ngb-progressbar>
+            <span *ngIf="skill.isSpecies">Espèce</span>
+            <span *ngIf="skill.isCareer">Carrière</span>
+            <span *ngIf="skill.isSpecialization">Spécialisation</span>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+
+
+  </section>
+
+</div>
