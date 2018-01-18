@@ -1,0 +1,690 @@
+[
+    {
+        "specializationKey": "assassin",
+        "weaponKeys": [
+            [ "WeaponLBR9STUNRIFLE", "e11s-sniper-rifle", "aranea-web-launcher", "corellian-compound-bow", "knuckles-dagger", "WeaponFORCEP" ],
+            [ "WeaponGLOPGRND", "WeaponSTUNGR" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            ["macrobinoc", "scanner-goggles"],
+            [ "hand-scanner", "GearSTAG" ]
+        ]
+    },
+    {
+        "specializationKey": "gadgeteer",
+        "weaponKeys": [
+            [ "fwg-5", "WeaponBLASTHOLD", "WeaponBLASTION", "WeaponBLASTLT", "boots", "WeaponSHOCKGL", "WeaponTRUNCH" ],
+            [ "WeaponFRAGGR", "WeaponSTUNGR", "WeaponGLOPGRND"  ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            [ "GearUTILBELT", "cargo-scanner" ],
+            [ "remote-activator-short-range" ]
+        ]
+    },
+    {
+        "specializationKey": "survivalist",
+        "weaponKeys": [
+            [ "weaponslugrif-heavy", "e11s-sniper-rifle", "aranea-web-launcher", "corellian-compound-bow", "weapon-bola", "WeaponFORCEP" ],
+            [ "WeaponAPMINE", "WeaponFRAGGR", "WeaponSTUNGR" ]
+        ],
+        "armorKeys": [
+            [ "ArmorAEG" ]
+        ],
+        "equipementKeys": [
+            [ "electrobinoc_negwt", "scanner-goggles"],
+            [ "hand-scanner", "general-purpose-scanner" ],
+            [ "electrotrap", "GearTENT", "thermic-cover", "depecage-kit", "sos-portative", "mountain-climbing-gear-climbing-rope", "chemical-bait", "GearCLIMB" ]
+        ]
+    },
+    {
+        "specializationKey": "doctor",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "WeaponTRUNCH" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            ["hand-scanner"],
+            [ "GearEMP", "ECM-598-Medical-Backpack"]
+        ]
+    },
+    {
+        "specializationKey": "politico",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "WeaponTRUNCH" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            [ "encryptor" ]
+        ]
+    },
+    {
+        "specializationKey": "scholar",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "WeaponTRUNCH" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            [ "GearHOLO", "GearDATAPAD" ]
+        ]
+    },
+    {
+        "specializationKey": "fringer",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger" ],
+            [ "WeaponGLOPGRND", "WeaponSTUNGR" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            [ "GearUTILBELT", "cargo-scanner", "GearTOOLKIT", "scrambler" ]
+        ]
+    },
+    {
+        "specializationKey": "scout",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "e11s-sniper-rifle" ],
+            [ "WeaponGLOPGRND", "WeaponSTUNGR" ]
+        ],
+        "armorKeys": [
+            [ "ArmorAEG" ]
+        ],
+        "equipementKeys": [
+            [ "electrobinoc_negwt", "scanner-goggles"],
+            [ "hand-scanner", "general-purpose-scanner" ],
+            [ "electrotrap", "GearTENT", "thermic-cover", "depecage-kit", "sos-portative", "mountain-climbing-gear-climbing-rope", "GearCLIMB" ]
+        ]
+    },
+    {
+        "specializationKey": "trader",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "WeaponTRUNCH", "WeaponGAFF" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            ["GearDATAPAD"]
+        ]
+    },
+    {
+        "specializationKey": "bodyguard",
+        "weaponKeys": [
+            [ "WeaponBLASTCARB", "WeaponBOWCAST", "ES-700-Pulse-Rifle-FC", "WeaponBLASTRIFHVY" ],
+            [ "WeaponAPGREN", "WeaponGLOPGRND", "WeaponFRAGGR" ]
+        ],
+        "armorKeys": [
+            [ "ArmorPAD" ]
+        ],
+        "equipementKeys": [
+            [ "scanner-goggles", "general-purpose-scanner" ]
+        ]
+    },
+    {
+        "specializationKey": "marauder",
+        "weaponKeys": [
+            [ "WeaponVIBSW", "WeaponVIBAX", "WeaponSHOCKGL", "WeaponFLAME", "WeaponBOLA.png" ],
+            [ "WeaponAPGREN", "WeaponTHERMDET", "WeaponFRAGGR" ]
+        ],
+        "armorKeys": [
+            [ "ArmorPAD" ]
+        ],
+        "equipementKeys": [
+            [ "scanner-goggles", "general-purpose-scanner" ]
+        ]
+    },
+    {
+        "specializationKey": "mercenary-soldier",
+        "weaponKeys": [
+            [ "WeaponBLASTCARB", "WeaponBOWCAST", "ES-700-Pulse-Rifle-FC", "WeaponBLASTRIFHVY", "weaponslugrif-heavy", "WeaponFLAME" ],
+            [ "WeaponAPGREN", "WeaponGLOPGRND", "WeaponFRAGGR", "WeaponTHERMDET" ]
+        ],
+        "armorKeys": [
+            [ "ArmorPAD" ]
+        ],
+        "equipementKeys": [
+            [ "scanner-goggles", "general-purpose-scanner" ]
+        ]
+    },
+    {
+        "specializationKey": "pilot",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH" ]
+        ],
+        "armorKeys": [
+            [ "ArmorUTILITYVEST" ]
+        ],
+        "equipementKeys": [
+            [ "survival-crash-kit", "scrambler" ]
+        ]
+    },
+    {
+        "specializationKey": "scoundrel",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "WeaponTRUNCH" ],
+            [ "WeaponGLOPGRND", "WeaponSTUNGR" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            [ "GearTOOLKIT", "cargo-scanner" ]
+        ]
+    },
+    {
+        "specializationKey": "thief",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTION", "czerka-arms-A95-blaster" ],
+            [ "WeaponGLOPGRND", "WeaponSTUNGR" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            [ "disguise-tool", "GearELB", "fingerprint-masque", "encryptor" ]
+        ]
+    },
+    {
+        "specializationKey": "mechanic",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH", "knuckles-dagger" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            [ "GearUTILBELT", "emergency-repair-patch", "GearTOOLKIT" ]
+        ]
+    },
+    {
+        "specializationKey": "outlaw-tech",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH", "knuckles-dagger" ],
+            [ "WeaponGLOPGRND", "WeaponSTUNGR" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            [ "encryptor", "scrambler" ]
+        ]
+    },
+    {
+        "specializationKey": "slicer",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH", "knuckles-dagger" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            [ "slicer-tool", "bouchon-entrave" ]
+        ]
+    },
+    {
+        "specializationKey": "gunner",
+        "weaponKeys": [
+            [ "WeaponBLASTION", "WeaponBLASTPIS", "WeaponBLASTPISHVY", "GunOfCommand" ],
+            [ "WeaponFRAGGR" ]
+        ],
+        "armorKeys": [
+            [ "ArmorUTILITYVEST" ]
+        ],
+        "equipementKeys": [
+            [ "survival-crash-kit", "scrambler" ]
+        ]
+    },
+    {
+        "specializationKey": "driver",
+        "weaponKeys": [
+            [ "WeaponBLASTION", "WeaponBLASTPIS", "WeaponBLASTPISHVY", "GunOfCommand" ]
+        ],
+        "armorKeys": [
+            [ "ArmorUTILITYVEST" ]
+        ],
+        "equipementKeys": [
+            [ "survival-crash-kit", "scrambler" ]
+        ]
+    },
+    {
+        "specializationKey": "pilot-aor",
+        "weaponKeys": [
+            [ "WeaponBLASTION", "WeaponBLASTPIS", "WeaponBLASTPISHVY", "GunOfCommand" ]
+        ],
+        "armorKeys": [
+            [ "ArmorUTILITYVEST" ]
+        ],
+        "equipementKeys": [
+            [ "survival-crash-kit", "scrambler" ]
+        ]
+    },
+    {
+        "specializationKey": "agitator",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "WeaponTRUNCH" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            ["GearDATAPAD"]
+        ]
+    },
+    {
+        "specializationKey": "ambassador",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "WeaponTRUNCH" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            ["GearDATAPAD"]
+        ]
+    },
+    {
+        "specializationKey": "quartermaster",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            ["GearDATAPAD"]
+        ]
+    },
+    {
+        "specializationKey": "scout-aor",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "e11s-sniper-rifle" ],
+            [ "WeaponGLOPGRND", "WeaponSTUNGR" ]
+        ],
+        "armorKeys": [
+            [ "ArmorAEG" ]
+        ],
+        "equipementKeys": [
+            [ "electrobinoc_negwt", "scanner-goggles"],
+            [ "hand-scanner", "general-purpose-scanner" ],
+            [ "electrotrap", "GearTENT", "thermic-cover", "depecage-kit", "sos-portative", "mountain-climbing-gear-climbing-rope", "GearCLIMB" ]
+        ]
+    },
+    {
+        "specializationKey": "slicer-aor",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTION", "czerka-arms-A95-blaster" ],
+            [ "WeaponGLOPGRND", "WeaponSTUNGR" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            [ "slicer-tool", "bouchon-entrave" ]
+        ]
+    },
+    {
+        "specializationKey": "infiltrator",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTION", "czerka-arms-A95-blaster" ],
+            [ "WeaponGLOPGRND", "WeaponSTUNGR" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            [ "disguise-tool", "GearELB", "fingerprint-masque", "encryptor" ]
+        ]
+    },
+    {
+        "specializationKey": "mechanic-aor",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH", "knuckles-dagger" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            [ "GearUTILBELT", "emergency-repair-patch", "GearTOOLKIT" ]
+        ]
+    },
+    {
+        "specializationKey": "saboteur",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH", "knuckles-dagger" ],
+            [ "WeaponFRAGGR", "WeaponAPMINE", "WeaponAPMINE" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            [ "GearUTILBELT", "GearTOOLKIT", "bouchon-entrave", "slicer-tool" ]
+        ]
+    },
+    {
+        "specializationKey": "scientist",
+        "weaponKeys": [
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "WeaponTRUNCH", "WeaponGAFF" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            ["GearDATAPAD"]
+        ]
+    },
+    {
+        "specializationKey": "commando",
+        "weaponKeys": [
+            [ "WeaponBLASTCARB", "WeaponBOWCAST", "WeaponBLASTCARB", "WeaponBLASTRIFHVY", "weaponslugrif-heavy", "WeaponFLAME" ],
+            [ "WeaponFRAGGR", "WeaponAPMINE", "WeaponAPMINE" ]
+        ],
+        "armorKeys": [
+            [ "ArmorPAD" ]
+        ],
+        "equipementKeys": [
+            [ "scanner-goggles", "general-purpose-scanner" ]
+        ]
+    },
+    {
+        "specializationKey": "sharpshooter",
+        "weaponKeys": [
+            [ "WeaponLBR9STUNRIFLE", "e11s-sniper-rifle" ],
+            [ "WeaponFRAGGR", "WeaponGLOPGRND", "WeaponSTUNGR" ]
+        ],
+        "armorKeys": [
+            [ "ArmorAEG" ]
+        ],
+        "equipementKeys": [
+            [ "scanner-goggles", "electrobinoc_negwt" ]
+        ]
+    },
+    {
+        "specializationKey": "medic",
+        "weaponKeys": [
+            [ "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "WeaponTRUNCH" ],
+            [ "WeaponFRAGGR", "WeaponGLOPGRND", "WeaponSTUNGR" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            ["hand-scanner"],
+            [ "GearEMP", "ECM-598-Medical-Backpack"]
+        ]
+    },
+    {
+        "specializationKey": "squadron-leader",
+        "weaponKeys": [
+            [ "WeaponBLASTION", "WeaponBLASTPIS", "WeaponBLASTPISHVY", "GunOfCommand" ]
+        ],
+        "armorKeys": [
+            [ "ArmorUTILITYVEST" ]
+        ],
+        "equipementKeys": [
+            [ "survival-crash-kit", "scrambler" ]
+        ]
+    },
+    {
+        "specializationKey": "commodore",
+        "weaponKeys": [
+            [ "WeaponBLASTION", "WeaponBLASTPIS", "WeaponBLASTPISHVY", "GunOfCommand" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            [ "GearDATAPAD" ]
+        ]
+    },
+    {
+        "specializationKey": "tactician",
+        "weaponKeys": [
+            [ "WeaponBLASTION", "WeaponBLASTPIS", "WeaponBLASTPISHVY", "GunOfCommand" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            [ "GearDATAPAD" ]
+        ]
+    },
+    {
+        "specializationKey": "niman-disciple",
+        "weaponKeys": [
+            [ "trainee-lightsaber" ]
+        ],
+        "armorKeys": [
+            [ "ArmorCONROBE" ]
+        ],
+        "equipementKeys": [
+            [""]
+        ]
+    },
+    {
+        "specializationKey": "healer",
+        "weaponKeys": [
+            [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
+            [ "WeaponBLASTHOLD" ]
+        ],
+        "armorKeys": [
+            [ "ArmorCONROBE" ]
+        ],
+        "equipementKeys": [
+            [""]
+        ]
+    },
+    {
+        "specializationKey": "sage",
+        "weaponKeys": [
+            [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
+            [ "WeaponBLASTHOLD" ]
+        ],
+        "armorKeys": [
+            [ "ArmorCONROBE" ]
+        ],
+        "equipementKeys": [
+            [""]
+        ]
+    },
+    {
+        "specializationKey": "pathfinder",
+        "weaponKeys": [
+            [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
+            [ "WeaponBLASTHOLD" ]
+        ],
+        "armorKeys": [
+            [ "ArmorCONROBE" ]
+        ],
+        "equipementKeys": [
+            [""]
+        ]
+    },
+    {
+        "specializationKey": "ataru-striker",
+        "weaponKeys": [
+            [ "trainee-lightsaber" ]
+        ],
+        "armorKeys": [
+            [ "ArmorCONROBE" ]
+        ],
+        "equipementKeys": [
+            [""]
+        ]
+    },
+    {
+        "specializationKey": "hunter",
+        "weaponKeys": [
+            [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
+            [ "WeaponBLASTHOLD" ]
+        ],
+        "armorKeys": [
+            [ "ArmorCONROBE" ]
+        ],
+        "equipementKeys": [
+            [""]
+        ]
+    },
+    {
+        "specializationKey": "soresu-defender",
+        "weaponKeys": [
+            [ "trainee-lightsaber" ]
+        ],
+        "armorKeys": [
+            [ "ArmorCONROBE" ]
+        ],
+        "equipementKeys": [
+            [""]
+        ]
+    },
+    {
+        "specializationKey": "peacekeeper",
+        "weaponKeys": [
+            [ "WeaponFORCEP", "WeaponANCIENTSWORD" ]
+        ],
+        "armorKeys": [
+            [ "ArmorCONROBE" ]
+        ],
+        "equipementKeys": [
+            [""]
+        ]
+    },
+    {
+        "specializationKey": "protector",
+        "weaponKeys": [
+            [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
+            [ "WeaponBLASTLT", "WeaponBLASTION" ]
+        ],
+        "armorKeys": [
+            [ "ArmorCONROBE" ]
+        ],
+        "equipementKeys": [
+            [""]
+        ]
+    },
+    {
+        "specializationKey": "agressor",
+        "weaponKeys": [
+            [ "WeaponFORCEP", "WeaponANCIENTSWORD", "trainee-lightsaber" ],
+            [ "WeaponBLASTLT", "WeaponBLASTION" ]
+        ],
+        "armorKeys": [
+            [ "ArmorCONROBE" ]
+        ],
+        "equipementKeys": [
+            [""]
+        ]
+    },
+    {
+        "specializationKey": "shii-cho-knight",
+        "weaponKeys": [
+            [ "trainee-lightsaber" ]
+        ],
+        "armorKeys": [
+            [ "ArmorCONROBE" ]
+        ],
+        "equipementKeys": [
+            [""]
+        ]
+    },
+
+    {
+        "specializationKey": "starfighter-ace",
+        "weaponKeys": [
+            [ "WeaponFORCEP", "WeaponANCIENTSWORD", "trainee-lightsaber" ]
+        ],
+        "armorKeys": [
+            [ "ArmorCONROBE" ]
+        ],
+        "equipementKeys": [
+            [""]
+        ]
+    },
+    {
+        "specializationKey": "advisor",
+        "weaponKeys": [
+            [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
+            [ "WeaponBLASTHOLD" ]
+        ],
+        "armorKeys": [
+            [ "ArmorCONROBE" ]
+        ],
+        "equipementKeys": [
+            [""]
+        ]
+    },
+    {
+        "specializationKey": "makashi-duelist",
+        "weaponKeys": [
+            [ "trainee-lightsaber" ]
+        ],
+        "armorKeys": [
+            [ "ArmorCONROBE" ]
+        ],
+        "equipementKeys": [
+            [""]
+        ]
+    },
+    {
+        "specializationKey": "seer",
+        "weaponKeys": [
+            [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
+            [ "WeaponBLASTHOLD" ]
+        ],
+        "armorKeys": [
+            [ "ArmorCONROBE" ]
+        ],
+        "equipementKeys": [
+            [""]
+        ]
+    },
+    {
+        "specializationKey": "artisan",
+        "weaponKeys": [
+            [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
+            [ "WeaponBLASTHOLD" ]
+        ],
+        "armorKeys": [
+            [ "ArmorCONROBE" ]
+        ],
+        "equipementKeys": [
+            [""]
+        ]
+    },
+    {
+        "specializationKey": "shien-expert",
+        "weaponKeys": [
+            [ "trainee-lightsaber" ]
+        ],
+        "armorKeys": [
+            [ "ArmorCONROBE" ]
+        ],
+        "equipementKeys": [
+            [""]
+        ]
+    },
+    {
+        "specializationKey": "shadow",
+        "weaponKeys": [
+            [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
+            [ "WeaponBLASTHOLD" ]
+        ],
+        "armorKeys": [
+            [ "ArmorCONROBE" ]
+        ],
+        "equipementKeys": [
+            [""]
+        ]
+    }
+]

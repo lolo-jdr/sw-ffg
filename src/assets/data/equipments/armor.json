@@ -1,5 +1,6 @@
 [
     {
+        "key": "ArmorHC",
         "image": "ArmorHC.png",
         "label": "Vêtements épais",
         "defense": 0,
@@ -10,6 +11,7 @@
         "rarety": 0
     },
     {
+        "key": "ArmorCONROBE",
         "image": "ArmorCONROBE.png",
         "label": "Robe de camouflage",
         "defense": 0,
@@ -20,6 +22,7 @@
         "rarety": 2
     },
     {
+        "key": "ArmorUTILITYVEST",
         "image": "ArmorUTILITYVEST.png",
         "label": "Veste blast",
         "defense": 0,
@@ -30,6 +33,7 @@
         "rarety": 5
     },
     {
+        "key": "ArmorAEG",
         "image": "ArmorAEG.png",
         "label": "Tenue d'exploration",
         "defense": 0,
@@ -40,6 +44,7 @@
         "rarety": 1
     },
     {
+        "key": "ArmorPAD",
         "image": "ArmorPAD.png",
         "label": "Armure matelassée",
         "defense": 0,
@@ -50,6 +55,7 @@
         "rarety": 1
     },
     {
+        "key": "ArmorENVIROSUIT",
         "image": "ArmorENVIROSUIT.png",
         "label": "Combinaison environnementale",
         "defense": 0,
@@ -60,6 +66,7 @@
         "rarety": 2
     },
     {
+        "key": "ArmorFLAKVEST",
         "image": "ArmorFLAKVEST.png",
         "label": "Vêtements reforcés",
         "defense": 1,
@@ -70,6 +77,7 @@
         "rarety": 6
     },
     {
+        "key": "ArmorSMUGGLERSTRENCHCOAT",
         "image": "ArmorSMUGGLERSTRENCHCOAT.png",
         "label": "Pardessus de contrebandier",
         "defense": 1,
@@ -80,6 +88,7 @@
         "rarety": 7
     },
     {
+        "key": "ArmorLAM",
         "image": "ArmorLAM.png",
         "label": "Armure laminée",
         "defense": 0,
@@ -90,6 +99,7 @@
         "rarety": 5
     },
     {
+        "key": "ArmorENVIROSUIT",
         "image": "ArmorENVIROSUIT.png",
         "label": "Combinaison de survie antichoc",
         "defense": 0,
@@ -100,6 +110,7 @@
         "rarety": 3
     },
     {
+        "key": "ArmorARMROBE",
         "image": "ArmorARMROBE.png",
         "label": "Robe renforcée",
         "defense": 1,
@@ -110,6 +121,7 @@
         "rarety": 8
     },
     {
+        "key": "ArmorHBA",
         "image": "ArmorHBA.png",
         "label": "Armure de combat lourde",
         "defense": 1,
@@ -120,6 +132,7 @@
         "rarety": 7
     },
     {
+        "key": "ArmorMIMETICSUIT",
         "image": "ArmorMIMETICSUIT.png",
         "label": "Combinaison mimétique",
         "defense": 1,
@@ -130,6 +143,7 @@
         "rarety": 8
     },
     {
+        "key": "individual-deflector-shield",
         "image": "",
         "label": "Bouclier déflecteur individuel",
         "defense": 2,

@@ -53,7 +53,7 @@
           <label>Carrière</label>
           <p>
             <span>{{ character.career.label }}</span>
-            <a target="blank" routerLink="/career/{{ character.career.key }}">(fiche
+            <a target="blank" routerLink="/careers/{{ character.career.key }}">(fiche
               <i class="fa fa-external-link" aria-hidden="true"></i>)</a>
           </p>
         </div>
@@ -82,19 +82,19 @@
         </div>
 
         <div class="character-property">
-          <label>Obligation (voir plus bas)</label>
-          <p *ngIf="character.career.universKey === 'eoe' || character.career.universKey === 'aor'">{{ character.obligation.title }}</p>
-          <p *ngIf="character.career.universKey === 'fad'">{{ character.obligation.emotionalForceTitle }} - {{ character.obligation.emotionalWeaknessTitle }}</p>
-        </div>
-
-        <div class="character-property">
-          <label>Motivations</label>
-          <p>Fichiers de données inexistants (voir avec le MJ)</p>
-        </div>
-
-        <div class="character-property">
           <label>Equipments</label>
-          <p></p>
+          <p>Armes</p>
+          <ul>
+            <li *ngFor="let weapon of character.weapons">{{ weapon.label }}</li>
+          </ul>
+          <p>Armure</p>
+          <ul>
+            <li *ngFor="let armor of character.armors">{{ armor.label }}</li>
+          </ul>
+          <p>Equipements</p>
+          <ul>
+            <li *ngFor="let equipment of character.equipments">{{ equipment.label }}</li>
+          </ul>
         </div>
 
       </div>
@@ -118,7 +118,7 @@
 
     <div class="row">
       <div class="col">
-        <div class="character-property">
+        <div class="character-property text-justify">
           <ng-container *ngIf="character.career.universKey === 'eoe'">
             <label>Obligation</label>
             <p>
@@ -147,6 +147,15 @@
         </div>
       </div>
 
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="character-property">
+          <label>Motivations</label>
+          <p>Fichiers de données inexistants (voir avec le MJ)</p>
+        </div>
+      </div>
     </div>
 
 

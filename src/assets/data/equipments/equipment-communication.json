@@ -1,23 +1,65 @@
 [
     {
+        "key": "GearCOMLINKH",
         "image": "GearCOMLINKH.png",
         "label": "Comlink (standard)",
+        "description": "",
         "price": 25,
         "encombrement": 0,
         "rarety": 0
     },
     {
+        "key": "GearCOMLINKHARD",
         "image": "GearCOMLINKHARD.png",
         "label": "Comlink (longue-portée)",
+        "description": "",
         "price": 200,
         "encombrement": 2,
         "rarety": 1
     },
     {
+        "key": "remote-activator-short-range",
+        "image": "",
+        "label": "Télécommande d'activation (courte portée)",
+        "description": "",
+        "price": 300,
+        "encombrement": 0,
+        "rarety": 4
+    },
+    {
+        "key": "GearHOLO",
         "image": "GearHOLO.png",
         "label": "Holo-disque",
+        "description": "",
         "price": 250,
         "encombrement": 0,
         "rarety": 4
+    },
+    {
+        "key": "",
+        "image": "",
+        "label": "Hypertransmetteur",
+        "description": "",
+        "price": 1000,
+        "encombrement": 5,
+        "rarety": 3
+    },
+    {
+        "key": "whistler-encryption-module",
+        "image": "EncryptModuleHS-SWE.png",
+        "label": "Module de cryptage",
+        "description": "",
+        "price": 1250,
+        "encombrement": 3,
+        "rarety": 6
+    },
+    {
+        "key": "remote-activator-long-range",
+        "image": "",
+        "label": "Télécommande d'activation (longue portée)",
+        "description": "",
+        "price": 1500,
+        "encombrement": 0,
+        "rarety": 7
     }
 ]

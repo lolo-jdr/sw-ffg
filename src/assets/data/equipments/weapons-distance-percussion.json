@@ -1,5 +1,6 @@
 [
     {
+        "key": "weaponslugrif",
         "image": "WeaponSLUGRIF.png",
         "label": "Pistolet à percussion",
         "skill": "Distance (Légère)",
@@ -13,6 +14,7 @@
         "options": []
     },
     {
+        "key": "weaponslugrif-heavy",
         "image": "WeaponSLUGRIF.png",
         "label": "Fusil à percussion",
         "skill": "Distance (Lourde)",
@@ -28,6 +30,7 @@
         ]
     },
     {
+        "key": "8-gauge-scatter-gun-fc",
         "image": "8-Gauge_Scatter_Gun_FC.png",
         "label": "Fusil à dispersion Adostic Arms Calibre-8",
         "skill": "Distance (Lourde)",
@@ -44,6 +47,7 @@
         ]
     },
     {
+        "key": "fwg-5",
         "image": "Fwg-5.jpg",
         "label": "Pistolet à flechettes FWG-5",
         "skill": "Distance (Légère)",

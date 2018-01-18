@@ -2,49 +2,132 @@
     {
         "key": "wayfarer",
         "label": "Cargo Moyen Wayfarer",
+        "type": "cargo",
+        "sensorRange": "moyenne",
+        "crew": 2,
+        "passagers": 6,
         "image": "wayfarer.jpg",
         "price": 120000,
         "rarety": 5,
+        "mods": 5,
+        "weapons": [
+            "Quad-laser dorsal (portée proche)"
+        ],
         "univers": "eoe"
     },
     {
         "key": "yt-1300",
         "label": "Cargo léger YT-1300",
+        "type": "cargo",
+        "sensorRange": "Courte",
+        "crew": 2,
+        "passagers": 6,
         "image": "yt-1300.png",
         "price": 100000,
         "rarety": 4,
+        "mods": 0,
+        "weapons": [
+            ""
+        ],
         "univers": "eoe"
     },
     {
         "key": "firespray",
         "label": "Vaisseau de patrouille Firespray",
+        "type": "patrouilleur",
+        "sensorRange": "Courte",
+        "crew": 1,
+        "passagers": 6,
         "image": "firespray.png",
         "price": 80000,
         "rarety": 4,
+        "mods": 4,
+        "weapons": [
+            "Autoblasters montés à l'avant (portée proche)",
+            "Rayon tracteur léger (portée poche)"
+        ],
         "univers": "eoe"
     },
     {
         "key": "lambda-class",
         "label": "Navette de classe Lambda",
+        "type": "patrouilleur",
+        "sensorRange": "",
+        "crew": 0,
+        "passagers": 0,
         "image": "lambda-class.png",
         "price": 140000,
         "rarety": 6,
+        "mods": 0,
+        "weapons": [
+            ""
+        ],
         "univers": "aor"
     },
     {
         "key": "ywing",
         "label": "Escadron Y-Wing",
+        "type": "combat",
+        "sensorRange": "Proche",
+        "crew": 1,
+        "passagers": 0,
         "image": "y-wing.png",
         "price": 80000,
         "rarety": 4,
+        "mods": 1,
+        "weapons": [
+            "Canons ioniques légers jumelés montés sur tourelles (porté proche)",
+            "Canons lasers moyens jumelés montés à l'avant (porté proche)",
+            "Lance-torpille à protons montés à l'avant (porté courte)"
+        ],
         "univers": "aor"
     },
     {
         "key": "g9rigger",
         "label": "Cargo léger G-9 Rigger",
+        "type": "cargo",
+        "sensorRange": "",
+        "crew": 0,
+        "passagers": 0,
         "image": "g9rigger.jpg",
         "price": 55000,
         "rarety": 5,
+        "mods": 0,
+        "weapons": [
+            ""
+        ],
         "univers": "fad"
+    },
+    {
+        "key": "incom-a-24",
+        "label": "Vaisseau de reconnaissance INCOM A-24",
+        "type": "patrouilleur",
+        "sensorRange": "moyenne",
+        "crew": 1,
+        "passagers": 1,
+        "image": "A-24_Sleuth_EtU.png",
+        "price": 45000,
+        "rarety": 6,
+        "mods": 3,
+        "weapons": [
+            "Canon laser léger jumelé monté à l'avant (portée proche)"
+        ],
+        "univers": "eoe"
+    },
+    {
+        "key": "loronar-e-9",
+        "label": "Vaisseau de reconnaissance armé à longue portée Loronar E-9 de classe Explorer",
+        "type": "patrouilleur/Explorateur",
+        "sensorRange": "moyenne",
+        "crew": 2,
+        "passagers": 4,
+        "image": "E-9_Explorer_EtU.png",
+        "price": 120000,
+        "rarety": 6,
+        "mods": 4,
+        "weapons": [
+            "Canon laser moyen jumelé sur tourelle ventrale et dorsale (portée proche)"
+        ],
+        "univers": "eoe"
     }
 ]

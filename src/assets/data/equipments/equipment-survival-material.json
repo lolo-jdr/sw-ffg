@@ -1,5 +1,6 @@
 [
     {
+        "key": "GearCLIMB",
         "image": "GearCLIMB.png",
         "label": "Synthécorde (20m)",
         "price": 5,
@@ -7,6 +8,7 @@
         "rarety": 1
     },
     {
+        "key": "GearRATION",
         "image": "GearRATION.png",
         "label": "Pack de ration",
         "price": 5,
@@ -14,6 +16,7 @@
         "rarety": 0
     },
     {
+        "key": "GearBREATHM",
         "image": "GearBREATHM.png",
         "label": "Respirateur",
         "price": 25,
@@ -21,6 +24,7 @@
         "rarety": 1
     },
     {
+        "key": "sos-portative",
         "image": "",
         "label": "Signal de détresse portatif",
         "price": 50,
@@ -28,6 +32,7 @@
         "rarety": 1
     },
     {
+        "key": "electrotrap",
         "image": "",
         "label": "Electropiège",
         "price": 50,
@@ -35,6 +40,7 @@
         "rarety": 5
     },
     {
+        "key": "GearTENT",
         "image": "GearTENT.png",
         "label": "Tente",
         "price": 100,
@@ -42,6 +48,7 @@
         "rarety": 1
     },
     {
+        "key": "space-combinaison",
         "image": "",
         "label": "Combinaison spatiale",
         "price": 100,
@@ -49,6 +56,7 @@
         "rarety": 1
     },
     {
+        "key": "thermic-cover",
         "image": "",
         "label": "Couverture thermique",
         "price": 200,
@@ -56,6 +64,7 @@
         "rarety": 1
     },
     {
+        "key": "survival-crash-kit",
         "image": "",
         "label": "Kit de survie en cas de crash",
         "price": 300,
@@ -63,6 +72,7 @@
         "rarety": 2
     },
     {
+        "key": "depecage-kit",
         "image": "",
         "label": "Kit de Dépeçage",
         "price": 300,
@@ -70,6 +80,7 @@
         "rarety": 5
     },
     {
+        "key": "portative-cloture",
         "image": "",
         "label": "Clôture électrique portative",
         "price": 500,

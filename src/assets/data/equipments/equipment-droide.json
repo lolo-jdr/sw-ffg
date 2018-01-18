@@ -1,5 +1,14 @@
 [
     {
+        "key": "holocam-e",
+        "image": "droid_holocam_e.jpg",
+        "label": "Droïde-caméra",
+        "price": 800,
+        "encombrement": 0,
+        "rarety": 3
+    },
+    {
+        "key": "GearDROIDWANDSC",
         "image": "GearDROIDWANDSC.png",
         "label": "Droïde éclaireur Sorosuub \"Wanderer\"",
         "price": 2500,
@@ -7,6 +16,7 @@
         "rarety": 6
     },
     {
+        "key": "GearDROIDG2REP",
         "image": "GearDROIDG2REP.png",
         "label": "Droïde de maintenance Sorosuub G2",
         "price": 6000,
@@ -14,6 +24,15 @@
         "rarety": 5
     },
     {
+        "key": "fd-series-fire-droid",
+        "image": "fd-series-fire-droid.jpg",
+        "label": "Droïde extincteur",
+        "price": 8000,
+        "encombrement": 0,
+        "rarety": 4
+    },
+    {
+        "key": "GearDROIDSIAK",
         "image": "GearDROIDSIAK.png",
         "label": "Droïde de protocol Roche - Série Siak",
         "price": 10000,
@@ -21,6 +40,7 @@
         "rarety": 4
     },
     {
+        "key": "GearDROIDMEDIC",
         "image": "GearDROIDMEDIC.png",
         "label": "Droïde médical CT-4",
         "price": 20000,

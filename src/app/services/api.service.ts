@@ -20,6 +20,7 @@ export class ApiService {
   public static SKILLS = 'assets/data/skills.json';
   public static SPECIES = 'assets/data/species.json';
   public static CAREERS = 'assets/data/careers.json';
+  public static CAREERS_EQUIPMENTS = 'assets/data/career-equipments.json';
 
   public static OBLIGATIONS = 'assets/data/obligations.json';
   public static DUTIES = 'assets/data/duties.json';

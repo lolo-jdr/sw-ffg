@@ -1,5 +1,6 @@
 [
     {
+        "key": "GearSTIMPACK",
         "image": "GearSTIMPACK.png",
         "label": "Stimpack",
         "price": 25,
@@ -7,6 +8,7 @@
         "rarety": 1
     },
     {
+        "key": "synthetic-skin",
         "image": "",
         "label": "Peau synthétique",
         "price": 10,
@@ -14,6 +16,7 @@
         "rarety": 1
     },
     {
+        "key": "first-aid-GearEMP",
         "image": "GearEMP.png",
         "label": "Médipack de secours",
         "price": 100,
@@ -21,6 +24,7 @@
         "rarety": 1
     },
     {
+        "key": "GearEMP",
         "image": "GearEMP.png",
         "label": "Médipack",
         "price": 400,
@@ -28,6 +32,15 @@
         "rarety": 2
     },
     {
+        "key": "ECM-598-Medical-Backpack",
+        "image": "ECM-598_Medical_Backpack.jpg",
+        "label": "Sac à dos médical",
+        "price": 450,
+        "encombrement": 2,
+        "rarety": 4
+    },
+    {
+        "key": "bacta-trunk",
         "image": "",
         "label": "Bacta (cuve entière)",
         "price": 4000,
@@ -35,6 +48,7 @@
         "rarety": 1
     },
     {
+        "key": "bacta-litre",
         "image": "",
         "label": "Bacta (litre)",
         "price": 20,

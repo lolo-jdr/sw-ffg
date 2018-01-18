@@ -49,6 +49,13 @@
         "rarety": 6
     },
     {
+        "image": "",
+        "label": "Interface de pilotage",
+        "price": 8000,
+        "encombrement": 0,
+        "rarety": 6
+    },
+    {
         "image": "GearCYARMV.png",
         "label": "Bras cybernétique (Mod V et Mod VI)",
         "price": 10000,

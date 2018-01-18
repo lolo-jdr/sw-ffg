@@ -308,7 +308,7 @@
                 "key": "scout",
                 "label": "Éclaireur",
                 "subLabel": "de nouvelles planètes",
-                "description": "Trouver une planèten c'est une chose, mais y descendre pour voir à quoi elle reseemble en est une autre. L'Éclaireur est un professionnelle en la matière, entraîné pour observer et survivre, réunissant un maximum d'information. Un éclaireur sait se frayer un chemin dans n'importe quel environement, et il est assez coriace et malin pour se sortir de tout guépier. La plupart des éclaireurs savent : traverser n'importe quelle étendue de terrain (voire d'eau ou de vide), trouver de quoi manger et un endroit où dormir, et scruter une zone pour réunir toutes les informations nécessaires.",
+                "description": "Trouver une planète c'est une chose, mais y descendre pour voir à quoi elle reseemble en est une autre. L'Éclaireur est un professionnelle en la matière, entraîné pour observer et survivre, réunissant un maximum d'information. Un éclaireur sait se frayer un chemin dans n'importe quel environement, et il est assez coriace et malin pour se sortir de tout guépier. La plupart des éclaireurs savent : traverser n'importe quelle étendue de terrain (voire d'eau ou de vide), trouver de quoi manger et un endroit où dormir, et scruter une zone pour réunir toutes les informations nécessaires.",
                 "book": "Livre de base",
                 "skills": [
                     { 
@@ -1637,7 +1637,7 @@
                 "key": "hunter",
                 "label": "Chasseur",
                 "subLabel": "",
-                "description": "De nombreux prédateurs rôdent dans les régions sauvages de la galaxie. Certains animaux se jettent sur tout ce qui peut e^tre digéré. De tous les adeptes de la Force, les Chasseurs s'avèrent particulièrement doués pour traquer, affronter et tuer ce genre d'adversaire, surtout lorsqu'il se cache dans la nature, à l'écart de la civilisation. Un Chasseur n'interfère normalement pas avec le cycle de la vie, mais il est toujours prêt à restaurer l'équilibre en éliminant un prédateur qui tue gratuitement et détruit des habitats naturels.",
+                "description": "De nombreux prédateurs rôdent dans les régions sauvages de la galaxie. Certains animaux se jettent sur tout ce qui peut être digéré. De tous les adeptes de la Force, les Chasseurs s'avèrent particulièrement doués pour traquer, affronter et tuer ce genre d'adversaire, surtout lorsqu'il se cache dans la nature, à l'écart de la civilisation. Un Chasseur n'interfère normalement pas avec le cycle de la vie, mais il est toujours prêt à restaurer l'équilibre en éliminant un prédateur qui tue gratuitement et détruit des habitats naturels.",
                 "book": "Livre de base",
                 "skills": [
                     { 

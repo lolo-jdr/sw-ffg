@@ -1,5 +1,6 @@
 [
     {
+        "key": "GearGLOWROD",
         "image": "GearGLOWROD.png",
         "label": "Bâton luisant",
         "price": 10,
@@ -7,6 +8,7 @@
         "rarety": 0
     },
     {
+        "key": "GearUTILBELT",
         "image": "GearUTILBELT.png",
         "label": "Ceinture multi-usages",
         "price": 25,
@@ -14,41 +16,7 @@
         "rarety": 0
     },
     {
-        "image": "GearDATAPAD.png",
-        "label": "Datapad",
-        "price": 75,
-        "encombrement": 1,
-        "rarety": 1
-    },
-    {
-        "image": "GearJETPACK.png",
-        "label": "Jet pack",
-        "price": 4500,
-        "encombrement": 2,
-        "rarety": 7
-    },
-    {
-        "image": "GearFUSLANT.png",
-        "label": "Lanterne à fusion",
-        "price": 150,
-        "encombrement": 2,
-        "rarety": 2
-    },
-    {
-        "image": "",
-        "label": "Matériel d'escalade",
-        "price": 50,
-        "encombrement": 1,
-        "rarety": 2
-    },
-    {
-        "image": "",
-        "label": "Appât chimique",
-        "price": 125,
-        "encombrement": 1,
-        "rarety": 4
-    },
-    {
+        "key": "energy-cell-amo",
         "image": "",
         "label": "Munitions / cellules énergétiques",
         "price": 25,
@@ -56,13 +24,23 @@
         "rarety": 1
     },
     {
-        "image": "",
+        "key": "emergency-repair-patch",
+        "image": "emergency-repair-patch.jpg",
         "label": "Plaque de réparation d'urgence",
         "price": 25,
         "encombrement": 0,
         "rarety": 1
     },
     {
+        "key": "mountain-climbing-gear-climbing-rope",
+        "image": "mountain-climbing-gear-climbing-rope.jpg",
+        "label": "Matériel d'escalade",
+        "price": 50,
+        "encombrement": 1,
+        "rarety": 2
+    },
+    {
+        "key": "GearBACKPACK",
         "image": "GearBACKPACK.png",
         "label": "Sac à dos",
         "price": 50,
@@ -70,10 +48,59 @@
         "rarety": 0
     },
     {
+        "key": "GearDATAPAD",
+        "image": "GearDATAPAD.png",
+        "label": "Datapad",
+        "price": 75,
+        "encombrement": 1,
+        "rarety": 1
+    },
+    {
+        "key": "chemical-bait",
+        "image": "Chemical_bait.png",
+        "label": "Appât chimique",
+        "price": 125,
+        "encombrement": 1,
+        "rarety": 4
+    },
+    {
+        "key": "GearFUSLANT",
+        "image": "GearFUSLANT.png",
+        "label": "Lanterne à fusion",
+        "price": 150,
+        "encombrement": 2,
+        "rarety": 2
+    },
+    {
+        "key": "cargo-scanner",
+        "image": "",
+        "label": "Scanner de cargaison",
+        "price": 300,
+        "encombrement": 1,
+        "rarety": 4
+    },
+    {
+        "key": "GearTOOLKIT",
         "image": "GearTOOLKIT.png",
         "label": "Trousse à outils",
         "price": 350,
         "encombrement": 4,
         "rarety": 2
+    },
+    {
+        "key": "antigav-parachute",
+        "image": "",
+        "label": "Parachute antigrav",
+        "price": 450,
+        "encombrement": 1,
+        "rarety": 5
+    },
+    {
+        "key": "GearJETPACK",
+        "image": "GearJETPACK.png",
+        "label": "Jet pack",
+        "price": 4500,
+        "encombrement": 2,
+        "rarety": 7
     }
 ]

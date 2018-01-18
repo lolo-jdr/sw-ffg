@@ -1,5 +1,6 @@
 [
     {
+        "key": "WeaponBLASTHOLD",
         "image": "WeaponBLASTHOLD.png",
         "label": "Blaster de poche",
         "skill": "Distance (Légère)",
@@ -15,6 +16,7 @@
         ]
     },
     {
+        "key": "WeaponBLASTION",
         "image": "WeaponBLASTION.png",
         "label": "Blaster à ionisation",
         "skill": "Distance (Légère)",
@@ -31,6 +33,7 @@
         ]
     },
     {
+        "key": "WeaponBLASTLT",
         "image": "WeaponBLASTLT.png",
         "label": "Pistolet blaster léger",
         "skill": "Distance (Légère)",
@@ -46,6 +49,7 @@
         ]
     },
     {
+        "key": "czerka-arms-A95-blaster",
         "image": "",
         "label": "Blaster paralysant Czerka Arms A95",
         "skill": "Distance (Légère)",
@@ -62,6 +66,7 @@
         ]
     },
     {
+        "key": "WeaponBLASTPIS",
         "image": "WeaponBLASTPIS.png",
         "label": "Pistolet Blaster",
         "skill": "Distance (Légère)",
@@ -77,6 +82,7 @@
         ]
     },
     {
+        "key": "WeaponBLASTPISHVY",
         "image": "WeaponBLASTPISHVY.png",
         "label": "Pistolet Blaster lourd",
         "skill": "Distance (Légère)",
@@ -92,6 +98,7 @@
         ]
     },
     {
+        "key": "hgt-4-herloss-hunt-blaster",
         "image": "",
         "label": "Blaster de chasse Herloss HBt-4",
         "skill": "Distance (Lourde)",
@@ -108,6 +115,7 @@
         ]
     },
     {
+        "key": "GunOfCommand",
         "image": "GunOfCommand.jpg",
         "label": "Pistolet statique SSB-1",
         "skill": "Distance (Légère)",
@@ -124,6 +132,7 @@
         ]
     },
     {
+        "key": "WeaponBLASTCARB",
         "image": "WeaponBLASTCARB.png",
         "label": "Carabine Blaster",
         "skill": "Distance (Lourde)",
@@ -139,6 +148,7 @@
         ]
     },
     {
+        "key": "ES-700-Pulse-Rifle-FC",
         "image": "ES-700_Pulse_Rifle_FC.png",
         "label": "Fusil à impulsions Corondexx VES-700",
         "skill": "Distance (Lourde)",
@@ -155,6 +165,7 @@
         ]
     },
     {
+        "key": "WeaponBOWCAST",
         "image": "WeaponBOWCAST.png",
         "label": "Arbalète",
         "skill": "Distance (Lourde)",
@@ -171,6 +182,7 @@
         ]
     },
     {
+        "key": "Droiddisabler",
         "image": "Droiddisabler.jpg",
         "label": "Mutilateur de droïdes Felebreck",
         "skill": "Distance (Légère)",
@@ -188,6 +200,7 @@
         ]
     },
     {
+        "key": "WeaponBLASTCARB",
         "image": "WeaponBLASTCARB.png",
         "label": "Fusil Blaster",
         "skill": "Distance (Lourde)",
@@ -203,6 +216,7 @@
         ]
     },
     {
+        "key": "WeaponBLASTRIFHVY",
         "image": "WeaponBLASTRIFHVY.png",
         "label": "Fusil Blaster lourd",
         "skill": "Distance (Lourd)",
@@ -219,6 +233,7 @@
         ]
     },
     {
+        "key": "WeaponBLASTLTREP",
         "image": "WeaponBLASTLTREP.png",
         "label": "Blaster léger à répétition",
         "skill": "Distance (Lourde)",
@@ -236,6 +251,24 @@
         ]
     },
     {
+        "key": "WeaponLBR9STUNRIFLE",
+        "image": "WeaponLBR9STUNRIFLE",
+        "label": "Fusil étourdissant BlasTech LBR-9",
+        "skill": "Distance (Lourde)",
+        "damage": 10,
+        "critic": 0,
+        "distance": "Longue",
+        "enc": 6,
+        "emp": 4,
+        "price": 2800,
+        "rarety": 4,
+        "options": [
+            { "label": "Désorientation 2" },
+            { "label": "Dégats étourdissants" }
+        ]
+    },
+    {
+        "key": "WeaponDISRPIS",
         "image": "WeaponDISRPIS.png",
         "label": "Pistolet disrupteur",
         "skill": "Distance (Légère)",
@@ -251,6 +284,7 @@
         ]
     },
     {
+        "key": "WeaponDISRRIF",
         "image": "WeaponDISRRIF.png",
         "label": "Pistolet disrupteur",
         "skill": "Distance (Lourde)",
@@ -267,6 +301,26 @@
         ]
     },
     {
+        "key": "e11s-sniper-rifle",
+        "image": "E11s_sniper_rifle-EtU.png",
+        "label": "Fusil de sniper BlasTech E-11S",
+        "skill": "Distance (Lourde)",
+        "damage": 10,
+        "critic": 3,
+        "distance": "Extrême",
+        "enc": 6,
+        "emp": 3,
+        "price": 3500,
+        "rarety": 7,
+        "options": [
+            { "label": "Précis 1" },
+            { "label": "Encombrant 3" },
+            { "label": "Perforant 2" },
+            { "label": "Cadence lente 1" }
+        ]
+    },
+    {
+        "key": "WeaponM1NOVAVIPER",
         "image": "WeaponM1NOVAVIPER.png",
         "label": "Pistolet blaster Raider Arms modèle-1 \"Nova Viper\"",
         "skill": "Distance (Légère)",
@@ -284,6 +338,7 @@
         ]
     },
     {
+        "key": "WeaponBLASTHVYREP",
         "image": "WeaponBLASTHVYREP.png",
         "label": "Blaster lourd à répétition",
         "skill": "Artillerie",

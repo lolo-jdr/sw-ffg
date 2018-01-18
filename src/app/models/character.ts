@@ -9,9 +9,13 @@ export class Character {
 	career: Career;
 	specializations: careerSpecialization[] = [];
 	skills: Skill[];
-	obligation:any;
+	obligation: any;
 
-	hasForce:boolean = false;
+	hasForce: boolean = false;
+
+	weapons: any[] = [];
+	armors: any[] = [];
+	equipments: any[] = [];
 
 	constructor(skills: Skill[]) {
 		this.skills = skills;

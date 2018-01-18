@@ -1,5 +1,6 @@
 [
     {
+        "key": "WeaponBRASS",
         "image": "WeaponBRASS.png",
         "label": "Coup-de-poing",
         "skill": "Pugilat",
@@ -15,6 +16,7 @@
         ]
     },
     {
+        "key": "WeaponSHOCKGL",
         "image": "WeaponSHOCKGL.png",
         "label": "Gants à décharge",
         "skill": "Pugilat",
@@ -30,6 +32,7 @@
         ]
     },
     {
+        "key": "WeaponREFCORTCAUNT",
         "image": "WeaponREFCORTCAUNT.png",
         "label": "Gantelets en cortosis",
         "skill": "Pugilat",
@@ -45,6 +48,7 @@
         ]
     },
     {
+        "key": "boots",
         "image": "",
         "label": "Bottes à décharge",
         "skill": "Pugilat",

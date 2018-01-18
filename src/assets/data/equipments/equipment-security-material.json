@@ -1,51 +1,73 @@
 [
     {
-        "image": "",
-        "label": "Bouchon d'entrave",
-        "price": 35,
-        "encombrement": 0,
-        "rarety": 0
-    },
-    {
-        "image": "",
-        "label": "Brouilleur",
-        "price": 400,
-        "encombrement": 4,
-        "rarety": 3
-    },
-    {
-        "image": "",
-        "label": "Crypteur",
-        "price": 1000,
-        "encombrement": 0,
-        "rarety": 5
-    },
-    {
-        "image": "",
-        "label": "Matériel de Slicer",
-        "price": 500,
-        "encombrement": 2,
-        "rarety": 4
-    },
-    {
+        "key": "GearBIND",
         "image": "GearBIND.png",
         "label": "Menottes",
+        "description": "",
         "price": 25,
         "encombrement": 0,
         "rarety": 0
     },
     {
+        "key": "bouchon-entrave",
+        "image": "",
+        "label": "Bouchon d'entrave",
+        "description": "Piratage de droïde",
+        "price": 35,
+        "encombrement": 0,
+        "rarety": 0
+    },
+    {
+        "key": "disguise-tool",
+        "image": "",
+        "label": "Trousse de déguisement",
+        "description": "Maquillage, postiches, camouflage ADN",
+        "price": 100,
+        "encombrement": 2,
+        "rarety": 4
+    },
+    {
+        "key": "scrambler",
+        "image": "",
+        "label": "Brouilleur",
+        "description": "Brouilleur de fréquence",
+        "price": 400,
+        "encombrement": 4,
+        "rarety": 3
+    },
+    {
+        "key": "slicer-tool",
+        "image": "",
+        "label": "Matériel de Slicer",
+        "description": "Piratage informatique",
+        "price": 500,
+        "encombrement": 2,
+        "rarety": 4
+    },
+    {
+        "key": "encryptor",
+        "image": "",
+        "label": "Crypteur",
+        "description": "",
+        "price": 1000,
+        "encombrement": 0,
+        "rarety": 5
+    },
+    {
+        "key": "GearELB",
         "image": "GearELB.png",
         "label": "Passe-partout électronique",
+        "description": "Fermeture et verrous électroniques",
         "price": 1000,
         "encombrement": 1,
         "rarety": 5
     },
     {
+        "key": "fingerprint-masque",
         "image": "",
-        "label": "Trousse de déguisement",
-        "price": 100,
-        "encombrement": 2,
-        "rarety": 4
+        "label": "Masque d'empreinte digitale",
+        "price": 1000,
+        "encombrement": 0,
+        "rarety": 7
     }
 ]

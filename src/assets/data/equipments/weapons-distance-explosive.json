@@ -1,5 +1,6 @@
 [
     {
+        "key": "WeaponFRAGGR",
         "image": "WeaponFRAGGR.png",
         "label": "Grenade à fragmentation",
         "skill": "Distance (Légère)",
@@ -16,6 +17,7 @@
         ]
     },
     {
+        "key": "WeaponSTUNGR",
         "image": "WeaponSTUNGR.png",
         "label": "Grenade étourdissante",
         "skill": "Distance (Légère)",
@@ -34,6 +36,7 @@
         ]
     },
     {
+        "key": "WeaponAPGREN",
         "image": "WeaponAPGREN.png",
         "label": "Grenade perforante anti-armure",
         "skill": "Distance (Légère)",
@@ -51,6 +54,7 @@
         ]
     },
     {
+        "key": "WeaponGLOPGRND",
         "image": "WeaponGLOPGRND",
         "label": "Grenade incapacitante",
         "skill": "Distance (Légère)",
@@ -68,6 +72,7 @@
         ]
     },
     {
+        "key": "WeaponAPMINE",
         "image": "WeaponAPMINE.png",
         "label": "Mine antipersonnel",
         "skill": "Mécanique",
@@ -85,6 +90,7 @@
         ]
     },
     {
+        "key": "WeaponAVMINE",
         "image": "WeaponAVMINE.png",
         "label": "Mine antivéhicule",
         "skill": "Mécanique",
@@ -102,6 +108,7 @@
         ]
     },
     {
+        "key": "WeaponFLAME",
         "image": "WeaponFLAME.png",
         "label": "Lance-flamme",
         "skill": "Distance (Lourde)",
@@ -118,6 +125,7 @@
         ]
     },
     {
+        "key": "WeaponTHERMDET",
         "image": "WeaponTHERMDET.png",
         "label": "Détonateur thermique",
         "skill": "Distance (Légère)",
@@ -136,6 +144,7 @@
         ]
     },
     {
+        "key": "WeaponMISS",
         "image": "WeaponMISS.png",
         "label": "Lance-missile",
         "skill": "Artillerie",

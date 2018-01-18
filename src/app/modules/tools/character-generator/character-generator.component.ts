@@ -8,6 +8,7 @@ import { Career } from '../../../models/career';
 import { ApplicationService } from '../../../services/application.service';
 import { Character } from '../../../models/character';
 import { Skill, SkillType } from '../../../models/skill';
+import { forEach } from '@angular/router/src/utils/collection';
 
 @Component({
   selector: 'app-character-generator',
@@ -23,11 +24,39 @@ export class CharacterGeneratorComponent implements OnInit {
   protected speciesList: Species[] = [];
   protected careerList: Career[] = [];
 
+  protected careerEquipment: any[] = [];
+  protected weapons: any[] = [];
+  protected armors: any[] = [];
+  protected equipments: any[] = [];
+
+
   constructor(private api: ApiService, private helper: HelperService) { }
 
   ngOnInit() {
-    this.randomize();
-    this.isPageLoaded = true;
+    this.getEquipmentData().subscribe(equip => {
+      const [careerEquipment, weapons, armors, equipments] = equip;
+
+      this.careerEquipment = careerEquipment;
+
+      for (let weaponType in weapons) {
+        for (let weapon in weapons[weaponType]) {
+          let w = weapons[weaponType][weapon];
+          this.weapons.push(w);
+        }
+      }
+
+      this.armors = armors[0]; // Shouldn't have to do that
+      
+      for (let equipmentType in equipments) {
+        for (let equipment in equipments[equipmentType]) {
+          let e = equipments[equipmentType][equipment];
+          this.equipments.push(e);
+        }
+      }
+
+      this.randomize();
+      this.isPageLoaded = true;
+    });
   }
 
   private InitializeCharacter() {
@@ -67,7 +96,11 @@ export class CharacterGeneratorComponent implements OnInit {
     // Assign specializations skills randomly
     this.assignSpecializationSkills();
 
+    // Assign an obligation/ duty / morality
     this.assignObligation();
+
+    // Assign equipments
+    this.assignEquipment();
 
     console.log(this.character);
   }
@@ -87,8 +120,8 @@ export class CharacterGeneratorComponent implements OnInit {
 
     } else if (this.character.species.specialAbilityProcess.length === 1) {
       var speciesSkill = this.character.species.specialAbilityProcess[0];
-      this.increaseSkill(this.character.skills.find(s => s.key === speciesSkill.skillKey), SkillType.Species);   
-    } else  if (this.character.species.specialAbilityProcess.length > 1) {
+      this.increaseSkill(this.character.skills.find(s => s.key === speciesSkill.skillKey), SkillType.Species);
+    } else if (this.character.species.specialAbilityProcess.length > 1) {
       var ability = HelperService.GetRandomFromCollection(this.character.species.specialAbilityProcess);
       this.increaseSkill(this.character.skills.find(s => s.key === ability.skillKey), SkillType.Species);
     }
@@ -129,11 +162,49 @@ export class CharacterGeneratorComponent implements OnInit {
 
   private assignObligation() {
     if (this.character.career.universKey === 'eoe') {
-      this.character.obligation = HelperService.GetRandomFromCollectionWithoutLast(ApplicationService.obligations);
+      this.character.obligation = HelperService.GetRandomFromCollection(ApplicationService.obligations.filter(o => o.dice !== '"01-08'));
     } else if (this.character.career.universKey === 'aor') {
-      this.character.obligation = HelperService.GetRandomFromCollectionWithoutLast(ApplicationService.duties);
+      this.character.obligation = HelperService.GetRandomFromCollection(ApplicationService.duties.filter(o => o.dice !== '"01-08'));
     } else {
-      this.character.obligation = HelperService.GetRandomFromCollectionWithoutLast(ApplicationService.moralities);
+      this.character.obligation = HelperService.GetRandomFromCollection(ApplicationService.moralities.filter(o => o.dice !== '"01-08'));
+    }
+  }
+
+  private assignEquipment() {
+
+    if (this.character && this.character.specializations.length > 0) {
+      // find the career-weapon
+      let careerEquipment = this.careerEquipment.find(cw => cw.specializationKey === this.character.specializations[0].key);
+      console.log(careerEquipment);
+
+      // Give random weapons
+      for(let weaponKeys of careerEquipment.weaponKeys) {
+        let weaponKey = HelperService.GetRandomFromCollection(weaponKeys);
+        let weapon = this.weapons.find(w => w.key === weaponKey);
+        if (weapon) {
+          this.character.weapons.push(weapon);
+        }
+      }
+
+      // Give random armor
+      for(let armorKeys of careerEquipment.armorKeys) {
+        let armorKey = HelperService.GetRandomFromCollection(armorKeys);
+        let armor = this.armors.find(a => a.key === armorKey);
+        if (armor) {
+          this.character.armors.push(armor);
+        }
+      }
+
+      // Give random equipments
+      for(let equipmentKeys of careerEquipment.equipementKeys) {
+        let equipmentKey = HelperService.GetRandomFromCollection(equipmentKeys);
+        console.log(equipmentKey);
+        console.log(this.equipments);
+        let equipment = this.equipments.find(a => a.key === equipmentKey);
+        if (equipment && equipment !== '') { // remove empty string condition when all equipments have a key
+          this.character.equipments.push(equipment);
+        }
+      }
     }
   }
 
@@ -155,6 +226,47 @@ export class CharacterGeneratorComponent implements OnInit {
       default:
         break;
     }
+  }
+
+  private getEquipmentData() {
+    return Observable.forkJoin(
+      this.api.localResource(ApiService.CAREERS_EQUIPMENTS),
+      this.getWeapons(),
+      this.getArmor(),
+      this.getEquipment()
+    );
+  }
+
+  private getWeapons() {
+    return Observable.forkJoin(
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.WEAPONS_DISTANCE_ENERGY),
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.WEAPONS_DISTANCE_PERCUSSION),
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.WEAPONS_DISTANCE_JET),
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.WEAPONS_DISTANCE_EXPLOSIVE),
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.WEAPONS_CONTACT_SWORD),
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.WEAPONS_CONTACT_PUGILAT)
+    );
+  }
+
+  private getArmor() {
+    return Observable.forkJoin(
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.ARMORS)
+    );
+  }
+
+  private getEquipment() {
+    return Observable.forkJoin(
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.EQUIPMENT_COMMUNICATION),
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.EQUIPMENT_CYBERNETIC),
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.EQUIPMENT_DETECTION),
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.EQUIPMENT_DROIDE),
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.EQUIPMENT_ENTERTAINMENT),
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.EQUIPMENT_MEDICAL),
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.EQUIPMENT_POISON),
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.EQUIPMENT_SECURITY_MATERIAL),
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.EQUIPMENT_SURVIVAL_MATERIAL),
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.EQUIPMENT_TOOL)
+    );
   }
 
 }

@@ -1,5 +1,6 @@
 [
     {
+        "key": "WeaponTRUNCH",
         "image": "WeaponTRUNCH.png",
         "label": "Matraque",
         "skill": "Corps à corps",
@@ -15,6 +16,7 @@
         ]
     },
     {
+        "key": "WeaponKNIFE",
         "image": "WeaponKNIFE.png",
         "label": "Couteau de combat",
         "skill": "Corps à corps",
@@ -28,6 +30,7 @@
         "options": [ ]
     },
     {
+        "key": "knuckles-dagger",
         "image": "",
         "label": "Dague coup-de-poing",
         "skill": "Corps à corps",
@@ -43,6 +46,7 @@
         ]
     },
     {
+        "key": "WeaponGAFF",
         "image": "WeaponGAFF.png",
         "label": "Bâton Gaderffii",
         "skill": "Corps à corps",
@@ -59,6 +63,7 @@
         ]
     },
     {
+        "key": "WeaponVIBKN",
         "image": "WeaponVIBKN.png",
         "label": "Vibrolame",
         "skill": "Corps à corps",
@@ -75,6 +80,7 @@
         ]
     },
     {
+        "key": "WeaponANCIENTSWORD",
         "image": "WeaponANCIENTSWORD.png",
         "label": "Épée antique",
         "skill": "Sabre laser",
@@ -90,6 +96,23 @@
         ]
     },
     {
+        "key": "trainee-lightsaber",
+        "image": "",
+        "label": "Sabre laser d'entrainement",
+        "skill": "Sabre Laser",
+        "damage": "6",
+        "critic": 0,
+        "distance": "Au contact",
+        "enc": 1,
+        "emp": 5,
+        "price": 400,
+        "rarety": 6,
+        "options": [
+            { "label": "Réglage étourdissant" }
+        ]
+    },
+    {
+        "key": "WeaponFORCEP",
         "image": "WeaponFORCEP.png",
         "label": "Lance de force",
         "skill": "Corps à corps",
@@ -106,6 +129,7 @@
         ]
     },
     {
+        "key": "WeaponVIBSW",
         "image": "WeaponVIBSW.png",
         "label": "Vibroépée",
         "skill": "Corps à corps",
@@ -123,6 +147,7 @@
         ]
     },
     {
+        "key": "WeaponVIBAX",
         "image": "WeaponVIBAX.png",
         "label": "Vibrohache",
         "skill": "Corps à corps",
@@ -140,6 +165,7 @@
         ]
     },
     {
+        "key": "WeaponCORTSHIELD",
         "image": "WeaponCORTSHIELD.png",
         "label": "Bouclier en cortosis",
         "skill": "Corps à corps",
@@ -158,6 +184,7 @@
         ]
     },
     {
+        "key": "WeaponCORTSWORD",
         "image": "WeaponCORTSWORD.png",
         "label": "Épée en cortosis",
         "skill": "Corps à corps",
@@ -174,6 +201,7 @@
         ]
     },
     {
+        "key": "WeaponREFCORTSTAFF",
         "image": "WeaponREFCORTSTAFF.png",
         "label": "Bâton en cortosis",
         "skill": "Corps à corps",
@@ -189,6 +217,7 @@
         ]
     },
     {
+        "key": "WeaponELECSTAFF",
         "image": "WeaponELECSTAFF.png",
         "label": "Bâton statique",
         "skill": "Corps à corps",
@@ -208,6 +237,7 @@
         ]
     },
     {
+        "key": "WeaponLTSABERBASIC",
         "image": "WeaponLTSABERBASIC.png",
         "label": "Sabre laser",
         "skill": "Sabre laser",
