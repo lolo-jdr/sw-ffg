@@ -49,6 +49,7 @@
         "key": "WeaponGAFF",
         "image": "WeaponGAFF.png",
         "label": "Bâton Gaderffii",
+        "description": "Bâton fait de métal récupéré (utilisé par les Hommes des sables)",
         "skill": "Corps à corps",
         "damage": "+2",
         "critic": 3,
@@ -115,6 +116,7 @@
         "key": "WeaponFORCEP",
         "image": "WeaponFORCEP.png",
         "label": "Lance de force",
+        "description": "lance en métal avec deux pointes électriques et perforantes",
         "skill": "Corps à corps",
         "damage": "+3",
         "critic": 2,
@@ -252,6 +254,25 @@
             { "label": "Brèche 1" },
             { "label": "Briseur" },
             { "label": "Sanguinaire 2" }
+         ]
+    },
+    {
+        "key": "double-light-saber",
+        "image": "",
+        "label": "Sabre laser double",
+        "skill": "Sabre laser",
+        "damage": 6,
+        "critic": 2,
+        "distance": "Au contact",
+        "enc": 2,
+        "emp": 4,
+        "price": 18600,
+        "rarety": 10,
+        "options": [
+            { "label": "Brèche 1" },
+            { "label": "Briseur" },
+            { "label": "Difficile à manier" },
+            { "label": "Jumelé 2" }
          ]
     }
 ]

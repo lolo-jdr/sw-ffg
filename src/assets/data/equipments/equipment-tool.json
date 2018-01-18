@@ -3,6 +3,7 @@
         "key": "GearGLOWROD",
         "image": "GearGLOWROD.png",
         "label": "Bâton luisant",
+        "description": "Bâton éclairant",
         "price": 10,
         "encombrement": 1,
         "rarety": 0
@@ -27,6 +28,7 @@
         "key": "emergency-repair-patch",
         "image": "emergency-repair-patch.jpg",
         "label": "Plaque de réparation d'urgence",
+        "description": "Colmatage, renforce l'intégrité structurel",
         "price": 25,
         "encombrement": 0,
         "rarety": 1
@@ -67,6 +69,7 @@
         "key": "GearFUSLANT",
         "image": "GearFUSLANT.png",
         "label": "Lanterne à fusion",
+        "description": "source de lumière et d'énergie",
         "price": 150,
         "encombrement": 2,
         "rarety": 2

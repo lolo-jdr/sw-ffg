@@ -1,5 +1,37 @@
 [
     {
+        "key": "airspeeder-incom-t-47",
+        "label": "Airspeeder INCOM T-47",
+        "type": "airspeeder",
+        "sensorRange": "proche",
+        "crew": 2,
+        "passagers": 0,
+        "image": "Snowspeeder.png",
+        "price": 18000,
+        "rarety": 3,
+        "mods": 3,
+        "weapons": [
+            "Harpon électromagnétique"
+        ],
+        "univers": "eoe"
+    },
+    {
+        "key": "skyhopper-incom-t-16",
+        "label": "T-16 INCOM Skyhopper",
+        "type": "airspeeder",
+        "sensorRange": "courte",
+        "crew": 1,
+        "passagers": 1,
+        "image": "t-16.png",
+        "price": 7500,
+        "rarety": 2,
+        "mods": 3,
+        "weapons": [
+            "Aucune"
+        ],
+        "univers": "eoe"
+    },
+    {
         "key": "wayfarer",
         "label": "Cargo Moyen Wayfarer",
         "type": "cargo",
@@ -38,7 +70,7 @@
         "sensorRange": "Courte",
         "crew": 1,
         "passagers": 6,
-        "image": "firespray.png",
+        "image": "Firespray_SWGTCG.jpg",
         "price": 80000,
         "rarety": 4,
         "mods": 4,
@@ -65,9 +97,27 @@
         "univers": "aor"
     },
     {
+        "key": "awing",
+        "label": "Intercepteur léger A-Wing",
+        "type": "chasseur",
+        "sensorRange": "Moyenne",
+        "crew": 1,
+        "passagers": 0,
+        "image": "swyf7FJ.jpg",
+        "price": 150000,
+        "rarety": 6,
+        "mods": 1,
+        "weapons": [
+            "Canons lasers légers montés à l'avant (portée proche)",
+            "Lance-missile à concussion montés à l'avant (portée courte)"
+        ],
+        "univers": "aor"
+    },
+
+    {
         "key": "ywing",
         "label": "Escadron Y-Wing",
-        "type": "combat",
+        "type": "chasseur",
         "sensorRange": "Proche",
         "crew": 1,
         "passagers": 0,

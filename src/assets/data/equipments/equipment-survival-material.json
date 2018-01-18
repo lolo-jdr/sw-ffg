@@ -51,6 +51,7 @@
         "key": "space-combinaison",
         "image": "",
         "label": "Combinaison spatiale",
+        "description": "sortie dans l'espace",
         "price": 100,
         "encombrement": 4,
         "rarety": 1
