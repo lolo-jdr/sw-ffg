@@ -9,6 +9,16 @@
         "rarety": 0
     },
     {
+        "key": "collarAmp",
+        "image": "",
+        "label": "Collier amplificateur de voix",
+        "description": "Collier comportant une puce amplifiant la voix",
+        "price": 50,
+        "encombrement": 0,
+        "rarety": 1
+    },
+
+    {
         "key": "GearCOMLINKHARD",
         "image": "GearCOMLINKHARD.png",
         "label": "Comlink (longue-portée)",

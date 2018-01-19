@@ -1,24 +1,24 @@
 [
     {
-        "key": "airspeeder-incom-t-47",
-        "label": "Airspeeder INCOM T-47",
-        "type": "airspeeder",
-        "sensorRange": "proche",
-        "crew": 2,
-        "passagers": 0,
-        "image": "Snowspeeder.png",
-        "price": 18000,
-        "rarety": 3,
+        "key": "v35CourierLandspeeder",
+        "label": "V-35 Courier Landspeeder",
+        "type": "Landspeeder",
+        "sensorRange": "courte",
+        "crew": 1,
+        "passagers": 3,
+        "image": "V35_Rebels.jpgsuper",
+        "price": 7500,
+        "rarety": 2,
         "mods": 3,
         "weapons": [
-            "Harpon électromagnétique"
+            "Aucune"
         ],
         "univers": "eoe"
     },
     {
         "key": "skyhopper-incom-t-16",
         "label": "T-16 INCOM Skyhopper",
-        "type": "airspeeder",
+        "type": "Airspeeder",
         "sensorRange": "courte",
         "crew": 1,
         "passagers": 1,
@@ -32,25 +32,73 @@
         "univers": "eoe"
     },
     {
-        "key": "wayfarer",
-        "label": "Cargo Moyen Wayfarer",
-        "type": "cargo",
-        "sensorRange": "moyenne",
+        "key": "airspeeder-incom-t-47",
+        "label": "Airspeeder INCOM T-47",
+        "type": "Airspeeder",
+        "sensorRange": "proche",
         "crew": 2,
-        "passagers": 6,
-        "image": "wayfarer.jpg",
-        "price": 120000,
+        "passagers": 0,
+        "image": "Snowspeeder.png",
+        "price": 18000,
+        "rarety": 3,
+        "mods": 3,
+        "weapons": [
+            "Harpon électromagnétique"
+        ],
+        "univers": "eoe"
+    },
+    {
+        "key": "g9rigger",
+        "label": "Cargo léger G-9 Rigger",
+        "type": "Cargo",
+        "sensorRange": "",
+        "crew": 0,
+        "passagers": 0,
+        "image": "g9rigger.jpg",
+        "price": 55000,
+        "rarety": 5,
+        "mods": 0,
+        "weapons": [
+            ""
+        ],
+        "univers": "fad"
+    },
+    {
+        "key": "hwk290LightFreighter",
+        "label": "Cargo léger HWK-290",
+        "type": "Cargo",
+        "sensorRange": "Courte",
+        "crew": 2,
+        "passagers": 2,
+        "image": "EaWMoldyCrowInSpace.jpg",
+        "price": 70000,
+        "rarety": 7,
+        "mods": 5,
+        "weapons": [
+            "Aucun"
+        ],
+        "univers": "eoe"
+    },
+    {
+        "key": "yt1760SmallTansport",
+        "label": "Petit transporteur YT-1760",
+        "type": "Transporteur",
+        "sensorRange": "Courte",
+        "crew": 2,
+        "passagers": 8,
+        "image": "yt_1760_small_transport.jpg",
+        "price": 80000,
         "rarety": 5,
         "mods": 5,
         "weapons": [
-            "Quad-laser dorsal (portée proche)"
+            "Canon laser légers sur tourelle dorsale (portée proche)"
         ],
         "univers": "eoe"
     },
     {
         "key": "yt-1300",
         "label": "Cargo léger YT-1300",
-        "type": "cargo",
+        "type": "Cargo",
         "sensorRange": "Courte",
         "crew": 2,
         "passagers": 6,
@@ -64,9 +112,41 @@
         "univers": "eoe"
     },
     {
+        "key": "wayfarer",
+        "label": "Cargo Moyen Wayfarer",
+        "type": "Cargo",
+        "sensorRange": "moyenne",
+        "crew": 2,
+        "passagers": 6,
+        "image": "wayfarer.jpg",
+        "price": 120000,
+        "rarety": 5,
+        "mods": 5,
+        "weapons": [
+            "Quad-laser dorsal (portée proche)"
+        ],
+        "univers": "eoe"
+    },
+    {
+        "key": "incom-a-24",
+        "label": "Vaisseau de reconnaissance INCOM A-24",
+        "type": "Patrouilleur",
+        "sensorRange": "moyenne",
+        "crew": 1,
+        "passagers": 1,
+        "image": "A-24_Sleuth_EtU.png",
+        "price": 45000,
+        "rarety": 6,
+        "mods": 3,
+        "weapons": [
+            "Canon laser léger jumelé monté à l'avant (portée proche)"
+        ],
+        "univers": "eoe"
+    },
+    {
         "key": "firespray",
         "label": "Vaisseau de patrouille Firespray",
-        "type": "patrouilleur",
+        "type": "Patrouilleur",
         "sensorRange": "Courte",
         "crew": 1,
         "passagers": 6,
@@ -81,9 +161,25 @@
         "univers": "eoe"
     },
     {
+        "key": "loronar-e-9",
+        "label": "Vaisseau de reconnaissance Loronar E-9 de classe Explorer",
+        "type": "Patrouilleur/Explorateur",
+        "sensorRange": "moyenne",
+        "crew": 2,
+        "passagers": 4,
+        "image": "E-9_Explorer_EtU.png",
+        "price": 120000,
+        "rarety": 6,
+        "mods": 4,
+        "weapons": [
+            "Canon laser moyen jumelé sur tourelle ventrale et dorsale (portée proche)"
+        ],
+        "univers": "eoe"
+    },
+    {
         "key": "lambda-class",
         "label": "Navette de classe Lambda",
-        "type": "patrouilleur",
+        "type": "Patrouilleur",
         "sensorRange": "",
         "crew": 0,
         "passagers": 0,
@@ -97,27 +193,9 @@
         "univers": "aor"
     },
     {
-        "key": "awing",
-        "label": "Intercepteur léger A-Wing",
-        "type": "chasseur",
-        "sensorRange": "Moyenne",
-        "crew": 1,
-        "passagers": 0,
-        "image": "swyf7FJ.jpg",
-        "price": 150000,
-        "rarety": 6,
-        "mods": 1,
-        "weapons": [
-            "Canons lasers légers montés à l'avant (portée proche)",
-            "Lance-missile à concussion montés à l'avant (portée courte)"
-        ],
-        "univers": "aor"
-    },
-
-    {
         "key": "ywing",
         "label": "Escadron Y-Wing",
-        "type": "chasseur",
+        "type": "Chasseur",
         "sensorRange": "Proche",
         "crew": 1,
         "passagers": 0,
@@ -133,51 +211,20 @@
         "univers": "aor"
     },
     {
-        "key": "g9rigger",
-        "label": "Cargo léger G-9 Rigger",
-        "type": "cargo",
-        "sensorRange": "",
-        "crew": 0,
-        "passagers": 0,
-        "image": "g9rigger.jpg",
-        "price": 55000,
-        "rarety": 5,
-        "mods": 0,
-        "weapons": [
-            ""
-        ],
-        "univers": "fad"
-    },
-    {
-        "key": "incom-a-24",
-        "label": "Vaisseau de reconnaissance INCOM A-24",
-        "type": "patrouilleur",
-        "sensorRange": "moyenne",
+        "key": "awing",
+        "label": "Intercepteur léger A-Wing",
+        "type": "Chasseur",
+        "sensorRange": "Moyenne",
         "crew": 1,
-        "passagers": 1,
-        "image": "A-24_Sleuth_EtU.png",
-        "price": 45000,
+        "passagers": 0,
+        "image": "swyf7FJ.jpg",
+        "price": 150000,
         "rarety": 6,
-        "mods": 3,
+        "mods": 1,
         "weapons": [
-            "Canon laser léger jumelé monté à l'avant (portée proche)"
+            "Canons lasers légers montés à l'avant (portée proche)",
+            "Lance-missile à concussion montés à l'avant (portée courte)"
         ],
-        "univers": "eoe"
-    },
-    {
-        "key": "loronar-e-9",
-        "label": "Vaisseau de reconnaissance armé à longue portée Loronar E-9 de classe Explorer",
-        "type": "patrouilleur/Explorateur",
-        "sensorRange": "moyenne",
-        "crew": 2,
-        "passagers": 4,
-        "image": "E-9_Explorer_EtU.png",
-        "price": 120000,
-        "rarety": 6,
-        "mods": 4,
-        "weapons": [
-            "Canon laser moyen jumelé sur tourelle ventrale et dorsale (portée proche)"
-        ],
-        "univers": "eoe"
+        "univers": "aor"
     }
 ]

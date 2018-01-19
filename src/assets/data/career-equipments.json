@@ -11,6 +11,9 @@
         "equipementKeys": [
             ["macrobinoc", "scanner-goggles"],
             [ "hand-scanner", "GearSTAG" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -25,6 +28,9 @@
         "equipementKeys": [
             [ "GearUTILBELT", "cargo-scanner" ],
             [ "remote-activator-short-range" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -40,43 +46,55 @@
             [ "electrobinoc_negwt", "scanner-goggles"],
             [ "hand-scanner", "general-purpose-scanner" ],
             [ "electrotrap", "GearTENT", "thermic-cover", "depecage-kit", "sos-portative", "mountain-climbing-gear-climbing-rope", "chemical-bait", "GearCLIMB" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
         "specializationKey": "doctor",
         "weaponKeys": [
-            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "WeaponTRUNCH" ]
+            [ "12-defenseur", "WeaponBLASTHOLD", "WeaponBLASTLT", "quickfire", "molecularStiletto" ]
         ],
         "armorKeys": [
             [ "ArmorHC" ]
         ],
         "equipementKeys": [
-            ["hand-scanner"],
+            ["hand-scanner", "forensicsInvestigationKit"],
             [ "GearEMP", "ECM-598-Medical-Backpack"]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
         "specializationKey": "politico",
         "weaponKeys": [
-            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "WeaponTRUNCH" ]
-        ],
-        "armorKeys": [
-            [ "ArmorHC" ]
-        ],
-        "equipementKeys": [
-            [ "encryptor" ]
-        ]
-    },
-    {
-        "specializationKey": "scholar",
-        "weaponKeys": [
-            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "WeaponTRUNCH" ]
+            [ "12-defenseur", "WeaponBLASTHOLD", "quickfire", "molecularStiletto" ]
         ],
         "armorKeys": [
             [ "ArmorHC" ]
         ],
         "equipementKeys": [
             [ "GearHOLO", "GearDATAPAD" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
+        ]
+    },
+    {
+        "specializationKey": "scholar",
+        "weaponKeys": [
+            [ "12-defenseur", "WeaponBLASTHOLD", "quickfire", "molecularStiletto" ]
+        ],
+        "armorKeys": [
+            [ "ArmorHC" ]
+        ],
+        "equipementKeys": [
+            [ "GearHOLO", "GearDATAPAD" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -90,6 +108,9 @@
         ],
         "equipementKeys": [
             [ "GearUTILBELT", "cargo-scanner", "GearTOOLKIT", "scrambler" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -105,18 +126,24 @@
             [ "electrobinoc_negwt", "scanner-goggles"],
             [ "hand-scanner", "general-purpose-scanner" ],
             [ "electrotrap", "GearTENT", "thermic-cover", "depecage-kit", "sos-portative", "mountain-climbing-gear-climbing-rope", "GearCLIMB" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
         "specializationKey": "trader",
         "weaponKeys": [
-            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "WeaponTRUNCH", "WeaponGAFF" ]
+            [ "12-defenseur", "WeaponBLASTHOLD", "quickfire", "molecularStiletto" ]
         ],
         "armorKeys": [
             [ "ArmorHC" ]
         ],
         "equipementKeys": [
-            ["GearDATAPAD"]
+            ["mercantilerDatapad"]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -130,6 +157,9 @@
         ],
         "equipementKeys": [
             [ "scanner-goggles", "general-purpose-scanner" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -143,6 +173,9 @@
         ],
         "equipementKeys": [
             [ "scanner-goggles", "general-purpose-scanner" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -156,6 +189,9 @@
         ],
         "equipementKeys": [
             [ "scanner-goggles", "general-purpose-scanner" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -168,6 +204,9 @@
         ],
         "equipementKeys": [
             [ "survival-crash-kit", "scrambler" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -181,6 +220,9 @@
         ],
         "equipementKeys": [
             [ "GearTOOLKIT", "cargo-scanner" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -194,24 +236,30 @@
         ],
         "equipementKeys": [
             [ "disguise-tool", "GearELB", "fingerprint-masque", "encryptor" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
         "specializationKey": "mechanic",
         "weaponKeys": [
-            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH", "knuckles-dagger" ]
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH", "rivetGun" ]
         ],
         "armorKeys": [
             [ "ArmorHC" ]
         ],
         "equipementKeys": [
             [ "GearUTILBELT", "emergency-repair-patch", "GearTOOLKIT" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
         "specializationKey": "outlaw-tech",
         "weaponKeys": [
-            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH", "knuckles-dagger" ],
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH", "rivetGun" ]
             [ "WeaponGLOPGRND", "WeaponSTUNGR" ]
         ],
         "armorKeys": [
@@ -219,18 +267,24 @@
         ],
         "equipementKeys": [
             [ "encryptor", "scrambler" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
         "specializationKey": "slicer",
         "weaponKeys": [
-            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH", "knuckles-dagger" ]
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH", "rivetGun" ]
         ],
         "armorKeys": [
             [ "ArmorHC" ]
         ],
         "equipementKeys": [
             [ "slicer-tool", "bouchon-entrave" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -244,6 +298,9 @@
         ],
         "equipementKeys": [
             [ "survival-crash-kit", "scrambler" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -256,6 +313,9 @@
         ],
         "equipementKeys": [
             [ "survival-crash-kit", "scrambler" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -268,42 +328,54 @@
         ],
         "equipementKeys": [
             [ "survival-crash-kit", "scrambler" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
         "specializationKey": "agitator",
         "weaponKeys": [
-            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "WeaponTRUNCH" ]
+            [ "12-defenseur", "WeaponBLASTHOLD", "quickfire", "molecularStiletto" ]
         ],
         "armorKeys": [
             [ "ArmorHC" ]
         ],
         "equipementKeys": [
             ["GearDATAPAD"]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
         "specializationKey": "ambassador",
         "weaponKeys": [
-            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "WeaponTRUNCH" ]
+            [ "12-defenseur", "WeaponBLASTHOLD", "quickfire", "molecularStiletto" ]
         ],
         "armorKeys": [
             [ "ArmorHC" ]
         ],
         "equipementKeys": [
             ["GearDATAPAD"]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
         "specializationKey": "quartermaster",
         "weaponKeys": [
-            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH" ]
+            [ "12-defenseur", "WeaponBLASTHOLD", "quickfire", "molecularStiletto" ]
         ],
         "armorKeys": [
             [ "ArmorHC" ]
         ],
         "equipementKeys": [
             ["GearDATAPAD"]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -319,6 +391,9 @@
             [ "electrobinoc_negwt", "scanner-goggles"],
             [ "hand-scanner", "general-purpose-scanner" ],
             [ "electrotrap", "GearTENT", "thermic-cover", "depecage-kit", "sos-portative", "mountain-climbing-gear-climbing-rope", "GearCLIMB" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -332,6 +407,9 @@
         ],
         "equipementKeys": [
             [ "slicer-tool", "bouchon-entrave" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -345,6 +423,9 @@
         ],
         "equipementKeys": [
             [ "disguise-tool", "GearELB", "fingerprint-masque", "encryptor" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -357,6 +438,9 @@
         ],
         "equipementKeys": [
             [ "GearUTILBELT", "emergency-repair-patch", "GearTOOLKIT" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -370,6 +454,9 @@
         ],
         "equipementKeys": [
             [ "GearUTILBELT", "GearTOOLKIT", "bouchon-entrave", "slicer-tool" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -382,6 +469,9 @@
         ],
         "equipementKeys": [
             ["GearDATAPAD"]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -395,6 +485,9 @@
         ],
         "equipementKeys": [
             [ "scanner-goggles", "general-purpose-scanner" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -408,6 +501,9 @@
         ],
         "equipementKeys": [
             [ "scanner-goggles", "electrobinoc_negwt" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -422,6 +518,9 @@
         "equipementKeys": [
             ["hand-scanner"],
             [ "GearEMP", "ECM-598-Medical-Backpack"]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -434,6 +533,9 @@
         ],
         "equipementKeys": [
             [ "survival-crash-kit", "scrambler" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -446,6 +548,9 @@
         ],
         "equipementKeys": [
             [ "GearDATAPAD" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -458,6 +563,9 @@
         ],
         "equipementKeys": [
             [ "GearDATAPAD" ]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -470,6 +578,9 @@
         ],
         "equipementKeys": [
             [""]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -483,6 +594,9 @@
         ],
         "equipementKeys": [
             [""]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -496,6 +610,9 @@
         ],
         "equipementKeys": [
             [""]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -509,6 +626,9 @@
         ],
         "equipementKeys": [
             [""]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -521,6 +641,9 @@
         ],
         "equipementKeys": [
             [""]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -534,6 +657,9 @@
         ],
         "equipementKeys": [
             [""]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -546,6 +672,9 @@
         ],
         "equipementKeys": [
             [""]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -558,6 +687,9 @@
         ],
         "equipementKeys": [
             [""]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -571,6 +703,9 @@
         ],
         "equipementKeys": [
             [""]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -584,6 +719,9 @@
         ],
         "equipementKeys": [
             [""]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -596,6 +734,9 @@
         ],
         "equipementKeys": [
             [""]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
 
@@ -609,6 +750,9 @@
         ],
         "equipementKeys": [
             [""]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -622,6 +766,9 @@
         ],
         "equipementKeys": [
             [""]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -634,6 +781,9 @@
         ],
         "equipementKeys": [
             [""]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -647,6 +797,9 @@
         ],
         "equipementKeys": [
             [""]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -660,6 +813,9 @@
         ],
         "equipementKeys": [
             [""]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -672,6 +828,9 @@
         ],
         "equipementKeys": [
             [""]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     },
     {
@@ -685,6 +844,9 @@
         ],
         "equipementKeys": [
             [""]
+        ],
+        "vehiculeKeys": [
+            [ "" ]
         ]
     }
 ]

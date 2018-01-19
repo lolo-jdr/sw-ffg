@@ -40,6 +40,14 @@
         "rarety": 4
     },
     {
+        "key": "forensicsInvestigationKit",
+        "image": "b6efa69fbc3d.jpg",
+        "label": "Trousse d'enquête médico-légale",
+        "price": 450,
+        "encombrement": 4,
+        "rarety": 4
+    },
+    {
         "key": "bacta-trunk",
         "image": "",
         "label": "Bacta (cuve entière)",

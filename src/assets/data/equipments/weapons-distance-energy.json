@@ -1,8 +1,8 @@
 [
     {
-        "key": "WeaponBLASTHOLD",
-        "image": "WeaponBLASTHOLD.png",
-        "label": "Blaster de poche",
+        "key": "12-defenseur",
+        "image": "12defender.jpg",
+        "label": "Micro-blaster 12 Défenseur",
         "skill": "Distance (Légère)",
         "damage": 5,
         "critic": 4,
@@ -10,6 +10,38 @@
         "enc": 1,
         "emp": 1,
         "price": 200,
+        "rarety": 4,
+        "options": [
+            { "label": "Réglages étourdissants" }
+        ]
+    },
+    {
+        "key": "WeaponBLASTHOLD",
+        "image": "WeaponBLASTHOLD.png",
+        "label": "Blaster de poche",
+        "skill": "Distance (Légère)",
+        "damage": 5,
+        "critic": 5,
+        "distance": "Courte",
+        "enc": 1,
+        "emp": 0,
+        "price": 25,
+        "rarety": 4,
+        "options": [
+            { "label": "Munitions limitées 2" }
+        ]
+    },
+    {
+        "key": "quickfire",
+        "image": "Q4_Model_(Merr-Sonn).jpg",
+        "label": "Pistolet Blaster de Poche Quickfire-4",
+        "skill": "Distance (Légère)",
+        "damage": 5,
+        "critic": 3,
+        "distance": "Courte",
+        "enc": 1,
+        "emp": 0,
+        "price": 250,
         "rarety": 4,
         "options": [
             { "label": "Réglages étourdissants" }
@@ -161,6 +193,23 @@
         "rarety": 6,
         "options": [
             { "label": "Souffle 6" },
+            { "label": "Réglages étourdissants" }
+        ]
+    },
+    {
+        "key": "r88SuppressorRiotRifle",
+        "image": "R-88_Suppressor_riot_rifle.png",
+        "label": "Fusil anti-émeute R-88 Suppresseur",
+        "skill": "Distance (Lourde)",
+        "damage": 8,
+        "critic": 6,
+        "distance": "Longue",
+        "enc": 4,
+        "emp": 3,
+        "price": 1200,
+        "rarety": 6,
+        "options": [
+            { "label": "Cadence lente 1" },
             { "label": "Réglages étourdissants" }
         ]
     },

@@ -113,6 +113,23 @@
         ]
     },
     {
+        "key": "molecularStiletto",
+        "image": "340-8.png",
+        "label": "Stiletto moléculaire MSW-9",
+        "description": "Courte lame (30 cm) ressemblant à un stylo de datapad",
+        "skill": "Corps à corps",
+        "damage": "+0",
+        "critic": 2,
+        "distance": "Au contact",
+        "enc": 1,
+        "emp": 3,
+        "price": 500,
+        "rarety": 5,
+        "options": [
+            { "label": "Perforant 1" }
+        ]
+    },
+    {
         "key": "WeaponFORCEP",
         "image": "WeaponFORCEP.png",
         "label": "Lance de force",

@@ -75,6 +75,14 @@
         "rarety": 2
     },
     {
+        "key": "mercantilerDatapad",
+        "image": "Versafunction88_Datapad.jpg",
+        "label": "Datapad de marchand",
+        "price": 250,
+        "encombrement": 1,
+        "rarety": 3
+    },
+    {
         "key": "cargo-scanner",
         "image": "",
         "label": "Scanner de cargaison",
