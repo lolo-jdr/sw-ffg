@@ -1,5 +1,7 @@
 <div class="container-fluid">
 
+  <app-modal-image></app-modal-image>
+
   <nav aria-label="breadcrumb" role="navigation">
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
@@ -121,7 +123,7 @@
           Chaque carrière comporte 8 compétences (ou 6 pour les utilisateurs de la Force). Chaque compétence est comprise entre une
           valeur de 0 à 5 appelée
           <strong>rang</strong>. Ces compétences doivent être annotées comme compétences de carrière sur la feuille de personnage;
-          elles seront plus faciles à développer que les compétences hors-carrières.
+          elles seront plus faciles à développer que les compétences hors-carrières lors de l'attribution de PX.
         </p>
         <p class="text-justify background-description">
           Lors de la création, les personnages non sensibles à la Force choississent 4 compétences sont choisies parmi les 8 de carrière.
@@ -146,8 +148,8 @@
       <div class="col-12">
         <p class="step-title">4/10 - Choisir une spécialité de carrière</p>
         <p class="text-justify background-description">
-          Chaque carrière s'accompagne de spécialités qui conférent des capacités spéciales : les t
-          <strong>alents</strong>. A sa création, chaque personnage choisie une spécialité de départ (gratuite) qui découle de sa
+          Chaque carrière s'accompagne de spécialités qui conférent des capacités spéciales : les
+          <strong>talents</strong>. A sa création, chaque personnage choisie une spécialité de départ (gratuite) qui découle de sa
           carrière.
         </p>
         <p class="text-justify background-description">
@@ -168,20 +170,20 @@
           ou une moralité.
         </p>
         <p class="text-justify background-description">
-          Les personnages habitant les Bordures Extérieures doivent choisir une obligation, représentant toutes les dettes ou contraintes 
+          Les personnages habitant les Bordures Extérieures doivent choisir une obligation, représentant toutes les dettes ou contraintes
           accumulées par le personnage.
         </p>
         <p class="text-justify background-description">
-          Dans l'Alliance Rebelle, le Devoir mesure l'implication du personnage dans la cause rebelle et son influence
+          Dans l'Alliance Rebelle, le Devoir mesure l'implication du personnage dans la cause rebelle et son influence.
         </p>
         <p class="text-justify background-description">
-          Pour un utilisateur de la Force, la Moralité est la mesure du bien et du mal. Elle permet de situer le personnage sur le côté 
-          de la Force auquel il est sous influence.
+          Pour un utilisateur de la Force, la Moralité est la mesure du bien et du mal. Elle permet de situer le personnage sur le
+          côté de la Force auquel il est sous influence.
         </p>
         <p class="text-justify background-description">
-          Chaque Obligation, Devoir ou Moralité d'un personnage comporte une valeur qui est cumulée en une valeur d'obligation de groupe. 
-          En début de partie, un dé est lancé. Si le résultat du jet dépassé la valeur du groupe, les PJ ne sont pas opportunités par leur 
-          Obligation, Devoir ou Moralité. Tout du moins pour l'instant.   
+          Chaque Obligation, Devoir ou Moralité d'un personnage comporte une valeur qui est cumulée en une valeur d'obligation de groupe.
+          En début de partie, un dé est lancé. Si le résultat du jet dépassé la valeur du groupe, les PJ ne sont pas opportunités
+          par leur Obligation, Devoir ou Moralité. Tout du moins pour l'instant.
         </p>
 
         <div data-toggle="collapse" href="#obligations" aria-expanded="false" class="clickable link">
@@ -218,9 +220,13 @@
       <div class="col-12">
         <p class="step-title">6-10 / Choisir une Motivation</p>
         <p class="text-justify background-description">
-          Les <strong>Obligations</strong>, <strong>Devoirs</strong> et <strong>Moralités</strong> sont complétés par une 
-          <strong>Motivation</strong> qui définit un objectif à long terme du personnage. Elle est utilisée en jeu comme, par exemple, 
-          un bonus à la résolution d'une action quand la <strong>Motivation</strong> d'un personnage intervient.
+          Les
+          <strong>Obligations</strong>,
+          <strong>Devoirs</strong> et
+          <strong>Moralités</strong> sont complétés par une
+          <strong>Motivation</strong> qui définit un objectif à long terme du personnage. Elle est utilisée en jeu comme, par exemple,
+          un bonus à la résolution d'une action quand la
+          <strong>Motivation</strong> d'un personnage intervient.
         </p>
 
         <div data-toggle="collapse" href="#motivations" aria-expanded="false" class="clickable link disabled">
@@ -229,7 +235,11 @@
           </p>
         </div>
         <div class="collapse" id="motivations">
-          <p><small><em>(en cours d'écriture)</em></small></p>
+          <p>
+            <small>
+              <em>(en cours d'écriture)</em>
+            </small>
+          </p>
         </div>
       </div>
     </div>
@@ -290,7 +300,7 @@
 
         <p class="step-sub-title">Obtenir plus d'XP</p>
         <p class="text-justify background-description">
-          Il est possible d'obtenir plus d'XP lors de la création de personnage, en contrepartie d'une augmentation de la valeur d'Obligation,  
+          Il est possible d'obtenir plus d'XP lors de la création de personnage, en contrepartie d'une augmentation de la valeur d'Obligation,
           Devoir ou Moralité.
           <br /> +5 PX de départ&nbsp; : Obligation + 5
           <br /> +10 PX de départ : Obligation + 10
@@ -352,15 +362,15 @@
         </p>
         <p class="step-sub-title">Obtenir plus de crédit</p>
         <p class="text-justify background-description">
-          Il est possible d'obtenir plus de crédits lors de la création de personnage, en contrepartie d'une augmentation de la valeur d'Obligation,  
-          Devoir ou Moralité.
+          Il est possible d'obtenir plus de crédits lors de la création de personnage, en contrepartie d'une augmentation de la valeur
+          d'Obligation, Devoir ou Moralité.
           <br /> +1000 crédits de départ&nbsp; : Obligation + 5
           <br /> +2500 crédits de départ : Obligation + 10
         </p>
         <p class="text-justify background-description">
-            L'apparance des personnage est définie à cette étape : taille, pois, carrure, couleurs des yeux et des cheveux, cicatrices, 
-            tatouages et autres signes particuliers.
-          </p>
+          L'apparance des personnage est définie à cette étape : taille, pois, carrure, couleurs des yeux et des cheveux, cicatrices,
+          tatouages et autres signes particuliers.
+        </p>
       </div>
     </div>
 
@@ -369,13 +379,18 @@
         <p class="step-title">10/10 - Choisir son vaisseau / véhicule</p>
         <p class="text-justify background-description">
           Chaque groupe commence avec un vaisseau dans le cadre de son Obligation, Devoir ou Moralité.
-          <br /><em>Pour plus de type de vaisseaux, voir avec le MJ.</em>
+          <br />
+          <em>Pour plus de type de vaisseaux, voir avec le MJ.</em>
         </p>
         <div data-toggle="collapse" href="#vehicules" aria-expanded="false" class="clickable link disabled">
           <p>Voir les véhicules&nbsp;
             <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
           </p>
-          <p><small><em>(en cours d'écriture - manque caractérisques)</em></small></p>
+          <p>
+            <small>
+              <em>(en cours d'écriture - manque caractérisques)</em>
+            </small>
+          </p>
         </div>
         <div class="collapse" id="vehicules">
           <app-vehicules-table filter=""></app-vehicules-table>
