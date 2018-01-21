@@ -1,7 +1,7 @@
 <div class="container-fluid">
 
 	<app-modal-image></app-modal-image>
-	
+
 	<nav aria-label="breadcrumb" role="navigation">
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item">
@@ -268,6 +268,32 @@
 			</div>
 		</div>
 
+	</section>
+
+	<section class="row equipment-section">
+		<div class="col">
+			<p class="equipment-title">
+				<span>
+					<i class="ra ra-ship-emblem ra-lg"></i>Véhicules et Vaisseaux</span>
+				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseVehicules" aria-expanded="false"
+				 aria-controls="collapseVehicules">
+					<i class="fa fa-plus" aria-hidden="true"></i>
+				</button>
+			</p>
+		</div>
+	</section>
+
+	<section class="collapse equipment-section" id="collapseVehicules">
+		<div class="row">
+			<div class="col-sm">
+				<p class="equipment-sub-title">Véhicules et Vaisseaux</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+				<app-vehicules-table filter=""></app-vehicules-table>
+			</div>
+		</div>
 	</section>
 
 </div>
