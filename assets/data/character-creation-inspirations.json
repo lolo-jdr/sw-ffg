@@ -4,8 +4,16 @@
         "description": "le personnage est issu d'une société qui sort des normes de la galaxie. Il peut venir d'un système pas encore cartographié ou d'un milieu sauvage. Il est sans doute mal informé des us, coutumes et de la technologie de la galaxie."
     },
     {
-        "title": "L'occasion fait le larron : ",
-        "description": "les personnages qui aiment les défis ou saisissent la moindre occasion pour sortir de leur quotidien."
+        "title": "Le privilégié : ",
+        "description": "le personnage est issu d'une famille ou connaît des personnages importantes, ce qui l'a aidé à accéder à son poste actuel."
+    },
+    {
+        "title": "Le vengeur : ",
+        "description": "le personnage veut se venger d'une personnage, d'un groupe, de l'Empire ou la Rébellion."
+    },
+    {
+        "title": "Désir de comprendre",
+        "description": "le personnage est mû par un désir de comprendre les mystères de l'univers, l'amenant à voyager dans des zones reculées ou à comprendre le sens de la Force."
     },
     {
         "title": "Ennemis et antagonistes : ",
@@ -14,5 +22,17 @@
     {
         "title": "Au mauvais endroit, au mauvais moment : ",
         "description": "le personnage s'est laissé entraîner dans une vie d'avanture bien malgré lui. Il peut avoir été capturé par des pirates ou esclavagistes, être l'unique survivant d'une catastrophe. Ne parvenant plus à retrouver le cours normal de sa vie, il doit s'adapter à sa nouvelle situation."
+    },
+    {
+        "title": "Nouvelle recrue : ",
+        "description": "le personnage s'est engagé ou a été repéré par un membre du réseau auquel il appartient."
+    },
+    {
+        "title": "Engagé par accident : ",
+        "description": "le personnage s'est retrouvé dans une situation imprévue qui l'a conduit à rejoindre une faction ou une cause."
+    },
+    {
+        "title": "Répond à l'appel de la Force : ",
+        "description": "le personnage est un rescapé de l'Ordre 66 et est décidé à rétablir l'équilibre dans la Force, ou est un ancien Sith caché du temps de la République qui profite de l'Empire pour mener à bien ses desseins."
     }
 ]
