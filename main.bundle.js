@@ -405,6 +405,10 @@ var Character = (function () {
     function Character(skills) {
         this.specializations = [];
         this.hasForce = false;
+        this.weapons = [];
+        this.armors = [];
+        this.equipments = [];
+        this.vehicules = [];
         this.skills = skills;
     }
     Character.prototype.setSpecies = function (species) {
@@ -1900,7 +1904,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/modules/tools/character-generator/character-generator.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n\n  <nav aria-label=\"breadcrumb\" role=\"navigation\">\n    <ol class=\"breadcrumb\">\n      <li class=\"breadcrumb-item\">\n        <a routerLink=\"/\">\n          <i class=\"ra ra-lg ra-ship-emblem\"></i>\n        </a>\n      </li>\n      <li class=\"breadcrumb-item\" aria-current=\"page\">Outil</li>\n      <li class=\"breadcrumb-item active\" aria-current=\"page\">Générateur de personnage</li>\n    </ol>\n  </nav>\n\n  <ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\n\n  <section *ngIf=\"isPageLoaded\" id=\"characterGenerator\">\n\n    <!-- Title -->\n    <div class=\"row page-title\">\n      <div class=\"col-sm\">\n        <p>GÉNÉRATEUR DE PERSONNAGE</p>\n        <p>\n          <small>\n            <em>En cours de développement</em>\n          </small>\n        </p>\n      </div>\n    </div>\n\n    <div class=\"row button-random\">\n      <button class=\"btn btn-primary\" (click)=\"randomize()\">\n        <i class=\"ra ra-lg ra-perspective-dice-random\"></i>\n        <span>Générer un personnage</span>\n        <i class=\"ra ra-lg ra-perspective-dice-random\"></i>\n      </button>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col\">\n\n        <div class=\"character-property\">\n          <label>Espèce</label>\n          <p>\n            <span>{{ character.species.label }}</span>\n            <a target=\"blank\" routerLink=\"/species/{{ character.species.key }}\">(fiche\n              <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>)\n            </a>\n          </p>\n        </div>\n\n        <div class=\"character-property\">\n          <label>Carrière</label>\n          <p>\n            <span>{{ character.career.label }}</span>\n            <a target=\"blank\" routerLink=\"/career/{{ character.career.key }}\">(fiche\n              <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>)</a>\n          </p>\n        </div>\n\n        <div class=\"character-property\">\n          <label>Spécialisations</label>\n          <ul>\n            <li *ngFor=\"let specialization of character.specializations\">{{ specialization.label }}</li>\n          </ul>\n        </div>\n\n        <div class=\"character-property\">\n          <label>Sensibilité à la Force</label>\n          <p>\n            <span *ngIf=\"!character.hasForce\">Non sensible</span>\n            <span *ngIf=\"character.hasForce && character.career.universKey === 'eoe'\">Fugitif de la Force\n              <a target=\"_blank\" href=\"assets/resources/files/careers/sw_aor_core_ace_tree.pdf\">(fiche\n                <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>)</a>\n            </span>\n            <span *ngIf=\"character.hasForce && character.career.universKey === 'aor'\">Aspirant de la Force\n              <a target=\"_blank\" href=\"assets/resources/files/careers/sw_aor_core_ace_tree.pdf\">(fiche\n                <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>)</a>\n            </span>\n            <span *ngIf=\"character.hasForce && character.career.universKey === 'fad'\">Jedi</span>\n          </p>\n        </div>\n\n        <div class=\"character-property\">\n          <label>Obligation (voir plus bas)</label>\n          <p *ngIf=\"character.career.universKey === 'eoe' || character.career.universKey === 'aor'\">{{ character.obligation.title }}</p>\n          <p *ngIf=\"character.career.universKey === 'fad'\">{{ character.obligation.emotionalForceTitle }} - {{ character.obligation.emotionalWeaknessTitle }}</p>\n        </div>\n\n        <div class=\"character-property\">\n          <label>Motivations</label>\n          <p>Fichiers de données inexistants (voir avec le MJ)</p>\n        </div>\n\n        <div class=\"character-property\">\n          <label>Equipments</label>\n          <p></p>\n        </div>\n\n      </div>\n\n      <div class=\"col\">\n        <ng-container *ngFor=\"let skill of character.skills\">\n          <div *ngIf=\"skill.value > 0\" class=\"character-skill\">\n            <label>{{ skill.label }}</label>\n            <ngb-progressbar type=\"info\" [value]=\"skill.value * 20\">{{ skill.value }}</ngb-progressbar>\n            <p class=\"skill-type\">\n              <span *ngIf=\"skill.isSpecies\">Espèce</span>\n              <span *ngIf=\"skill.isCareer\">Carrière</span>\n              <span *ngIf=\"skill.isSpecialization\">Spécialisation</span>\n            </p>\n          </div>\n        </ng-container>\n      </div>\n    </div>\n\n    <hr />\n\n    <div class=\"row\">\n      <div class=\"col\">\n        <div class=\"character-property\">\n          <ng-container *ngIf=\"character.career.universKey === 'eoe'\">\n            <label>Obligation</label>\n            <p>\n              <span>{{ character.obligation.title }} - </span>\n              <span>{{ character.obligation.description }}</span>\n            </p>\n          </ng-container>\n          <ng-container *ngIf=\"character.career.universKey === 'aor'\">\n            <label>Devoir</label>\n            <p>\n              <span>{{ character.obligation.title }} - </span>\n              <span>{{ character.obligation.description }}</span>\n            </p>\n          </ng-container>\n          <ng-container *ngIf=\"character.career.universKey === 'fad'\">\n            <label>Moralité</label>\n            <p>\n              <span>{{ character.obligation.emotionalForceTitle }} - </span>\n              <span>{{ character.obligation.emotionalForceDescription }}</span>\n            </p>\n            <p>\n              <span>{{ character.obligation.emotionalWeaknessTitle }} - </span>\n              <span>{{ character.obligation.emotionalWeaknessDescription }}</span>\n            </p>\n          </ng-container>\n        </div>\n      </div>\n\n    </div>\n\n\n  </section>\n\n</div>"
+module.exports = "<div class=\"container-fluid\">\r\n\r\n  <nav aria-label=\"breadcrumb\" role=\"navigation\">\r\n    <ol class=\"breadcrumb\">\r\n      <li class=\"breadcrumb-item\">\r\n        <a routerLink=\"/\">\r\n          <i class=\"ra ra-lg ra-ship-emblem\"></i>\r\n        </a>\r\n      </li>\r\n      <li class=\"breadcrumb-item\" aria-current=\"page\">Outil</li>\r\n      <li class=\"breadcrumb-item active\" aria-current=\"page\">Générateur de personnage</li>\r\n    </ol>\r\n  </nav>\r\n\r\n  <ngx-loading [show]=\"!isPageLoaded\" [config]=\"{ backdropBorderRadius: '14px', primaryColour: '#0069d9', secondaryColour: '#0069d9', tertiaryColour: '#0069d9' }\"></ngx-loading>\r\n\r\n  <section *ngIf=\"isPageLoaded\" id=\"characterGenerator\">\r\n\r\n    <!-- Title -->\r\n    <div class=\"row page-title\">\r\n      <div class=\"col-sm\">\r\n        <p>GÉNÉRATEUR DE PERSONNAGE</p>\r\n        <p>\r\n          <small>\r\n            <em>(Développement terminé. Amélioration des fichiers de données en cours)</em>\r\n          </small>\r\n        </p>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"row button-random\">\r\n      <button class=\"btn btn-primary\" (click)=\"randomize()\">\r\n        <i class=\"ra ra-lg ra-perspective-dice-random\"></i>\r\n        <span>Générer un personnage</span>\r\n        <i class=\"ra ra-lg ra-perspective-dice-random\"></i>\r\n      </button>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n      <div class=\"col\">\r\n\r\n        <div class=\"character-property\">\r\n          <label>Espèce</label>\r\n          <p>\r\n            <span>{{ character.species.label }}</span>\r\n            <a target=\"blank\" routerLink=\"/species/{{ character.species.key }}\">(fiche\r\n              <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>)\r\n            </a>\r\n          </p>\r\n        </div>\r\n\r\n        <div class=\"character-property\">\r\n          <label>Carrière</label>\r\n          <p>\r\n            <span>{{ character.career.label }}</span>\r\n            <a target=\"blank\" routerLink=\"/careers/{{ character.career.key }}\">(fiche\r\n              <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>)</a>\r\n          </p>\r\n        </div>\r\n\r\n        <div class=\"character-property\">\r\n          <label>Spécialisations</label>\r\n          <ul>\r\n            <li *ngFor=\"let specialization of character.specializations\">{{ specialization.label }}</li>\r\n          </ul>\r\n        </div>\r\n\r\n        <div class=\"character-property\">\r\n          <label>Sensibilité à la Force</label>\r\n          <p>\r\n            <span *ngIf=\"!character.hasForce\">Non sensible</span>\r\n            <span *ngIf=\"character.hasForce && character.career.universKey === 'eoe'\">Fugitif de la Force\r\n              <a target=\"_blank\" href=\"assets/resources/files/careers/sw_aor_core_ace_tree.pdf\">(fiche\r\n                <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>)</a>\r\n            </span>\r\n            <span *ngIf=\"character.hasForce && character.career.universKey === 'aor'\">Aspirant de la Force\r\n              <a target=\"_blank\" href=\"assets/resources/files/careers/sw_aor_core_ace_tree.pdf\">(fiche\r\n                <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>)</a>\r\n            </span>\r\n            <span *ngIf=\"character.hasForce && character.career.universKey === 'fad'\">Jedi</span>\r\n          </p>\r\n        </div>\r\n\r\n        <div class=\"character-property\">\r\n          <label>Equipments\r\n            <i class=\"ra ra-lg ra-perspective-dice-random\" (click)=\"reRandomEquipments()\"></i>\r\n          </label>\r\n          <p>Armes</p>\r\n          <ul>\r\n            <li *ngFor=\"let weapon of character.weapons\">\r\n              <span *ngIf=\"weapon !== ''\" >{{ weapon.label }}</span>\r\n            </li>\r\n          </ul>\r\n          <p>Armure</p>\r\n          <ul>\r\n            <li *ngFor=\"let armor of character.armors\">{{ armor.label }}</li>\r\n          </ul>\r\n          <p>Equipements</p>\r\n          <ul>\r\n            <li *ngFor=\"let equipment of character.equipments\">{{ equipment.label }}</li>\r\n          </ul>\r\n        </div>\r\n\r\n      </div>\r\n\r\n      <div class=\"col\">\r\n        <ng-container *ngFor=\"let skill of character.skills\">\r\n          <div *ngIf=\"skill.value > 0\" class=\"character-skill\">\r\n            <label>{{ skill.label }}</label>\r\n            <ngb-progressbar type=\"info\" [value]=\"skill.value * 20\">{{ skill.value }}</ngb-progressbar>\r\n            <p class=\"skill-type\">\r\n              <span *ngIf=\"skill.isSpecies\">Espèce</span>\r\n              <span *ngIf=\"skill.isCareer\">Carrière</span>\r\n              <span *ngIf=\"skill.isSpecialization\">Spécialisation</span>\r\n            </p>\r\n          </div>\r\n        </ng-container>\r\n      </div>\r\n    </div>\r\n\r\n    <hr />\r\n\r\n    <div class=\"row\">\r\n      <div class=\"col\">\r\n        <div class=\"character-property text-justify\">\r\n          <ng-container *ngIf=\"character.career.universKey === 'eoe'\">\r\n            <label>Obligation</label>\r\n            <p>\r\n              <span>{{ character.obligation.title }} - </span>\r\n              <span>{{ character.obligation.description }}</span>\r\n            </p>\r\n          </ng-container>\r\n          <ng-container *ngIf=\"character.career.universKey === 'aor'\">\r\n            <label>Devoir</label>\r\n            <p>\r\n              <span>{{ character.obligation.title }} - </span>\r\n              <span>{{ character.obligation.description }}</span>\r\n            </p>\r\n          </ng-container>\r\n          <ng-container *ngIf=\"character.career.universKey === 'fad'\">\r\n            <label>Moralité</label>\r\n            <p>\r\n              <span>{{ character.obligation.emotionalForceTitle }} - </span>\r\n              <span>{{ character.obligation.emotionalForceDescription }}</span>\r\n            </p>\r\n            <p>\r\n              <span>{{ character.obligation.emotionalWeaknessTitle }} - </span>\r\n              <span>{{ character.obligation.emotionalWeaknessDescription }}</span>\r\n            </p>\r\n          </ng-container>\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n      <div class=\"col\">\r\n        <div class=\"character-property\">\r\n          <label>Motivations</label>\r\n          <p>Fichiers de données inexistants (voir avec le MJ)</p>\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n      <div class=\"col\">\r\n        <div class=\"character-property\">\r\n          <label>Véhicule / Vaisseau</label>\r\n          <div *ngFor=\"let vehicule of character.vehicules\">\r\n            <p>{{ vehicule.label }}</p>\r\n            <p>\r\n              <img src=\"assets/images/vehicules/{{ vehicule.image }}\" />\r\n            </p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n\r\n  </section>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -1912,9 +1916,11 @@ module.exports = "<div class=\"container-fluid\">\n\n  <nav aria-label=\"breadcr
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service__ = __webpack_require__("../../../../../src/app/services/api.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_helper_service__ = __webpack_require__("../../../../../src/app/services/helper.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_application_service__ = __webpack_require__("../../../../../src/app/services/application.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_character__ = __webpack_require__("../../../../../src/app/models/character.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_skill__ = __webpack_require__("../../../../../src/app/models/skill.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs__ = __webpack_require__("../../../../rxjs/Rx.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_application_service__ = __webpack_require__("../../../../../src/app/services/application.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_character__ = __webpack_require__("../../../../../src/app/models/character.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_skill__ = __webpack_require__("../../../../../src/app/models/skill.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1930,6 +1936,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var CharacterGeneratorComponent = (function () {
     function CharacterGeneratorComponent(api, helper) {
         this.api = api;
@@ -1937,16 +1944,40 @@ var CharacterGeneratorComponent = (function () {
         this.isPageLoaded = false;
         this.speciesList = [];
         this.careerList = [];
+        this.careerEquipment = [];
+        this.weapons = [];
+        this.armors = [];
+        this.equipments = [];
+        this.vehicules = [];
     }
     CharacterGeneratorComponent.prototype.ngOnInit = function () {
-        this.randomize();
-        this.isPageLoaded = true;
+        var _this = this;
+        this.getEquipmentData().subscribe(function (equip) {
+            var careerEquipment = equip[0], weapons = equip[1], armors = equip[2], equipments = equip[3], vehicules = equip[4];
+            _this.careerEquipment = careerEquipment;
+            for (var weaponType in weapons) {
+                for (var weapon in weapons[weaponType]) {
+                    var w = weapons[weaponType][weapon];
+                    _this.weapons.push(w);
+                }
+            }
+            _this.armors = armors[0]; // Shouldn't have to do that
+            for (var equipmentType in equipments) {
+                for (var equipment in equipments[equipmentType]) {
+                    var e = equipments[equipmentType][equipment];
+                    _this.equipments.push(e);
+                }
+            }
+            _this.vehicules = vehicules[0]; // Shouldn't have to do that
+            _this.randomize();
+            _this.isPageLoaded = true;
+        });
     };
     CharacterGeneratorComponent.prototype.InitializeCharacter = function () {
-        this.speciesList = __WEBPACK_IMPORTED_MODULE_3__services_application_service__["a" /* ApplicationService */].GetSpecies();
-        this.careerList = __WEBPACK_IMPORTED_MODULE_3__services_application_service__["a" /* ApplicationService */].GetCareers();
-        var skills = __WEBPACK_IMPORTED_MODULE_3__services_application_service__["a" /* ApplicationService */].GetSkills();
-        this.character = new __WEBPACK_IMPORTED_MODULE_4__models_character__["a" /* Character */](skills);
+        this.speciesList = __WEBPACK_IMPORTED_MODULE_4__services_application_service__["a" /* ApplicationService */].GetSpecies();
+        this.careerList = __WEBPACK_IMPORTED_MODULE_4__services_application_service__["a" /* ApplicationService */].GetCareers();
+        var skills = __WEBPACK_IMPORTED_MODULE_4__services_application_service__["a" /* ApplicationService */].GetSkills();
+        this.character = new __WEBPACK_IMPORTED_MODULE_5__models_character__["a" /* Character */](skills);
     };
     CharacterGeneratorComponent.prototype.randomize = function () {
         this.InitializeCharacter();
@@ -1968,8 +1999,21 @@ var CharacterGeneratorComponent = (function () {
         this.assignCareerSkills();
         // Assign specializations skills randomly
         this.assignSpecializationSkills();
+        // Assign an obligation/ duty / morality
         this.assignObligation();
+        // Assign equipments
+        this.assignEquipment();
+        // Assign Ship
+        this.assignShip();
         console.log(this.character);
+    };
+    CharacterGeneratorComponent.prototype.reRandomEquipments = function () {
+        // Reset equipments
+        this.character.weapons = [];
+        this.character.armors = [];
+        this.character.equipments = [];
+        // Re-assign equipments
+        this.assignEquipment();
     };
     CharacterGeneratorComponent.prototype.assignSpeciesSkills = function () {
         var _this = this;
@@ -1980,18 +2024,18 @@ var CharacterGeneratorComponent = (function () {
                 return key;
             }).includes(s.key); });
             var firstHumanSkill = __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].GetRandomFromCollection(outOfCareerSkill);
-            this.increaseSkill(this.character.skills.find(function (s) { return s.key === firstHumanSkill.key; }), __WEBPACK_IMPORTED_MODULE_5__models_skill__["b" /* SkillType */].Species);
+            this.increaseSkill(this.character.skills.find(function (s) { return s.key === firstHumanSkill.key; }), __WEBPACK_IMPORTED_MODULE_6__models_skill__["b" /* SkillType */].Species);
             outOfCareerSkill = outOfCareerSkill.filter(function (s) { return s.key !== firstHumanSkill.key; });
             var secondHumanSkill = __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].GetRandomFromCollection(outOfCareerSkill);
-            this.increaseSkill(this.character.skills.find(function (s) { return s.key === secondHumanSkill.key; }), __WEBPACK_IMPORTED_MODULE_5__models_skill__["b" /* SkillType */].Species);
+            this.increaseSkill(this.character.skills.find(function (s) { return s.key === secondHumanSkill.key; }), __WEBPACK_IMPORTED_MODULE_6__models_skill__["b" /* SkillType */].Species);
         }
         else if (this.character.species.specialAbilityProcess.length === 1) {
             var speciesSkill = this.character.species.specialAbilityProcess[0];
-            this.increaseSkill(this.character.skills.find(function (s) { return s.key === speciesSkill.skillKey; }), __WEBPACK_IMPORTED_MODULE_5__models_skill__["b" /* SkillType */].Species);
+            this.increaseSkill(this.character.skills.find(function (s) { return s.key === speciesSkill.skillKey; }), __WEBPACK_IMPORTED_MODULE_6__models_skill__["b" /* SkillType */].Species);
         }
         else if (this.character.species.specialAbilityProcess.length > 1) {
             var ability = __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].GetRandomFromCollection(this.character.species.specialAbilityProcess);
-            this.increaseSkill(this.character.skills.find(function (s) { return s.key === ability.skillKey; }), __WEBPACK_IMPORTED_MODULE_5__models_skill__["b" /* SkillType */].Species);
+            this.increaseSkill(this.character.skills.find(function (s) { return s.key === ability.skillKey; }), __WEBPACK_IMPORTED_MODULE_6__models_skill__["b" /* SkillType */].Species);
         }
     };
     CharacterGeneratorComponent.prototype.assignCareerSkills = function () {
@@ -1999,7 +2043,7 @@ var CharacterGeneratorComponent = (function () {
         var clonedSkills = Object.assign([], this.character.career.skills);
         while (nbCareerSkillsAssigned < this.character.getNbCareerSkills()) {
             var careerSkill = __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].GetRandomFromCollection(clonedSkills);
-            this.increaseSkill(this.character.skills.find(function (s) { return s.key === careerSkill.key; }), __WEBPACK_IMPORTED_MODULE_5__models_skill__["b" /* SkillType */].Career);
+            this.increaseSkill(this.character.skills.find(function (s) { return s.key === careerSkill.key; }), __WEBPACK_IMPORTED_MODULE_6__models_skill__["b" /* SkillType */].Career);
             nbCareerSkillsAssigned++;
             // console.log('Career: ' + careerSkill.key);
             clonedSkills = clonedSkills.filter(function (s) { return s.key !== careerSkill.key; });
@@ -2012,7 +2056,7 @@ var CharacterGeneratorComponent = (function () {
             var clonedSpSkills = Object.assign([], specialization.skills);
             while (nbSpSkillsAssigned < this.character.getNbSPecializationSkills()) {
                 var spSkill = __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].GetRandomFromCollection(clonedSpSkills);
-                this.increaseSkill(this.character.skills.find(function (s) { return s.key === spSkill.key; }), __WEBPACK_IMPORTED_MODULE_5__models_skill__["b" /* SkillType */].Specialization);
+                this.increaseSkill(this.character.skills.find(function (s) { return s.key === spSkill.key; }), __WEBPACK_IMPORTED_MODULE_6__models_skill__["b" /* SkillType */].Specialization);
                 nbSpSkillsAssigned++;
                 // console.log('Specialisation: ' + specialization.label + ' : ' + spSkill.key);
                 clonedSpSkills = clonedSpSkills.filter(function (s) { return s.key !== spSkill.key; });
@@ -2021,31 +2065,116 @@ var CharacterGeneratorComponent = (function () {
     };
     CharacterGeneratorComponent.prototype.assignObligation = function () {
         if (this.character.career.universKey === 'eoe') {
-            this.character.obligation = __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].GetRandomFromCollectionWithoutLast(__WEBPACK_IMPORTED_MODULE_3__services_application_service__["a" /* ApplicationService */].obligations);
+            this.character.obligation = __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].GetRandomFromCollection(__WEBPACK_IMPORTED_MODULE_4__services_application_service__["a" /* ApplicationService */].obligations.filter(function (o) { return o.dice !== '"01-08'; }));
         }
         else if (this.character.career.universKey === 'aor') {
-            this.character.obligation = __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].GetRandomFromCollectionWithoutLast(__WEBPACK_IMPORTED_MODULE_3__services_application_service__["a" /* ApplicationService */].duties);
+            this.character.obligation = __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].GetRandomFromCollection(__WEBPACK_IMPORTED_MODULE_4__services_application_service__["a" /* ApplicationService */].duties.filter(function (o) { return o.dice !== '"01-08'; }));
         }
         else {
-            this.character.obligation = __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].GetRandomFromCollectionWithoutLast(__WEBPACK_IMPORTED_MODULE_3__services_application_service__["a" /* ApplicationService */].moralities);
+            this.character.obligation = __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].GetRandomFromCollection(__WEBPACK_IMPORTED_MODULE_4__services_application_service__["a" /* ApplicationService */].moralities.filter(function (o) { return o.dice !== '"01-08'; }));
+        }
+    };
+    CharacterGeneratorComponent.prototype.assignEquipment = function () {
+        var _this = this;
+        if (this.character && this.character.specializations.length > 0) {
+            // find the career-weapon
+            var careerEquipment = this.careerEquipment.find(function (cw) { return cw.specializationKey === _this.character.specializations[0].key; });
+            console.log(careerEquipment);
+            var _loop_1 = function (weaponKeys) {
+                var weaponKey = __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].GetRandomFromCollection(weaponKeys);
+                var weapon = this_1.weapons.find(function (w) { return w.key === weaponKey; });
+                if (weapon) {
+                    this_1.character.weapons.push(weapon);
+                }
+            };
+            var this_1 = this;
+            // Give random weapons
+            for (var _i = 0, _a = careerEquipment.weaponKeys; _i < _a.length; _i++) {
+                var weaponKeys = _a[_i];
+                _loop_1(weaponKeys);
+            }
+            var _loop_2 = function (armorKeys) {
+                var armorKey = __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].GetRandomFromCollection(armorKeys);
+                var armor = this_2.armors.find(function (a) { return a.key === armorKey; });
+                if (armor) {
+                    this_2.character.armors.push(armor);
+                }
+            };
+            var this_2 = this;
+            // Give random armor
+            for (var _b = 0, _c = careerEquipment.armorKeys; _b < _c.length; _b++) {
+                var armorKeys = _c[_b];
+                _loop_2(armorKeys);
+            }
+            var _loop_3 = function (equipmentKeys) {
+                var equipmentKey = __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].GetRandomFromCollection(equipmentKeys);
+                console.log(equipmentKey);
+                console.log(this_3.equipments);
+                var equipment = this_3.equipments.find(function (a) { return a.key === equipmentKey; });
+                if (equipment && equipment !== '') {
+                    this_3.character.equipments.push(equipment);
+                }
+            };
+            var this_3 = this;
+            // Give random equipments
+            for (var _d = 0, _e = careerEquipment.equipementKeys; _d < _e.length; _d++) {
+                var equipmentKeys = _e[_d];
+                _loop_3(equipmentKeys);
+            }
+        }
+    };
+    CharacterGeneratorComponent.prototype.assignShip = function () {
+        var _this = this;
+        if (this.character && this.character.specializations.length > 0) {
+            // find the career-weapon
+            var careerEquipment = this.careerEquipment.find(function (cw) { return cw.specializationKey === _this.character.specializations[0].key; });
+            console.log(careerEquipment);
+            var _loop_4 = function (vehiculeKeys) {
+                var vehiculeKey = __WEBPACK_IMPORTED_MODULE_2__services_helper_service__["a" /* HelperService */].GetRandomFromCollection(vehiculeKeys);
+                var vehicule = this_4.vehicules.find(function (w) { return w.key === vehiculeKey; });
+                if (vehicule) {
+                    this_4.character.vehicules.push(vehicule);
+                }
+            };
+            var this_4 = this;
+            // Give random weapons
+            for (var _i = 0, _a = careerEquipment.vehiculeKeys; _i < _a.length; _i++) {
+                var vehiculeKeys = _a[_i];
+                _loop_4(vehiculeKeys);
+            }
         }
     };
     // Move to Skill class ?
     CharacterGeneratorComponent.prototype.increaseSkill = function (skill, skillType) {
         skill.value++;
         switch (skillType) {
-            case __WEBPACK_IMPORTED_MODULE_5__models_skill__["b" /* SkillType */].Species:
+            case __WEBPACK_IMPORTED_MODULE_6__models_skill__["b" /* SkillType */].Species:
                 skill.isSpecies = true;
                 break;
-            case __WEBPACK_IMPORTED_MODULE_5__models_skill__["b" /* SkillType */].Career:
+            case __WEBPACK_IMPORTED_MODULE_6__models_skill__["b" /* SkillType */].Career:
                 skill.isCareer = true;
                 break;
-            case __WEBPACK_IMPORTED_MODULE_5__models_skill__["b" /* SkillType */].Specialization:
+            case __WEBPACK_IMPORTED_MODULE_6__models_skill__["b" /* SkillType */].Specialization:
                 skill.isSpecialization = true;
                 break;
             default:
                 break;
         }
+    };
+    CharacterGeneratorComponent.prototype.getEquipmentData = function () {
+        return __WEBPACK_IMPORTED_MODULE_3_rxjs__["Observable"].forkJoin(this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].CAREERS_EQUIPMENTS), this.getWeapons(), this.getArmor(), this.getEquipment(), this.getShip());
+    };
+    CharacterGeneratorComponent.prototype.getWeapons = function () {
+        return __WEBPACK_IMPORTED_MODULE_3_rxjs__["Observable"].forkJoin(this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_DISTANCE_ENERGY), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_DISTANCE_PERCUSSION), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_DISTANCE_JET), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_DISTANCE_EXPLOSIVE), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_CONTACT_SWORD), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_CONTACT_PUGILAT), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_CONTACT_PUGILAT));
+    };
+    CharacterGeneratorComponent.prototype.getArmor = function () {
+        return __WEBPACK_IMPORTED_MODULE_3_rxjs__["Observable"].forkJoin(this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].ARMORS));
+    };
+    CharacterGeneratorComponent.prototype.getEquipment = function () {
+        return __WEBPACK_IMPORTED_MODULE_3_rxjs__["Observable"].forkJoin(this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_COMMUNICATION), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_CYBERNETIC), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_DETECTION), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_DROIDE), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_ENTERTAINMENT), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_MEDICAL), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_POISON), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_SECURITY_MATERIAL), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_SURVIVAL_MATERIAL), this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].EQUIPMENT_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].WEAPONS_OTHER));
+    };
+    CharacterGeneratorComponent.prototype.getShip = function () {
+        return __WEBPACK_IMPORTED_MODULE_3_rxjs__["Observable"].forkJoin(this.api.localResource(__WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].VEHICULES_FOLDER + __WEBPACK_IMPORTED_MODULE_1__services_api_service__["a" /* ApiService */].VEHICULES));
     };
     CharacterGeneratorComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -2157,6 +2286,7 @@ var ApiService = (function () {
     ApiService.SKILLS = 'assets/data/skills.json';
     ApiService.SPECIES = 'assets/data/species.json';
     ApiService.CAREERS = 'assets/data/careers.json';
+    ApiService.CAREERS_EQUIPMENTS = 'assets/data/career-equipments.json';
     ApiService.OBLIGATIONS = 'assets/data/obligations.json';
     ApiService.DUTIES = 'assets/data/duties.json';
     ApiService.MORALITIES = 'assets/data/moralities.json';
@@ -2166,6 +2296,7 @@ var ApiService = (function () {
     ApiService.WEAPONS_DISTANCE_EXPLOSIVE = "weapons-distance-explosive.json";
     ApiService.WEAPONS_CONTACT_PUGILAT = "weapons-contact-pugilat.json";
     ApiService.WEAPONS_CONTACT_SWORD = "weapons-contact-sword.json";
+    ApiService.WEAPONS_OTHER = "weapons-other.json";
     ApiService.ARMORS = "armor.json";
     ApiService.EQUIPMENT_COMMUNICATION = "equipment-communication.json";
     ApiService.EQUIPMENT_CYBERNETIC = "equipment-cybernetic.json";
@@ -2177,6 +2308,7 @@ var ApiService = (function () {
     ApiService.EQUIPMENT_SURVIVAL_MATERIAL = "equipment-survival-material.json";
     ApiService.EQUIPMENT_TOOL = "equipment-tool.json";
     ApiService.EQUIPMENT_DROIDE = "equipment-droide.json";
+    ApiService.VEHICULES = "vehicules.json";
     ApiService.CHARACTER_CREATION_INSPIRATIONS = 'assets/data/character-creation-inspirations.json';
     ApiService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
@@ -2361,9 +2493,6 @@ var HelperService = (function () {
     };
     HelperService.GetRandomFromCollection = function (collection) {
         return collection[Math.floor(Math.random() * collection.length)];
-    };
-    HelperService.GetRandomFromCollectionWithoutLast = function (collection) {
-        return collection[Math.floor(Math.random() * collection.length - 1)];
     };
     HelperService.GetDice100 = function () {
         return Math.floor(Math.random() * 100) + 1;
@@ -2877,7 +3006,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/shared/components/vehicules-table/vehicules-table.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<table class=\"table table-responsive vehicule-table\">\n    <thead>\n      <tr>\n        <th scope=\"col\">Nom</th>\n        <th scope=\"col\" class=\"text-center\">Visuel</th>\n        <th scope=\"col\">Prix</th>\n        <th scope=\"col\">Rareté</th>\n      </tr>\n    </thead>\n    <tbody role=\"tabpanel\">\n      <tr *ngFor=\"let vehicule of vehicules\">\n        <td scope=\"row\">{{ vehicule.label }}</td>\n        <td class=\"text-center\">\n          <p *ngIf=\"vehicule.image !== ''\"><img src=\"{{ vehiculesImagesFolder + vehicule.image }}\" (click)=\"openImage(vehiculesImagesFolder + vehicule.image, vehicule.label)\" /></p>\n          <p *ngIf=\"vehicule.image === ''\">-</p>\n        </td>\n        <td>{{ vehicule.price }}</td>\n        <td>{{ vehicule.rarety }}</td>\n      </tr>\n    </tbody>\n  </table>"
+module.exports = "<table class=\"table table-responsive vehicule-table\">\r\n    <thead>\r\n      <tr>\r\n        <th scope=\"col\">Nom</th>\r\n        <th scope=\"col\" class=\"text-center\">Visuel</th>\r\n        <th scope=\"col\">Type</th>\r\n        <th scope=\"col\">Equipages/passagers</th>\r\n        <th scope=\"col\">Prix</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody role=\"tabpanel\">\r\n      <tr *ngFor=\"let vehicule of vehicules\">\r\n        <td scope=\"row\">{{ vehicule.label }}</td>\r\n        <td class=\"text-center\">\r\n          <p *ngIf=\"vehicule.image !== ''\"><img src=\"{{ vehiculesImagesFolder + vehicule.image }}\" (click)=\"openImage(vehiculesImagesFolder + vehicule.image, vehicule.label)\" /></p>\r\n          <p *ngIf=\"vehicule.image === ''\">-</p>\r\n        </td>\r\n        <td>{{ vehicule.type }}</td>\r\n        <td>{{ vehicule.crew }} / {{ vehicule.passagers }}</td>\r\n        <td>{{ vehicule.price }}</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>"
 
 /***/ }),
 
@@ -2957,7 +3086,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/shared/components/weapons-table/weapons-table.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<table class=\"table table-responsive weapons-table\">\r\n    <thead>\r\n      <tr>\r\n        <th scope=\"col\">Nom</th>\r\n        <th scope=\"col\" class=\"text-center\">Visuel</th>\r\n        <th scope=\"col\">Compétences</th>\r\n        <th scope=\"col\">Dégâts</th>\r\n        <th scope=\"col\">Critique</th>\r\n        <th scope=\"col\">Portée</th>\r\n        <th scope=\"col\">Enc.</th>\r\n        <th scope=\"col\">Emp.</th>\r\n        <th scope=\"col\">Prix</th>\r\n        <th scope=\"col\">Rareté</th>\r\n        <th scope=\"col\">Spécial</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody role=\"tabpanel\">\r\n      <tr *ngFor=\"let weapon of weapons\">\r\n        <td scope=\"row\">{{ weapon.label }}</td>\r\n        <td class=\"text-center\">\r\n          <p *ngIf=\"weapon.image !== ''\"><img src=\"{{ weaponImagesFolder + weapon.image }}\" (click)=\"openImage(weaponImagesFolder + weapon.image, weapon.label)\" /></p>\r\n          <p *ngIf=\"weapon.image === ''\">-</p>\r\n        </td>\r\n        <td>{{ weapon.skill }}</td>\r\n        <td>{{ weapon.damage }}</td>\r\n        <td>{{ weapon.critic }}</td>\r\n        <td>{{ weapon.distance }}</td>\r\n        <td>{{ weapon.enc }}</td>\r\n        <td>{{ weapon.emp }}</td>\r\n        <td>{{ weapon.price }}</td>\r\n        <td>{{ weapon.rarety }}</td>\r\n        <td>\r\n          <p *ngFor=\"let option of weapon.options\">\r\n            <span>{{ option.label }}</span>\r\n          </p>\r\n        </td>\r\n      </tr>\r\n    </tbody>\r\n  </table>"
+module.exports = "<table class=\"table table-responsive equipment-table weapons-table\">\r\n  <thead>\r\n    <tr>\r\n      <th scope=\"col\">Nom</th>\r\n      <th scope=\"col\" class=\"text-center\">Visuel</th>\r\n      <th scope=\"col\">Compétences</th>\r\n      <th scope=\"col\">Dégâts</th>\r\n      <th scope=\"col\">Critique</th>\r\n      <th scope=\"col\">Portée</th>\r\n      <th scope=\"col\">Enc.</th>\r\n      <th scope=\"col\">Emp.</th>\r\n      <th scope=\"col\">Prix</th>\r\n      <th scope=\"col\">Spécial</th>\r\n    </tr>\r\n  </thead>\r\n  <tbody role=\"tabpanel\">\r\n    <tr *ngFor=\"let weapon of weapons\">\r\n      <td scope=\"row\">\r\n        <p>{{ weapon.label }}</p>\r\n        <p><small>{{ weapon.description }}</small></p>\r\n      </td>\r\n      <td class=\"text-center\">\r\n        <p *ngIf=\"weapon.image !== ''\">\r\n          <img src=\"{{ weaponImagesFolder + weapon.image }}\" (click)=\"openImage(weaponImagesFolder + weapon.image, weapon.label)\"\r\n          />\r\n        </p>\r\n        <p *ngIf=\"weapon.image === ''\">-</p>\r\n      </td>\r\n      <td><p>{{ weapon.skill }}</p></td>\r\n      <td><p>{{ weapon.damage }}</p></td>\r\n      <td><p>{{ weapon.critic }}</p></td>\r\n      <td><p>{{ weapon.distance }}</p></td>\r\n      <td><p>{{ weapon.enc }}</p></td>\r\n      <td><p>{{ weapon.emp }}</p></td>\r\n      <td><p>{{ weapon.price }}</p></td>\r\n      <td>\r\n        <p *ngFor=\"let option of weapon.options\">\r\n            {{ option.label }}\r\n        </p>\r\n      </td>\r\n    </tr>\r\n  </tbody>\r\n</table>"
 
 /***/ }),
 

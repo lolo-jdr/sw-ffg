@@ -1,65 +1,117 @@
 [
     {
+        "key": "macrobinoc",
         "image": "GearMBIN.png",
         "label": "Macrojumellees",
+        "description": "Zoom < 10Km - moins de pannes que électrojumelle",
         "price": 75,
         "encombrement": 1,
         "rarety": 2
     },
     {
-        "image": "",
+        "key": "hand-scanner",
+        "image": "PortableScanner.jpg",
         "label": "Détecteur de poche",
+        "description": "Signaux vitaux, agents pathogènes, microfractures alliage",
         "price": 100,
         "encombrement": 0,
         "rarety": 2
     },   
     {
-        "image": "",
+        "key": "scanner-goggles",
+        "image": "GearSCANG.png",
         "label": "Jumelles scanner",
+        "description": "Zoom sur 10Km - imagerie thermique",
         "price": 150,
         "encombrement": 0,
         "rarety": 3
     },
     {
+        "key": "GearSTAG",
         "image": "GearSTAG.png",
         "label": "Traceur",
+        "description": "Balise miniature utilisée pour la traque",
         "price": 175,
         "encombrement": 0,
         "rarety": 4
     },
     {
-        "image": "",
+        "key": "electrobinoc_negwt",
+        "image": "Electrobinoc_negwt.jpg",
         "label": "Electrojumelles",
+        "description": "Zoom sur 10Km - imagerie thermique - amélioration d'image",
         "price": 250,
         "encombrement": 1,
         "rarety": 1
     },
     {
+        "key": "pX7HeatSensor",
         "image": "",
-        "label": "Détecteur universel",
+        "label": "Capteur de chaleur PX-7",
+        "price": 250,
+        "encombrement": 3,
+        "rarety": 7
+    },
+    {
+        "key": "securitySweeper",
+        "image": "",
+        "label": "Détecteur d'objet miniature",
+        "price": 400,
+        "encombrement": 1,
+        "rarety": 6
+    },
+    {
+        "key": "general-purpose-scanner",
+        "image": "tech_scanner_portable.jpg",
+        "label": "Détecteur universel (portatif)",
+        "description": "Formes de vie, chaleurs, radiations, ondes",
         "price": 500,
         "encombrement": 2,
         "rarety": 3
     },
     {
-        "image": "",
+        "key": "weapon-detection-goggles",
+        "image": "Armascan_Weapon_Detection_Goggles.png",
+        "label": "Lunettes détectrices d'armes",
+        "description": "",
+        "price": 750,
+        "encombrement": 1,
+        "rarety": 5
+    },
+    {
+        "key": "long-scale-scanner",
+        "image": "GearLNGRNGSCNR",
         "label": "Scanner de terrain longue portée",
+        "description": "",
         "price": 850,
         "encombrement": 6,
         "rarety": 6
     },
     {
-        "image": "",
+        "key": "bioscanner",
+        "image": "Bio-Scanner.jpg",
         "label": "Bioscanner",
+        "description": "",
         "price": 900,
         "encombrement": 4,
         "rarety": 5
     },
     {
+        "key": "geosenseur",
         "image": "",
         "label": "Géosenseur",
+        "description": "",
         "price": 950,
         "encombrement": 5,
         "rarety": 7
+    },
+    {
+        "key": "hyperwave-signal-nterceptor",
+        "image": "",
+        "label": "Hyperintercepteur de signal",
+        "description": "",
+        "price": 10500,
+        "encombrement": 5,
+        "rarety": 8
     }
 ]

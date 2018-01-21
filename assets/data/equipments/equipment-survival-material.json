@@ -1,5 +1,6 @@
 [
     {
+        "key": "GearCLIMB",
         "image": "GearCLIMB.png",
         "label": "Synthécorde (20m)",
         "price": 5,
@@ -7,6 +8,7 @@
         "rarety": 1
     },
     {
+        "key": "GearRATION",
         "image": "GearRATION.png",
         "label": "Pack de ration",
         "price": 5,
@@ -14,6 +16,7 @@
         "rarety": 0
     },
     {
+        "key": "GearBREATHM",
         "image": "GearBREATHM.png",
         "label": "Respirateur",
         "price": 25,
@@ -21,6 +24,7 @@
         "rarety": 1
     },
     {
+        "key": "sos-portative",
         "image": "",
         "label": "Signal de détresse portatif",
         "price": 50,
@@ -28,6 +32,15 @@
         "rarety": 1
     },
     {
+        "key": "waterPurifier",
+        "image": "",
+        "label": "Purificateur d'eau",
+        "price": 50,
+        "encombrement": 1,
+        "rarety": 2
+    },
+    {
+        "key": "electrotrap",
         "image": "",
         "label": "Electropiège",
         "price": 50,
@@ -35,6 +48,23 @@
         "rarety": 5
     },
     {
+        "key": "lumaFlare",
+        "image": "",
+        "label": "Fusée éclairante Luma",
+        "price": 50,
+        "encombrement": 1,
+        "rarety": 4
+    },
+    {
+        "key": "survivalEquipment",
+        "image": "",
+        "label": "Kit de survie",
+        "price": 60,
+        "encombrement": 2,
+        "rarety": 4
+    },
+    {
+        "key": "GearTENT",
         "image": "GearTENT.png",
         "label": "Tente",
         "price": 100,
@@ -42,13 +72,16 @@
         "rarety": 1
     },
     {
+        "key": "space-combinaison",
         "image": "",
         "label": "Combinaison spatiale",
+        "description": "sortie dans l'espace",
         "price": 100,
         "encombrement": 4,
         "rarety": 1
     },
     {
+        "key": "thermic-cover",
         "image": "",
         "label": "Couverture thermique",
         "price": 200,
@@ -56,6 +89,7 @@
         "rarety": 1
     },
     {
+        "key": "survival-crash-kit",
         "image": "",
         "label": "Kit de survie en cas de crash",
         "price": 300,
@@ -63,6 +97,7 @@
         "rarety": 2
     },
     {
+        "key": "depecage-kit",
         "image": "",
         "label": "Kit de Dépeçage",
         "price": 300,
@@ -70,6 +105,7 @@
         "rarety": 5
     },
     {
+        "key": "portative-cloture",
         "image": "",
         "label": "Clôture électrique portative",
         "price": 500,

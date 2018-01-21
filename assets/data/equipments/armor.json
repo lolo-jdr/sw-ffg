@@ -1,7 +1,9 @@
 [
     {
+        "key": "ArmorHC",
         "image": "ArmorHC.png",
         "label": "Vêtements épais",
+        "description": "Vêtement standard de citoyen",
         "defense": 0,
         "encaissement": 1,
         "price": 50,
@@ -10,6 +12,19 @@
         "rarety": 0
     },
     {
+        "key": "nomadCoat",
+        "image": "Nomad Greatcoat.png",
+        "label": "Manteau de nomade",
+        "description": "Protection basique contre les climats hostiles",
+        "defense": 0,
+        "encaissement": 1,
+        "price": 100,
+        "enc": 1,
+        "emp": 0,
+        "rarety": 4
+    },
+    {
+        "key": "ArmorCONROBE",
         "image": "ArmorCONROBE.png",
         "label": "Robe de camouflage",
         "defense": 0,
@@ -20,6 +35,7 @@
         "rarety": 2
     },
     {
+        "key": "ArmorUTILITYVEST",
         "image": "ArmorUTILITYVEST.png",
         "label": "Veste blast",
         "defense": 0,
@@ -30,8 +46,56 @@
         "rarety": 5
     },
     {
+        "key": "boundyHunterArmor",
+        "image": "",
+        "label": "Veste de chasseur de prime",
+        "defense": 0,
+        "description": "Protection basique portée par ceux vivant aux marges de la légalité",
+        "encaissement": 2,
+        "price": 200,
+        "enc": 0,
+        "emp": 0,
+        "rarety": 3
+    },
+    {
+        "key": "diplomatRobe",
+        "image": "Diplomat's Robes.png",
+        "label": "Robe de diplomate",
+        "defense": 0,
+        "encaissement": 0,
+        "price": 400,
+        "enc": 2,
+        "emp": 0,
+        "rarety": 6
+    },
+    {
+        "key": "jediTrainingSuit",
+        "image": "",
+        "label": "Robe d'entrainement Jedi",
+        "defense": 0,
+        "encaissement": 2,
+        "price": 400,
+        "enc": 4,
+        "emp": 0,
+        "rarety": 9
+    },
+    {
+        "key": "cloackingCoat",
+        "image": "",
+        "label": "Veste anti-détection",
+        "description": "Limite la détection des appareils de sécurité",
+        "defense": 0,
+        "encaissement": 1,
+        "price": 550,
+        "enc": 4,
+        "emp": 1,
+        "rarety": 8
+    },
+    {
+        "key": "ArmorAEG",
         "image": "ArmorAEG.png",
         "label": "Tenue d'exploration",
+        "description": "Tenue pour affronter les climats hostiles",
         "defense": 0,
         "encaissement": 1,
         "price": 500,
@@ -40,8 +104,10 @@
         "rarety": 1
     },
     {
+        "key": "ArmorPAD",
         "image": "ArmorPAD.png",
         "label": "Armure matelassée",
+        "description": "Fibres anti-énergie, portée par les rebelles",
         "defense": 0,
         "encaissement": 2,
         "price": 500,
@@ -50,6 +116,18 @@
         "rarety": 1
     },
     {
+        "key": "nobleRegalia",
+        "image": "Noble Regalia.png",
+        "label": "Regalia de noble",
+        "defense": 0,
+        "encaissement": 0,
+        "price": 750,
+        "enc": 1,
+        "emp": 3,
+        "rarety": 7
+    },
+    {
+        "key": "ArmorENVIROSUIT",
         "image": "ArmorENVIROSUIT.png",
         "label": "Combinaison environnementale",
         "defense": 0,
@@ -60,8 +138,49 @@
         "rarety": 2
     },
     {
+        "key": "stunCloak",
+        "image": "",
+        "label": "Cape étourdissante Koromondian SVT-300",
+        "description": "Génère des décharges électriques à sa surface",
+        "skill": "Distance (Légère)",
+        "damage": 4,
+        "critic": 3,
+        "distance": "Au contact",
+        "enc": 4,
+        "emp": 1,
+        "price": 900,
+        "rarety": 1,
+        "options": [
+            { "label": "Munitions Limitées 1" }
+        ]
+    },
+    {
+        "key": "ArmorP14",
+        "image": "ArmorP14.png",
+        "label": "Sorosuub P-14 combinaison industriel",
+        "defense": 0,
+        "encaissement": 2,
+        "price": 1000,
+        "enc": 7,
+        "emp": 2,
+        "rarety": 4
+    },
+    {
+        "key": "rebelCommanderUniform",
+        "image": "",
+        "label": "Uniforme de commandant rebel",
+        "defense": 1,
+        "encaissement": 1,
+        "price": 1000,
+        "enc": 1,
+        "emp": 1,
+        "rarety": 8
+    },
+    {
+        "key": "ArmorFLAKVEST",
         "image": "ArmorFLAKVEST.png",
         "label": "Vêtements reforcés",
+        "description": "vêtements renforcés de plaques plastoïdes ou céramiques",
         "defense": 1,
         "encaissement": 1,
         "price": 1000,
@@ -70,6 +189,18 @@
         "rarety": 6
     },
     {
+        "key": "ArmorWINGCOMMANDER",
+        "image": "ArmorWINGCOMMANDER.png",
+        "label": "Combinaison de pilote de chasseur",
+        "defense": 1,
+        "encaissement": 1,
+        "price": 1500,
+        "enc": 3,
+        "emp": 1,
+        "rarety": 6
+    },
+    {
+        "key": "ArmorSMUGGLERSTRENCHCOAT",
         "image": "ArmorSMUGGLERSTRENCHCOAT.png",
         "label": "Pardessus de contrebandier",
         "defense": 1,
@@ -80,8 +211,10 @@
         "rarety": 7
     },
     {
+        "key": "ArmorLAM",
         "image": "ArmorLAM.png",
         "label": "Armure laminée",
+        "description": "utilisé par les Stormtroopers",
         "defense": 0,
         "encaissement": 2,
         "price": 2500,
@@ -90,6 +223,7 @@
         "rarety": 5
     },
     {
+        "key": "ArmorENVIROSUIT",
         "image": "ArmorENVIROSUIT.png",
         "label": "Combinaison de survie antichoc",
         "defense": 0,
@@ -100,6 +234,7 @@
         "rarety": 3
     },
     {
+        "key": "ArmorARMROBE",
         "image": "ArmorARMROBE.png",
         "label": "Robe renforcée",
         "defense": 1,
@@ -110,6 +245,7 @@
         "rarety": 8
     },
     {
+        "key": "ArmorHBA",
         "image": "ArmorHBA.png",
         "label": "Armure de combat lourde",
         "defense": 1,
@@ -120,6 +256,18 @@
         "rarety": 7
     },
     {
+        "key": "mandalorianArmor",
+        "image": "mandalorianArmorjpg.jpg",
+        "label": "Armure mandalorienne",
+        "defense": 1,
+        "encaissement": 2,
+        "price": 6000,
+        "enc": 6,
+        "emp": 5,
+        "rarety": 8
+    },
+    {
+        "key": "ArmorMIMETICSUIT",
         "image": "ArmorMIMETICSUIT.png",
         "label": "Combinaison mimétique",
         "defense": 1,
@@ -130,6 +278,7 @@
         "rarety": 8
     },
     {
+        "key": "individual-deflector-shield",
         "image": "",
         "label": "Bouclier déflecteur individuel",
         "defense": 2,
@@ -138,5 +287,29 @@
         "enc": 3,
         "emp": 0,
         "rarety": 8
+    },
+    {
+        "key": "jediTempleGuardArmor",
+        "image": "ArmorJEDITEMGUAARM.png",
+        "label": "Armure de Gardien de Temple Jedi",
+        "defense": 2,
+        "encaissement": 1,
+        "price": 12000,
+        "enc": 4,
+        "emp": 3,
+        "rarety": 10
+    },
+    {
+        "key": "kavDannPowerArmor",
+        "image": "ArmorKAVDANNPA.png",
+        "label": "Armure de pouvoir Kev-Dann",
+        "defense": 2,
+        "encaissement": 2,
+        "price": 13500,
+        "enc": 4,
+        "emp": 6,
+        "rarety": 7
     }
+
+    
 ]

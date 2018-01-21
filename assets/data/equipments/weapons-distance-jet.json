@@ -1,7 +1,9 @@
 [
     {
+        "key": "weapon-bola",
         "image": "WeaponBOLA.png",
         "label": "Bolas / Filet",
+        "description": "Permet de capturer une proie vivante. Appréciée des chasseurs de primes",
         "skill": "Distance (Légère)",
         "damage": 2,
         "critic": 0,
@@ -17,6 +19,7 @@
         ]
     },
     {
+        "key": "dagger-weapon",
         "image": "Daggerweapon.jpg",
         "label": "Dague de lancer ascienne",
         "skill": "Distance (Légère)",
@@ -33,6 +36,7 @@
         ]
     },
     {
+        "key": "corellianCompoundBow",
         "image": "",
         "label": "Arc à poulies corellien",
         "skill": "Distance (lourde)",
@@ -51,6 +55,7 @@
         ]
     },
     {
+        "key": "",
         "image": "",
         "label": "Flèches étourdissantes",
         "skill": "Distance (Légère)",
@@ -67,6 +72,7 @@
         ]
     },
     {
+        "key": "",
         "image": "",
         "label": "Flèches explosives",
         "skill": "Distance (Légère)",
@@ -83,6 +89,7 @@
         ]
     },
     {
+        "key": "aranea-web-launcher",
         "image": "",
         "label": "Lance-toile AO14 \"Aranea\"",
         "skill": "Distance (Lourde)",

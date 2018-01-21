@@ -1,0 +1,153 @@
+[
+    {
+        "key": "dataPurgeGrenade",
+        "image": "",
+        "label": "Grenade de suppression de données",
+        "description": "Supprime les données sans détruire le matériel",
+        "skill": "Distance (Léger)",
+        "damage": 0,
+        "critic": 0,
+        "distance": "Au contact",
+        "enc": 1,
+        "emp": 0,
+        "price": 100,
+        "rarety": 7,
+        "options": [
+            { "label": "Munitions Limitées 1" }
+        ]
+    },
+    {
+        "key": "noiseGrenade",
+        "image": "",
+        "label": "Grenade sonore Merr-Sonn N-4",
+        "skill": "Distance (Léger)",
+        "damage": 4,
+        "critic": 6,
+        "distance": "Courte",
+        "enc": 1,
+        "emp": 0,
+        "price": 150,
+        "rarety": 5,
+        "options": [
+            { "label": "Souffle 5" },
+            { "label": "Dégâts étourdissants" },
+            { "label": "Munitions Limitées 1" }
+        ]
+    },
+    {
+        "key": "mercyGrenade",
+        "image": "",
+        "label": "Grenade hallucinogène",
+        "skill": "Distance (Léger)",
+        "damage": 5,
+        "critic": 0,
+        "distance": "Courte",
+        "enc": 1,
+        "emp": 0,
+        "price": 150,
+        "rarety": 5,
+        "options": [
+            { "label": "Souffle 5" },
+            { "label": "Dégâts étourdissants" },
+            { "label": "Munitions Limitées 1" }
+        ]
+    },
+    {
+        "key": "empDisrupteur",
+        "image": "",
+        "label": "Disrupteur EMP",
+        "skill": "Corps à corps",
+        "damage": 5,
+        "critic": 4,
+        "distance": "Au contact",
+        "enc": 1,
+        "emp": 0,
+        "price": 180,
+        "rarety": 5,
+        "options": [
+            { "label": "Désorientation 1" },
+            { "label": "Ion" }
+        ]
+    },
+    {
+        "key": "repulsorGun",
+        "image": "",
+        "label": "Pistolet à propulsion",
+        "description": "Prenez un moteur à propulsion et faites-en une arme",
+        "skill": "Distance (Lourd)",
+        "damage": 3,
+        "critic": 5,
+        "distance": "Proche",
+        "enc": 5,
+        "emp": 0,
+        "price": 200,
+        "rarety": 3,
+        "options": [
+            { "label": "Renversement" }
+        ]
+    },
+    {
+        "key": "harpoonLauncher",
+        "image": "harpoon-launcher.jpg",
+        "label": "Lance-harpon",
+        "skill": "Distance (Léger)",
+        "damage": 3,
+        "critic": 5,
+        "distance": "Moyenne",
+        "enc": 2,
+        "emp": 0,
+        "price": 450,
+        "rarety": 5,
+        "options": [
+            { "label": "Enchevêtrement 3" }
+        ]
+    },
+    {
+        "key": "handGringer",
+        "image": "",
+        "label": "Scie circulaire",
+        "skill": "Corps à corps",
+        "damage": "+2",
+        "critic": 4,
+        "distance": "Au contact",
+        "enc": 5,
+        "emp": 4,
+        "price": 500,
+        "rarety": 3,
+        "options": [
+            { "label": "Encombrant 3" },
+            { "label": "Mis en marche lente" },
+            { "label": "Sanguinaire 4" }
+        ]
+    },
+    {
+        "key": "needGloves",
+        "image": "",
+        "label": "Gant à aiguille",
+        "skill": "Pugilat",
+        "damage": "+0",
+        "critic": 5,
+        "distance": "Au contact",
+        "enc": 1,
+        "emp": 0,
+        "price": 750,
+        "rarety": 8,
+        "options": []
+    },
+    {
+        "key": "rivetGun",
+        "image": "WeaponRIVETGUN.png",
+        "label": "Pistolet pneumatique",
+        "skill": "Distance (Légère)",
+        "damage": 4,
+        "critic": 3,
+        "distance": "Au contact",
+        "enc": 4,
+        "emp": 1,
+        "price": 900,
+        "rarety": 1,
+        "options": [
+            { "label": "Munitions Limitées 1" }
+        ]
+    }
+]

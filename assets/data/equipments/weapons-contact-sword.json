@@ -1,5 +1,6 @@
 [
     {
+        "key": "WeaponTRUNCH",
         "image": "WeaponTRUNCH.png",
         "label": "Matraque",
         "skill": "Corps à corps",
@@ -15,6 +16,7 @@
         ]
     },
     {
+        "key": "WeaponKNIFE",
         "image": "WeaponKNIFE.png",
         "label": "Couteau de combat",
         "skill": "Corps à corps",
@@ -28,6 +30,7 @@
         "options": [ ]
     },
     {
+        "key": "knuckles-dagger",
         "image": "",
         "label": "Dague coup-de-poing",
         "skill": "Corps à corps",
@@ -43,8 +46,26 @@
         ]
     },
     {
+        "key": "exploratorKnife",
+        "image": "",
+        "label": "Couteau d'explorateur",
+        "skill": "Corps à corps",
+        "damage": "+1",
+        "critic": 3,
+        "distance": "Au contact",
+        "enc": 5,
+        "emp": 1,
+        "price": 100,
+        "rarety": 3,
+        "options": [
+            { "label": "Sanguinaire 1" }
+        ]
+    },
+    {
+        "key": "WeaponGAFF",
         "image": "WeaponGAFF.png",
         "label": "Bâton Gaderffii",
+        "description": "Bâton fait de métal récupéré (utilisé par les Hommes des sables)",
         "skill": "Corps à corps",
         "damage": "+2",
         "critic": 3,
@@ -59,8 +80,10 @@
         ]
     },
     {
+        "key": "WeaponVIBKN",
         "image": "WeaponVIBKN.png",
         "label": "Vibrolame",
+        "description": "courte lame à vibration, une main",
         "skill": "Corps à corps",
         "damage": "+1",
         "critic": 2,
@@ -75,6 +98,24 @@
         ]
     },
     {
+        "key": "stealthVibroKnife",
+        "image": "",
+        "label": "Vibro-dague discrète",
+        "skill": "Corps à corps",
+        "damage": "+1",
+        "critic": 2,
+        "distance": "Au contact",
+        "enc": 1,
+        "emp": 1,
+        "price": 350,
+        "rarety": 6,
+        "options": [
+            { "label": "Perforant 1" },
+            { "label": "Sanguinaire 1" }
+        ]
+    },
+    {
+        "key": "WeaponANCIENTSWORD",
         "image": "WeaponANCIENTSWORD.png",
         "label": "Épée antique",
         "skill": "Sabre laser",
@@ -90,8 +131,59 @@
         ]
     },
     {
+        "key": "trainee-lightsaber",
+        "image": "",
+        "label": "Sabre laser d'entrainement",
+        "skill": "Sabre Laser",
+        "damage": "6",
+        "critic": 0,
+        "distance": "Au contact",
+        "enc": 1,
+        "emp": 5,
+        "price": 400,
+        "rarety": 6,
+        "options": [
+            { "label": "Réglage étourdissant" }
+        ]
+    },
+    {
+        "key": "swordCane",
+        "image": "",
+        "label": "Cane épée",
+        "skill": "Corps à corps",
+        "damage": "+2",
+        "critic": 3,
+        "distance": "Au contact",
+        "enc": 2,
+        "emp": 1,
+        "price": 475,
+        "rarety": 6,
+        "options": [
+            { "label": "Défense 1" }
+        ]
+    },
+    {
+        "key": "molecularStiletto",
+        "image": "340-8.png",
+        "label": "Stiletto moléculaire MSW-9",
+        "description": "Courte lame (30 cm) ressemblant à un stylo de datapad",
+        "skill": "Corps à corps",
+        "damage": "+0",
+        "critic": 2,
+        "distance": "Au contact",
+        "enc": 1,
+        "emp": 3,
+        "price": 500,
+        "rarety": 5,
+        "options": [
+            { "label": "Perforant 1" }
+        ]
+    },
+    {
+        "key": "WeaponFORCEP",
         "image": "WeaponFORCEP.png",
         "label": "Lance de force",
+        "description": "Lance en métal avec deux pointes : électrique et perforante",
         "skill": "Corps à corps",
         "damage": "+3",
         "critic": 2,
@@ -106,8 +198,44 @@
         ]
     },
     {
+        "key": "ceremonialBlade",
+        "image": "",
+        "label": "Lame de cérémonie",
+        "skill": "Corps à corps",
+        "damage": "+2",
+        "critic": 3,
+        "distance": "Au contact",
+        "enc": 2,
+        "emp": 3,
+        "price": 650,
+        "rarety": 7,
+        "options": [
+            { "label": "Défense 1" }
+        ]
+    },
+    {
+        "key": "ionPike",
+        "image": "",
+        "label": "Pique à ions",
+        "skill": "Corps à corps",
+        "damage": 10,
+        "critic": 3,
+        "distance": "Au contact",
+        "enc": 3,
+        "emp": 2,
+        "price": 750,
+        "rarety": 6,
+        "options": [ 
+            { "label": "Encombrant 3" },
+            { "label": "Désorientation 2" },
+            { "label": "Etourdissement 3" }
+        ]
+    },
+    {
+        "key": "WeaponVIBSW",
         "image": "WeaponVIBSW.png",
         "label": "Vibroépée",
+        "description": "Longue lame à vibration, une main",
         "skill": "Corps à corps",
         "damage": "+2",
         "critic": 2,
@@ -123,8 +251,10 @@
         ]
     },
     {
+        "key": "WeaponVIBAX",
         "image": "WeaponVIBAX.png",
         "label": "Vibrohache",
+        "description": "Arme à vibration, deux mains",
         "skill": "Corps à corps",
         "damage": "+3",
         "critic": 2,
@@ -140,6 +270,7 @@
         ]
     },
     {
+        "key": "WeaponCORTSHIELD",
         "image": "WeaponCORTSHIELD.png",
         "label": "Bouclier en cortosis",
         "skill": "Corps à corps",
@@ -158,6 +289,7 @@
         ]
     },
     {
+        "key": "WeaponCORTSWORD",
         "image": "WeaponCORTSWORD.png",
         "label": "Épée en cortosis",
         "skill": "Corps à corps",
@@ -174,6 +306,7 @@
         ]
     },
     {
+        "key": "WeaponREFCORTSTAFF",
         "image": "WeaponREFCORTSTAFF.png",
         "label": "Bâton en cortosis",
         "skill": "Corps à corps",
@@ -189,6 +322,7 @@
         ]
     },
     {
+        "key": "WeaponELECSTAFF",
         "image": "WeaponELECSTAFF.png",
         "label": "Bâton statique",
         "skill": "Corps à corps",
@@ -208,6 +342,7 @@
         ]
     },
     {
+        "key": "WeaponLTSABERBASIC",
         "image": "WeaponLTSABERBASIC.png",
         "label": "Sabre laser",
         "skill": "Sabre laser",
@@ -222,6 +357,44 @@
             { "label": "Brèche 1" },
             { "label": "Briseur" },
             { "label": "Sanguinaire 2" }
+         ]
+    },
+    {
+        "key": "double-light-saber",
+        "image": "",
+        "label": "Sabre laser double",
+        "skill": "Sabre laser",
+        "damage": 6,
+        "critic": 2,
+        "distance": "Au contact",
+        "enc": 2,
+        "emp": 4,
+        "price": 18600,
+        "rarety": 10,
+        "options": [
+            { "label": "Brèche 1" },
+            { "label": "Briseur" },
+            { "label": "Difficile à manier" },
+            { "label": "Jumelé 2" }
+         ]
+    },
+    {
+        "key": "templeGuardLightsaberPike",
+        "image": "WeaponLTSABERTEMGUAPIKE.png",
+        "label": "Sabre laser de gardien de temple",
+        "skill": "Sabre laser",
+        "damage": 6,
+        "critic": 2,
+        "distance": "Au contact",
+        "enc": 2,
+        "emp": 4,
+        "price": 20000,
+        "rarety": 10,
+        "options": [
+            { "label": "Brèche 1" },
+            { "label": "Briseur" },
+            { "label": "Défense 1" },
+            { "label": "Difficile à manier 3" }
          ]
     }
 ]

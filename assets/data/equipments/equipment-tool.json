@@ -1,54 +1,24 @@
 [
     {
+        "key": "GearGLOWROD",
         "image": "GearGLOWROD.png",
         "label": "Bâton luisant",
+        "description": "Bâton éclairant",
         "price": 10,
         "encombrement": 1,
         "rarety": 0
     },
     {
+        "key": "GearUTILBELT",
         "image": "GearUTILBELT.png",
         "label": "Ceinture multi-usages",
+        "description": "Augmentent le seuil d'encombrementd de 1",
         "price": 25,
         "encombrement": 0,
         "rarety": 0
     },
     {
-        "image": "GearDATAPAD.png",
-        "label": "Datapad",
-        "price": 75,
-        "encombrement": 1,
-        "rarety": 1
-    },
-    {
-        "image": "GearJETPACK.png",
-        "label": "Jet pack",
-        "price": 4500,
-        "encombrement": 2,
-        "rarety": 7
-    },
-    {
-        "image": "GearFUSLANT.png",
-        "label": "Lanterne à fusion",
-        "price": 150,
-        "encombrement": 2,
-        "rarety": 2
-    },
-    {
-        "image": "",
-        "label": "Matériel d'escalade",
-        "price": 50,
-        "encombrement": 1,
-        "rarety": 2
-    },
-    {
-        "image": "",
-        "label": "Appât chimique",
-        "price": 125,
-        "encombrement": 1,
-        "rarety": 4
-    },
-    {
+        "key": "energy-cell-amo",
         "image": "",
         "label": "Munitions / cellules énergétiques",
         "price": 25,
@@ -56,13 +26,32 @@
         "rarety": 1
     },
     {
-        "image": "",
+        "key": "emergency-repair-patch",
+        "image": "emergency-repair-patch.jpg",
         "label": "Plaque de réparation d'urgence",
+        "description": "Colmatage, renforce l'intégrité structurel",
         "price": 25,
         "encombrement": 0,
         "rarety": 1
     },
     {
+        "key": "culturalEtiquetteManual",
+        "image": "",
+        "label": "Manuel des Étiquettes culturelles",
+        "price": 35,
+        "encombrement": 0,
+        "rarety": 3
+    },
+    {
+        "key": "mountain-climbing-gear-climbing-rope",
+        "image": "mountain-climbing-gear-climbing-rope.jpg",
+        "label": "Matériel d'escalade",
+        "price": 50,
+        "encombrement": 1,
+        "rarety": 2
+    },
+    {
+        "key": "GearBACKPACK",
         "image": "GearBACKPACK.png",
         "label": "Sac à dos",
         "price": 50,
@@ -70,10 +59,167 @@
         "rarety": 0
     },
     {
+        "key": "GearDATAPAD",
+        "image": "GearDATAPAD.png",
+        "label": "Datapad",
+        "price": 75,
+        "encombrement": 1,
+        "rarety": 1
+    },
+    {
+        "key": "authentificationTools",
+        "image": "",
+        "label": "Outils d'authenticité",
+        "price": 100,
+        "encombrement": 1,
+        "rarety": 5
+    },
+    {
+        "key": "chemical-bait",
+        "image": "Chemical_bait.png",
+        "label": "Appât chimique",
+        "price": 125,
+        "encombrement": 1,
+        "rarety": 4
+    },
+    {
+        "key": "GearFUSLANT",
+        "image": "GearFUSLANT.png",
+        "label": "Lanterne à fusion",
+        "description": "source de lumière et d'énergie",
+        "price": 150,
+        "encombrement": 2,
+        "rarety": 2
+    },
+    {
+        "key": "concealedRecorder",
+        "image": "",
+        "label": "Engeristreur miniature",
+        "price": 175,
+        "encombrement": 0,
+        "rarety": 5
+    },
+    {
+        "key": "mercantilerDatapad",
+        "image": "Versafunction88_Datapad.jpg",
+        "label": "Datapad de marchand",
+        "price": 250,
+        "encombrement": 1,
+        "rarety": 3
+    },
+    {
+        "key": "edhesiveGloves",
+        "image": "",
+        "label": "Gants adhérants verpine",
+        "description": "Augmentant la stabilité lors de manipulation manuelle",
+        "price": 250,
+        "encombrement": 1,
+        "rarety": 6
+    },
+    {
+        "key": "repulsorClamp",
+        "image": "",
+        "label": "Pince à suspension",
+        "description": "Lévitation d'objets de valeur d'encombrement de 10",
+        "price": 250,
+        "encombrement": 1,
+        "rarety": 3
+    },
+    {
+        "key": "ascensionPistolRider",
+        "image": "AscentionGun_negwt.jpg",
+        "label": "Pistolet à ascension",
+        "price": 275,
+        "encombrement": 1,
+        "rarety": 4
+    },
+    {
+        "key": "cargo-scanner",
+        "image": "",
+        "label": "Scanner de cargaison",
+        "price": 300,
+        "encombrement": 1,
+        "rarety": 4
+    },
+    {
+        "key": "GearTOOLKIT",
         "image": "GearTOOLKIT.png",
         "label": "Trousse à outils",
         "price": 350,
         "encombrement": 4,
         "rarety": 2
+    },
+    {
+        "key": "sleightBox",
+        "image": "",
+        "label": "Conteneur de dissimulation",
+        "description": "Conteneur avec double-fond ou apparaissant vide",
+        "price": 400,
+        "encombrement": "2-20",
+        "rarety": 6
+    },
+    {
+        "key": "antigav-parachute",
+        "image": "",
+        "label": "Parachute antigrav",
+        "price": 450,
+        "encombrement": 1,
+        "rarety": 5
+    },
+    {
+        "key": "palmStunner",
+        "image": "",
+        "label": "Paume étourdissante",
+        "price": 500,
+        "encombrement": 1,
+        "rarety": 5
+    },
+    {
+        "key": "jediMultiTool",
+        "image": "",
+        "label": "Outil multi-fonction Jedi",
+        "price": 700,
+        "encombrement": 2,
+        "rarety": 9
+    },
+    {
+        "key": "falsidiedCredential",
+        "image": "",
+        "label": "Accréditation falsifiée",
+        "price": 800,
+        "encombrement": 0,
+        "rarety": 7
+    },
+    {
+        "key": "jediUtilityBelt",
+        "image": "",
+        "label": "Ceinture Jedi",
+        "price": 1000,
+        "encombrement": 0,
+        "rarety": 8
+    },
+    {
+        "key": "fabritechMkIIITargettinhGoggles",
+        "image": "",
+        "label": "Lunettes de ciblage pour chasseur de type MK III",
+        "price": 1000,
+        "encombrement": 1,
+        "rarety": 5
+    },
+    {
+        "key": "rocketBoots",
+        "image": "",
+        "label": "Bottes de propulsion",
+        "price": 2500,
+        "encombrement": 2,
+        "rarety": 8
+    },
+    {
+        "key": "GearJETPACK",
+        "image": "GearJETPACK.png",
+        "label": "Jet pack",
+        "price": 4500,
+        "encombrement": 2,
+        "rarety": 7
     }
 ]
