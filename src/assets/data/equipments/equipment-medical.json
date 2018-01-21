@@ -32,6 +32,14 @@
         "rarety": 2
     },
     {
+        "key": "bloodScanner",
+        "image": "",
+        "label": "Scanner sanguin",
+        "price": 400,
+        "encombrement": 1,
+        "rarety": 5
+    },
+    {
         "key": "ECM-598-Medical-Backpack",
         "image": "ECM-598_Medical_Backpack.jpg",
         "label": "Sac à dos médical",

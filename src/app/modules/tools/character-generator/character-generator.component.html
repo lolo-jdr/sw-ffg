@@ -22,7 +22,7 @@
         <p>GÉNÉRATEUR DE PERSONNAGE</p>
         <p>
           <small>
-            <em>En cours de développement</em>
+            <em>(Développement terminé. Amélioration des fichiers de données en cours)</em>
           </small>
         </p>
       </div>
@@ -82,10 +82,14 @@
         </div>
 
         <div class="character-property">
-          <label>Equipments</label>
+          <label>Equipments
+            <i class="ra ra-lg ra-perspective-dice-random" (click)="reRandomEquipments()"></i>
+          </label>
           <p>Armes</p>
           <ul>
-            <li *ngFor="let weapon of character.weapons">{{ weapon.label }}</li>
+            <li *ngFor="let weapon of character.weapons">
+              <span *ngIf="weapon !== ''" >{{ weapon.label }}</span>
+            </li>
           </ul>
           <p>Armure</p>
           <ul>
@@ -154,6 +158,20 @@
         <div class="character-property">
           <label>Motivations</label>
           <p>Fichiers de données inexistants (voir avec le MJ)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="character-property">
+          <label>Véhicule / Vaisseau</label>
+          <div *ngFor="let vehicule of character.vehicules">
+            <p>{{ vehicule.label }}</p>
+            <p>
+              <img src="assets/images/vehicules/{{ vehicule.image }}" />
+            </p>
+          </div>
         </div>
       </div>
     </div>

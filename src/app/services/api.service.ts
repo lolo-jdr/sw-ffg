@@ -33,6 +33,7 @@ export class ApiService {
 
   public static WEAPONS_CONTACT_PUGILAT = "weapons-contact-pugilat.json";
   public static WEAPONS_CONTACT_SWORD = "weapons-contact-sword.json";
+  public static WEAPONS_OTHER = "weapons-other.json";
 
   public static ARMORS = "armor.json";
 
@@ -46,6 +47,8 @@ export class ApiService {
   public static EQUIPMENT_SURVIVAL_MATERIAL = "equipment-survival-material.json";
   public static EQUIPMENT_TOOL = "equipment-tool.json";
   public static EQUIPMENT_DROIDE = "equipment-droide.json";
+
+  public static VEHICULES = "vehicules.json";
 
   public static CHARACTER_CREATION_INSPIRATIONS = 'assets/data/character-creation-inspirations.json';
 

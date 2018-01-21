@@ -8,6 +8,14 @@
         "rarety": 3
     },
     {
+        "key": "microdroidListener",
+        "image": "",
+        "label": "Micro-Droïde espion",
+        "price": 1500,
+        "encombrement": 0,
+        "rarety": 5
+    },
+    {
         "key": "GearDROIDWANDSC",
         "image": "GearDROIDWANDSC.png",
         "label": "Droïde éclaireur Sorosuub \"Wanderer\"",

@@ -17,7 +17,14 @@
         "encombrement": 0,
         "rarety": 1
     },
-
+    {
+        "key": "personalTransponder",
+        "image": "",
+        "label": "Transpondeur personnel",
+        "price": 100,
+        "encombrement": 0,
+        "rarety": 4
+    },
     {
         "key": "GearCOMLINKHARD",
         "image": "GearCOMLINKHARD.png",
@@ -40,10 +47,18 @@
         "key": "GearHOLO",
         "image": "GearHOLO.png",
         "label": "Holo-disque",
-        "description": "Enregistreur de communication",
+        "description": "Enregistreur de communication, utilisé pendant les échanges protocolaires",
         "price": 250,
         "encombrement": 0,
         "rarety": 4
+    },
+    {
+        "key": "taggecoPrivacyCurtain",
+        "image": "",
+        "label": "Emetteur-récepteur Privacy 7 TaggeCo",
+        "price": 500,
+        "encombrement": 4,
+        "rarety": 8
     },
     {
         "key": "",
@@ -61,6 +76,15 @@
         "description": "",
         "price": 1250,
         "encombrement": 3,
+        "rarety": 6
+    },
+    {
+        "key": "imitateurTransmetteur",
+        "image": "",
+        "label": "Transmetteur imitateur",
+        "description": "Reproduction de voix organique",
+        "price": 1400,
+        "encombrement": 4,
         "rarety": 6
     },
     {

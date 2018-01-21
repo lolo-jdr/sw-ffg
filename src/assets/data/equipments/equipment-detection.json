@@ -30,7 +30,7 @@
         "key": "GearSTAG",
         "image": "GearSTAG.png",
         "label": "Traceur",
-        "description": "Balise de traque",
+        "description": "Balise miniature utilisée pour la traque",
         "price": 175,
         "encombrement": 0,
         "rarety": 4
@@ -43,6 +43,22 @@
         "price": 250,
         "encombrement": 1,
         "rarety": 1
+    },
+    {
+        "key": "pX7HeatSensor",
+        "image": "",
+        "label": "Capteur de chaleur PX-7",
+        "price": 250,
+        "encombrement": 3,
+        "rarety": 7
+    },
+    {
+        "key": "securitySweeper",
+        "image": "",
+        "label": "Détecteur d'objet miniature",
+        "price": 400,
+        "encombrement": 1,
+        "rarety": 6
     },
     {
         "key": "general-purpose-scanner",

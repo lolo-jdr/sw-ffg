@@ -3,6 +3,7 @@
         "key": "weaponslugrif",
         "image": "WeaponSLUGRIF.png",
         "label": "Pistolet à percussion",
+        "description": "Arme légère et bruyante souvent porté par nostalgie",
         "skill": "Distance (Légère)",
         "damage": 4,
         "critic": 5,
@@ -14,9 +15,10 @@
         "options": []
     },
     {
-        "key": "weaponslugrif-heavy",
+        "key": "weaponslugrifHeavy",
         "image": "WeaponSLUGRIF.png",
         "label": "Fusil à percussion",
+        "description": "Arme souvent trouvé dans des mondes primitifs",
         "skill": "Distance (Lourde)",
         "damage": 7,
         "critic": 5,
@@ -61,6 +63,43 @@
         "options": [
             { "label": "Munitions limitées 3" },
             { "label": "Projectile guidé 3" }
+        ]
+    },
+    {
+        "key": "dfd1FlechetteRifle",
+        "image": "latest-3.png",
+        "label": "Fusil Duo-Fléchettes DF-D1",
+        "skill": "Distance (Lourde)",
+        "damage": 9,
+        "critic": 3,
+        "distance": "Courte",
+        "enc": 3,
+        "emp": 3,
+        "price": 1000,
+        "rarety": 7,
+        "options": [
+            { "label": "Jumelé " },
+            { "label": "Munitions limitées 5" },
+            { "label": "Sanguinaire 2" },
+            { "label": "Souffle 4" }
+        ]
+    },
+    {
+        "key": "verpinceRifle",
+        "image": "WeaponVERPSHATRIF.png",
+        "label": "Fusil fracasseur Verpine",
+        "description": "Extrêmement puissant mais également très fragile",
+        "skill": "Distance (Lourd)",
+        "damage": 12,
+        "critic": 3,
+        "distance": "Extrême",
+        "enc": 3,
+        "emp": 3,
+        "price": 30000,
+        "rarety": 8,
+        "options": [
+            { "label": "Perforant 4" },
+            { "label": "Renversement" }
         ]
     }
 ]

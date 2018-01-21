@@ -19,6 +19,7 @@
         "key": "WeaponSHOCKGL",
         "image": "WeaponSHOCKGL.png",
         "label": "Gants à décharge",
+        "description": "De fins câbles électriques augmentent la puissance",
         "skill": "Pugilat",
         "damage": "+0",
         "critic": 5,
@@ -29,6 +30,23 @@
         "rarety": 2,
         "options": [
             { "label": "Étourdissement 3" }
+        ]
+    },
+    {
+        "key": "WeaponVIBROKNUK",
+        "image": "WeaponVIBROKNUK.png",
+        "label": "Vibro coup-de-poing",
+        "skill": "Pugilat",
+        "damage": "+1",
+        "critic": 2,
+        "distance": "Au contact",
+        "enc": 1,
+        "emp": 0,
+        "price": 350,
+        "rarety": 4,
+        "options": [
+            { "label": "Perforant 1" },
+            { "label": "Sanguinaire 1" }
         ]
     },
     {

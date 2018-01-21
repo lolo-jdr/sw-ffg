@@ -16,6 +16,8 @@ export class Character {
 	weapons: any[] = [];
 	armors: any[] = [];
 	equipments: any[] = [];
+	vehicules: any[] = [];
+
 
 	constructor(skills: Skill[]) {
 		this.skills = skills;

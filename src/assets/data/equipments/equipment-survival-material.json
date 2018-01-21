@@ -32,12 +32,36 @@
         "rarety": 1
     },
     {
+        "key": "waterPurifier",
+        "image": "",
+        "label": "Purificateur d'eau",
+        "price": 50,
+        "encombrement": 1,
+        "rarety": 2
+    },
+    {
         "key": "electrotrap",
         "image": "",
         "label": "Electropiège",
         "price": 50,
         "encombrement": 0,
         "rarety": 5
+    },
+    {
+        "key": "lumaFlare",
+        "image": "",
+        "label": "Fusée éclairante Luma",
+        "price": 50,
+        "encombrement": 1,
+        "rarety": 4
+    },
+    {
+        "key": "survivalEquipment",
+        "image": "",
+        "label": "Kit de survie",
+        "price": 60,
+        "encombrement": 2,
+        "rarety": 4
     },
     {
         "key": "GearTENT",

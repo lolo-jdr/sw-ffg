@@ -135,6 +135,19 @@ p {
 .page-title-label p {
   margin-bottom: 0px;
 }
+
+.equipment-table img {
+  cursor: pointer;
+}
+.equipment-table p {
+  font-size: 0.9em;
+}
+.equipment-table p:first {
+  font-weight: 500;
+}
+.equipment-table p small{
+  font-size: 0.6em;
+}
 #mainNav .navbar-collapse {
   overflow: auto;
   max-height: 75vh;

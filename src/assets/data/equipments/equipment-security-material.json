@@ -10,21 +10,47 @@
     },
     {
         "key": "bouchon-entrave",
-        "image": "",
+        "image": "Threepio_restraining_bolt.png",
         "label": "Bouchon d'entrave",
-        "description": "Piratage de droïde",
+        "description": "Mécanisme de piratage de droïde",
         "price": 35,
         "encombrement": 0,
         "rarety": 0
     },
     {
+        "key": "aquataBreatherA99",
+        "image": "",
+        "label": "Respirateur Aquatique A-99",
+        "price": 100,
+        "encombrement": 0,
+        "rarety": 7
+    },
+    {
         "key": "disguise-tool",
         "image": "",
         "label": "Trousse de déguisement",
-        "description": "Maquillage, postiches, camouflage ADN",
+        "description": "Maquillage, postiches, camouflage ADN pour se fondre dans une foule",
         "price": 100,
         "encombrement": 2,
         "rarety": 4
+    },
+    {
+        "key": "dataspike",
+        "image": "GearDATASPIKE.png",
+        "label": "Broche de données",
+        "description": "Outil pour outrepasser les sécurités informatiques",
+        "price": 100,
+        "encombrement": 1,
+        "rarety": 3
+    },
+    {
+        "key": "signatureModulationPad",
+        "image": "GearSIGMODPAD.png",
+        "label": "Modulateur de piratage",
+        "description": "Camoufler les signatures de piratage",
+        "price": 250,
+        "encombrement": 2,
+        "rarety": 7
     },
     {
         "key": "scrambler",

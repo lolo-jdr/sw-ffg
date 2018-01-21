@@ -1,12 +1,44 @@
 [
     {
+        "key": "64ySwift3Repulsorsled",
+        "label": "Landspeeder 64-Y Swift 3",
+        "type": "Landspeeder",
+        "sensorRange": "Proche",
+        "crew": 1,
+        "passagers": 0,
+        "image": "64-Y_Swift_3_Repulsor_Sled.jpg",
+        "price": 8000,
+        "rarety": 7,
+        "mods": 4,
+        "weapons": [
+            "Aucune"
+        ],
+        "univers": "eoe"
+    },
+    {
+        "key": "landspeederAV21",
+        "label": "Landspeeder AV-21",
+        "type": "Landspeeder",
+        "sensorRange": "Proche",
+        "crew": 1,
+        "passagers": 0,
+        "image": "AV21landspeeder-TSS.jpg",
+        "price": 6500,
+        "rarety": 7,
+        "mods": 3,
+        "weapons": [
+            "Aucune"
+        ],
+        "univers": "aor"
+    },
+    {
         "key": "v35CourierLandspeeder",
         "label": "V-35 Courier Landspeeder",
         "type": "Landspeeder",
-        "sensorRange": "courte",
+        "sensorRange": "Courte",
         "crew": 1,
         "passagers": 3,
-        "image": "V35_Rebels.jpgsuper",
+        "image": "V35_Rebels.jpg",
         "price": 7500,
         "rarety": 2,
         "mods": 3,
@@ -16,7 +48,7 @@
         "univers": "eoe"
     },
     {
-        "key": "skyhopper-incom-t-16",
+        "key": "skyhopperIncomT16",
         "label": "T-16 INCOM Skyhopper",
         "type": "Airspeeder",
         "sensorRange": "courte",
@@ -32,7 +64,7 @@
         "univers": "eoe"
     },
     {
-        "key": "airspeeder-incom-t-47",
+        "key": "airspeederIncomT47",
         "label": "Airspeeder INCOM T-47",
         "type": "Airspeeder",
         "sensorRange": "proche",
@@ -80,6 +112,22 @@
         "univers": "eoe"
     },
     {
+        "key": "barlozClassMediumFreighter",
+        "label": "Cargo moyen de classe Barloz",
+        "type": "Cargo",
+        "sensorRange": "Courte",
+        "crew": 1,
+        "passagers": 4,
+        "image": "Barloz_SS.jpg",
+        "price": 70000,
+        "rarety": 5,
+        "mods": 4,
+        "weapons": [
+            "Canon laser léger dorsal (portée proche)"
+        ],
+        "univers": "fad"
+    },
+    {
         "key": "yt1760SmallTansport",
         "label": "Petit transporteur YT-1760",
         "type": "Transporteur",
@@ -96,7 +144,24 @@
         "univers": "eoe"
     },
     {
-        "key": "yt-1300",
+        "key": "kappaClassShuttle",
+        "label": "Navette de classe Kappa",
+        "type": "Transporteur",
+        "sensorRange": "Courte",
+        "crew": 2,
+        "passagers": 40,
+        "image": "Kappa-class_shuttle_AoRDA.png",
+        "price": 110000,
+        "rarety": 5,
+        "mods": 2,
+        "weapons": [
+            "Canon blaster lourds montés sur tourelle dorsale (portée proche)",
+            "Auto-blasters montés sur ailes (portée proche)"
+        ],
+        "univers": "aor"
+    },
+    {
+        "key": "yt1300",
         "label": "Cargo léger YT-1300",
         "type": "Cargo",
         "sensorRange": "Courte",
@@ -115,7 +180,7 @@
         "key": "wayfarer",
         "label": "Cargo Moyen Wayfarer",
         "type": "Cargo",
-        "sensorRange": "moyenne",
+        "sensorRange": "Moyenne",
         "crew": 2,
         "passagers": 6,
         "image": "wayfarer.jpg",
@@ -128,10 +193,44 @@
         "univers": "eoe"
     },
     {
-        "key": "incom-a-24",
+        "key": "lancerClassPoursuitCraft",
+        "label": "Appareil de poursuite de classe Lancer",
+        "type": "Cargo/Patrouilleur",
+        "sensorRange": "Courte",
+        "crew": 2,
+        "passagers": 4,
+        "image": "swe16_shadowcaster.jpg",
+        "price": 120000,
+        "rarety": 8,
+        "mods": 3,
+        "weapons": [
+            "Canon laser légers montés à l'avant (portée proche)",
+            "Triple canons lasers légers sur tourelle dorsal (portée proche)",
+            "Rayon tracteur léger (portée poche)"
+        ],
+        "univers": "eoe"
+    },
+    {
+        "key": "vcx100LightFreighter",
+        "label": "Cargo Léger VCX-100",
+        "type": "Cargo",
+        "sensorRange": "Courte",
+        "crew": 2,
+        "passagers": 6,
+        "image": "Ghost.png",
+        "price": 155000,
+        "rarety": 8,
+        "mods": 5,
+        "weapons": [
+            "Canons lasers légers jumelés montés à l'avant, à l'arrière et sur tourelle (portée proche)"
+        ],
+        "univers": "fad"
+    },
+    {
+        "key": "incomA24",
         "label": "Vaisseau de reconnaissance INCOM A-24",
         "type": "Patrouilleur",
-        "sensorRange": "moyenne",
+        "sensorRange": "Moyenne",
         "crew": 1,
         "passagers": 1,
         "image": "A-24_Sleuth_EtU.png",
@@ -140,6 +239,22 @@
         "mods": 3,
         "weapons": [
             "Canon laser léger jumelé monté à l'avant (portée proche)"
+        ],
+        "univers": "eoe"
+    },
+    {
+        "key": "jumpMaster5000",
+        "label": "Vaisseau d'exploration Jumpmaster 5000",
+        "type": "Patrouilleur/Explorateur",
+        "sensorRange": "Extrême",
+        "crew": 1,
+        "passagers": 1,
+        "image": "Punishing_One_SWGTCG-e1455130900186.jpg",
+        "price": 55000,
+        "rarety": 6,
+        "mods": 3,
+        "weapons": [
+            "Canon laser léger monté à l'avant (portée proche)"
         ],
         "univers": "eoe"
     },
@@ -177,7 +292,24 @@
         "univers": "eoe"
     },
     {
-        "key": "lambda-class",
+        "key": "g1aHeavyStarfighter",
+        "label": "Patrouilleur lourd G-1A",
+        "type": "Patrouilleur",
+        "sensorRange": "Courte",
+        "crew": 2,
+        "passagers": 3,
+        "image": "g1a.jpeg",
+        "price": 130000,
+        "rarety": 7,
+        "mods": 4,
+        "weapons": [
+            "Canons lasers moyens jumelés montés à l'avant (porté proche)",
+            "Lance-missiles jumelés montés à l'avant (porté courte)"
+        ],
+        "univers": "eoe"
+    },
+    {
+        "key": "lambdaClass",
         "label": "Navette de classe Lambda",
         "type": "Patrouilleur",
         "sensorRange": "",
@@ -191,6 +323,41 @@
             ""
         ],
         "univers": "aor"
+    },
+    {
+        "key": "cloakshapeFighter",
+        "label": "Chasseur Caméléon",
+        "type": "Chasseur",
+        "sensorRange": "Proche",
+        "crew": 1,
+        "passagers": 0,
+        "image": "Cloakshape_NEGVV.jpg",
+        "price": 35000,
+        "rarety": 4,
+        "mods": 3,
+        "weapons": [
+            "Canons lasers légers montés à l'avant (porté proche)",
+            "Lance-missile montés à l'avant (porté courte)"
+        ],
+        "univers": "eoe"
+    },
+    {
+        "key": "kihraxyLightStarfigther",
+        "label": "Chasseur léger Kihraxy",
+        "type": "Chasseur",
+        "sensorRange": "Proche",
+        "crew": 1,
+        "passagers": 0,
+        "image": "Talonbane_Cobra_XWM.png",
+        "price": 65000,
+        "rarety": 6,
+        "mods": 5,
+        "weapons": [
+            "Canons lasers légers jumelés montés à l'avant (porté proche)",
+            "Canon ionique léger monté à l'avant (porté proche)",
+            "Lance-missile montés à l'avant (porté courte)"
+        ],
+        "univers": "eoe"
     },
     {
         "key": "ywing",
@@ -211,6 +378,40 @@
         "univers": "aor"
     },
     {
+        "key": "preybird",
+        "label": "Chasseur Oiseau de Proie",
+        "type": "Chasseur",
+        "sensorRange": "Proche",
+        "crew": 2,
+        "passagers": 0,
+        "image": "Preybird_Starfighter.jpg",
+        "price": 84000,
+        "rarety": 8,
+        "mods": 1,
+        "weapons": [
+            "Canons lasers moyens montés sur ailes (porté proche)",
+            "Lance-missile à protons montés à l'avant et à l'arrière (porté courte)"
+        ],
+        "univers": "eoe"
+    },
+    {
+        "key": "fangFighter",
+        "label": "Chasseur Fang",
+        "type": "Chasseur",
+        "sensorRange": "Proche",
+        "crew": 2,
+        "passagers": 0,
+        "image": "Fang_fighter.jpg",
+        "price": 120000,
+        "rarety": 9,
+        "mods": 1,
+        "weapons": [
+            "Canons lasers légers jumelés montés à l'avant (porté proche)",
+            "Lance-torpille à protons montés à l'avant (porté courte)"
+        ],
+        "univers": "eoe"
+    },
+    {
         "key": "awing",
         "label": "Intercepteur léger A-Wing",
         "type": "Chasseur",
@@ -226,5 +427,75 @@
             "Lance-missile à concussion montés à l'avant (portée courte)"
         ],
         "univers": "aor"
+    },
+    {
+        "key": "ewing",
+        "label": "Chasseur E-Wing",
+        "type": "Chasseur",
+        "sensorRange": "Courte",
+        "crew": 2,
+        "passagers": 0,
+        "image": "Ewing_negvv.png",
+        "price": 160000,
+        "rarety": 6,
+        "mods": 3,
+        "weapons": [
+            "Canons lasers moyens montés à l'avant (portée proche)",
+            "Lance-torpille à protons monté à l'avant (portée poche)"
+        ],
+        "univers": "aor"
+    },
+    {
+        "key": "aggressorAssaultFighter",
+        "label": "Chasseur de classe \"Aggresseur\"",
+        "type": "Chasseur",
+        "sensorRange": "Courte",
+        "crew": 2,
+        "passagers": 8,
+        "image": "aggressor_assault_fighter.jpg",
+        "price": 160000,
+        "rarety": 6,
+        "mods": 3,
+        "weapons": [
+            "Canons lasers moyens montés à l'avant (portée proche)",
+            "Rayon tracteur léger monté à l'avant (portée poche)"
+        ],
+        "univers": "eoe"
+    },
+    {
+        "key": "miytilStarfighter",
+        "label": "Chasseur Miy'til",
+        "type": "Chasseur",
+        "sensorRange": "Proche",
+        "crew": 1,
+        "passagers": 0,
+        "image": "Miytil_SotG.jpg",
+        "price": 210000,
+        "rarety": 8,
+        "mods": 1,
+        "weapons": [
+            "Canons lasers moyens montés à l'avant (portée proche)",
+            "Lance-missile monté à l'avant (portée poche)"
+        ],
+        "univers": "fad"
+    },
+    {
+        "key": "hwing",
+        "label": "Chasseur H-Wing",
+        "type": "Chasseur",
+        "sensorRange": "Proche",
+        "crew": 2,
+        "passagers": 2,
+        "image": "SWA25-Hwing.png",
+        "price": 225000,
+        "rarety": 8,
+        "mods": 1,
+        "weapons": [
+            "Canons lasers moyens montés à l'avant (portée proche)",
+            "Canons à ions légers jumelés montés à l'avant (portée proche)",
+            "Lance-torpille à protons monté à l'avant (portée poche)",
+            "Bombe à protons (largage)"
+        ],
+        "univers": "fad"
     }
 ]

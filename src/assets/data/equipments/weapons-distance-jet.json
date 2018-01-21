@@ -3,6 +3,7 @@
         "key": "weapon-bola",
         "image": "WeaponBOLA.png",
         "label": "Bolas / Filet",
+        "description": "Permet de capturer une proie vivante. Appréciée des chasseurs de primes",
         "skill": "Distance (Légère)",
         "damage": 2,
         "critic": 0,
@@ -35,7 +36,7 @@
         ]
     },
     {
-        "key": "corellian-compound-bow",
+        "key": "corellianCompoundBow",
         "image": "",
         "label": "Arc à poulies corellien",
         "skill": "Distance (lourde)",

@@ -17,6 +17,43 @@
         ]
     },
     {
+        "key": "ionGrenade",
+        "image": "",
+        "label": "Grenade à ions",
+        "skill": "Distance (Légère)",
+        "damage": 10,
+        "critic": 5,
+        "distance": "Courte",
+        "enc": 1,
+        "emp": 0,
+        "price": 65,
+        "rarety": 4,
+        "options": [
+            { "label": "Souffle 7" },
+            { "label": "Désorientation 5" },
+            { "label": "Dégâts étourdissants (droïde)" },
+            { "label": "Munitions limitées 1" }
+        ]
+    },
+    {
+        "key": "WeaponIncendiary",
+        "image": "",
+        "label": "Grenade incendiaire Inferno",
+        "skill": "Distance (Légère)",
+        "damage": 8,
+        "critic": 3,
+        "distance": "Courte",
+        "enc": 1,
+        "emp": 0,
+        "price": 75,
+        "rarety": 5,
+        "options": [
+            { "label": "Dégâts étourdissants" },
+            { "label": "Incendiaire 2" },
+            { "label": "Munitions limitées 1" }
+        ]
+    },
+    {
         "key": "WeaponSTUNGR",
         "image": "WeaponSTUNGR.png",
         "label": "Grenade étourdissante",
@@ -55,7 +92,7 @@
     },
     {
         "key": "WeaponGLOPGRND",
-        "image": "WeaponGLOPGRND",
+        "image": "WeaponGLOPGRND.png",
         "label": "Grenade incapacitante",
         "skill": "Distance (Légère)",
         "damage": 12,
@@ -71,6 +108,24 @@
             { "label": "Souffle 10" }
         ]
     },
+    {
+        "key": "plasmaGrenade",
+        "image": "",
+        "label": "Grenade plasma",
+        "skill": "Distance (Légère)",
+        "damage": 12,
+        "critic": 3,
+        "distance": "Courte",
+        "enc": 1,
+        "emp": 0,
+        "price": 125,
+        "rarety": 6,
+        "options": [
+            { "label": "Souffle 10" },
+            { "label": "Munitions limitées 1" }
+        ]
+    },
+
     {
         "key": "WeaponAPMINE",
         "image": "WeaponAPMINE.png",
@@ -122,6 +177,25 @@
         "options": [
             { "label": "Incendiaire 3" },
             { "label": "Souffle 8" }
+        ]
+    },
+    {
+        "key": "lightFlameProjecterFirecaller",
+        "image": "swe16_wepons.png",
+        "label": "Lance-flamme désintégrateur \"Fire-Caller\"",
+        "skill": "Distance (Lourde)",
+        "damage": 5,
+        "critic": 2,
+        "distance": "Courte",
+        "enc": 4,
+        "emp": 1,
+        "price": 1200,
+        "rarety": 7,
+        "options": [
+            { "label": "Incendiaire 2" },
+            { "label": "Souffle 2" },
+            { "label": "Perforant 2" },
+            { "label": "Sanguinaire 3" }
         ]
     },
     {

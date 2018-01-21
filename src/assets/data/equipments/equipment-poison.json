@@ -22,5 +22,13 @@
         "price": 75,
         "encombrement": 0,
         "rarety": 6
+    },
+    {
+        "key": "antidoteSet",
+        "image": "",
+        "label": "Set d'antidotes",
+        "price": 250,
+        "encombrement": 1,
+        "rarety": 5
     }
 ]

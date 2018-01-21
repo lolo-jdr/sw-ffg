@@ -1,39 +1,43 @@
-<table class="table table-responsive weapons-table">
-    <thead>
-      <tr>
-        <th scope="col">Nom</th>
-        <th scope="col" class="text-center">Visuel</th>
-        <th scope="col">Compétences</th>
-        <th scope="col">Dégâts</th>
-        <th scope="col">Critique</th>
-        <th scope="col">Portée</th>
-        <th scope="col">Enc.</th>
-        <th scope="col">Emp.</th>
-        <th scope="col">Prix</th>
-        <th scope="col">Rareté</th>
-        <th scope="col">Spécial</th>
-      </tr>
-    </thead>
-    <tbody role="tabpanel">
-      <tr *ngFor="let weapon of weapons">
-        <td scope="row">{{ weapon.label }}</td>
-        <td class="text-center">
-          <p *ngIf="weapon.image !== ''"><img src="{{ weaponImagesFolder + weapon.image }}" (click)="openImage(weaponImagesFolder + weapon.image, weapon.label)" /></p>
-          <p *ngIf="weapon.image === ''">-</p>
-        </td>
-        <td>{{ weapon.skill }}</td>
-        <td>{{ weapon.damage }}</td>
-        <td>{{ weapon.critic }}</td>
-        <td>{{ weapon.distance }}</td>
-        <td>{{ weapon.enc }}</td>
-        <td>{{ weapon.emp }}</td>
-        <td>{{ weapon.price }}</td>
-        <td>{{ weapon.rarety }}</td>
-        <td>
-          <p *ngFor="let option of weapon.options">
-            <span>{{ option.label }}</span>
-          </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<table class="table table-responsive equipment-table weapons-table">
+  <thead>
+    <tr>
+      <th scope="col">Nom</th>
+      <th scope="col" class="text-center">Visuel</th>
+      <th scope="col">Compétences</th>
+      <th scope="col">Dégâts</th>
+      <th scope="col">Critique</th>
+      <th scope="col">Portée</th>
+      <th scope="col">Enc.</th>
+      <th scope="col">Emp.</th>
+      <th scope="col">Prix</th>
+      <th scope="col">Spécial</th>
+    </tr>
+  </thead>
+  <tbody role="tabpanel">
+    <tr *ngFor="let weapon of weapons">
+      <td scope="row">
+        <p>{{ weapon.label }}</p>
+        <p><small>{{ weapon.description }}</small></p>
+      </td>
+      <td class="text-center">
+        <p *ngIf="weapon.image !== ''">
+          <img src="{{ weaponImagesFolder + weapon.image }}" (click)="openImage(weaponImagesFolder + weapon.image, weapon.label)"
+          />
+        </p>
+        <p *ngIf="weapon.image === ''">-</p>
+      </td>
+      <td><p>{{ weapon.skill }}</p></td>
+      <td><p>{{ weapon.damage }}</p></td>
+      <td><p>{{ weapon.critic }}</p></td>
+      <td><p>{{ weapon.distance }}</p></td>
+      <td><p>{{ weapon.enc }}</p></td>
+      <td><p>{{ weapon.emp }}</p></td>
+      <td><p>{{ weapon.price }}</p></td>
+      <td>
+        <p *ngFor="let option of weapon.options">
+            {{ option.label }}
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -2,53 +2,54 @@
     {
         "specializationKey": "assassin",
         "weaponKeys": [
-            [ "WeaponLBR9STUNRIFLE", "e11s-sniper-rifle", "aranea-web-launcher", "corellian-compound-bow", "knuckles-dagger", "WeaponFORCEP" ],
+            [ "WeaponLBR9STUNRIFLE", "e11s-sniper-rifle", "aranea-web-launcher", "corellianCompoundBow", "knuckles-dagger", "WeaponFORCEP", "needGloves" ],
             [ "WeaponGLOPGRND", "WeaponSTUNGR" ]
         ],
         "armorKeys": [
-            [ "ArmorHC" ]
+            [ "ArmorHC", "cloackingCoat", "stunCloak", "nomadCoat", "boundyHunterArmor" ]
         ],
         "equipementKeys": [
             ["macrobinoc", "scanner-goggles"],
-            [ "hand-scanner", "GearSTAG" ]
+            [ "hand-scanner", "GearSTAG", "ascensionPistolRider", "imitateurTransmetteur" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "v35CourierLandspeeder", "skyhopperIncomT16", "lambdaClass", "preybird" ]
         ]
     },
     {
         "specializationKey": "gadgeteer",
         "weaponKeys": [
-            [ "fwg-5", "WeaponBLASTHOLD", "WeaponBLASTION", "WeaponBLASTLT", "boots", "WeaponSHOCKGL", "WeaponTRUNCH" ],
+            [ "fwg-5", "WeaponBLASTHOLD", "WeaponBLASTION", "WeaponBLASTLT", "boots", "WeaponSHOCKGL" ],
             [ "WeaponFRAGGR", "WeaponSTUNGR", "WeaponGLOPGRND"  ]
         ],
         "armorKeys": [
-            [ "ArmorHC" ]
+            [ "ArmorHC", "cloackingCoat", "stunCloak" ]
         ],
         "equipementKeys": [
-            [ "GearUTILBELT", "cargo-scanner" ],
-            [ "remote-activator-short-range" ]
+            [ "GearUTILBELT", "cargo-scanner", "securitySweeper", "sleightBox" ],
+            [ "remote-activator-short-range", "rocketBoots", "ascensionPistolRider" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "lambdaClass" ]
         ]
     },
     {
         "specializationKey": "survivalist",
         "weaponKeys": [
-            [ "weaponslugrif-heavy", "e11s-sniper-rifle", "aranea-web-launcher", "corellian-compound-bow", "weapon-bola", "WeaponFORCEP" ],
+            [ "weaponslugrifHeavy", "e11s-sniper-rifle", "aranea-web-launcher", "corellianCompoundBow", "weapon-bola", "precisionXMarksmanRifle" ],
             [ "WeaponAPMINE", "WeaponFRAGGR", "WeaponSTUNGR" ]
         ],
         "armorKeys": [
-            [ "ArmorAEG" ]
+            [ "ArmorAEG", "nomadCoat" ]
         ],
         "equipementKeys": [
             [ "electrobinoc_negwt", "scanner-goggles"],
-            [ "hand-scanner", "general-purpose-scanner" ],
-            [ "electrotrap", "GearTENT", "thermic-cover", "depecage-kit", "sos-portative", "mountain-climbing-gear-climbing-rope", "chemical-bait", "GearCLIMB" ]
+            [ "hand-scanner", "general-purpose-scanner", "sos-portative", "pX7HeatSensor" ],
+            [ "mountain-climbing-gear-climbing-rope", "chemical-bait", "GearCLIMB", "aquataBreatherA99" ],
+            [ "electrotrap", "GearTENT", "thermic-cover", "depecage-kit" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "jumpMaster5000", "incomA24" ]
         ]
     },
     {
@@ -57,60 +58,66 @@
             [ "12-defenseur", "WeaponBLASTHOLD", "WeaponBLASTLT", "quickfire", "molecularStiletto" ]
         ],
         "armorKeys": [
-            [ "ArmorHC" ]
+            [ "ArmorHC", "nomadCoat" ]
         ],
         "equipementKeys": [
-            ["hand-scanner", "forensicsInvestigationKit"],
-            [ "GearEMP", "ECM-598-Medical-Backpack"]
+            [ "ECM-598-Medical-Backpack" ],
+            [ "GearEMP", "hand-scanner", "forensicsInvestigationKit", "bloodScanner" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "v35CourierLandspeeder", "skyhopperIncomT16", "jumpMaster5000", "incomA24" ]
         ]
     },
     {
         "specializationKey": "politico",
         "weaponKeys": [
-            [ "12-defenseur", "WeaponBLASTHOLD", "quickfire", "molecularStiletto" ]
+            [ "12-defenseur", "duelPistol" ],
+            [ "needGloves", "molecularStiletto", "swordCane", "stealthVibroKnife", "ceremonialBlade" ]
         ],
         "armorKeys": [
-            [ "ArmorHC" ]
+            [ "diplomatRobe", "nobleRegalia", "stunCloak" ]
         ],
         "equipementKeys": [
-            [ "GearHOLO", "GearDATAPAD" ]
+            [ "GearHOLO", "GearDATAPAD", "concealedRecorder" ],
+            [ "dataPurgeGrenade", "noiseGrenade", "mercyGrenade" ],
+            [ "antidoteSet", "authentificationTools", "culturalEtiquetteManual", "securitySweeper" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "v35CourierLandspeeder", "skyhopperIncomT16", "jumpMaster5000", "incomA24" ]
         ]
     },
     {
         "specializationKey": "scholar",
         "weaponKeys": [
-            [ "12-defenseur", "WeaponBLASTHOLD", "quickfire", "molecularStiletto" ]
+            [ "12-defenseur", "WeaponBLASTHOLD", "quickfire", "duelPistol" ],
+            [ "needGloves", "molecularStiletto", "stealthVibroKnife" ]
         ],
         "armorKeys": [
             [ "ArmorHC" ]
         ],
         "equipementKeys": [
-            [ "GearHOLO", "GearDATAPAD" ]
+            [ "GearHOLO", "GearDATAPAD", "concealedRecorder" ],
+            [ "dataPurgeGrenade", "authentificationTools" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "v35CourierLandspeeder", "skyhopperIncomT16", "jumpMaster5000", "incomA24" ]
         ]
     },
     {
         "specializationKey": "fringer",
         "weaponKeys": [
-            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger" ],
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "duelPistol" ],
             [ "WeaponGLOPGRND", "WeaponSTUNGR" ]
         ],
         "armorKeys": [
-            [ "ArmorHC" ]
+            [ "ArmorHC", "nomadCoat", "boundyHunterArmor" ]
         ],
         "equipementKeys": [
-            [ "GearUTILBELT", "cargo-scanner", "GearTOOLKIT", "scrambler" ]
+            [ "GearUTILBELT", "cargo-scanner", "GearTOOLKIT", "scrambler" ],
+            [ "sleightBox"  ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "yt1300", "wayfarer", "barlozClassMediumFreighter" ]
         ]
     },
     {
@@ -120,84 +127,88 @@
             [ "WeaponGLOPGRND", "WeaponSTUNGR" ]
         ],
         "armorKeys": [
-            [ "ArmorAEG" ]
+            [ "ArmorAEG", "nomadCoat" ]
         ],
         "equipementKeys": [
             [ "electrobinoc_negwt", "scanner-goggles"],
-            [ "hand-scanner", "general-purpose-scanner" ],
-            [ "electrotrap", "GearTENT", "thermic-cover", "depecage-kit", "sos-portative", "mountain-climbing-gear-climbing-rope", "GearCLIMB" ]
+            [ "hand-scanner", "general-purpose-scanner", "pX7HeatSensor" ],
+            [ "mountain-climbing-gear-climbing-rope", "chemical-bait", "GearCLIMB", "aquataBreatherA99" ],
+            [ "electrotrap", "GearTENT", "thermic-cover", "depecage-kit", "waterPurifier", "survivalEquipment" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "jumpMaster5000", "incomA24" ]
         ]
     },
     {
         "specializationKey": "trader",
         "weaponKeys": [
-            [ "12-defenseur", "WeaponBLASTHOLD", "quickfire", "molecularStiletto" ]
+            [ "12-defenseur", "WeaponBLASTHOLD", "duelPistol" ],
+            [ "molecularStiletto", "stealthVibroKnife" ]
         ],
         "armorKeys": [
-            [ "ArmorHC" ]
+            [ "ArmorHC", "stunCloak", "nomadCoat" ]
         ],
         "equipementKeys": [
-            ["mercantilerDatapad"]
+            [ "mercantilerDatapad" ],
+            [ "dataPurgeGrenade", "authentificationTools", "securitySweeper" ],
+            [ "sleightBox" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "v35CourierLandspeeder", "jumpMaster5000", "lambdaClass", "yt1300", "wayfarer" ]
         ]
     },
     {
         "specializationKey": "bodyguard",
         "weaponKeys": [
             [ "WeaponBLASTCARB", "WeaponBOWCAST", "ES-700-Pulse-Rifle-FC", "WeaponBLASTRIFHVY" ],
-            [ "WeaponAPGREN", "WeaponGLOPGRND", "WeaponFRAGGR" ]
+            [ "WeaponAPGREN", "WeaponGLOPGRND", "WeaponFRAGGR", "plasmaGrenade", "WeaponIncendiary" ]
         ],
         "armorKeys": [
-            [ "ArmorPAD" ]
+            [ "ArmorPAD", "boundyHunterArmor" ]
         ],
         "equipementKeys": [
-            [ "scanner-goggles", "general-purpose-scanner" ]
+            [ "scanner-goggles", "general-purpose-scanner", "rocketBoots" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "preybird" ]
         ]
     },
     {
         "specializationKey": "marauder",
         "weaponKeys": [
-            [ "WeaponVIBSW", "WeaponVIBAX", "WeaponSHOCKGL", "WeaponFLAME", "WeaponBOLA.png" ],
-            [ "WeaponAPGREN", "WeaponTHERMDET", "WeaponFRAGGR" ]
+            [ "WeaponVIBSW", "WeaponVIBAX", "WeaponSHOCKGL", "WeaponFLAME", "WeaponBOLA", "lightFlameProjecterFirecaller", "harpoonLauncher" ],
+            [ "WeaponAPGREN", "WeaponTHERMDET", "WeaponFRAGGR", "plasmaGrenade", "WeaponIncendiary" ]
         ],
         "armorKeys": [
             [ "ArmorPAD" ]
         ],
         "equipementKeys": [
-            [ "scanner-goggles", "general-purpose-scanner" ]
+            [ "scanner-goggles", "general-purpose-scanner", "rocketBoots" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "lambdaClass", "preybird" ]
         ]
     },
     {
         "specializationKey": "mercenary-soldier",
         "weaponKeys": [
-            [ "WeaponBLASTCARB", "WeaponBOWCAST", "ES-700-Pulse-Rifle-FC", "WeaponBLASTRIFHVY", "weaponslugrif-heavy", "WeaponFLAME" ],
-            [ "WeaponAPGREN", "WeaponGLOPGRND", "WeaponFRAGGR", "WeaponTHERMDET" ]
+            [ "WeaponBLASTCARB", "WeaponBOWCAST", "ES-700-Pulse-Rifle-FC", "WeaponBLASTRIFHVY", "dhxHeavyBlasterRifle", "weaponslugrifHeavy", "WeaponFLAME", "harpoonLauncher" ],
+            [ "WeaponAPGREN", "WeaponGLOPGRND", "WeaponFRAGGR", "WeaponTHERMDET", "plasmaGrenade", "WeaponIncendiary" ]
         ],
         "armorKeys": [
-            [ "ArmorPAD" ]
+            [ "ArmorPAD", "boundyHunterArmor" ]
         ],
         "equipementKeys": [
-            [ "scanner-goggles", "general-purpose-scanner" ]
+            [ "scanner-goggles", "general-purpose-scanner", "rocketBoots" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "lambdaClass", "preybird" ]
         ]
     },
     {
         "specializationKey": "pilot",
         "weaponKeys": [
-            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH" ]
+            [ "dr45Dragoon", "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH" ]
         ],
         "armorKeys": [
             [ "ArmorUTILITYVEST" ]
@@ -206,23 +217,24 @@
             [ "survival-crash-kit", "scrambler" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "yt1300", "wayfarer", "Kappa-class_shuttle_AoRDA", "barlozClassMediumFreighter" ]
         ]
     },
     {
         "specializationKey": "scoundrel",
         "weaponKeys": [
-            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "WeaponTRUNCH" ],
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "knuckles-dagger", "WeaponTRUNCH", "duelPistol" ],
             [ "WeaponGLOPGRND", "WeaponSTUNGR" ]
         ],
         "armorKeys": [
-            [ "ArmorHC" ]
+            [ "ArmorHC", "nomadCoat", "boundyHunterArmor" ]
         ],
         "equipementKeys": [
-            [ "GearTOOLKIT", "cargo-scanner" ]
+            [ "GearTOOLKIT", "cargo-scanner" ], 
+            [ "imitateurTransmetteur" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "lambdaClass", "yt1300", "wayfarer", "barlozClassMediumFreighter" ]
         ]
     },
     {
@@ -232,59 +244,64 @@
             [ "WeaponGLOPGRND", "WeaponSTUNGR" ]
         ],
         "armorKeys": [
-            [ "ArmorHC" ]
+            [ "ArmorHC", "cloackingCoat", "stunCloak", "nomadCoat" ]
         ],
         "equipementKeys": [
-            [ "disguise-tool", "GearELB", "fingerprint-masque", "encryptor" ]
+            [ "disguise-tool", "GearELB", "fingerprint-masque", "encryptor" ],
+            [ "ascensionPistolRider", "sleightBox", "imitateurTransmetteur" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "v35CourierLandspeeder", "skyhopperIncomT16", "jumpMaster5000", "lambdaClass", "yt1300", "wayfarer" ]
         ]
     },
     {
         "specializationKey": "mechanic",
         "weaponKeys": [
-            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH", "rivetGun" ]
+            [ "rivetGun", "empDisrupteur", "repulsorGun", "handGringer", "WeaponBLASTION", "WeaponBLASTHOLD" ]
         ],
         "armorKeys": [
-            [ "ArmorHC" ]
+            [ "ArmorHC", "ArmorP14" ]
         ],
         "equipementKeys": [
-            [ "GearUTILBELT", "emergency-repair-patch", "GearTOOLKIT" ]
+            [ "GearUTILBELT", "GearTOOLKIT" ],
+            [ "repulsorClamp", "emergency-repair-patch" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "jumpMaster5000", "yt1300", "wayfarer" ]
         ]
     },
     {
         "specializationKey": "outlaw-tech",
         "weaponKeys": [
-            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH", "rivetGun" ]
+            [ "rivetGun", "empDisrupteur", "repulsorGun", "handGringer", "WeaponBLASTION", "WeaponBLASTHOLD" ],
             [ "WeaponGLOPGRND", "WeaponSTUNGR" ]
         ],
         "armorKeys": [
-            [ "ArmorHC" ]
+            [ "ArmorHC", "cloackingCoat", "stunCloak" ]
         ],
         "equipementKeys": [
-            [ "encryptor", "scrambler" ]
+            [ "encryptor", "scrambler", "imitateurTransmetteur" ],
+            [ "slicer-tool",  "dataspike", "signatureModulationPad", "bouchon-entrave" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "cloakshapeFighter", "jumpMaster5000", "lambdaClass" ]
         ]
     },
     {
         "specializationKey": "slicer",
         "weaponKeys": [
-            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH", "rivetGun" ]
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH", "rivetGun", "empDisrupteur" ]
         ],
         "armorKeys": [
-            [ "ArmorHC" ]
+            [ "cloackingCoat", "stunCloak" ]
         ],
         "equipementKeys": [
-            [ "slicer-tool", "bouchon-entrave" ]
+            [ "slicer-tool" ],
+            [ "dataspike", "signatureModulationPad", "bouchon-entrave" ],
+            [ "dataPurgeGrenade" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "jumpMaster5000", "lambdaClass" ]
         ]
     },
     {
@@ -300,7 +317,7 @@
             [ "survival-crash-kit", "scrambler" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "cloakshapeFighter", "preybird" ]
         ]
     },
     {
@@ -315,52 +332,57 @@
             [ "survival-crash-kit", "scrambler" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "cloakshapeFighter", "preybird" ]
         ]
     },
     {
         "specializationKey": "pilot-aor",
         "weaponKeys": [
-            [ "WeaponBLASTION", "WeaponBLASTPIS", "WeaponBLASTPISHVY", "GunOfCommand" ]
+            [ "dr45Dragoon", "WeaponBLASTION", "WeaponBLASTPIS", "WeaponBLASTPISHVY", "GunOfCommand" ]
         ],
         "armorKeys": [
-            [ "ArmorUTILITYVEST" ]
+            [ "ArmorUTILITYVEST", "ArmorWINGCOMMANDER" ]
         ],
         "equipementKeys": [
-            [ "survival-crash-kit", "scrambler" ]
+            [ "survival-crash-kit", "scrambler", "fabritechMkIIITargettinhGoggles" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "cloakshapeFighter", "ywing", "preybird" ]
         ]
     },
     {
         "specializationKey": "agitator",
         "weaponKeys": [
-            [ "12-defenseur", "WeaponBLASTHOLD", "quickfire", "molecularStiletto" ]
+            [ "12-defenseur", "duelPistol" ],
+            [ "molecularStiletto", "swordCane", "stealthVibroKnife", "ceremonialBlade" ]
         ],
         "armorKeys": [
-            [ "ArmorHC" ]
+            [ "diplomatRobe", "nobleRegalia", "stunCloak", "nomadCoat" ]
         ],
         "equipementKeys": [
-            ["GearDATAPAD"]
+            [ "GearDATAPAD", "concealedRecorder" ],
+            [ "antidoteSet", "authentificationTools", "culturalEtiquetteManual", "securitySweeper", "sleightBox" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "jumpMaster5000", "incomA24" ]
         ]
     },
     {
         "specializationKey": "ambassador",
         "weaponKeys": [
-            [ "12-defenseur", "WeaponBLASTHOLD", "quickfire", "molecularStiletto" ]
+            [ "12-defenseur", "duelPistol" ],
+            [ "molecularStiletto", "swordCane", "stealthVibroKnife", "ceremonialBlade" ]
         ],
         "armorKeys": [
-            [ "ArmorHC" ]
+            [ "diplomatRobe", "nobleRegalia", "stunCloak" ]
         ],
         "equipementKeys": [
-            ["GearDATAPAD"]
+            ["GearDATAPAD", "concealedRecorder" ],
+            [ "dataPurgeGrenade", "noiseGrenade", "mercyGrenade" ],
+            [ "antidoteSet", "authentificationTools", "culturalEtiquetteManual", "securitySweeper" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "jumpMaster5000", "incomA24" ]
         ]
     },
     {
@@ -369,13 +391,14 @@
             [ "12-defenseur", "WeaponBLASTHOLD", "quickfire", "molecularStiletto" ]
         ],
         "armorKeys": [
-            [ "ArmorHC" ]
+            [ "rebelCommanderUniform", "nobleRegalia" ]
         ],
         "equipementKeys": [
-            ["GearDATAPAD"]
+            ["GearDATAPAD"],
+            [ "dataPurgeGrenade", "sleightBox" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "jumpMaster5000", "yt1300", "wayfarer" ]
         ]
     },
     {
@@ -385,15 +408,16 @@
             [ "WeaponGLOPGRND", "WeaponSTUNGR" ]
         ],
         "armorKeys": [
-            [ "ArmorAEG" ]
+            [ "ArmorAEG", "nomadCoat" ]
         ],
         "equipementKeys": [
             [ "electrobinoc_negwt", "scanner-goggles"],
-            [ "hand-scanner", "general-purpose-scanner" ],
-            [ "electrotrap", "GearTENT", "thermic-cover", "depecage-kit", "sos-portative", "mountain-climbing-gear-climbing-rope", "GearCLIMB" ]
+            [ "hand-scanner", "general-purpose-scanner", "pX7HeatSensor" ],
+            [ "mountain-climbing-gear-climbing-rope", "chemical-bait", "GearCLIMB", "aquataBreatherA99" ],
+            [ "electrotrap", "GearTENT", "thermic-cover", "depecage-kit" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "cloakshapeFighter", "jumpMaster5000", "preybird" ]
         ]
     },
     {
@@ -406,48 +430,51 @@
             [ "ArmorHC" ]
         ],
         "equipementKeys": [
-            [ "slicer-tool", "bouchon-entrave" ]
+            [ "slicer-tool", "bouchon-entrave" ],
+            [ "dataPurgeGrenade" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "jumpMaster5000" ]
         ]
     },
     {
         "specializationKey": "infiltrator",
         "weaponKeys": [
             [ "WeaponBLASTHOLD", "WeaponBLASTION", "czerka-arms-A95-blaster" ],
-            [ "WeaponGLOPGRND", "WeaponSTUNGR" ]
+            [ "WeaponGLOPGRND", "WeaponSTUNGR", "dataPurgeGrenade" ]
         ],
         "armorKeys": [
-            [ "ArmorHC" ]
+            [ "ArmorHC", "stunCloak" ]
         ],
         "equipementKeys": [
-            [ "disguise-tool", "GearELB", "fingerprint-masque", "encryptor" ]
+            [ "disguise-tool", "GearELB", "fingerprint-masque", "encryptor" ],
+            [ "ascensionPistolRider", "falsidiedCredential", "sleightBox" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "jumpMaster5000" ]
         ]
     },
     {
         "specializationKey": "mechanic-aor",
         "weaponKeys": [
-            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH", "knuckles-dagger" ]
+            [ "rivetGun", "empDisrupteur", "repulsorGun", "handGringer", "WeaponBLASTION", "WeaponBLASTHOLD" ]
         ],
         "armorKeys": [
-            [ "ArmorHC" ]
+            [ "ArmorHC", "ArmorP14" ]
         ],
         "equipementKeys": [
-            [ "GearUTILBELT", "emergency-repair-patch", "GearTOOLKIT" ]
+            [ "GearUTILBELT", "GearTOOLKIT" ],
+            [ "repulsorClamp", "emergency-repair-patch" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "airspeederIncomT47", "jumpMaster5000" ]
         ]
     },
     {
         "specializationKey": "saboteur",
         "weaponKeys": [
-            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "WeaponTRUNCH", "knuckles-dagger" ],
-            [ "WeaponFRAGGR", "WeaponAPMINE", "WeaponAPMINE" ]
+            [ "WeaponBLASTHOLD", "WeaponBLASTLT", "WeaponBLASTPIS", "harpoonLauncher" ],
+            [ "WeaponFRAGGR", "WeaponAPMINE", "WeaponAPMINE", "dataPurgeGrenade" ]
         ],
         "armorKeys": [
             [ "ArmorHC" ]
@@ -456,7 +483,7 @@
             [ "GearUTILBELT", "GearTOOLKIT", "bouchon-entrave", "slicer-tool" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "jumpMaster5000" ]
         ]
     },
     {
@@ -471,13 +498,13 @@
             ["GearDATAPAD"]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "jumpMaster5000" ]
         ]
     },
     {
         "specializationKey": "commando",
         "weaponKeys": [
-            [ "WeaponBLASTCARB", "WeaponBOWCAST", "WeaponBLASTCARB", "WeaponBLASTRIFHVY", "weaponslugrif-heavy", "WeaponFLAME" ],
+            [ "WeaponBLASTCARB", "WeaponBOWCAST", "WeaponBLASTCARB", "WeaponBLASTRIFHVY", "WeaponFLAME" ],
             [ "WeaponFRAGGR", "WeaponAPMINE", "WeaponAPMINE" ]
         ],
         "armorKeys": [
@@ -487,13 +514,14 @@
             [ "scanner-goggles", "general-purpose-scanner" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16" ]
         ]
     },
     {
         "specializationKey": "sharpshooter",
         "weaponKeys": [
             [ "WeaponLBR9STUNRIFLE", "e11s-sniper-rifle" ],
+            [ "12-defenseur", "WeaponBLASTHOLD", "quickfire" ],
             [ "WeaponFRAGGR", "WeaponGLOPGRND", "WeaponSTUNGR" ]
         ],
         "armorKeys": [
@@ -503,7 +531,7 @@
             [ "scanner-goggles", "electrobinoc_negwt" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16" ]
         ]
     },
     {
@@ -516,26 +544,26 @@
             [ "ArmorHC" ]
         ],
         "equipementKeys": [
-            ["hand-scanner"],
-            [ "GearEMP", "ECM-598-Medical-Backpack"]
+            [ "ECM-598-Medical-Backpack" ],
+            [ "GearEMP", "hand-scanner", "forensicsInvestigationKit", "bloodScanner" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "jumpMaster5000" ]
         ]
     },
     {
         "specializationKey": "squadron-leader",
         "weaponKeys": [
-            [ "WeaponBLASTION", "WeaponBLASTPIS", "WeaponBLASTPISHVY", "GunOfCommand" ]
+            [ "dr45Dragoon", "WeaponBLASTION", "WeaponBLASTPIS", "WeaponBLASTPISHVY", "GunOfCommand" ]
         ],
         "armorKeys": [
-            [ "ArmorUTILITYVEST" ]
+            [ "ArmorUTILITYVEST", "ArmorWINGCOMMANDER" ]
         ],
         "equipementKeys": [
-            [ "survival-crash-kit", "scrambler" ]
+            [ "survival-crash-kit", "scrambler", "fabritechMkIIITargettinhGoggles" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "airspeederIncomT47", "cloakshapeFighter" ]
         ]
     },
     {
@@ -544,13 +572,13 @@
             [ "WeaponBLASTION", "WeaponBLASTPIS", "WeaponBLASTPISHVY", "GunOfCommand" ]
         ],
         "armorKeys": [
-            [ "ArmorHC" ]
+            [ "rebelCommanderUniform" ]
         ],
         "equipementKeys": [
             [ "GearDATAPAD" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "v35CourierLandspeeder", "Kappa-class_shuttle_AoRDA" ]
         ]
     },
     {
@@ -559,137 +587,141 @@
             [ "WeaponBLASTION", "WeaponBLASTPIS", "WeaponBLASTPISHVY", "GunOfCommand" ]
         ],
         "armorKeys": [
-            [ "ArmorHC" ]
+            [ "rebelCommanderUniform" ]
         ],
         "equipementKeys": [
             [ "GearDATAPAD" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "v35CourierLandspeeder","Kappa-class_shuttle_AoRDA" ]
         ]
     },
     {
         "specializationKey": "niman-disciple",
         "weaponKeys": [
-            [ "trainee-lightsaber" ]
+            [ "trainee-lightsaber" ],
+            [ "", "site145ReplicaBlaster" ]
         ],
         "armorKeys": [
-            [ "ArmorCONROBE" ]
+            [ "ArmorCONROBE", "jediTrainingSuit" ]
         ],
         "equipementKeys": [
-            [""]
+            [ "palmStunner", "taggecoPrivacyCurtain", "microdroidListener", "jediMultiTool", "jediUtilityBelt", "aquataBreatherA99", "personalTransponder" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "jumpMaster5000" ]
         ]
     },
     {
         "specializationKey": "healer",
         "weaponKeys": [
             [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
-            [ "WeaponBLASTHOLD" ]
+            [ "WeaponBLASTHOLD", "site145ReplicaBlaster" ]
         ],
         "armorKeys": [
-            [ "ArmorCONROBE" ]
+            [ "ArmorCONROBE", "jediTrainingSuit" ]
         ],
         "equipementKeys": [
-            [""]
+            [ "palmStunner", "taggecoPrivacyCurtain", "microdroidListener", "jediMultiTool", "jediUtilityBelt", "aquataBreatherA99", "personalTransponder" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "v35CourierLandspeeder", "skyhopperIncomT16", "jumpMaster5000" ]
         ]
     },
     {
         "specializationKey": "sage",
         "weaponKeys": [
             [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
-            [ "WeaponBLASTHOLD" ]
+            [ "WeaponBLASTHOLD", "site145ReplicaBlaster" ]
         ],
         "armorKeys": [
-            [ "ArmorCONROBE" ]
+            [ "ArmorCONROBE", "jediTrainingSuit" ]
         ],
         "equipementKeys": [
-            [""]
+            [ "palmStunner", "taggecoPrivacyCurtain", "microdroidListener", "jediMultiTool", "jediUtilityBelt", "aquataBreatherA99", "personalTransponder" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "v35CourierLandspeeder", "skyhopperIncomT16", "jumpMaster5000" ]
         ]
     },
     {
         "specializationKey": "pathfinder",
         "weaponKeys": [
             [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
-            [ "WeaponBLASTHOLD" ]
+            [ "WeaponBLASTHOLD", "site145ReplicaBlaster" ]
         ],
         "armorKeys": [
-            [ "ArmorCONROBE" ]
+            [ "ArmorCONROBE", "jediTrainingSuit" ]
         ],
         "equipementKeys": [
-            [""]
+            [ "palmStunner", "taggecoPrivacyCurtain", "microdroidListener", "jediMultiTool", "jediUtilityBelt", "aquataBreatherA99", "personalTransponder" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "v35CourierLandspeeder", "skyhopperIncomT16", "jumpMaster5000" ]
         ]
     },
     {
         "specializationKey": "ataru-striker",
         "weaponKeys": [
-            [ "trainee-lightsaber" ]
+            [ "trainee-lightsaber" ],
+            [ "", "site145ReplicaBlaster" ]
         ],
         "armorKeys": [
-            [ "ArmorCONROBE" ]
+            [ "ArmorCONROBE", "jediTrainingSuit" ]
         ],
         "equipementKeys": [
-            [""]
+            [ "palmStunner", "taggecoPrivacyCurtain", "microdroidListener", "jediMultiTool", "jediUtilityBelt", "aquataBreatherA99", "personalTransponder" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16" ]
         ]
     },
     {
         "specializationKey": "hunter",
         "weaponKeys": [
             [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
-            [ "WeaponBLASTHOLD" ]
+            [ "WeaponBLASTHOLD", "site145ReplicaBlaster" ]
         ],
         "armorKeys": [
-            [ "ArmorCONROBE" ]
+            [ "ArmorCONROBE", "jediTrainingSuit" ]
         ],
         "equipementKeys": [
-            [""]
+            [ "palmStunner", "taggecoPrivacyCurtain", "microdroidListener", "jediMultiTool", "jediUtilityBelt", "aquataBreatherA99", "personalTransponder" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "jumpMaster5000" ]
         ]
     },
     {
         "specializationKey": "soresu-defender",
         "weaponKeys": [
-            [ "trainee-lightsaber" ]
+            [ "trainee-lightsaber" ],
+            [ "", "site145ReplicaBlaster" ]
         ],
         "armorKeys": [
-            [ "ArmorCONROBE" ]
+            [ "ArmorCONROBE", "jediTrainingSuit" ]
         ],
         "equipementKeys": [
-            [""]
+            [ "palmStunner", "taggecoPrivacyCurtain", "microdroidListener", "jediMultiTool", "jediUtilityBelt", "aquataBreatherA99", "personalTransponder" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "jumpMaster5000" ]
         ]
     },
     {
         "specializationKey": "peacekeeper",
         "weaponKeys": [
-            [ "WeaponFORCEP", "WeaponANCIENTSWORD" ]
+            [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
+            [ "WeaponBLASTHOLD", "site145ReplicaBlaster" ]
         ],
         "armorKeys": [
-            [ "ArmorCONROBE" ]
+            [ "ArmorCONROBE", "jediTrainingSuit" ]
         ],
         "equipementKeys": [
-            [""]
+            [ "palmStunner", "taggecoPrivacyCurtain", "microdroidListener", "jediMultiTool", "jediUtilityBelt", "aquataBreatherA99", "personalTransponder" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "v35CourierLandspeeder", "skyhopperIncomT16", "jumpMaster5000" ]
         ]
     },
     {
@@ -699,13 +731,13 @@
             [ "WeaponBLASTLT", "WeaponBLASTION" ]
         ],
         "armorKeys": [
-            [ "ArmorCONROBE" ]
+            [ "ArmorCONROBE", "jediTrainingSuit" ]
         ],
         "equipementKeys": [
-            [""]
+            [ "palmStunner", "taggecoPrivacyCurtain", "microdroidListener", "jediMultiTool", "jediUtilityBelt", "aquataBreatherA99", "personalTransponder" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "v35CourierLandspeeder", "skyhopperIncomT16", "jumpMaster5000" ]
         ]
     },
     {
@@ -715,138 +747,142 @@
             [ "WeaponBLASTLT", "WeaponBLASTION" ]
         ],
         "armorKeys": [
-            [ "ArmorCONROBE" ]
+            [ "ArmorCONROBE", "jediTrainingSuit" ]
         ],
         "equipementKeys": [
-            [""]
+            [ "palmStunner", "taggecoPrivacyCurtain", "microdroidListener", "jediMultiTool", "jediUtilityBelt", "aquataBreatherA99", "personalTransponder" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "cloakshapeFighter" ]
         ]
     },
     {
         "specializationKey": "shii-cho-knight",
         "weaponKeys": [
-            [ "trainee-lightsaber" ]
+            [ "trainee-lightsaber" ],
+            [ "", "site145ReplicaBlaster" ]
         ],
         "armorKeys": [
-            [ "ArmorCONROBE" ]
+            [ "ArmorCONROBE", "jediTrainingSuit" ]
         ],
         "equipementKeys": [
-            [""]
+            [ "palmStunner", "taggecoPrivacyCurtain", "microdroidListener", "jediMultiTool", "jediUtilityBelt", "aquataBreatherA99", "personalTransponder" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "cloakshapeFighter" ]
         ]
     },
 
     {
         "specializationKey": "starfighter-ace",
         "weaponKeys": [
-            [ "WeaponFORCEP", "WeaponANCIENTSWORD", "trainee-lightsaber" ]
+            [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
+            [ "WeaponBLASTHOLD", "site145ReplicaBlaster" ]
         ],
         "armorKeys": [
-            [ "ArmorCONROBE" ]
+            [ "ArmorCONROBE", "jediTrainingSuit" ]
         ],
         "equipementKeys": [
-            [""]
+            [ "palmStunner", "taggecoPrivacyCurtain", "microdroidListener", "jediMultiTool", "jediUtilityBelt", "aquataBreatherA99", "personalTransponder" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "airspeederIncomT47", "cloakshapeFighter" ]
         ]
     },
     {
         "specializationKey": "advisor",
         "weaponKeys": [
             [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
-            [ "WeaponBLASTHOLD" ]
+            [ "WeaponBLASTHOLD", "site145ReplicaBlaster" ]
         ],
         "armorKeys": [
-            [ "ArmorCONROBE" ]
+            [ "ArmorCONROBE", "jediTrainingSuit" ]
         ],
         "equipementKeys": [
-            [""]
+            [ "palmStunner", "taggecoPrivacyCurtain", "microdroidListener", "jediMultiTool", "jediUtilityBelt", "aquataBreatherA99", "personalTransponder" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "v35CourierLandspeeder", "skyhopperIncomT16", "jumpMaster5000" ]
         ]
     },
     {
         "specializationKey": "makashi-duelist",
         "weaponKeys": [
-            [ "trainee-lightsaber" ]
+            [ "trainee-lightsaber" ],
+            [ "", "site145ReplicaBlaster" ]
         ],
         "armorKeys": [
-            [ "ArmorCONROBE" ]
+            [ "ArmorCONROBE", "jediTrainingSuit" ]
         ],
         "equipementKeys": [
-            [""]
+            [ "palmStunner", "taggecoPrivacyCurtain", "microdroidListener", "jediMultiTool", "jediUtilityBelt", "aquataBreatherA99", "personalTransponder" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "cloakshapeFighter" ]
         ]
     },
     {
         "specializationKey": "seer",
         "weaponKeys": [
             [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
-            [ "WeaponBLASTHOLD" ]
+            [ "WeaponBLASTHOLD", "site145ReplicaBlaster" ]
         ],
         "armorKeys": [
-            [ "ArmorCONROBE" ]
+            [ "ArmorCONROBE", "jediTrainingSuit" ]
         ],
         "equipementKeys": [
-            [""]
+            [ "palmStunner", "taggecoPrivacyCurtain", "microdroidListener", "jediMultiTool", "jediUtilityBelt", "aquataBreatherA99", "personalTransponder" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "v35CourierLandspeeder", "skyhopperIncomT16", "airspeederIncomT47", "jumpMaster5000" ]
         ]
     },
     {
         "specializationKey": "artisan",
         "weaponKeys": [
             [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
-            [ "WeaponBLASTHOLD" ]
+            [ "WeaponBLASTHOLD", "site145ReplicaBlaster" ]
         ],
         "armorKeys": [
-            [ "ArmorCONROBE" ]
+            [ "ArmorCONROBE", "jediTrainingSuit" ]
         ],
         "equipementKeys": [
-            [""]
+            [ "palmStunner", "taggecoPrivacyCurtain", "microdroidListener", "jediMultiTool", "jediUtilityBelt", "aquataBreatherA99", "personalTransponder" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "v35CourierLandspeeder", "skyhopperIncomT16", "jumpMaster5000", "yt1300", "wayfarer" ]
         ]
     },
     {
         "specializationKey": "shien-expert",
         "weaponKeys": [
-            [ "trainee-lightsaber" ]
+            [ "trainee-lightsaber" ],
+            [ "", "site145ReplicaBlaster" ]
         ],
         "armorKeys": [
-            [ "ArmorCONROBE" ]
+            [ "ArmorCONROBE", "jediTrainingSuit" ]
         ],
         "equipementKeys": [
-            [""]
+            [ "palmStunner", "taggecoPrivacyCurtain", "microdroidListener", "jediMultiTool", "jediUtilityBelt", "aquataBreatherA99", "personalTransponder" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "skyhopperIncomT16", "cloakshapeFighter" ]
         ]
     },
     {
         "specializationKey": "shadow",
         "weaponKeys": [
             [ "WeaponFORCEP", "WeaponANCIENTSWORD" ],
-            [ "WeaponBLASTHOLD" ]
+            [ "WeaponBLASTHOLD", "site145ReplicaBlaster" ]
         ],
         "armorKeys": [
-            [ "ArmorCONROBE" ]
+            [ "ArmorCONROBE", "jediTrainingSuit" ]
         ],
         "equipementKeys": [
-            [""]
+            [ "palmStunner", "taggecoPrivacyCurtain", "microdroidListener", "jediMultiTool", "jediUtilityBelt", "aquataBreatherA99", "personalTransponder" ]
         ],
         "vehiculeKeys": [
-            [ "" ]
+            [ "v35CourierLandspeeder", "skyhopperIncomT16", "jumpMaster5000" ]
         ]
     }
 ]

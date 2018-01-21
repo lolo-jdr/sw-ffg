@@ -28,13 +28,14 @@ export class CharacterGeneratorComponent implements OnInit {
   protected weapons: any[] = [];
   protected armors: any[] = [];
   protected equipments: any[] = [];
+  protected vehicules: any[] = [];
 
 
   constructor(private api: ApiService, private helper: HelperService) { }
 
   ngOnInit() {
     this.getEquipmentData().subscribe(equip => {
-      const [careerEquipment, weapons, armors, equipments] = equip;
+      const [careerEquipment, weapons, armors, equipments, vehicules] = equip;
 
       this.careerEquipment = careerEquipment;
 
@@ -53,6 +54,8 @@ export class CharacterGeneratorComponent implements OnInit {
           this.equipments.push(e);
         }
       }
+
+      this.vehicules = vehicules[0]; // Shouldn't have to do that
 
       this.randomize();
       this.isPageLoaded = true;
@@ -102,7 +105,20 @@ export class CharacterGeneratorComponent implements OnInit {
     // Assign equipments
     this.assignEquipment();
 
+    // Assign Ship
+    this.assignShip();
+
     console.log(this.character);
+  }
+
+  public reRandomEquipments() {
+    // Reset equipments
+    this.character.weapons = [];
+    this.character.armors = [];
+    this.character.equipments = [];
+
+    // Re-assign equipments
+    this.assignEquipment();
   }
 
   private assignSpeciesSkills() {
@@ -208,6 +224,23 @@ export class CharacterGeneratorComponent implements OnInit {
     }
   }
 
+  public assignShip() {
+    if (this.character && this.character.specializations.length > 0) {
+      // find the career-weapon
+      let careerEquipment = this.careerEquipment.find(cw => cw.specializationKey === this.character.specializations[0].key);
+      console.log(careerEquipment);
+
+      // Give random weapons
+      for(let vehiculeKeys of careerEquipment.vehiculeKeys) {
+        let vehiculeKey = HelperService.GetRandomFromCollection(vehiculeKeys);
+        let vehicule = this.vehicules.find(w => w.key === vehiculeKey);
+        if (vehicule) {
+          this.character.vehicules.push(vehicule);
+        }
+      }
+    }
+  }
+
   // Move to Skill class ?
   private increaseSkill(skill: Skill, skillType: SkillType) {
     skill.value++;
@@ -233,7 +266,8 @@ export class CharacterGeneratorComponent implements OnInit {
       this.api.localResource(ApiService.CAREERS_EQUIPMENTS),
       this.getWeapons(),
       this.getArmor(),
-      this.getEquipment()
+      this.getEquipment(),
+      this.getShip()
     );
   }
 
@@ -244,6 +278,7 @@ export class CharacterGeneratorComponent implements OnInit {
       this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.WEAPONS_DISTANCE_JET),
       this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.WEAPONS_DISTANCE_EXPLOSIVE),
       this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.WEAPONS_CONTACT_SWORD),
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.WEAPONS_CONTACT_PUGILAT),
       this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.WEAPONS_CONTACT_PUGILAT)
     );
   }
@@ -265,7 +300,13 @@ export class CharacterGeneratorComponent implements OnInit {
       this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.EQUIPMENT_POISON),
       this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.EQUIPMENT_SECURITY_MATERIAL),
       this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.EQUIPMENT_SURVIVAL_MATERIAL),
-      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.EQUIPMENT_TOOL)
+      this.api.localResource(ApiService.EQUIPMENT_FOLDER + ApiService.WEAPONS_OTHER)
+    );
+  }
+
+  private getShip() {
+    return Observable.forkJoin(
+      this.api.localResource(ApiService.VEHICULES_FOLDER + ApiService.VEHICULES)
     );
   }
 
